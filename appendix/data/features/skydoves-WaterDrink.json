@@ -1,0 +1,1823 @@
+{
+  "complexity_metrics": {
+    "loc": 3306,
+    "sloc": 2419,
+    "lloc": 1583,
+    "cloc": 312,
+    "mcc": 445,
+    "n_smell": 540,
+    "comment_ratio": 12,
+    "mcc_per_thlines": 281
+  },
+  "metrics": {
+    "number_of_string": 296,
+    "number_of_string_template": 15,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 4,
+    "number_of_inferred_var": 221,
+    "number_of_objects_declarations": 21,
+    "number_of_companion_objects": 7,
+    "number_of_singletons": 10,
+    "number_of_declaration": 280,
+    "number_of_var_declaration": 280,
+    "number_of_func_call": 1129,
+    "number_of_arguments": 1080,
+    "number_of_parameters": 307,
+    "number_of_qualified_expressions": 1488,
+    "number_of_inheritances": 35,
+    "number_of_unsafe_calls": 50,
+    "number_of_safe_calls": 1,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 11,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 1,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 5,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 2,
+    "number_of_lambdas": 85,
+    "number_of_possible_smart_casts": 2,
+    "number_of_data_class": 3,
+    "number_of_properties": 280,
+    "number_of_functions": 185,
+    "number_of_interfaces": 11,
+    "number_of_classes": 44,
+    "number_of_packages": 17,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 59
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:81:5",
+        "message": "The function initializeChart is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:62:5",
+        "message": "The function InitializeUI is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:81:5",
+        "message": "The function initializeChart appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/NFCActivity.kt:89:5",
+        "message": "The function writeTag appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:108:5",
+        "message": "The function btn_setAlarm appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:31:5",
+        "message": "The function setAlarm appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:11:5",
+        "message": "The function getLayout appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:9:5",
+        "message": "The function getLocalName appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:9:5",
+        "message": "The function getLocalUrl appears to be too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/NFCActivity.kt:89:5",
+        "message": "Function writeTag is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:108:5",
+        "message": "Function btn_setAlarm is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:31:5",
+        "message": "Function setAlarm is nested too deeply."
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/NotificationUtils.kt:21:25",
+        "message": "The function sendNotification has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:32:20",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:10:1",
+        "message": "Class 'SqliteManager' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyIfBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:12:9",
+        "message": "This if block is empty and can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:68:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:88:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:88:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/NFCActivity.kt:120:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:110:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:133:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:135:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:82:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:103:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:117:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/NetworkUtils.kt:27:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:69:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:89:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:138:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:140:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:111:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:136:21",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:35:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:50:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:83:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:104:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:118:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/NetworkUtils.kt:28:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/intro/SlideFragment.kt:30:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:113:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:114:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:115:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionNaming",
+      "description": "Function names should follow the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:61:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:49:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:57:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:109:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:62:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/EnvironmentFragment.kt:39:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/NFCActivity.kt:54:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetWeightActivity.kt:35:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/intro/StartActivity.kt:76:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:128:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:81:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:99:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:108:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:62:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:86:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:87:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:109:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:112:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:115:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:175:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:209:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:213:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:129:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:160:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:70:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:74:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:78:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:85:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:89:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:129:17",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:132:17",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetWeightActivity.kt:39:21",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:34:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:35:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:48:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:49:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:50:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:51:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:53:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:57:21",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:58:21",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:59:21",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:75:17",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:76:17",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:77:17",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:92:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:99:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:100:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:19:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:23:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:27:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:39:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:45:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:64:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:70:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:76:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:82:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:94:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:100:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "PackageNaming",
+      "description": "Package names should match the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/customViews/MyMarkerView.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/customViews/NumberPicker.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/viewTypes/SelectDrinkActivityView.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/viewTypes/MakeAlarmActivityView.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/viewTypes/SetGoalActivityView.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/viewTypes/SetLocalActivityView.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/viewTypes/MainActivityView.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/viewTypes/AlarmScreenActivityView.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }]
+    }, {
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceManager.kt:14:33",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceManager.kt:19:29",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceManager.kt:24:32",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceManager.kt:29:33",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceManager.kt:35:29",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceManager.kt:41:32",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/intro/SlideFragment.kt:26:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:44:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:91:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:109:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:112:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:115:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:175:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:209:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:213:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:38:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:51:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:64:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:67:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:71:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:84:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:46:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:129:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:160:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:161:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:46:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:70:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:74:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:78:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:85:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:89:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:101:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:125:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:132:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/EnvironmentFragment.kt:24:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/NFCActivity.kt:67:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetBubbleColorActivity.kt:24:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetBubbleColorActivity.kt:28:90",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetWeightActivity.kt:29:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetWeightActivity.kt:39:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetWeightActivity.kt:45:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetWeightActivity.kt:50:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:62:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:96:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:99:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:119:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:74:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:57:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:57:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:88:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:93:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:129:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:85:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:106:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/SetLocalPresenter.kt:29:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/SetLocalPresenter.kt:30:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/viewholders/SelectDrinkViewHolder.kt:14:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/viewholders/DailyDrinkViewHolder.kt:16:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/viewholders/AlarmViewHolder.kt:16:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetBubbleColorActivity.kt:17:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetMyCupActivity.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/intro/StartActivity.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/intro/StartActivity.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/WDApplication.kt:26:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/MakeAlarmPresenter.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/MakeAlarmPresenter.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/SetGoalPresenter.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/SelectDrinkPresenter.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/MainPresenter.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/MainPresenter.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/SetLocalPresenter.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/AlarmScreenPresenter.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/AlarmScreenPresenter.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:109:23",
+        "message": "rootView!!.findViewById(R.id.chart_tv_weekdate) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:112:24",
+        "message": "rootView!!.findViewById(R.id.chart_tv_totaldrink) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:115:26",
+        "message": "rootView!!.findViewById(R.id.chart_tv_averagedrink) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:175:31",
+        "message": "rootView!!.findViewById(R.id.chart_tv_message) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:209:26",
+        "message": "rootView!!.findViewById(R.id.chart_tv03) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:213:30",
+        "message": "rootView!!.findViewById(R.id.chart_tv_selectedday) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:95:23",
+        "message": "context.getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:129:28",
+        "message": "rootView!!.findViewById(R.id.dailyrecord_tv_todaydate) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:160:26",
+        "message": "rootView!!.findViewById(R.id.dailyrecord_tv_message) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:70:23",
+        "message": "rootView!!.findViewById(R.id.drinkamount_tv_goal) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:74:24",
+        "message": "rootView!!.findViewById(R.id.drinkamount_tv_drunk) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:78:25",
+        "message": "rootView!!.findViewById(R.id.drinkamount_tv_requireamount) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:85:21",
+        "message": "rootView!!.findViewById(R.id.drinkamount_tv_rh) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:89:29",
+        "message": "rootView!!.findViewById(R.id.drinkamount_percentage) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:101:27",
+        "message": "rootView!!.findViewById(R.id.layout_body) cannot be safely cast to RelativeLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:132:29",
+        "message": "rootView!!.findViewById(R.id.drinkamount_tv_rh) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/viewholders/SelectDrinkViewHolder.kt:23:25",
+        "message": "data cannot be safely cast to Capacity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/viewholders/DailyDrinkViewHolder.kt:25:22",
+        "message": "data cannot be safely cast to Drink."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/viewholders/AlarmViewHolder.kt:24:27",
+        "message": "data cannot be safely cast to Alarm."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/NFCActivity.kt:77:70",
+        "message": "findViewById(R.id.nfc_edt01) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:44:47",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:72:25",
+        "message": "findViewById(R.id.mainactivity_viewpager) cannot be safely cast to ViewPager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:95:35",
+        "message": "rawMsgs[i] cannot be safely cast to NdefMessage."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:131:32",
+        "message": "getSystemService(Context.ALARM_SERVICE) cannot be safely cast to AlarmManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:142:19",
+        "message": "getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:116:40",
+        "message": "findViewById(R.id.panel_days) cannot be safely cast to LinearLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:118:50",
+        "message": "linearLayout.getChildAt(i) cannot be safely cast to ElasticCheckButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:27:25",
+        "message": "mContext.getSystemService(Context.ALARM_SERVICE) cannot be safely cast to AlarmManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/NotificationUtils.kt:40:35",
+        "message": "mContext.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/NetworkUtils.kt:16:22",
+        "message": "context\n                    .getSystemService(Context.CONNECTIVITY_SERVICE) cannot be safely cast to ConnectivityManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/intro/SlideFragment.kt:25:117",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:194:76",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:203:129",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/DailyDrinkAdapter.kt:35:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/DailyDrinkAdapter.kt:49:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/DailyDrinkAdapter.kt:53:81",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/SelectDrinkAdapter.kt:35:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/SelectDrinkAdapter.kt:39:81",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/AlarmFragmentAdapter.kt:30:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/AlarmFragmentAdapter.kt:34:81",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/customViews/MyMarkerView.kt:27:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/customViews/MyMarkerView.kt:31:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/viewholders/DailyDrinkViewHolder.kt:48:48",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/viewholders/AlarmViewHolder.kt:41:48",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ApplicationModule.kt:21:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ApplicationModule.kt:27:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ApplicationModule.kt:33:50",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/intro/SlideFragment.kt:30:9",
+        "message": "ARG_LAYOUT_RES_ID can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/SectionsPagerAdapter.kt:33:9",
+        "message": "COUNT_PAGERS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:92:9",
+        "message": "showMinutes can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/FillableLoaderPaths.kt:11:9",
+        "message": "SVG_WATERDROP can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:110:9",
+        "message": "DATABASE_VERSION can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:111:9",
+        "message": "DATABASE_NAME can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:113:9",
+        "message": "TABLE_RECORD can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:114:9",
+        "message": "TABLE_ALARM can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:115:9",
+        "message": "TABLE_CAPACITY can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceManager.kt:48:9",
+        "message": "preferenceKey can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/IntentExtras.kt:9:5",
+        "message": "ALARM_PENDING_REQUEST_CODE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/IntentExtras.kt:10:5",
+        "message": "ALARM_PENDING_REQUEST can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/IntentExtras.kt:11:5",
+        "message": "ALARM_PENDING_OCCUR_TIME can be a `const val`."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:220:1",
+        "message": "The file ChartFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:93:1",
+        "message": "The file AlarmFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:166:1",
+        "message": "The file DailyFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/EnvironmentFragment.kt:60:1",
+        "message": "The file EnvironmentFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/DailyDrinkAdapter.kt:56:1",
+        "message": "The file DailyDrinkAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/SectionsPagerAdapter.kt:35:1",
+        "message": "The file SectionsPagerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/SelectDrinkAdapter.kt:42:1",
+        "message": "The file SelectDrinkAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/customViews/MyMarkerView.kt:34:1",
+        "message": "The file MyMarkerView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/customViews/NumberPicker.kt:38:1",
+        "message": "The file NumberPicker.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/viewholders/SelectDrinkViewHolder.kt:37:1",
+        "message": "The file SelectDrinkViewHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/viewholders/DailyDrinkViewHolder.kt:51:1",
+        "message": "The file DailyDrinkViewHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetGoalActivity.kt:52:1",
+        "message": "The file SetGoalActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/NFCActivity.kt:125:1",
+        "message": "The file NFCActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SettingActivity.kt:22:1",
+        "message": "The file SettingActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetMyCupActivity.kt:36:1",
+        "message": "The file SetMyCupActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/intro/StartActivity.kt:80:1",
+        "message": "The file StartActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:94:1",
+        "message": "The file AlarmScreenActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:143:1",
+        "message": "The file MainActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:145:1",
+        "message": "The file SelectDrinkActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:144:1",
+        "message": "The file MakeAlarmActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:130:1",
+        "message": "The file AlarmUtils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/SetGoalPresenter.kt:54:1",
+        "message": "The file SetGoalPresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/SelectDrinkPresenter.kt:40:1",
+        "message": "The file SelectDrinkPresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/viewTypes/AlarmScreenActivityView.kt:13:1",
+        "message": "The file AlarmScreenActivityView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:117:1",
+        "message": "The file SqliteManager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:42:1",
+        "message": "The file LocalNames.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:203:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:79:25",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:144:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:153:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:65:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:107:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:108:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/NFCActivity.kt:43:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/NFCActivity.kt:77:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetLocalActivity.kt:60:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetLocalActivity.kt:66:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetWeightActivity.kt:40:188",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetWeightActivity.kt:50:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:34:174",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:55:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:132:174",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:54:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:104:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:108:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:128:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:51:86",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:102:162",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:104:169",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:109:140",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:110:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:111:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:128:186",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:37:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:56:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:57:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:65:187",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:67:184",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:68:192",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:75:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:79:182",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:80:188",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:90:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/NotificationUtils.kt:21:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/AlarmScreenPresenter.kt:48:35",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:10:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:19:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:23:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:83:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/sqlite/SqliteManager.kt:94:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:65:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:66:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:72:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:76:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:110:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:113:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:117:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:119:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:138:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:154:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:161:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:169:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:171:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:183:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:184:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:186:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:186:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:60:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:61:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:77:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:90:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:90:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:91:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:97:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:98:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:106:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:106:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:111:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:116:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/EnvironmentFragment.kt:40:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/EnvironmentFragment.kt:41:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/EnvironmentFragment.kt:41:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/SectionsPagerAdapter.kt:22:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/SectionsPagerAdapter.kt:23:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/customViews/NumberPicker.kt:34:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetWeightActivity.kt:29:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetWeightActivity.kt:40:136",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetWeightActivity.kt:40:142",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetWeightActivity.kt:40:172",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/intro/StartActivity.kt:42:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/intro/StartActivity.kt:43:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/intro/StartActivity.kt:44:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/intro/StartActivity.kt:45:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/intro/StartActivity.kt:46:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/intro/StartActivity.kt:47:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:45:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:59:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:59:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:60:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:67:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:73:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:76:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:76:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:77:91",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/alarm/AlarmScreenActivity.kt:86:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:84:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:85:12",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:132:96",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MainActivity.kt:132:103",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:87:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:88:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:88:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:127:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:56:12",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:60:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:82:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:83:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:83:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:80:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:81:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:82:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:83:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:94:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:95:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:96:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:97:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:98:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:43:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:44:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:68:111",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:68:118",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:75:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:80:107",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:80:114",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:95:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/NotificationUtils.kt:37:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/NotificationUtils.kt:41:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/NavigationUtils.kt:49:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/NavigationUtils.kt:57:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/IntentExtras.kt:9:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:12:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:14:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:16:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:18:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:20:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:14:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:16:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:18:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:20:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:22:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:24:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:26:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:28:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:30:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:32:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:34:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:36:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:38:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:14:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:16:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:18:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:20:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:22:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:24:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:26:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:28:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:30:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:32:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:34:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:36:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:38:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:69:37",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:73:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:73:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:97:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:102:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:116:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:116:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:176:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/ChartFragment.kt:176:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/AlarmFragment.kt:55:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:77:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:116:43",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:161:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/DailyFragment.kt:161:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:79:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:79:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:90:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:90:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/MainWaterFragment.kt:125:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/NFCActivity.kt:57:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetLocalActivity.kt:51:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetWeightActivity.kt:36:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetMyCupActivity.kt:28:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:77:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/SelectDrinkActivity.kt:127:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:109:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:112:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:119:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:58:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:60:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:62:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:64:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:66:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:68:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/DateUtils.kt:70:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:61:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:63:26",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/NetworkUtils.kt:24:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/SetGoalPresenter.kt:29:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:12:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:14:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:16:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:18:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:20:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:20:14",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:10:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:12:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:14:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:16:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:18:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:20:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:22:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:24:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:26:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:28:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:30:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:32:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:34:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:36:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:38:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:10:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:12:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:14:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:16:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:18:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:20:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:22:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:24:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:26:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:28:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:30:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:32:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:34:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:36:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:38:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/fragments/main/EnvironmentFragment.kt:11:1",
+        "message": "com.skydoves.waterdays.ui.activities.settings.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/adapters/SectionsPagerAdapter.kt:7:1",
+        "message": "com.skydoves.waterdays.ui.fragments.main.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/NFCActivity.kt:56:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/NFCActivity.kt:89:5",
+        "message": "Function writeTag has 7 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/presenters/SetGoalPresenter.kt:37:5",
+        "message": "Function checkGoalValid has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/CapacityDrawable.kt:11:5",
+        "message": "Function getLayout has 6 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalNames.kt:9:5",
+        "message": "Function getLocalName has 16 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/consts/LocalUrls.kt:9:5",
+        "message": "Function getLocalUrl has 16 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "ProtectedMemberInFinalClass",
+      "description": "Member with protected visibility in final class is private. Consider using private or internal as modifier.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/settings/SetBubbleColorActivity.kt:17:5",
+        "message": "Member with protected visibility in final class is private. Consider using private or internal as modifier."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:108:31",
+        "message": "Function parameter v is unused."
+      }]
+    }, {
+      "name": "UntilInsteadOfRangeTo",
+      "description": "'..' call can be replaced with 'until'",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/ui/activities/main/MakeAlarmActivity.kt:117:31",
+        "message": "'..' call can be replaced with 'until'"
+      }]
+    }, {
+      "name": "LoopWithTooManyJumpStatements",
+      "description": "The loop contains more than one break or continue statement. The code should be refactored to increase readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/AlarmUtils.kt:55:13",
+        "message": "The loop contains more than one break or continue statement. The code should be refactored to increase readability."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/utils/NotificationUtils.kt:9:1",
+        "message": "The import 'android.net.Uri' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceManager.kt:4:1",
+        "message": "The import 'android.content.SharedPreferences' is unused."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/models/Capacity.kt:5:1",
+        "message": "The class Capacity defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceKeys.kt:11:17",
+        "message": "Pair is created by using the pair constructor. This can replaced by `\"NEWBE\" to true`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceKeys.kt:12:25",
+        "message": "Pair is created by using the pair constructor. This can replaced by `\"INIT_CAPACITY\" to false`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceKeys.kt:13:22",
+        "message": "Pair is created by using the pair constructor. This can replaced by `\"WaterGoal\" to \"2000\"`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceKeys.kt:14:22",
+        "message": "Pair is created by using the pair constructor. This can replaced by `\"localIndex\" to 0`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceKeys.kt:15:24",
+        "message": "Pair is created by using the pair constructor. This can replaced by `\"MyCup\" to \"0\"`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceKeys.kt:16:25",
+        "message": "Pair is created by using the pair constructor. This can replaced by `\"setWeatherAlarm\" to false`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/skydoves-WaterDrink/app/src/main/java/com/skydoves/waterdays/persistence/preference/PreferenceKeys.kt:17:24",
+        "message": "Pair is created by using the pair constructor. This can replaced by `\"BUBBLE_COLOR\" to \"#1c9ade\"`"
+      }]
+    }]
+  }]
+}

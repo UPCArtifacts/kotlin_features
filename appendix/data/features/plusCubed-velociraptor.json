@@ -1,0 +1,1028 @@
+{
+  "complexity_metrics": {
+    "loc": 2758,
+    "sloc": 2274,
+    "lloc": 1667,
+    "cloc": 50,
+    "mcc": 356,
+    "n_smell": 282,
+    "comment_ratio": 2,
+    "mcc_per_thlines": 213
+  },
+  "metrics": {
+    "number_of_string": 146,
+    "number_of_string_template": 12,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 3,
+    "number_of_inferred_var": 217,
+    "number_of_objects_declarations": 16,
+    "number_of_companion_objects": 9,
+    "number_of_singletons": 1,
+    "number_of_declaration": 310,
+    "number_of_var_declaration": 317,
+    "number_of_func_call": 854,
+    "number_of_arguments": 869,
+    "number_of_parameters": 231,
+    "number_of_qualified_expressions": 1265,
+    "number_of_inheritances": 7,
+    "number_of_unsafe_calls": 66,
+    "number_of_safe_calls": 2,
+    "number_of_destructuring_declarations": 1,
+    "number_of_when_expressions": 5,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 14,
+    "number_of_named_argument": 29,
+    "number_of_argument_with_default_value": 9,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 1,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 65,
+    "number_of_possible_smart_casts": 1,
+    "number_of_data_class": 2,
+    "number_of_properties": 309,
+    "number_of_functions": 106,
+    "number_of_interfaces": 4,
+    "number_of_classes": 14,
+    "number_of_packages": 8,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 17
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:209:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:810:5",
+        "message": "The function invalidateStates is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:55:1",
+        "message": "Class SettingsActivity is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:36:1",
+        "message": "Class LimitService is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:209:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:810:5",
+        "message": "The function invalidateStates appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:49:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:74:5",
+        "message": "The function onStartCommand appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:226:5",
+        "message": "The function prequisitesMet appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmLimitProvider.kt:118:5",
+        "message": "The function getSpeedLimit appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/LimitFetcher.kt:55:5",
+        "message": "The function getSpeedLimit appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:55:1",
+        "message": "Class 'SettingsActivity' with '17' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:36:1",
+        "message": "Class 'LimitService' with '17' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmLimitProvider.kt:29:1",
+        "message": "Class 'OsmLimitProvider' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:157:28",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:171:70",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:224:33",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:227:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:231:38",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:234:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:238:35",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:240:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:246:44",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:276:24",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:307:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:323:44",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:324:44",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:326:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:330:54",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:355:56",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:356:44",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:359:33",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:363:54",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:400:42",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:402:46",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:409:37",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:411:46",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:419:36",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:421:46",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:427:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:437:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:444:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:448:40",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:511:51",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:513:69",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:515:44",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:529:36",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:564:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:632:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:695:54",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:698:29",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:766:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:790:48",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:116:51",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:120:54",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:141:43",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:145:48",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/App.kt:52:86",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/App.kt:57:39",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:237:48",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:270:50",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/cache/CacheLimitProvider.kt:53:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:274:13",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/raptor/RaptorService.kt:16:18",
+        "message": "The function getTomtom has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/raptor/RaptorService.kt:27:16",
+        "message": "The function getHere has too many parameters. The current threshold is set to 6."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyCatchBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:144:47",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:267:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:723:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:130:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:155:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/App.kt:58:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:192:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:291:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/cache/CacheLimitProvider.kt:94:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmLimitProvider.kt:110:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmLimitProvider.kt:186:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/raptor/RaptorLimitProvider.kt:147:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:193:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }, {
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmApiEndpoint.kt:9:17",
+        "message": "Exception is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmLimitProvider.kt:134:59",
+        "message": "Exception is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/raptor/RaptorLimitProvider.kt:21:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:650:26",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:167:35",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:57:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:60:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:63:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:65:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:67:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:69:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:71:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:73:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:76:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:80:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:83:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:85:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:88:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:90:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:93:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:95:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:98:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:100:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:103:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:105:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:108:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:111:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:113:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:115:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:118:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:120:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:122:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:124:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:127:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:129:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:131:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:133:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:136:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:140:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:143:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:145:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:148:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:150:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:153:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:163:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:45:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:60:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:168:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:195:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:203:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:204:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:255:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:488:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:502:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:519:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:559:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:614:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:617:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:619:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:622:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:673:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:681:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:697:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:719:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:64:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:67:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:73:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:75:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:94:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:100:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:109:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:115:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:124:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:125:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:140:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:149:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:150:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:171:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:189:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:190:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:201:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:203:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:217:68",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:245:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:254:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:259:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:263:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:284:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:96:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:98:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:107:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:134:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:139:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:141:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:186:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:269:60",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:278:55",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:317:68",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:329:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:341:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:366:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:378:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:382:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:434:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:434:61",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:440:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:444:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:453:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmLimitProvider.kt:107:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmLimitProvider.kt:247:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmLimitProvider.kt:264:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/raptor/RaptorLimitProvider.kt:134:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/LimitFetcher.kt:66:68",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:222:31",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:397:10",
+        "message": "showSpeedometerSwitch.parent cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:406:10",
+        "message": "showSpeedLimitsSwitch.parent cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:416:10",
+        "message": "debuggingSwitch.parent cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:53:23",
+        "message": "findViewById<View>(R.id.toolbar) cannot be safely cast to Toolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:58:28",
+        "message": "findViewById<View>(R.id.recyclerview) cannot be safely cast to RecyclerView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:63:21",
+        "message": "findViewById<View>(R.id.fastscroller) cannot be safely cast to RecyclerFastScroller."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:66:31",
+        "message": "findViewById<View>(R.id.swiperefresh) cannot be safely cast to SwipeRefreshLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:214:53",
+        "message": "mAppList cannot be safely cast to ArrayList<AppInfo>?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:215:57",
+        "message": "mMapApps cannot be safely cast to ArrayList<AppInfo>?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:274:24",
+        "message": "itemView.findViewById<View>(R.id.image_app) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:275:25",
+        "message": "itemView.findViewById<View>(R.id.text_name) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:276:24",
+        "message": "itemView.findViewById<View>(R.id.text_desc) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:277:28",
+        "message": "itemView.findViewById<View>(R.id.checkbox) cannot be safely cast to CheckBox."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:248:23",
+        "message": "getSystemService(Context.LOCATION_SERVICE) cannot be safely cast to LocationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:415:23",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:420:23",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:743:5",
+        "message": "Function onOptionsItemSelected has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:180:5",
+        "message": "Function onOptionsItemSelected has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:74:5",
+        "message": "Function onStartCommand has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:226:5",
+        "message": "Function prequisitesMet has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/cache/CacheLimitProvider.kt:48:5",
+        "message": "Function get has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmLimitProvider.kt:118:5",
+        "message": "Function getSpeedLimit has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/raptor/RaptorLimitProvider.kt:74:5",
+        "message": "Function getSpeedLimit has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:19:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:48:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:26:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:20:1",
+        "message": "com.google.android.gms.location.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:32:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/raptor/RaptorLimitProvider.kt:8:1",
+        "message": "com.pluscubed.velociraptor.api.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/raptor/RaptorService.kt:4:1",
+        "message": "retrofit2.http.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:519:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:812:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:817:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:822:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ProtectedMemberInFinalClass",
+      "description": "Member with protected visibility in final class is private. Consider using private or internal as modifier.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:163:5",
+        "message": "Member with protected visibility in final class is private. Consider using private or internal as modifier."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:45:5",
+        "message": "Member with protected visibility in final class is private. Consider using private or internal as modifier."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:60:5",
+        "message": "Member with protected visibility in final class is private. Consider using private or internal as modifier."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:327:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:340:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:360:71",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:373:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:547:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:836:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:841:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:127:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:272:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:351:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:351:72",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:351:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:352:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:352:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:354:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:373:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:375:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/cache/CacheLimitProvider.kt:124:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/cache/AppDatabase.kt:6:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmLimitProvider.kt:99:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/LimitFetcher.kt:40:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/LimitFetcher.kt:41:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/LimitFetcher.kt:42:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/LimitFetcher.kt:66:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:454:33",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:454:33",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/SettingsActivity.kt:708:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/App.kt:60:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:115:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:439:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:443:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:452:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/cache/CacheLimitProvider.kt:106:16",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmLimitProvider.kt:128:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmLimitProvider.kt:128:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/raptor/RaptorLimitProvider.kt:62:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/raptor/RaptorLimitProvider.kt:67:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/LimitFetcher.kt:75:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/LimitFetcher.kt:85:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/LimitFetcher.kt:107:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/LimitFetcher.kt:107:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:258:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/AppSelectionActivity.kt:262:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/settings/appselection/SelectedAppDatabase.kt:17:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/limit/LimitService.kt:64:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/osm/OsmApiEndpoint.kt:32:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/LimitFetcher.kt:51:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "RedundantVisibilityModifierRule",
+      "description": "Checks for redundant visibility modifiers. Public is the default visibility for classes. The public modifier is redundant.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/cache/CacheLimitProvider.kt:115:5",
+        "message": "clear is explicitly marked as public. Functions are public by default so this modifier is redundant."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/cache/Way.kt:56:1",
+        "message": "The file Way.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/cache/AppDatabase.kt:9:1",
+        "message": "The file AppDatabase.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/cache/WayDao.kt:34:1",
+        "message": "The file WayDao.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/LimitFetcher.kt:63:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/plusCubed-velociraptor/app/src/main/java/com/pluscubed/velociraptor/api/LimitResponse.kt:22:5",
+        "message": "The data class LimitResponse contains functions which are not registered conversion functions. The offending method is called initDebugInfo"
+      }]
+    }]
+  }]
+}

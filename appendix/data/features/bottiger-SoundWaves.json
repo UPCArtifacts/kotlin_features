@@ -1,0 +1,257 @@
+{
+  "complexity_metrics": {
+    "loc": 489,
+    "sloc": 350,
+    "lloc": 272,
+    "cloc": 90,
+    "mcc": 41,
+    "n_smell": 43,
+    "comment_ratio": 25,
+    "mcc_per_thlines": 150
+  },
+  "metrics": {
+    "number_of_string": 10,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 65,
+    "number_of_objects_declarations": 2,
+    "number_of_companion_objects": 1,
+    "number_of_singletons": 1,
+    "number_of_declaration": 80,
+    "number_of_var_declaration": 80,
+    "number_of_func_call": 100,
+    "number_of_arguments": 95,
+    "number_of_parameters": 28,
+    "number_of_qualified_expressions": 149,
+    "number_of_inheritances": 3,
+    "number_of_unsafe_calls": 1,
+    "number_of_safe_calls": 1,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 3,
+    "number_of_lambdas": 4,
+    "number_of_possible_smart_casts": 2,
+    "number_of_data_class": 0,
+    "number_of_properties": 80,
+    "number_of_functions": 15,
+    "number_of_interfaces": 0,
+    "number_of_classes": 6,
+    "number_of_packages": 6,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 7
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/model/search/SearchPodcast.kt:65:5",
+        "message": "Function editDistance is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "ThrowingExceptionsWithoutMessageOrCause",
+      "description": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/service/MediaBrowserHelper.kt:40:44",
+        "message": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionNaming",
+      "description": "Function names should follow the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/service/MediaBrowserHelper.kt:90:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/service/MediaBrowserHelper.kt:123:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/service/MediaBrowserHelper.kt:27:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/service/MediaBrowserHelper.kt:100:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/fragments/subscription/SubscriptionsViewModelFactory.kt:22:16",
+        "message": "SubscriptionsViewModel(application, library) cannot be safely cast to T."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/notification/NotificationChannels.kt:30:35",
+        "message": "argContext.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/notification/NotificationChannels.kt:48:35",
+        "message": "argContext.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/notification/NotificationChannels.kt:66:35",
+        "message": "argContext.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/model/search/SearchPodcast.kt:96:1",
+        "message": "The file SearchPodcast.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/service/MediaBrowserHelper.kt:154:1",
+        "message": "The file MediaBrowserHelper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/fragments/subscription/SubscriptionsViewModelFactory.kt:24:1",
+        "message": "The file SubscriptionsViewModelFactory.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/fragments/subscription/SubscriptionsViewModel.kt:79:3",
+        "message": "The file SubscriptionsViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/activities/feedview/FeedActivityViewModel.kt:18:1",
+        "message": "The file FeedActivityViewModel.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/model/search/SearchPodcast.kt:6:50",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SearchPodcast."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/model/search/SearchPodcast.kt:42:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/notification/NotificationChannels.kt:21:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/notification/NotificationChannels.kt:37:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/notification/NotificationChannels.kt:53:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/model/search/SearchPodcast.kt:6:1",
+        "message": "The import 'org.bottiger.podcast.provider.Subscription' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/service/MediaBrowserHelper.kt:19:1",
+        "message": "The import 'org.bottiger.podcast.views.PlaylistScrollerParent' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/service/MediaBrowserHelper.kt:20:1",
+        "message": "The import 'javax.inject.Inject' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/fragments/subscription/SubscriptionsViewModel.kt:7:1",
+        "message": "The import 'android.arch.lifecycle.MutableLiveData' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/fragments/subscription/SubscriptionsViewModel.kt:8:1",
+        "message": "The import 'android.support.v7.util.SortedList' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/model/SubscriptionViewModel.kt:3:1",
+        "message": "The import 'android.app.Application' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/model/SubscriptionViewModel.kt:6:1",
+        "message": "The import 'android.arch.lifecycle.MutableLiveData' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/model/SubscriptionViewModel.kt:7:1",
+        "message": "The import 'android.content.SharedPreferences' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/model/SubscriptionViewModel.kt:8:1",
+        "message": "The import 'android.support.v7.util.SortedList' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/model/SubscriptionViewModel.kt:10:1",
+        "message": "The import 'org.bottiger.podcast.provider.IEpisode' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/model/SubscriptionViewModel.kt:11:1",
+        "message": "The import 'org.bottiger.podcast.provider.ISubscription' is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/model/search/SearchPodcast.kt:41:84",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/fragments/subscription/SubscriptionsViewModelFactory.kt:21:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/notification/NotificationChannels.kt:77:62",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/model/search/SearchPodcast.kt:77:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/model/search/SearchPodcast.kt:82:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/model/search/SearchPodcast.kt:90:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/service/MediaBrowserHelper.kt:36:9",
+        "message": "Function parseMediaId has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/service/MediaBrowserHelper.kt:55:9",
+        "message": "Function calcMediaId has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/service/MediaBrowserHelper.kt:103:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/fragments/subscription/SubscriptionsViewModelFactory.kt:8:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/kotlin/org/bottiger/podcast/model/SubscriptionViewModel.kt:28:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bottiger-SoundWaves/app/src/main/java/org/bottiger/podcast/service/MediaBrowserHelper.kt:37:81",
+        "message": "Parentheses around the lambda ({ it.isEmpty() }) are unnecessary and can be removed."
+      }]
+    }]
+  }]
+}

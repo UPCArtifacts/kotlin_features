@@ -1,0 +1,158 @@
+{
+  "complexity_metrics": {
+    "loc": 209,
+    "sloc": 167,
+    "lloc": 96,
+    "cloc": 1,
+    "mcc": 29,
+    "n_smell": 20,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 302
+  },
+  "metrics": {
+    "number_of_string": 8,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 10,
+    "number_of_objects_declarations": 0,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 14,
+    "number_of_var_declaration": 14,
+    "number_of_func_call": 49,
+    "number_of_arguments": 65,
+    "number_of_parameters": 35,
+    "number_of_qualified_expressions": 66,
+    "number_of_inheritances": 7,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 2,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 1,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 14,
+    "number_of_functions": 19,
+    "number_of_interfaces": 0,
+    "number_of_classes": 7,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 5
+  },
+  "findings": [{
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSDict.kt:20:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSSearchAdapter.kt:30:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "TopLevelPropertyNaming",
+      "description": "Top level property names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSDatabase.kt:8:1",
+        "message": "Private top level property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSDict.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSSuggestionProvider.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSDict.kt:58:29",
+        "message": "getSystemService(Context.SEARCH_SERVICE) cannot be safely cast to SearchManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSDict.kt:59:26",
+        "message": "menu.findItem(R.id.search).actionView cannot be safely cast to SearchView."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSSuggestionProvider.kt:31:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSSuggestionProvider.kt:31:141",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSSuggestionProvider.kt:35:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSSuggestionProvider.kt:39:114",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSSuggestionProvider.kt:43:91",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSSuggestionProvider.kt:47:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSSearchAdapter.kt:14:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "RedundantVisibilityModifierRule",
+      "description": "Checks for redundant visibility modifiers. Public is the default visibility for classes. The public modifier is redundant.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSSuggestionProvider.kt:23:1",
+        "message": "LSSuggestionProvider is explicitly marked as public. Public is the default visibility for classes. The public modifier is redundant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSDatabase.kt:10:1",
+        "message": "LSDatabase is explicitly marked as public. Public is the default visibility for classes. The public modifier is redundant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSDatabase.kt:15:5",
+        "message": "search is explicitly marked as public. Functions are public by default so this modifier is redundant."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSSearchAdapter.kt:20:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSDatabase.kt:8:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ids1024-lsdict-android/src/main/kotlin/com/ids1024/lsdict/LSDatabase.kt:8:1",
+        "message": "DB_VERSION can be a `const val`."
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,186 @@
+{
+  "complexity_metrics": {
+    "loc": 412,
+    "sloc": 317,
+    "lloc": 202,
+    "cloc": 19,
+    "mcc": 54,
+    "n_smell": 27,
+    "comment_ratio": 5,
+    "mcc_per_thlines": 267
+  },
+  "metrics": {
+    "number_of_string": 15,
+    "number_of_string_template": 2,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 6,
+    "number_of_inferred_var": 46,
+    "number_of_objects_declarations": 2,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 47,
+    "number_of_var_declaration": 48,
+    "number_of_func_call": 159,
+    "number_of_arguments": 155,
+    "number_of_parameters": 46,
+    "number_of_qualified_expressions": 227,
+    "number_of_inheritances": 7,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 1,
+    "number_of_destructuring_declarations": 1,
+    "number_of_when_expressions": 5,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 1,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 4,
+    "number_of_properties_delegation": 2,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 19,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 46,
+    "number_of_functions": 27,
+    "number_of_interfaces": 0,
+    "number_of_classes": 8,
+    "number_of_packages": 2,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 6
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/MainActivity.kt:23:1",
+        "message": "Class 'MainActivity' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ContextUtil.kt:24:60",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ContextUtil.kt:32:60",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "MatchingDeclarationName",
+      "description": "If a source file contains only a single non-private top-level class or object, the file name should reflect the case-sensitive name plus the .kt extension.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ShellUtil.kt:1:1",
+        "message": "The file name 'ShellUtil.kt' does not match the name of the single top-level declaration 'SELinuxState'."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ContextUtil.kt:77:31",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ContextUtil.kt:97:31",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/ShortcutActivity.kt:39:35",
+        "message": "getSystemService(Context.SHORTCUT_SERVICE) cannot be safely cast to ShortcutManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/MainActivity.kt:15:1",
+        "message": "com.mrbimc.selinux.util.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/ShortcutActivity.kt:8:1",
+        "message": "com.mrbimc.selinux.util.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/SELinuxBroadcastReceiver.kt:7:1",
+        "message": "com.mrbimc.selinux.util.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/MainActivity.kt:126:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/MainActivity.kt:132:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/MainActivity.kt:138:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ContextUtil.kt:48:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ContextUtil.kt:51:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ContextUtil.kt:54:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ContextUtil.kt:57:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/ShortcutActivity.kt:28:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/ShortcutActivity.kt:31:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/MainActivity.kt:52:23",
+        "message": "Function parameter v is unused."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ShellUtil.kt:45:1",
+        "message": "The file ShellUtil.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ContextUtil.kt:107:1",
+        "message": "The file ContextUtil.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/Constants.kt:14:44",
+        "message": "The file Constants.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ShellUtil.kt:10:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ShellUtil.kt:10:96",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/util/ContextUtil.kt:80:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-SELinuxModeChanger/app/src/main/java/com/mrbimc/selinux/SELinuxBroadcastReceiver.kt:26:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }]
+  }]
+}

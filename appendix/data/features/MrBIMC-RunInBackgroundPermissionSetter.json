@@ -1,0 +1,96 @@
+{
+  "complexity_metrics": {
+    "loc": 330,
+    "sloc": 258,
+    "lloc": 174,
+    "cloc": 11,
+    "mcc": 42,
+    "n_smell": 7,
+    "comment_ratio": 4,
+    "mcc_per_thlines": 241
+  },
+  "metrics": {
+    "number_of_string": 9,
+    "number_of_string_template": 4,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 2,
+    "number_of_inferred_var": 30,
+    "number_of_objects_declarations": 3,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 29,
+    "number_of_var_declaration": 32,
+    "number_of_func_call": 140,
+    "number_of_arguments": 114,
+    "number_of_parameters": 48,
+    "number_of_qualified_expressions": 198,
+    "number_of_inheritances": 3,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 1,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 2,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 2,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 21,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 1,
+    "number_of_properties": 28,
+    "number_of_functions": 24,
+    "number_of_interfaces": 0,
+    "number_of_classes": 8,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 4
+  },
+  "findings": [{
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-RunInBackgroundPermissionSetter/app/src/main/java/com/pavelsikun/runinbackgroundpermissionsetter/MainActivity.kt:123:28",
+        "message": "getSystemService(Activity.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-RunInBackgroundPermissionSetter/app/src/main/java/com/pavelsikun/runinbackgroundpermissionsetter/MainActivity.kt:37:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-RunInBackgroundPermissionSetter/app/src/main/java/com/pavelsikun/runinbackgroundpermissionsetter/MainActivity.kt:112:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-RunInBackgroundPermissionSetter/app/src/main/java/com/pavelsikun/runinbackgroundpermissionsetter/MainActivity.kt:117:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-RunInBackgroundPermissionSetter/app/src/main/java/com/pavelsikun/runinbackgroundpermissionsetter/AppListAdapter.kt:106:1",
+        "message": "The file AppListAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-RunInBackgroundPermissionSetter/app/src/main/java/com/pavelsikun/runinbackgroundpermissionsetter/ShellUtil.kt:40:1",
+        "message": "The file ShellUtil.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/MrBIMC-RunInBackgroundPermissionSetter/app/src/main/java/com/pavelsikun/runinbackgroundpermissionsetter/AppItem.kt:8:117",
+        "message": "The file AppItem.kt is not ending with a new line."
+      }]
+    }]
+  }]
+}

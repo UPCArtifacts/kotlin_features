@@ -1,0 +1,900 @@
+{
+  "complexity_metrics": {
+    "loc": 1943,
+    "sloc": 1569,
+    "lloc": 1123,
+    "cloc": 77,
+    "mcc": 263,
+    "n_smell": 249,
+    "comment_ratio": 4,
+    "mcc_per_thlines": 234
+  },
+  "metrics": {
+    "number_of_string": 123,
+    "number_of_string_template": 2,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 149,
+    "number_of_objects_declarations": 7,
+    "number_of_companion_objects": 1,
+    "number_of_singletons": 0,
+    "number_of_declaration": 194,
+    "number_of_var_declaration": 194,
+    "number_of_func_call": 634,
+    "number_of_arguments": 685,
+    "number_of_parameters": 115,
+    "number_of_qualified_expressions": 931,
+    "number_of_inheritances": 11,
+    "number_of_unsafe_calls": 157,
+    "number_of_safe_calls": 3,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 5,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 1,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 8,
+    "number_of_lambdas": 33,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 194,
+    "number_of_functions": 95,
+    "number_of_interfaces": 0,
+    "number_of_classes": 13,
+    "number_of_packages": 4,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 11
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:67:1",
+        "message": "Class MapsFragment is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:488:5",
+        "message": "The function getMarkerIcon appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:296:28",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:381:66",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:358:55",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:272:56",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:328:63",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:435:46",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:277:63",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:966:9",
+        "message": "Function doInBackground is nested too deeply."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:67:1",
+        "message": "Class 'MapsFragment' with '43' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/MainActivity.kt:44:1",
+        "message": "Class 'MainActivity' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/MainActivity.kt:266:55",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/MainActivity.kt:291:51",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/DonateActivity.kt:51:54",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/MainActivity.kt:146:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/SettingsFragment.kt:26:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/SettingsFragment.kt:35:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/SettingsFragment.kt:36:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/SettingsFragment.kt:38:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/SettingsFragment.kt:39:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/SettingsFragment.kt:72:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/SettingsFragment.kt:78:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/SettingsFragment.kt:78:77",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/SettingsFragment.kt:82:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:160:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:162:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:163:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:164:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:169:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:170:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:175:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:176:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:177:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:179:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:179:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:181:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:191:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:198:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:200:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:202:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:219:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:230:79",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:257:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:260:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:262:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:267:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:272:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:277:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:317:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:328:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:331:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:332:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:334:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:350:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:358:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:359:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:367:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:367:48",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:370:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:370:48",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:381:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:396:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:402:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:420:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:420:60",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:429:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:434:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:435:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:437:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:482:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:483:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:521:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:526:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:595:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:597:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:598:46",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:599:46",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:600:53",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:601:54",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:602:51",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:603:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:605:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:607:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:614:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:622:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:624:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:631:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:639:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:641:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:648:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:656:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:658:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:665:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:675:53",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:676:54",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:677:51",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:678:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:680:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:681:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:682:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:690:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:696:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:698:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:703:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:704:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:705:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:713:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:719:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:721:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:728:56",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:729:56",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:730:62",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:732:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:733:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:736:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:737:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:740:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:746:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:749:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:755:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:760:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:761:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:764:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:765:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:773:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:774:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:785:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:790:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:791:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:793:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:809:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:821:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:822:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:823:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:830:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:833:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:840:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:852:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:853:47",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:854:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:862:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:866:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:869:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:877:58",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:878:57",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:881:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:889:57",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:898:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:924:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:927:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:938:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:956:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:957:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:967:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:975:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:984:51",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:1006:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:1010:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:1011:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/clustering/IconRenderer.kt:17:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/clustering/IconRenderer.kt:17:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/clustering/IconRenderer.kt:20:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/clustering/IconRenderer.kt:21:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/clustering/ClusterPoint.kt:18:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/clustering/ClusterPoint.kt:18:47",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/MainActivity.kt:110:66",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/MainActivity.kt:238:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/DonateActivity.kt:21:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/DonateActivity.kt:22:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/DonateActivity.kt:58:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/DonateActivity.kt:74:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/DonateActivity.kt:77:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/SettingsFragment.kt:29:26",
+        "message": "findPreference(\"navBar\") cannot be safely cast to CheckBoxPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/SettingsFragment.kt:67:28",
+        "message": "findPreference(\"language\") cannot be safely cast to ListPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/SettingsFragment.kt:70:45",
+        "message": "newValue cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/MainActivity.kt:67:13",
+        "message": "applicationContext.getSystemService(Context.CONNECTIVITY_SERVICE) cannot be safely cast to ConnectivityManager."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:76:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/SettingsFragment.kt:15:36",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SettingsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/AboutFragment.kt:18:60",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AboutFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Application.kt:1:35",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/clustering/IconRenderer.kt:8:70",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of IconRenderer."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/clustering/ClusterPoint.kt:6:46",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ClusterPoint."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/MainActivity.kt:39:53",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of the class or object."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/DonateActivity.kt:10:56",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of DonateActivity."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:992:25",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:82:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:226:16",
+        "message": "Parentheses in (location.latitude in 39.420..39.515) are unnecessary and can be replaced with: location.latitude in 39.420..39.515"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:226:57",
+        "message": "Parentheses in (location.longitude in -0.572..-0.272) are unnecessary and can be replaced with: location.longitude in -0.572..-0.272"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:82:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:86:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:181:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:226:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:226:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:226:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:226:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:256:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:256:84",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:260:82",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:262:82",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:288:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:498:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:499:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:499:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:505:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:506:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:506:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:540:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:585:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:795:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:826:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:857:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:858:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:926:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:969:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:969:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:981:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/AboutFragment.kt:39:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/AboutFragment.kt:50:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/AboutFragment.kt:62:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/AboutFragment.kt:80:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/AboutFragment.kt:100:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/AboutFragment.kt:116:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/AboutFragment.kt:128:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/AboutFragment.kt:150:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/AboutFragment.kt:160:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/AboutFragment.kt:172:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:103:14",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:225:59",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/AboutFragment.kt:187:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/clustering/ClusterPoint.kt:26:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/clustering/ClusterPoint.kt:30:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/clustering/ClusterPoint.kt:34:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/ContextWrapper.kt:42:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/ContextWrapper.kt:47:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:340:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/MainActivity.kt:239:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "ForbiddenVoid",
+      "description": "`Unit` should be used instead of `Void`.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:915:46",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:915:52",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:921:52",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:961:48",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:961:54",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/Fragments/MapsFragment.kt:966:52",
+        "message": "'Void' should be replaced with 'Unit'."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/clustering/IconRenderer.kt:24:1",
+        "message": "The file IconRenderer.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/ContextWrapper.kt:60:1",
+        "message": "The file ContextWrapper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/SplashActivity.kt:15:1",
+        "message": "The file SplashActivity.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/BikeStation.kt:10:1",
+        "message": "The class BikeStation defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/MainActivity.kt:140:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/systemallica-ValenBisi/app/src/main/java/com/systemallica/valenbisi/activities/DonateActivity.kt:8:1",
+        "message": "com.android.billingclient.api.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }]
+  }]
+}

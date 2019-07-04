@@ -1,0 +1,751 @@
+{
+  "complexity_metrics": {
+    "loc": 2297,
+    "sloc": 1422,
+    "lloc": 956,
+    "cloc": 600,
+    "mcc": 319,
+    "n_smell": 193,
+    "comment_ratio": 42,
+    "mcc_per_thlines": 333
+  },
+  "metrics": {
+    "number_of_string": 102,
+    "number_of_string_template": 3,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 2,
+    "number_of_inferred_var": 137,
+    "number_of_objects_declarations": 10,
+    "number_of_companion_objects": 8,
+    "number_of_singletons": 0,
+    "number_of_declaration": 194,
+    "number_of_var_declaration": 194,
+    "number_of_func_call": 638,
+    "number_of_arguments": 652,
+    "number_of_parameters": 206,
+    "number_of_qualified_expressions": 642,
+    "number_of_inheritances": 18,
+    "number_of_unsafe_calls": 9,
+    "number_of_safe_calls": 32,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 14,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 2,
+    "number_of_named_argument": 2,
+    "number_of_argument_with_default_value": 3,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 2,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 1,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 85,
+    "number_of_possible_smart_casts": 1,
+    "number_of_data_class": 0,
+    "number_of_properties": 194,
+    "number_of_functions": 99,
+    "number_of_interfaces": 1,
+    "number_of_classes": 24,
+    "number_of_packages": 4,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 19
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/MainActivity.kt:179:5",
+        "message": "The function tagDiscovered appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:90:5",
+        "message": "The function onActivityCreated appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:270:9",
+        "message": "The function getView appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/MainActivity.kt:200:27",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:137:25",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:130:71",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SetPasswordFragment.kt:66:60",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/MainActivity.kt:88:5",
+        "message": "Function onResume is nested too deeply."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/MainActivity.kt:39:1",
+        "message": "Class 'MainActivity' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:55:1",
+        "message": "Class 'ListCodesFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:46:1",
+        "message": "Class 'YubiKeyNeo' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:259:5",
+        "message": "Object 'Companion' with '11' functions detected. Defined threshold inside objects is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:130:30",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SetPasswordFragment.kt:66:18",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "RethrowCaughtException",
+      "description": "Do not rethrow a caught exception of the same type.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/test/java/com/yubico/yubioath/fragments/AddAccountFragmentTest.kt:73:17",
+        "message": "Do not rethrow a caught exception of the same type."
+      }]
+    }, {
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:176:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:338:17",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:260:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:261:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:295:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:298:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:357:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/CredentialData.kt:14:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/CredentialData.kt:15:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/MainActivity.kt:46:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/MainActivity.kt:47:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/RequirePasswordDialog.kt:64:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:72:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:73:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AboutFragment.kt:63:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SetPasswordFragment.kt:57:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SetPasswordFragment.kt:60:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:279:26",
+        "message": "convertView.tag cannot be safely cast to CodeAdapterViewHolder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:285:18",
+        "message": "view cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:351:33",
+        "message": "activity.clipboardManager cannot be safely cast to ClipboardManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:89:18",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:114:18",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:129:40",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:162:14",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AboutFragment.kt:115:14",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SetPasswordFragment.kt:65:28",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SetPasswordFragment.kt:79:18",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SetPasswordFragment.kt:141:18",
+        "message": "activity cannot be safely cast to MainActivity."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:100:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:103:14",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:141:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AboutFragment.kt:70:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SetPasswordFragment.kt:69:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SetPasswordFragment.kt:86:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SetPasswordFragment.kt:87:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SetPasswordFragment.kt:114:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SwipeListFragment.kt:65:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/test/java/com/yubico/yubioath/fragments/AddAccountFragmentTest.kt:34:1",
+        "message": "The import 'org.junit.Before' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/test/java/com/yubico/yubioath/fragments/AddAccountFragmentTest.kt:39:1",
+        "message": "The import 'org.junit.Assert.assertEquals' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/test/java/com/yubico/yubioath/fragments/AddAccountFragmentTest.kt:42:1",
+        "message": "The import 'android.net.Uri' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:33:1",
+        "message": "The import 'android.content.DialogInterface' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:34:1",
+        "message": "The import 'android.net.Uri' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:36:1",
+        "message": "The import 'android.support.v4.app.DialogFragment' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:38:1",
+        "message": "The import 'android.support.v4.app.FragmentTransaction' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:43:1",
+        "message": "The import 'android.widget.EditText' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:44:1",
+        "message": "The import 'android.widget.Spinner' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:45:1",
+        "message": "The import 'android.widget.TextView' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:46:1",
+        "message": "The import 'android.widget.Toast' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:54:1",
+        "message": "The import 'java.io.IOException' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AboutFragment.kt:41:1",
+        "message": "The import 'android.widget.Button' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AboutFragment.kt:42:1",
+        "message": "The import 'android.widget.TextView' is unused."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/MainActivity.kt:37:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:39:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:43:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:53:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:56:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SetPasswordFragment.kt:46:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:33:1",
+        "message": "com.yubico.yubioath.exc.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/MainActivity.kt:96:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "ModifierOrder",
+      "description": "Modifier order should be: private const",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/MainActivity.kt:42:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/MainActivity.kt:43:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/RequirePasswordDialog.kt:50:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/RequirePasswordDialog.kt:51:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:65:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:66:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:67:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:69:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:262:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:264:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:265:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:266:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:267:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:268:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:269:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:270:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:271:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:272:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:273:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:275:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:276:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:277:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:278:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:280:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:281:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:282:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:283:9",
+        "message": "Modifier order should be: private const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:284:9",
+        "message": "Modifier order should be: private const"
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/DummyListCodesFragment.kt:12:117",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:86:117",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:251:77",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SwipeListFragment.kt:99:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:307:80",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:260:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:299:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SwipeListFragment.kt:47:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/EnableNfcDialog.kt:57:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:295:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:315:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:353:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:361:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/exc/PasswordRequiredException.kt:33:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/exc/UnsupportedAppletException.kt:33:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:100:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:145:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:145:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:145:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:160:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:320:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:335:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:166:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AddAccountFragment.kt:166:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AboutFragment.kt:61:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AboutFragment.kt:90:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AboutFragment.kt:110:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/AboutFragment.kt:110:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:61:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:75:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:104:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:143:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:162:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:163:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:164:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:165:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:166:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:201:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:202:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:203:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:204:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:243:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:314:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:314:78",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:315:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:315:86",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:353:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:353:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:353:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:353:91",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:353:98",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:353:108",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:353:123",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:353:130",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:361:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:361:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:361:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:361:91",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:361:98",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:361:108",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:361:123",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:361:130",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:363:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:383:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:383:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/KeyManager.kt:126:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/KeyManager.kt:126:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/CredentialData.kt:37:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/CredentialData.kt:37:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/CredentialData.kt:55:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/ListCodesFragment.kt:310:5",
+        "message": "The class CodeAdapterViewHolder defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/CredentialData.kt:6:1",
+        "message": "The class CredentialData defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/fragments/SwipeListFragment.kt:91:9",
+        "message": "Function getItem has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/KeyManager.kt:102:9",
+        "message": "Function calculateSecret has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:353:24",
+        "message": "Parentheses in (intData[1] shl 24) are unnecessary and can be replaced with: intData[1] shl 24"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:353:48",
+        "message": "Parentheses in (intData[2] and 0xff) are unnecessary and can be replaced with: intData[2] and 0xff"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:353:82",
+        "message": "Parentheses in (intData[3] and 0xff) are unnecessary and can be replaced with: intData[3] and 0xff"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:361:24",
+        "message": "Parentheses in (intData[1] shl 24) are unnecessary and can be replaced with: intData[1] shl 24"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:361:48",
+        "message": "Parentheses in (intData[2] and 0xff) are unnecessary and can be replaced with: intData[2] and 0xff"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:361:82",
+        "message": "Parentheses in (intData[3] and 0xff) are unnecessary and can be replaced with: intData[3] and 0xff"
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:265:9",
+        "message": "Private property NAME_LIST_TAG is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:271:9",
+        "message": "Private property PROPERTY_TAG is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:278:9",
+        "message": "Private property RESET_INS is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:280:9",
+        "message": "Private property LIST_INS is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:363:18",
+        "message": "Private property i is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:134:35",
+        "message": "Function parameter remember is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:303:34",
+        "message": "Function parameter version is unused."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/YubiKeyNeo.kt:357:9",
+        "message": "STEAM_CHARS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/KeyManager.kt:100:9",
+        "message": "KEY can be a `const val`."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/KeyManager.kt:140:1",
+        "message": "The file KeyManager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Yubico-yubioath-android/app/src/main/java/com/yubico/yubioath/model/CredentialData.kt:73:1",
+        "message": "The file CredentialData.kt is not ending with a new line."
+      }]
+    }]
+  }]
+}

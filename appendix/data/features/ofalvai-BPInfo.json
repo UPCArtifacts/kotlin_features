@@ -1,0 +1,714 @@
+{
+  "complexity_metrics": {
+    "loc": 6225,
+    "sloc": 3822,
+    "lloc": 2595,
+    "cloc": 1373,
+    "mcc": 759,
+    "n_smell": 174,
+    "comment_ratio": 35,
+    "mcc_per_thlines": 292
+  },
+  "metrics": {
+    "number_of_string": 349,
+    "number_of_string_template": 24,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 13,
+    "number_of_inferred_var": 421,
+    "number_of_objects_declarations": 32,
+    "number_of_companion_objects": 21,
+    "number_of_singletons": 7,
+    "number_of_declaration": 538,
+    "number_of_var_declaration": 546,
+    "number_of_func_call": 1415,
+    "number_of_arguments": 1360,
+    "number_of_parameters": 446,
+    "number_of_qualified_expressions": 1920,
+    "number_of_inheritances": 26,
+    "number_of_unsafe_calls": 9,
+    "number_of_safe_calls": 82,
+    "number_of_destructuring_declarations": 2,
+    "number_of_when_expressions": 23,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 5,
+    "number_of_named_argument": 12,
+    "number_of_argument_with_default_value": 1,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 13,
+    "number_of_properties_delegation": 35,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 13,
+    "number_of_lambdas": 98,
+    "number_of_possible_smart_casts": 10,
+    "number_of_data_class": 3,
+    "number_of_properties": 536,
+    "number_of_functions": 341,
+    "number_of_interfaces": 24,
+    "number_of_classes": 54,
+    "number_of_packages": 22,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 57
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/settings/AboutActivity.kt:44:61",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/adapter/AlertAdapter.kt:50:40",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/settings/SettingsActivity.kt:41:1",
+        "message": "Class 'SettingsActivity' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:47:1",
+        "message": "Class 'AlertListFragment' with '29' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListContract.kt:27:5",
+        "message": "Interface 'View' with '13' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListPresenter.kt:48:1",
+        "message": "Class 'AlertListPresenter' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsPresenter.kt:29:1",
+        "message": "Class 'NotificationsPresenter' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsActivity.kt:57:1",
+        "message": "Class 'NotificationsActivity' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/Utils.kt:1:1",
+        "message": "File 'Utils.kt' with '17' functions detected. Defined threshold inside files is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/Analytics.kt:29:1",
+        "message": "Object 'Analytics' with '18' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/BkkInfoClient.kt:51:1",
+        "message": "Class 'BkkInfoClient' with '17' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:47:1",
+        "message": "Class AlertListFragment is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/BkkInfoClient.kt:51:1",
+        "message": "Class BkkInfoClient is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexInterface",
+      "description": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListContract.kt:27:5",
+        "message": "The interface View is too complex. Consider splitting it up."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/Utils.kt:155:1",
+        "message": "The function formatDate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/BkkInfoClient.kt:402:5",
+        "message": "The function parseRouteType appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/BkkInfoClient.kt:419:5",
+        "message": "The function parseRouteColors appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/RouteListClient.kt:124:5",
+        "message": "The function parseRouteType appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/notifications/DescriptionMaker.kt:140:5",
+        "message": "The function numberPostfixHu appears to be too complex."
+      }]
+    }, {
+      "name": "MethodOverloading",
+      "description": "Methods which are overloaded often might be harder to maintain. Furthermore, these methods are tightly coupled. Refactor these methods and try to use optional parameters.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/injection/AppComponent.kt:28:1",
+        "message": "This method is overloaded too many times."
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkfutar/FutarApiClient.kt:221:5",
+        "message": "The function parseAlert is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/BkkInfoClient.kt:265:5",
+        "message": "The function parseAlertDetail is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/notice/NoticeClient.kt:76:5",
+        "message": "Function onResponseCallback is nested too deeply."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/BkkInfoClient.kt:493:24",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/BkkInfoClient.kt:299:50",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/BkkInfoClient.kt:445:28",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/BkkInfoClient.kt:242:39",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/BkkInfoClient.kt:196:48",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkfutar/FutarApiClient.kt:123:30",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/notice/NoticeClient.kt:104:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/BkkInfoClient.kt:158:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/BkkInfoClient.kt:170:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/notifications/NotificationMaker.kt:68:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/adapter/AlertListPagerAdapter.kt:56:67",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:97:67",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/Analytics.kt:142:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "EnumNaming",
+      "description": "Enum names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/model/RouteType.kt:29:5",
+        "message": "Enum entry names should match the pattern: ^[A-Z][_a-zA-Z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/BpInfoApplication.kt:43:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/BpInfoApplication.kt:47:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/settings/SettingsActivity.kt:55:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alert/AlertDetailFragment.kt:70:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:67:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:69:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:71:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/dialog/NoticeFragment.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListPresenter.kt:52:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListPresenter.kt:55:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListPresenter.kt:58:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListPresenter.kt:61:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListActivity.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsPresenter.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsPresenter.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsActivity.kt:59:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsActivity.kt:68:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/routelist/RouteListFragment.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/routelist/RouteListFragment.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/routelist/RouteListFragment.kt:46:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/notifications/TokenUploadJobService.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/notifications/AlertMessagingService.kt:42:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/BpInfoApplication.kt:124:13",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/settings/SettingsActivity.kt:194:17",
+        "message": "findPreference(getString(R.string.pref_key_category_notifications)) cannot be safely cast to PreferenceCategory."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alert/AlertDetailFragment.kt:100:21",
+        "message": "arguments?.getSerializable(ARG_ALERT_OBJECT) cannot be safely cast to Alert."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alert/AlertDetailFragment.kt:104:21",
+        "message": "savedInstanceState.getSerializable(ARG_ALERT_OBJECT) cannot be safely cast to Alert."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alert/AlertDetailFragment.kt:143:22",
+        "message": "super.onCreateDialog(savedInstanceState) cannot be safely cast to BottomSheetDialog."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alert/AlertDetailFragment.kt:182:55",
+        "message": "animation.animatedValue cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alert/AlertDetailFragment.kt:194:41",
+        "message": "animation.animatedValue cannot be safely cast to Float."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alert/AlertDetailFragment.kt:199:47",
+        "message": "animation.animatedValue cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:88:29",
+        "message": "savedInstanceState.getSerializable(KEY_ALERT_LIST_TYPE) cannot be safely cast to AlertListType."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:89:30",
+        "message": "savedInstanceState.getSerializable(KEY_ACTIVE_FILTER) cannot be safely cast to MutableSet<RouteType>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:108:34",
+        "message": "requireFragmentManager().findFragmentByTag(FILTER_DIALOG_TAG) cannot be safely cast to AlertFilterFragment?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:140:22",
+        "message": "presenter.getFilter() cannot be safely cast to HashSet<RouteType>?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:166:41",
+        "message": "activity!! cannot be safely cast to AlertListActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:184:28",
+        "message": "activity cannot be safely cast to AppCompatActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:221:18",
+        "message": "activity!! cannot be safely cast to AlertListActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:290:24",
+        "message": "manager.findFragmentByTag(AlertDetailFragment.FRAGMENT_TAG) cannot be safely cast to AlertDetailFragment?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:299:24",
+        "message": "manager.findFragmentByTag(AlertDetailFragment.FRAGMENT_TAG) cannot be safely cast to AlertDetailFragment?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:409:18",
+        "message": "alertRecyclerView.layoutManager cannot be safely cast to LinearLayoutManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/adapter/AlertListPagerAdapter.kt:51:24",
+        "message": "super.instantiateItem(container, position) cannot be safely cast to Fragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/dialog/AlertFilterFragment.kt:93:29",
+        "message": "getSerializable(KEY_ALERT_LIST_TYPE) cannot be safely cast to AlertListType."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsActivity.kt:234:22",
+        "message": "iconView.layoutParams cannot be safely cast to ViewGroup.MarginLayoutParams."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/routelist/RouteListFragment.kt:65:17",
+        "message": "savedInstanceState.getSerializable(KEY_ROUTE_TYPE) cannot be safely cast to RouteType."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:92:24",
+        "message": "super.instantiateItem(container, position) cannot be safely cast to Fragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/Utils.kt:144:14",
+        "message": "getSystemService(Context.CONNECTIVITY_SERVICE) cannot be safely cast to ConnectivityManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/Utils.kt:251:18",
+        "message": "iconView.layoutParams cannot be safely cast to ViewGroup.MarginLayoutParams."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/Analytics.kt:52:31",
+        "message": "context\n            .getSystemService(Context.ACTIVITY_SERVICE) cannot be safely cast to ActivityManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/Analytics.kt:59:33",
+        "message": "context\n            .getSystemService(Context.USAGE_STATS_SERVICE) cannot be safely cast to UsageStatsManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/notifications/NotificationMaker.kt:60:13",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:166:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:221:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/dialog/AlertFilterFragment.kt:134:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/dialog/AlertFilterFragment.kt:134:46",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/dialog/AlertFilterFragment.kt:136:58",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/dialog/AlertFilterFragment.kt:152:65",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListPresenter.kt:114:63",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListPresenter.kt:189:59",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/Utils.kt:283:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/settings/LicensesActivity.kt:40:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/settings/SettingsActivity.kt:230:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alert/AlertDetailFragment.kt:116:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/adapter/AlertAdapter.kt:84:91",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/adapter/AlertAdapter.kt:88:94",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListPresenter.kt:170:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsActivity.kt:72:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/routelist/adapter/RouteAdapter.kt:45:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:74:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/LocaleManager.kt:32:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/Utils.kt:86:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/injection/AppModule.kt:35:48",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/injection/AppModule.kt:41:81",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/model/Route.kt:54:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/BkkInfoClient.kt:324:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/notifications/AlertMessagingService.kt:104:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/settings/SettingsActivity.kt:25:1",
+        "message": "android.preference.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alert/AlertDetailFragment.kt:43:1",
+        "message": "com.ofalvai.bpinfo.util.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:28:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListFragment.kt:42:1",
+        "message": "com.ofalvai.bpinfo.util.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/Utils.kt:37:1",
+        "message": "com.android.volley.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/settings/SettingsActivity.kt:49:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/settings/SettingsActivity.kt:50:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/base/BasePresenter.kt:42:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/LocaleManager.kt:28:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkfutar/FutarApiClient.kt:210:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/settings/SettingsActivity.kt:17:39",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListPresenter.kt:45:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AlertListPresenter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/Config.kt:19:48",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of Config."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/settings/SettingsActivity.kt:249:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/settings/SettingsActivity.kt:249:25",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alert/AlertDetailFragment.kt:144:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/dialog/NoticeFragment.kt:45:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alert/AlertDetailFragment.kt:173:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alert/AlertDetailFragment.kt:178:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/dialog/AlertFilterFragment.kt:111:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/dialog/AlertFilterFragment.kt:112:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/dialog/AlertFilterFragment.kt:113:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsActivity.kt:252:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:51:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:52:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:53:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:54:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:65:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:66:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:67:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:68:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:83:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:84:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:85:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/adapter/RouteListPagerAdapter.kt:86:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/LocaleManager.kt:50:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/Utils.kt:220:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/Utils.kt:220:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/dialog/AlertFilterFragment.kt:132:30",
+        "message": "Function parameter dialogInterface is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/dialog/AlertFilterFragment.kt:132:64",
+        "message": "Function parameter which is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/subscription/SubscriptionClient.kt:38:5",
+        "message": "Private property sharedPreferences is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkinfo/RouteListClient.kt:124:53",
+        "message": "Function parameter shortName is unused."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/alertlist/AlertListPresenter.kt:216:5",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsActivity.kt:269:40",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/subscription/SubscriptionClient.kt:38:54",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsPresenter.kt:134:1",
+        "message": "The file NotificationsPresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsContract.kt:48:1",
+        "message": "The file NotificationsContract.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/base/BaseActivity.kt:29:1",
+        "message": "The file BaseActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/util/LocaleManager.kt:72:1",
+        "message": "The file LocaleManager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/model/RouteSubscription.kt:19:68",
+        "message": "The file RouteSubscription.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkfutar/RouteContract.kt:37:1",
+        "message": "The file RouteContract.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/notifications/TokenUploadJobService.kt:73:1",
+        "message": "The file TokenUploadJobService.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/notifications/NotificationMaker.kt:73:1",
+        "message": "The file NotificationMaker.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsActivity.kt:105:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/ui/notifications/NotificationsActivity.kt:108:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "SerialVersionUIDInSerializableClass",
+      "description": "A class which implements the Serializable interface does not define a correct serialVersionUID field. The serialVersionUID field should be a constant long value inside a companion object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/model/Alert.kt:21:1",
+        "message": "The class Alert implements the Serializable interface and should thus define a serialVersionUID."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/model/Route.kt:23:1",
+        "message": "The class Route implements the Serializable interface and should thus define a serialVersionUID."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/AlertListMessage.kt:21:1",
+        "message": "The class AlertListMessage defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/AlertListErrorMessage.kt:19:1",
+        "message": "The class AlertListErrorMessage defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/AlertRequestParams.kt:21:1",
+        "message": "The class AlertRequestParams defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "TrailingWhitespace",
+      "description": "Checks which lines end with a whitespace.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/api/bkkfutar/RouteContract.kt:20:5",
+        "message": "Line 20 ends with a whitespace."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ofalvai-BPInfo/app/src/main/java/com/ofalvai/bpinfo/notifications/DescriptionMaker.kt:95:5",
+        "message": "Function makeRouteLineHu has 3 return statements which exceeds the limit of 2."
+      }]
+    }]
+  }]
+}

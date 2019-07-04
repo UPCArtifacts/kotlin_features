@@ -1,0 +1,1806 @@
+{
+  "complexity_metrics": {
+    "loc": 5896,
+    "sloc": 4738,
+    "lloc": 3430,
+    "cloc": 158,
+    "mcc": 1029,
+    "n_smell": 525,
+    "comment_ratio": 3,
+    "mcc_per_thlines": 300
+  },
+  "metrics": {
+    "number_of_string": 337,
+    "number_of_string_template": 37,
+    "number_of_inline_func": 5,
+    "number_of_inferred_fun": 21,
+    "number_of_inferred_var": 544,
+    "number_of_objects_declarations": 30,
+    "number_of_companion_objects": 20,
+    "number_of_singletons": 5,
+    "number_of_declaration": 895,
+    "number_of_var_declaration": 895,
+    "number_of_func_call": 1620,
+    "number_of_arguments": 1944,
+    "number_of_parameters": 702,
+    "number_of_qualified_expressions": 2265,
+    "number_of_inheritances": 49,
+    "number_of_unsafe_calls": 89,
+    "number_of_safe_calls": 62,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 16,
+    "number_of_functions_with_default_value": 24,
+    "number_of_function_call_with_named_value": 10,
+    "number_of_named_argument": 28,
+    "number_of_argument_with_default_value": 37,
+    "number_of_overloaded_op": 3,
+    "number_of_extension_function": 2,
+    "number_of_properties_delegation": 112,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 105,
+    "number_of_possible_smart_casts": 5,
+    "number_of_data_class": 3,
+    "number_of_properties": 895,
+    "number_of_functions": 497,
+    "number_of_interfaces": 14,
+    "number_of_classes": 86,
+    "number_of_packages": 19,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 58
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:30:5",
+        "message": "The function reconnect appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:88:5",
+        "message": "The function draw appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:89:9",
+        "message": "The function getAppliedValue appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:58:5",
+        "message": "The function restore appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:264:9",
+        "message": "The function create appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:49:5",
+        "message": "The function applyWindowToken appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:19:1",
+        "message": "Class 'ProxyImpl' with '17' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:18:1",
+        "message": "Class 'PreferenceImpl' with '48' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IPreferenceProvider.kt:8:1",
+        "message": "Interface 'IPreferenceProvider' with '33' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/SharedPreferenceDataStore.kt:6:1",
+        "message": "Class 'SharedPreferenceDataStore' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:24:1",
+        "message": "Class 'BlurWallpaperProvider' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:13:1",
+        "message": "Class 'BlurDrawable' with '21' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/BackupListActivity.kt:20:1",
+        "message": "Class 'BackupListActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:15:1",
+        "message": "Class 'LawnfeedClient' with '23' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/ILauncherClient.kt:10:1",
+        "message": "Interface 'ILauncherClient' with '13' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:16:1",
+        "message": "Class 'LauncherClientImpl' with '19' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:18:1",
+        "message": "Class PreferenceImpl is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:24:1",
+        "message": "Class BlurWallpaperProvider is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:13:1",
+        "message": "Class BlurDrawable is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:15:1",
+        "message": "Class LawnfeedClient is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:16:1",
+        "message": "Class LauncherClientImpl is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "MethodOverloading",
+      "description": "Methods which are overloaded often might be harder to maintain. Furthermore, these methods are tightly coupled. Refactor these methods and try to use optional parameters.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:18:1",
+        "message": "This method is overloaded too many times."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:18:1",
+        "message": "This method is overloaded too many times."
+      }]
+    }, {
+      "name": "ComplexInterface",
+      "description": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IPreferenceProvider.kt:8:1",
+        "message": "The interface IPreferenceProvider is too complex. Consider splitting it up."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/EditableItemInfo.kt:9:1",
+        "message": "The interface EditableItemInfo is too complex. Consider splitting it up."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/ILauncherClient.kt:10:1",
+        "message": "The interface ILauncherClient is too complex. Consider splitting it up."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/theme/IAllAppsThemer.kt:3:1",
+        "message": "The interface IAllAppsThemer is too complex. Consider splitting it up."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/ThemerImpl.kt:19:13",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/ThemerImpl.kt:28:13",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:158:13",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:172:17",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:113:5",
+        "message": "The function upscaleToScreenSize is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:63:42",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:29:5",
+        "message": "Function readMeta is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:58:5",
+        "message": "Function restore is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:264:9",
+        "message": "Function create is nested too deeply."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/AllAppsIconRowView.kt:85:70",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyCatchBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/dt2s/DoubleTapGesture.kt:59:38",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/dt2s/DoubleTapGesture.kt:60:47",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/GestureController.kt:25:36",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:94:46",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:107:46",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:199:46",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:212:46",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:60:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/GestureController.kt:25:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/AwarenessWeatherAPI.kt:59:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:58:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:70:30",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:44:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:52:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:101:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:109:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:308:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "ReturnFromFinally",
+      "description": "Do not return within a finally statement. This can discard exceptions.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:50:17",
+        "message": "Do not return within a finally statement. This can discard exceptions."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:107:17",
+        "message": "Do not return within a finally statement. This can discard exceptions."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:315:17",
+        "message": "Do not return within a finally statement. This can discard exceptions."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:83:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:87:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:223:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:227:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IPreferenceProvider.kt:66:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IPreferenceProvider.kt:67:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IPreferenceProvider.kt:177:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IPreferenceProvider.kt:178:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/GestureController.kt:13:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/FeatureFlags.kt:121:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/FeatureFlags.kt:122:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/FeatureFlags.kt:123:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/WeatherIconProvider.kt:38:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMinLength",
+      "description": "Function names should not be shorter than the minimum defined in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:426:9",
+        "message": "Function names should be at least 3 characters long."
+      }]
+    }, {
+      "name": "FunctionNaming",
+      "description": "Function names should follow the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:426:9",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/popup/MainItemView.kt:17:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/HiddenAppsFragment.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/HiddenAppsFragment.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/AllAppsIconRowView.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/AllAppsIconRowView.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/launcherclient/src/main/java/ch/deletescape/lawnchair/launcherclient/WindowLayoutParams.kt:8:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:42:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/LauncherClientProxyService.kt:24:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/anim/SpringAnimationHandler.kt:75:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/anim/SpringAnimationHandler.kt:95:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/HiddenAppsFragment.kt:48:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/HiddenAppsFragment.kt:50:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/HiddenAppsFragment.kt:56:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/HiddenAppsFragment.kt:71:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/HiddenAppsFragment.kt:75:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:19:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:354:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:431:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IconPackPreference.kt:76:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/SeekbarPreference.kt:25:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/SeekbarPreference.kt:47:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/SeekbarPreference.kt:48:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/SeekbarPreference.kt:52:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/SeekbarPreference.kt:65:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/SeekbarPreference.kt:65:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/ThemerImpl.kt:23:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/ThemerImpl.kt:33:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/AdaptiveIconProvider.kt:38:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:118:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:119:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:121:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:133:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:133:66",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:135:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:140:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:155:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:156:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:173:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:174:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:188:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:189:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:192:65",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:198:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:199:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:200:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:201:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:234:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/WeatherIconProvider.kt:21:70",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:245:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/RestoreBackupActivity.kt:105:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:50:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:165:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:169:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:173:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:177:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:181:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:190:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:204:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:206:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:206:59",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:209:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:211:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:213:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:223:55",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:290:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:295:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:295:55",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:299:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:327:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:354:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:59:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:65:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:65:51",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:67:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:67:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:67:57",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:70:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:72:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:74:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:111:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:116:55",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:127:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:141:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:153:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:165:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:254:47",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:255:55",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:261:61",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:287:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:299:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:351:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:356:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:356:55",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:360:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:388:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/anim/SpringAnimationHandler.kt:19:31",
+        "message": "view.getTag(R.id.spring_animation_key) cannot be safely cast to SpringAnimation?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/anim/SpringAnimationHandler.kt:30:31",
+        "message": "view.getTag(R.id.spring_animation_key) cannot be safely cast to SpringAnimation."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/BitSetPreference.kt:24:13",
+        "message": "i cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/BitSetPreference.kt:33:43",
+        "message": "i cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/BitSetPreference.kt:34:24",
+        "message": "entries[index] cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceProvider.kt:17:16",
+        "message": "preferenceIMPL cannot be safely cast to IPreferenceProvider."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/DrawableUtils.kt:55:20",
+        "message": "methodInflateFromXml\n                    .invoke(drawableInflater, parser.name, parser, attrs, theme) cannot be safely cast to Drawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/ThemeProvider.kt:15:16",
+        "message": "themerIMPL cannot be safely cast to IThemer."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:16:27",
+        "message": "context.getDrawable(R.drawable.launcher_clock_background) cannot be safely cast to Drawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:17:24",
+        "message": "context.getDrawable(R.drawable.launcher_clock) cannot be safely cast to LayerDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:18:21",
+        "message": "originalIcon.getDrawable(1) cannot be safely cast to RotateDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:19:23",
+        "message": "originalIcon.getDrawable(2) cannot be safely cast to RotateDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:20:23",
+        "message": "originalIcon.getDrawable(3) cannot be safely cast to RotateDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:21:20",
+        "message": "Calendar.getInstance() cannot be safely cast to Calendar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/dt2s/DoubleTapGesture.kt:83:39",
+        "message": "launcher.getSystemService(Context.DEVICE_POLICY_SERVICE) cannot be safely cast to DevicePolicyManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:88:46",
+        "message": "mWallpaperManager.drawable cannot be safely cast to BitmapDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:114:18",
+        "message": "context.getSystemService(Context.WINDOW_SERVICE) cannot be safely cast to WindowManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:23:23",
+        "message": "obj cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/BackupListActivity.kt:114:59",
+        "message": "null cannot be safely cast to String?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:291:25",
+        "message": "msg.obj cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:352:25",
+        "message": "msg.obj cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/AllAppsIconRowView.kt:38:60",
+        "message": "null cannot be safely cast to DragView?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/AllAppsIconRowView.kt:87:66",
+        "message": "icon.tag cannot be safely cast to ItemInfo."
+      }]
+    }, {
+      "name": "UnconditionalJumpStatementInLoop",
+      "description": "An unconditional jump statement in a loop is useless. The loop itself is only executed once.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:37:17",
+        "message": "This loop contains an unconditional jump expression which essentially renders it useless as it will exit the loop during the first iteration."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:231:1",
+        "message": "The file ProxyImpl.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/anim/SpringAnimationHandler.kt:113:1",
+        "message": "The file SpringAnimationHandler.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/popup/theme/PopupCardTheme.kt:12:1",
+        "message": "The file PopupCardTheme.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/popup/theme/IPopupThemer.kt:10:1",
+        "message": "The file IPopupThemer.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/popup/theme/PopupBaseTheme.kt:12:1",
+        "message": "The file PopupBaseTheme.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/popup/MainItemView.kt:48:1",
+        "message": "The file MainItemView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/BitSetPreference.kt:49:1",
+        "message": "The file BitSetPreference.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/HiddenAppsFragment.kt:81:1",
+        "message": "The file HiddenAppsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceProvider.kt:19:1",
+        "message": "The file PreferenceProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/GoogleNowPreference.kt:24:1",
+        "message": "The file GoogleNowPreference.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceFlags.kt:134:1",
+        "message": "The file PreferenceFlags.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IPreferenceProvider.kt:190:1",
+        "message": "The file IPreferenceProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/ResourceUtils.kt:69:1",
+        "message": "The file ResourceUtils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/DrawableUtils.kt:62:78",
+        "message": "The file DrawableUtils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/ThemerImpl.kt:35:1",
+        "message": "The file ThemerImpl.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/IThemer.kt:11:1",
+        "message": "The file IThemer.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/ThemeProvider.kt:17:1",
+        "message": "The file ThemeProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/AdaptiveIconProvider.kt:41:1",
+        "message": "The file AdaptiveIconProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/dt2s/SleepDeviceAdmin.kt:14:1",
+        "message": "The file SleepDeviceAdmin.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/GestureHandler.kt:8:1",
+        "message": "The file GestureHandler.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/AwarenessWeatherAPI.kt:115:1",
+        "message": "The file AwarenessWeatherAPI.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/OWMWeatherAPI.kt:46:1",
+        "message": "The file OWMWeatherAPI.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/WeatherAPI.kt:60:1",
+        "message": "The file WeatherAPI.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/EditableItemInfo.kt:22:1",
+        "message": "The file EditableItemInfo.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/BackupBaseActivity.kt:49:1",
+        "message": "The file BackupBaseActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/BackupListAdapter.kt:152:1",
+        "message": "The file BackupListAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/ILauncherClient.kt:65:1",
+        "message": "The file ILauncherClient.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/AllAppsIconRowView.kt:91:1",
+        "message": "The file AllAppsIconRowView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/theme/AllAppsVerticalTheme.kt:11:1",
+        "message": "The file AllAppsVerticalTheme.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/theme/IAllAppsThemer.kt:22:1",
+        "message": "The file IAllAppsThemer.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/theme/AllAppsBaseTheme.kt:60:1",
+        "message": "The file AllAppsBaseTheme.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/launcherclient/src/main/java/ch/deletescape/lawnchair/launcherclient/WindowLayoutParams.kt:38:1",
+        "message": "The file WindowLayoutParams.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/launcherclient/src/main/java/ch/deletescape/lawnchair/launcherclient/LauncherClientProxyConnection.kt:16:1",
+        "message": "The file LauncherClientProxyConnection.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:3:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/HiddenAppsFragment.kt:9:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IconPackPreference.kt:14:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:6:1",
+        "message": "android.graphics.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:7:1",
+        "message": "android.graphics.drawable.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:6:1",
+        "message": "android.graphics.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:4:1",
+        "message": "android.graphics.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:14:1",
+        "message": "ch.deletescape.lawnchair.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:17:1",
+        "message": "java.io.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:3:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:5:1",
+        "message": "android.os.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:3:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:7:1",
+        "message": "android.os.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/AllAppsIconRowView.kt:10:1",
+        "message": "ch.deletescape.lawnchair.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:216:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/ApiKeyPreference.kt:27:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:47:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:51:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:83:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:87:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:145:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:161:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:184:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:367:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:379:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:391:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:403:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:415:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:447:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IconPackPreference.kt:19:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IconPackPreference.kt:95:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IconPackPreference.kt:120:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IconPackPreference.kt:125:141",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/SeekbarPreference.kt:11:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceFlags.kt:5:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/CustomLocationPreference.kt:43:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/ResourceUtils.kt:13:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/ResourceUtils.kt:14:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/ResourceUtils.kt:21:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/ResourceUtils.kt:22:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/ResourceUtils.kt:33:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/DrawableUtils.kt:18:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/DrawableUtils.kt:21:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/DrawableUtils.kt:29:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/DrawableUtils.kt:46:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/FeatureFlags.kt:121:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/FeatureFlags.kt:122:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/FeatureFlags.kt:123:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/AdaptiveIconProvider.kt:17:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/dt2s/SleepTimeoutActivity.kt:14:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/dt2s/DoubleTapGesture.kt:89:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/dt2s/DoubleTapGesture.kt:90:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/GestureController.kt:24:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:13:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/WeatherAPI.kt:57:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:46:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:47:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:69:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:99:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:230:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:16:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:47:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:427:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/AllAppsIconRowView.kt:87:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/theme/AllAppsVerticalTheme.kt:10:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/theme/AllAppsBaseTheme.kt:14:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/theme/AllAppsBaseTheme.kt:16:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/theme/AllAppsBaseTheme.kt:23:140",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:207:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/anim/SpringAnimationHandler.kt:40:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/anim/SpringAnimationHandler.kt:83:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/anim/SpringAnimationHandler.kt:88:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/BitSetPreference.kt:14:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:43:101",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:191:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:192:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:200:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/SeekbarPreference.kt:21:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/SeekbarPreference.kt:31:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/SeekbarPreference.kt:35:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/SeekbarPreference.kt:58:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/SeekbarPreference.kt:58:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/AdaptiveIconProvider.kt:21:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/AdaptiveIconProvider.kt:32:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:20:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:30:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:32:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:32:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:33:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:33:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:33:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:34:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:34:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:34:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:57:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:103:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:135:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/dt2s/SleepTimeoutActivity.kt:13:111",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/dt2s/DoubleTapGesture.kt:27:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:34:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:35:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:39:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:67:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:91:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:253:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:253:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:286:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:50:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:104:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:169:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:169:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:170:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:170:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:214:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/AwarenessWeatherAPI.kt:20:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/AwarenessWeatherAPI.kt:20:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:93:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:99:103",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:99:111",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:292:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/RestoreBackupActivity.kt:71:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/RestoreBackupActivity.kt:191:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:20:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:103:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:118:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:199:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:208:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:289:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:298:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:319:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:23:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:60:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:69:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:208:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:223:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:350:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:359:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:380:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:418:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/theme/AllAppsBaseTheme.kt:23:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/theme/AllAppsBaseTheme.kt:23:135",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:33:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:36:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:155:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:161:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:166:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:225:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/ProxyImpl.kt:227:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/anim/SpringAnimationHandler.kt:51:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/anim/SpringAnimationHandler.kt:55:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/anim/SpringAnimationHandler.kt:84:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/anim/SpringAnimationHandler.kt:84:25",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/popup/MainItemView.kt:29:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/popup/MainItemView.kt:29:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/BitSetPreference.kt:25:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/BitSetPreference.kt:33:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/ApiKeyPreference.kt:28:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/ApiKeyPreference.kt:28:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceProvider.kt:15:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:433:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/GoogleNowPreference.kt:16:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/GoogleNowPreference.kt:18:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/GoogleNowPreference.kt:20:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/ResourceUtils.kt:8:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/ResourceUtils.kt:8:5",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/ResourceUtils.kt:45:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/ResourceUtils.kt:45:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/ThemerImpl.kt:19:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/FeatureFlags.kt:110:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/ThemeProvider.kt:13:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:42:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:38:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:252:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:120:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:207:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:207:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:236:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:242:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:253:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:264:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:271:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/AwarenessWeatherAPI.kt:73:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/AwarenessWeatherAPI.kt:75:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/AwarenessWeatherAPI.kt:77:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/AwarenessWeatherAPI.kt:79:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/AwarenessWeatherAPI.kt:81:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/AwarenessWeatherAPI.kt:83:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/AwarenessWeatherAPI.kt:85:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/WeatherAPI.kt:46:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/BackupBaseActivity.kt:28:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/RestoreBackupActivity.kt:31:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/RestoreBackupActivity.kt:31:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/BackupListActivity.kt:111:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/BackupListActivity.kt:111:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/ILauncherClient.kt:30:59",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/ILauncherClient.kt:30:59",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/AllAppsIconRowView.kt:77:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/lawnfeed/src/main/java/ch/deletescape/lawnchair/lawnfeed/LauncherClientProxyService.kt:9:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/popup/MainItemView.kt:24:71",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/popup/MainItemView.kt:45:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/HiddenAppsFragment.kt:28:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/HiddenAppsFragment.kt:62:74",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/ApiKeyPreference.kt:22:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:33:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:37:59",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:54:68",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:65:62",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:73:69",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:94:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:98:55",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:109:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:115:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:119:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:123:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:127:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:137:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:147:61",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:223:82",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:286:69",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:294:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:302:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:310:63",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:318:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:322:55",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:422:46",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IconPackPreference.kt:132:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IconPackPreference.kt:136:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IconPackPreference.kt:140:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/CustomLocationPreference.kt:38:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/DrawableUtils.kt:28:61",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/FeatureFlags.kt:95:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:87:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:186:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:190:48",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/dt2s/SleepDeviceAdmin.kt:11:85",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/GestureController.kt:13:76",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/GestureController.kt:17:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:237:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:241:85",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurWallpaperProvider.kt:296:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:221:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/AwarenessWeatherAPI.kt:67:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:102:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/launcherclient/src/main/java/ch/deletescape/lawnchair/launcherclient/WindowLayoutParams.kt:29:75",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/launcherclient/src/main/java/ch/deletescape/lawnchair/launcherclient/WindowLayoutParams.kt:33:70",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "ModifierOrder",
+      "description": "Modifier order should be: private open inner",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:365:5",
+        "message": "Modifier order should be: private open inner"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:377:5",
+        "message": "Modifier order should be: private open inner"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:389:5",
+        "message": "Modifier order should be: private open inner"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:401:5",
+        "message": "Modifier order should be: private open inner"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:413:5",
+        "message": "Modifier order should be: private open inner"
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceImpl.kt:306:5",
+        "message": "Private function setFloat is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:197:13",
+        "message": "Private property VERSION_INDEX is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/launcherclient/src/main/java/ch/deletescape/lawnchair/launcherclient/LauncherClientProxyConnection.kt:6:9",
+        "message": "Private property context is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/launcherclient/src/main/java/ch/deletescape/lawnchair/launcherclient/LauncherClientProxyConnection.kt:7:9",
+        "message": "Private property proxyPackage is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/launcherclient/src/main/java/ch/deletescape/lawnchair/launcherclient/LauncherClientProxyConnection.kt:8:9",
+        "message": "Private property overlayEnabled is unused."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IconPackPreference.kt:58:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/PreferenceFlags.kt:5:5",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/IconPackPreference.kt:102:5",
+        "message": "The class IconPackInfo defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/launcherclient/src/main/java/ch/deletescape/lawnchair/launcherclient/LauncherClientProxyConnection.kt:5:1",
+        "message": "The class LauncherClientProxyConnection defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/preferences/SeekbarPreference.kt:51:24",
+        "message": "Parentheses in ((current - min) / ((max - min) / steps)) are unnecessary and can be replaced with: (current - min) / ((max - min) / steps)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/ThemerImpl.kt:20:17",
+        "message": "Parentheses in (useVerticalLayout && allAppsTheme !is AllAppsVerticalTheme) are unnecessary and can be replaced with: useVerticalLayout && allAppsTheme !is AllAppsVerticalTheme"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/ThemerImpl.kt:21:17",
+        "message": "Parentheses in (!useVerticalLayout && allAppsTheme is AllAppsVerticalTheme) are unnecessary and can be replaced with: !useVerticalLayout && allAppsTheme is AllAppsVerticalTheme"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/ThemerImpl.kt:29:17",
+        "message": "Parentheses in (useCardTheme && popupTheme !is PopupCardTheme) are unnecessary and can be replaced with: useCardTheme && popupTheme !is PopupCardTheme"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/config/ThemerImpl.kt:30:17",
+        "message": "Parentheses in (!useCardTheme && popupTheme !is PopupBaseTheme) are unnecessary and can be replaced with: !useCardTheme && popupTheme !is PopupBaseTheme"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:33:49",
+        "message": "Parentheses in (secondLevel / 60) are unnecessary and can be replaced with: secondLevel / 60"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:34:45",
+        "message": "Parentheses in (minuteLevel / 12) are unnecessary and can be replaced with: minuteLevel / 12"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/ClockIconDrawable.kt:168:39",
+        "message": "Parentheses in (width * scale) are unnecessary and can be replaced with: width * scale"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:57:24",
+        "message": "Parentheses in (systemResField.get(null) === Resources.getSystem() && configResId != 0) are unnecessary and can be replaced with: systemResField.get(null) === Resources.getSystem() && configResId != 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/BackupListActivity.kt:87:21",
+        "message": "Parentheses in (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) are unnecessary and can be replaced with: grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/NewBackupActivity.kt:120:21",
+        "message": "Parentheses in (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) are unnecessary and can be replaced with: grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED"
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/BlankActivity.kt:4:25",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of BlankActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/DrawableUtils.kt:9:45",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of DrawableUtils."
+      }]
+    }, {
+      "name": "UtilityClassWithPublicConstructor",
+      "description": "The class declaration is unnecessary because it only contains utility functions. An object declaration should be used instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/util/DrawableUtils.kt:13:1",
+        "message": "The class DrawableUtils only contains utility functions. Consider defining it as an object."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/pixelify/AdaptiveIconProvider.kt:11:1",
+        "message": "The class AdaptiveIconProvider only contains utility functions. Consider defining it as an object."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/gestures/dt2s/DoubleTapGesture.kt:34:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/RestoreBackupActivity.kt:66:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/BackupListActivity.kt:86:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/blur/BlurDrawable.kt:151:5",
+        "message": "Function prepare has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/weather/AwarenessWeatherAPI.kt:71:5",
+        "message": "Function getWeatherIcon has 8 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:49:9",
+        "message": "Function isSupported has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:128:9",
+        "message": "Function restore has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LawnfeedClient.kt:283:9",
+        "message": "Function handleMessage has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/ILauncherClient.kt:42:9",
+        "message": "Function getEnabledState has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/overlay/LauncherClientImpl.kt:344:9",
+        "message": "Function handleMessage has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/allapps/theme/AllAppsBaseTheme.kt:18:5",
+        "message": "Function iconTextColor has 4 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "VarCouldBeVal",
+      "description": "Var declaration could be val.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/graphics/IconShapeOverride.kt:96:13",
+        "message": "Variable 'iconShape' could be val."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/BackupListAdapter.kt:4:1",
+        "message": "The import 'android.net.Uri' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/RestoreBackupActivity.kt:6:1",
+        "message": "The import 'android.net.Uri' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/BackupListActivity.kt:16:1",
+        "message": "The import 'ch.deletescape.lawnchair.DumbImportExportTask' is unused."
+      }]
+    }, {
+      "name": "LoopWithTooManyJumpStatements",
+      "description": "The loop contains more than one break or continue statement. The code should be refactored to increase readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:37:17",
+        "message": "The loop contains more than one break or continue statement. The code should be refactored to increase readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:72:17",
+        "message": "The loop contains more than one break or continue statement. The code should be refactored to increase readability."
+      }]
+    }, {
+      "name": "ForbiddenVoid",
+      "description": "`Unit` should be used instead of `Void`.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:164:46",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:164:52",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/LawnchairBackup.kt:166:56",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/RestoreBackupActivity.kt:144:77",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/RestoreBackupActivity.kt:144:83",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/RestoreBackupActivity.kt:158:52",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/NewBackupActivity.kt:153:76",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/NewBackupActivity.kt:153:82",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/LawnchairLauncher-Lawnchair/app/src/main/java/ch/deletescape/lawnchair/backup/NewBackupActivity.kt:166:52",
+        "message": "'Void' should be replaced with 'Unit'."
+      }]
+    }]
+  }]
+}

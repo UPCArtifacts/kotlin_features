@@ -1,0 +1,713 @@
+{
+  "complexity_metrics": {
+    "loc": 3689,
+    "sloc": 1976,
+    "lloc": 1300,
+    "cloc": 1197,
+    "mcc": 445,
+    "n_smell": 182,
+    "comment_ratio": 60,
+    "mcc_per_thlines": 342
+  },
+  "metrics": {
+    "number_of_string": 159,
+    "number_of_string_template": 18,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 106,
+    "number_of_inferred_var": 142,
+    "number_of_objects_declarations": 25,
+    "number_of_companion_objects": 9,
+    "number_of_singletons": 16,
+    "number_of_declaration": 203,
+    "number_of_var_declaration": 203,
+    "number_of_func_call": 1121,
+    "number_of_arguments": 1019,
+    "number_of_parameters": 421,
+    "number_of_qualified_expressions": 1187,
+    "number_of_inheritances": 33,
+    "number_of_unsafe_calls": 46,
+    "number_of_safe_calls": 37,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 13,
+    "number_of_functions_with_default_value": 19,
+    "number_of_function_call_with_named_value": 10,
+    "number_of_named_argument": 26,
+    "number_of_argument_with_default_value": 33,
+    "number_of_overloaded_op": 2,
+    "number_of_extension_function": 27,
+    "number_of_properties_delegation": 44,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 198,
+    "number_of_possible_smart_casts": 3,
+    "number_of_data_class": 6,
+    "number_of_properties": 203,
+    "number_of_functions": 262,
+    "number_of_interfaces": 0,
+    "number_of_classes": 45,
+    "number_of_packages": 17,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 59
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/AppPaths.kt:25:1",
+        "message": "Object 'AppPaths' with '19' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/extensions/VpnServiceBuilder.kt:26:1",
+        "message": "Object 'VpnServiceBuilder' with '13' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/viewlog/ViewLogActivity.kt:33:1",
+        "message": "Class 'ViewLogActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/BaseActivity.kt:34:1",
+        "message": "Class 'BaseActivity' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/StartActivity.kt:38:1",
+        "message": "Class 'StartActivity' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/AppLogger.kt:37:3",
+        "message": "The function configure appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:87:3",
+        "message": "The function startVpn appears to be too complex."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/configure/tools/JoinNetworkToolDialogFragment.kt:65:31",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Tincd.kt:33:19",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Tinc.kt:30:19",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/utils/PemUtils.kt:54:12",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:113:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:123:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:134:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:136:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/data/CidrAddress.kt:32:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "SwallowedException",
+      "description": "The caught exception is swallowed. The original exception could be lost.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/extensions/VpnServiceBuilder.kt:32:5",
+        "message": "The caught exception is swallowed. The original exception could be lost."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Executor.kt:71:5",
+        "message": "The caught exception is swallowed. The original exception could be lost."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/TincApp.kt:46:5",
+        "message": "The caught exception is swallowed. The original exception could be lost."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/utils/PemUtils.kt:40:3",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:72:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/subnets/SubnetInfo.kt:30:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/TincApp.kt:34:3",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/TincApp.kt:35:3",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:196:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Command.kt:40:35",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/App.kt:59:86",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/App.kt:61:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/App.kt:62:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/App.kt:65:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/AppPaths.kt:51:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/AppPaths.kt:52:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/AppPaths.kt:53:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/utils/PemUtils.kt:49:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/utils/PemUtils.kt:49:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/utils/PemUtils.kt:59:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/utils/PemUtils.kt:64:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/utils/PemUtils.kt:69:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/extensions/Java.kt:28:79",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/extensions/VpnServiceBuilder.kt:64:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/extensions/VpnServiceBuilder.kt:67:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/configure/tools/ConfigurationToolDialogFragment.kt:36:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/configure/tools/ConfigurationToolDialogFragment.kt:42:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/configure/tools/ConfigurationToolDialogFragment.kt:54:94",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/BaseDialogFragment.kt:34:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/BaseDialogFragment.kt:36:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/viewlog/LogViewModel.kt:30:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/BaseActivity.kt:38:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/BaseActivity.kt:75:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/BaseActivity.kt:99:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/ConnectionStarter.kt:48:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/ConnectionStarter.kt:51:14",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/networkinfo/VpnInterfaceConfigurationFormatter.kt:33:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfoArrayAdapter.kt:33:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfoArrayAdapter.kt:38:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeListFragment.kt:44:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeListFragment.kt:71:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/subnets/SubnetInfoArrayAdapter.kt:33:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/subnets/SubnetInfoArrayAdapter.kt:38:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/common/FragmentListPagerAdapter.kt:35:46",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/common/RecentCrashHandler.kt:34:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/BaseFragment.kt:34:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Executor.kt:83:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Executor.kt:84:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/TincApp.kt:47:131",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/ConnectivityChangeReceiver.kt:34:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:51:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:128:7",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:149:92",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:191:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:191:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:201:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/AppLogger.kt:38:6",
+        "message": "LoggerFactory.getILoggerFactory() cannot be safely cast to LoggerContext."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/AppLogger.kt:41:10",
+        "message": "LoggerFactory.getLogger(Logger.ROOT_LOGGER_NAME) cannot be safely cast to Logger."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/utils/PemUtils.kt:46:70",
+        "message": "headerObj cannot be safely cast to PemHeader."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/BaseDialogFragment.kt:32:42",
+        "message": "activity cannot be safely cast to BaseActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/BaseDialogFragment.kt:34:34",
+        "message": "activity!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/StartActivity.kt:62:20",
+        "message": "start_activity_network_list_fragment cannot be safely cast to NetworkListFragment."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/viewlog/LogLiveData.kt:35:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/common/SelfRefreshingLiveData.kt:31:3",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/AppPaths.kt:48:3",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/AppNotificationManager.kt:76:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/AppNotificationManager.kt:82:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/context/CrashRecorder.kt:27:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/extensions/ApacheConfiguration.kt:30:3",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/intent/BroadcastMapper.kt:33:3",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/configure/tools/ConfigurationToolDialogFragment.kt:38:3",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/configure/tools/ConfigurationToolDialogFragment.kt:41:3",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/configure/tools/ConfigurationToolDialogFragment.kt:54:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/configure/tools/ConfigurationToolDialogFragment.kt:62:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/BaseActivity.kt:90:142",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/ConnectionStarter.kt:55:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/ConnectionStarter.kt:60:140",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfoArrayAdapter.kt:29:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/common/SelfRefreshingLiveData.kt:26:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Executor.kt:79:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Tincd.kt:35:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/TincApp.kt:35:3",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/TincApp.kt:47:144",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/TincApp.kt:71:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:89:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:98:156",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:106:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:112:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:114:140",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:120:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:122:157",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:124:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:133:157",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:137:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:149:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/utils/PemUtils.kt:42:3",
+        "message": "The class DekInfo defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/configure/tools/ConfigurationToolDialogFragment.kt:59:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/configure/tools/ConfigurationToolDialogFragment.kt:59:5",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/viewlog/ViewLogActivity.kt:79:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/viewlog/ViewLogActivity.kt:79:5",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/viewlog/ViewLogActivity.kt:111:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/viewlog/ViewLogActivity.kt:111:5",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/ConnectionStarter.kt:45:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/ConnectionStarter.kt:48:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/StartActivity.kt:57:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Executor.kt:78:7",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Tinc.kt:47:7",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Tinc.kt:59:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Tinc.kt:59:5",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Tinc.kt:68:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Tinc.kt:68:5",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:88:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:91:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:94:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:97:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:174:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:174:5",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/viewlog/LogLiveData.kt:31:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/viewlog/LogViewModel.kt:28:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/viewlog/LogViewModel.kt:31:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/viewlog/ViewLogActivity.kt:122:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:81:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:82:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:83:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:84:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:85:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:86:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:87:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:87:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:88:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:88:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:89:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:90:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:91:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:92:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:93:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:94:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/common/RecentCrashHandler.kt:35:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/viewlog/ViewLogActivity.kt:70:21",
+        "message": "Function parameter m is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/BaseActivity.kt:83:19",
+        "message": "Function parameter m is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/StartActivity.kt:108:29",
+        "message": "Function parameter m is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/NetworkListFragment.kt:64:27",
+        "message": "Function parameter parent is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/NetworkListFragment.kt:64:65",
+        "message": "Function parameter position is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/NetworkListFragment.kt:64:80",
+        "message": "Function parameter id is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:97:5",
+        "message": "Private function get is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/StatusActivity.kt:96:21",
+        "message": "Function parameter m is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/subnets/SubnetInfo.kt:34:5",
+        "message": "Private function get is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Executor.kt:45:33",
+        "message": "Function parameter args is unused."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/BaseActivity.kt:28:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "OptionalUnit",
+      "description": "Return type of 'Unit' is unnecessary and can be safely removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/StartActivity.kt:88:76",
+        "message": "The function onActivityResult defines a return type of Unit. This is unnecessary and can safely be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:87:70",
+        "message": "The function startVpn defines a return type of Unit. This is unnecessary and can safely be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:159:26",
+        "message": "The function stopVpn defines a return type of Unit. This is unnecessary and can safely be removed."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/start/NetworkListFragment.kt:50:114",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeListFragment.kt:54:113",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/subnets/SubnetListFragment.kt:47:113",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeListViewModel.kt:22:1",
+        "message": "The import 'org.pacien.tincapp.service.TincVpnService' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/subnets/SubnetListViewModel.kt:22:1",
+        "message": "The import 'org.pacien.tincapp.service.TincVpnService' is unused."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/activities/status/nodes/NodeInfo.kt:46:3",
+        "message": "The data class NodeInfo contains functions which are not registered conversion functions. The offending method is called reachabilityText"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/data/VpnInterfaceConfiguration.kt:84:3",
+        "message": "The data class VpnInterfaceConfiguration contains functions which are not registered conversion functions. The offending method is called write"
+      }]
+    }, {
+      "name": "ThrowsCount",
+      "description": "Restrict the number of throw statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/Executor.kt:54:3",
+        "message": "Too many throw statements in the function forkExec. The maximum number of allowed throw statements is 2."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/TincApp.kt:69:14",
+        "message": "Pair is created by using the pair constructor. This can replaced by `PemUtils.read(it) to it`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/TincApp.kt:70:14",
+        "message": "Pair is created by using the pair constructor. This can replaced by `PemUtils.decrypt(it.first, currentPassphrase) to it.second`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/commands/TincApp.kt:71:14",
+        "message": "Pair is created by using the pair constructor. This can replaced by `if (newPassphrase?.isNotEmpty() == true) PemUtils.encrypt(it.first, newPassphrase) else it.first to it.second`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:105:9",
+        "message": "Pair is created by using the pair constructor. This can replaced by `TincKeyring.openPrivateKey(tincCfg.ed25519PrivateKeyFile ?: AppPaths.defaultEd25519PrivateKeyFile(netName), passphrase) to TincKeyring.openPrivateKey(tincCfg.privateKeyFile ?: AppPaths.defaultRsaPrivateKeyFile(netName), passphrase)`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:110:7",
+        "message": "Pair is created by using the pair constructor. This can replaced by `null to null`"
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pacien-tincapp/app/src/main/java/org/pacien/tincapp/service/TincVpnService.kt:87:3",
+        "message": "Function startVpn has 12 return statements which exceeds the limit of 2."
+      }]
+    }]
+  }]
+}

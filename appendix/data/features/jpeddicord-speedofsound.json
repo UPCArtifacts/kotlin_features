@@ -1,0 +1,676 @@
+{
+  "complexity_metrics": {
+    "loc": 1940,
+    "sloc": 1126,
+    "lloc": 823,
+    "cloc": 497,
+    "mcc": 195,
+    "n_smell": 173,
+    "comment_ratio": 44,
+    "mcc_per_thlines": 236
+  },
+  "metrics": {
+    "number_of_string": 136,
+    "number_of_string_template": 11,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 168,
+    "number_of_objects_declarations": 14,
+    "number_of_companion_objects": 9,
+    "number_of_singletons": 1,
+    "number_of_declaration": 210,
+    "number_of_var_declaration": 210,
+    "number_of_func_call": 445,
+    "number_of_arguments": 525,
+    "number_of_parameters": 86,
+    "number_of_qualified_expressions": 779,
+    "number_of_inheritances": 10,
+    "number_of_unsafe_calls": 49,
+    "number_of_safe_calls": 6,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 5,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 2,
+    "number_of_lambdas": 15,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 210,
+    "number_of_functions": 62,
+    "number_of_interfaces": 0,
+    "number_of_classes": 18,
+    "number_of_packages": 3,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 13
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/AppPreferences.kt:19:52",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/AppPreferences.kt:22:27",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/AppPreferences.kt:55:33",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/AppPreferences.kt:19:20",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/PreferencesActivity.kt:63:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/PreferencesActivity.kt:66:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/PreferencesActivity.kt:78:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/PreferencesActivity.kt:84:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/PreferencesActivity.kt:93:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/PreferencesActivity.kt:102:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:69:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:70:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:77:29",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:80:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:92:33",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:93:34",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:118:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:119:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:122:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:122:62",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:123:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:123:54",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:126:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:127:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:136:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:224:39",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:94:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:118:26",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:119:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:126:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:196:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:198:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:241:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:271:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/VolumeThread.kt:93:29",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/VolumeThread.kt:71:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:60:9",
+        "message": "The function onReceive appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/VolumeThread.kt:59:5",
+        "message": "The function run appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundServiceManager.kt:25:5",
+        "message": "The function onReceive appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:27:1",
+        "message": "Class 'SpeedActivity' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/VolumeThread.kt:59:5",
+        "message": "Function run is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SpeedConversions.kt:11:21",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SpeedConversions.kt:30:24",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SpeedSliderPreference.kt:27:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:380:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:385:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:390:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SpeedSliderPreference.kt:34:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SpeedSliderPreference.kt:39:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SpeedSliderPreference.kt:40:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SpeedSliderPreference.kt:46:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SliderPreference.kt:96:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SliderPreference.kt:97:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SliderPreference.kt:98:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SliderPreference.kt:99:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SliderPreference.kt:101:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SliderPreference.kt:104:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SliderPreference.kt:129:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:40:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:57:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:72:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:97:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:101:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:103:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/PreferencesActivity.kt:40:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/PreferencesActivity.kt:45:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:65:48",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:69:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:77:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:92:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:93:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:122:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:122:62",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:123:54",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:126:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:127:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:154:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:249:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:253:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:321:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:334:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:104:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:105:54",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:118:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:119:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:126:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:142:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:147:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:147:59",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:159:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:181:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:232:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:241:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:261:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:271:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundServiceManager.kt:149:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SliderPreference.kt:71:26",
+        "message": "defaultValue cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SliderPreference.kt:92:24",
+        "message": "getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SliderPreference.kt:96:24",
+        "message": "this.view!!.findViewById<View>(R.id.slider_preference_seekbar) cannot be safely cast to SeekBar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SliderPreference.kt:101:29",
+        "message": "this.view!!.findViewById<View>(R.id.slider_preference_value) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:40:24",
+        "message": "this.view!!.findViewById<View>(R.id.bluetooth_preference_listview) cannot be safely cast to ListView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:57:24",
+        "message": "this.view!!.findViewById<View>(R.id.bluetooth_preference_listview) cannot be safely cast to ListView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:83:24",
+        "message": "context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:97:20",
+        "message": "this.view!!.findViewById<View>(R.id.bluetooth_preference_listview) cannot be safely cast to ListView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/LocaleActivity.kt:16:21",
+        "message": "view cannot be safely cast to RadioButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/LocaleActivity.kt:32:26",
+        "message": "findViewById<View>(R.id.tasker_radio_start) cannot be safely cast to RadioButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/LocaleActivity.kt:33:25",
+        "message": "findViewById<View>(R.id.tasker_radio_stop) cannot be safely cast to RadioButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:83:33",
+        "message": "findViewById<View>(R.id.speed_value) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:87:34",
+        "message": "findViewById<View>(R.id.volume_value) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:91:34",
+        "message": "findViewById<View>(R.id.volume_description) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:117:26",
+        "message": "service cannot be safely cast to SoundService.LocalBinder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:153:32",
+        "message": "findViewById<View>(R.id.checkbox_enabled) cannot be safely cast to CheckBox."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:269:31",
+        "message": "this.getSystemService(Context.LOCATION_SERVICE) cannot be safely cast to LocationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:279:26",
+        "message": "view cannot be safely cast to CheckBox."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:301:23",
+        "message": "findViewById<View>(R.id.checkbox_enabled) cannot be safely cast to CheckBox."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:317:26",
+        "message": "findViewById<View>(R.id.checkbox_enabled) cannot be safely cast to CheckBox."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:329:25",
+        "message": "findViewById<View>(R.id.speed_value) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:330:26",
+        "message": "findViewById<View>(R.id.volume_value) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:55:43",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/VolumeThread.kt:32:29",
+        "message": "context.getSystemService(Context.AUDIO_SERVICE) cannot be safely cast to AudioManager."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SpeedConversions.kt:15:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SpeedConversions.kt:17:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SpeedConversions.kt:34:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SpeedConversions.kt:36:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/AverageSpeed.kt:39:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/AverageSpeed.kt:43:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/AverageSpeed.kt:44:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/AverageSpeed.kt:44:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/AverageSpeed.kt:51:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/AverageSpeed.kt:79:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:93:86",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:110:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:125:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:223:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:224:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/VolumeConversion.kt:10:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/VolumeConversion.kt:32:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/VolumeConversion.kt:37:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/VolumeConversion.kt:41:72",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/VolumeConversion.kt:43:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/VolumeConversion.kt:54:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/VolumeConversion.kt:55:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SpeedSliderPreference.kt:27:9",
+        "message": "Private property val is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:141:9",
+        "message": "Private property TAG is unused."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/AppPreferences.kt:11:5",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/VolumeThread.kt:20:5",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/AppPreferences.kt:29:9",
+        "message": "TAG can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:141:9",
+        "message": "TAG can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:143:9",
+        "message": "KEY can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/PreferencesActivity.kt:111:9",
+        "message": "TAG can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:378:9",
+        "message": "TAG can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:380:9",
+        "message": "DIALOG_DISCLAIMER can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:385:9",
+        "message": "DIALOG_GPS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:390:9",
+        "message": "LOCATION_PERMISSION_REQUEST can be a `const val`."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/AppPreferences.kt:78:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SliderPreference.kt:15:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:123:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundServiceManager.kt:100:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/SliderPreference.kt:79:68",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:135:41",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:291:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:127:5",
+        "message": "The class PrettyBluetoothDevice defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:4:1",
+        "message": "The import 'android.bluetooth.BluetoothClass' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/util/BluetoothDevicePreference.kt:10:1",
+        "message": "The import 'android.util.Log' is unused."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/LocaleActivity.kt:10:62",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of LocaleActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/PreferencesActivity.kt:15:54",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of PreferencesActivity."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/SpeedActivity.kt:6:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:4:1",
+        "message": "android.app.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:5:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundService.kt:18:1",
+        "message": "com.google.android.gms.location.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundServiceManager.kt:4:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jpeddicord-speedofsound/src/net/codechunk/speedofsound/service/SoundServiceManager.kt:81:5",
+        "message": "Function shouldTrack has 3 return statements which exceeds the limit of 2."
+      }]
+    }]
+  }]
+}

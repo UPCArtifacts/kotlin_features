@@ -1,0 +1,70 @@
+{
+  "complexity_metrics": {
+    "loc": 8,
+    "sloc": 2,
+    "lloc": 1,
+    "cloc": 3,
+    "mcc": 0,
+    "n_smell": 2,
+    "comment_ratio": 150,
+    "mcc_per_thlines": 0
+  },
+  "metrics": {
+    "number_of_string": 0,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 0,
+    "number_of_objects_declarations": 0,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 0,
+    "number_of_var_declaration": 0,
+    "number_of_func_call": 0,
+    "number_of_arguments": 0,
+    "number_of_parameters": 1,
+    "number_of_qualified_expressions": 0,
+    "number_of_inheritances": 0,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 0,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 0,
+    "number_of_functions": 0,
+    "number_of_interfaces": 0,
+    "number_of_classes": 1,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 1
+  },
+  "findings": [{
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/RitwickVerma-ShutUp/app/src/main/java/com/laughingstock/ritwick/shutup/MessageEvent.kt:8:39",
+        "message": "The file MessageEvent.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/RitwickVerma-ShutUp/app/src/main/java/com/laughingstock/ritwick/shutup/MessageEvent.kt:4:1",
+        "message": "The class MessageEvent defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }]
+  }]
+}

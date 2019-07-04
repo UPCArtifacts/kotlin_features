@@ -1,0 +1,1453 @@
+{
+  "complexity_metrics": {
+    "loc": 4907,
+    "sloc": 3454,
+    "lloc": 2354,
+    "cloc": 685,
+    "mcc": 555,
+    "n_smell": 411,
+    "comment_ratio": 19,
+    "mcc_per_thlines": 235
+  },
+  "metrics": {
+    "number_of_string": 128,
+    "number_of_string_template": 14,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 3,
+    "number_of_inferred_var": 481,
+    "number_of_objects_declarations": 24,
+    "number_of_companion_objects": 9,
+    "number_of_singletons": 9,
+    "number_of_declaration": 562,
+    "number_of_var_declaration": 584,
+    "number_of_func_call": 1338,
+    "number_of_arguments": 1425,
+    "number_of_parameters": 532,
+    "number_of_qualified_expressions": 1831,
+    "number_of_inheritances": 32,
+    "number_of_unsafe_calls": 39,
+    "number_of_safe_calls": 59,
+    "number_of_destructuring_declarations": 12,
+    "number_of_when_expressions": 14,
+    "number_of_functions_with_default_value": 15,
+    "number_of_function_call_with_named_value": 3,
+    "number_of_named_argument": 6,
+    "number_of_argument_with_default_value": 25,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 8,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 8,
+    "number_of_lambdas": 81,
+    "number_of_possible_smart_casts": 1,
+    "number_of_data_class": 21,
+    "number_of_properties": 550,
+    "number_of_functions": 264,
+    "number_of_interfaces": 9,
+    "number_of_classes": 87,
+    "number_of_packages": 32,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 70
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/RecordListView.kt:68:5",
+        "message": "The function init appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:69:5",
+        "message": "The function updateElevationStatistics appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:46:5",
+        "message": "The function getRecordingsToGpxMap appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/UnzipTask.kt:19:5",
+        "message": "The function run appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/RecordFragment.kt:28:1",
+        "message": "Class 'RecordFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:42:1",
+        "message": "Class 'GoogleMapWmtsViewFragment' with '21' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXParser.kt:16:1",
+        "message": "Object 'GPXParser' with '13' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:46:1",
+        "message": "Class 'DownloadService' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapSourceAdapter.kt:77:56",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:223:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:336:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:114:35",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:121:62",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:136:35",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:143:62",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/SelectDialog.kt:61:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/EditFieldDialog.kt:72:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:118:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:115:41",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:79:5",
+        "message": "The function configureComponents is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:40:1",
+        "message": "The function pentas is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:245:9",
+        "message": "Function gpxTracktoRoute is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/ZipTask.kt:31:5",
+        "message": "Function doInBackground is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/UnzipTask.kt:19:5",
+        "message": "Function run is nested too deeply."
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/geotools/GeoTools.kt:70:19",
+        "message": "The function deltaTwoPoints has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:97:42",
+        "message": "The function getTileSequenceAndCalibration has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:124:29",
+        "message": "The function getNumberOfTiles has too many parameters. The current threshold is set to 6."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapCreateFragment.kt:41:13",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:86:9",
+        "message": "Exception is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }, {
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:228:30",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/SelectDialog.kt:47:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/EditFieldDialog.kt:56:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackTools.kt:19:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:60:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:69:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:218:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:53:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:86:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/Credentials.kt:27:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXParser.kt:190:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/layers/LayerForSource.kt:40:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:206:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:221:21",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:55:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:88:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:207:21",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }, {
+      "name": "ThrowingExceptionsWithoutMessageOrCause",
+      "description": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXParser.kt:208:19",
+        "message": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "MatchingDeclarationName",
+      "description": "If a source file contains only a single non-private top-level class or object, the file name should reflect the case-sensitive name plus the .kt extension.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/events/IgnLayerSelect.kt:1:1",
+        "message": "The file name 'IgnLayerSelect.kt' does not match the name of the single top-level declaration 'LayerSelectEvent'."
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:21:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:44:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:45:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:46:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:47:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:48:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:49:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:50:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:51:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:52:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:53:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:54:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:55:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:56:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:89:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:90:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:91:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:92:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/ZipTask.kt:29:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:56:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:57:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:58:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:60:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:61:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:43:87",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:97:73",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:97:88",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:97:102",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:97:118",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:124:60",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:124:75",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:124:89",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:124:105",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:138:46",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:138:61",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:138:75",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:138:91",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:160:38",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:160:53",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:160:67",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:160:83",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXParser.kt:28:15",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:115:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXParser.kt:24:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXWriter.kt:26:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "TopLevelPropertyNaming",
+      "description": "Top level property names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/geotools/GeoTools.kt:5:1",
+        "message": "Top level constant names should match the pattern: [A-Z][_A-Z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/geotools/GeoTools.kt:13:1",
+        "message": "Top level constant names should match the pattern: [A-Z][_A-Z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/geotools/GeoTools.kt:15:1",
+        "message": "Top level constant names should match the pattern: [A-Z][_A-Z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/geotools/GeoTools.kt:16:1",
+        "message": "Top level constant names should match the pattern: [A-Z][_A-Z0-9]*"
+      }]
+    }, {
+      "name": "ConstructorParameterNaming",
+      "description": "Constructor parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:8:18",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:8:33",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:81:41",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:81:60",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:81:78",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:81:98",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "MemberNameEqualsClassName",
+      "description": "A member should not given the same name as its parent class or object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/layers/LayerForSource.kt:15:5",
+        "message": "A member is named after the class object. This might result in confusion. Please rename the member."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/RecordingAdapter.kt:37:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/RecordListView.kt:178:56",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/dialogs/MapChoiceDialog.kt:38:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/dialogs/MapChoiceDialog.kt:48:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/dialogs/MapChoiceDialog.kt:53:65",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/RecordFragment.kt:67:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/RecordFragment.kt:68:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:165:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:226:46",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:227:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:227:64",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:227:87",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:315:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:334:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:70:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/SelectDialog.kt:46:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/SelectDialog.kt:53:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/MapDownloadDialog.kt:47:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/MapDownloadDialog.kt:49:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/EditFieldDialog.kt:55:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/EditFieldDialog.kt:63:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/EditFieldDialog.kt:65:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackFilter.kt:11:53",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:58:57",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:59:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:71:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:82:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:91:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:99:54",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:99:81",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:103:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:104:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:106:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:110:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:122:58",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/ZipTask.kt:87:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/ZipTask.kt:91:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXWriter.kt:78:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:315:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/RecordListView.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/dialogs/MapChoiceDialog.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/dialogs/MapChoiceDialog.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/RecordFragment.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapCreateFragment.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapCreateFragment.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapCreateFragment.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapCreateFragment.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapCreateFragment.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapCreateFragment.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapCreateFragment.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:10:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:11:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:12:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:13:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapSourceAdapter.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:71:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:72:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:73:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:74:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:75:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:77:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:42:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/ign/IgnCredentialsFragment.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/ign/IgnCredentialsFragment.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/ign/IgnCredentialsFragment.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/SelectDialog.kt:15:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/SelectDialog.kt:16:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/SelectDialog.kt:17:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/SelectDialog.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/EditFieldDialog.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/EditFieldDialog.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/EditFieldDialog.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/EditFieldDialog.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/Credentials.kt:17:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:63:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:64:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:65:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:66:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:68:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:69:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:72:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapSourceAdapter.kt:25:24",
+        "message": "LayoutInflater.from(parent.context).inflate(R.layout.map_source_card, parent, false) cannot be safely cast to CardView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:114:20",
+        "message": "inflater.inflate(R.layout.fragment_wmts_view, container, false) cannot be safely cast to ConstraintLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:130:26",
+        "message": "activity cannot be safely cast to AppCompatActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:223:20",
+        "message": "arguments?.get(ARG_AREA) cannot be safely cast to Area."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/ign/IgnCredentialsFragment.kt:54:33",
+        "message": "findPreference(getString(R.string.ign_user)) cannot be safely cast to EditTextPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/ign/IgnCredentialsFragment.kt:57:28",
+        "message": "ignUser cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/ign/IgnCredentialsFragment.kt:62:32",
+        "message": "findPreference(getString(R.string.ign_pwd)) cannot be safely cast to EditTextPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/ign/IgnCredentialsFragment.kt:65:27",
+        "message": "ignPwd cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/ign/IgnCredentialsFragment.kt:70:35",
+        "message": "findPreference(getString(R.string.ign_api_key)) cannot be safely cast to EditTextPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/ign/IgnCredentialsFragment.kt:73:30",
+        "message": "ignApiKey cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:44:26",
+        "message": "url.openConnection() cannot be safely cast to HttpURLConnection."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:74:26",
+        "message": "url.openConnection() cannot be safely cast to HttpURLConnection."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/bitmap/BitmapProviderIgn.kt:33:23",
+        "message": "tile.data cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/bitmap/BitmapProviderUSGS.kt:15:23",
+        "message": "tile.data cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/bitmap/BitmapProviderIgnSpain.kt:15:23",
+        "message": "tile.data cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/bitmap/BitmapProviderOSM.kt:15:23",
+        "message": "tile.data cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:142:39",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:286:39",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/test/java/com/peterlaurence/trekme/core/track/TrackStatCalculatorTest.kt:46:1",
+        "message": "The file TrackStatCalculatorTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/test/java/com/peterlaurence/trekme/core/geotools/GeoToolsTest.kt:16:1",
+        "message": "The file GeoToolsTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/test/java/com/peterlaurence/trekme/core/mapsource/wmts/IgnTest.kt:21:1",
+        "message": "The file IgnTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/dialogs/MapChoiceDialog.kt:135:1",
+        "message": "The file MapChoiceDialog.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/events/RecordingNameChangeEvent.kt:6:111",
+        "message": "The file RecordingNameChangeEvent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/events/RequestChooseMap.kt:3:22",
+        "message": "The file RequestChooseMap.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/events/MapSelectedForRecord.kt:3:42",
+        "message": "The file MapSelectedForRecord.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapCreateFragment.kt:123:1",
+        "message": "The file MapCreateFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaMarker.kt:52:1",
+        "message": "The file AreaMarker.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaView.kt:83:45",
+        "message": "The file AreaView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapSourceAdapter.kt:123:1",
+        "message": "The file MapSourceAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/events/MapSourceSelectedEvent.kt:5:59",
+        "message": "The file MapSourceSelectedEvent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:230:1",
+        "message": "The file WmtsLevelsDialog.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/ign/IgnCredentialsFragment.kt:134:1",
+        "message": "The file IgnCredentialsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/events/IgnLayerSelect.kt:9:1",
+        "message": "The file IgnLayerSelect.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/trackview/components/TrackDurationView.kt:21:1",
+        "message": "The file TrackDurationView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/trackview/components/TrackDistanceView.kt:21:1",
+        "message": "The file TrackDistanceView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/trackview/components/TrackElevationStackView.kt:22:1",
+        "message": "The file TrackElevationStackView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/trackview/TrackViewFragment.kt:79:1",
+        "message": "The file TrackViewFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapview/events/TrackChangedEvent.kt:6:103",
+        "message": "The file TrackChangedEvent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/maplist/events/ZipProgressEvent.kt:3:76",
+        "message": "The file ZipProgressEvent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/maplist/events/ZipFinishedEvent.kt:3:43",
+        "message": "The file ZipFinishedEvent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/SelectDialog.kt:78:75",
+        "message": "The file SelectDialog.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/MapDownloadDialog.kt:54:1",
+        "message": "The file MapDownloadDialog.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:91:1",
+        "message": "The file HpFilter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackFilter.kt:18:1",
+        "message": "The file TrackFilter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackTools.kt:64:1",
+        "message": "The file TrackTools.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:131:67",
+        "message": "The file TrackStatCalculator.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/layers/IgnLayers.kt:6:1",
+        "message": "The file IgnLayers.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/urltilebuilder/UrlTileBuilderIgn.kt:8:1",
+        "message": "The file UrlTileBuilderIgn.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/urltilebuilder/UrlTileBuilderIgnSpain.kt:7:1",
+        "message": "The file UrlTileBuilderIgnSpain.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/urltilebuilder/UrlTileBuilderUSGS.kt:7:1",
+        "message": "The file UrlTileBuilderUSGS.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/urltilebuilder/UrlTileBuilder.kt:5:1",
+        "message": "The file UrlTileBuilder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/urltilebuilder/UrlTileBuilderOSM.kt:12:1",
+        "message": "The file UrlTileBuilderOSM.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/ProvidersCheck.kt:32:1",
+        "message": "The file ProvidersCheck.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/MapSource.kt:12:65",
+        "message": "The file MapSource.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/Locales.kt:22:1",
+        "message": "The file Locales.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXParser.kt:225:1",
+        "message": "The file GPXParser.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/model/TrackPoint.kt:17:9",
+        "message": "The file TrackPoint.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/layers/LayerForSource.kt:48:1",
+        "message": "The file LayerForSource.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/bitmap/BitmapProviderIgn.kt:37:1",
+        "message": "The file BitmapProviderIgn.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/bitmap/BitmapProviderUSGS.kt:19:1",
+        "message": "The file BitmapProviderUSGS.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/bitmap/BitmapProviderIgnSpain.kt:19:1",
+        "message": "The file BitmapProviderIgnSpain.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/bitmap/BitmapProviderOSM.kt:19:1",
+        "message": "The file BitmapProviderOSM.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/map/MapProvider.kt:28:1",
+        "message": "The file MapProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/event/RequestDownloadMapEvent.kt:12:54",
+        "message": "The file RequestDownloadMapEvent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/event/DownloadServiceStatusEvent.kt:3:59",
+        "message": "The file DownloadServiceStatusEvent.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/RecordingAdapter.kt:15:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/RecordListView.kt:25:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/RecordFragment.kt:32:170",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/RecordFragment.kt:94:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:123:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapSourceAdapter.kt:15:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapSourceAdapter.kt:100:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:65:153",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:165:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/SelectDialog.kt:26:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/EditFieldDialog.kt:85:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:181:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:189:65",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/urltilebuilder/UrlTileBuilderIgn.kt:6:226",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/urltilebuilder/UrlTileBuilderIgnSpain.kt:5:215",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/urltilebuilder/UrlTileBuilderUSGS.kt:5:160",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:12:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:19:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:65:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:69:33",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:9:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:97:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:124:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/UnzipTask.kt:12:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXParser.kt:110:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXParser.kt:112:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/bitmap/BitmapProviderIgn.kt:13:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:95:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:135:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:136:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:143:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:287:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/RecordingAdapter.kt:48:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/dialogs/MapChoiceDialog.kt:87:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/RecordFragment.kt:43:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapCreateFragment.kt:59:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:137:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:142:61",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:146:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/MapSourceAdapter.kt:29:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/events/IgnLayerSelect.kt:6:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/trackview/TrackViewFragment.kt:37:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:34:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/urltilebuilder/UrlTileBuilderIgn.kt:5:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/urltilebuilder/UrlTileBuilderIgnSpain.kt:4:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/urltilebuilder/UrlTileBuilderUSGS.kt:4:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/urltilebuilder/UrlTileBuilderOSM.kt:9:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:19:122",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:23:94",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:27:89",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:31:90",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/TrekMeContext.kt:60:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:68:39",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:76:29",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:174:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/Locales.kt:16:41",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/Locales.kt:20:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/UnitFormatter.kt:18:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXParser.kt:222:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/layers/LayerForSource.kt:22:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:110:52",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/dialogs/MapChoiceDialog.kt:99:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/dialogs/MapChoiceDialog.kt:102:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/dialogs/MapChoiceDialog.kt:104:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:60:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:60:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:62:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:62:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:98:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:99:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:108:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaLayer.kt:109:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaMarker.kt:27:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:80:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:81:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:83:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:84:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:33:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:36:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:37:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:9:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:18:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:23:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:24:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:28:12",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:30:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:31:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/statistics/HpFilter.kt:32:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackStatCalculator.kt:122:78",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/ProvidersCheck.kt:31:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/ProvidersCheck.kt:31:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/ProvidersCheck.kt:31:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/ZipTask.kt:52:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/ZipTask.kt:71:72",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/UnzipTask.kt:20:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/UnzipTask.kt:61:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/UnitFormatter.kt:11:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/UnitFormatter.kt:14:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:57:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:58:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:59:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:141:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:172:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:203:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:285:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:350:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:350:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:380:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:388:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/events/RecordingNameChangeEvent.kt:3:58",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of RecordingNameChangeEvent."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/RecordFragment.kt:1:43",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/components/AreaMarker.kt:8:34",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AreaMarker."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:23:30",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of WmtsLevelsDialog."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/EditFieldDialog.kt:14:40",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of EditFieldDialog."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/providers/bitmap/Providers.kt:9:20",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of GenericBitmapProvider."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/MapSource.kt:4:40",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MapSource."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/ZipTask.kt:12:37",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ZipTask."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXParser.kt:13:36",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of GPXParser."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/model/providers/bitmap/BitmapProviderIgn.kt:10:37",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of BitmapProviderIgn."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:43:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of DownloadService."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/components/events/MapSelectedForRecord.kt:3:1",
+        "message": "The class MapSelectedForRecord defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/event/RequestDownloadMapEvent.kt:7:1",
+        "message": "The class RequestDownloadMapEvent defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/RecordFragment.kt:16:1",
+        "message": "com.peterlaurence.trekme.ui.record.components.events.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/RecordFragment.kt:22:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:11:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:37:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:17:1",
+        "message": "com.peterlaurence.trekme.core.mapsource.wmts.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/ign/IgnCredentialsFragment.kt:16:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:22:1",
+        "message": "java.io.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/geotools/GeoTools.kt:3:1",
+        "message": "kotlin.math.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXParser.kt:5:1",
+        "message": "com.peterlaurence.trekme.util.gpx.model.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXWriter.kt:4:1",
+        "message": "com.peterlaurence.trekme.util.gpx.model.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/record/RecordFragment.kt:119:29",
+        "message": "Function parameter event is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:211:31",
+        "message": "Function parameter event is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/gpx/GPXParser.kt:28:15",
+        "message": "Function parameter in is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:312:10",
+        "message": "Private property i is unused."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/GoogleMapWmtsViewFragment.kt:224:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/MapDownloadDialog.kt:36:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/dialogs/MapDownloadDialog.kt:39:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/ui/mapcreate/views/WmtsLevelsDialog.kt:226:16",
+        "message": "Pair is created by using the pair constructor. This can replaced by `p1 to p2`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:155:12",
+        "message": "Pair is created by using the pair constructor. This can replaced by `topLeftCalibrationPoint to bottomRightCalibrationPoint`"
+      }]
+    }, {
+      "name": "ForbiddenVoid",
+      "description": "`Unit` should be used instead of `Void`.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:189:131",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:189:137",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:201:75",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/track/TrackImporter.kt:229:44",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/ZipTask.kt:28:75",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/ZipTask.kt:31:48",
+        "message": "'Void' should be replaced with 'Unit'."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/TrekMeContext.kt:22:5",
+        "message": "appFolderName can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/UnzipTask.kt:103:9",
+        "message": "TAG can be a `const val`."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:109:27",
+        "message": "Parentheses in (levelMin + 1) are unnecessary and can be replaced with: levelMin + 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/core/mapsource/wmts/Ign.kt:128:19",
+        "message": "Parentheses in (levelMin + 1) are unnecessary and can be replaced with: levelMin + 1"
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/ZipTask.kt:41:13",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/ZipTask.kt:31:5",
+        "message": "Function doInBackground has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/ZipTask.kt:66:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/UnzipTask.kt:56:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "LoopWithTooManyJumpStatements",
+      "description": "The loop contains more than one break or continue statement. The code should be refactored to increase readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/util/UnzipTask.kt:35:13",
+        "message": "The loop contains more than one break or continue statement. The code should be refactored to increase readability."
+      }]
+    }, {
+      "name": "VarCouldBeVal",
+      "description": "Var declaration could be val.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/peterLaurence-TrekAdvisor/app/src/main/java/com/peterlaurence/trekme/service/DownloadService.kt:165:9",
+        "message": "Variable 'tileSequence' could be val."
+      }]
+    }]
+  }]
+}

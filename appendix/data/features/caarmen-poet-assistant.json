@@ -1,0 +1,1508 @@
+{
+  "complexity_metrics": {
+    "loc": 10242,
+    "sloc": 6401,
+    "lloc": 4119,
+    "cloc": 2675,
+    "mcc": 1229,
+    "n_smell": 439,
+    "comment_ratio": 41,
+    "mcc_per_thlines": 298
+  },
+  "metrics": {
+    "number_of_string": 482,
+    "number_of_string_template": 133,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 21,
+    "number_of_inferred_var": 666,
+    "number_of_objects_declarations": 91,
+    "number_of_companion_objects": 46,
+    "number_of_singletons": 25,
+    "number_of_declaration": 786,
+    "number_of_var_declaration": 786,
+    "number_of_func_call": 2672,
+    "number_of_arguments": 3137,
+    "number_of_parameters": 921,
+    "number_of_qualified_expressions": 3841,
+    "number_of_inheritances": 56,
+    "number_of_unsafe_calls": 32,
+    "number_of_safe_calls": 116,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 27,
+    "number_of_functions_with_default_value": 3,
+    "number_of_function_call_with_named_value": 2,
+    "number_of_named_argument": 4,
+    "number_of_argument_with_default_value": 5,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 2,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 12,
+    "number_of_lambdas": 205,
+    "number_of_possible_smart_casts": 8,
+    "number_of_data_class": 10,
+    "number_of_properties": 786,
+    "number_of_functions": 568,
+    "number_of_interfaces": 20,
+    "number_of_classes": 150,
+    "number_of_packages": 15,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 126
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/ResultListIdlingHelper.kt:32:5",
+        "message": "The function setupIdlingResource appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/Voices.kt:70:5",
+        "message": "The function parseVoiceName appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderFragment.kt:137:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:83:5",
+        "message": "The function addSelectionPopupMenu appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Thesaurus.kt:47:5",
+        "message": "The function lookup appears to be too complex."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/ResultListIdlingHelper.kt:42:13",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderViewModel.kt:306:17",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:112:25",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/PoemAudioExport.kt:192:17",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsActivity.kt:59:5",
+        "message": "Class 'GeneralPreferenceFragment' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/AppComponent.kt:68:5",
+        "message": "Interface 'MainScreenComponent' with '15' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:35:1",
+        "message": "Class 'Tts' with '17' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderViewModel.kt:51:1",
+        "message": "Class 'ReaderViewModel' with '18' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderFragment.kt:55:1",
+        "message": "Class 'ReaderFragment' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:63:1",
+        "message": "Class 'MainActivity' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/PagerAdapter.kt:39:1",
+        "message": "Class 'PagerAdapter' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/EmbeddedDb.kt:35:1",
+        "message": "Class 'EmbeddedDb' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFactory.kt:54:1",
+        "message": "Object 'ResultListFactory' with '13' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFragment.kt:45:1",
+        "message": "Class 'ResultListFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/PoemAudioExport.kt:42:1",
+        "message": "Class 'PoemAudioExport' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/compat/VectorCompat.kt:45:35",
+        "message": "The function setCompoundVectorDrawables has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/EmbeddedDb.kt:136:14",
+        "message": "The function query has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdLiveData.kt:52:5",
+        "message": "Function loadInBackground is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Thesaurus.kt:47:5",
+        "message": "Function lookup is nested too deeply."
+      }]
+    }, {
+      "name": "ComplexInterface",
+      "description": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/AppComponent.kt:68:5",
+        "message": "The interface MainScreenComponent is too complex. Consider splitting it up."
+      }]
+    }, {
+      "name": "MethodOverloading",
+      "description": "Methods which are overloaded often might be harder to maintain. Furthermore, these methods are tightly coupled. Refactor these methods and try to use optional parameters.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/AppComponent.kt:52:1",
+        "message": "This method is overloaded too many times."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/AppComponent.kt:68:5",
+        "message": "This method is overloaded too many times."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:254:51",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Rhymer.kt:44:26",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Thesaurus.kt:52:39",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/dictionary/Dictionary.kt:49:39",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/test/kotlin/ca/rmen/android/poetassistant/JunitThreading.kt:35:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/Voices.kt:43:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:169:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/CoroutineThreading.kt:56:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/EmbeddedDb.kt:166:13",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/dagger/TestResultListModule.kt:30:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/ResultListModule.kt:31:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/about/AboutActivity.kt:76:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderFragment.kt:130:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:243:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:200:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/WarningNoSpaceDialogFragment.kt:42:9",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFactory.kt:170:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/WordCounter.kt:29:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/WordCounter.kt:31:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Patterns.kt:23:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Patterns.kt:30:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "MemberNameEqualsClassName",
+      "description": "A member should not given the same name as its parent class or object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/Share.kt:35:5",
+        "message": "A member is named after the class object. This might result in confusion. Please rename the member."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/Share.kt:56:5",
+        "message": "A member is named after the class object. This might result in confusion. Please rename the member."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:76:5",
+        "message": "A member is named after the class. This might result in confusion. Either rename the member or change it to a constructor."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:88:5",
+        "message": "A member is named after the class. This might result in confusion. Either rename the member or change it to a constructor."
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderFragment.kt:229:36",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/dagger/InstrumentationResultListAdapterFactory.kt:38:58",
+        "message": "activity cannot be safely cast to OnWordClickListener."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsActivity.kt:107:39",
+        "message": "findPreference(SettingsPrefs.PREF_VOICE) cannot be safely cast to VoicePreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsActivity.kt:189:28",
+        "message": "preferenceScreen.findPreference(categoryKey) cannot be safely cast to PreferenceCategory."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/VoicePreferenceDialogFragment.kt:52:34",
+        "message": "preference cannot be safely cast to ListPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/VoicePreferenceDialogFragment.kt:81:57",
+        "message": "preference cannot be safely cast to VoicePreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdJob.kt:41:28",
+        "message": "context.getSystemService(Context.JOB_SCHEDULER_SERVICE) cannot be safely cast to JobScheduler?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdJob.kt:58:28",
+        "message": "context.getSystemService(Context.JOB_SCHEDULER_SERVICE) cannot be safely cast to JobScheduler?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdJob.kt:64:28",
+        "message": "context.getSystemService(Context.JOB_SCHEDULER_SERVICE) cannot be safely cast to JobScheduler?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdAlarm.kt:48:28",
+        "message": "context.getSystemService(Context.ALARM_SERVICE) cannot be safely cast to AlarmManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdAlarm.kt:57:28",
+        "message": "context.getSystemService(Context.ALARM_SERVICE) cannot be safely cast to AlarmManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/Wotd.kt:131:35",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdAdapter.kt:35:61",
+        "message": "activity cannot be safely cast to OnWordClickListener."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdAdapter.kt:48:23",
+        "message": "holder.binding cannot be safely cast to ListItemWotdBinding."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdAdapter.kt:61:75",
+        "message": "v.parent cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/DaggerHelper.kt:49:31",
+        "message": "context.applicationContext cannot be safely cast to Application."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/NotificationChannel.kt:29:39",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderFragment.kt:106:77",
+        "message": "activity cannot be safely cast to OnWordClickListener."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/PoemFile.kt:111:40",
+        "message": "context.getSystemService(Context.PRINT_SERVICE) cannot be safely cast to PrintManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:180:38",
+        "message": "mPagerAdapter.getFragment(mBinding.viewPager, Tab.READER) cannot be safely cast to ReaderFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:203:26",
+        "message": "menu.findItem(R.id.action_search).actionView cannot be safely cast to SearchView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:257:27",
+        "message": "getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/PagerAdapter.kt:84:27",
+        "message": "arguments.getSerializable(ResultListFragment.EXTRA_TAB) cannot be safely cast to Tab."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/PagerAdapter.kt:123:22",
+        "message": "state cannot be safely cast to Bundle."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/PagerAdapter.kt:125:25",
+        "message": "bundle.getSerializable(EXTRA_EXTRA_TAB) cannot be safely cast to Tab."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/PagerAdapter.kt:136:16",
+        "message": "instantiateItem(viewGroup, position) cannot be safely cast to Fragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:107:48",
+        "message": "textView cannot be safely cast to HackFor23381."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:128:48",
+        "message": "textView cannot be safely cast to HackFor23381."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:142:33",
+        "message": "view.context.getSystemService(Context.CLIPBOARD_SERVICE) cannot be safely cast to ClipboardManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/WarningNoSpaceDialogFragment.kt:68:14",
+        "message": "parentFragment cannot be safely cast to WarningNoSpaceDialogListener."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/WarningNoSpaceDialogFragment.kt:70:14",
+        "message": "activity cannot be safely cast to WarningNoSpaceDialogListener."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/AppBarLayoutHelper.kt:52:22",
+        "message": "view.layoutParams cannot be safely cast to AppBarLayout.LayoutParams."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/AppBarLayoutHelper.kt:60:22",
+        "message": "view.layoutParams cannot be safely cast to AppBarLayout.LayoutParams."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/FilterDialogFragment.kt:75:80",
+        "message": "parentFragment cannot be safely cast to FilterDialogListener."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/FilterDialogFragment.kt:75:124",
+        "message": "activity cannot be safely cast to FilterDialogListener."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListAdapterFactoryImpl.kt:35:43",
+        "message": "activity cannot be safely cast to OnWordClickListener."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RTListAdapter.kt:37:61",
+        "message": "activity cannot be safely cast to OnWordClickListener."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RTListAdapter.kt:61:47",
+        "message": "holder.binding cannot be safely cast to ListItemHeadingBinding."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RTListAdapter.kt:62:50",
+        "message": "holder.binding cannot be safely cast to ListItemSubheadingBinding."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RTListAdapter.kt:64:35",
+        "message": "holder.binding cannot be safely cast to ListItemWordBinding."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RTListAdapter.kt:80:75",
+        "message": "v.parent cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListHeaderFragment.kt:66:20",
+        "message": "it.getSerializable(EXTRA_TAB) cannot be safely cast to Tab."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:65:25",
+        "message": "viewPager.adapter cannot be safely cast to PagerAdapter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:69:10",
+        "message": "searchableActivity.getSystemService(Context.SEARCH_SERVICE) cannot be safely cast to SearchManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:84:14",
+        "message": "mPagerAdapter.getFragment(viewPager, tab) cannot be safely cast to ResultListFragment<*>?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:98:18",
+        "message": "mPagerAdapter.getFragment(viewPager, Tab.PATTERN) cannot be safely cast to ResultListFragment<*>?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:100:18",
+        "message": "mPagerAdapter.getFragment(viewPager, Tab.RHYMER) cannot be safely cast to ResultListFragment<*>?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:101:18",
+        "message": "mPagerAdapter.getFragment(viewPager, Tab.THESAURUS) cannot be safely cast to ResultListFragment<*>?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:102:18",
+        "message": "mPagerAdapter.getFragment(viewPager, Tab.DICTIONARY) cannot be safely cast to ResultListFragment<*>?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFactory.kt:80:55",
+        "message": "fragment.context!!.applicationContext cannot be safely cast to Application."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/dictionary/DictionaryListAdapter.kt:43:23",
+        "message": "holder.binding cannot be safely cast to ListItemDictionaryEntryBinding."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ConfirmDialogFragment.kt:66:81",
+        "message": "parentFragment cannot be safely cast to ConfirmDialogListener."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ConfirmDialogFragment.kt:67:26",
+        "message": "context cannot be safely cast to ConfirmDialogListener."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFragment.kt:66:16",
+        "message": "arguments?.getSerializable(EXTRA_TAB) cannot be safely cast to Tab."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFragment.kt:163:44",
+        "message": "mBinding.recyclerView.layoutManager cannot be safely cast to LinearLayoutManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFragment.kt:193:14",
+        "message": "activity?.getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/PoemAudioExport.kt:107:10",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/PoemAudioExport.kt:116:10",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/PoemAudioExport.kt:130:10",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/PoemAudioExport.kt:151:10",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager?."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/VoicePreference.kt:52:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsActivity.kt:74:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsActivity.kt:78:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsViewModel.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsViewModel.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsViewModel.kt:47:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsChangeListener.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsChangeListener.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdLiveData.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdLiveData.kt:45:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdLiveData.kt:46:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/about/AboutActivity.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/about/LicenseActivity.kt:50:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderViewModel.kt:97:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderFragment.kt:74:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderFragment.kt:75:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderFragment.kt:76:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:69:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:70:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:71:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:72:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:73:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:74:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:75:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:76:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:77:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListHeaderViewModel.kt:48:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListHeaderViewModel.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/FavoritesLiveData.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/FavoritesLiveData.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerLiveData.kt:68:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerLiveData.kt:71:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerLiveData.kt:74:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerLiveData.kt:77:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusLiveData.kt:65:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusLiveData.kt:67:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusLiveData.kt:69:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusLiveData.kt:71:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/PatternLiveData.kt:42:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/PatternLiveData.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/PatternLiveData.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListHeaderFragment.kt:56:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListHeaderFragment.kt:57:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListHeaderFragment.kt:58:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListViewModel.kt:56:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:59:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:61:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/SuggestionsCursor.kt:48:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/SuggestionsCursor.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFragment.kt:53:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFragment.kt:54:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFragment.kt:55:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/PoemAudioExport.kt:52:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsActivity.kt:207:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/compat/VectorCompat.kt:36:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/DaggerHelper.kt:63:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:85:46",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:122:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/PoemFile.kt:106:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/PoemFile.kt:113:59",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/WordCounter.kt:36:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/WordCounter.kt:45:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:106:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:106:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:169:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:195:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/PagerAdapter.kt:144:64",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/PagerAdapter.kt:159:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:138:63",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:139:66",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:140:67",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:149:60",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerLiveData.kt:93:55",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusLiveData.kt:88:48",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListHeaderFragment.kt:97:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListViewModel.kt:103:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListViewModel.kt:112:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/SuggestionsCursor.kt:67:84",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/SuggestionsCursor.kt:76:72",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFactory.kt:80:55",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFactory.kt:102:53",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFactory.kt:105:51",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFactory.kt:106:57",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFactory.kt:107:49",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/dictionary/Dictionary.kt:131:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/InstrumentationThreading.kt:91:1",
+        "message": "The file InstrumentationThreading.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/wotd/InstrumentationWotdAdapter.kt:41:1",
+        "message": "The file InstrumentationWotdAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/InstrumentationRTListAdapter.kt:43:1",
+        "message": "The file InstrumentationRTListAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/main/dictionaries/dictionary/InstrumentationDictionaryListAdapter.kt:42:1",
+        "message": "The file InstrumentationDictionaryListAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/test/kotlin/ca/rmen/android/poetassistant/Environment.kt:30:1",
+        "message": "The file Environment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/test/kotlin/ca/rmen/android/poetassistant/JunitThreading.kt:44:1",
+        "message": "The file JunitThreading.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsViewModel.kt:99:1",
+        "message": "The file SettingsViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Threading.kt:40:1",
+        "message": "The file Threading.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/ThreadingModule.kt:34:1",
+        "message": "The file ThreadingModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/NotificationChannel.kt:38:1",
+        "message": "The file NotificationChannel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/TtsState.kt:30:1",
+        "message": "The file TtsState.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/TtsSplitter.kt:84:1",
+        "message": "The file TtsSplitter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/CoroutineThreading.kt:68:1",
+        "message": "The file CoroutineThreading.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/PoemFileCallback.kt:33:1",
+        "message": "The file PoemFileCallback.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/WarningNoSpaceDialogFragment.kt:78:1",
+        "message": "The file WarningNoSpaceDialogFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/WebSearch.kt:44:1",
+        "message": "The file WebSearch.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/PatternLiveData.kt:101:1",
+        "message": "The file PatternLiveData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/SuggestionDao.kt:37:1",
+        "message": "The file SuggestionDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListAdapter.kt:52:1",
+        "message": "The file ResultListAdapter.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/InstrumentationThreading.kt:57:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/wotd/InstrumentationWotdAdapter.kt:29:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/ResultListIdlingHelper.kt:35:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/InstrumentationRTListAdapter.kt:31:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/main/dictionaries/dictionary/InstrumentationDictionaryListAdapter.kt:29:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Favorites.kt:56:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Favorites.kt:75:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/Voices.kt:99:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/Voices.kt:103:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/VoicePreference.kt:47:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsActivity.kt:134:173",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsActivity.kt:135:173",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsViewModel.kt:68:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsViewModel.kt:79:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsViewModel.kt:80:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsViewModel.kt:86:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsViewModel.kt:87:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsViewModel.kt:91:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsViewModel.kt:97:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdAlarm.kt:41:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/Wotd.kt:137:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/Wotd.kt:143:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdEntryViewModel.kt:28:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdLiveData.kt:89:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Threading.kt:33:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/widget/ViewShownScheduler.kt:28:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/AppModule.kt:39:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/NotificationChannel.kt:31:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/about/AboutActivity.kt:63:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/about/AboutActivity.kt:78:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/TtsSplitter.kt:29:143",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:57:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:137:146",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:190:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:195:45",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:238:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:239:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:245:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:246:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/CoroutineThreading.kt:31:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/CoroutineThreading.kt:49:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderViewModel.kt:153:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderViewModel.kt:257:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderFragment.kt:238:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderFragment.kt:243:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderFragment.kt:274:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/PoemFile.kt:81:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/PoemFile.kt:108:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:63:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:232:144",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:233:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/PagerAdapter.kt:134:143",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:52:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:133:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:155:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:172:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/AppBarLayoutHelper.kt:53:174",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/AppBarLayoutHelper.kt:61:205",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/Share.kt:41:229",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/Share.kt:70:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/Share.kt:75:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/EmbeddedDb.kt:136:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListExporter.kt:24:177",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/FilterDialogFragment.kt:75:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Rhymer.kt:32:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Rhymer.kt:41:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Rhymer.kt:52:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/FavoritesLiveData.kt:70:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RTEntryViewModel.kt:41:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerLiveData.kt:37:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerLiveData.kt:101:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerLiveData.kt:135:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerLiveData.kt:138:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerLiveData.kt:140:31",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Thesaurus.kt:45:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Thesaurus.kt:100:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Thesaurus.kt:129:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Thesaurus.kt:142:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusLiveData.kt:38:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusLiveData.kt:41:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusLiveData.kt:51:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusLiveData.kt:106:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusLiveData.kt:108:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/PatternLiveData.kt:37:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusEntry.kt:31:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListHeaderFragment.kt:40:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListHeaderFragment.kt:101:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListHeaderFragment.kt:105:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListHeaderFragment.kt:127:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListViewModel.kt:45:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListViewModel.kt:69:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListViewModel.kt:72:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListViewModel.kt:134:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListViewModel.kt:140:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:71:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:83:52",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/ProcessTextRouter.kt:66:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/SuggestionsProvider.kt:53:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/SuggestionsProvider.kt:55:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFactory.kt:92:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFactory.kt:100:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFactory.kt:198:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListAdapter.kt:28:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListAdapter.kt:38:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/dictionary/DictionaryListExporter.kt:26:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/dictionary/DictionaryListExporter.kt:30:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/dictionary/DictionaryLiveData.kt:30:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/dictionary/DictionaryListAdapter.kt:31:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ConfirmDialogFragment.kt:42:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFragment.kt:140:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFragment.kt:163:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFragment.kt:166:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFragment.kt:177:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFragment.kt:204:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFragment.kt:214:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/PoemAudioExport.kt:117:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/PoemAudioExport.kt:133:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/PoemAudioExport.kt:152:146",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/PoemAudioExport.kt:193:153",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/PoemAudioExport.kt:197:151",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/ResultListIdlingHelper.kt:50:101",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsPrefs.kt:83:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsPrefs.kt:88:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsPrefs.kt:92:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdLiveData.kt:54:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdLiveData.kt:64:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/widget/DebounceTextWatcher.kt:39:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:145:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:148:90",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderFragment.kt:263:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/PoemFile.kt:126:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/PoemFile.kt:127:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:94:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/PagerAdapter.kt:94:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/PagerAdapter.kt:94:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/AppBarLayoutHelper.kt:84:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/EmbeddedDb.kt:209:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Thesaurus.kt:111:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ConfirmDialogFragment.kt:44:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/androidTest/kotlin/ca/rmen/android/poetassistant/dagger/TestResultListModule.kt:32:70",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/test/kotlin/ca/rmen/android/poetassistant/Environment.kt:27:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Favorites.kt:42:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Favorites.kt:49:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsPrefs.kt:97:106",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsPrefs.kt:101:48",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/compat/HtmlCompat.kt:37:59",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdJobService.kt:48:61",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/widget/PopupMenuHelper.kt:48:48",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/ResultListModule.kt:33:70",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:140:41",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/PagerAdapter.kt:139:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:186:91",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/Share.kt:69:31",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/Share.kt:74:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/EmbeddedDb.kt:50:52",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/EmbeddedDb.kt:59:85",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/EmbeddedDb.kt:73:78",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RTUtils.kt:29:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Rhymer.kt:75:96",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Rhymer.kt:79:84",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Rhymer.kt:83:92",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Rhymer.kt:87:96",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RTEntryViewModel.kt:54:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerLiveData.kt:131:65",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusLiveData.kt:59:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusLiveData.kt:102:65",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListViewModel.kt:128:68",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/SuggestionsProvider.kt:49:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/SuggestionsProvider.kt:82:97",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListAdapter.kt:42:50",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListAdapter.kt:48:50",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/dictionary/Dictionary.kt:114:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Favorites.kt:68:42",
+        "message": "Parentheses around the lambda ({ favoriteDao.insert(Favorite(word)) }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Favorites.kt:95:26",
+        "message": "Parentheses around the lambda ({ favoriteDao.delete(Favorite(favorite)) }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Favorites.kt:100:26",
+        "message": "Parentheses around the lambda ({ favoriteDao.deleteAll() }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdJobService.kt:41:26",
+        "message": "Parentheses around the lambda ({\n            Wotd.notifyWotd(applicationContext, dictionary)\n            jobFinished(params, false)\n        }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/Wotd.kt:81:26",
+        "message": "Parentheses around the lambda ({ notifyWotd(context, dictionary) }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdBroadcastReceiver.kt:38:26",
+        "message": "Parentheses around the lambda ({Wotd.notifyWotd(context, dictionary)}) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/AppComponent.kt:53:23",
+        "message": "Parentheses in (AppModule::class) are unnecessary and can be replaced with: AppModule::class"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/AppComponent.kt:53:43",
+        "message": "Parentheses in (DbModule::class) are unnecessary and can be replaced with: DbModule::class"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/AppComponent.kt:53:62",
+        "message": "Parentheses in (ResultListModule::class) are unnecessary and can be replaced with: ResultListModule::class"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/dagger/AppComponent.kt:53:89",
+        "message": "Parentheses in (ThreadingModule::class) are unnecessary and can be replaced with: ThreadingModule::class"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderViewModel.kt:306:17",
+        "message": "Parentheses in (oldPoemText == null && newPoemText == null) are unnecessary and can be replaced with: oldPoemText == null && newPoemText == null"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderViewModel.kt:307:24",
+        "message": "Parentheses in (oldPoemText != null && oldPoemText == newPoemText) are unnecessary and can be replaced with: oldPoemText != null && oldPoemText == newPoemText"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderViewModel.kt:308:24",
+        "message": "Parentheses in (newPoemText != null && newPoemText == oldPoemText) are unnecessary and can be replaced with: newPoemText != null && newPoemText == oldPoemText"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerLiveData.kt:116:52",
+        "message": "Parentheses in (after - before) are unnecessary and can be replaced with: after - before"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/Search.kt:157:27",
+        "message": "Parentheses around the lambda ({\n            val contentValues = ContentValues(1)\n            contentValues.put(SearchManager.QUERY, suggestion)\n            searchableActivity.contentResolver.insert(SuggestionsProvider.CONTENT_URI, contentValues)\n        }) are unnecessary and can be removed."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Favorites.kt:68:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsViewModel.kt:59:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/Wotd.kt:54:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Tts.kt:90:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/EmbeddedDb.kt:235:38",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerListExporter.kt:31:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/Thesaurus.kt:129:36",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusListExporter.kt:29:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListViewModel.kt:97:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/dictionary/Dictionary.kt:130:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ConfirmDialogFragment.kt:66:36",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/PoemAudioExport.kt:197:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/Voices.kt:39:5",
+        "message": "Function getVoices has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/Voices.kt:70:5",
+        "message": "Function parseVoiceName has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/Voices.kt:120:9",
+        "message": "Function compare has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdLiveData.kt:52:5",
+        "message": "Function loadInBackground has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/PoemFile.kt:122:9",
+        "message": "Function generateFileName has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:208:5",
+        "message": "Function onOptionsItemSelected has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/PagerAdapter.kt:79:5",
+        "message": "Function getItemPosition has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/Tab.kt:26:9",
+        "message": "Function parse has 8 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/TextPopupMenu.kt:133:5",
+        "message": "Function handleItemClicked has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RhymerLiveData.kt:84:5",
+        "message": "Function loadInBackground has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/ThesaurusLiveData.kt:78:5",
+        "message": "Function loadInBackground has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/PatternLiveData.kt:50:5",
+        "message": "Function loadInBackground has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/PatternLiveData.kt:88:9",
+        "message": "Function compare has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsChangeListener.kt:55:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/MainActivity.kt:173:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListFactory.kt:194:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/settings/SettingsPrefs.kt:29:1",
+        "message": "The class SettingsPrefs defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/wotd/WotdEntryViewModel.kt:28:1",
+        "message": "The class WotdEntryViewModel defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/reader/ReaderViewModel.kt:79:5",
+        "message": "The class SnackbarText defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/rt/RTEntryViewModel.kt:28:1",
+        "message": "The class RTEntryViewModel defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/about/AboutActivity.kt:77:42",
+        "message": "Function parameter v is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/ResultListHeaderFragment.kt:125:33",
+        "message": "Function parameter v is unused."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/main/dictionaries/search/ProcessTextRouter.kt:39:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "UtilityClassWithPublicConstructor",
+      "description": "The class declaration is unnecessary because it only contains utility functions. An object declaration should be used instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-poet-assistant/app/src/main/kotlin/ca/rmen/android/poetassistant/Constants.kt:22:1",
+        "message": "The class Constants only contains utility functions. Consider defining it as an object."
+      }]
+    }]
+  }]
+}

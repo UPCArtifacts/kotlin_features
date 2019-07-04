@@ -1,0 +1,192 @@
+{
+  "complexity_metrics": {
+    "loc": 342,
+    "sloc": 297,
+    "lloc": 198,
+    "cloc": 1,
+    "mcc": 47,
+    "n_smell": 29,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 237
+  },
+  "metrics": {
+    "number_of_string": 14,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 15,
+    "number_of_inferred_var": 10,
+    "number_of_objects_declarations": 2,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 1,
+    "number_of_declaration": 17,
+    "number_of_var_declaration": 17,
+    "number_of_func_call": 128,
+    "number_of_arguments": 141,
+    "number_of_parameters": 47,
+    "number_of_qualified_expressions": 150,
+    "number_of_inheritances": 2,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 6,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 14,
+    "number_of_possible_smart_casts": 1,
+    "number_of_data_class": 0,
+    "number_of_properties": 17,
+    "number_of_functions": 41,
+    "number_of_interfaces": 2,
+    "number_of_classes": 5,
+    "number_of_packages": 5,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 6
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/activity/AssistActivity.kt:36:1",
+        "message": "Class 'AssistActivity' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/activity/AssistActivity.kt:61:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMinLength",
+      "description": "Function names should not be shorter than the minimum defined in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/Util.kt:8:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/arch/model/_Providers.kt:11:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/arch/model/_Providers.kt:23:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/arch/model/_Providers.kt:34:5",
+        "message": "Function names should be at least 3 characters long."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/activity/AssistActivity.kt:57:10",
+        "message": "container.parent cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/activity/AssistActivity.kt:66:19",
+        "message": "container.layoutParams cannot be safely cast to ViewGroup.MarginLayoutParams."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/activity/AssistActivity.kt:91:30",
+        "message": "inflater.inflate(R.layout.dialog_custom_provider, null) cannot be safely cast to LinearLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/activity/AssistActivity.kt:179:10",
+        "message": "getSystemService(INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/adapter/ProviderListAdapter.kt:26:24",
+        "message": "from(parent.context)\n            .inflate(R.layout.item_provider_list, parent, false) cannot be safely cast to TextView."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/SharedPreferencesPersistedValues.kt:25:1",
+        "message": "The file SharedPreferencesPersistedValues.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/adapter/ProviderListAdapter.kt:33:1",
+        "message": "The file ProviderListAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/Util.kt:10:1",
+        "message": "The file Util.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/arch/model/_Providers.kt:83:1",
+        "message": "The file _Providers.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/activity/AssistActivity.kt:102:43",
+        "message": "Parentheses around the lambda ({ text, actionId, _ ->\n            if (actionId == IME_ACTION_GO) {\n                onCustomProviderUrlSet(dialog, customProviderId, text.toString())\n            }\n            true\n        }) are unnecessary and can be removed."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/activity/AssistActivity.kt:75:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/activity/AssistActivity.kt:164:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/activity/AssistActivity.kt:165:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/arch/model/_Providers.kt:63:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/arch/model/_Providers.kt:69:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/arch/model/_Providers.kt:75:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/arch/model/_Providers.kt:81:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/adapter/ProviderListAdapter.kt:4:1",
+        "message": "The import 'android.content.Context' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/adapter/ProviderListAdapter.kt:7:1",
+        "message": "The import 'android.view.View.NO_ID' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/adapter/ProviderListAdapter.kt:10:1",
+        "message": "The import 'android.widget.ImageView' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/Util.kt:4:1",
+        "message": "The import 'android.util.TypedValue' is unused."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/android/Util.kt:5:1",
+        "message": "android.util.TypedValue.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/veniosg-JustSearch/app/src/main/java/co/pxhouse/sas/arch/model/_Providers.kt:35:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }]
+  }]
+}

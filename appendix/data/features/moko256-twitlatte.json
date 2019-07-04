@@ -1,0 +1,1680 @@
+{
+  "complexity_metrics": {
+    "loc": 7026,
+    "sloc": 4525,
+    "lloc": 3217,
+    "cloc": 1632,
+    "mcc": 760,
+    "n_smell": 495,
+    "comment_ratio": 36,
+    "mcc_per_thlines": 236
+  },
+  "metrics": {
+    "number_of_string": 300,
+    "number_of_string_template": 33,
+    "number_of_inline_func": 1,
+    "number_of_inferred_fun": 11,
+    "number_of_inferred_var": 284,
+    "number_of_objects_declarations": 12,
+    "number_of_companion_objects": 4,
+    "number_of_singletons": 3,
+    "number_of_declaration": 402,
+    "number_of_var_declaration": 405,
+    "number_of_func_call": 1496,
+    "number_of_arguments": 1780,
+    "number_of_parameters": 520,
+    "number_of_qualified_expressions": 2109,
+    "number_of_inheritances": 38,
+    "number_of_unsafe_calls": 49,
+    "number_of_safe_calls": 59,
+    "number_of_destructuring_declarations": 3,
+    "number_of_when_expressions": 15,
+    "number_of_functions_with_default_value": 11,
+    "number_of_function_call_with_named_value": 31,
+    "number_of_named_argument": 281,
+    "number_of_argument_with_default_value": 26,
+    "number_of_overloaded_op": 1,
+    "number_of_extension_function": 20,
+    "number_of_properties_delegation": 2,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 168,
+    "number_of_possible_smart_casts": 17,
+    "number_of_data_class": 11,
+    "number_of_properties": 399,
+    "number_of_functions": 275,
+    "number_of_interfaces": 12,
+    "number_of_classes": 88,
+    "number_of_packages": 31,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 81
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:110:5",
+        "message": "The function onActivityCreated appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:102:5",
+        "message": "The function onUpgrade appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/AdapterObservableBinder.kt:25:1",
+        "message": "The function convertObservableConsumer appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/converter/StatusConverter.kt:89:1",
+        "message": "The function convertToStatus appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/converter/StatusConverter.kt:244:1",
+        "message": "The function convertToStatus appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/ListModelImpl.kt:115:5",
+        "message": "The function refreshOnTop appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/ListModelImpl.kt:221:5",
+        "message": "The function loadOnGap appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/view/EmojiToTextViewSetter.kt:50:5",
+        "message": "The function set appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/queue/StatusActionQueue.kt:44:5",
+        "message": "The function add appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:104:5",
+        "message": "The function updateView appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/MTHtmlParser.kt:76:5",
+        "message": "The function startElement appears to be too complex."
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:118:31",
+        "message": "The function restoreURLEntities has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/TwToLinksConverter.kt:27:29",
+        "message": "The function convertToContentAndLinks has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:77:1",
+        "message": "Class CachedStatusesSQLiteOpenHelper is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:77:1",
+        "message": "Class 'CachedStatusesSQLiteOpenHelper' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractMediaFragment.kt:49:1",
+        "message": "Class 'AbstractMediaFragment' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractVideoFragment.kt:41:1",
+        "message": "Class 'AbstractVideoFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:22:1",
+        "message": "Class 'User' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/ListModelImpl.kt:32:1",
+        "message": "Class 'ListModelImpl' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:519:27",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:540:28",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:270:27",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/converter/StatusConverter.kt:95:20",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:191:5",
+        "message": "The function addCachedUserAtTransaction is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:104:5",
+        "message": "The function updateView is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/ImageKeyboardEditText.kt:58:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/rx/LocationSingleBuilder.kt:57:33",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/rx/LocationSingleBuilder.kt:64:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "ComplexInterface",
+      "description": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/base/ListModel.kt:23:1",
+        "message": "The interface ListModel is too complex. Consider splitting it up."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/base/PostTweetModel.kt:24:1",
+        "message": "The interface PostTweetModel is too complex. Consider splitting it up."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/view/EmojiToTextViewSetter.kt:50:5",
+        "message": "Function set is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/test/java/com/github/moko256/twitlatte/queue/StatusActionQueueTest.kt:116:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/ImageKeyboardEditText.kt:57:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/ListModelImpl.kt:101:30",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/ListModelImpl.kt:159:30",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/ListModelImpl.kt:207:30",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/ListModelImpl.kt:269:30",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/view/EmojiToTextViewSetter.kt:111:38",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/view/EmojiToTextViewSetter.kt:121:42",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/queue/StatusActionQueue.kt:57:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/queue/StatusActionQueue.kt:76:46",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/MTHtmlParser.kt:41:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/repository/PreferenceRepository.kt:74:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/converter/ISO8601DateConverter.kt:41:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/converter/ISO8601DateConverter.kt:53:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/intent/AppCustomTabs.kt:61:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/MTHtmlParser.kt:42:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }, {
+      "name": "RethrowCaughtException",
+      "description": "Do not rethrow a caught exception of the same type.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/repository/PreferenceRepository.kt:102:17",
+        "message": "Do not rethrow a caught exception of the same type."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:259:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:557:1",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:89:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:113:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "TopLevelPropertyNaming",
+      "description": "Top level property names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:28:1",
+        "message": "Private top level property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:41:1",
+        "message": "Private top level property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:40:1",
+        "message": "Private top level property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/CheckableImageView.kt:25:1",
+        "message": "Private top level property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:76:43",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:119:32",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "PackageNaming",
+      "description": "Package names should match the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/cacheMap/UserCacheMap.kt:17:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/cacheMap/PostCache.kt:17:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/alternative_twitter4j/src/main/java/twitter4j/AlternativeTwitterFactory.kt:17:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:166:34",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:186:38",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:221:38",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/LicensesActivity.kt:35:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:129:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:130:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:137:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:147:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:150:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:181:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:203:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:218:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:127:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:131:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:135:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:139:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:143:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:147:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:374:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:374:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/repository/PreferenceRepository.kt:47:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/AdapterObservableBinder.kt:32:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/AdapterObservableBinder.kt:34:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/AdapterObservableBinder.kt:36:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/AdapterObservableBinder.kt:38:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/AdapterObservableBinder.kt:41:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/AdapterObservableBinder.kt:50:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/AdapterObservableBinder.kt:54:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/AdapterObservableBinder.kt:58:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractMediaFragment.kt:65:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/converter/UserConverter.kt:76:67",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/converter/StatusConverter.kt:324:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/AboutActivity.kt:36:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/FollowFollowerTabsPagerAdapter.kt:50:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/cacheMap/UserCacheMap.kt:39:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/cacheMap/UserCacheMap.kt:53:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/cacheMap/UserCacheMap.kt:61:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/cacheMap/UserCacheMap.kt:68:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/mastodon/OAuthModelImpl.kt:52:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/mastodon/OAuthModelImpl.kt:53:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/mastodon/OAuthModelImpl.kt:54:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/mastodon/OAuthModelImpl.kt:57:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/view/EmojiToTextViewSetter.kt:81:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/view/EmojiToTextViewSetter.kt:125:53",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/UserLikeFragment.kt:42:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/MediaTimelineFragment.kt:45:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/MediaTimelineFragment.kt:53:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:164:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:184:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:219:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/UserTimelineFragment.kt:42:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/rx/LocationSingleBuilder.kt:39:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/MyFollowFollowerFragment.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:62:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:64:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/viewmodel/ListViewModel.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/viewmodel/ListViewModel.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/FragmentPagerAdapter.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractMediaFragment.kt:51:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/ImageFragment.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractVideoFragment.kt:48:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractVideoFragment.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/twitter/OAuthModelImpl.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/mastodon/OAuthModelImpl.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/mastodon/OAuthModelImpl.kt:45:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/mastodon/OAuthModelImpl.kt:47:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/mastodon/OAuthModelImpl.kt:48:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/mastodon/OAuthModelImpl.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/MTHtmlParser.kt:53:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/MTHtmlParser.kt:63:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/MTHtmlParser.kt:64:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/MTHtmlParser.kt:65:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/rx/LocationSingleBuilder.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:125:47",
+        "message": "activity cannot be safely cast to GetRecyclerViewPool."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:260:18",
+        "message": "requireActivity().getSystemService(Context.WINDOW_SERVICE) cannot be safely cast to WindowManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/FragmentPagerAdapter.kt:37:20",
+        "message": "instantiateItem(viewGroup, position) cannot be safely cast to androidx.fragment.app.Fragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/FitSystemWindowsLinearLayout.kt:40:30",
+        "message": "v.layoutParams cannot be safely cast to ViewGroup.MarginLayoutParams."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/AdapterObservableBinder.kt:53:18",
+        "message": "layoutManager cannot be safely cast to StaggeredGridLayoutManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractMediaFragment.kt:65:17",
+        "message": "arguments!!.getSerializable(FRAG_MEDIA_ENTITY) cannot be safely cast to Media."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractMediaFragment.kt:69:20",
+        "message": "inflater.inflate(returnLayoutId(), container, false) cannot be safely cast to FlingLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractMediaFragment.kt:150:40",
+        "message": "activity?.getSystemService(DOWNLOAD_SERVICE) cannot be safely cast to DownloadManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/ImageFragment.kt:58:14",
+        "message": "view cannot be safely cast to FlingLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/cacheMap/PostCache.kt:48:30",
+        "message": "statusCache.get(statusObject.repeatedStatusId) cannot be safely cast to Status?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/cacheMap/PostCache.kt:59:32",
+        "message": "statusCache.get(status.quotedStatusId) cannot be safely cast to Status?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/PostTweetModelCreator.kt:36:78",
+        "message": "twitter cannot be safely cast to MastodonTwitterImpl."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/MediaTimelineFragment.kt:58:34",
+        "message": "GlobalApplication.twitter cannot be safely cast to MastodonTwitterImpl."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/TwToLinksConverter.kt:62:24",
+        "message": "it.second cannot be safely cast to URLEntity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/TwToLinksConverter.kt:63:31",
+        "message": "it.second cannot be safely cast to URLEntity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/TwToLinksConverter.kt:77:22",
+        "message": "it.second cannot be safely cast to URLEntity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/alternative_twitter_text/src/main/java/com/twitter/twittertext/AlternativeTwitterTextConfiguration.kt:31:24",
+        "message": "it cannot be safely cast to TwitterTextConfiguration."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/test/java/com/github/moko256/twitlatte/queue/StatusActionQueueTest.kt:121:1",
+        "message": "The file StatusActionQueueTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/LicensesActivity.kt:84:1",
+        "message": "The file LicensesActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/MyFollowFollowerFragment.kt:50:1",
+        "message": "The file MyFollowFollowerFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:290:1",
+        "message": "The file BaseTweetListFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/viewmodel/ListViewModel.kt:42:1",
+        "message": "The file ListViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/NavigationPositionInterface.kt:29:1",
+        "message": "The file NavigationPositionInterface.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:150:9",
+        "message": "The file OldCachedUserSQLiteOpenHelper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:570:1",
+        "message": "The file CachedStatusesSQLiteOpenHelper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:295:1",
+        "message": "The file CachedUsersSQLiteOpenHelper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/repository/server/impl/TwitterStatusActionRepositoryImpl.kt:45:1",
+        "message": "The file TwitterStatusActionRepositoryImpl.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/repository/server/base/ListServerRepository.kt:28:1",
+        "message": "The file ListServerRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/repository/server/base/StatusActionRepository.kt:31:1",
+        "message": "The file StatusActionRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/repository/PreferenceRepository.kt:109:1",
+        "message": "The file PreferenceRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/net/SSLSocketFactoryCompat.kt:67:1",
+        "message": "The file SSLSocketFactoryCompat.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/ViewPager.kt:42:1",
+        "message": "The file ViewPager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/FragmentPagerAdapter.kt:41:1",
+        "message": "The file FragmentPagerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/ImageKeyboardEditText.kt:77:1",
+        "message": "The file ImageKeyboardEditText.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/FitSystemWindowsLinearLayout.kt:60:1",
+        "message": "The file FitSystemWindowsLinearLayout.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/WideRatioRelativeLayout.kt:55:1",
+        "message": "The file WideRatioRelativeLayout.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/UserHeaderImageView.kt:49:1",
+        "message": "The file UserHeaderImageView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/CheckableImageView.kt:69:1",
+        "message": "The file CheckableImageView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/AdapterObservableBinder.kt:64:1",
+        "message": "The file AdapterObservableBinder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/MovableTopInterface.kt:27:1",
+        "message": "The file MovableTopInterface.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/GifFragment.kt:45:1",
+        "message": "The file GifFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/OneVideoFragment.kt:36:1",
+        "message": "The file OneVideoFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractMediaFragment.kt:171:1",
+        "message": "The file AbstractMediaFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/MultiVideoFragment.kt:35:1",
+        "message": "The file MultiVideoFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/ImageFragment.kt:80:1",
+        "message": "The file ImageFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractVideoFragment.kt:182:1",
+        "message": "The file AbstractVideoFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/converter/UserConverter.kt:140:1",
+        "message": "The file UserConverter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/converter/StatusConverter.kt:333:1",
+        "message": "The file StatusConverter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/converter/ISO8601DateConverter.kt:58:1",
+        "message": "The file ISO8601DateConverter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/UseTabsInterface.kt:28:1",
+        "message": "The file UseTabsInterface.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/array/ArrayUtils.kt:43:1",
+        "message": "The file ArrayUtils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/Visibility.kt:29:1",
+        "message": "The file Visibility.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/AccessToken.kt:63:1",
+        "message": "The file AccessToken.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/UpdateEvent.kt:38:1",
+        "message": "The file UpdateEvent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/StatusAction.kt:29:1",
+        "message": "The file StatusAction.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/Post.kt:32:1",
+        "message": "The file Post.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/Media.kt:38:1",
+        "message": "The file Media.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:137:1",
+        "message": "The file User.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/StatusObject.kt:93:1",
+        "message": "The file StatusObject.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/Emoji.kt:29:15",
+        "message": "The file Emoji.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/Trend.kt:27:1",
+        "message": "The file Trend.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/MentionsFragment.kt:41:1",
+        "message": "The file MentionsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/HomeTimeLineFragment.kt:41:1",
+        "message": "The file HomeTimeLineFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/AboutActivity.kt:63:1",
+        "message": "The file AboutActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/FollowFollowerTabsPagerAdapter.kt:55:1",
+        "message": "The file FollowFollowerTabsPagerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/intent/AppCustomTabs.kt:64:1",
+        "message": "The file AppCustomTabs.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/cacheMap/UserCacheMap.kt:77:1",
+        "message": "The file UserCacheMap.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/cacheMap/PostCache.kt:80:1",
+        "message": "The file PostCache.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/twitter/OAuthModelImpl.kt:95:1",
+        "message": "The file OAuthModelImpl.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/PostTweetModelCreator.kt:40:1",
+        "message": "The file PostTweetModelCreator.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/mastodon/OAuthModelImpl.kt:151:1",
+        "message": "The file OAuthModelImpl.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/ListModelImpl.kt:295:1",
+        "message": "The file ListModelImpl.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/StatusActionModelImpl.kt:88:1",
+        "message": "The file StatusActionModelImpl.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/base/OAuthModel.kt:37:1",
+        "message": "The file OAuthModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/base/ListModel.kt:42:1",
+        "message": "The file ListModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/base/PostTweetModel.kt:55:1",
+        "message": "The file PostTweetModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/base/StatusActionModel.kt:35:1",
+        "message": "The file StatusActionModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/AccountsModel.kt:65:1",
+        "message": "The file AccountsModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/view/EmojiToTextViewSetter.kt:195:1",
+        "message": "The file EmojiToTextViewSetter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/queue/StatusActionQueue.kt:150:1",
+        "message": "The file StatusActionQueue.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/MediasAdapter.kt:53:1",
+        "message": "The file MediasAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/UserLikeFragment.kt:63:1",
+        "message": "The file UserLikeFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/MediaTimelineFragment.kt:78:1",
+        "message": "The file MediaTimelineFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:313:1",
+        "message": "The file StatusViewBinder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/StringExtension.kt:28:1",
+        "message": "The file StringExtension.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/style/ClickableNoLineSpan.kt:34:1",
+        "message": "The file ClickableNoLineSpan.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/TwToLinksConverter.kt:94:1",
+        "message": "The file TwToLinksConverter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/entity/Link.kt:28:1",
+        "message": "The file Link.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/MTHtmlParser.kt:143:1",
+        "message": "The file MTHtmlParser.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/UserTimelineFragment.kt:63:1",
+        "message": "The file UserTimelineFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/exoplayer/AudioAndVideoRenderer.kt:61:1",
+        "message": "The file AudioAndVideoRenderer.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/exoplayer/Mp4OrWebPExtractorFactory.kt:33:1",
+        "message": "The file Mp4OrWebPExtractorFactory.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/rx/VerifyCredentialOnSubscribe.kt:50:1",
+        "message": "The file VerifyCredentialOnSubscribe.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/rx/LocationSingleBuilder.kt:87:1",
+        "message": "The file LocationSingleBuilder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/alternative_twitter_text/src/main/java/com/twitter/twittertext/AlternativeTwitterTextConfiguration.kt:38:17",
+        "message": "The file AlternativeTwitterTextConfiguration.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/alternative_twitter4j/src/main/java/twitter4j/AlternativeTwitterFactory.kt:29:1",
+        "message": "The file AlternativeTwitterFactory.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/LicensesActivity.kt:51:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/LicensesActivity.kt:59:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/MTHtmlParser.kt:98:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/MTHtmlParser.kt:101:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/MTHtmlParser.kt:108:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:166:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:167:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:357:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:79:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/FragmentPagerAdapter.kt:21:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/ImageKeyboardEditText.kt:53:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/UserHeaderImageView.kt:44:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/ImageFragment.kt:68:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/converter/UserConverter.kt:76:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:98:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:106:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:110:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:114:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:118:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:122:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:126:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/PostTweetModelCreator.kt:36:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/mastodon/OAuthModelImpl.kt:133:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/queue/StatusActionQueue.kt:84:138",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/queue/StatusActionQueue.kt:103:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/MediaTimelineFragment.kt:60:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:136:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:303:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:304:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:305:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/alternative_twitter_text/src/main/java/com/twitter/twittertext/AlternativeTwitterTextConfiguration.kt:26:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/alternative_twitter_text/src/main/java/com/twitter/twittertext/AlternativeTwitterTextConfiguration.kt:33:138",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:114:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:269:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:269:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:87:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:88:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:89:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:90:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/migrator/OldCachedUserSQLiteOpenHelper.kt:91:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:87:15",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:107:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:111:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:132:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:133:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:241:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:247:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:248:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:249:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:250:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:251:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:252:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:253:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:254:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:255:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:256:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:257:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:258:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:259:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:260:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:262:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:263:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:264:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:267:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:268:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:269:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:270:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:272:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:273:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:275:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:276:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:278:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:279:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:299:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:307:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:307:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:396:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:397:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:398:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:399:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:400:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:401:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:402:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:403:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:404:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:405:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:406:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:407:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:408:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:409:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:412:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:426:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:427:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:428:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:444:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:445:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:446:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:447:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:450:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:452:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:463:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:464:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:466:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:467:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:474:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:79:239",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:96:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:120:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:121:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:122:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:123:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:124:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:125:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:126:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:127:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:128:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:129:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:130:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:131:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:132:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:133:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:134:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:135:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:136:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:137:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:138:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:139:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:140:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:141:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:142:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:143:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:144:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:145:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:146:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:147:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:149:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:150:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:151:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:154:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:155:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:196:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:197:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:198:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:199:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:200:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:201:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:202:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:203:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:204:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:205:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:206:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:207:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:208:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:209:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:210:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:211:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:212:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:213:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:214:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:215:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:216:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:217:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:218:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:219:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:220:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:221:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:222:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:223:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:236:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:237:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:238:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:250:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedUsersSQLiteOpenHelper.kt:251:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/repository/PreferenceRepository.kt:59:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/ImageKeyboardEditText.kt:53:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/WideRatioRelativeLayout.kt:44:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/WideRatioRelativeLayout.kt:44:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/WideRatioRelativeLayout.kt:46:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/WideRatioRelativeLayout.kt:46:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/UserHeaderImageView.kt:44:118",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractVideoFragment.kt:98:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/glide/GlideModule.kt:47:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/array/ArrayUtils.kt:29:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/AboutActivity.kt:45:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/AboutActivity.kt:53:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/cacheMap/UserCacheMap.kt:35:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/twitter/OAuthModelImpl.kt:61:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/twitter/OAuthModelImpl.kt:61:84",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/twitter/OAuthModelImpl.kt:61:88",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/queue/StatusActionQueue.kt:42:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/queue/StatusActionQueue.kt:49:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/queue/StatusActionQueue.kt:50:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/TwToLinksConverter.kt:35:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/MTHtmlParser.kt:54:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/MTHtmlParser.kt:70:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/rx/LocationSingleBuilder.kt:49:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/rx/LocationSingleBuilder.kt:49:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/rx/LocationSingleBuilder.kt:49:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/BaseTweetListFragment.kt:255:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:384:84",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:497:84",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/repository/server/impl/TwitterStatusActionRepositoryImpl.kt:30:61",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/repository/server/impl/TwitterStatusActionRepositoryImpl.kt:34:61",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/repository/server/impl/TwitterStatusActionRepositoryImpl.kt:38:59",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/repository/server/impl/TwitterStatusActionRepositoryImpl.kt:42:59",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractMediaFragment.kt:114:48",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/AccessToken.kt:35:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/AccessToken.kt:39:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/AccessToken.kt:43:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:77:50",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:81:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:85:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:89:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:93:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:97:46",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:101:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:105:50",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:109:46",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:113:52",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:117:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:121:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:125:48",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:129:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:133:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/StatusObject.kt:64:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/StatusObject.kt:68:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/StatusObject.kt:81:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/StatusObject.kt:85:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/MentionsFragment.kt:38:72",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/HomeTimeLineFragment.kt:38:72",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/FollowFollowerTabsPagerAdapter.kt:43:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/cacheMap/UserCacheMap.kt:47:21",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/ListModelImpl.kt:58:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/ListModelImpl.kt:62:68",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/model/impl/ListModelImpl.kt:66:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/MediasAdapter.kt:50:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/UserLikeFragment.kt:49:72",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/UserTimelineFragment.kt:49:72",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/alternative_twitter4j/src/main/java/twitter4j/AlternativeTwitterFactory.kt:27:52",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/database/CachedStatusesSQLiteOpenHelper.kt:27:1",
+        "message": "com.github.moko256.twitlatte.entity.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractMediaFragment.kt:27:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/mediaview/AbstractMediaFragment.kt:28:1",
+        "message": "android.view.View.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/converter/StatusConverter.kt:20:1",
+        "message": "com.github.moko256.twitlatte.entity.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/text/link/TwToLinksConverter.kt:20:1",
+        "message": "twitter4j.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/ImageKeyboardEditText.kt:28:61",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ImageKeyboardEditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/widget/FitSystemWindowsLinearLayout.kt:23:37",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of FitSystemWindowsLinearLayout."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/AccessToken.kt:35:5",
+        "message": "The data class AccessToken contains functions which are not registered conversion functions. The offending method is called getKeyString"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:77:5",
+        "message": "The data class User contains functions which are not registered conversion functions. The offending method is called get400x400ProfileImageURLHttps"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:81:5",
+        "message": "The data class User contains functions which are not registered conversion functions. The offending method is called getBiggerProfileImageURLHttps"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:85:5",
+        "message": "The data class User contains functions which are not registered conversion functions. The offending method is called getMiniProfileImageURLHttps"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:89:5",
+        "message": "The data class User contains functions which are not registered conversion functions. The offending method is called getOriginalProfileImageURLHttps"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:93:5",
+        "message": "The data class User contains functions which are not registered conversion functions. The offending method is called getProfileBannerURL"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:97:5",
+        "message": "The data class User contains functions which are not registered conversion functions. The offending method is called getProfileBannerRetinaURL"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:101:5",
+        "message": "The data class User contains functions which are not registered conversion functions. The offending method is called getProfileBannerIPadURL"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:105:5",
+        "message": "The data class User contains functions which are not registered conversion functions. The offending method is called getProfileBannerIPadRetinaURL"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:109:5",
+        "message": "The data class User contains functions which are not registered conversion functions. The offending method is called getProfileBannerMobileURL"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:113:5",
+        "message": "The data class User contains functions which are not registered conversion functions. The offending method is called getProfileBannerMobileRetinaURL"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:117:5",
+        "message": "The data class User contains functions which are not registered conversion functions. The offending method is called getProfileBanner300x100URL"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:121:5",
+        "message": "The data class User contains functions which are not registered conversion functions. The offending method is called getProfileBanner600x200URL"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/User.kt:125:5",
+        "message": "The data class User contains functions which are not registered conversion functions. The offending method is called getProfileBanner1500x500URL"
+      }]
+    }, {
+      "name": "SerialVersionUIDInSerializableClass",
+      "description": "A class which implements the Serializable interface does not define a correct serialVersionUID field. The serialVersionUID field should be a constant long value inside a companion object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/Media.kt:21:1",
+        "message": "The class Media implements the Serializable interface and should thus define a serialVersionUID."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/entity/Emoji.kt:21:1",
+        "message": "The class Emoji implements the Serializable interface and should thus define a serialVersionUID."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/AboutActivity.kt:44:24",
+        "message": "Function parameter view is unused."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:140:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/moko256-twitlatte/app/src/main/java/com/github/moko256/twitlatte/StatusViewBinder.kt:140:29",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }]
+  }]
+}

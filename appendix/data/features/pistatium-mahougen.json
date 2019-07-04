@@ -1,0 +1,168 @@
+{
+  "complexity_metrics": {
+    "loc": 231,
+    "sloc": 182,
+    "lloc": 115,
+    "cloc": 9,
+    "mcc": 31,
+    "n_smell": 24,
+    "comment_ratio": 4,
+    "mcc_per_thlines": 269
+  },
+  "metrics": {
+    "number_of_string": 6,
+    "number_of_string_template": 2,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 22,
+    "number_of_objects_declarations": 2,
+    "number_of_companion_objects": 2,
+    "number_of_singletons": 0,
+    "number_of_declaration": 23,
+    "number_of_var_declaration": 25,
+    "number_of_func_call": 74,
+    "number_of_arguments": 73,
+    "number_of_parameters": 32,
+    "number_of_qualified_expressions": 124,
+    "number_of_inheritances": 2,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 1,
+    "number_of_destructuring_declarations": 2,
+    "number_of_when_expressions": 1,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 3,
+    "number_of_overloaded_op": 3,
+    "number_of_extension_function": 2,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 5,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 1,
+    "number_of_properties": 21,
+    "number_of_functions": 20,
+    "number_of_interfaces": 0,
+    "number_of_classes": 4,
+    "number_of_packages": 3,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 4
+  },
+  "findings": [{
+    "group": "style",
+    "smells": [{
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/MainActivity.kt:13:54",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MainActivity."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/MainActivity.kt:52:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/views/MahouCanvasView.kt:21:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/views/MahouCanvasView.kt:33:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/MainActivity.kt:8:1",
+        "message": "The import 'android.util.Log' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/BitmapUtils.kt:5:1",
+        "message": "The import 'android.os.Environment' is unused."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/MainActivity.kt:32:22",
+        "message": "Function parameter v is unused."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/BitmapUtils.kt:27:1",
+        "message": "The file BitmapUtils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/views/MahouCanvasView.kt:108:1",
+        "message": "The file MahouCanvasView.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UtilityClassWithPublicConstructor",
+      "description": "The class declaration is unnecessary because it only contains utility functions. An object declaration should be used instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/BitmapUtils.kt:9:1",
+        "message": "The class BitmapUtils only contains utility functions. Consider defining it as an object."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/Vector.kt:21:26",
+        "message": "Parentheses in (this.x * this.x + this.y * this.y) are unnecessary and can be replaced with: this.x * this.x + this.y * this.y"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/views/MahouCanvasView.kt:54:21",
+        "message": "Parentheses in (2.0 * Math.PI / this.vertexCount.toDouble()) are unnecessary and can be replaced with: 2.0 * Math.PI / this.vertexCount.toDouble()"
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/Vector.kt:8:5",
+        "message": "The data class Vector contains functions which are not registered conversion functions. The offending method is called plus"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/Vector.kt:12:5",
+        "message": "The data class Vector contains functions which are not registered conversion functions. The offending method is called minus"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/Vector.kt:16:5",
+        "message": "The data class Vector contains functions which are not registered conversion functions. The offending method is called times"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/Vector.kt:20:5",
+        "message": "The data class Vector contains functions which are not registered conversion functions. The offending method is called size"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/Vector.kt:24:5",
+        "message": "The data class Vector contains functions which are not registered conversion functions. The offending method is called angle"
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/Vector.kt:8:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/Vector.kt:12:45",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/Vector.kt:16:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/Vector.kt:20:24",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/utils/Vector.kt:24:25",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/views/MahouCanvasView.kt:63:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pistatium-mahougen/app/src/main/kotlin/com/appspot/pistatium/mahougen/views/MahouCanvasView.kt:72:13",
+        "message": "Optional braces in when expression"
+      }]
+    }]
+  }]
+}

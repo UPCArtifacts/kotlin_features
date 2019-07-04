@@ -1,0 +1,310 @@
+{
+  "complexity_metrics": {
+    "loc": 587,
+    "sloc": 512,
+    "lloc": 348,
+    "cloc": 20,
+    "mcc": 107,
+    "n_smell": 49,
+    "comment_ratio": 3,
+    "mcc_per_thlines": 307
+  },
+  "metrics": {
+    "number_of_string": 103,
+    "number_of_string_template": 2,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 52,
+    "number_of_objects_declarations": 3,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 2,
+    "number_of_declaration": 57,
+    "number_of_var_declaration": 57,
+    "number_of_func_call": 186,
+    "number_of_arguments": 228,
+    "number_of_parameters": 42,
+    "number_of_qualified_expressions": 208,
+    "number_of_inheritances": 1,
+    "number_of_unsafe_calls": 9,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 1,
+    "number_of_named_argument": 2,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 15,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 57,
+    "number_of_functions": 29,
+    "number_of_interfaces": 0,
+    "number_of_classes": 1,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 3
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:97:5",
+        "message": "The function quitSelf is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:41:1",
+        "message": "Class SubstratumLauncher is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:59:5",
+        "message": "The function startAntiPiracyCheck appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:97:5",
+        "message": "The function quitSelf appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:174:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:234:5",
+        "message": "The function detectThemeReady appears to be too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:234:5",
+        "message": "Function detectThemeReady is nested too deeply."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:41:1",
+        "message": "Class 'SubstratumLauncher' with '15' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:19:1",
+        "message": "Object 'ThemeFunctions' with '12' functions detected. Defined threshold inside objects is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:82:36",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:41:17",
+        "message": "This condition is too complex."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyCatchBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:74:32",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:250:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:30:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:74:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:86:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:143:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:159:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:307:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:165:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:187:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:24:46",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:61:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:69:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:71:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:73:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:88:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:91:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:93:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:165:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:120:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnconditionalJumpStatementInLoop",
+      "description": "An unconditional jump statement in a loop is useless. The loop itself is only executed once.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:69:13",
+        "message": "This loop contains an unconditional jump expression which essentially renders it useless as it will exit the loop during the first iteration."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:97:5",
+        "message": "Function quitSelf has 7 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:115:5",
+        "message": "Function getSelfVerifiedThemeEngines has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:125:5",
+        "message": "Function isCallingPackageAllowed has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:310:1",
+        "message": "The file SubstratumLauncher.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:207:1",
+        "message": "The file ThemeFunctions.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:153:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:257:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:68:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:70:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/SubstratumLauncher.kt:134:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "ModifierOrder",
+      "description": "Modifier order should be: internal const",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/Constants.kt:7:5",
+        "message": "Modifier order should be: internal const"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/Constants.kt:12:5",
+        "message": "Modifier order should be: internal const"
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:16:63",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ThemeFunctions."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:43:25",
+        "message": "Parentheses in (SIGNATURES[0] == pi.signatures[0]) are unnecessary and can be replaced with: SIGNATURES[0] == pi.signatures[0]"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:44:21",
+        "message": "Parentheses in (SIGNATURES[1] == pi.signatures[0]) are unnecessary and can be replaced with: SIGNATURES[1] == pi.signatures[0]"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:120:20",
+        "message": "Parentheses in (!isPermitted!!) are unnecessary and can be replaced with: !isPermitted!!"
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SpiritCroc-DefaultDarkTheme-oms/app/src/main/kotlin/substratum/theme/template/ThemeFunctions.kt:22:5",
+        "message": "SUBSTRATUM_PACKAGE_NAME can be a `const val`."
+      }]
+    }]
+  }]
+}

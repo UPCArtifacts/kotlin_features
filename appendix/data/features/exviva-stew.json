@@ -1,0 +1,394 @@
+{
+  "complexity_metrics": {
+    "loc": 954,
+    "sloc": 764,
+    "lloc": 540,
+    "cloc": 0,
+    "mcc": 161,
+    "n_smell": 87,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 298
+  },
+  "metrics": {
+    "number_of_string": 69,
+    "number_of_string_template": 3,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 9,
+    "number_of_inferred_var": 98,
+    "number_of_objects_declarations": 6,
+    "number_of_companion_objects": 4,
+    "number_of_singletons": 0,
+    "number_of_declaration": 124,
+    "number_of_var_declaration": 124,
+    "number_of_func_call": 347,
+    "number_of_arguments": 322,
+    "number_of_parameters": 129,
+    "number_of_qualified_expressions": 510,
+    "number_of_inheritances": 14,
+    "number_of_unsafe_calls": 11,
+    "number_of_safe_calls": 2,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 7,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 3,
+    "number_of_named_argument": 3,
+    "number_of_argument_with_default_value": 3,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 30,
+    "number_of_possible_smart_casts": 8,
+    "number_of_data_class": 1,
+    "number_of_properties": 124,
+    "number_of_functions": 70,
+    "number_of_interfaces": 1,
+    "number_of_classes": 31,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 13
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:26:67",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Application.kt:28:23",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Application.kt:26:23",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Application.kt:27:23",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:31:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsAdapter.kt:86:5",
+        "message": "The function onBindViewHolder appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:17:1",
+        "message": "Class 'MainActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsAdapter.kt:17:1",
+        "message": "Class 'PostsAdapter' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Application.kt:51:13",
+        "message": "This condition is too complex."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "InstanceOfCheckForException",
+      "description": "Instead of checking for a general exception type and checking for a specific exception type use multiple catch blocks.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:157:34",
+        "message": "Instead of checking for a general exception type and checking for a specific exception type use multiple catch blocks."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsProvider.kt:33:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:48:82",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:116:61",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:76:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:77:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:110:73",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:116:61",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:149:48",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsStore.kt:8:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsStore.kt:9:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsStore.kt:17:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:133:10",
+        "message": "application cannot be safely cast to Application."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:161:14",
+        "message": "application cannot be safely cast to Application."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsAdapter.kt:22:29",
+        "message": "itemView.findViewById(R.id.postImageView) cannot be safely cast to SimpleDraweeView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsAdapter.kt:23:28",
+        "message": "itemView.findViewById(R.id.repostButton) cannot be safely cast to Button."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsAdapter.kt:24:27",
+        "message": "itemView.findViewById(R.id.shareButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsAdapter.kt:27:34",
+        "message": "itemView.findViewById(R.id.authorNameTextView) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsAdapter.kt:28:31",
+        "message": "itemView.findViewById(R.id.authorImageView) cannot be safely cast to SimpleDraweeView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsAdapter.kt:30:33",
+        "message": "itemView.findViewById(R.id.groupNameTextView) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsAdapter.kt:31:30",
+        "message": "itemView.findViewById(R.id.groupImageView) cannot be safely cast to SimpleDraweeView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsAdapter.kt:32:27",
+        "message": "itemView.findViewById(R.id.descriptionTextView) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsAdapter.kt:41:31",
+        "message": "activity.application cannot be safely cast to Application."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/DrawerAdapter.kt:25:24",
+        "message": "when (convertView) {\n            null -> LayoutInflater.from(context).inflate(R.layout.drawer_list_item, parent, false)\n            else -> convertView\n        } cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/LoginActivity.kt:20:35",
+        "message": "application cannot be safely cast to Application."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/LoginActivity.kt:33:27",
+        "message": "application cannot be safely cast to Application."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostCollection.kt:41:1",
+        "message": "The file PostCollection.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:180:1",
+        "message": "The file Api.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:171:1",
+        "message": "The file MainActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Application.kt:60:1",
+        "message": "The file Application.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/AboutActivity.kt:17:1",
+        "message": "The file AboutActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/CurrentSession.kt:8:1",
+        "message": "The file CurrentSession.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Post.kt:22:1",
+        "message": "The file Post.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/FullscreenImageActivity.kt:45:1",
+        "message": "The file FullscreenImageActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/LoginActivity.kt:70:1",
+        "message": "The file LoginActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsStore.kt:24:1",
+        "message": "The file PostsStore.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostCollection.kt:20:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "ForbiddenVoid",
+      "description": "`Unit` should be used instead of `Void`.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsProvider.kt:16:40",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/PostsProvider.kt:16:46",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:21:54",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:21:60",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:46:58",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:46:64",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:101:23",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:101:29",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:143:19",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:143:25",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:144:48",
+        "message": "'Void' should be replaced with 'Unit'."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:23:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:87:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:100:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:134:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:142:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:51:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:57:181",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:67:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/CurrentSession.kt:5:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/DrawerAdapter.kt:31:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:157:78",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:43:103",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/FullscreenImageActivity.kt:21:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/FullscreenImageActivity.kt:22:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:10:1",
+        "message": "The import 'java.security.KeyStore' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:11:1",
+        "message": "The import 'java.security.cert.CertificateFactory' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:12:1",
+        "message": "The import 'javax.net.ssl.SSLContext' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:13:1",
+        "message": "The import 'javax.net.ssl.TrustManagerFactory' is unused."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:161:16",
+        "message": "Pair is created by using the pair constructor. This can replaced by `responseStatus to document`"
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Api.kt:157:30",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:149:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:155:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/MainActivity.kt:155:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Post.kt:5:1",
+        "message": "The class Post defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Post.kt:19:5",
+        "message": "The class Author defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/exviva-stew/app/src/main/kotlin/net/stew/stew/Post.kt:20:5",
+        "message": "The class Group defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }]
+  }]
+}

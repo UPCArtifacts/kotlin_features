@@ -1,0 +1,873 @@
+{
+  "complexity_metrics": {
+    "loc": 1217,
+    "sloc": 804,
+    "lloc": 654,
+    "cloc": 283,
+    "mcc": 116,
+    "n_smell": 244,
+    "comment_ratio": 35,
+    "mcc_per_thlines": 177
+  },
+  "metrics": {
+    "number_of_string": 23,
+    "number_of_string_template": 2,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 138,
+    "number_of_objects_declarations": 0,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 163,
+    "number_of_var_declaration": 163,
+    "number_of_func_call": 345,
+    "number_of_arguments": 343,
+    "number_of_parameters": 73,
+    "number_of_qualified_expressions": 506,
+    "number_of_inheritances": 8,
+    "number_of_unsafe_calls": 14,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 5,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 2,
+    "number_of_lambdas": 2,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 163,
+    "number_of_functions": 30,
+    "number_of_interfaces": 1,
+    "number_of_classes": 8,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 5
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:214:5",
+        "message": "The function onTouch appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:247:5",
+        "message": "The function onTouch appears to be too complex."
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:138:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:315:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:247:5",
+        "message": "Function onTouch is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:39:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:40:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:42:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:43:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:44:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:47:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:48:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:49:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:52:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:53:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:54:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:55:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:56:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:57:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:58:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:59:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:60:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:205:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:207:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:227:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:29:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:86:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:87:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:115:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:150:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:152:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:156:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:157:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:177:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:199:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:257:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:258:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:290:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:327:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:329:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:330:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:354:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:19:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:31:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:32:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:37:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:42:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:47:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:52:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:57:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:63:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:64:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:65:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:66:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:67:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:69:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:70:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:71:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:72:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:73:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:74:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:76:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:77:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:80:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:81:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:178:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:179:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:180:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:183:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:184:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:241:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:242:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:276:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:288:21",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:289:21",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:20:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:22:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:24:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:25:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:26:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:29:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:30:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:31:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:34:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:35:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:36:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:37:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:38:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:39:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:40:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/CRC_Dreams.kt:21:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/CRC_Dreams.kt:22:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionNaming",
+      "description": "Function names should follow the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:19:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:31:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:59:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:71:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:201:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:230:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:242:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:117:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:125:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }]
+    }, {
+      "name": "ConstructorParameterNaming",
+      "description": "Constructor parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:129:9",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:131:37",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:131:53",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:131:69",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:131:85",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:304:9",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:307:9",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:307:25",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:307:41",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:308:9",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:308:25",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:308:41",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ClassNaming",
+      "description": "A classes name should fit the naming pattern defined in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:23:1",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:193:1",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:13:1",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/CRC_Dreams.kt:9:1",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }]
+    }, {
+      "name": "MatchingDeclarationName",
+      "description": "If a source file contains only a single non-private top-level class or object, the file name should reflect the case-sensitive name plus the .kt extension.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/CRC_Dreams.kt:1:1",
+        "message": "The file name 'CRC_Dreams.kt' does not match the name of the single top-level declaration 'CRC_Dream'."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:110:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:225:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:50:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:55:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:85:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:85:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:221:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:226:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:256:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:256:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:143:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:258:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:97:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:197:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:46:17",
+        "message": "context cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:72:24",
+        "message": "context cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:217:17",
+        "message": "context cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:243:24",
+        "message": "context cannot be safely cast to Activity."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:280:1",
+        "message": "The file FlexibleNumberPicker.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:368:1",
+        "message": "The file Quiz_ABTime.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:324:1",
+        "message": "The file Dial_Entry.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:219:1",
+        "message": "The file NumberArray.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/CRC_Dreams.kt:26:1",
+        "message": "The file CRC_Dreams.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:5:1",
+        "message": "android.graphics.Color.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:14:1",
+        "message": "android.view.MotionEvent.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:11:1",
+        "message": "kotlin.math.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:4:1",
+        "message": "android.graphics.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:8:1",
+        "message": "android.view.MotionEvent.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:10:1",
+        "message": "kotlin.math.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:74:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:49:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:30:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:39:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:40:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:56:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:57:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:58:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:59:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:60:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:125:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:132:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:146:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:204:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:204:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:206:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:206:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:209:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:29:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:53:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:120:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:224:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:295:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:17:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:42:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:47:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:93:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:94:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:95:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:97:82",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:148:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:148:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:149:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:149:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:150:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:150:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:151:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:151:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:157:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:157:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:158:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:158:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:159:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:159:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:160:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:160:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:168:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:179:78",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:179:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:180:78",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:180:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:280:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:291:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:292:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:298:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:299:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:16:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:17:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:19:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:22:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/CRC_Dreams.kt:9:12",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:122:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:129:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:136:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:143:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:242:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:242:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:248:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/FlexibleNumberPicker.kt:248:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:83:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Quiz_ABTime.kt:254:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:121:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:129:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:277:27",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:277:27",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:314:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:148:22",
+        "message": "Parentheses in (radius * 8.25f / 10f) are unnecessary and can be replaced with: radius * 8.25f / 10f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:149:22",
+        "message": "Parentheses in (radius * 8.25f / 10f) are unnecessary and can be replaced with: radius * 8.25f / 10f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:150:22",
+        "message": "Parentheses in (radius * 9.75f / 10f) are unnecessary and can be replaced with: radius * 9.75f / 10f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:151:22",
+        "message": "Parentheses in (radius * 9.75f / 10f) are unnecessary and can be replaced with: radius * 9.75f / 10f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:157:30",
+        "message": "Parentheses in (radius * 9.25f / 10f) are unnecessary and can be replaced with: radius * 9.25f / 10f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:158:30",
+        "message": "Parentheses in (radius * 9.25f / 10f) are unnecessary and can be replaced with: radius * 9.25f / 10f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:159:30",
+        "message": "Parentheses in (radius * 9.75f / 10f) are unnecessary and can be replaced with: radius * 9.75f / 10f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:160:30",
+        "message": "Parentheses in (radius * 9.75f / 10f) are unnecessary and can be replaced with: radius * 9.75f / 10f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:291:29",
+        "message": "Parentheses in (abs(touch_alpha - min_alpha) < pi/6f) are unnecessary and can be replaced with: abs(touch_alpha - min_alpha) < pi/6f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:292:29",
+        "message": "Parentheses in (abs(touch_alpha - (min_alpha + 2*pi)) < pi/6f) are unnecessary and can be replaced with: abs(touch_alpha - (min_alpha + 2*pi)) < pi/6f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:298:29",
+        "message": "Parentheses in (abs(touch_alpha - hour_alpha) < pi/6f) are unnecessary and can be replaced with: abs(touch_alpha - hour_alpha) < pi/6f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/Dial_Entry.kt:299:29",
+        "message": "Parentheses in (abs(touch_alpha - (hour_alpha + 2*pi)) < pi/6f) are unnecessary and can be replaced with: abs(touch_alpha - (hour_alpha + 2*pi)) < pi/6f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:59:64",
+        "message": "Parentheses in (start + num) are unnecessary and can be replaced with: start + num"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:102:58",
+        "message": "Parentheses in ( digit_width / 2 ) are unnecessary and can be replaced with: digit_width / 2"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:105:30",
+        "message": "Parentheses in (num_digits - numberOfDigits(a)) are unnecessary and can be replaced with: num_digits - numberOfDigits(a)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:182:45",
+        "message": "Parentheses in ( digit_height / 2) are unnecessary and can be replaced with: digit_height / 2"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:204:20",
+        "message": "Parentheses in ((event.action == ACTION_MOVE) and moving) are unnecessary and can be replaced with: (event.action == ACTION_MOVE) and moving"
+      }]
+    }, {
+      "name": "TrailingWhitespace",
+      "description": "Checks which lines end with a whitespace.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:15:5",
+        "message": "Line 15 ends with a whitespace."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/NumberArray.kt:105:22",
+        "message": "Private property k is unused."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/CRC_Dreams.kt:5:1",
+        "message": "The import 'android.view.LayoutInflater' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnperry-math-Chinese-Remainder-Clock/app/src/main/java/name/cantanima/chineseremainderclock/CRC_Dreams.kt:6:1",
+        "message": "The import 'android.widget.LinearLayout' is unused."
+      }]
+    }]
+  }]
+}

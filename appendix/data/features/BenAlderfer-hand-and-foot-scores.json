@@ -1,0 +1,438 @@
+{
+  "complexity_metrics": {
+    "loc": 1285,
+    "sloc": 790,
+    "lloc": 545,
+    "cloc": 356,
+    "mcc": 173,
+    "n_smell": 102,
+    "comment_ratio": 45,
+    "mcc_per_thlines": 317
+  },
+  "metrics": {
+    "number_of_string": 173,
+    "number_of_string_template": 1,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 56,
+    "number_of_objects_declarations": 6,
+    "number_of_companion_objects": 3,
+    "number_of_singletons": 0,
+    "number_of_declaration": 75,
+    "number_of_var_declaration": 75,
+    "number_of_func_call": 407,
+    "number_of_arguments": 376,
+    "number_of_parameters": 65,
+    "number_of_qualified_expressions": 507,
+    "number_of_inheritances": 12,
+    "number_of_unsafe_calls": 6,
+    "number_of_safe_calls": 164,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 5,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 2,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 75,
+    "number_of_functions": 68,
+    "number_of_interfaces": 0,
+    "number_of_classes": 14,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 8
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:203:5",
+        "message": "The function calculateScore is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:203:5",
+        "message": "The function calculateScore appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:130:9",
+        "message": "The function onSharedPreferenceChanged appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:24:1",
+        "message": "Class 'ScoreActivity' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:107:5",
+        "message": "Class 'PrefFrag' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:143:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:140:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:136:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:145:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:141:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:138:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:137:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:142:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:135:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:144:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:139:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:78:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:293:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:345:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:44:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:80:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/AboutActivity.kt:35:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/InstructionActivity.kt:143:51",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/androidTest/java/com/alderferstudios/handandfootscores/ScoreActivityTest.kt:37:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/androidTest/java/com/alderferstudios/handandfootscores/ScoreActivityTest.kt:38:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:73:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:74:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:75:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:76:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/InstructionActivity.kt:133:26",
+        "message": "inflater.inflate(layouts[position] ?:\n                    R.layout.instruction_setup, collection, false) cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/InstructionActivity.kt:140:35",
+        "message": "view cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:102:30",
+        "message": "adapter?.getItem(tab.position) cannot be safely cast to ScoreFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:184:24",
+        "message": "adapter?.getItem(tabNum) cannot be safely cast to ScoreFragment?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:289:20",
+        "message": "adapter?.getItem(tabNum) cannot be safely cast to ScoreFragment?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:340:24",
+        "message": "adapter?.getItem(i) cannot be safely cast to ScoreFragment?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/HelpActivity.kt:29:10",
+        "message": "findViewById<View>(R.id.error) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/AboutActivity.kt:33:14",
+        "message": "findViewById<View>(R.id.version) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/AboutActivity.kt:39:10",
+        "message": "findViewById<View>(R.id.opensource) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/AboutActivity.kt:40:10",
+        "message": "findViewById<View>(R.id.translate) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/AboutActivity.kt:41:10",
+        "message": "findViewById<View>(R.id.contact) cannot be safely cast to TextView."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/androidTest/java/com/alderferstudios/handandfootscores/ScoreActivityTest.kt:50:1",
+        "message": "The file ScoreActivityTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/DeviceUtils.kt:14:1",
+        "message": "The file DeviceUtils.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/InstructionActivity.kt:102:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/InstructionActivity.kt:112:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/InstructionActivity.kt:121:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/InstructionActivity.kt:127:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:44:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:85:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:229:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:236:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:242:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:249:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:255:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:261:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:267:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:272:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:337:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:372:19",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/DeviceUtils.kt:11:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreFragment.kt:23:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreFragment.kt:58:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreFragment.kt:59:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreFragment.kt:60:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreFragment.kt:61:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreFragment.kt:62:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreFragment.kt:63:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreFragment.kt:64:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreFragment.kt:65:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/InstructionActivity.kt:86:17",
+        "message": "Function parameter v is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:199:18",
+        "message": "Function parameter v is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/InstructionActivity.kt:143:75",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/InstructionActivity.kt:147:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/InstructionActivity.kt:151:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:395:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:103:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreFragment.kt:46:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:133:5",
+        "message": "Function onOptionsItemSelected has 6 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:44:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:226:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/ScoreActivity.kt:231:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:154:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:163:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:173:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:182:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:192:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:201:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:211:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:220:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:230:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:239:151",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:249:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:258:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:268:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:277:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:287:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:296:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:306:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:315:146",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:325:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:334:143",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/SettingsActivity.kt:344:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UtilityClassWithPublicConstructor",
+      "description": "The class declaration is unnecessary because it only contains utility functions. An object declaration should be used instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/BenAlderfer-hand-and-foot-scores/app/src/main/java/com/alderferstudios/handandfootscores/DeviceUtils.kt:5:1",
+        "message": "The class DeviceUtils only contains utility functions. Consider defining it as an object."
+      }]
+    }]
+  }]
+}

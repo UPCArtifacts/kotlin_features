@@ -1,0 +1,1045 @@
+{
+  "complexity_metrics": {
+    "loc": 4059,
+    "sloc": 3128,
+    "lloc": 2079,
+    "cloc": 424,
+    "mcc": 552,
+    "n_smell": 281,
+    "comment_ratio": 13,
+    "mcc_per_thlines": 265
+  },
+  "metrics": {
+    "number_of_string": 530,
+    "number_of_string_template": 5,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 56,
+    "number_of_inferred_var": 136,
+    "number_of_objects_declarations": 2,
+    "number_of_companion_objects": 1,
+    "number_of_singletons": 0,
+    "number_of_declaration": 160,
+    "number_of_var_declaration": 160,
+    "number_of_func_call": 1079,
+    "number_of_arguments": 897,
+    "number_of_parameters": 572,
+    "number_of_qualified_expressions": 1513,
+    "number_of_inheritances": 54,
+    "number_of_unsafe_calls": 1,
+    "number_of_safe_calls": 41,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 10,
+    "number_of_functions_with_default_value": 31,
+    "number_of_function_call_with_named_value": 2,
+    "number_of_named_argument": 2,
+    "number_of_argument_with_default_value": 144,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 16,
+    "number_of_properties_delegation": 2,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 149,
+    "number_of_possible_smart_casts": 16,
+    "number_of_data_class": 3,
+    "number_of_properties": 160,
+    "number_of_functions": 357,
+    "number_of_interfaces": 18,
+    "number_of_classes": 96,
+    "number_of_packages": 15,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 92
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayApi.kt:47:5",
+        "message": "The function getJournalEntries appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesRecyclerAdapter.kt:65:9",
+        "message": "The function bindData appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/SplashActivity.kt:23:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/utils/Extensions.kt:161:1",
+        "message": "The function generateMessage appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayApi.kt:12:1",
+        "message": "Class 'BimayApi' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/NetworkHelper.kt:8:1",
+        "message": "Interface 'NetworkHelper' with '12' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:10:1",
+        "message": "Interface 'BimayService' with '15' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JournalFragment.kt:28:1",
+        "message": "Class 'JournalFragment' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesFragment.kt:32:1",
+        "message": "Class 'GradesFragment' with '20' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesContract.kt:13:5",
+        "message": "Interface 'View' with '11' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesFragment.kt:26:1",
+        "message": "Class 'ResourcesFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInContract.kt:8:5",
+        "message": "Interface 'View' with '13' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:25:1",
+        "message": "Class 'SignInActivity' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/utils/Extensions.kt:1:1",
+        "message": "File 'Extensions.kt' with '17' functions detected. Defined threshold inside files is set to '11'"
+      }]
+    }, {
+      "name": "ComplexInterface",
+      "description": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/NetworkHelper.kt:8:1",
+        "message": "The interface NetworkHelper is too complex. Consider splitting it up."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:10:1",
+        "message": "The interface BimayService is too complex. Consider splitting it up."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesContract.kt:13:5",
+        "message": "The interface View is too complex. Consider splitting it up."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInContract.kt:8:5",
+        "message": "The interface View is too complex. Consider splitting it up."
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:87:21",
+        "message": "The function getResources has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:97:22",
+        "message": "The function getAssignment has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesRecyclerAdapter.kt:50:49",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/utils/Extensions.kt:43:39",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/utils/Extensions.kt:165:32",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/TermRepository.kt:13:33",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyCatchBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesRecyclerAdapter.kt:44:44",
+        "message": "This empty block of code can be removed."
+      }]
+    }, {
+      "name": "EmptyClassBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/models/ExamModel.kt:6:1",
+        "message": "The class or object  ExamModel is empty."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/models/JournalModel.kt:21:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/TimeStampRepositoryModule.kt:19:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/TimeStampRepositoryModule.kt:24:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/TimeStampRepositoryModule.kt:29:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesRecyclerAdapter.kt:27:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:34:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesFragmentPagerAdapter.kt:30:34",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "PackageNaming",
+      "description": "Package names should match the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInContract.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInPresenter.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/SplashActivity.kt:45:42",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/ResourcesModule.kt:28:70",
+        "message": "fragment.activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/JournalModule.kt:26:68",
+        "message": "fragment.activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/GradesModule.kt:32:67",
+        "message": "view.activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayApi.kt:41:26",
+        "message": "it cannot be safely cast to List<CourseModel>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayApi.kt:68:56",
+        "message": "it cannot be safely cast to Collection<ExamModel>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JournalRecyclerAdapter.kt:27:34",
+        "message": "getItem(position) cannot be safely cast to JournalModel."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JExamsRecyclerAdapter.kt:19:25",
+        "message": "data?.get(position) cannot be safely cast to ExamModel."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/SessionRecyclerAdapter.kt:23:25",
+        "message": "data?.get(position) cannot be safely cast to SessionModel."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JFinanceRecyclerAdapter.kt:21:25",
+        "message": "data?.get(position) cannot be safely cast to FinanceModel."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesListFragment.kt:33:26",
+        "message": "parentFragment cannot be safely cast to ResourcesFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:119:33",
+        "message": "application cannot be safely cast to Portal."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesFragment.kt:45:10",
+        "message": "ctx cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:52:29",
+        "message": "getItem(position - 1) cannot be safely cast to FinanceModel."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:54:29",
+        "message": "getItem(position) cannot be safely cast to FinanceModel."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/GradesInteractor.kt:37:44",
+        "message": "it cannot be safely cast to GradeModel."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JournalFragment.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JournalFragment.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JournalFragment.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesFragment.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesFragment.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesFragment.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/MainActivity.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/MainActivity.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesFragment.kt:53:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesFragment.kt:54:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesFragment.kt:55:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesFragment.kt:56:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesPresenter.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/Portal.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesRecyclerAdapter.kt:140:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/test/java/com/directdev/portal/interactors/AuthInteractorUnitTest.kt:50:1",
+        "message": "The file AuthInteractorUnitTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/ApplicationComponent.kt:24:1",
+        "message": "The file ApplicationComponent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/LayoutManagerModule.kt:16:1",
+        "message": "The file LayoutManagerModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/TimeStampRepositoryModule.kt:34:1",
+        "message": "The file TimeStampRepositoryModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/SignInModule.kt:21:1",
+        "message": "The file SignInModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/FragmentModule.kt:44:1",
+        "message": "The file FragmentModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/RealmModule.kt:14:1",
+        "message": "The file RealmModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/NetworkModule.kt:58:1",
+        "message": "The file NetworkModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/FirebaseAnalyticsModule.kt:15:1",
+        "message": "The file FirebaseAnalyticsModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/JournalModule.kt:38:1",
+        "message": "The file JournalModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/GradesModule.kt:38:1",
+        "message": "The file GradesModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/ActivityModule.kt:25:1",
+        "message": "The file ActivityModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/JodaModule.kt:20:1",
+        "message": "The file JodaModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/NetworkHelper.kt:24:1",
+        "message": "The file NetworkHelper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JournalPresenter.kt:66:1",
+        "message": "The file JournalPresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/SessionRecyclerAdapter.kt:55:1",
+        "message": "The file SessionRecyclerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JournalContract.kt:31:1",
+        "message": "The file JournalContract.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesRecyclerAdapter.kt:166:1",
+        "message": "The file GradesRecyclerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesContract.kt:35:1",
+        "message": "The file GradesContract.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesPresenter.kt:87:1",
+        "message": "The file GradesPresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesRecyclerAdapter.kt:79:1",
+        "message": "The file ResourcesRecyclerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesContract.kt:30:1",
+        "message": "The file ResourcesContract.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesFragment.kt:120:1",
+        "message": "The file ResourcesFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesFragmentPagerAdapter.kt:35:1",
+        "message": "The file ResourcesFragmentPagerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesListFragment.kt:58:1",
+        "message": "The file ResourcesListFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesPresenter.kt:72:1",
+        "message": "The file ResourcesPresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/assignment/AssignmentFragment.kt:30:1",
+        "message": "The file AssignmentFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/SettingsActivity.kt:33:1",
+        "message": "The file SettingsActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInContract.kt:28:1",
+        "message": "The file SignInContract.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInPresenter.kt:57:1",
+        "message": "The file SignInPresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:120:1",
+        "message": "The file SignInActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesFragment.kt:52:1",
+        "message": "The file FinancesFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:109:1",
+        "message": "The file FinancesRecyclerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/SplashActivity.kt:49:1",
+        "message": "The file SplashActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/BaseView.kt:11:1",
+        "message": "The file BaseView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/utils/Extensions.kt:191:71",
+        "message": "The file Extensions.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/utils/ScrollAwareFabBehavior.kt:34:1",
+        "message": "The file ScrollAwareFabBehavior.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/utils/SigninException.kt:6:59",
+        "message": "The file SigninException.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/UserCredRepository.kt:24:1",
+        "message": "The file UserCredRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/AuthTimeStampRepository.kt:16:1",
+        "message": "The file AuthTimeStampRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/JournalRepository.kt:35:1",
+        "message": "The file JournalRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/GradesRepository.kt:35:1",
+        "message": "The file GradesRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/JournalTimeStampRepository.kt:16:1",
+        "message": "The file JournalTimeStampRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/TermTimeStampRepository.kt:16:1",
+        "message": "The file TermTimeStampRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/CourseRepository.kt:29:1",
+        "message": "The file CourseRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/GradeTimeStampRepository.kt:16:1",
+        "message": "The file GradeTimeStampRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/ProfileRepository.kt:28:1",
+        "message": "The file ProfileRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/ResourceRepository.kt:32:1",
+        "message": "The file ResourceRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/FlagRepository.kt:22:1",
+        "message": "The file FlagRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/models/AssignmentIndividualModel.kt:26:17",
+        "message": "The file AssignmentIndividualModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/models/ResBookModel.kt:32:17",
+        "message": "The file ResBookModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/models/TermIntermidiaryModel.kt:11:1",
+        "message": "The file TermIntermidiaryModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/models/ResModelIntermidiary.kt:25:1",
+        "message": "The file ResModelIntermidiary.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/models/JournalModel.kt:26:1",
+        "message": "The file JournalModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/models/ResUrlModel.kt:34:17",
+        "message": "The file ResUrlModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/models/ResModel.kt:27:17",
+        "message": "The file ResModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/models/ResResourcesModel.kt:30:17",
+        "message": "The file ResResourcesModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/models/ExamModel.kt:38:1",
+        "message": "The file ExamModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/models/ResPathModel.kt:30:17",
+        "message": "The file ResPathModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/BasePresenter.kt:6:23",
+        "message": "The file BasePresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/JournalInteractor.kt:46:1",
+        "message": "The file JournalInteractor.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/TermInteractor.kt:50:1",
+        "message": "The file TermInteractor.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/GradesInteractor.kt:46:1",
+        "message": "The file GradesInteractor.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/CourseInteractor.kt:36:1",
+        "message": "The file CourseInteractor.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/ResourceInteractor.kt:64:1",
+        "message": "The file ResourceInteractor.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/ProfileInteractor.kt:25:1",
+        "message": "The file ProfileInteractor.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:122:1",
+        "message": "The file AuthInteractor.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/test/java/com/directdev/portal/interactors/AuthInteractorUnitTest.kt:44:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JournalPresenter.kt:11:1",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesRecyclerAdapter.kt:61:5",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesPresenter.kt:47:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/MainActivity.kt:42:13",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/MainActivity.kt:61:5",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesFragmentPagerAdapter.kt:29:5",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesPresenter.kt:29:21",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:26:1",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/utils/NullConverterFactory.kt:25:13",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/ResourceInteractor.kt:17:5",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/ResourceInteractor.kt:25:1",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:117:5",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/TimeStampRepositoryModule.kt:3:1",
+        "message": "com.directdev.portal.repositories.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayApi.kt:3:1",
+        "message": "com.directdev.portal.models.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/NetworkHelper.kt:3:1",
+        "message": "com.directdev.portal.models.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:4:1",
+        "message": "com.directdev.portal.models.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:8:1",
+        "message": "retrofit2.http.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesFragment.kt:26:1",
+        "message": "lecho.lib.hellocharts.model.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:17:1",
+        "message": "com.directdev.portal.utils.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:21:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesFragment.kt:6:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/SignInModule.kt:9:1",
+        "message": "The import 'javax.inject.Singleton' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/NetworkModule.kt:19:1",
+        "message": "The import 'javax.inject.Singleton' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesRecyclerAdapter.kt:8:1",
+        "message": "The import 'android.os.Debug' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInPresenter.kt:7:1",
+        "message": "The import 'java.io.IOException' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/ResourceRepository.kt:3:1",
+        "message": "The import 'android.util.Log' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/repositories/ResourceRepository.kt:4:1",
+        "message": "The import 'com.directdev.portal.models.ResBookModel' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:11:1",
+        "message": "The import 'java.net.URLEncoder' is unused."
+      }]
+    }, {
+      "name": "UnnecessaryAbstractClass",
+      "description": "An abstract class is unnecessary and can be refactored. An abstract class should have both abstract and concrete properties or functions. An abstract class without a concrete member can be refactored to an interface. An abstract class without an abstract member can be refactored to a concrete class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/FragmentModule.kt:9:1",
+        "message": "An abstract class without a concrete member can be refactored to an interface."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/ActivityModule.kt:8:1",
+        "message": "An abstract class without a concrete member can be refactored to an interface."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/NetworkModule.kt:25:60",
+        "message": "Parentheses around the lambda ({\n            // Prevents cookie, username, password, and anything sensitive from being sent to crashlytics\n            if (!it.contains(\"cookie\", true) && !it.contains(\"Login\"))\n                Crashlytics.log(it)\n            else\n                Crashlytics.log(it.take(5) + \"-redacted-\" +  it.takeLast(5))\n        }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/TermInteractor.kt:42:20",
+        "message": "Parentheses in ((chosenTerm + 99) / 100) are unnecessary and can be replaced with: (chosenTerm + 99) / 100"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/TermInteractor.kt:42:48",
+        "message": "Parentheses in ((termRepo.getFirstTerm() + 99) / 100) are unnecessary and can be replaced with: (termRepo.getFirstTerm() + 99) / 100"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/TermInteractor.kt:44:22",
+        "message": "Parentheses in (year * 2) are unnecessary and can be replaced with: year * 2"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/TermInteractor.kt:45:22",
+        "message": "Parentheses in (year * 2) are unnecessary and can be replaced with: year * 2"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/TermInteractor.kt:46:22",
+        "message": "Parentheses in (year * 2) are unnecessary and can be replaced with: year * 2"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/NetworkModule.kt:30:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/NetworkModule.kt:30:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/NetworkModule.kt:39:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/NetworkModule.kt:40:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/NetworkModule.kt:41:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayApi.kt:50:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JournalRecyclerAdapter.kt:56:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JournalFragment.kt:34:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JournalFragment.kt:39:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesFragment.kt:38:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesFragment.kt:44:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesFragment.kt:90:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesFragment.kt:92:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesFragment.kt:60:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesFragment.kt:70:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:45:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:54:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:100:91",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:105:91",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:64:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:70:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:86:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:97:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/JournalInteractor.kt:44:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/TermInteractor.kt:42:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/TermInteractor.kt:42:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/TermInteractor.kt:42:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/TermInteractor.kt:42:82",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/GradesInteractor.kt:44:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:50:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:102:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:102:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:103:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:103:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:104:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:104:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:110:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:110:112",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:110:125",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:110:140",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:111:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:111:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:111:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:111:112",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:111:125",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:111:140",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:120:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/NetworkModule.kt:27:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/di/NetworkModule.kt:27:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JournalRecyclerAdapter.kt:54:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesRecyclerAdapter.kt:36:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesRecyclerAdapter.kt:44:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesRecyclerAdapter.kt:51:16",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesRecyclerAdapter.kt:51:16",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesListFragment.kt:43:47",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesListFragment.kt:43:47",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesListFragment.kt:47:35",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesListFragment.kt:47:35",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesPresenter.kt:24:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInPresenter.kt:23:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInPresenter.kt:25:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:41:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:45:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:45:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:51:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:51:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/SplashActivity.kt:26:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/SplashActivity.kt:29:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/utils/Extensions.kt:118:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/ResourceInteractor.kt:19:16",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/ResourceInteractor.kt:19:16",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:64:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayApi.kt:51:100",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:22:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:26:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:32:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:40:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:50:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:55:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:60:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:65:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:70:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:75:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:80:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:85:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:95:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayService.kt:104:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/journal/JFinanceRecyclerAdapter.kt:31:138",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:46:153",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:48:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:55:164",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/signIn/SignInActivity.kt:57:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/finance/FinancesRecyclerAdapter.kt:46:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/utils/ScrollAwareFabBehavior.kt:15:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/utils/ScrollAwareFabBehavior.kt:29:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/service/FcmService.kt:15:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:110:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/AuthInteractor.kt:111:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/network/BimayApi.kt:9:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of BimayApi."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/grades/GradesRecyclerAdapter.kt:30:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesFragmentPagerAdapter.kt:30:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "SerialVersionUIDInSerializableClass",
+      "description": "A class which implements the Serializable interface does not define a correct serialVersionUID field. The serialVersionUID field should be a constant long value inside a companion object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/resources/ResourcesPresenter.kt:13:1",
+        "message": "The class ResourcesPresenter implements the Serializable interface and should thus define a serialVersionUID."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/features/SplashActivity.kt:45:61",
+        "message": "Pair is created by using the pair constructor. This can replaced by `\"signout\" to \"signout\"`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/interactors/CourseInteractor.kt:31:13",
+        "message": "Pair is created by using the pair constructor. This can replaced by `it.courseName to it.classNumber`"
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/utils/ScrollAwareFabBehavior.kt:13:30",
+        "message": "Private property context is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/utils/ScrollAwareFabBehavior.kt:13:49",
+        "message": "Private property attrs is unused."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/chrsep-Kingfish/app/src/main/java/com/directdev/portal/models/TermIntermidiaryModel.kt:5:1",
+        "message": "The class TermIntermidiaryModel defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }]
+  }]
+}

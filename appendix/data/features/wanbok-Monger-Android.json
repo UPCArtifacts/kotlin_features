@@ -1,0 +1,180 @@
+{
+  "complexity_metrics": {
+    "loc": 290,
+    "sloc": 220,
+    "lloc": 140,
+    "cloc": 21,
+    "mcc": 40,
+    "n_smell": 26,
+    "comment_ratio": 9,
+    "mcc_per_thlines": 285
+  },
+  "metrics": {
+    "number_of_string": 46,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 38,
+    "number_of_objects_declarations": 0,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 38,
+    "number_of_var_declaration": 38,
+    "number_of_func_call": 111,
+    "number_of_arguments": 116,
+    "number_of_parameters": 28,
+    "number_of_qualified_expressions": 132,
+    "number_of_inheritances": 5,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 39,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 10,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 38,
+    "number_of_functions": 16,
+    "number_of_interfaces": 0,
+    "number_of_classes": 5,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 5
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainActivity.kt:49:5",
+        "message": "The function onSave appears to be too complex."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/SMSReceiver.kt:78:17",
+        "message": "This condition is too complex."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainActivity.kt:17:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/SMSReceiver.kt:21:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/SMSReceiver.kt:22:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/SMSReceiver.kt:23:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/androidTest/java/com/wanbok/monger/ApplicationTest.kt:9:81",
+        "message": "The file ApplicationTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainService.kt:44:1",
+        "message": "The file MainService.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/BootReceiver.kt:15:1",
+        "message": "The file BootReceiver.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/SMSReceiver.kt:117:1",
+        "message": "The file SMSReceiver.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainActivity.kt:89:24",
+        "message": "Parentheses in (\n                    email?.\n                    split(\",\")?.\n                    map { it.replace(\" \", \"\") }?.\n                    map { android.util.Patterns.EMAIL_ADDRESS.matcher(it).matches() }?.\n                    reduce { a, b -> a && b } == true\n                    ) are unnecessary and can be replaced with: email?.\n                    split(\",\")?.\n                    map { it.replace(\" \", \"\") }?.\n                    map { android.util.Patterns.EMAIL_ADDRESS.matcher(it).matches() }?.\n                    reduce { a, b -> a && b } == true"
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainActivity.kt:5:1",
+        "message": "The import 'android.content.SharedPreferences' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainActivity.kt:12:1",
+        "message": "The import 'android.widget.Button' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainService.kt:6:1",
+        "message": "The import 'android.os.Binder' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainService.kt:9:1",
+        "message": "The import 'android.widget.Toast' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/SMSReceiver.kt:7:1",
+        "message": "The import 'android.os.Build' is unused."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainActivity.kt:49:16",
+        "message": "Function parameter button is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainActivity.kt:101:25",
+        "message": "Function parameter hasIncomingWebhook is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainActivity.kt:101:54",
+        "message": "Function parameter hasEmail is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainActivity.kt:78:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainActivity.kt:82:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/MainService.kt:37:81",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/SMSReceiver.kt:75:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/SMSReceiver.kt:76:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/SMSReceiver.kt:102:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wanbok-Monger-Android/app/src/main/java/com/wanbok/monger/SMSReceiver.kt:48:26",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }]
+  }]
+}

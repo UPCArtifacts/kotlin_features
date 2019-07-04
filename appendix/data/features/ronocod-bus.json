@@ -1,0 +1,131 @@
+{
+  "complexity_metrics": {
+    "loc": 518,
+    "sloc": 420,
+    "lloc": 271,
+    "cloc": 14,
+    "mcc": 49,
+    "n_smell": 14,
+    "comment_ratio": 3,
+    "mcc_per_thlines": 180
+  },
+  "metrics": {
+    "number_of_string": 17,
+    "number_of_string_template": 4,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 6,
+    "number_of_inferred_var": 10,
+    "number_of_objects_declarations": 4,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 19,
+    "number_of_var_declaration": 19,
+    "number_of_func_call": 175,
+    "number_of_arguments": 127,
+    "number_of_parameters": 39,
+    "number_of_qualified_expressions": 203,
+    "number_of_inheritances": 3,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 5,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 1,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 3,
+    "number_of_named_argument": 5,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 3,
+    "number_of_properties_delegation": 7,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 32,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 5,
+    "number_of_properties": 19,
+    "number_of_functions": 37,
+    "number_of_interfaces": 1,
+    "number_of_classes": 12,
+    "number_of_packages": 4,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 12
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/ui/map/MapActivity.kt:166:3",
+        "message": "The function setupMap appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/ui/map/MapActivity.kt:54:1",
+        "message": "Class 'MapActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/ui/map/MapActivity.kt:230:11",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/ui/map/MapActivity.kt:266:24",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/BusApplication.kt:48:3",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/ui/map/MapActivity.kt:56:36",
+        "message": "application cannot be safely cast to BusApplication."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/ui/map/MapActivity.kt:57:35",
+        "message": "application cannot be safely cast to BusApplication."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/ui/map/MapActivity.kt:141:22",
+        "message": "searchItem.actionView cannot be safely cast to SearchView."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/ui/map/MapActivity.kt:85:8",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/ui/map/MapActivity.kt:90:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/ui/map/MapActivity.kt:169:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/ui/map/MapActivity.kt:182:19",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/ui/map/MapActivity.kt:212:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ronocod-bus/app/src/main/java/com/conorodonnell/bus/ui/map/MapActivity.kt:233:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }]
+  }]
+}

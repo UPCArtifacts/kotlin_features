@@ -1,0 +1,110 @@
+{
+  "complexity_metrics": {
+    "loc": 78,
+    "sloc": 66,
+    "lloc": 51,
+    "cloc": 3,
+    "mcc": 22,
+    "n_smell": 12,
+    "comment_ratio": 4,
+    "mcc_per_thlines": 431
+  },
+  "metrics": {
+    "number_of_string": 46,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 2,
+    "number_of_objects_declarations": 0,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 2,
+    "number_of_var_declaration": 2,
+    "number_of_func_call": 37,
+    "number_of_arguments": 57,
+    "number_of_parameters": 11,
+    "number_of_qualified_expressions": 58,
+    "number_of_inheritances": 1,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 0,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 2,
+    "number_of_functions": 1,
+    "number_of_interfaces": 0,
+    "number_of_classes": 1,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 1
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/imilas-tm/app/src/main/java/bro/tm/startup_activity.kt:13:5",
+        "message": "The function onCreate appears to be too complex."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/imilas-tm/app/src/main/java/bro/tm/startup_activity.kt:19:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/imilas-tm/app/src/main/java/bro/tm/startup_activity.kt:24:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/imilas-tm/app/src/main/java/bro/tm/startup_activity.kt:29:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/imilas-tm/app/src/main/java/bro/tm/startup_activity.kt:34:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/imilas-tm/app/src/main/java/bro/tm/startup_activity.kt:39:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/imilas-tm/app/src/main/java/bro/tm/startup_activity.kt:44:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/imilas-tm/app/src/main/java/bro/tm/startup_activity.kt:49:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/imilas-tm/app/src/main/java/bro/tm/startup_activity.kt:54:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/imilas-tm/app/src/main/java/bro/tm/startup_activity.kt:59:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/imilas-tm/app/src/main/java/bro/tm/startup_activity.kt:64:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "ClassNaming",
+      "description": "A classes name should fit the naming pattern defined in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/imilas-tm/app/src/main/java/bro/tm/startup_activity.kt:7:1",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }]
+    }]
+  }]
+}

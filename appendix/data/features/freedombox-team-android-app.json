@@ -1,0 +1,408 @@
+{
+  "complexity_metrics": {
+    "loc": 2528,
+    "sloc": 1470,
+    "lloc": 920,
+    "cloc": 629,
+    "mcc": 228,
+    "n_smell": 88,
+    "comment_ratio": 42,
+    "mcc_per_thlines": 247
+  },
+  "metrics": {
+    "number_of_string": 87,
+    "number_of_string_template": 10,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 28,
+    "number_of_inferred_var": 161,
+    "number_of_objects_declarations": 13,
+    "number_of_companion_objects": 6,
+    "number_of_singletons": 0,
+    "number_of_declaration": 191,
+    "number_of_var_declaration": 191,
+    "number_of_func_call": 640,
+    "number_of_arguments": 616,
+    "number_of_parameters": 170,
+    "number_of_qualified_expressions": 826,
+    "number_of_inheritances": 18,
+    "number_of_unsafe_calls": 19,
+    "number_of_safe_calls": 22,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 5,
+    "number_of_function_call_with_named_value": 5,
+    "number_of_named_argument": 6,
+    "number_of_argument_with_default_value": 5,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 1,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 46,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 5,
+    "number_of_properties": 191,
+    "number_of_functions": 150,
+    "number_of_interfaces": 3,
+    "number_of_classes": 38,
+    "number_of_packages": 17,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 38
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:144:1",
+        "message": "The function getLaunchString appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:169:92",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:1:1",
+        "message": "File 'AppLoader.kt' with '15' functions detected. Defined threshold inside files is set to '11'"
+      }]
+    }, {
+      "name": "MethodOverloading",
+      "description": "Methods which are overloaded often might be harder to maintain. Furthermore, these methods are tightly coupled. Refactor these methods and try to use optional parameters.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/components/AppComponent.kt:30:1",
+        "message": "This method is overloaded too many times."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:70:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:151:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:71:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:47:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:55:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:166:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/SplashFragment.kt:57:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/BaseFragment.kt:33:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/BaseFragment.kt:48:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/SetupFragment.kt:44:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/SetupFragment.kt:54:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:77:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:90:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:100:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:104:65",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:124:57",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:56:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:57:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:66:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:77:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:80:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:87:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:89:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:91:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:101:10",
+        "message": "shadowActivity.findViewById(R.id.boxName) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:102:10",
+        "message": "shadowActivity.findViewById(R.id.discoveredUrl) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:103:10",
+        "message": "shadowActivity.findViewById(R.id.defaultStatus) cannot be safely cast to Switch."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:132:10",
+        "message": "shadowActivity.findViewById(R.id.boxName) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:133:10",
+        "message": "shadowActivity.findViewById(R.id.discoveredUrl) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:134:10",
+        "message": "shadowActivity.findViewById(R.id.defaultStatus) cannot be safely cast to Switch."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:159:10",
+        "message": "shadowActivity.findViewById(R.id.boxName) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:160:10",
+        "message": "shadowActivity.findViewById(R.id.discoveredUrl) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:161:10",
+        "message": "shadowActivity.findViewById(R.id.defaultStatus) cannot be safely cast to Switch."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/utils/network/ConnectivityMonitor.kt:27:60",
+        "message": "applicationContext\n        .getSystemService(Context.CONNECTIVITY_SERVICE) cannot be safely cast to ConnectivityManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/BaseFragment.kt:33:29",
+        "message": "activity!!.application cannot be safely cast to FreedomBoxApp."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:90:22",
+        "message": "activity!!.getSystemService(NSD_SERVICE) cannot be safely cast to NsdManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/adapter/GridAdapter.kt:38:24",
+        "message": "context\n                .getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:45:24",
+        "message": "context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:61:41",
+        "message": "view.findViewById<TextView>(R.id.boxName) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:62:44",
+        "message": "view.findViewById<TextView>(R.id.port) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:63:34",
+        "message": "view.findViewById<ImageView>(R.id.box_icon) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:64:34",
+        "message": "view.findViewById<View>(R.id.bottom_border) cannot be safely cast to View."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/applications/FreedomBoxApp.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/applications/FreedomBoxApp.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/applications/FreedomBoxApp.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/SplashFragment.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/SetupFragment.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:57:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:60:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:62:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:64:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:66:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:45:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:47:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/activities/BaseActivity.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/activities/BaseActivity.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/utils/network/AppLoaderTest.kt:13:1",
+        "message": "The file AppLoaderTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/models/Launcher.kt:37:36",
+        "message": "The file Launcher.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/SettingsFragment.kt:33:1",
+        "message": "The file SettingsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/activities/SettingsActivity.kt:31:1",
+        "message": "The file SettingsActivity.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/fragments/SplashFragmentTest.kt:35:44",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SplashFragmentTest."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:40:44",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SetupFragmentTest."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/adapter/GridAdapterTest.kt:32:41",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of GridAdapterTest."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:42:38",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of the class or object."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/activities/BaseActivity.kt:31:35",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of BaseActivity."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:30:1",
+        "message": "The import 'org.freedombox.freedombox.views.model.ConfigModel' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/activities/DiscoveryActivity.kt:21:1",
+        "message": "The import 'android.support.design.widget.FloatingActionButton' is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:111:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:217:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:106:72",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:52:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:56:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:93:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/utils/network/ConnectivityMonitor.kt:44:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:79:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:79:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/SplashFragment.kt:46:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/SetupFragment.kt:63:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/SetupFragment.kt:95:33",
+        "message": "Pair is created by using the pair constructor. This can replaced by `previousDefault.key to previousDefault.value.copy(default = false)`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/SetupFragment.kt:105:50",
+        "message": "Pair is created by using the pair constructor. This can replaced by `configModel.boxName to configModel`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:63:21",
+        "message": "Pair is created by using the pair constructor. This can replaced by `currentBox.boxName to getShortcutsFromResponse(response)`"
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/freedombox-team-android-app/app/src/main/java/org/freedombox/freedombox/views/model/ConfigModel.kt:45:5",
+        "message": "The data class ConfigModel contains functions which are not registered conversion functions. The offending method is called isDefault"
+      }]
+    }]
+  }]
+}

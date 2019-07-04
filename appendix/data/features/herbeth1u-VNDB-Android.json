@@ -1,0 +1,2204 @@
+{
+  "complexity_metrics": {
+    "loc": 6696,
+    "sloc": 5636,
+    "lloc": 3638,
+    "cloc": 141,
+    "mcc": 997,
+    "n_smell": 651,
+    "comment_ratio": 2,
+    "mcc_per_thlines": 274
+  },
+  "metrics": {
+    "number_of_string": 560,
+    "number_of_string_template": 12,
+    "number_of_inline_func": 5,
+    "number_of_inferred_fun": 100,
+    "number_of_inferred_var": 376,
+    "number_of_objects_declarations": 45,
+    "number_of_companion_objects": 25,
+    "number_of_singletons": 15,
+    "number_of_declaration": 574,
+    "number_of_var_declaration": 579,
+    "number_of_func_call": 2313,
+    "number_of_arguments": 2354,
+    "number_of_parameters": 924,
+    "number_of_qualified_expressions": 3350,
+    "number_of_inheritances": 58,
+    "number_of_unsafe_calls": 3,
+    "number_of_safe_calls": 279,
+    "number_of_destructuring_declarations": 5,
+    "number_of_when_expressions": 51,
+    "number_of_functions_with_default_value": 74,
+    "number_of_function_call_with_named_value": 44,
+    "number_of_named_argument": 80,
+    "number_of_argument_with_default_value": 285,
+    "number_of_overloaded_op": 1,
+    "number_of_extension_function": 51,
+    "number_of_properties_delegation": 17,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 15,
+    "number_of_lambdas": 392,
+    "number_of_possible_smart_casts": 19,
+    "number_of_data_class": 54,
+    "number_of_properties": 569,
+    "number_of_functions": 405,
+    "number_of_interfaces": 5,
+    "number_of_classes": 137,
+    "number_of_packages": 26,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 163
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:36:1",
+        "message": "Class 'HomeActivity' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsFragment.kt:34:1",
+        "message": "Class 'HomeTabsFragment' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsViewModel.kt:24:1",
+        "message": "Class 'VNDetailsViewModel' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:31:1",
+        "message": "Class 'SlideshowActivity' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/CachePolicy.kt:3:1",
+        "message": "Class 'CachePolicy' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/AnimeHolder.kt:20:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationHolder.kt:27:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationHolder.kt:28:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsAdapter.kt:33:44",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsAdapter.kt:38:57",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryFragment.kt:66:57",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryFragment.kt:80:57",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:85:60",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagTabHolder.kt:19:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagTabHolder.kt:20:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagHolder.kt:19:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:117:42",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:119:34",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNHolder.kt:40:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:89:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:90:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:91:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:92:20",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:93:23",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:94:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:95:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:96:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:97:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/LiveData.kt:22:11",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/AppBarLayout.kt:13:60",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryFragment.kt:47:5",
+        "message": "The function showVn appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsFragment.kt:123:5",
+        "message": "The function onClick appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:195:5",
+        "message": "The function onClick appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNListViewModel.kt:34:5",
+        "message": "The function getVns appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:34:5",
+        "message": "The function getItems appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:29:5",
+        "message": "The function getName appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:127:5",
+        "message": "The function sendCommand appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:188:5",
+        "message": "The function getResponse appears to be too complex."
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:52:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:128:5",
+        "message": "The function showAccount is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:38:1",
+        "message": "Class VNDetailsActivity is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNHolder.kt:29:15",
+        "message": "The function onBind has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VotelistRepository.kt:27:24",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/Repository.kt:10:126",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VnlistRepository.kt:26:22",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/WishlistRepository.kt:27:24",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/CachePolicy.kt:75:5",
+        "message": "Function get is nested too deeply."
+      }]
+    }, {
+      "name": "MethodOverloading",
+      "description": "Methods which are overloaded often might be harder to maintain. Furthermore, these methods are tightly coupled. Refactor these methods and try to use optional parameters.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/di/AppComponent.kt:15:1",
+        "message": "This method is overloaded too many times."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/GridAutofitLayoutManager.kt:40:13",
+        "message": "This condition is too complex."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyIfBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:139:21",
+        "message": "This if block is empty and can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsViewModel.kt:38:42",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowViewModel.kt:23:33",
+        "message": "Exception is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TagsRepository.kt:45:32",
+        "message": "Exception is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TraitsRepository.kt:45:32",
+        "message": "Exception is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:46:13",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:51:9",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:53:9",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:133:69",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:161:29",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:166:17",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:168:17",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:172:21",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:177:17",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:185:25",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:198:13",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:210:17",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:224:13",
+        "message": "Throwable is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }, {
+      "name": "NotImplementedDeclaration",
+      "description": "The NotImplementedDeclaration should only be used when a method stub is necessary. This defers the development of the functionality of this function. Hence, the NotImplementedDeclaration should only serve as a temporary declaration. Before releasing, this type of declaration should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/CachePolicy.kt:13:49",
+        "message": "The NotImplementedDeclaration should only be used when a method stub is necessary. This defers the development of the functionality of this function. Hence, the NotImplementedDeclaration should only serve as a temporary declaration. Before releasing, this type of declaration should be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/CachePolicy.kt:19:51",
+        "message": "The NotImplementedDeclaration should only be used when a method stub is necessary. This defers the development of the functionality of this function. Hence, the NotImplementedDeclaration should only serve as a temporary declaration. Before releasing, this type of declaration should be removed."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/image/PhotoViewPager.kt:19:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/image/PhotoViewPager.kt:29:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }, {
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:178:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:197:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "RethrowCaughtException",
+      "description": "Do not rethrow a caught exception of the same type.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:179:17",
+        "message": "Do not rethrow a caught exception of the same type."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMinLength",
+      "description": "Function names should not be shorter than the minimum defined in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Optional.kt:34:9",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Pixels.kt:10:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Pixels.kt:18:5",
+        "message": "Function names should be at least 3 characters long."
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:25:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:31:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/AnimeDao.kt:10:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/AnimeDao.kt:11:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/AnimeDao.kt:12:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/AnimeDao.kt:13:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/TextView.kt:6:31",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/AppBarLayout.kt:11:1",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "ConstructorParameterNaming",
+      "description": "Constructor parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:16:5",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:23:5",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Character.kt:9:9",
+        "message": "Constructor private parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Character.kt:10:9",
+        "message": "Constructor private parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Anime.kt:8:5",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Anime.kt:9:5",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Anime.kt:10:5",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Anime.kt:11:5",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Staff.kt:7:9",
+        "message": "Constructor private parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Staff.kt:12:9",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:13:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeViewModel.kt:17:10",
+        "message": "application cannot be safely cast to App."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:47:10",
+        "message": "application cannot be safely cast to App."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:159:22",
+        "message": "menu.findItem(R.id.action_filter).actionView cannot be safely cast to SearchView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:192:24",
+        "message": "it.menu.findItem(itemId).actionView cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsViewModel.kt:24:10",
+        "message": "application cannot be safely cast to App."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryViewModel.kt:23:10",
+        "message": "application cannot be safely cast to App."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryFragment.kt:81:36",
+        "message": "view cannot be safely cast to Chip."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryFragment.kt:103:17",
+        "message": "this cannot be safely cast to CardView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryFragment.kt:113:17",
+        "message": "this cannot be safely cast to CardView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsViewModel.kt:21:10",
+        "message": "application cannot be safely cast to App."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:47:16",
+        "message": "textNotes cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:238:55",
+        "message": "images cannot be safely cast to Serializable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsViewModel.kt:36:10",
+        "message": "application cannot be safely cast to App."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsAdapter.kt:44:46",
+        "message": "item cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsAdapter.kt:45:43",
+        "message": "item cannot be safely cast to VNTag."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagHolder.kt:21:9",
+        "message": "this cannot be safely cast to MaterialButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsViewModel.kt:30:10",
+        "message": "application cannot be safely cast to App."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:129:47",
+        "message": "getSystemService(NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowAdapter.kt:21:51",
+        "message": "context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowAdapter.kt:53:30",
+        "message": "any cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/login/LoginViewModel.kt:17:10",
+        "message": "application cannot be safely cast to App."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/login/LoginActivity.kt:138:27",
+        "message": "loginUsername cannot be safely cast to View?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNListViewModel.kt:31:10",
+        "message": "application cannot be safely cast to App."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/App.kt:49:35",
+        "message": "getSystemService(Context.CONNECTIVITY_SERVICE) cannot be safely cast to ConnectivityManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/TypeReference.kt:17:17",
+        "message": "superClass cannot be safely cast to ParameterizedType."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/View.kt:18:15",
+        "message": "context.getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/RecyclerView.kt:13:42",
+        "message": "recyclerView.layoutManager cannot be safely cast to LinearLayoutManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Tag.kt:28:9",
+        "message": "other cannot be safely cast to Tag."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:38:22",
+        "message": "sf.createSocket(HOST, PORT) cannot be safely cast to SSLSocket."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/service/ScreenshotNotificationService.kt:38:35",
+        "message": "getSystemService(AppCompatActivity.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsViewModel.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsViewModel.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsFragment.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsFragment.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryViewModel.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryFragment.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsFragment.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsFragment.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsViewModel.kt:16:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnengine/VnEngine.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsViewModel.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsViewModel.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsViewModel.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsViewModel.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsViewModel.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsFragment.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsFragment.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagTabHolder.kt:11:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagHolder.kt:12:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsViewModel.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsViewModel.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/login/LoginActivity.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/login/LoginActivity.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/login/LoginActivity.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/login/LoginActivity.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:42:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:46:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/BaseFragment.kt:14:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNListViewModel.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNHolder.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNListFragment.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNListFragment.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/App.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/App.kt:62:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/TraitDao.kt:17:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/TraitDao.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/TagDao.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/TagDao.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowViewModel.kt:41:58",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Optional.kt:22:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:124:48",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/androidTest/kotlin/io/herbeth1u/testlf/MainActivityTest.kt:14:1",
+        "message": "The file MainActivityTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeViewModel.kt:50:1",
+        "message": "The file HomeViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:233:1",
+        "message": "The file HomeActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/AnimeHolder.kt:30:1",
+        "message": "The file AnimeHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsViewModel.kt:58:1",
+        "message": "The file RelationsViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationHolder.kt:44:1",
+        "message": "The file RelationHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsFragment.kt:61:1",
+        "message": "The file RelationsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsAdapter.kt:70:1",
+        "message": "The file RelationsAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryViewModel.kt:56:1",
+        "message": "The file SummaryViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryFragment.kt:132:1",
+        "message": "The file SummaryFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/preferences/PreferencesFragment.kt:54:1",
+        "message": "The file PreferencesFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsFragment.kt:162:1",
+        "message": "The file HomeTabsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsAdapter.kt:38:1",
+        "message": "The file HomeTabsAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsViewModel.kt:82:1",
+        "message": "The file HomeTabsViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/url/URLActivity.kt:15:1",
+        "message": "The file URLActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnengine/VnEngine.kt:77:1",
+        "message": "The file VnEngine.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnengine/Typewriter.kt:35:1",
+        "message": "The file Typewriter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:247:1",
+        "message": "The file VNDetailsActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsTabsAdapter.kt:41:1",
+        "message": "The file VNDetailsTabsAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsViewModel.kt:153:1",
+        "message": "The file VNDetailsViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsAdapter.kt:50:1",
+        "message": "The file TagsAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsFragment.kt:66:1",
+        "message": "The file TagsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagTabHolder.kt:46:1",
+        "message": "The file TagTabHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagHolder.kt:32:1",
+        "message": "The file TagHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsViewModel.kt:82:1",
+        "message": "The file TagsViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowViewModel.kt:47:1",
+        "message": "The file SlideshowViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:174:1",
+        "message": "The file SlideshowActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowAdapter.kt:55:1",
+        "message": "The file SlideshowAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/login/LoginViewModel.kt:41:1",
+        "message": "The file LoginViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/login/LoginActivity.kt:174:1",
+        "message": "The file LoginActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:143:1",
+        "message": "The file StartupSyncViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/BaseViewModel.kt:30:1",
+        "message": "The file BaseViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/BaseActivity.kt:29:1",
+        "message": "The file BaseActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/BaseFragment.kt:32:1",
+        "message": "The file BaseFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNListViewModel.kt:79:1",
+        "message": "The file VNListViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNHolder.kt:72:1",
+        "message": "The file VNHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNAdapter.kt:88:1",
+        "message": "The file VNAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNListFragment.kt:86:1",
+        "message": "The file VNListFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/AccountRepository.kt:42:1",
+        "message": "The file AccountRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/ListRepository.kt:30:1",
+        "message": "The file ListRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TagsRepository.kt:56:1",
+        "message": "The file TagsRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VotelistRepository.kt:43:1",
+        "message": "The file VotelistRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/Repository.kt:14:1",
+        "message": "The file Repository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VnlistRepository.kt:42:1",
+        "message": "The file VnlistRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/CachePolicy.kt:96:1",
+        "message": "The file CachePolicy.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:132:1",
+        "message": "The file VNRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/WishlistRepository.kt:43:1",
+        "message": "The file WishlistRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TraitsRepository.kt:56:1",
+        "message": "The file TraitsRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/App.kt:64:1",
+        "message": "The file App.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/di/JSONModule.kt:13:1",
+        "message": "The file JSONModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/di/ApiModule.kt:31:1",
+        "message": "The file ApiModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/di/RepositoryModule.kt:57:1",
+        "message": "The file RepositoryModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/di/AppComponent.kt:33:1",
+        "message": "The file AppComponent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/di/DatabaseModule.kt:21:1",
+        "message": "The file DatabaseModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/TypeReference.kt:25:80",
+        "message": "The file TypeReference.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Notifications.kt:25:1",
+        "message": "The file Notifications.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Utils.kt:25:1",
+        "message": "The file Utils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/EmptyMaybeException.kt:6:39",
+        "message": "The file EmptyMaybeException.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/ErrorHandler.kt:22:1",
+        "message": "The file ErrorHandler.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/image/BitmapTransformation.kt:51:1",
+        "message": "The file BitmapTransformation.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/image/DarkBlurTransform.kt:22:1",
+        "message": "The file DarkBlurTransform.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/image/PhotoViewPager.kt:33:1",
+        "message": "The file PhotoViewPager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Optional.kt:38:1",
+        "message": "The file Optional.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNDao.kt:118:1",
+        "message": "The file VNDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/RelationDao.kt:24:1",
+        "message": "The file RelationDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VnlistDao.kt:17:1",
+        "message": "The file VnlistDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/LinksDao.kt:27:1",
+        "message": "The file LinksDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/TraitDao.kt:55:1",
+        "message": "The file TraitDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/AnimeDao.kt:28:1",
+        "message": "The file AnimeDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/ScreenDao.kt:26:1",
+        "message": "The file ScreenDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/WishlistDao.kt:16:1",
+        "message": "The file WishlistDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VotelistDao.kt:16:1",
+        "message": "The file VotelistDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/TagDao.kt:58:1",
+        "message": "The file TagDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/dao/VNTagDao.kt:26:1",
+        "message": "The file VNTagDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/diff/VNDetailsTagsDiffCallback.kt:31:1",
+        "message": "The file VNDetailsTagsDiffCallback.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/diff/VNDiffCallback.kt:25:1",
+        "message": "The file VNDiffCallback.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/diff/StringDiffCallback.kt:15:1",
+        "message": "The file StringDiffCallback.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/diff/RelationsDiffCallback.kt:64:1",
+        "message": "The file RelationsDiffCallback.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/diff/TagsDiffCallback.kt:16:1",
+        "message": "The file TagsDiffCallback.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Uri.kt:9:1",
+        "message": "The file Uri.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Fragment.kt:18:1",
+        "message": "The file Fragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Context.kt:104:1",
+        "message": "The file Context.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/File.kt:39:76",
+        "message": "The file File.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/View.kt:20:1",
+        "message": "The file View.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/RecyclerView.kt:21:1",
+        "message": "The file RecyclerView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Int.kt:28:1",
+        "message": "The file Int.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/ResponseBody.kt:16:1",
+        "message": "The file ResponseBody.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/String.kt:18:76",
+        "message": "The file String.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/FloatingActionButton.kt:5:77",
+        "message": "The file FloatingActionButton.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/MaterialButton.kt:30:1",
+        "message": "The file MaterialButton.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Throwable.kt:10:39",
+        "message": "The file Throwable.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/TabLayout.kt:16:1",
+        "message": "The file TabLayout.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/ActionBar.kt:5:58",
+        "message": "The file ActionBar.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/BottomSheetBehavior.kt:28:44",
+        "message": "The file BottomSheetBehavior.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/LiveData.kt:25:2",
+        "message": "The file LiveData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/ImageView.kt:16:1",
+        "message": "The file ImageView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Maybe.kt:8:1",
+        "message": "The file Maybe.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/TextView.kt:19:1",
+        "message": "The file TextView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/AppBarLayout.kt:30:6",
+        "message": "The file AppBarLayout.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/BoxStore.kt:25:1",
+        "message": "The file BoxStore.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Track.kt:14:1",
+        "message": "The file Track.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:63:1",
+        "message": "The file VN.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Anime.kt:14:1",
+        "message": "The file Anime.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:46:1",
+        "message": "The file AccountItems.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Tag.kt:65:1",
+        "message": "The file Tag.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Login.kt:12:1",
+        "message": "The file Login.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Vnlist.kt:11:17",
+        "message": "The file Vnlist.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItem.kt:6:1",
+        "message": "The file AccountItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Error.kt:14:1",
+        "message": "The file Error.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Release.kt:24:1",
+        "message": "The file Release.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Staff.kt:21:1",
+        "message": "The file Staff.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Results.kt:7:1",
+        "message": "The file Results.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Fields.kt:11:1",
+        "message": "The file Fields.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Options.kt:16:1",
+        "message": "The file Options.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Screen.kt:13:16",
+        "message": "The file Screen.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Relation.kt:26:1",
+        "message": "The file Relation.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/User.kt:6:1",
+        "message": "The file User.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/CharacterVoiced.kt:8:1",
+        "message": "The file CharacterVoiced.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VnStaff.kt:22:1",
+        "message": "The file VnStaff.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Response.kt:7:1",
+        "message": "The file Response.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Trait.kt:18:1",
+        "message": "The file Trait.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Links.kt:29:1",
+        "message": "The file Links.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Producer.kt:12:1",
+        "message": "The file Producer.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Wishlist.kt:10:17",
+        "message": "The file Wishlist.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/StaffVns.kt:8:1",
+        "message": "The file StaffVns.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/StaffVoiced.kt:8:1",
+        "message": "The file StaffVoiced.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/DbStats.kt:13:1",
+        "message": "The file DbStats.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Votelist.kt:10:17",
+        "message": "The file Votelist.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vnstat/VNStatItem.kt:6:1",
+        "message": "The file VNStatItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vnstat/VNStatResults.kt:7:1",
+        "message": "The file VNStatResults.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:69:1",
+        "message": "The file Vote.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Language.kt:41:1",
+        "message": "The file Language.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/IntentUtils.kt:4:53",
+        "message": "The file IntentUtils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/SortOptions.kt:17:27",
+        "message": "The file SortOptions.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/GdprConsents.kt:11:16",
+        "message": "The file GdprConsents.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/VNTag.kt:11:1",
+        "message": "The file VNTag.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Genre.kt:13:1",
+        "message": "The file Genre.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/VNDetailsTags.kt:29:1",
+        "message": "The file VNDetailsTags.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/FileAction.kt:13:1",
+        "message": "The file FileAction.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/ApiFlags.kt:12:25",
+        "message": "The file ApiFlags.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/SyncData.kt:11:1",
+        "message": "The file SyncData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/VNAndTags.kt:12:1",
+        "message": "The file VNAndTags.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Preferences.kt:20:1",
+        "message": "The file Preferences.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Priority.kt:29:1",
+        "message": "The file Priority.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Expiration.kt:9:1",
+        "message": "The file Expiration.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:253:1",
+        "message": "The file VNDBServer.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/SocketPool.kt:30:1",
+        "message": "The file SocketPool.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBService.kt:16:1",
+        "message": "The file VNDBService.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/service/ConnectionReceiver.kt:21:1",
+        "message": "The file ConnectionReceiver.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/service/EventReceiver.kt:47:1",
+        "message": "The file EventReceiver.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/service/ScreenshotNotificationService.kt:48:1",
+        "message": "The file ScreenshotNotificationService.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeViewModel.kt:41:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnengine/VnEngine.kt:26:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsViewModel.kt:73:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:113:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNHolder.kt:44:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNHolder.kt:55:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNHolder.kt:55:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:100:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:115:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/GridAutofitLayoutManager.kt:34:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Optional.kt:11:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Optional.kt:11:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Context.kt:38:86",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Throwable.kt:9:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:181:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:108:5",
+        "message": "Function goToFragment has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:197:5",
+        "message": "Function onBackPressed has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryFragment.kt:47:5",
+        "message": "Function showVn has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsViewModel.kt:86:5",
+        "message": "Function setCustomVote has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/diff/RelationsDiffCallback.kt:30:5",
+        "message": "Function areContentsTheSame has 7 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/VNDetailsTags.kt:17:5",
+        "message": "Function get has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:36:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:139:137",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:204:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:214:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/AnimeHolder.kt:12:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/AnimeHolder.kt:23:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationHolder.kt:18:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationHolder.kt:26:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsAdapter.kt:19:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryViewModel.kt:37:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/preferences/PreferencesFragment.kt:29:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsFragment.kt:41:48",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsFragment.kt:81:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsAdapter.kt:12:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:45:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:47:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:48:178",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:83:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsTabsAdapter.kt:17:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsFragment.kt:46:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsFragment.kt:47:138",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagTabHolder.kt:10:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagTabHolder.kt:43:58",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagHolder.kt:11:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsViewModel.kt:40:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:93:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:99:146",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:108:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:125:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:126:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:127:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:136:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:143:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowAdapter.kt:21:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:71:106",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:106:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:107:193",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:112:184",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/base/StartupSyncViewModel.kt:132:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNListViewModel.kt:59:50",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNListViewModel.kt:68:182",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNHolder.kt:22:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VotelistRepository.kt:20:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VotelistRepository.kt:22:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VotelistRepository.kt:27:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/Repository.kt:10:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/Repository.kt:11:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/Repository.kt:12:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VnlistRepository.kt:19:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/CachePolicy.kt:19:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/CachePolicy.kt:22:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:22:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:34:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:109:26",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/WishlistRepository.kt:20:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/WishlistRepository.kt:22:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/WishlistRepository.kt:27:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/App.kt:41:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/di/RepositoryModule.kt:37:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/di/RepositoryModule.kt:50:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/di/RepositoryModule.kt:54:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/StopFocusStealingAppBarBehavior.kt:20:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/StopFocusStealingAppBarBehavior.kt:25:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/GridAutofitLayoutManager.kt:24:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/GridAutofitLayoutManager.kt:34:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/ErrorHandler.kt:18:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/image/BitmapTransformation.kt:22:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/diff/VNDetailsTagsDiffCallback.kt:7:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/diff/RelationsDiffCallback.kt:8:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/diff/RelationsDiffCallback.kt:26:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/diff/RelationsDiffCallback.kt:35:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Uri.kt:8:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Fragment.kt:14:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Context.kt:37:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Context.kt:38:137",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Context.kt:39:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/RecyclerView.kt:13:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/BottomSheetBehavior.kt:15:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/LiveData.kt:21:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/AppBarLayout.kt:11:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/AppBarLayout.kt:25:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Error.kt:11:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/SortOptions.kt:6:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/VNTag.kt:6:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Genre.kt:4:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Genre.kt:8:190",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Genre.kt:9:143",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Preferences.kt:14:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:58:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:72:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:84:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:92:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:97:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:127:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:133:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:148:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:152:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:154:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:155:33",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:158:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:209:180",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/home/HomeActivity.kt:172:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/di/AppModule.kt:13:45",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/TypeReference.kt:20:58",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/image/BitmapTransformation.kt:11:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/image/DarkBlurTransform.kt:15:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Optional.kt:30:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Optional.kt:34:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Context.kt:96:65",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Tag.kt:20:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Trait.kt:15:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsFragment.kt:31:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryFragment.kt:70:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryFragment.kt:94:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnsummary/SummaryFragment.kt:100:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsAdapter.kt:18:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsAdapter.kt:19:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsAdapter.kt:20:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsAdapter.kt:21:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsAdapter.kt:21:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsAdapter.kt:22:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsViewModel.kt:48:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/hometabs/HomeTabsViewModel.kt:49:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/url/URLActivity.kt:10:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnengine/Typewriter.kt:11:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:161:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:162:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:163:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:164:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:165:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:166:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:167:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:168:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:169:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:170:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:171:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:206:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:207:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:208:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:209:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:210:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:211:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:212:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:213:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:214:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsActivity.kt:215:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsViewModel.kt:90:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsViewModel.kt:93:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vndetails/VNDetailsViewModel.kt:93:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vntags/TagsViewModel.kt:54:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowViewModel.kt:30:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowAdapter.kt:42:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNListViewModel.kt:42:72",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNListViewModel.kt:42:100",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNListFragment.kt:58:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TagsRepository.kt:53:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TagsRepository.kt:53:84",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TagsRepository.kt:53:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TagsRepository.kt:53:94",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TagsRepository.kt:53:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VotelistRepository.kt:27:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VnlistRepository.kt:26:72",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/CachePolicy.kt:9:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:62:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/WishlistRepository.kt:27:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TraitsRepository.kt:53:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TraitsRepository.kt:53:86",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TraitsRepository.kt:53:91",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TraitsRepository.kt:53:96",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/TraitsRepository.kt:53:101",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/GridAutofitLayoutManager.kt:34:90",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/ErrorHandler.kt:18:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/image/BitmapTransformation.kt:30:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Logger.kt:8:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Logger.kt:9:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Logger.kt:11:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Logger.kt:13:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Logger.kt:15:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/File.kt:17:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/File.kt:17:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/Int.kt:25:15",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/MaterialButton.kt:22:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:39:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:40:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:41:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:48:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:49:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:50:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:56:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:57:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:58:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:59:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:20:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:23:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:24:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:25:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:26:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:26:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:26:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:27:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:27:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Tag.kt:57:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Tag.kt:58:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vnstat/SimilarNovel.kt:17:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vnstat/SimilarNovel.kt:17:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vnstat/SimilarNovel.kt:17:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vnstat/SimilarNovel.kt:19:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vnstat/SimilarNovel.kt:19:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vnstat/SimilarNovel.kt:19:101",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:15:72",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:30:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:31:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:32:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:33:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:34:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:35:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:36:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:37:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:47:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:48:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:49:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:50:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:51:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:58:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:59:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:60:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:61:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Vote.kt:62:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Status.kt:19:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Status.kt:20:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Status.kt:28:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Status.kt:29:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Priority.kt:18:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/Priority.kt:26:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:76:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:151:72",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:155:116",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:155:126",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:155:133",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:193:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnrelations/RelationsAdapter.kt:28:17",
+        "message": "Pair is created by using the pair constructor. This can replaced by `diffCallback to diffResult`"
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowActivity.kt:83:5",
+        "message": "Private function shareScreenshot is unused."
+      }]
+    }, {
+      "name": "NestedClassesVisibility",
+      "description": "Nested types are often used for implementing private functionality and therefore this should not be public.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/slideshow/SlideshowAdapter.kt:28:5",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of SlideshowAdapter makes it visible externally."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNHolder.kt:7:1",
+        "message": "The import 'com.booboot.vndbandroid.extensions.toggle' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNHolder.kt:12:1",
+        "message": "The import 'com.booboot.vndbandroid.model.vndbandroid.Preferences' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNHolder.kt:17:1",
+        "message": "The import 'com.booboot.vndbandroid.util.image.DarkBlurTransform' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/ui/vnlist/VNHolder.kt:18:1",
+        "message": "The import 'com.squareup.picasso.Picasso' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Tag.kt:3:1",
+        "message": "The import 'androidx.annotation.ColorInt' is unused."
+      }]
+    }, {
+      "name": "UnnecessaryAbstractClass",
+      "description": "An abstract class is unnecessary and can be refactored. An abstract class should have both abstract and concrete properties or functions. An abstract class without a concrete member can be refactored to an interface. An abstract class without an abstract member can be refactored to a concrete class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/Repository.kt:7:1",
+        "message": "An abstract class without an abstract member can be refactored to a concrete class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItem.kt:3:1",
+        "message": "An abstract class without a concrete member can be refactored to an interface."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:47:40",
+        "message": "Parentheses in (dbFlags + 1) are unnecessary and can be replaced with: dbFlags + 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:51:42",
+        "message": "Parentheses in (dbFlags + 1) are unnecessary and can be replaced with: dbFlags + 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:55:39",
+        "message": "Parentheses in (dbFlags + 1) are unnecessary and can be replaced with: dbFlags + 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:72:40",
+        "message": "Parentheses in (dbFlags + 1) are unnecessary and can be replaced with: dbFlags + 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:75:46",
+        "message": "Parentheses in (dbFlags + 1) are unnecessary and can be replaced with: dbFlags + 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:86:43",
+        "message": "Parentheses in (dbFlags + 1) are unnecessary and can be replaced with: dbFlags + 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:103:40",
+        "message": "Parentheses in (dbFlags + 1) are unnecessary and can be replaced with: dbFlags + 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:104:46",
+        "message": "Parentheses in (dbFlags + 1) are unnecessary and can be replaced with: dbFlags + 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/repository/VNRepository.kt:105:43",
+        "message": "Parentheses in (dbFlags + 1) are unnecessary and can be replaced with: dbFlags + 1"
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/Notifications.kt:7:33",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of Notifications."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/service/ScreenshotNotificationService.kt:13:20",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ScreenshotNotificationService."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/util/image/BitmapTransformation.kt:4:1",
+        "message": "android.graphics.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/extensions/AppBarLayout.kt:23:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:34:5",
+        "message": "The data class VN contains functions which are not registered conversion functions. The offending method is called lengthFull"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:36:5",
+        "message": "The data class VN contains functions which are not registered conversion functions. The offending method is called lengthString"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:45:5",
+        "message": "The data class VN contains functions which are not registered conversion functions. The offending method is called lengthInHours"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VN.kt:54:5",
+        "message": "The data class VN contains functions which are not registered conversion functions. The offending method is called popularityColor"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:12:5",
+        "message": "The data class AccountItems contains functions which are not registered conversion functions. The offending method is called getStatusCount"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:19:5",
+        "message": "The data class AccountItems contains functions which are not registered conversion functions. The offending method is called getVoteCount"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:32:5",
+        "message": "The data class AccountItems contains functions which are not registered conversion functions. The offending method is called getWishCount"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/AccountItems.kt:39:5",
+        "message": "The data class AccountItems contains functions which are not registered conversion functions. The offending method is called deepCopy"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Error.kt:10:5",
+        "message": "The data class Error contains functions which are not registered conversion functions. The offending method is called fullMessage"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/VnStaff.kt:13:5",
+        "message": "The data class VnStaff contains functions which are not registered conversion functions. The offending method is called icon"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vnstat/SimilarNovel.kt:15:5",
+        "message": "The data class SimilarNovel contains functions which are not registered conversion functions. The offending method is called imageLink"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vnstat/SimilarNovel.kt:17:5",
+        "message": "The data class SimilarNovel contains functions which are not registered conversion functions. The offending method is called similarityPercentage"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vnstat/SimilarNovel.kt:19:5",
+        "message": "The data class SimilarNovel contains functions which are not registered conversion functions. The offending method is called predictedRatingPercentage"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vnstat/SimilarNovel.kt:21:5",
+        "message": "The data class SimilarNovel contains functions which are not registered conversion functions. The offending method is called setNovelId"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vnstat/SimilarNovel.kt:25:5",
+        "message": "The data class SimilarNovel contains functions which are not registered conversion functions. The offending method is called setSimilarity"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/VNDetailsTags.kt:9:5",
+        "message": "The data class VNDetailsTags contains functions which are not registered conversion functions. The offending method is called copy"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/VNDetailsTags.kt:17:5",
+        "message": "The data class VNDetailsTags contains functions which are not registered conversion functions. The offending method is called get"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndbandroid/VNDetailsTags.kt:28:5",
+        "message": "The data class VNDetailsTags contains functions which are not registered conversion functions. The offending method is called count"
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Character.kt:36:9",
+        "message": "ROLE_INDEX can be a `const val`."
+      }]
+    }, {
+      "name": "SerialVersionUIDInSerializableClass",
+      "description": "A class which implements the Serializable interface does not define a correct serialVersionUID field. The serialVersionUID field should be a constant long value inside a companion object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Tag.kt:9:1",
+        "message": "The class Tag implements the Serializable interface and should thus define a serialVersionUID."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/model/vndb/Screen.kt:6:1",
+        "message": "The class Screen implements the Serializable interface and should thus define a serialVersionUID."
+      }]
+    }, {
+      "name": "ThrowsCount",
+      "description": "Restrict the number of throw statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:36:5",
+        "message": "Too many throw statements in the function connect. The maximum number of allowed throw statements is 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:127:5",
+        "message": "Too many throw statements in the function sendCommand. The maximum number of allowed throw statements is 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:188:5",
+        "message": "Too many throw statements in the function getResponse. The maximum number of allowed throw statements is 2."
+      }]
+    }, {
+      "name": "ForbiddenVoid",
+      "description": "`Unit` should be used instead of `Void`.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:67:111",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/herbeth1u-VNDB-Android/app/src/main/java/com/booboot/vndbandroid/api/VNDBServer.kt:116:53",
+        "message": "'Void' should be replaced with 'Unit'."
+      }]
+    }]
+  }]
+}

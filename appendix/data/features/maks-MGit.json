@@ -1,0 +1,140 @@
+{
+  "complexity_metrics": {
+    "loc": 231,
+    "sloc": 173,
+    "lloc": 113,
+    "cloc": 7,
+    "mcc": 31,
+    "n_smell": 18,
+    "comment_ratio": 4,
+    "mcc_per_thlines": 274
+  },
+  "metrics": {
+    "number_of_string": 12,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 15,
+    "number_of_objects_declarations": 0,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 25,
+    "number_of_var_declaration": 25,
+    "number_of_func_call": 63,
+    "number_of_arguments": 58,
+    "number_of_parameters": 14,
+    "number_of_qualified_expressions": 80,
+    "number_of_inheritances": 4,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 3,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 25,
+    "number_of_functions": 16,
+    "number_of_interfaces": 2,
+    "number_of_classes": 4,
+    "number_of_packages": 5,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 8
+  },
+  "findings": [{
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyClassBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/repolist/RepoListViewModel.kt:5:1",
+        "message": "The class or object  RepoListViewModel is empty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/clone/CloneViewModel.kt:43:13",
+        "message": "initLocal.value cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/clone/CloneViewModel.kt:57:20",
+        "message": "initLocal.value cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/clone/CloneViewModel.kt:58:31",
+        "message": "localRepoName.value cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/clone/CloneViewModel.kt:59:66",
+        "message": "localRepoName.value cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/dialogs/ExceptionDialog.kt:44:22",
+        "message": "dialog cannot be safely cast to AlertDialog."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/dialogs/ExceptionDialog.kt:45:30",
+        "message": "dialog.getButton(Dialog.BUTTON_POSITIVE) cannot be safely cast to Button."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/ViewHelper.kt:8:30",
+        "message": "context.getSystemService(Activity.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/ViewHelper.kt:9:49",
+        "message": "context cannot be safely cast to Activity."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/clone/CloneViewModel.kt:94:5",
+        "message": "Function validateLocalName has 4 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/clone/CloneViewModel.kt:108:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/clone/CloneViewModel.kt:41:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/clone/CloneViewModel.kt:97:83",
+        "message": "Parentheses in (R.string.alert_localpath_required) are unnecessary and can be replaced with: R.string.alert_localpath_required"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/clone/CloneViewModel.kt:101:84",
+        "message": "Parentheses in (R.string.alert_localpath_format) are unnecessary and can be replaced with: R.string.alert_localpath_format"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/clone/CloneViewModel.kt:105:27",
+        "message": "Parentheses in (getApplication<SGitApplication>()) are unnecessary and can be replaced with: getApplication<SGitApplication>()"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/clone/CloneViewModel.kt:108:84",
+        "message": "Parentheses in (R.string.alert_localpath_repo_exists) are unnecessary and can be replaced with: R.string.alert_localpath_repo_exists"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/dialogs/ExceptionDialog.kt:46:42",
+        "message": "Parentheses around the lambda ({\n            ACRA.getErrorReporter().handleException(mThrowable, false)\n            dismiss()\n        }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/maks-MGit/app/src/main/java/com/manichord/mgit/dialogs/ExceptionDialog.kt:51:42",
+        "message": "Parentheses around the lambda ({\n            dismiss()\n        }) are unnecessary and can be removed."
+      }]
+    }]
+  }]
+}

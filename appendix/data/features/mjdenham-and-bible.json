@@ -1,0 +1,1007 @@
+{
+  "complexity_metrics": {
+    "loc": 4623,
+    "sloc": 3489,
+    "lloc": 2728,
+    "cloc": 531,
+    "mcc": 630,
+    "n_smell": 264,
+    "comment_ratio": 15,
+    "mcc_per_thlines": 230
+  },
+  "metrics": {
+    "number_of_string": 573,
+    "number_of_string_template": 44,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 7,
+    "number_of_inferred_var": 387,
+    "number_of_objects_declarations": 18,
+    "number_of_companion_objects": 14,
+    "number_of_singletons": 0,
+    "number_of_declaration": 441,
+    "number_of_var_declaration": 443,
+    "number_of_func_call": 2369,
+    "number_of_arguments": 2559,
+    "number_of_parameters": 277,
+    "number_of_qualified_expressions": 2007,
+    "number_of_inheritances": 27,
+    "number_of_unsafe_calls": 31,
+    "number_of_safe_calls": 34,
+    "number_of_destructuring_declarations": 1,
+    "number_of_when_expressions": 10,
+    "number_of_functions_with_default_value": 17,
+    "number_of_function_call_with_named_value": 46,
+    "number_of_named_argument": 69,
+    "number_of_argument_with_default_value": 35,
+    "number_of_overloaded_op": 1,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 5,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 4,
+    "number_of_lambdas": 39,
+    "number_of_possible_smart_casts": 62,
+    "number_of_data_class": 12,
+    "number_of_properties": 440,
+    "number_of_functions": 269,
+    "number_of_interfaces": 2,
+    "number_of_classes": 71,
+    "number_of_packages": 14,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 27
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:147:5",
+        "message": "The function testAutobookmark is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:524:5",
+        "message": "The function autoBookmarkOnPauseAddLabel is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:553:5",
+        "message": "The function autoBookmarkWhenThereIsDefaultBookmark1 is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:589:5",
+        "message": "The function autoBookmarkWhenThereIsDefaultBookmark2 is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:635:5",
+        "message": "The function autoBookmarkWhenThereIsAnotherSpeakBookmark is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:688:5",
+        "message": "The function autoBookmarkWhenThereIsNoBookmark is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:727:5",
+        "message": "The function autoBookmarkOnPauseAddLabelAndSettings is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:760:5",
+        "message": "The function autoBookmarkOnPauseCreateNewSaveSettings is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:848:5",
+        "message": "The function textProgression is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:926:5",
+        "message": "The function multiTranslationChapterChange is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:969:5",
+        "message": "The function multiTranslationChapterAndMultipleVersifications is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:1019:5",
+        "message": "The function multiTranslation is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:1122:5",
+        "message": "The function chapterChangeMessage is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:1177:5",
+        "message": "The function pauseRewindForwardOneVerse is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:1239:5",
+        "message": "The function rewind is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:1266:5",
+        "message": "The function rewind2 is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:256:1",
+        "message": "Class OsisToBibleSpeakTests is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:498:1",
+        "message": "Class AutoBookmarkTests is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:830:1",
+        "message": "Class SpeakWithContinueSentences is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:47:1",
+        "message": "Class BibleSpeakTextProvider is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/activity/SpeakWidgets.kt:311:9",
+        "message": "The function onReceive appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/page/ChapterVerseRange.kt:34:5",
+        "message": "The function toggleVerse appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/SpeakSettingsActivity.kt:114:5",
+        "message": "The function onButtonClick appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/GeneralSpeakActivity.kt:107:5",
+        "message": "The function onButtonClick appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/BibleSpeakActivity.kt:122:5",
+        "message": "The function onButtonClick appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/format/osistohtml/osishandlers/OsisToBibleSpeak.kt:62:5",
+        "message": "The function startElement appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/format/osistohtml/osishandlers/OsisToBibleSpeak.kt:113:5",
+        "message": "The function endElement appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/format/osistohtml/osishandlers/OsisToBibleSpeak.kt:147:5",
+        "message": "The function addText appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:415:5",
+        "message": "The function rewind appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:149:9",
+        "message": "The function onReceive appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:124:5",
+        "message": "The function add appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:151:5",
+        "message": "The function add appears to be too complex."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/activity/SpeakWidgets.kt:319:24",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:143:17",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/format/osistohtml/osishandlers/OsisToBibleSpeak.kt:147:5",
+        "message": "Function addText is nested too deeply."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:349:27",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:47:1",
+        "message": "Class 'BibleSpeakTextProvider' with '37' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakTextProvider.kt:26:1",
+        "message": "Interface 'SpeakTextProvider' with '21' functions detected. Defined threshold inside interfaces is set to '11'"
+      }]
+    }, {
+      "name": "ComplexInterface",
+      "description": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakTextProvider.kt:26:1",
+        "message": "The interface SpeakTextProvider is too complex. Consider splitting it up."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptySecondaryConstructor",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/event/ToastEvent.kt:22:56",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/SpeakSettingsActivity.kt:131:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/GeneralSpeakActivity.kt:122:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/BibleSpeakActivity.kt:139:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:125:55",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/ProgressNotificationManager.kt:123:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:484:48",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:203:13",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "MatchingDeclarationName",
+      "description": "If a source file contains only a single non-private top-level class or object, the file name should reflect the case-sensitive name plus the .kt extension.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/activity/SpeakWidgets.kt:1:1",
+        "message": "The file name 'SpeakWidgets.kt' does not match the name of the single top-level declaration 'SpeakWidgetManager'."
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:294:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:460:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/sword/SwordContentFacadeTest.kt:50:56",
+        "message": "esv cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/sword/SwordContentFacadeTest.kt:60:56",
+        "message": "esv cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/sword/SwordContentFacadeTest.kt:70:56",
+        "message": "esv cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/sword/SwordContentFacadeTest.kt:77:21",
+        "message": "book.getKey(verseStr) cannot be safely cast to RangedPassage."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/sword/SwordContentFacadeTest.kt:84:56",
+        "message": "esv cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:58:15",
+        "message": "TestBibleApplication.getApplication() cannot be safely cast to TestBibleApplication."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:64:16",
+        "message": "Books.installed().getBook(\"FinRK\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:119:21",
+        "message": "book.getKey(verseStr) cannot be safely cast to RangedPassage."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:217:16",
+        "message": "Books.installed().getBook(\"FinRK\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:226:21",
+        "message": "book.getKey(verseStr) cannot be safely cast to RangedPassage."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:274:21",
+        "message": "cmds2[0] cannot be safely cast to TextCommand."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:275:21",
+        "message": "rest[0] cannot be safely cast to TextCommand."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:286:21",
+        "message": "cmds[0] cannot be safely cast to TextCommand."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:294:21",
+        "message": "cmds[0] cannot be safely cast to TextCommand."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:306:21",
+        "message": "cmds2[0] cannot be safely cast to TextCommand."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:307:21",
+        "message": "rest[0] cannot be safely cast to TextCommand."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:308:21",
+        "message": "rest[1] cannot be safely cast to TextCommand."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:348:16",
+        "message": "Books.installed().getBook(\"ESV2011\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:361:16",
+        "message": "Books.installed().getBook(\"FinSTLK2017\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:366:21",
+        "message": "cmds[1] cannot be safely cast to TextCommand."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:374:16",
+        "message": "Books.installed().getBook(\"FinSTLK2017\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:398:16",
+        "message": "Books.installed().getBook(\"ESV2011\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:411:16",
+        "message": "Books.installed().getBook(\"FinSTLK2017\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:423:16",
+        "message": "Books.installed().getBook(\"FinSTLK2017\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:426:19",
+        "message": "provider.getNextSpeakCommand(\"id-1\") cannot be safely cast to TextCommand."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:431:21",
+        "message": "provider.getNextSpeakCommand(\"id-1\") cannot be safely cast to TextCommand."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:433:20",
+        "message": "provider.getNextSpeakCommand(\"id-1\") cannot be safely cast to TextCommand."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:441:16",
+        "message": "Books.installed().getBook(\"FinSTLK2017\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:446:21",
+        "message": "cmds[1] cannot be safely cast to TextCommand."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:454:16",
+        "message": "Books.installed().getBook(\"FinSTLK2017\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:457:21",
+        "message": "cmds[0] cannot be safely cast to TextCommand."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:879:16",
+        "message": "Books.installed().getBook(\"FinSTLK2017\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:895:16",
+        "message": "Books.installed().getBook(\"FinSTLK2017\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:909:16",
+        "message": "Books.installed().getBook(\"FinSTLK2017\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:920:16",
+        "message": "Books.installed().getBook(\"FinSTLK2017\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:928:21",
+        "message": "Books.installed().getBook(\"ESV2011\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:971:21",
+        "message": "Books.installed().getBook(\"FinSTLK2017\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:972:21",
+        "message": "Books.installed().getBook(\"ESV2011\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:1021:21",
+        "message": "Books.installed().getBook(\"ESV2011\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:1060:16",
+        "message": "Books.installed().getBook(\"ESV2011\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:1075:16",
+        "message": "Books.installed().getBook(\"ESV2011\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:1086:16",
+        "message": "Books.installed().getBook(\"ESV2011\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:1096:16",
+        "message": "Books.installed().getBook(\"FinPR\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:1107:20",
+        "message": "Books.installed().getBook(\"ISV\") cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/activity/SpeakWidgets.kt:137:28",
+        "message": "cls.annotations.find { it is WidgetOptions } cannot be safely cast to WidgetOptions."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/activity/SpeakWidgets.kt:289:28",
+        "message": "this::class.annotations.find {it is WidgetOptions} cannot be safely cast to WidgetOptions."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/AbstractSpeakActivity.kt:50:14",
+        "message": "sleepTimer cannot be safely cast to CheckBox."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:158:20",
+        "message": "mockedBooks cannot be safely cast to ArrayList<SwordBook>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:164:23",
+        "message": "firstBook cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:170:27",
+        "message": "book cannot be safely cast to SwordBook."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:560:21",
+        "message": "book.getKey(osisId) cannot be safely cast to RangedPassage?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:182:39",
+        "message": "app.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:211:28",
+        "message": "BibleApplication.getApplication().getSystemService(Context.POWER_SERVICE) cannot be safely cast to PowerManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/ProgressNotificationManager.kt:57:31",
+        "message": "BibleApplication.getApplication().getSystemService(Application.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:164:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:164:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:175:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:175:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:183:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:183:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:196:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:196:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:203:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:203:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:538:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:560:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:565:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:585:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:603:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:607:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:614:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:653:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:654:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:666:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:667:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:668:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:679:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:680:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:742:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:755:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/activity/SpeakWidgets.kt:219:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:502:91",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:100:46",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:147:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:172:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/activity/SpeakWidgets.kt:67:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/activity/SpeakWidgets.kt:68:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/GeneralSpeakActivity.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/AbstractSpeakActivity.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/AbstractSpeakActivity.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/AbstractSpeakActivity.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:94:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:66:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:144:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/ProgressNotificationManager.kt:52:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ProtectedMemberInFinalClass",
+      "description": "Member with protected visibility in final class is private. Consider using private or internal as modifier.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/sword/SwordContentFacadeTest.kt:76:5",
+        "message": "Member with protected visibility in final class is private. Consider using private or internal as modifier."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/sword/SwordContentFacadeTest.kt:126:76",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:230:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/speak/SpeakSettings.kt:54:26",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/speak/SpeakSettings.kt:77:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:285:55",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:289:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:524:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:528:55",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:572:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:576:41",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:580:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:139:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:195:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:49:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:180:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/download/CrosswireRepoIT.kt:56:1",
+        "message": "The file CrosswireRepoIT.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:41:43",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SpeakIntegrationTestBase."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/activity/SpeakWidgets.kt:46:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SpeakWidgetManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/speak/SpeakSettings.kt:19:40",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/format/osistohtml/osishandlers/OsisToBibleSpeak.kt:32:23",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of OsisToBibleSpeak."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:163:50",
+        "message": "Parentheses in (getVerse(\"Rom.1.3\")) are unnecessary and can be replaced with: getVerse(\"Rom.1.3\")"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:174:46",
+        "message": "Parentheses in (getVerse(\"Rom.1.4\")) are unnecessary and can be replaced with: getVerse(\"Rom.1.4\")"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:182:46",
+        "message": "Parentheses in (getVerse(\"Rom.1.4\")) are unnecessary and can be replaced with: getVerse(\"Rom.1.4\")"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:195:46",
+        "message": "Parentheses in (getVerse(\"Rom.1.5\")) are unnecessary and can be replaced with: getVerse(\"Rom.1.5\")"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/test/java/net/bible/service/device/speak/SpeakTests.kt:202:46",
+        "message": "Parentheses in (getVerse(\"Rom.1.5\")) are unnecessary and can be replaced with: getVerse(\"Rom.1.5\")"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/page/ChapterVerseRange.kt:77:13",
+        "message": "Parentheses in (verse.after(start) && verse.before(end)) are unnecessary and can be replaced with: verse.after(start) && verse.before(end)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/page/ChapterVerse.kt:39:40",
+        "message": "Parentheses in (chapter == other.chapter && verse > other.verse) are unnecessary and can be replaced with: chapter == other.chapter && verse > other.verse"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/page/ChapterVerse.kt:42:40",
+        "message": "Parentheses in (chapter == other.chapter && verse < other.verse) are unnecessary and can be replaced with: chapter == other.chapter && verse < other.verse"
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/activity/SpeakWidgets.kt:369:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/activity/SpeakWidgets.kt:379:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/activity/SpeakWidgets.kt:384:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/page/ChapterVerseRange.kt:27:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/page/BibleInfiniteScrollPopulator.kt:30:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/GeneralSpeakActivity.kt:103:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/GeneralSpeakActivity.kt:129:157",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/BibleSpeakActivity.kt:77:157",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/speak/SpeakSettings.kt:59:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/speak/NumPagesToSpeakDefinition.kt:23:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:193:161",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:286:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:287:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:288:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:297:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:300:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/ProgressNotificationManager.kt:57:138",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/ProgressNotificationManager.kt:62:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/ProgressNotificationManager.kt:81:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/activity/SpeakWidgets.kt:166:17",
+        "message": "Function parameter ev is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/SpeakSettingsActivity.kt:78:26",
+        "message": "Function parameter widget is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/SpeakSettingsActivity.kt:138:27",
+        "message": "Function parameter ev is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/GeneralSpeakActivity.kt:100:24",
+        "message": "Function parameter b is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/BibleSpeakActivity.kt:106:26",
+        "message": "Function parameter widget is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/BibleSpeakActivity.kt:146:26",
+        "message": "Function parameter button is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/AbstractSpeakActivity.kt:80:31",
+        "message": "Function parameter button is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:439:17",
+        "message": "Private property i is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:480:22",
+        "message": "Private property i is unused."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/page/ChapterVerseRange.kt:63:5",
+        "message": "The data class ChapterVerseRange contains functions which are not registered conversion functions. The offending method is called getExtrasIn"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/page/ChapterVerseRange.kt:74:5",
+        "message": "The data class ChapterVerseRange contains functions which are not registered conversion functions. The offending method is called contains"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/page/ChapterVerseRange.kt:79:5",
+        "message": "The data class ChapterVerseRange contains functions which are not registered conversion functions. The offending method is called createVerseRange"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/page/ChapterVerseRange.kt:86:5",
+        "message": "The data class ChapterVerseRange contains functions which are not registered conversion functions. The offending method is called isEmpty"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/page/ChapterVerse.kt:38:5",
+        "message": "The data class ChapterVerse contains functions which are not registered conversion functions. The offending method is called after"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/page/ChapterVerse.kt:41:5",
+        "message": "The data class ChapterVerse contains functions which are not registered conversion functions. The offending method is called before"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/page/ChapterVerse.kt:44:5",
+        "message": "The data class ChapterVerse contains functions which are not registered conversion functions. The offending method is called sameChapter"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/speak/SpeakSettings.kt:81:5",
+        "message": "The data class SpeakSettings contains functions which are not registered conversion functions. The offending method is called makeCopy"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/speak/SpeakSettings.kt:87:5",
+        "message": "The data class SpeakSettings contains functions which are not registered conversion functions. The offending method is called save"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/speak/SpeakSettings.kt:99:5",
+        "message": "The data class SpeakSettings contains functions which are not registered conversion functions. The offending method is called save"
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/SpeakSettingsActivity.kt:30:1",
+        "message": "net.bible.android.control.speak.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/BibleSpeakActivity.kt:26:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/BibleSpeakActivity.kt:30:1",
+        "message": "net.bible.android.control.speak.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/speak/SpeakSettings.kt:21:1",
+        "message": "kotlinx.serialization.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/format/osistohtml/osishandlers/OsisToBibleSpeak.kt:26:1",
+        "message": "net.bible.service.device.speak.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:22:1",
+        "message": "android.app.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:23:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/ProgressNotificationManager.kt:21:1",
+        "message": "android.app.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/GeneralSpeakActivity.kt:65:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/GeneralSpeakActivity.kt:103:148",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/AbstractSpeakActivity.kt:53:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:69:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:93:91",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:439:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:480:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:336:84",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:58:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:96:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/ProgressNotificationManager.kt:78:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/ProgressNotificationManager.kt:80:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/ProgressNotificationManager.kt:140:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/GeneralSpeakActivity.kt:93:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/GeneralSpeakActivity.kt:93:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/GeneralSpeakActivity.kt:131:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/GeneralSpeakActivity.kt:131:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/BibleSpeakActivity.kt:79:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/BibleSpeakActivity.kt:79:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/BibleSpeakActivity.kt:99:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/view/activity/speak/BibleSpeakActivity.kt:99:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:367:24",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:127:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:132:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:154:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:157:31",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:157:31",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:161:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/android/control/event/ToastEvent.kt:21:1",
+        "message": "The class ToastEvent defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/format/osistohtml/osishandlers/OsisToBibleSpeak.kt:163:13",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:540:5",
+        "message": "Function restoreState has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:124:5",
+        "message": "Function add has 6 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:151:5",
+        "message": "Function add has 6 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:422:10",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:434:10",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:472:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:86:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:170:17",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:295:44",
+        "message": "Pair is created by using the pair constructor. This can replaced by `book_ to verse`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/BibleSpeakTextProvider.kt:298:37",
+        "message": "Pair is created by using the pair constructor. This can replaced by `book_ to verse`"
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/TextToSpeechNotificationManager.kt:44:1",
+        "message": "The import 'org.crosswire.jsword.book.sword.SwordBook' is unused."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/speak/SpeakCommands.kt:28:1",
+        "message": "TAG can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/ProgressNotificationManager.kt:160:9",
+        "message": "TAG can be a `const val`."
+      }]
+    }, {
+      "name": "ModifierOrder",
+      "description": "Modifier order should be: private lateinit",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/mjdenham-and-bible/app/src/main/java/net/bible/service/device/ProgressNotificationManager.kt:53:5",
+        "message": "Modifier order should be: private lateinit"
+      }]
+    }]
+  }]
+}

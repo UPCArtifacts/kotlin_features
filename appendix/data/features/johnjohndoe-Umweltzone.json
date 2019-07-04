@@ -1,0 +1,131 @@
+{
+  "complexity_metrics": {
+    "loc": 577,
+    "sloc": 343,
+    "lloc": 212,
+    "cloc": 116,
+    "mcc": 53,
+    "n_smell": 15,
+    "comment_ratio": 33,
+    "mcc_per_thlines": 250
+  },
+  "metrics": {
+    "number_of_string": 8,
+    "number_of_string_template": 4,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 5,
+    "number_of_inferred_var": 27,
+    "number_of_objects_declarations": 5,
+    "number_of_companion_objects": 3,
+    "number_of_singletons": 2,
+    "number_of_declaration": 31,
+    "number_of_var_declaration": 31,
+    "number_of_func_call": 88,
+    "number_of_arguments": 100,
+    "number_of_parameters": 57,
+    "number_of_qualified_expressions": 138,
+    "number_of_inheritances": 7,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 1,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 2,
+    "number_of_named_argument": 7,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 6,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 6,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 2,
+    "number_of_properties": 31,
+    "number_of_functions": 27,
+    "number_of_interfaces": 1,
+    "number_of_classes": 11,
+    "number_of_packages": 6,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 13
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/map/MapReadyDelegate.kt:35:5",
+        "message": "The function evaluate appears to be too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/map/MapReadyDelegate.kt:35:5",
+        "message": "Function evaluate is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/zones/viewholders/OneZoneViewHolder.kt:38:31",
+        "message": "view.zoneOneZoneBadgeView.background cannot be safely cast to LayerDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/zones/viewholders/OneZoneViewHolder.kt:39:25",
+        "message": "badgeBackground.findDrawableByLayerId(R.id.zone_shape) cannot be safely cast to GradientDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/zones/viewholders/TwoZonesViewHolder.kt:39:32",
+        "message": "view.zoneTwoZonesBadge1View.background cannot be safely cast to LayerDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/zones/viewholders/TwoZonesViewHolder.kt:40:26",
+        "message": "badge1Background.findDrawableByLayerId(R.id.zone_shape) cannot be safely cast to GradientDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/zones/viewholders/TwoZonesViewHolder.kt:41:32",
+        "message": "view.zoneTwoZonesBadge2View.background cannot be safely cast to LayerDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/zones/viewholders/TwoZonesViewHolder.kt:42:26",
+        "message": "badge2Background.findDrawableByLayerId(R.id.zone_shape) cannot be safely cast to GradientDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/zones/ZonesFragment.kt:50:29",
+        "message": "view.tag cannot be safely cast to ZoneViewModel."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/zones/ZonesFragment.kt:64:27",
+        "message": "activity.applicationContext cannot be safely cast to Umweltzone."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/zones/viewmodels/BadgeViewModel.kt:5:1",
+        "message": "The class BadgeViewModel defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/zones/dataconverters/LowEmissionZoneExtensions.kt:12:5",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/zones/dataconverters/LowEmissionZoneExtensions.kt:19:5",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/zones/dataconverters/LowEmissionZoneExtensions.kt:37:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/johnjohndoe-Umweltzone/Umweltzone/src/main/java/de/avpptr/umweltzone/zones/dataconverters/LowEmissionZoneExtensions.kt:37:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }]
+  }]
+}

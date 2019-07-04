@@ -1,0 +1,368 @@
+{
+  "complexity_metrics": {
+    "loc": 1487,
+    "sloc": 1241,
+    "lloc": 862,
+    "cloc": 6,
+    "mcc": 242,
+    "n_smell": 71,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 280
+  },
+  "metrics": {
+    "number_of_string": 83,
+    "number_of_string_template": 10,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 10,
+    "number_of_inferred_var": 128,
+    "number_of_objects_declarations": 5,
+    "number_of_companion_objects": 2,
+    "number_of_singletons": 1,
+    "number_of_declaration": 152,
+    "number_of_var_declaration": 155,
+    "number_of_func_call": 558,
+    "number_of_arguments": 489,
+    "number_of_parameters": 144,
+    "number_of_qualified_expressions": 670,
+    "number_of_inheritances": 9,
+    "number_of_unsafe_calls": 7,
+    "number_of_safe_calls": 12,
+    "number_of_destructuring_declarations": 3,
+    "number_of_when_expressions": 11,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 1,
+    "number_of_named_argument": 1,
+    "number_of_argument_with_default_value": 3,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 51,
+    "number_of_possible_smart_casts": 7,
+    "number_of_data_class": 1,
+    "number_of_properties": 149,
+    "number_of_functions": 104,
+    "number_of_interfaces": 2,
+    "number_of_classes": 18,
+    "number_of_packages": 9,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 19
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/MyPath.kt:29:5",
+        "message": "Function readObject is nested too deeply."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/dialogs/SaveImageDialog.kt:48:33",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/dialogs/SaveImageDialog.kt:60:33",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:39:1",
+        "message": "Class MainActivity is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:23:1",
+        "message": "Class MyCanvas is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:121:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:39:1",
+        "message": "Class 'MainActivity' with '39' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:23:1",
+        "message": "Class 'MyCanvas' with '20' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:284:21",
+        "message": "This condition is too complex."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyCatchBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:372:40",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/MyPath.kt:50:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:372:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/dialogs/SaveImageDialog.kt:16:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:40:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:41:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:42:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:24:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/Svg.kt:67:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:183:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:183:63",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:186:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:187:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:256:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:284:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/Svg.kt:21:32",
+        "message": "canvas.background cannot be safely cast to ColorDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/MyParcelable.kt:16:23",
+        "message": "parcel.readSerializable() cannot be safely cast to MyPath."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:264:25",
+        "message": "my_canvas.background cannot be safely cast to ColorDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:416:41",
+        "message": "stroke_width_preview.background cannot be safely cast to GradientDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:69:22",
+        "message": "mLastPaths.clone() cannot be safely cast to LinkedHashMap<MyPath, PaintOptions>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:210:22",
+        "message": "mPaths.clone() cannot be safely cast to LinkedHashMap<MyPath, PaintOptions>."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/PaintOptions.kt:6:5",
+        "message": "The data class PaintOptions contains functions which are not registered conversion functions. The offending method is called getColorToExport"
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/Svg.kt:16:1",
+        "message": "java.io.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/dialogs/SaveImageDialog.kt:6:1",
+        "message": "com.simplemobiletools.commons.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:19:1",
+        "message": "com.simplemobiletools.commons.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:5:1",
+        "message": "android.graphics.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/Svg.kt:35:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/Svg.kt:38:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/dialogs/SaveImageDialog.kt:14:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/dialogs/SaveImageDialog.kt:64:33",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:93:151",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:259:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:441:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:126:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "SerialVersionUIDInSerializableClass",
+      "description": "A class which implements the Serializable interface does not define a correct serialVersionUID field. The serialVersionUID field should be a constant long value inside a companion object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/Svg.kt:126:5",
+        "message": "The class SSvg implements the Serializable interface and should thus define a serialVersionUID."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/Svg.kt:138:5",
+        "message": "The class SRect implements the Serializable interface and should thus define a serialVersionUID."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/Svg.kt:140:5",
+        "message": "The class SPath implements the Serializable interface and should thus define a serialVersionUID."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/MyPath.kt:16:1",
+        "message": "The class MyPath implements the Serializable interface and should thus define a serialVersionUID."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/Svg.kt:104:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/MyPath.kt:41:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/actions/Move.kt:13:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/actions/Quad.kt:15:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/actions/Line.kt:13:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/MyParcelable.kt:15:14",
+        "message": "Private property i is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/models/MyPath.kt:20:5",
+        "message": "Private function readObject is unused."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:358:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:294:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:339:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:454:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:454:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:461:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:462:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/activities/MainActivity.kt:463:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:24:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:126:118",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:317:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:317:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/helpers/Config.kt:22:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:265:26",
+        "message": "Parentheses in (fullWidth / 2) are unnecessary and can be replaced with: fullWidth / 2"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:270:26",
+        "message": "Parentheses in (fullHeight / 2) are unnecessary and can be replaced with: fullHeight / 2"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:284:39",
+        "message": "Parentheses in (!mScaleDetector!!.isInProgress && event.pointerCount == 1 && !mWasMultitouch) are unnecessary and can be replaced with: !mScaleDetector!!.isInProgress && event.pointerCount == 1 && !mWasMultitouch"
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Draw/app/src/main/kotlin/com/simplemobiletools/draw/pro/views/MyCanvas.kt:283:13",
+        "message": "Optional braces in when expression"
+      }]
+    }]
+  }]
+}

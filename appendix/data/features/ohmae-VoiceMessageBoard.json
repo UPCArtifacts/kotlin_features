@@ -1,0 +1,476 @@
+{
+  "complexity_metrics": {
+    "loc": 3287,
+    "sloc": 2311,
+    "lloc": 1537,
+    "cloc": 582,
+    "mcc": 443,
+    "n_smell": 111,
+    "comment_ratio": 25,
+    "mcc_per_thlines": 288
+  },
+  "metrics": {
+    "number_of_string": 57,
+    "number_of_string_template": 1,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 1,
+    "number_of_inferred_var": 137,
+    "number_of_objects_declarations": 25,
+    "number_of_companion_objects": 17,
+    "number_of_singletons": 7,
+    "number_of_declaration": 211,
+    "number_of_var_declaration": 211,
+    "number_of_func_call": 790,
+    "number_of_arguments": 784,
+    "number_of_parameters": 318,
+    "number_of_qualified_expressions": 997,
+    "number_of_inheritances": 37,
+    "number_of_unsafe_calls": 12,
+    "number_of_safe_calls": 57,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 7,
+    "number_of_functions_with_default_value": 4,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 7,
+    "number_of_overloaded_op": 1,
+    "number_of_extension_function": 2,
+    "number_of_properties_delegation": 2,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 3,
+    "number_of_lambdas": 66,
+    "number_of_possible_smart_casts": 13,
+    "number_of_data_class": 1,
+    "number_of_properties": 211,
+    "number_of_functions": 239,
+    "number_of_interfaces": 6,
+    "number_of_classes": 63,
+    "number_of_packages": 13,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 33
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/SettingsStorage.kt:14:1",
+        "message": "Class 'SettingsStorage' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:14:1",
+        "message": "Enum class 'Key' with '17' functions detected. Defined threshold inside enum classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/MainActivity.kt:30:1",
+        "message": "Class 'MainActivity' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/NestedScrollingWebView.kt:25:1",
+        "message": "Class 'NestedScrollingWebView' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/font/FontFileChooserActivity.kt:37:1",
+        "message": "Class 'FontFileChooserActivity' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:116:40",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/RecognizerDialog.kt:81:5",
+        "message": "The function createRecognitionListener appears to be too complex."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyCatchBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/font/FontUtils.kt:43:32",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Settings.kt:45:21",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }, {
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/font/FontUtils.kt:26:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/font/FontUtils.kt:43:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "MemberNameEqualsClassName",
+      "description": "A member should not given the same name as its parent class or object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Settings.kt:79:9",
+        "message": "A member is named after the class. This might result in confusion. Either rename the member or change it to a constructor."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/customtabs/CustomTabsHelper.kt:116:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/SettingsStorage.kt:215:20",
+        "message": "sharedPreferences cannot be safely cast to SharedPreferences."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Settings.kt:98:24",
+        "message": "settings cannot be safely cast to Settings."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:103:16",
+        "message": "defaultToRead cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:107:16",
+        "message": "defaultToRead cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:111:16",
+        "message": "defaultToRead cannot be safely cast to Long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:118:16",
+        "message": "defaultToRead cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:130:16",
+        "message": "defaultToWrite cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:134:16",
+        "message": "defaultToWrite cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:138:16",
+        "message": "defaultToWrite cannot be safely cast to Long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:145:16",
+        "message": "defaultToWrite cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/RecognizerDialog.kt:44:25",
+        "message": "act.window.decorView cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/EditStringDialog.kt:59:25",
+        "message": "act.window.decorView cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/WaveView.kt:128:29",
+        "message": "animation.animatedValue cannot be safely cast to Float."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/BeatingView.kt:89:23",
+        "message": "a.animatedValue cannot be safely cast to Float."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Settings.kt:81:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/SelectStringDialog.kt:54:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/SelectStringDialog.kt:55:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/SelectThemeDialog.kt:54:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/SelectThemeDialog.kt:55:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/SelectThemeDialog.kt:56:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/RecognizerDialog.kt:41:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/EditStringDialog.kt:53:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/PermissionDialog.kt:34:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/SettingsActivity.kt:74:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/font/FileAdapter.kt:48:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/font/FileAdapter.kt:49:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/MainActivity.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/MainActivity.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/MainActivity.kt:42:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/MainActivity.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/MainActivity.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/MainActivity.kt:45:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/MainActivity.kt:46:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/customtabs/CustomTabsHelperHolder.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/RecognizerDialog.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/RecognizerDialog.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/RecognizerDialog.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/EditStringDialog.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/SettingsActivity.kt:51:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/font/FontFileChooserActivity.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/font/FontFileChooserActivity.kt:45:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:78:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:82:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:86:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:90:39",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:94:41",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:98:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:102:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:106:45",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:110:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:129:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:133:46",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/settings/Key.kt:137:48",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/util/AttrUtils.kt:20:94",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/customtabs/OpenUriUtils.kt:42:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/customtabs/KeepAliveService.kt:19:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/customtabs/CustomTabsHelper.kt:73:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/theme/Theme.kt:38:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/theme/Theme.kt:43:62",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/theme/Theme.kt:47:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/NestedScrollingWebView.kt:101:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/NestedScrollingWebView.kt:115:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/NestedScrollingWebView.kt:140:16",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/NestedScrollingWebView.kt:148:16",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/NestedScrollingWebView.kt:152:86",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/font/FileAdapter.kt:34:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/MainActivity.kt:13:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/drawable/GridDrawable.kt:11:1",
+        "message": "android.graphics.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/customtabs/CustomTabsHelper.kt:18:1",
+        "message": "androidx.browser.customtabs.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/font/FileAdapter.kt:18:1",
+        "message": "net.mm2d.android.vmb.R.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/recognize/VoiceInputDelegate.kt:63:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/drawable/GridDrawable.kt:39:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/drawable/GridDrawable.kt:41:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/drawable/GridDrawable.kt:42:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/drawable/GridDrawable.kt:44:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/dialog/RecognizerDialog.kt:76:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/theme/ThemeDelegate.kt:87:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/theme/ThemeDelegate.kt:93:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/theme/ThemeDelegate.kt:93:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/theme/ThemeDelegate.kt:93:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/theme/ThemeDelegate.kt:93:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/theme/ThemeDelegate.kt:93:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/WaveView.kt:62:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/WaveView.kt:63:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/WaveView.kt:64:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/WaveView.kt:77:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/WaveView.kt:105:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/WaveView.kt:124:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/BeatingView.kt:50:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/BeatingView.kt:62:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/BeatingView.kt:65:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/view/BeatingView.kt:65:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/util/AttrUtils.kt:24:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/customtabs/OpenUriUtils.kt:46:5",
+        "message": "Function hasDefaultAppOtherThanBrowser has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/customtabs/CustomTabsHelper.kt:126:9",
+        "message": "Function findPackageNameToUse has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/permission/PermissionHelper.kt:45:5",
+        "message": "Function onRequestPermissionsResult has 5 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/SettingsActivity.kt:84:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ohmae-VoiceMessageBoard/app/src/main/java/net/mm2d/android/vmb/font/FontUtils.kt:50:1",
+        "message": "The file FontUtils.kt is not ending with a new line."
+      }]
+    }]
+  }]
+}

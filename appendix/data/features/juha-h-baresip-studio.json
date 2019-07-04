@@ -1,0 +1,2256 @@
+{
+  "complexity_metrics": {
+    "loc": 4635,
+    "sloc": 4112,
+    "lloc": 3133,
+    "cloc": 19,
+    "mcc": 920,
+    "n_smell": 684,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 293
+  },
+  "metrics": {
+    "number_of_string": 973,
+    "number_of_string_template": 162,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 498,
+    "number_of_objects_declarations": 23,
+    "number_of_companion_objects": 12,
+    "number_of_singletons": 2,
+    "number_of_declaration": 591,
+    "number_of_var_declaration": 591,
+    "number_of_func_call": 1922,
+    "number_of_arguments": 2207,
+    "number_of_parameters": 405,
+    "number_of_qualified_expressions": 2983,
+    "number_of_inheritances": 18,
+    "number_of_unsafe_calls": 8,
+    "number_of_safe_calls": 1,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 26,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 2,
+    "number_of_named_argument": 2,
+    "number_of_argument_with_default_value": 2,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 55,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 591,
+    "number_of_functions": 228,
+    "number_of_interfaces": 0,
+    "number_of_classes": 26,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 28
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:30:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:58:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:33:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:29:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:29:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:74:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:58:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:425:5",
+        "message": "The function handleServiceEvent appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:688:5",
+        "message": "The function handleIntent appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:833:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:883:5",
+        "message": "The function onActivityResult appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1040:5",
+        "message": "The function showCall appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:99:5",
+        "message": "The function onStartCommand appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:242:5",
+        "message": "The function uaEvent appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:24:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:137:5",
+        "message": "The function aorGenerateHistory appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:51:5",
+        "message": "The function print appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:100:5",
+        "message": "The function vmMessage appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactActivity.kt:54:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:33:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:143:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:356:5",
+        "message": "The function onClick appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:29:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactListAdapter.kt:23:5",
+        "message": "The function getView appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:29:5",
+        "message": "The function onCreate appears to be too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:74:5",
+        "message": "Function onOptionsItemSelected is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:425:5",
+        "message": "Function handleServiceEvent is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:883:5",
+        "message": "Function onActivityResult is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:99:5",
+        "message": "Function onStartCommand is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:242:5",
+        "message": "Function uaEvent is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:137:5",
+        "message": "Function aorGenerateHistory is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:143:5",
+        "message": "Function onOptionsItemSelected is nested too deeply."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:3:1",
+        "message": "Object 'Api' with '28' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:29:1",
+        "message": "Class 'MainActivity' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:27:1",
+        "message": "Class 'BaresipService' with '19' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:14:1",
+        "message": "Object 'Utils' with '29' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:1:1",
+        "message": "File 'Account.kt' with '24' functions detected. Defined threshold inside files is set to '11'"
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:29:1",
+        "message": "Class MainActivity is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:27:1",
+        "message": "Class BaresipService is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:14:1",
+        "message": "Class Utils is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:14:1",
+        "message": "Class AccountActivity is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:379:30",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:63:39",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:201:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:104:21",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:709:52",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:512:50",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:62:15",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:479:46",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1005:58",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:205:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:308:51",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:237:25",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:236:25",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:235:29",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:309:51",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:115:78",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:18:19",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:69:40",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactActivity.kt:62:39",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/UserAgent.kt:11:19",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountsActivity.kt:37:23",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:158:43",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:152:31",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:129:53",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:40:19",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:155:23",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:315:21",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:276:25",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:350:55",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:362:28",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:375:32",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:388:32",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:410:33",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:543:64",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:749:40",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:50:40",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:65:47",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:100:47",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:49:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:96:47",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:86:47",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:124:36",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:124:30",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:436:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:611:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallHistory.kt:75:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:235:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallHistory.kt:62:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:222:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:14:42",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:20:46",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:28:44",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionNaming",
+      "description": "Function names should follow the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:5:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:6:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:7:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:8:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:9:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:10:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:11:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:12:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:13:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:14:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:15:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:16:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:17:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:18:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:19:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:20:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:21:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:22:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:23:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:24:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:25:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:26:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:27:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:28:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:29:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:30:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:31:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:32:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:163:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:164:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:165:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:166:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:167:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:168:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:169:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:170:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:171:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:172:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:173:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:174:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:175:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:176:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:177:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:178:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:179:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:180:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:181:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:182:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:183:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:184:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:185:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:186:1",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:29:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:24:17",
+        "message": "Object property names should match the pattern: [A-Za-z][_A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:79:13",
+        "message": "Object property names should match the pattern: [A-Za-z][_A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:17:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:42:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:45:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:46:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:47:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:48:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:50:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:51:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:52:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:53:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:54:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:55:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:56:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactActivity.kt:14:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactActivity.kt:15:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountsActivity.kt:16:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:16:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:17:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:43:21",
+        "message": "findViewById(R.id.AutoStart) cannot be safely cast to CheckBox."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:48:22",
+        "message": "findViewById(R.id.DnsServers) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:55:23",
+        "message": "findViewById(R.id.OpusBitRate) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:60:19",
+        "message": "findViewById(R.id.IceLite) cannot be safely cast to CheckBox."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:146:13",
+        "message": "findViewById(R.id.AutoStartTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:149:13",
+        "message": "findViewById(R.id.DnsServersTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:152:13",
+        "message": "findViewById(R.id.OpusBitRateTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:155:13",
+        "message": "findViewById(R.id.IceLiteTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:71:18",
+        "message": "findViewById(R.id.mainActivityLayout) cannot be safely cast to RelativeLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:72:21",
+        "message": "findViewById(R.id.callTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:73:19",
+        "message": "findViewById(R.id.callUri) cannot be safely cast to AutoCompleteTextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:74:26",
+        "message": "findViewById(R.id.securityButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:75:22",
+        "message": "findViewById(R.id.callButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:76:24",
+        "message": "findViewById(R.id.hangupButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:77:24",
+        "message": "findViewById(R.id.answerButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:78:24",
+        "message": "findViewById(R.id.rejectButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:79:22",
+        "message": "findViewById(R.id.holdButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:80:16",
+        "message": "findViewById(R.id.dtmf) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:81:22",
+        "message": "findViewById(R.id.info) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:82:27",
+        "message": "findViewById(R.id.voicemailButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:83:26",
+        "message": "findViewById(R.id.contactsButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:84:26",
+        "message": "findViewById(R.id.messagesButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:85:23",
+        "message": "findViewById(R.id.callsButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:86:25",
+        "message": "findViewById(R.id.dialpadButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:88:14",
+        "message": "getSystemService(Context.AUDIO_SERVICE) cannot be safely cast to AudioManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:92:15",
+        "message": "getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:93:14",
+        "message": "getSystemService(NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:533:26",
+        "message": "dtmf.tag cannot be safely cast to ArrayList<TextWatcher>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:623:40",
+        "message": "dtmf.tag cannot be safely cast to ArrayList<TextWatcher>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:633:43",
+        "message": "findViewById(R.id.speakerIcon) cannot be safely cast to ActionMenuItemView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:838:35",
+        "message": "findViewById(R.id.speakerIcon) cannot be safely cast to ActionMenuItemView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:52:14",
+        "message": "getSystemService(Context.AUDIO_SERVICE) cannot be safely cast to AudioManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:57:14",
+        "message": "getSystemService(NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:69:30",
+        "message": "context.getSystemService(Context.CONNECTIVITY_SERVICE) cannot be safely cast to ConnectivityManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:86:18",
+        "message": "getSystemService(Context.POWER_SERVICE) cannot be safely cast to PowerManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:114:26",
+        "message": "applicationContext.getSystemService(Context.WIFI_SERVICE) cannot be safely cast to WifiManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:254:31",
+        "message": "context.getSystemService(Context.KEYGUARD_SERVICE) cannot be safely cast to KeyguardManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:260:32",
+        "message": "context.getSystemService(Context.POWER_SERVICE) cannot be safely cast to PowerManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:32:26",
+        "message": "findViewById(R.id.account) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:36:24",
+        "message": "findViewById(R.id.calls) cannot be safely cast to ListView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactActivity.kt:21:20",
+        "message": "findViewById(R.id.Name) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactActivity.kt:22:19",
+        "message": "findViewById(R.id.Uri) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/UaSpinnerAdapter.kt:26:24",
+        "message": "cxt.getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/UaSpinnerAdapter.kt:28:24",
+        "message": "row.findViewById(R.id.spinnerText) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/UaSpinnerAdapter.kt:31:25",
+        "message": "row.findViewById(R.id.spinnerImage) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AboutActivity.kt:16:25",
+        "message": "findViewById(R.id.aboutText) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountsActivity.kt:26:24",
+        "message": "findViewById(R.id.accounts) cannot be safely cast to ListView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountsActivity.kt:31:32",
+        "message": "findViewById(R.id.addAccount) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountsActivity.kt:32:26",
+        "message": "findViewById(R.id.newAor) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:24:24",
+        "message": "findViewById(R.id.contacts) cannot be safely cast to ListView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:31:26",
+        "message": "findViewById(R.id.plusButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallHistory.kt:72:32",
+        "message": "ois.readObject() cannot be safely cast to ArrayList<CallHistory>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:43:23",
+        "message": "findViewById(R.id.DisplayName) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:46:20",
+        "message": "findViewById(R.id.AuthUser) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:49:20",
+        "message": "findViewById(R.id.AuthPass) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:52:21",
+        "message": "findViewById(R.id.Outbound1) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:53:21",
+        "message": "findViewById(R.id.Outbound2) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:60:20",
+        "message": "findViewById(R.id.Ice) cannot be safely cast to CheckBox."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:66:22",
+        "message": "findViewById(R.id.StunServer) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:70:20",
+        "message": "findViewById(R.id.Register) cannot be safely cast to CheckBox."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:77:22",
+        "message": "findViewById(R.id.CodecSpinners) cannot be safely cast to LinearLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:95:32",
+        "message": "findViewById(spinner.id) cannot be safely cast to Spinner."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:110:31",
+        "message": "findViewById(R.id.mediaEncSpinner) cannot be safely cast to Spinner."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:131:17",
+        "message": "findViewById(R.id.voicemailUri) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:286:54",
+        "message": "newCodecs.filter { it != \"\" } cannot be safely cast to ArrayList<String>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:358:13",
+        "message": "findViewById(R.id.DisplayNameTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:361:13",
+        "message": "findViewById(R.id.AuthUserTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:365:13",
+        "message": "findViewById(R.id.AuthPassTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:369:13",
+        "message": "findViewById(R.id.OutboundProxyTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:373:13",
+        "message": "findViewById(R.id.RegTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:376:13",
+        "message": "findViewById(R.id.IceTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:379:13",
+        "message": "findViewById(R.id.StunServerTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:382:13",
+        "message": "findViewById(R.id.AudioCodecsTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:385:13",
+        "message": "findViewById(R.id.MediaEncTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:389:13",
+        "message": "findViewById(R.id.VoicemailUriTitle) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallListAdapter.kt:18:24",
+        "message": "context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallListAdapter.kt:20:26",
+        "message": "rowView.findViewById(R.id.directions) cannot be safely cast to LinearLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallListAdapter.kt:24:27",
+        "message": "rowView.findViewById(R.id.etc) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallListAdapter.kt:37:27",
+        "message": "rowView.findViewById(R.id.peer_uri) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallListAdapter.kt:43:24",
+        "message": "rowView.findViewById(R.id.time) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MessageListAdapter.kt:21:24",
+        "message": "context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MessageListAdapter.kt:23:29",
+        "message": "messageView.findViewById(R.id.direction) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MessageListAdapter.kt:25:24",
+        "message": "messageView.findViewById(R.id.time) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MessageListAdapter.kt:37:24",
+        "message": "messageView.findViewById(R.id.text) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatListAdapter.kt:21:24",
+        "message": "context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatListAdapter.kt:23:29",
+        "message": "messageView.findViewById(R.id.direction) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatListAdapter.kt:25:24",
+        "message": "messageView.findViewById(R.id.peer) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatListAdapter.kt:32:24",
+        "message": "messageView.findViewById(R.id.time) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatListAdapter.kt:44:24",
+        "message": "messageView.findViewById(R.id.text) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:48:15",
+        "message": "getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:60:26",
+        "message": "findViewById(R.id.account) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:64:24",
+        "message": "findViewById(R.id.messages) cannot be safely cast to ListView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:111:22",
+        "message": "findViewById(R.id.text) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:114:22",
+        "message": "findViewById(R.id.sendButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountListAdapter.kt:23:24",
+        "message": "context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountListAdapter.kt:25:23",
+        "message": "rowView.findViewById(R.id.aor) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountListAdapter.kt:34:14",
+        "message": "cxt cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountListAdapter.kt:37:26",
+        "message": "rowView.findViewById(R.id.action) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactListAdapter.kt:25:24",
+        "message": "context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactListAdapter.kt:27:24",
+        "message": "rowView.findViewById(R.id.contactName) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactListAdapter.kt:49:34",
+        "message": "cxt cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactListAdapter.kt:85:26",
+        "message": "rowView.findViewById(R.id.action) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactListAdapter.kt:92:14",
+        "message": "cxt cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:35:20",
+        "message": "findViewById(R.id.chats) cannot be safely cast to ListView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:36:22",
+        "message": "findViewById(R.id.plusButton) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:40:26",
+        "message": "findViewById(R.id.account) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:103:19",
+        "message": "findViewById(R.id.peerUri) cannot be safely cast to AutoCompleteTextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:232:38",
+        "message": "ois.readObject() cannot be safely cast to ArrayList<Message>."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:533:66",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:775:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:339:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:587:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:598:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:30:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:37:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:39:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:74:5",
+        "message": "Function onOptionsItemSelected has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:161:5",
+        "message": "Function checkDnsServers has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:425:5",
+        "message": "Function handleServiceEvent has 8 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:688:5",
+        "message": "Function handleIntent has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:833:5",
+        "message": "Function onOptionsItemSelected has 6 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:242:5",
+        "message": "Function uaEvent has 8 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:16:5",
+        "message": "Function getFileContents has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:40:5",
+        "message": "Function putFileContents has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:117:5",
+        "message": "Function friendlyUri has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:165:5",
+        "message": "Function checkHostPort has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:178:5",
+        "message": "Function checkParam has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:197:5",
+        "message": "Function checkSipUri has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:208:5",
+        "message": "Function checkAorUri has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:226:5",
+        "message": "Function checkName has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactActivity.kt:54:5",
+        "message": "Function onOptionsItemSelected has 7 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:143:5",
+        "message": "Function onOptionsItemSelected has 9 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:402:5",
+        "message": "Function checkAuthUser has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:11:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:5:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:16:1",
+        "message": "android.media.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:24:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:25:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:4:1",
+        "message": "android.app.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:6:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:7:1",
+        "message": "android.media.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:12:1",
+        "message": "java.io.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactActivity.kt:10:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountsActivity.kt:9:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:4:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallHistory.kt:4:1",
+        "message": "java.io.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:10:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Message.kt:3:1",
+        "message": "java.io.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:4:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:15:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:4:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:10:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:123:56",
+        "message": "Parentheses in (trimmedLine.length == 0) are unnecessary and can be replaced with: trimmedLine.length == 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:171:16",
+        "message": "Parentheses in (number >=6000) are unnecessary and can be replaced with: number >=6000"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:171:35",
+        "message": "Parentheses in (number <= 510000) are unnecessary and can be replaced with: number <= 510000"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:174:25",
+        "message": "Parentheses in (event.x - view.left) are unnecessary and can be replaced with: event.x - view.left"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:661:46",
+        "message": "Parentheses in (line.split(\" \")[1]) are unnecessary and can be replaced with: line.split(\" \")[1]"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:667:29",
+        "message": "Parentheses in (aorSpinner.selectedItemPosition >= 0) are unnecessary and can be replaced with: aorSpinner.selectedItemPosition >= 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:668:33",
+        "message": "Parentheses in (ua == UserAgent.uas()[aorSpinner.selectedItemPosition]) are unnecessary and can be replaced with: ua == UserAgent.uas()[aorSpinner.selectedItemPosition]"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:890:25",
+        "message": "Parentheses in (aorSpinner.selectedItemPosition == -1) are unnecessary and can be replaced with: aorSpinner.selectedItemPosition == -1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:891:29",
+        "message": "Parentheses in (aorSpinner.selectedItemPosition >= UserAgent.uas().size) are unnecessary and can be replaced with: aorSpinner.selectedItemPosition >= UserAgent.uas().size"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1107:25",
+        "message": "Parentheses in (ua.account.mediaEnc == \"zrtp\") are unnecessary and can be replaced with: ua.account.mediaEnc == \"zrtp\""
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1107:60",
+        "message": "Parentheses in (ua.account.mediaEnc == \"dtls_srtpf\") are unnecessary and can be replaced with: ua.account.mediaEnc == \"dtls_srtpf\""
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:290:29",
+        "message": "Parentheses in (newEvent == null) are unnecessary and can be replaced with: newEvent == null"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:539:13",
+        "message": "Parentheses in (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) are unnecessary and can be replaced with: Build.VERSION.SDK_INT >= Build.VERSION_CODES.O"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:539:65",
+        "message": "Parentheses in (audioFocusRequest == null) are unnecessary and can be replaced with: audioFocusRequest == null"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:65:28",
+        "message": "Parentheses in (line.substring(name.length).trim()) are unnecessary and can be replaced with: line.substring(name.length).trim()"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:152:17",
+        "message": "Parentheses in (p.length == 0) are unnecessary and can be replaced with: p.length == 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:162:16",
+        "message": "Parentheses in (number > 0) are unnecessary and can be replaced with: number > 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:162:32",
+        "message": "Parentheses in (number < 65536) are unnecessary and can be replaced with: number < 65536"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:167:30",
+        "message": "Parentheses in (parts.size != 2) are unnecessary and can be replaced with: parts.size != 2"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:276:26",
+        "message": "Parentheses in (digit >= '0') are unnecessary and can be replaced with: digit >= '0'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:276:44",
+        "message": "Parentheses in (digit <= '9') are unnecessary and can be replaced with: digit <= '9'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:276:25",
+        "message": "Parentheses in ((digit >= '0') && (digit <= '9')) are unnecessary and can be replaced with: (digit >= '0') && (digit <= '9')"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:276:63",
+        "message": "Parentheses in (digit == '*') are unnecessary and can be replaced with: digit == '*'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:276:81",
+        "message": "Parentheses in (digit == '#') are unnecessary and can be replaced with: digit == '#'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:153:47",
+        "message": "Parentheses in (uaHistory.last().peerURI == h.peerURI) are unnecessary and can be replaced with: uaHistory.last().peerURI == h.peerURI"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/RunOnStartup.kt:19:17",
+        "message": "Parentheses in (asCv.size > 0) are unnecessary and can be replaced with: asCv.size > 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/RunOnStartup.kt:19:36",
+        "message": "Parentheses in (asCv[0] == \"yes\") are unnecessary and can be replaced with: asCv[0] == \"yes\""
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactActivity.kt:66:25",
+        "message": "Parentheses in (Contact.contacts()[index].name != newName) are unnecessary and can be replaced with: Contact.contacts()[index].name != newName"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Call.kt:39:21",
+        "message": "Parentheses in (c.ua == ua) are unnecessary and can be replaced with: c.ua == ua"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Call.kt:39:38",
+        "message": "Parentheses in (dir == \"\") are unnecessary and can be replaced with: dir == \"\""
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:143:21",
+        "message": "Parentheses in (Utils.uriUserPart(c.uri) == Utils.uriUserPart(uri)) are unnecessary and can be replaced with: Utils.uriUserPart(c.uri) == Utils.uriUserPart(uri)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:144:25",
+        "message": "Parentheses in (Utils.uriHostPart(c.uri) == Utils.uriHostPart(uri)) are unnecessary and can be replaced with: Utils.uriHostPart(c.uri) == Utils.uriHostPart(uri)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:205:25",
+        "message": "Parentheses in (ob[i] == \"\") are unnecessary and can be replaced with: ob[i] == \"\""
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:260:25",
+        "message": "Parentheses in (newStunServer != \"\") are unnecessary and can be replaced with: newStunServer != \"\""
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:273:25",
+        "message": "Parentheses in (account_set_stun_host(acc.accp, host) == 0) are unnecessary and can be replaced with: account_set_stun_host(acc.accp, host) == 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:274:29",
+        "message": "Parentheses in (account_set_stun_port(acc.accp, port.toInt()) == 0) are unnecessary and can be replaced with: account_set_stun_port(acc.accp, port.toInt()) == 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatListAdapter.kt:28:17",
+        "message": "Parentheses in (Utils.uriHostPart(message.peerUri) == Utils.uriHostPart(message.aor)) are unnecessary and can be replaced with: Utils.uriHostPart(message.peerUri) == Utils.uriHostPart(message.aor)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:198:13",
+        "message": "Parentheses in (requestCode == MainActivity.CONTACT_CODE) are unnecessary and can be replaced with: requestCode == MainActivity.CONTACT_CODE"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:198:59",
+        "message": "Parentheses in (resultCode == Activity.RESULT_OK) are unnecessary and can be replaced with: resultCode == Activity.RESULT_OK"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:206:17",
+        "message": "Parentheses in (m.aor == aor) are unnecessary and can be replaced with: m.aor == aor"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:206:35",
+        "message": "Parentheses in (m.peerUri == peerUri) are unnecessary and can be replaced with: m.peerUri == peerUri"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:73:33",
+        "message": "Parentheses in (m.aor != aor) are unnecessary and can be replaced with: m.aor != aor"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:73:51",
+        "message": "Parentheses in (m.peerUri != peerUri) are unnecessary and can be replaced with: m.peerUri != peerUri"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:165:13",
+        "message": "Parentheses in (requestCode == MainActivity.MESSAGE_CODE) are unnecessary and can be replaced with: requestCode == MainActivity.MESSAGE_CODE"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:165:59",
+        "message": "Parentheses in (resultCode == Activity.RESULT_OK) are unnecessary and can be replaced with: resultCode == Activity.RESULT_OK"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:194:21",
+        "message": "Parentheses in (Message.messages()[i].aor == aor) are unnecessary and can be replaced with: Message.messages()[i].aor == aor"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:195:25",
+        "message": "Parentheses in (Message.messages()[i].timeStamp == time) are unnecessary and can be replaced with: Message.messages()[i].timeStamp == time"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:204:21",
+        "message": "Parentheses in (Message.messages()[i].aor == aor) are unnecessary and can be replaced with: Message.messages()[i].aor == aor"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:205:25",
+        "message": "Parentheses in (Message.messages()[i].timeStamp == time) are unnecessary and can be replaced with: Message.messages()[i].timeStamp == time"
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:146:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:149:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:152:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:155:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:198:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:201:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:450:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:455:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:708:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:923:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1028:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1031:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1034:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:169:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:178:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:257:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:60:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:69:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:358:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:361:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:365:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:369:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:373:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:376:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:379:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:382:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:385:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:389:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:37:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:171:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ConfigActivity.kt:171:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:105:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:105:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:107:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:174:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:287:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:468:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:548:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:549:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:555:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:565:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:617:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:640:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:736:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:840:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:840:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:840:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1018:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1022:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:279:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:296:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:359:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:451:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:520:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:529:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:543:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:547:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:593:12",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:593:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:81:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:162:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:199:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:218:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/UaSpinnerAdapter.kt:30:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:115:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:81:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:102:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:230:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:230:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallListAdapter.kt:23:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallListAdapter.kt:32:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:56:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:214:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountListAdapter.kt:27:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountListAdapter.kt:28:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountListAdapter.kt:28:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountListAdapter.kt:28:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactListAdapter.kt:29:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactListAdapter.kt:30:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactListAdapter.kt:30:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactListAdapter.kt:30:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:28:31",
+        "message": "Function parameter uap is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:13:32",
+        "message": "Function parameter ua is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:8:27",
+        "message": "Function parameter uri is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:28:44",
+        "message": "Function parameter peer_uri is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:27:30",
+        "message": "Function parameter callp is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:23:53",
+        "message": "Function parameter code is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:23:64",
+        "message": "Function parameter reason is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:16:45",
+        "message": "Function parameter xcallp is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:22:49",
+        "message": "Function parameter digit is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:28:62",
+        "message": "Function parameter message is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:28:79",
+        "message": "Function parameter time is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:30:27",
+        "message": "Function parameter cmd is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Api.kt:31:30",
+        "message": "Function parameter contact is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:619:31",
+        "message": "Function parameter path is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:620:30",
+        "message": "Function parameter force is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:79:13",
+        "message": "Private property is is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:186:29",
+        "message": "Function parameter acc is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:163:52",
+        "message": "Function parameter dn is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:167:49",
+        "message": "Function parameter user is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:169:49",
+        "message": "Function parameter pass is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:173:47",
+        "message": "Function parameter ix is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:171:48",
+        "message": "Function parameter ob is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:172:46",
+        "message": "Function parameter sipnat is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:175:46",
+        "message": "Function parameter regint is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:178:49",
+        "message": "Function parameter host is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:179:49",
+        "message": "Function parameter port is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:181:48",
+        "message": "Function parameter mediaenc is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:183:48",
+        "message": "Function parameter medianat is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:184:52",
+        "message": "Function parameter codecs is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:185:43",
+        "message": "Function parameter value is unused."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:938:17",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:145:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:145:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:153:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:153:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:247:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:247:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:253:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:364:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:364:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:416:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:509:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:509:29",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:609:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:609:29",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:616:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:630:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:645:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:667:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:669:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:669:29",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:704:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:725:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:725:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:733:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:733:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:751:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:839:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:839:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:890:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:895:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:895:25",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:913:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:913:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:929:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:932:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:974:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1012:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1062:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1062:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1107:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/MainActivity.kt:1107:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:261:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:261:25",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:410:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:529:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:529:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:64:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:152:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:180:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:183:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:191:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:191:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:202:16",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:237:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:237:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:276:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:45:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:53:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:53:25",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:101:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:101:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:143:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:144:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:144:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:149:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:149:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:24:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:24:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:55:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:55:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:90:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:90:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:103:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:104:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:104:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:108:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:109:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:109:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:118:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:118:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/UserAgent.kt:12:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/UserAgent.kt:66:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/UserAgent.kt:67:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:61:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:61:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:70:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:128:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactsActivity.kt:143:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallHistory.kt:30:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallHistory.kt:30:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:56:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:198:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:200:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:207:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:221:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:221:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:237:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:248:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:276:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:338:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallListAdapter.kt:39:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallListAdapter.kt:39:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Message.kt:33:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatListAdapter.kt:27:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatListAdapter.kt:27:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:53:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:53:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:97:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:97:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:214:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatActivity.kt:214:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactListAdapter.kt:39:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ContactListAdapter.kt:39:29",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:73:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:73:29",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:88:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/ChatsActivity.kt:88:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:186:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:113:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:127:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:131:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:135:41",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:139:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Account.kt:126:25",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Contact.kt:11:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/UaSpinnerAdapter.kt:17:94",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/UaSpinnerAdapter.kt:21:86",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Call.kt:16:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/UserAgent.kt:23:41",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/UserAgent.kt:27:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallHistory.kt:17:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Message.kt:13:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:624:9",
+        "message": "STATUS_NOTIFICATION_ID can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:625:9",
+        "message": "CALL_NOTIFICATION_ID can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:626:9",
+        "message": "MESSAGE_NOTIFICATION_ID can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:628:9",
+        "message": "DEFAULT_CHANNEL_ID can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/BaresipService.kt:629:9",
+        "message": "HIGH_CHANNEL_ID can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Message.kt:11:9",
+        "message": "MESSAGE_HISTORY_SIZE can be a `const val`."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:140:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountsActivity.kt:43:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:181:13",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Utils.kt:184:13",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "VarCouldBeVal",
+      "description": "Var declaration could be val.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallsActivity.kt:74:13",
+        "message": "Variable 'peerName' could be val."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/RunOnStartup.kt:31:1",
+        "message": "The file RunOnStartup.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Contact.kt:16:1",
+        "message": "The file Contact.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Contact.kt:5:1",
+        "message": "The class Contact defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Call.kt:6:1",
+        "message": "The class Call defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountRow.kt:3:1",
+        "message": "The class AccountRow defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallRow.kt:3:1",
+        "message": "The class CallRow defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "SerialVersionUIDInSerializableClass",
+      "description": "A class which implements the Serializable interface does not define a correct serialVersionUID field. The serialVersionUID field should be a constant long value inside a companion object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/CallHistory.kt:8:1",
+        "message": "The class CallHistory implements the Serializable interface and should thus define a serialVersionUID."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/Message.kt:6:1",
+        "message": "The class Message implements the Serializable interface and should thus define a serialVersionUID."
+      }]
+    }, {
+      "name": "TrailingWhitespace",
+      "description": "Checks which lines end with a whitespace.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/juha-h-baresip-studio/app/src/main/kotlin/com/tutpro/baresip/AccountActivity.kt:146:13",
+        "message": "Line 146 ends with a whitespace."
+      }]
+    }]
+  }]
+}

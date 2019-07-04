@@ -1,0 +1,1503 @@
+{
+  "complexity_metrics": {
+    "loc": 5912,
+    "sloc": 4868,
+    "lloc": 3319,
+    "cloc": 326,
+    "mcc": 757,
+    "n_smell": 436,
+    "comment_ratio": 6,
+    "mcc_per_thlines": 228
+  },
+  "metrics": {
+    "number_of_string": 286,
+    "number_of_string_template": 14,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 2,
+    "number_of_inferred_var": 347,
+    "number_of_objects_declarations": 37,
+    "number_of_companion_objects": 17,
+    "number_of_singletons": 0,
+    "number_of_declaration": 483,
+    "number_of_var_declaration": 486,
+    "number_of_func_call": 1675,
+    "number_of_arguments": 1628,
+    "number_of_parameters": 581,
+    "number_of_qualified_expressions": 2191,
+    "number_of_inheritances": 26,
+    "number_of_unsafe_calls": 35,
+    "number_of_safe_calls": 197,
+    "number_of_destructuring_declarations": 2,
+    "number_of_when_expressions": 24,
+    "number_of_functions_with_default_value": 13,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 19,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 4,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 132,
+    "number_of_possible_smart_casts": 6,
+    "number_of_data_class": 4,
+    "number_of_properties": 481,
+    "number_of_functions": 447,
+    "number_of_interfaces": 20,
+    "number_of_classes": 91,
+    "number_of_packages": 16,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 83
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/data/RemotePodcastRepository.kt:19:17",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/data/RemotePodcastRepository.kt:19:17",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:91:13",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:31:1",
+        "message": "Class 'AppModule' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/AppComponent.kt:19:1",
+        "message": "Interface 'AppComponent' with '12' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:24:1",
+        "message": "Class 'HomeActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/ProgramFragment.kt:28:1",
+        "message": "Class 'ProgramFragment' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:21:1",
+        "message": "Class 'SectionFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:29:1",
+        "message": "Class 'HourByHourListFragment' with '15' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionPodcastListFragment.kt:30:1",
+        "message": "Class 'SectionPodcastListFragment' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:24:1",
+        "message": "Class 'Player' with '15' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaProvider.kt:27:1",
+        "message": "Class 'MediaProvider' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:25:1",
+        "message": "Class 'MediaPlaybackService' with '18' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/data/SharedPrefDownloadPodcastRepository.kt:18:1",
+        "message": "Class 'SharedPrefDownloadPodcastRepository' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/EventLogger.kt:9:1",
+        "message": "Class 'EventLogger' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/PodcastDataInteractor.kt:32:1",
+        "message": "Class 'PodcastDataInteractor' with '15' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "ComplexInterface",
+      "description": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/AppComponent.kt:19:1",
+        "message": "The interface AppComponent is too complex. Consider splitting it up."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:103:9",
+        "message": "The function bind appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:173:5",
+        "message": "The function updateView appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/downloads/DownloadCompleteReceiver.kt:25:5",
+        "message": "The function onReceive appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/MediaPlayerBaseActivity.kt:23:5",
+        "message": "The function onCreate appears to be too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:161:9",
+        "message": "Function getMediaItemState is nested too deeply."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:57:41",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:118:45",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackControlsFragment.kt:126:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackControlsFragment.kt:133:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyCatchBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/MediaPlayerBaseActivity.kt:64:31",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "ThrowingExceptionsWithoutMessageOrCause",
+      "description": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/domain/interactor/ProgramDataInteractorTest.kt:67:58",
+        "message": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions."
+      }]
+    }, {
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:107:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/MediaPlayerBaseActivity.kt:64:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/PodcastDataInteractor.kt:197:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:125:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:108:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaProvider.kt:158:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaProvider.kt:170:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaProvider.kt:183:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "MemberNameEqualsClassName",
+      "description": "A member should not given the same name as its parent class or object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:45:5",
+        "message": "A member is named after the class. This might result in confusion. Either rename the member or change it to a constructor."
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:31:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:32:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:33:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:35:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:36:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:37:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:38:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:39:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:40:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:41:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:43:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:28:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:29:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:98:9",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:99:9",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:100:9",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:101:9",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:30:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:40:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/PackageValidator.kt:11:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/PlaybackManager.kt:26:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:29:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/MediaPlayerBaseActivity.kt:18:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/data/SharedPrefDownloadPodcastRepository.kt:20:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/data/SharedPrefDownloadPodcastRepository.kt:21:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/data/SharedPrefDownloadPodcastRepository.kt:22:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/PodcastDataInteractor.kt:45:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/BrowseActivity.kt:22:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/feature/browser/BrowserViewModelTest.kt:93:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/feature/browser/BrowserViewModelTest.kt:93:64",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/data/RemoteProgramRepository.kt:20:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/data/RemoteProgramRepository.kt:31:46",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/data/RemotePodcastRepository.kt:23:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/data/RemotePodcastRepository.kt:28:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/data/RemoteProgramRepository.kt:26:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/data/RemoteProgramRepository.kt:37:46",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/data/RemotePodcastRepository.kt:23:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/data/RemotePodcastRepository.kt:28:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:75:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:76:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:121:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:125:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:94:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:98:62",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:99:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:101:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:109:53",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:292:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:70:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:75:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/BrowseActivity.kt:83:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:90:54",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:99:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:177:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionPodcastListFragment.kt:84:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionPodcastListFragment.kt:86:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionPodcastListFragment.kt:139:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackControlsFragment.kt:43:68",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Program.kt:21:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/MediaDescriptionCompatJsonAdapter.kt:39:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Section.kt:20:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/PodcastDataInteractor.kt:181:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/PodcastDataInteractor.kt:189:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/Application.kt:11:6",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/DownloadsFragment.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/DownloadsFragment.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/DownloadsFragment.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/ProgramFragment.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/ProgramFragment.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/BrowseActivity.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionPodcastListFragment.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionPodcastListFragment.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionPodcastListFragment.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/QueueManager.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/downloads/DownloadCompleteReceiver.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/downloads/DownloadCompleteReceiver.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/downloads/DownloadCompleteReceiver.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/downloads/DownloadCompleteReceiver.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/MediaPlayerBaseActivity.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/MediaPlayerBaseActivity.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:41:16",
+        "message": "application.getSystemService(Context.DOWNLOAD_SERVICE) cannot be safely cast to DownloadManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:69:31",
+        "message": "supportFragmentManager.getFragment(savedInstanceState,\n                    ProgramFragment.TAG) cannot be safely cast to ProgramFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:71:33",
+        "message": "supportFragmentManager.getFragment(savedInstanceState,\n                    DownloadsFragment.TAG) cannot be safely cast to DownloadsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:122:79",
+        "message": "programFragment cannot be safely cast to ProgramFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:126:81",
+        "message": "downloadsFragment cannot be safely cast to DownloadsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/DownloadsFragment.kt:48:32",
+        "message": "context cannot be safely cast to MediaPlayerBaseActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/DownloadsFragment.kt:63:49",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/DownloadsFragment.kt:103:67",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/DownloadsFragment.kt:138:67",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/ProgramFragment.kt:45:32",
+        "message": "context cannot be safely cast to MediaPlayerBaseActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:45:39",
+        "message": "service.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/BaseActivity.kt:20:18",
+        "message": "application cannot be safely cast to Application."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:52:25",
+        "message": "updatedPodcast.extras?.getSerializable(PODCAST_STATE) cannot be safely cast to PodcastState."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:74:14",
+        "message": "holder cannot be safely cast to MediaItemViewHolder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:109:58",
+        "message": "itemView.context cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:113:25",
+        "message": "podcast.extras?.getSerializable(PODCAST_STATE) cannot be safely cast to PodcastState."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:119:26",
+        "message": "podcast_icon.drawable cannot be safely cast to Animatable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:147:26",
+        "message": "playback_state.drawable cannot be safely cast to Animatable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:187:57",
+        "message": "itemView.context cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:49:32",
+        "message": "context cannot be safely cast to MediaPlayerBaseActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:65:38",
+        "message": "activity cannot be safely cast to BrowseActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:160:10",
+        "message": "activity cannot be safely cast to BrowseActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/BrowserViewModel.kt:68:25",
+        "message": "updatedPodcast.extras?.getSerializable(Podcast.PODCAST_STATE) cannot be safely cast to PodcastState."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:57:32",
+        "message": "context cannot be safely cast to MediaPlayerBaseActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:78:49",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:148:67",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:173:10",
+        "message": "activity cannot be safely cast to BrowseActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:205:67",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionPodcastListFragment.kt:58:32",
+        "message": "context cannot be safely cast to MediaPlayerBaseActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionPodcastListFragment.kt:79:49",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionPodcastListFragment.kt:129:67",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionPodcastListFragment.kt:166:67",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/BaseFragment.kt:14:33",
+        "message": "activity cannot be safely cast to HasComponent<*>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaProvider.kt:129:69",
+        "message": "podcasts cannot be safely cast to ArrayList<MediaBrowserCompat.MediaItem>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaProvider.kt:131:27",
+        "message": "podcasts cannot be safely cast to MutableList<MediaBrowserCompat.MediaItem>?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:66:10",
+        "message": "applicationContext cannot be safely cast to Application."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:95:24",
+        "message": "applicationContext.getSystemService(Context.AUDIO_SERVICE) cannot be safely cast to AudioManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackControlsFragment.kt:29:71",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackControlsFragment.kt:52:67",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackControlsFragment.kt:60:67",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackControlsFragment.kt:65:67",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackControlsFragment.kt:113:67",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackControlsFragment.kt:118:67",
+        "message": "activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:25:20",
+        "message": "context cannot be safely cast to MediaPlaybackFullScreenActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:30:43",
+        "message": "activity cannot be safely cast to Context."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/downloads/DownloadCompleteReceiver.kt:105:10",
+        "message": "context.applicationContext cannot be safely cast to Application."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/MediaPlayerBaseActivity.kt:61:32",
+        "message": "supportFragmentManager\n                    .findFragmentById(R.id.fragment_playback_controls) cannot be safely cast to MediaPlaybackControlsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/MediaPlayerBaseActivity.kt:100:27",
+        "message": "controlsFragment cannot be safely cast to MediaPlaybackControlsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/MediaPlayerBaseActivity.kt:122:27",
+        "message": "controlsFragment cannot be safely cast to MediaPlaybackControlsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Program.kt:19:23",
+        "message": "other cannot be safely cast to Program?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/MediaDescriptionCompatJsonAdapter.kt:26:17",
+        "message": "item.extras?.getSerializable(PODCAST_STATE) cannot be safely cast to PodcastState."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/MediaDescriptionCompatJsonAdapter.kt:32:17",
+        "message": "item.extras?.getSerializable(PODCAST_DATE) cannot be safely cast to Date?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Podcast.kt:35:23",
+        "message": "other cannot be safely cast to Podcast."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Section.kt:18:23",
+        "message": "other cannot be safely cast to Section?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/PodcastDataInteractor.kt:118:46",
+        "message": "p2.description.extras?.getSerializable(PODCAST_DATE) cannot be safely cast to Date."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/PodcastDataInteractor.kt:119:52",
+        "message": "p1.description.extras?.getSerializable\n                            (PODCAST_DATE) cannot be safely cast to Date."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/feature/browser/BrowserViewModelTest.kt:78:5",
+        "message": "Private property downloadedPodcastList is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/domain/interactor/ProgramDataInteractorTest.kt:20:5",
+        "message": "Private property mDownloadsRepo is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/domain/interactor/ProgramDataInteractorTest.kt:22:5",
+        "message": "Private property mMockContext is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/domain/interactor/ProgramDataInteractorTest.kt:23:5",
+        "message": "Private property mDownloadManager is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/domain/interactor/ProgramDataInteractorTest.kt:24:5",
+        "message": "Private property mEventLogger is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/HomeModule.kt:13:18",
+        "message": "Private property activity is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/BrowseModule.kt:12:20",
+        "message": "Private property activity is unused."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/feature/mediaplayback/QueueManagerTest.kt:36:1",
+        "message": "The file QueueManagerTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/data/RemotePodcastRepositoryTest.kt:43:1",
+        "message": "The file RemotePodcastRepositoryTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/domain/interactor/PodcastDataInteractorTest.kt:44:1",
+        "message": "The file PodcastDataInteractorTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/testutil/Data.kt:45:62",
+        "message": "The file Data.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/data/RemoteProgramRepository.kt:36:1",
+        "message": "The file RemoteProgramRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/data/RemotePodcastRepository.kt:35:1",
+        "message": "The file RemotePodcastRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/data/ApiService.kt:19:1",
+        "message": "The file ApiService.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/domain/model/PodcastData.kt:41:1",
+        "message": "The file PodcastData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/domain/model/ProgramData.kt:63:1",
+        "message": "The file ProgramData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/data/RemoteProgramRepository.kt:42:1",
+        "message": "The file RemoteProgramRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/data/RemotePodcastRepository.kt:35:1",
+        "message": "The file RemotePodcastRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/data/ApiService.kt:32:1",
+        "message": "The file ApiService.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/PodcastData.kt:69:1",
+        "message": "The file PodcastData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/ProgramData.kt:85:1",
+        "message": "The file ProgramData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/Application.kt:30:1",
+        "message": "The file Application.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/PerActivity.kt:7:28",
+        "message": "The file PerActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:135:1",
+        "message": "The file AppModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/HomeModule.kt:26:1",
+        "message": "The file HomeModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/BrowseModule.kt:22:1",
+        "message": "The file BrowseModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/BaseActivityModule.kt:20:1",
+        "message": "The file BaseActivityModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/BrowseComponent.kt:21:1",
+        "message": "The file BrowseComponent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/MediaPlaybackFullScreenComponent.kt:14:1",
+        "message": "The file MediaPlaybackFullScreenComponent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/HomeComponent.kt:19:1",
+        "message": "The file HomeComponent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/BaseActivityComponent.kt:16:1",
+        "message": "The file BaseActivityComponent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/AppComponent.kt:35:1",
+        "message": "The file AppComponent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/HasComponent.kt:5:1",
+        "message": "The file HasComponent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeViewModel.kt:13:1",
+        "message": "The file HomeViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomePagerAdapter.kt:31:1",
+        "message": "The file HomePagerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/ProgramListAdapter.kt:58:1",
+        "message": "The file ProgramListAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:145:1",
+        "message": "The file HomeActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/ProgramFragment.kt:180:1",
+        "message": "The file ProgramFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/SquareImageView.kt:18:1",
+        "message": "The file SquareImageView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/splash/SplashActivity.kt:18:1",
+        "message": "The file SplashActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:323:1",
+        "message": "The file NotificationManager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/BaseActivity.kt:45:1",
+        "message": "The file BaseActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:192:1",
+        "message": "The file PodcastListAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionListAdapter.kt:60:1",
+        "message": "The file SectionListAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/BrowseActivity.kt:95:1",
+        "message": "The file BrowseActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/IsMediaBrowserFragment.kt:5:1",
+        "message": "The file IsMediaBrowserFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:211:1",
+        "message": "The file Player.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MetaDataUpdateListener.kt:10:1",
+        "message": "The file MetaDataUpdateListener.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaProvider.kt:212:1",
+        "message": "The file MediaProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/PlaybackStateListener.kt:10:1",
+        "message": "The file PlaybackStateListener.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:275:1",
+        "message": "The file MediaPlaybackFullScreenActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/PlaybackManager.kt:166:1",
+        "message": "The file PlaybackManager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:201:1",
+        "message": "The file MediaPlaybackService.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackControlsFragment.kt:136:1",
+        "message": "The file MediaPlaybackControlsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:45:1",
+        "message": "The file SleepTimeSelectorDialogFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/PlayerListener.kt:15:1",
+        "message": "The file PlayerListener.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/QueueManager.kt:136:1",
+        "message": "The file QueueManager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/downloads/DownloadCompleteReceiver.kt:120:1",
+        "message": "The file DownloadCompleteReceiver.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/MediaPlayerBaseActivity.kt:126:1",
+        "message": "The file MediaPlayerBaseActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/data/SharedPrefDownloadPodcastRepository.kt:112:1",
+        "message": "The file SharedPrefDownloadPodcastRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/data/SharedPrefPodcastPreferencesRepository.kt:26:1",
+        "message": "The file SharedPrefPodcastPreferencesRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/repository/PodcastRepository.kt:8:1",
+        "message": "The file PodcastRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/repository/ProgramRepository.kt:15:1",
+        "message": "The file ProgramRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/repository/DownloadPodcastRepository.kt:22:1",
+        "message": "The file DownloadPodcastRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/repository/PodcastPreferencesRepository.kt:7:1",
+        "message": "The file PodcastPreferencesRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Program.kt:26:1",
+        "message": "The file Program.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/MediaDescriptionCompatJsonAdapter.kt:54:1",
+        "message": "The file MediaDescriptionCompatJsonAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/PodcastJson.kt:13:1",
+        "message": "The file PodcastJson.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/EventLogger.kt:74:1",
+        "message": "The file EventLogger.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/PodcastInterface.kt:5:1",
+        "message": "The file PodcastInterface.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/CrashReporter.kt:15:1",
+        "message": "The file CrashReporter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Podcast.kt:48:1",
+        "message": "The file Podcast.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/MediaDescriptionCompatJson.kt:17:1",
+        "message": "The file MediaDescriptionCompatJson.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/PodcastJsonAdapter.kt:42:1",
+        "message": "The file PodcastJsonAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/ProgramInterface.kt:5:1",
+        "message": "The file ProgramInterface.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Section.kt:27:1",
+        "message": "The file Section.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/PodcastState.kt:7:1",
+        "message": "The file PodcastState.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/ProgramDataInteractor.kt:27:1",
+        "message": "The file ProgramDataInteractor.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/PodcastDataInteractor.kt:217:1",
+        "message": "The file PodcastDataInteractor.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/data/RemoteProgramRepositoryTest.kt:20:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of RemoteProgramRepositoryTest."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/data/RemoteProgramRepository.kt:8:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of RemoteProgramRepository."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/domain/model/ProgramData.kt:3:31",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ProgramData."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/data/RemoteProgramRepository.kt:8:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of RemoteProgramRepository."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/ProgramListAdapter.kt:14:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ProgramListAdapter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/ProgramFragment.kt:25:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ProgramFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/SquareImageView.kt:5:32",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SquareImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/splash/SplashActivity.kt:6:51",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SplashActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/BaseActivity.kt:9:61",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of BaseActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:21:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of PodcastListAdapter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionListAdapter.kt:13:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SectionListAdapter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/BrowseActivity.kt:17:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of BrowseActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:21:20",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of Player."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:22:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MediaPlaybackService."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:8:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SleepTimeSelectorDialogFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/downloads/DownloadCompleteReceiver.kt:15:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of DownloadCompleteReceiver."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/CrashReporter.kt:3:43",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of CrashReporter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/ProgramDataInteractor.kt:1:44",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/testutil/Data.kt:30:31",
+        "message": "Pair is created by using the pair constructor. This can replaced by `\"programId1\" to program1`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/testutil/Data.kt:30:61",
+        "message": "Pair is created by using the pair constructor. This can replaced by `\"programId2\" to program2`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/test/java/cat/xojan/random1/testutil/Data.kt:30:91",
+        "message": "Pair is created by using the pair constructor. This can replaced by `\"programId3\" to program3`"
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/domain/model/PodcastData.kt:31:1",
+        "message": "The class PodcastRac1 defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/domain/model/PodcastData.kt:39:1",
+        "message": "The class AudioRac1 defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/domain/model/ProgramData.kt:39:1",
+        "message": "The class ProgramRac1 defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/domain/model/ProgramData.kt:47:1",
+        "message": "The class ImagesRac1 defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/domain/model/ProgramData.kt:52:1",
+        "message": "The class SectionRac1 defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/PodcastData.kt:45:1",
+        "message": "The class RespostaPodcastsCatRadio defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/PodcastData.kt:49:1",
+        "message": "The class PodcastsCatRadio defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/PodcastData.kt:54:1",
+        "message": "The class PodcastCatRadio defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/PodcastData.kt:61:1",
+        "message": "The class AudiosCatRadio defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/PodcastData.kt:65:1",
+        "message": "The class AudioCatRadio defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/ProgramData.kt:47:1",
+        "message": "The class Resposta defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/ProgramData.kt:51:1",
+        "message": "The class Items defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/ProgramData.kt:56:1",
+        "message": "The class Item defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/ProgramData.kt:65:1",
+        "message": "The class ImagesCatRadio defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/ProgramData.kt:69:1",
+        "message": "The class ImageCatRadio defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/ProgramData.kt:74:1",
+        "message": "The class SectionsCatRadio defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/ProgramData.kt:78:1",
+        "message": "The class SectionCatRadio defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/MediaDescriptionCompatJson.kt:5:1",
+        "message": "The class MediaDescriptionCompatJson defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/rac1/java/cat/xojan/random1/domain/model/PodcastData.kt:26:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/PodcastData.kt:31:52",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/domain/model/PodcastData.kt:40:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:40:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:70:100",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:94:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:100:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:109:22",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:115:80",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:121:80",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:126:79",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:132:69",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/HomeModule.kt:18:77",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/HomeModule.kt:23:87",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/BrowseModule.kt:19:33",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/BaseActivityModule.kt:12:39",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/BaseActivityModule.kt:17:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeViewModel.kt:10:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomePagerAdapter.kt:18:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomePagerAdapter.kt:22:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/DownloadsFragment.kt:112:35",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:87:58",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:91:70",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:118:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/BrowserViewModel.kt:19:86",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/BaseFragment.kt:16:80",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:135:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:204:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:208:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:35:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackControlsFragment.kt:22:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/QueueManager.kt:123:35",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/data/SharedPrefDownloadPodcastRepository.kt:97:81",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/data/SharedPrefDownloadPodcastRepository.kt:101:81",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/data/SharedPrefPodcastPreferencesRepository.kt:19:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Section.kt:24:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/ProgramDataInteractor.kt:20:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/ProgramDataInteractor.kt:24:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/PodcastDataInteractor.kt:81:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/PodcastDataInteractor.kt:125:86",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/PodcastDataInteractor.kt:204:69",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/catradio/java/cat/xojan/random1/data/ApiService.kt:11:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/module/AppModule.kt:7:1",
+        "message": "cat.xojan.random1.data.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:8:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:13:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:12:1",
+        "message": "com.google.android.exoplayer2.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/MediaPlaybackFullScreenComponent.kt:10:25",
+        "message": "Parentheses in (AppComponent::class) are unnecessary and can be replaced with: AppComponent::class"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/MediaPlaybackFullScreenComponent.kt:11:20",
+        "message": "Parentheses in (BaseActivityModule::class) are unnecessary and can be replaced with: BaseActivityModule::class"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/HomeComponent.kt:13:25",
+        "message": "Parentheses in (AppComponent::class) are unnecessary and can be replaced with: AppComponent::class"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/HomeComponent.kt:14:20",
+        "message": "Parentheses in (BaseActivityModule::class) are unnecessary and can be replaced with: BaseActivityModule::class"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/HomeComponent.kt:14:49",
+        "message": "Parentheses in (HomeModule::class) are unnecessary and can be replaced with: HomeModule::class"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/BaseActivityComponent.kt:11:28",
+        "message": "Parentheses in (AppComponent::class) are unnecessary and can be replaced with: AppComponent::class"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/injection/component/BaseActivityComponent.kt:11:63",
+        "message": "Parentheses in (BaseActivityModule::class) are unnecessary and can be replaced with: BaseActivityModule::class"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:234:60",
+        "message": "Parentheses in ((duration / 1000).toLong()) are unnecessary and can be replaced with: (duration / 1000).toLong()"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/QueueManager.kt:107:13",
+        "message": "Parentheses in (currentQueueId + 1) are unnecessary and can be replaced with: currentQueueId + 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/QueueManager.kt:117:13",
+        "message": "Parentheses in (currentQueueId - 1) are unnecessary and can be replaced with: currentQueueId - 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/EventLogger.kt:71:63",
+        "message": "Parentheses in (milliseconds / 1000) are unnecessary and can be replaced with: milliseconds / 1000"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/EventLogger.kt:71:62",
+        "message": "Parentheses in ((milliseconds / 1000)) are unnecessary and can be replaced with: milliseconds / 1000"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/interactor/PodcastDataInteractor.kt:184:43",
+        "message": "Parentheses around the lambda ({ it.isEmpty() }) are unnecessary and can be removed."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/HomeActivity.kt:102:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:80:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:76:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:79:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/downloads/DownloadCompleteReceiver.kt:88:17",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/DownloadsFragment.kt:34:9",
+        "message": "MEDIA_ID_DOWNLOADS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/ProgramFragment.kt:32:9",
+        "message": "MEDIA_ID_ROOT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/ProgramFragment.kt:33:9",
+        "message": "MEDIA_ID_EMPTY_ROOT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:33:9",
+        "message": "ARG_PROGRAM can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:34:9",
+        "message": "MEDIA_ID_SECTION can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/BrowseActivity.kt:22:9",
+        "message": "EXTRA_PROGRAM can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:42:9",
+        "message": "ARG_PROGRAM can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionPodcastListFragment.kt:43:9",
+        "message": "ARG_MEDIA_ID can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaProvider.kt:33:9",
+        "message": "ERROR can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/QueueManager.kt:12:9",
+        "message": "MEDIA_ID_PLAY_ALL can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/QueueManager.kt:13:9",
+        "message": "METADATA_HAS_NEXT_OR_PREVIOUS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/QueueManager.kt:14:9",
+        "message": "METADATA_PROGRAM_ID can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Podcast.kt:22:9",
+        "message": "PODCAST_STATE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Podcast.kt:23:9",
+        "message": "PODCAST_FILE_PATH can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Podcast.kt:24:9",
+        "message": "PODCAST_DOWNLOAD_REFERENCE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Podcast.kt:25:9",
+        "message": "PODCAST_PROGRAM_ID can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Podcast.kt:26:9",
+        "message": "PODCAST_BIG_IMAGE_URL can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Podcast.kt:27:9",
+        "message": "PODCAST_DURATION can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/Podcast.kt:28:9",
+        "message": "PODCAST_DATE can be a `const val`."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/home/ProgramFragment.kt:81:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:31:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:32:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:186:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/PodcastListAdapter.kt:101:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionListAdapter.kt:49:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionListAdapter.kt:49:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:152:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:156:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:171:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/Player.kt:191:71",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:61:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:108:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:120:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:234:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackFullScreenActivity.kt:257:72",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:34:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:35:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:36:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:36:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:36:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:37:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:37:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:37:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:38:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:38:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:38:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:39:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:39:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:39:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:40:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:40:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/SleepTimeSelectorDialogFragment.kt:40:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/QueueManager.kt:44:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/domain/model/EventLogger.kt:71:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "TrailingWhitespace",
+      "description": "Checks which lines end with a whitespace.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/notification/NotificationManager.kt:203:9",
+        "message": "Line 203 ends with a whitespace."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/SectionFragment.kt:74:5",
+        "message": "Function onOptionsItemSelected has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/browser/HourByHourListFragment.kt:98:5",
+        "message": "Function onOptionsItemSelected has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/PackageValidator.kt:13:5",
+        "message": "Function isCallerAllowed has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/MediaPlaybackService.kt:150:5",
+        "message": "Function onGetRoot has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/QueueManager.kt:103:5",
+        "message": "Function getNextMediaId has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/feature/mediaplayback/QueueManager.kt:113:5",
+        "message": "Function getPreviousMediaId has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/joan-domingo-Podcasts-RAC1-Android/app/src/main/java/cat/xojan/random1/data/SharedPrefDownloadPodcastRepository.kt:8:1",
+        "message": "The import 'cat.xojan.random1.domain.model.Podcast.Companion.PODCAST_PROGRAM_ID' is unused."
+      }]
+    }]
+  }]
+}

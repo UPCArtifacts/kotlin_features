@@ -1,0 +1,1216 @@
+{
+  "complexity_metrics": {
+    "loc": 7725,
+    "sloc": 6442,
+    "lloc": 4449,
+    "cloc": 86,
+    "mcc": 925,
+    "n_smell": 349,
+    "comment_ratio": 1,
+    "mcc_per_thlines": 207
+  },
+  "metrics": {
+    "number_of_string": 553,
+    "number_of_string_template": 42,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 12,
+    "number_of_inferred_var": 468,
+    "number_of_objects_declarations": 29,
+    "number_of_companion_objects": 2,
+    "number_of_singletons": 2,
+    "number_of_declaration": 649,
+    "number_of_var_declaration": 649,
+    "number_of_func_call": 2779,
+    "number_of_arguments": 2363,
+    "number_of_parameters": 842,
+    "number_of_qualified_expressions": 3736,
+    "number_of_inheritances": 58,
+    "number_of_unsafe_calls": 6,
+    "number_of_safe_calls": 340,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 18,
+    "number_of_functions_with_default_value": 21,
+    "number_of_function_call_with_named_value": 20,
+    "number_of_named_argument": 66,
+    "number_of_argument_with_default_value": 140,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 1,
+    "number_of_properties_delegation": 30,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 6,
+    "number_of_lambdas": 439,
+    "number_of_possible_smart_casts": 6,
+    "number_of_data_class": 24,
+    "number_of_properties": 649,
+    "number_of_functions": 492,
+    "number_of_interfaces": 21,
+    "number_of_classes": 102,
+    "number_of_packages": 20,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 122
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/test/java/org/fossasia/openevent/general/event/EventUtilsTest.kt:36:25",
+        "message": "The function getEvent has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsViewHolder.kt:16:5",
+        "message": "The function bind appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:89:5",
+        "message": "The function onCreateView appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketsFragment.kt:47:5",
+        "message": "The function onCreateView appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventsFragment.kt:37:5",
+        "message": "The function onCreateView appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderCompletedFragment.kt:23:1",
+        "message": "Class 'OrderCompletedFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:26:1",
+        "message": "Class 'AttendeeViewModel' with '18' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:55:1",
+        "message": "Class 'AttendeeFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:35:1",
+        "message": "Class 'EventDetailsFragment' with '15' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventService.kt:11:1",
+        "message": "Class 'EventService' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:11:1",
+        "message": "Object 'EventUtils' with '12' functions detected. Defined threshold inside objects is set to '11'"
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsFragment.kt:38:5",
+        "message": "The function onCreateView is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:64:5",
+        "message": "The function initializeSpinner is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:89:5",
+        "message": "The function onCreateView is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:32:5",
+        "message": "The function onCreateView is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketsFragment.kt:47:5",
+        "message": "The function onCreateView is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventsFragment.kt:37:5",
+        "message": "The function onCreateView is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:26:1",
+        "message": "Class AttendeeViewModel is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:55:1",
+        "message": "Class AttendeeFragment is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchViewModel.kt:15:1",
+        "message": "Class SearchViewModel is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:35:1",
+        "message": "Class EventDetailsFragment is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:244:41",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:160:28",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:32:22",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:91:25",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:61:25",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventsViewModel.kt:36:34",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/MainActivity.kt:34:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/MainActivity.kt:40:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/MainActivity.kt:46:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/MainActivity.kt:52:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/MainActivity.kt:58:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchLocationActivity.kt:37:48",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/AuthActivity.kt:24:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/AuthActivity.kt:30:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "ComplexInterface",
+      "description": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDao.kt:10:1",
+        "message": "The interface EventDao is too complex. Consider splitting it up."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:95:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:120:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:134:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:148:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:58:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:71:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/settings/SettingsFragment.kt:23:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/settings/SettingsFragment.kt:24:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileFragment.kt:39:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileFragment.kt:40:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileFragment.kt:42:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragment.kt:30:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/about/AboutEventActivity.kt:21:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchTimeActivity.kt:17:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/social/SocialLinksFragment.kt:24:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:42:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersUnderUserVM.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderCompletedFragment.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderCompletedFragment.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersUnderUserFragment.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersUnderUserFragment.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsFragment.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsFragment.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsFragment.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewHolder.kt:16:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:51:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:56:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:57:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:61:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:63:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:65:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:66:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:68:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:69:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:71:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/SignUpFragment.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/SignUpFragment.kt:31:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/LoginFragment.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileFragment.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragment.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/favorite/FavoriteFragment.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/about/AboutEventActivity.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/social/SocialLinksFragment.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/social/SocialLinksFragment.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketsFragment.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketsFragment.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/topic/SimilarEventsFragment.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/topic/SimilarEventsFragment.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventsFragment.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersUnderUserVM.kt:45:45",
+        "message": "it.map { it.attendees?.size } cannot be safely cast to ArrayList<Int>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:138:37",
+        "message": "it cannot be safely cast to MutableList<Ticket>?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:82:30",
+        "message": "bundle.getSerializable(TICKET_ID_AND_QTY) cannot be safely cast to List<Pair<Int, Int>>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:368:55",
+        "message": "ticketIdAndQty cannot be safely cast to ArrayList."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/di/Modules.kt:123:12",
+        "message": "RequestAuthenticator(get()) cannot be safely cast to Authenticator."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/LoginFragment.kt:38:30",
+        "message": "bundle.getSerializable(TICKET_ID_AND_QTY) cannot be safely cast to List<Pair<Int, Int>>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/utils/Utils.kt:46:48",
+        "message": "context?.getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:137:22",
+        "message": "menu.findItem(R.id.search_item).actionView cannot be safely cast to SearchView."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileFragment.kt:119:65",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileFragment.kt:119:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragment.kt:74:69",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragment.kt:74:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:121:65",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:121:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderApi.kt:22:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsViewHolder.kt:48:140",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsViewHolder.kt:49:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsViewHolder.kt:67:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersUnderUserFragment.kt:60:141",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsFragment.kt:63:137",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersRecyclerAdapter.kt:31:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/Order.kt:21:267",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/Attendee.kt:20:262",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/forms/CustomForm.kt:17:142",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:227:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:137:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:138:189",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:168:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:184:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:195:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:208:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/settings/SettingsFragment.kt:24:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/settings/SettingsFragment.kt:45:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/di/Modules.kt:146:399",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/SignUpFragmentViewModel.kt:46:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/SignUpFragmentViewModel.kt:47:144",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileFragment.kt:90:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileFragment.kt:119:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileViewModel.kt:52:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragment.kt:74:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragment.kt:89:141",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragment.kt:113:141",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/OpenEventDatabase.kt:27:166",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/OpenEventDatabase.kt:28:157",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/favorite/FavoriteFragment.kt:50:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/utils/Utils.kt:27:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/utils/Utils.kt:46:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchViewModel.kt:15:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchViewModel.kt:39:162",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchViewModel.kt:41:292",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:56:137",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:142:166",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:143:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:145:157",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchLocationActivity.kt:37:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/social/SocialLink.kt:19:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/social/SocialLinksViewHolder.kt:20:138",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketViewHolder.kt:30:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/Ticket.kt:18:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/topic/EventTopic.kt:15:142",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/topic/SimilarEventsFragment.kt:58:137",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsViewModel.kt:52:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventsFragment.kt:57:137",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:121:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:290:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:139:151",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:141:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersUnderUserVM.kt:71:34",
+        "message": "Private property i is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:263:34",
+        "message": "Private property i is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/common/SingleLiveEvent.kt:73:9",
+        "message": "Private property TAG is unused."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersUnderUserVM.kt:81:52",
+        "message": "Pair is created by using the pair constructor. This can replaced by `event to it.identifier`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketsFragment.kt:138:32",
+        "message": "Pair is created by using the pair constructor. This can replaced by `id to quantity`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketsFragment.kt:140:35",
+        "message": "Pair is created by using the pair constructor. This can replaced by `id to quantity`"
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersUnderUserVM.kt:48:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersUnderUserVM.kt:80:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersUnderUserVM.kt:108:33",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersUnderUserVM.kt:108:33",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersUnderUserVM.kt:113:16",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersUnderUserVM.kt:113:16",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersRecyclerAdapter.kt:20:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsRecyclerAdapter.kt:19:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewHolder.kt:62:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeRecyclerAdapter.kt:18:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeRecyclerAdapter.kt:21:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeService.kt:33:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeService.kt:33:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:157:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:167:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:175:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:175:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:202:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:259:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:281:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:303:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:306:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:316:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:367:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:378:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/MainActivity.kt:96:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/MainActivity.kt:115:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/MainActivity.kt:115:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/LoginFragment.kt:50:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/AuthService.kt:16:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/AuthService.kt:29:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragment.kt:144:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/AuthHolder.kt:15:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/AuthHolder.kt:22:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/favorite/FavoriteEventsRecyclerAdapter.kt:27:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchViewModel.kt:36:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchViewModel.kt:38:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchViewModel.kt:38:14",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:142:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:142:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:175:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/social/SocialLinksService.kt:14:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/social/SocialLinksService.kt:14:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/social/SocialLinksRecyclerAdapter.kt:14:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketDetailsRecyclerAdapter.kt:15:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketsRecyclerAdapter.kt:16:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketService.kt:11:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketService.kt:11:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/AuthActivity.kt:51:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventService.kt:21:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventService.kt:21:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventService.kt:98:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventService.kt:98:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventsRecyclerAdapter.kt:29:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:110:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:110:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:124:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:124:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:138:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:138:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:152:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:152:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderService.kt:27:73",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderService.kt:31:78",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderService.kt:35:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderService.kt:39:78",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsViewHolder.kt:65:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersRecyclerAdapter.kt:34:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsRecyclerAdapter.kt:46:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeRecyclerAdapter.kt:45:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeService.kt:22:52",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeService.kt:26:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeIdConverter.kt:8:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeIdConverter.kt:13:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/settings/SettingsFragmentViewModel.kt:27:55",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/settings/SettingsFragmentViewModel.kt:31:55",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/AuthService.kt:45:70",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/AuthHolder.kt:36:23",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/favorite/FavoriteEventsRecyclerAdapter.kt:32:31",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/favorite/FavoriteEventsRecyclerAdapter.kt:46:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/utils/StringUtils.kt:3:35",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/CircleTransform.kt:35:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/social/SocialLinksRecyclerAdapter.kt:30:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketDetailsRecyclerAdapter.kt:39:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketsRecyclerAdapter.kt:39:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketIdConverter.kt:8:48",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketIdConverter.kt:13:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketsViewModel.kt:59:74",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketService.kt:24:52",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketService.kt:28:68",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketService.kt:32:65",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/data/Network.kt:17:39",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/data/Preference.kt:21:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/data/Preference.kt:29:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/data/Preference.kt:37:71",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/data/Preference.kt:45:65",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/topic/EventTopicIdConverter.kt:8:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsViewModel.kt:50:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventService.kt:43:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventService.kt:56:52",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventService.kt:77:45",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventService.kt:81:50",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventService.kt:85:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventsRecyclerAdapter.kt:34:31",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventsRecyclerAdapter.kt:53:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventIdConverter.kt:8:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:52:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsViewHolder.kt:57:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsViewHolder.kt:57:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrdersViewHolder.kt:36:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewHolder.kt:75:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:83:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeFragment.kt:458:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/di/Modules.kt:126:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/di/Modules.kt:127:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/SignUpFragmentViewModel.kt:102:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/SignUpFragment.kt:72:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileFragment.kt:39:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileFragment.kt:127:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventViewHolder.kt:29:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:42:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderCompletedFragment.kt:10:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/OrderDetailsFragment.kt:8:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeApi.kt:6:1",
+        "message": "retrofit2.http.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/settings/SettingsFragment.kt:11:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/MainActivity.kt:9:1",
+        "message": "org.fossasia.openevent.general.R.id.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/di/Modules.kt:14:1",
+        "message": "org.fossasia.openevent.general.attendees.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/di/Modules.kt:16:1",
+        "message": "org.fossasia.openevent.general.auth.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/di/Modules.kt:19:1",
+        "message": "org.fossasia.openevent.general.event.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/di/Modules.kt:24:1",
+        "message": "org.fossasia.openevent.general.order.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/di/Modules.kt:35:1",
+        "message": "org.fossasia.openevent.general.ticket.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/OpenEventGeneral.kt:6:1",
+        "message": "org.fossasia.openevent.general.di.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/AuthApi.kt:6:1",
+        "message": "retrofit2.http.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragment.kt:12:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/favorite/FavoriteFragment.kt:16:1",
+        "message": "org.fossasia.openevent.general.event.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/CircleTransform.kt:3:1",
+        "message": "android.graphics.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:11:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:16:1",
+        "message": "org.fossasia.openevent.general.event.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/topic/SimilarEventsFragment.kt:14:1",
+        "message": "org.fossasia.openevent.general.event.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:9:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/Order.kt:21:24",
+        "message": "Parentheses in (ForeignKey(entity = Event::class, parentColumns = [\"id\"], childColumns = [\"event\"], onDelete = ForeignKey.CASCADE)) are unnecessary and can be replaced with: ForeignKey(entity = Event::class, parentColumns = [\"id\"], childColumns = [\"event\"], onDelete = ForeignKey.CASCADE)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/order/Order.kt:21:142",
+        "message": "Parentheses in (ForeignKey(entity = Attendee::class, parentColumns = [\"id\"], childColumns = [\"attendees\"], onDelete = ForeignKey.CASCADE)) are unnecessary and can be replaced with: ForeignKey(entity = Attendee::class, parentColumns = [\"id\"], childColumns = [\"attendees\"], onDelete = ForeignKey.CASCADE)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/Attendee.kt:20:24",
+        "message": "Parentheses in (ForeignKey(entity = Event::class, parentColumns = [\"id\"], childColumns = [\"event\"], onDelete = ForeignKey.CASCADE)) are unnecessary and can be replaced with: ForeignKey(entity = Event::class, parentColumns = [\"id\"], childColumns = [\"event\"], onDelete = ForeignKey.CASCADE)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/Attendee.kt:20:142",
+        "message": "Parentheses in (ForeignKey(entity = Ticket::class, parentColumns = [\"id\"], childColumns = [\"ticket\"], onDelete = ForeignKey.CASCADE)) are unnecessary and can be replaced with: ForeignKey(entity = Ticket::class, parentColumns = [\"id\"], childColumns = [\"ticket\"], onDelete = ForeignKey.CASCADE)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/forms/CustomForm.kt:17:24",
+        "message": "Parentheses in (ForeignKey(entity = Event::class, parentColumns = [\"id\"], childColumns = [\"event\"], onDelete = ForeignKey.CASCADE)) are unnecessary and can be replaced with: ForeignKey(entity = Event::class, parentColumns = [\"id\"], childColumns = [\"event\"], onDelete = ForeignKey.CASCADE)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewHolder.kt:56:13",
+        "message": "Parentheses in (price != null && price.equals(0.toFloat())) are unnecessary and can be replaced with: price != null && price.equals(0.toFloat())"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/attendees/AttendeeViewModel.kt:356:27",
+        "message": "Parentheses around the lambda ({\n                    Timber.d(\"Logged out!\")\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/settings/SettingsFragmentViewModel.kt:20:27",
+        "message": "Parentheses around the lambda ({\n                    Timber.d(\"Logged out!\")\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/SignUpFragmentViewModel.kt:80:27",
+        "message": "Parentheses around the lambda ({ user ->\n                    Timber.d(\"Fetched User Details\")\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileViewModel.kt:36:27",
+        "message": "Parentheses around the lambda ({\n                    updateUser(it.url, firstName, lastName)\n                    message.value = \"Image uploaded successfully!\"\n                    Timber.d(\"Image uploaded \" + it.url)\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileViewModel.kt:61:27",
+        "message": "Parentheses around the lambda ({\n                    message.value = USER_UPDATED\n                    Timber.d(\"User updated\")\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/LoginFragmentViewModel.kt:83:31",
+        "message": "Parentheses around the lambda ({\n                    progress.value = true\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/LoginFragmentViewModel.kt:87:28",
+        "message": "Parentheses around the lambda ({ it ->\n                    Timber.d(\"User Fetched\")\n                    user.value = it\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragmentViewModel.kt:24:27",
+        "message": "Parentheses around the lambda ({\n                    Timber.d(\"Logged out!\")\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragmentViewModel.kt:35:31",
+        "message": "Parentheses around the lambda ({\n                    progress.value = true\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragmentViewModel.kt:39:28",
+        "message": "Parentheses around the lambda ({ user ->\n                    Timber.d(\"Response Success\")\n                    this.user.value = user\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/about/AboutEventViewModel.kt:27:31",
+        "message": "Parentheses around the lambda ({\n                    progressAboutEvent.value = true\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/about/AboutEventViewModel.kt:29:29",
+        "message": "Parentheses around the lambda ({\n                    progressAboutEvent.value = false\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchViewModel.kt:46:31",
+        "message": "Parentheses around the lambda ({\n                    progress.value = true\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchViewModel.kt:48:29",
+        "message": "Parentheses around the lambda ({\n                    progress.value = false\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/social/SocialLink.kt:19:24",
+        "message": "Parentheses in (ForeignKey(entity = Event::class, parentColumns = [\"id\"], childColumns = [\"event\"], onDelete = CASCADE)) are unnecessary and can be replaced with: ForeignKey(entity = Event::class, parentColumns = [\"id\"], childColumns = [\"event\"], onDelete = CASCADE)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/social/SocialLinksViewModel.kt:22:31",
+        "message": "Parentheses around the lambda ({\n                    progress.value = true\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/Ticket.kt:18:24",
+        "message": "Parentheses in (ForeignKey(entity = Event::class, parentColumns = [\"id\"], childColumns = [\"event\"], onDelete = CASCADE)) are unnecessary and can be replaced with: ForeignKey(entity = Event::class, parentColumns = [\"id\"], childColumns = [\"event\"], onDelete = CASCADE)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/ticket/TicketsViewModel.kt:32:31",
+        "message": "Parentheses around the lambda ({\n                    progressTickets.value = true\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/topic/SimilarEventsViewModel.kt:28:31",
+        "message": "Parentheses around the lambda ({\n                    progress.value = true\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/topic/EventTopic.kt:15:24",
+        "message": "Parentheses in (ForeignKey(entity = Event::class, parentColumns = [\"id\"], childColumns = [\"event\"], onDelete = ForeignKey.CASCADE)) are unnecessary and can be replaced with: ForeignKey(entity = Event::class, parentColumns = [\"id\"], childColumns = [\"event\"], onDelete = ForeignKey.CASCADE)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsViewModel.kt:27:31",
+        "message": "Parentheses around the lambda ({\n                    progress.value = true\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsViewModel.kt:29:29",
+        "message": "Parentheses around the lambda ({\n                    progress.value = false\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:222:54",
+        "message": "Parentheses in (eventShare.favorite) are unnecessary and can be replaced with: eventShare.favorite"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventsViewModel.kt:30:27",
+        "message": "Parentheses around the lambda ({\n                    progress.value = false\n                    showSchimmerEvents.value = false\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventsViewModel.kt:55:31",
+        "message": "Parentheses around the lambda ({\n                    progress.value = true\n                }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventsViewModel.kt:57:29",
+        "message": "Parentheses around the lambda ({\n                    progress.value = false\n                }) are unnecessary and can be removed."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/settings/SettingsFragment.kt:48:5",
+        "message": "Function onPreferenceTreeClick has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/SignUpFragmentViewModel.kt:92:5",
+        "message": "Function hasErrors has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragment.kt:85:5",
+        "message": "Function onOptionsItemSelected has 6 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:206:5",
+        "message": "Function onOptionsItemSelected has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:106:5",
+        "message": "Function getFormattedEventDateTimeRange has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:120:5",
+        "message": "Function getFormattedEventDateTimeRangeSecond has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:134:5",
+        "message": "Function getFormattedDateTimeRangeDetailed has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:148:5",
+        "message": "Function getFormattedDateTimeRangeBulleted has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/EditProfileFragment.kt:119:112",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/auth/ProfileFragment.kt:74:116",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventDetailsFragment.kt:121:112",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/search/SearchFragment.kt:125:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/common/SingleLiveEvent.kt:73:9",
+        "message": "TAG can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventUtils.kt:20:5",
+        "message": "frontendUrl can be a `const val`."
+      }]
+    }, {
+      "name": "VarCouldBeVal",
+      "description": "Var declaration could be val.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/fossasia-open-event-android/app/src/main/java/org/fossasia/openevent/general/event/EventService.kt:49:13",
+        "message": "Variable 'eventIds' could be val."
+      }]
+    }]
+  }]
+}

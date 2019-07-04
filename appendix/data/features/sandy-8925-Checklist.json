@@ -1,0 +1,212 @@
+{
+  "complexity_metrics": {
+    "loc": 731,
+    "sloc": 559,
+    "lloc": 395,
+    "cloc": 156,
+    "mcc": 66,
+    "n_smell": 33,
+    "comment_ratio": 27,
+    "mcc_per_thlines": 167
+  },
+  "metrics": {
+    "number_of_string": 28,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 25,
+    "number_of_objects_declarations": 7,
+    "number_of_companion_objects": 3,
+    "number_of_singletons": 1,
+    "number_of_declaration": 49,
+    "number_of_var_declaration": 49,
+    "number_of_func_call": 145,
+    "number_of_arguments": 133,
+    "number_of_parameters": 64,
+    "number_of_qualified_expressions": 217,
+    "number_of_inheritances": 10,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 3,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 3,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 10,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 49,
+    "number_of_functions": 51,
+    "number_of_interfaces": 1,
+    "number_of_classes": 16,
+    "number_of_packages": 3,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 9
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexInterface",
+      "description": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemsDao.kt:26:1",
+        "message": "The interface ItemsDao is too complex. Consider splitting it up."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemsDao.kt:26:1",
+        "message": "Interface 'ItemsDao' with '11' functions detected. Defined threshold inside interfaces is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/dbhelper/ItemsDatabase.kt:37:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ChecklistItemRecyclerAdapter.kt:89:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ChecklistActivity.kt:72:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemEditDialog.kt:54:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/AddItemFragment.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/AddItemFragment.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemEditDialog.kt:56:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemEditDialog.kt:58:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemsListFragment.kt:48:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemsListFragment.kt:62:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemsListFragment.kt:75:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ChecklistItemRecyclerAdapter.kt:71:26",
+        "message": "v.getTag(VIEWHOLDER_TAG) cannot be safely cast to Long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ChecklistItemRecyclerAdapter.kt:82:26",
+        "message": "v.getTag(VIEWHOLDER_TAG) cannot be safely cast to Long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemEditDialog.kt:75:20",
+        "message": "rootView.findViewById(R.id.iedl_text) cannot be safely cast to EditText?."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/dbhelper/ItemsDatabase.kt:76:1",
+        "message": "The file ItemsDatabase.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ChecklistActivity.kt:83:1",
+        "message": "The file ChecklistActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/AddItemFragment.kt:79:1",
+        "message": "The file AddItemFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ChecklistItemRecyclerAdapter.kt:112:1",
+        "message": "The file ChecklistItemRecyclerAdapter.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/dbhelper/ItemsDatabase.kt:43:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/dbhelper/ItemsDatabase.kt:56:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemsListFragment.kt:103:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/application/ChecklistApp.kt:33:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ChecklistActivity.kt:55:5",
+        "message": "Function onOptionsItemSelected has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ChecklistItemRecyclerAdapter.kt:99:5",
+        "message": "Function areContentsTheSame has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ChecklistItemRecyclerAdapter.kt:106:5",
+        "message": "Function areItemsTheSame has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemsListFragment.kt:104:9",
+        "message": "Function onMenuItemClick has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemsListFragment.kt:127:5",
+        "message": "Function onOptionsItemSelected has 5 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ChecklistItem.kt:43:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ChecklistItemRecyclerAdapter.kt:55:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemEditDialog.kt:54:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sandy-8925-Checklist/app/src/main/java/org/sanpra/checklist/activity/ItemsListFragment.kt:18:38",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }]
+    }]
+  }]
+}

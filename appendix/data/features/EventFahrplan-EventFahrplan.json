@@ -1,0 +1,427 @@
+{
+  "complexity_metrics": {
+    "loc": 2949,
+    "sloc": 2407,
+    "lloc": 1775,
+    "cloc": 78,
+    "mcc": 311,
+    "n_smell": 89,
+    "comment_ratio": 3,
+    "mcc_per_thlines": 175
+  },
+  "metrics": {
+    "number_of_string": 335,
+    "number_of_string_template": 29,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 67,
+    "number_of_inferred_var": 198,
+    "number_of_objects_declarations": 16,
+    "number_of_companion_objects": 7,
+    "number_of_singletons": 8,
+    "number_of_declaration": 220,
+    "number_of_var_declaration": 220,
+    "number_of_func_call": 975,
+    "number_of_arguments": 1279,
+    "number_of_parameters": 324,
+    "number_of_qualified_expressions": 916,
+    "number_of_inheritances": 4,
+    "number_of_unsafe_calls": 1,
+    "number_of_safe_calls": 2,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 5,
+    "number_of_functions_with_default_value": 16,
+    "number_of_function_call_with_named_value": 80,
+    "number_of_named_argument": 360,
+    "number_of_argument_with_default_value": 122,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 46,
+    "number_of_properties_delegation": 1,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 47,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 13,
+    "number_of_properties": 220,
+    "number_of_functions": 160,
+    "number_of_interfaces": 0,
+    "number_of_classes": 42,
+    "number_of_packages": 24,
+    "number_of_kts_files": 1,
+    "number_of_kt_files": 67
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/androidTest/java/info/metadude/android/eventfahrplan/database/extensions/LectureExtensionsTest.kt:13:5",
+        "message": "The function toContentValues is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/dataconverters/LectureExtensions.kt:96:1",
+        "message": "The function toLectureAppModel is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/dataconverters/LectureExtensions.kt:139:1",
+        "message": "The function toLectureAppModel is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/MetaDatabaseRepository.kt:37:5",
+        "message": "The function query appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/Conference.kt:12:5",
+        "message": "The function calculateTimeFrame appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/dataconverters/HttpStatusExtensions.kt:6:1",
+        "message": "The function toAppHttpStatus appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/dataconverters/HttpStatusExtensions.kt:19:1",
+        "message": "The function toNetworkHttpStatus appears to be too complex."
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/extensions/SQLiteDatabaseExtensions.kt:10:24",
+        "message": "The function read has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/NavigationMenuEntriesGenerator.kt:7:1",
+        "message": "Function getDayMenuEntries is nested too deeply."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/calendar/CalendarSharing.kt:47:12",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/calendar/CalendarSharing.kt:49:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/calendar/CalendarSharing.kt:58:41",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:31:1",
+        "message": "Class 'AppRepository' with '15' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:22:35",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/AlarmsDatabaseRepository.kt:54:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/HighlightsDatabaseRepository.kt:45:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/MetaDatabaseRepository.kt:45:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:55:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }, {
+      "name": "NotImplementedDeclaration",
+      "description": "The NotImplementedDeclaration should only be used when a method stub is necessary. This defers the development of the functionality of this function. Hence, the NotImplementedDeclaration should only serve as a temporary declaration. Before releasing, this type of declaration should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/utils/EventUrlComposer.kt:14:17",
+        "message": "The NotImplementedDeclaration should only be used when a method stub is necessary. This defers the development of the functionality of this function. Hence, the NotImplementedDeclaration should only serve as a temporary declaration. Before releasing, this type of declaration should be removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:40:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/Conference.kt:63:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:125:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/notifications/NotificationHelper.kt:27:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/notifications/NotificationHelper.kt:39:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/navigation/RoomForC3NavConverter.kt:7:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/SingletonHolder.kt:22:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/extensions/Contexts.kt:13:33",
+        "message": "getSystemService(ALARM_SERVICE) cannot be safely cast to AlarmManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/extensions/Contexts.kt:15:40",
+        "message": "getSystemService(CONNECTIVITY_SERVICE) cannot be safely cast to ConnectivityManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/extensions/Contexts.kt:17:35",
+        "message": "getSystemService(LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/extensions/Contexts.kt:19:40",
+        "message": "getSystemService(NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/AlarmsDatabaseRepository.kt:46:5",
+        "message": "Function query has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:51:5",
+        "message": "Function query has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/AlarmsDatabaseRepository.kt:10:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.AlarmsTable.Columns.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:9:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.LecturesTable.Columns.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/MetaDatabaseRepository.kt:9:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.MetasTable.Columns.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/models/Meta.kt:3:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.MetasTable.Defaults.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/extensions/MetaExtensions.kt:4:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.MetasTable.Columns.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/extensions/AlarmExtensions.kt:4:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.AlarmsTable.Columns.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/extensions/LectureExtensions.kt:4:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.LecturesTable.Columns.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/utils/EventUrlComposer.kt:5:1",
+        "message": "nerd.tuxmobil.fahrplan.congress.utils.ServerBackendType.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:17:1",
+        "message": "nerd.tuxmobil.fahrplan.congress.dataconverters.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/extensions/Contexts.kt:8:1",
+        "message": "android.content.Context.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:125:1",
+        "message": "The file LecturesDatabaseRepository.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:103:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:106:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/NavigationMenuEntriesGenerator.kt:7:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/notifications/NotificationHelper.kt:24:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:95:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:95:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/test/java/nerd/tuxmobil/fahrplan/congress/dataconverters/MetaExtensionsTest.kt:7:1",
+        "message": "The import 'nerd.tuxmobil.fahrplan.congress.models.Meta' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/test/java/nerd/tuxmobil/fahrplan/congress/dataconverters/FetchScheduleResultExtensionsTest.kt:7:1",
+        "message": "The import 'nerd.tuxmobil.fahrplan.congress.net.FetchScheduleResult' is unused."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/Conference.kt:39:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/calendar/CalendarSharing.kt:32:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/engagements/RateSnack.kt:18:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/engagements/GooglePlayBetaTestingSnack.kt:18:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/navigation/C3navSnack.kt:25:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:34:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:40:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:42:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:46:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/network/src/main/java/info/metadude/android/eventfahrplan/network/models/Lecture.kt:49:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/network/src/main/java/info/metadude/android/eventfahrplan/network/models/Lecture.kt:54:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:25:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:26:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:27:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/Conference.kt:12:5",
+        "message": "The data class Conference contains functions which are not registered conversion functions. The offending method is called calculateTimeFrame"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/Conference.kt:63:5",
+        "message": "The data class Conference contains functions which are not registered conversion functions. The offending method is called lastEventEndsBeforeFirstEventStarts"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/Conference.kt:65:5",
+        "message": "The data class Conference contains functions which are not registered conversion functions. The offending method is called forwardLastEventEndsAtByOneDay"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/network/src/main/java/info/metadude/android/eventfahrplan/network/fetching/FetchScheduleResult.kt:13:5",
+        "message": "The data class FetchScheduleResult contains functions which are not registered conversion functions. The offending method is called isSuccessful"
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:21:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:6:5",
+        "message": "androidGradle can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:7:5",
+        "message": "assertjAndroid can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:8:5",
+        "message": "emailIntentBuilder can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:9:5",
+        "message": "espresso can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:10:5",
+        "message": "gradleVersions can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:11:5",
+        "message": "junit can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:12:5",
+        "message": "kotlin can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:13:5",
+        "message": "mockito can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:14:5",
+        "message": "okhttp can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:15:5",
+        "message": "snackengage can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:16:5",
+        "message": "sonarQubeGradle can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:17:5",
+        "message": "supportLibrary can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:18:5",
+        "message": "testRules can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:19:5",
+        "message": "threeTenBp can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:20:5",
+        "message": "tracedroid can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:24:5",
+        "message": "buildToolsVersion can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:25:5",
+        "message": "compileSdkVersion can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:26:5",
+        "message": "minSdkVersion can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/EventFahrplan-EventFahrplan/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:27:5",
+        "message": "targetSdkVersion can be a `const val`."
+      }]
+    }]
+  }]
+}

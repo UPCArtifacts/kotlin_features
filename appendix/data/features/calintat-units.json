@@ -1,0 +1,1191 @@
+{
+  "complexity_metrics": {
+    "loc": 2063,
+    "sloc": 1279,
+    "lloc": 1018,
+    "cloc": 42,
+    "mcc": 95,
+    "n_smell": 353,
+    "comment_ratio": 3,
+    "mcc_per_thlines": 93
+  },
+  "metrics": {
+    "number_of_string": 101,
+    "number_of_string_template": 7,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 15,
+    "number_of_inferred_var": 33,
+    "number_of_objects_declarations": 5,
+    "number_of_companion_objects": 2,
+    "number_of_singletons": 2,
+    "number_of_declaration": 50,
+    "number_of_var_declaration": 51,
+    "number_of_func_call": 639,
+    "number_of_arguments": 1473,
+    "number_of_parameters": 92,
+    "number_of_qualified_expressions": 2093,
+    "number_of_inheritances": 44,
+    "number_of_unsafe_calls": 1,
+    "number_of_safe_calls": 9,
+    "number_of_destructuring_declarations": 1,
+    "number_of_when_expressions": 3,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 55,
+    "number_of_named_argument": 267,
+    "number_of_argument_with_default_value": 3,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 9,
+    "number_of_properties_delegation": 1,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 92,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 3,
+    "number_of_properties": 49,
+    "number_of_functions": 62,
+    "number_of_interfaces": 2,
+    "number_of_classes": 52,
+    "number_of_packages": 5,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 17
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:5:1",
+        "message": "Class Converter is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/MainActivity.kt:32:1",
+        "message": "Class 'MainActivity' with '21' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyDefaultConstructor",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/ListItem.kt:11:15",
+        "message": "An empty default constructor can be removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/utils/CurrencyHelper.kt:13:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/MainActivity.kt:36:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/MainActivity.kt:38:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/recycler/Adapter.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/recycler/Adapter.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:24:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/MainActivity.kt:283:32",
+        "message": "getSystemService(Context.CLIPBOARD_SERVICE) cannot be safely cast to ClipboardManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/SettingsFragment.kt:37:33",
+        "message": "findPreference(\"pref_shortcuts\") cannot be safely cast to MultiSelectListPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/SettingsFragment.kt:58:31",
+        "message": "ctx.getSystemService(Context.SHORTCUT_SERVICE) cannot be safely cast to ShortcutManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/SettingsUI.kt:35:1",
+        "message": "The file SettingsUI.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:138:1",
+        "message": "The file MainUI.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/ListItem.kt:76:1",
+        "message": "The file ListItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/utils/CurrencyHelper.kt:38:1",
+        "message": "The file CurrencyHelper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/utils/CurrencyData.kt:15:1",
+        "message": "The file CurrencyData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/utils/CurrencyService.kt:9:1",
+        "message": "The file CurrencyService.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/utils/BillingHelper.kt:56:1",
+        "message": "The file BillingHelper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/recycler/ViewHolder.kt:16:1",
+        "message": "The file ViewHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/recycler/Adapter.kt:45:1",
+        "message": "The file Adapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/MeasurementUnit.kt:26:1",
+        "message": "The file MeasurementUnit.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Item.kt:391:1",
+        "message": "The file Item.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/MeasurementUnitImpl1.kt:23:1",
+        "message": "The file MeasurementUnitImpl1.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:795:1",
+        "message": "The file Converter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/MainActivity.kt:294:1",
+        "message": "The file MainActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/SettingsFragment.kt:62:1",
+        "message": "The file SettingsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/SettingsActivity.kt:19:1",
+        "message": "The file SettingsActivity.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:14:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/ListItem.kt:9:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/utils/BillingHelper.kt:4:1",
+        "message": "com.android.billingclient.api.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/MainActivity.kt:29:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:62:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:91:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:101:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:105:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/MainUI.kt:115:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/ListItem.kt:23:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/ListItem.kt:37:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/ListItem.kt:47:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Item.kt:377:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:32:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:34:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:36:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:38:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:40:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:42:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:44:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:46:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:48:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:50:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:52:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:54:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:56:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:58:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:60:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:62:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:64:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:66:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:73:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:75:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:77:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:79:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:81:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:83:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:85:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:87:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:94:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:96:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:98:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:100:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:102:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:104:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:106:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:108:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:110:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:112:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:114:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:116:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:118:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:120:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:122:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:124:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:131:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:133:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:135:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:137:71",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:139:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:141:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:143:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:145:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:147:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:149:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:151:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:153:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:155:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:157:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:159:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:161:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:163:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:165:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:167:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:169:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:174:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:178:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:180:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:182:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:184:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:186:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:188:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:190:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:192:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:199:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:201:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:203:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:205:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:207:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:209:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:216:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:218:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:218:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:218:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:218:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:218:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:225:86",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:227:92",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:229:94",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:231:92",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:233:92",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:235:96",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:237:100",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:239:92",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:241:92",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:243:94",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:245:90",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:247:98",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:249:94",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:251:96",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:253:92",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:255:102",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:257:96",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:259:98",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:261:110",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:263:100",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:265:102",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:267:96",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:269:92",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:271:100",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:273:92",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:275:102",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:277:104",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:279:98",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:281:100",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:283:86",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:285:104",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:292:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:294:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:296:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:298:105",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:300:93",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:307:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:309:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:311:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:313:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:315:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:317:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:319:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:321:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:323:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:325:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:327:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:329:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:331:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:333:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:335:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:337:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:339:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:341:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:343:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:345:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:347:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:352:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:354:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:356:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:358:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:360:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:362:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:364:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:366:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:368:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:370:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:372:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:374:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:376:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:378:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:380:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:382:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:389:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:391:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:393:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:400:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:402:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:404:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:406:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:408:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:410:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:412:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:414:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:416:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:418:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:425:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:427:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:429:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:431:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:438:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:440:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:442:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:444:93",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:451:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:453:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:455:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:457:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:464:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:466:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:468:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:470:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:472:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:479:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:481:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:483:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:485:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:487:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:489:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:491:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:496:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:498:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:502:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:509:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:511:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:513:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:515:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:517:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:519:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:521:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:523:71",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:525:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:527:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:534:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:536:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:538:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:540:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:542:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:549:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:551:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:553:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:560:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:562:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:564:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:566:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:573:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:575:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:577:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:579:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:586:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:588:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:595:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:597:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:599:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:606:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:608:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:615:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:619:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:626:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:628:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:635:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:637:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:639:107",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:641:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:643:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:645:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:652:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:654:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:656:107",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:658:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:660:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:662:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:669:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:671:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:673:107",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:675:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:677:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:679:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:693:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:695:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:697:107",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:699:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:701:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:703:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:710:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:712:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:714:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:716:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:718:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:720:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:727:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:729:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:731:107",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:733:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:735:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:737:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:744:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:746:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:748:107",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:750:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:752:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:754:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:761:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:763:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:765:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:767:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:769:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:771:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:778:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:782:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:784:91",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:786:105",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:788:101",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:790:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:792:107",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/SettingsFragment.kt:35:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/SettingsFragment.kt:49:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/SettingsFragment.kt:56:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/ui/ListItem.kt:72:55",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/recycler/Adapter.kt:41:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/utils/CurrencyHelper.kt:13:5",
+        "message": "FIXER_URL can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/MainActivity.kt:36:9",
+        "message": "KEY_ID can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/MainActivity.kt:38:9",
+        "message": "KEY_INPUT can be a `const val`."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/utils/CurrencyData.kt:9:5",
+        "message": "The data class CurrencyData contains functions which are not registered conversion functions. The offending method is called persist"
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/utils/BillingHelper.kt:10:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Item.kt:12:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:14:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:298:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "TrailingWhitespace",
+      "description": "Checks which lines end with a whitespace.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/api/Converter.kt:544:9",
+        "message": "Line 544 ends with a whitespace."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/SettingsFragment.kt:14:1",
+        "message": "The import 'org.jetbrains.anko.design.longSnackbar' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/SettingsFragment.kt:15:1",
+        "message": "The import 'org.jetbrains.anko.design.snackbar' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-units/app/src/main/java/com/calintat/units/activities/SettingsFragment.kt:16:1",
+        "message": "The import 'org.jetbrains.anko.find' is unused."
+      }]
+    }]
+  }]
+}

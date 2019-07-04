@@ -1,0 +1,339 @@
+{
+  "complexity_metrics": {
+    "loc": 1081,
+    "sloc": 892,
+    "lloc": 587,
+    "cloc": 1,
+    "mcc": 177,
+    "n_smell": 72,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 301
+  },
+  "metrics": {
+    "number_of_string": 14,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 5,
+    "number_of_inferred_var": 61,
+    "number_of_objects_declarations": 5,
+    "number_of_companion_objects": 2,
+    "number_of_singletons": 1,
+    "number_of_declaration": 76,
+    "number_of_var_declaration": 76,
+    "number_of_func_call": 336,
+    "number_of_arguments": 282,
+    "number_of_parameters": 68,
+    "number_of_qualified_expressions": 434,
+    "number_of_inheritances": 10,
+    "number_of_unsafe_calls": 35,
+    "number_of_safe_calls": 8,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 1,
+    "number_of_named_argument": 1,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 2,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 28,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 76,
+    "number_of_functions": 84,
+    "number_of_interfaces": 0,
+    "number_of_classes": 15,
+    "number_of_packages": 5,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 16
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:26:1",
+        "message": "Class 'MainActivity' with '22' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/SettingsActivity.kt:15:1",
+        "message": "Class 'SettingsActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:17:1",
+        "message": "Class 'MyCameraImpl' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:197:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyCatchBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:227:38",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:238:40",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:250:43",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:112:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:210:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:238:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:250:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MarshmallowCamera.kt:27:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:27:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:28:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:29:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:30:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:49:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:58:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:65:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:79:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:88:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:120:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:148:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:193:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:233:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:43:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:109:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:110:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:111:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:113:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:144:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:145:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:146:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:165:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:166:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:174:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:179:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:179:57",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:206:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:206:69",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:208:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:208:69",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:219:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:220:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:226:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:230:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:234:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:236:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:244:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:246:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MarshmallowCamera.kt:26:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MarshmallowCamera.kt:13:27",
+        "message": "context.getSystemService(Context.CAMERA_SERVICE) cannot be safely cast to CameraManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/models/Events.kt:4:5",
+        "message": "The class StateChanged defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/extensions/Context.kt:18:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:74:146",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:195:152",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/BrightDisplayActivity.kt:38:146",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/WidgetConfigureActivity.kt:52:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/extensions/Context.kt:29:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:27:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:28:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/SettingsActivity.kt:43:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/WidgetConfigureActivity.kt:49:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/WidgetConfigureActivity.kt:54:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/WidgetConfigureActivity.kt:93:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/Config.kt:25:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/Config.kt:29:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:18:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:11:1",
+        "message": "com.simplemobiletools.commons.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/activities/MainActivity.kt:237:27",
+        "message": "Function parameter event is unused."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyCameraImpl.kt:98:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/SimpleMobileTools-Simple-Flashlight/app/src/main/kotlin/com/simplemobiletools/flashlight/helpers/MyTileService.kt:17:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }]
+  }]
+}

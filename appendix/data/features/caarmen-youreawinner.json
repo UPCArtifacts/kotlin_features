@@ -1,0 +1,86 @@
+{
+  "complexity_metrics": {
+    "loc": 158,
+    "sloc": 114,
+    "lloc": 79,
+    "cloc": 27,
+    "mcc": 18,
+    "n_smell": 5,
+    "comment_ratio": 23,
+    "mcc_per_thlines": 227
+  },
+  "metrics": {
+    "number_of_string": 4,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 8,
+    "number_of_objects_declarations": 1,
+    "number_of_companion_objects": 1,
+    "number_of_singletons": 0,
+    "number_of_declaration": 18,
+    "number_of_var_declaration": 18,
+    "number_of_func_call": 55,
+    "number_of_arguments": 65,
+    "number_of_parameters": 7,
+    "number_of_qualified_expressions": 94,
+    "number_of_inheritances": 1,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 1,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 18,
+    "number_of_functions": 8,
+    "number_of_interfaces": 0,
+    "number_of_classes": 1,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 1
+  },
+  "findings": [{
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-youreawinner/app/src/main/kotlin/ca/rmen/youreawinner/MainActivity.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-youreawinner/app/src/main/kotlin/ca/rmen/youreawinner/MainActivity.kt:46:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-youreawinner/app/src/main/kotlin/ca/rmen/youreawinner/MainActivity.kt:110:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-youreawinner/app/src/main/kotlin/ca/rmen/youreawinner/MainActivity.kt:104:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/caarmen-youreawinner/app/src/main/kotlin/ca/rmen/youreawinner/MainActivity.kt:105:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }]
+  }]
+}

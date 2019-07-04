@@ -1,0 +1,831 @@
+{
+  "complexity_metrics": {
+    "loc": 2741,
+    "sloc": 1969,
+    "lloc": 1357,
+    "cloc": 235,
+    "mcc": 370,
+    "n_smell": 225,
+    "comment_ratio": 11,
+    "mcc_per_thlines": 272
+  },
+  "metrics": {
+    "number_of_string": 155,
+    "number_of_string_template": 32,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 26,
+    "number_of_inferred_var": 161,
+    "number_of_objects_declarations": 25,
+    "number_of_companion_objects": 13,
+    "number_of_singletons": 8,
+    "number_of_declaration": 210,
+    "number_of_var_declaration": 212,
+    "number_of_func_call": 823,
+    "number_of_arguments": 947,
+    "number_of_parameters": 304,
+    "number_of_qualified_expressions": 1318,
+    "number_of_inheritances": 27,
+    "number_of_unsafe_calls": 21,
+    "number_of_safe_calls": 83,
+    "number_of_destructuring_declarations": 2,
+    "number_of_when_expressions": 4,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 1,
+    "number_of_named_argument": 1,
+    "number_of_argument_with_default_value": 3,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 2,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 56,
+    "number_of_possible_smart_casts": 7,
+    "number_of_data_class": 0,
+    "number_of_properties": 208,
+    "number_of_functions": 152,
+    "number_of_interfaces": 3,
+    "number_of_classes": 31,
+    "number_of_packages": 3,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 27
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:113:5",
+        "message": "The function validateUrl appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:123:5",
+        "message": "The function onSave appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:192:5",
+        "message": "The function onLoadFinished appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarValidationFragment.kt:109:9",
+        "message": "The function loadInBackground appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:45:5",
+        "message": "The function processEvents appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:188:5",
+        "message": "The function processEvents appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:81:101",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/CalendarCredentials.kt:30:32",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/CalendarCredentials.kt:37:32",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:123:5",
+        "message": "Function onSave is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:192:5",
+        "message": "Function onLoadFinished is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:165:5",
+        "message": "Function onLoadFinished is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarValidationFragment.kt:109:9",
+        "message": "Function loadInBackground is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:45:5",
+        "message": "Function processEvents is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:188:5",
+        "message": "Function processEvents is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/LocalCalendar.kt:123:5",
+        "message": "Function retainByUID is nested too deeply."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:43:1",
+        "message": "Class 'EditCalendarActivity' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:43:1",
+        "message": "Class 'CalendarListActivity' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:151:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:239:21",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:287:25",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarValidationFragment.kt:176:25",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarDetailsFragment.kt:142:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:159:21",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/MiscUtils.kt:33:25",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/CustomCertificates.kt:32:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:182:50",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/standard/java/at/bitfire/icsdroid/ui/DonateDialogFragment.kt:26:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/standard/java/at/bitfire/icsdroid/ui/DonateDialogFragment.kt:26:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:172:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/TitleColorFragment.kt:40:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/TitleColorFragment.kt:43:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/TitleColorFragment.kt:47:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/TitleColorFragment.kt:73:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/InfoActivity.kt:103:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/InfoActivity.kt:122:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/InfoActivity.kt:122:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:190:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:302:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:322:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:220:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarValidationFragment.kt:115:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarDetailsFragment.kt:58:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:193:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/SyncAdapterService.kt:18:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/CalendarCredentials.kt:22:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/CalendarCredentials.kt:50:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/Constants.kt:22:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:263:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:252:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarDetailsFragment.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:326:30",
+        "message": "activity cannot be safely cast to EditCalendarActivity?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/NotificationUtils.kt:23:18",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:113:24",
+        "message": "parent.getItemAtPosition(position) cannot be safely cast to LocalCalendar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:147:23",
+        "message": "getSystemService(Context.POWER_SERVICE) cannot be safely cast to PowerManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarValidationFragment.kt:65:51",
+        "message": "args?.getSerializable(ARG_INFO) cannot be safely cast to ResourceInfo."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarDetailsFragment.kt:58:16",
+        "message": "arguments!!.getSerializable(ARG_INFO) cannot be safely cast to ResourceInfo."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/standard/java/at/bitfire/icsdroid/ui/DonateDialogFragment.kt:32:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/standard/java/at/bitfire/icsdroid/ui/DonateDialogFragment.kt:32:90",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/standard/java/at/bitfire/icsdroid/ui/DonateDialogFragment.kt:38:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/standard/java/at/bitfire/icsdroid/ui/DonateDialogFragment.kt:38:90",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/ColorButton.kt:27:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/ColorButton.kt:41:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/TitleColorFragment.kt:55:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/InfoActivity.kt:111:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/InfoActivity.kt:115:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:127:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:202:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/NotificationUtils.kt:25:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:146:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:148:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:179:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CredentialsFragment.kt:32:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarValidationFragment.kt:141:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarValidationFragment.kt:141:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarDetailsFragment.kt:74:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarDetailsFragment.kt:121:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:113:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:113:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/SyncWorker.kt:55:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/SyncWorker.kt:72:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/MiscUtils.kt:47:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/MiscUtils.kt:48:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/LocalCalendar.kt:82:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/LocalCalendar.kt:104:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/standard/java/at/bitfire/icsdroid/ui/DonateDialogFragment.kt:49:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarActivity.kt:32:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarActivity.kt:37:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarActivity.kt:46:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:42:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:44:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:85:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:90:22",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:90:22",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:142:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:158:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:158:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/InfoActivity.kt:147:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/InfoActivity.kt:147:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:68:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:68:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:114:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:114:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:134:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:134:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:193:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:273:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:70:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:75:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:75:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:83:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:101:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:101:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:181:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:225:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:228:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:228:25",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:237:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarValidationFragment.kt:78:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarValidationFragment.kt:79:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarValidationFragment.kt:105:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarValidationFragment.kt:128:25",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/SyncIntervalDialogFragment.kt:33:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarDetailsFragment.kt:102:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarDetailsFragment.kt:103:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:70:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:77:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:85:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:97:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:213:32",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:218:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:218:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:27:3",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AppAccount.kt:38:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/SyncWorker.kt:72:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/SyncWorker.kt:72:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/MiscUtils.kt:29:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/LocalEvent.kt:55:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/CalendarCredentials.kt:52:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/CalendarCredentials.kt:52:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/CalendarCredentials.kt:57:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/CalendarCredentials.kt:57:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarActivity.kt:32:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarActivity.kt:33:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:39:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:91:146",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:142:159",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:143:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:145:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/InfoActivity.kt:41:184",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/InfoActivity.kt:42:140",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/InfoActivity.kt:43:137",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/InfoActivity.kt:66:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:68:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:69:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:145:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:167:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:75:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:76:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:79:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:132:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:138:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:147:141",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:149:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:231:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CredentialsFragment.kt:92:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarValidationFragment.kt:133:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarValidationFragment.kt:168:118",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarDetailsFragment.kt:70:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarDetailsFragment.kt:132:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:71:152",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:86:162",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:93:151",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:104:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:146:114",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:151:143",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:177:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:37:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/SyncAdapter.kt:23:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/SyncAdapter.kt:34:159",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/SyncWorker.kt:66:106",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/LocalCalendar.kt:128:121",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/LocalCalendar.kt:133:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/Constants.kt:19:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:17:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/InfoActivity.kt:20:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:13:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:22:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:35:1",
+        "message": "at.bitfire.icsdroid.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarDetailsFragment.kt:19:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/SyncAdapter.kt:13:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/SyncWorker.kt:18:1",
+        "message": "androidx.work.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:88:51",
+        "message": "Parentheses in (credentials.username != null && credentials.password != null) are unnecessary and can be replaced with: credentials.username != null && credentials.password != null"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:102:33",
+        "message": "Parentheses in (!it.username.isNullOrEmpty() && !it.password.isNullOrEmpty()) are unnecessary and can be replaced with: !it.username.isNullOrEmpty() && !it.password.isNullOrEmpty()"
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/AddCalendarEnterUrlFragment.kt:145:17",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/InfoActivity.kt:69:21",
+        "message": "Function parameter item is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:234:21",
+        "message": "Private property ft is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/EditCalendarActivity.kt:175:17",
+        "message": "Function parameter item is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:193:23",
+        "message": "Function parameter v is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/CalendarListActivity.kt:205:27",
+        "message": "Function parameter item is unused."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/NotificationUtils.kt:33:1",
+        "message": "The file NotificationUtils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/SyncIntervalDialogFragment.kt:44:1",
+        "message": "The file SyncIntervalDialogFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/StartupFragment.kt:9:1",
+        "message": "The file StartupFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ProcessEventsTask.kt:231:1",
+        "message": "The file ProcessEventsTask.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/CalendarCredentials.kt:72:1",
+        "message": "The file CalendarCredentials.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "SerialVersionUIDInSerializableClass",
+      "description": "A class which implements the Serializable interface does not define a correct serialVersionUID field. The serialVersionUID field should be a constant long value inside a companion object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/ui/ResourceInfo.kt:14:1",
+        "message": "The class ResourceInfo implements the Serializable interface and should thus define a serialVersionUID."
+      }]
+    }, {
+      "name": "TrailingWhitespace",
+      "description": "Checks which lines end with a whitespace.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:31:2",
+        "message": "Line 31 ends with a whitespace."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:32:2",
+        "message": "Line 32 ends with a whitespace."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/LocalCalendar.kt:135:25",
+        "message": "Line 135 ends with a whitespace."
+      }]
+    }, {
+      "name": "NoTabs",
+      "description": "Checks if tabs are used in Kotlin files.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:24:98",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:26:49",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:27:84",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:28:39",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:29:14",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:30:3",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:37:180",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:38:65",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:39:80",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:40:26",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:41:59",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:42:17",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/AccountAuthenticatorService.kt:50:91",
+        "message": "Tab character is in use."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/SyncWorker.kt:59:5",
+        "message": "Function doWork has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bitfireAT-icsdroid/app/src/main/java/at/bitfire/icsdroid/db/CalendarCredentials.kt:45:16",
+        "message": "Pair is created by using the pair constructor. This can replaced by `username to password`"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,453 @@
+{
+  "complexity_metrics": {
+    "loc": 4029,
+    "sloc": 3258,
+    "lloc": 2057,
+    "cloc": 14,
+    "mcc": 517,
+    "n_smell": 103,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 251
+  },
+  "metrics": {
+    "number_of_string": 167,
+    "number_of_string_template": 4,
+    "number_of_inline_func": 1,
+    "number_of_inferred_fun": 85,
+    "number_of_inferred_var": 183,
+    "number_of_objects_declarations": 33,
+    "number_of_companion_objects": 21,
+    "number_of_singletons": 6,
+    "number_of_declaration": 252,
+    "number_of_var_declaration": 253,
+    "number_of_func_call": 1291,
+    "number_of_arguments": 1044,
+    "number_of_parameters": 437,
+    "number_of_qualified_expressions": 1304,
+    "number_of_inheritances": 42,
+    "number_of_unsafe_calls": 37,
+    "number_of_safe_calls": 23,
+    "number_of_destructuring_declarations": 1,
+    "number_of_when_expressions": 10,
+    "number_of_functions_with_default_value": 7,
+    "number_of_function_call_with_named_value": 9,
+    "number_of_named_argument": 16,
+    "number_of_argument_with_default_value": 10,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 22,
+    "number_of_properties_delegation": 1,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 168,
+    "number_of_possible_smart_casts": 8,
+    "number_of_data_class": 5,
+    "number_of_properties": 251,
+    "number_of_functions": 337,
+    "number_of_interfaces": 10,
+    "number_of_classes": 82,
+    "number_of_packages": 18,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 73
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/rating/AskForRatingSettings.kt:54:53",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/rating/AskForRatingSettings.kt:25:33",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/browser/PreferredBrowserActivity.kt:66:43",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/browser/PreferredBrowserActivity.kt:66:29",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/SettingsActivity.kt:70:49",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:35:1",
+        "message": "Class 'AddToHomeScreenDialogFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/SetDefaultBrowser.kt:38:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/ClipboardSettings.kt:63:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:146:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/resolver/DefaultResolverPresenter.kt:51:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/resolver/DefaultResolverPresenter.kt:77:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "ThrowingExceptionsWithoutMessageOrCause",
+      "description": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/browser/BrowserPreferences.kt:29:31",
+        "message": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "MemberNameEqualsClassName",
+      "description": "A member should not given the same name as its parent class or object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/test/java/com/tasomaniac/openwith/redirect/RedirectFixerTest.kt:123:9",
+        "message": "A member is named after the class. This might result in confusion. Either rename the member or change it to a constructor."
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/SetDefaultBrowser.kt:31:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/rating/AskForRatingSettings.kt:100:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/ToggleFeatureActivity.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/ToggleFeatureActivity.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/ToggleFeatureActivity.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/ToggleFeatureActivity.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/FeaturesListFragment.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/FeaturesListFragment.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/SettingsFragment.kt:12:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/ClipboardSettings.kt:17:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/SettingsActivity.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/SettingsActivity.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/SettingsActivity.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/preferred/PreferredAppsActivity.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/preferred/PreferredAppsActivity.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/preferred/PreferredAppsActivity.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/preferred/PreferredAppsActivity.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/preferred/PreferredAppsActivity.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/browser/PreferredBrowserActivity.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/browser/PreferredBrowserActivity.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/browser/PreferredBrowserActivity.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/browser/PreferredBrowserActivity.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:42:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/redirect/RedirectFixActivity.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/redirect/RedirectFixActivity.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/redirect/RedirectFixActivity.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/ToggleFeatureActivity.kt:45:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/FeaturesListFragment.kt:37:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/FeaturesListFragment.kt:54:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/Feature.kt:46:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/usage/UsageAccessSettings.kt:106:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/Settings.kt:12:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/Settings.kt:13:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/rating/AskForRatingSettings.kt:93:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/SettingsModule.kt:23:64",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/SettingsFragment.kt:25:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/ClipboardSettings.kt:74:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/util/CallerPackageExtractor.kt:47:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/preferred/AppRemoveDialogFragment.kt:18:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/preferred/AppRemoveDialogFragment.kt:18:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/preferred/AppRemoveDialogFragment.kt:36:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/preferred/AppRemoveDialogFragment.kt:39:63",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/preferred/PreferredAppsActivity.kt:44:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/preferred/PreferredAppsActivity.kt:114:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/browser/BrowserPreferences.kt:28:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/browser/BrowserPreferences.kt:38:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/browser/BrowserPreferences.kt:39:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/browser/PreferredBrowserActivity.kt:41:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/TitleFetcher.kt:40:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:45:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:45:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:47:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:47:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:60:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:115:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:130:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/redirect/RedirectFixActivity.kt:80:56",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/data/PreferredApp.kt:22:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/resolver/ResolverUseCase.kt:29:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/resolver/ResolverUseCase.kt:60:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/resolver/ResolverUseCase.kt:60:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/resolver/ResolverUseCase.kt:74:49",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/resolver/IntentResolver.kt:40:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/rating/AskForRatingPreference.kt:20:25",
+        "message": "holder.findViewById(R.id.ask_for_rating_bar) cannot be safely cast to RatingBar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/rating/AskForRatingSettings.kt:31:30",
+        "message": "findPreference(R.string.pref_key_category_ask_for_rating) cannot be safely cast to PreferenceCategory."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/rating/AskForRatingSettings.kt:36:26",
+        "message": "findPreference(R.string.pref_key_ask_for_rating) cannot be safely cast to AskForRatingPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/ClipboardSettings.kt:70:30",
+        "message": "findPreference(R.string.pref_key_category_clipboard) cannot be safely cast to PreferenceCategory."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/preferred/AppRemoveDialogFragment.kt:22:21",
+        "message": "context cannot be safely cast to Callbacks."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/homescreen/AddToHomeScreenDialogFragment.kt:50:18",
+        "message": "dialog cannot be safely cast to AlertDialog."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/test/java/com/tasomaniac/openwith/resolver/DefaultResolverPresenterTest.kt:279:33",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/test/java/com/tasomaniac/openwith/resolver/HomeScreenResolverPresenterTest.kt:111:85",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/util/CallerPackageExtractor.kt:39:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/resolver/ResolverInputModule.kt:11:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/FeatureToggler.kt:25:16",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/advanced/features/FeatureToggler.kt:25:16",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "OptionalUnit",
+      "description": "Return type of 'Unit' is unnecessary and can be safely removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/SettingsView.kt:5:19",
+        "message": "The function setup defines a return type of Unit. This is unnecessary and can safely be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/SettingsView.kt:6:21",
+        "message": "The function release defines a return type of Unit. This is unnecessary and can safely be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/SettingsView.kt:7:20",
+        "message": "The function resume defines a return type of Unit. This is unnecessary and can safely be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/settings/SettingsView.kt:8:19",
+        "message": "The function pause defines a return type of Unit. This is unnecessary and can safely be removed."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/preferred/PreferredAppsActivity.kt:113:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/browser/BrowserPreferences.kt:8:1",
+        "message": "The class BrowserPreferences defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/data/PreferredApp.kt:12:16",
+        "message": "Parentheses in (Index(\"host\", unique = true)) are unnecessary and can be replaced with: Index(\"host\", unique = true)"
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/resolver/DisplayActivityInfo.kt:20:5",
+        "message": "The data class DisplayActivityInfo contains functions which are not registered conversion functions. The offending method is called packageName"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/resolver/DisplayActivityInfo.kt:22:5",
+        "message": "The data class DisplayActivityInfo contains functions which are not registered conversion functions. The offending method is called intentFrom"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/resolver/DisplayActivityInfo.kt:28:5",
+        "message": "The data class DisplayActivityInfo contains functions which are not registered conversion functions. The offending method is called componentName"
+      }]
+    }, {
+      "name": "NestedClassesVisibility",
+      "description": "Nested types are often used for implementing private functionality and therefore this should not be public.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/resolver/ResolverUseCase.kt:79:5",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of ResolverUseCase makes it visible externally."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/tasomaniac-OpenLinkWith/app/src/main/java/com/tasomaniac/openwith/resolver/IntentResolver.kt:86:5",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of IntentResolver makes it visible externally."
+      }]
+    }]
+  }]
+}

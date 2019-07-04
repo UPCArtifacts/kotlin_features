@@ -1,0 +1,307 @@
+{
+  "complexity_metrics": {
+    "loc": 1123,
+    "sloc": 708,
+    "lloc": 457,
+    "cloc": 52,
+    "mcc": 94,
+    "n_smell": 66,
+    "comment_ratio": 7,
+    "mcc_per_thlines": 205
+  },
+  "metrics": {
+    "number_of_string": 36,
+    "number_of_string_template": 6,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 19,
+    "number_of_inferred_var": 25,
+    "number_of_objects_declarations": 10,
+    "number_of_companion_objects": 2,
+    "number_of_singletons": 8,
+    "number_of_declaration": 47,
+    "number_of_var_declaration": 47,
+    "number_of_func_call": 295,
+    "number_of_arguments": 322,
+    "number_of_parameters": 79,
+    "number_of_qualified_expressions": 462,
+    "number_of_inheritances": 19,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 28,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 3,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 38,
+    "number_of_named_argument": 128,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 3,
+    "number_of_properties_delegation": 3,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 80,
+    "number_of_possible_smart_casts": 1,
+    "number_of_data_class": 1,
+    "number_of_properties": 47,
+    "number_of_functions": 57,
+    "number_of_interfaces": 0,
+    "number_of_classes": 22,
+    "number_of_packages": 5,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 18
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/activities/MainActivity.kt:24:1",
+        "message": "Class 'MainActivity' with '15' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/activities/MainActivity.kt:26:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/MainUI.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/MainUI.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/activities/SettingsFragment.kt:34:33",
+        "message": "findPreference(\"pref_shortcuts\") cannot be safely cast to MultiSelectListPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/activities/SettingsFragment.kt:55:31",
+        "message": "ctx.getSystemService(Context.SHORTCUT_SERVICE) cannot be safely cast to ShortcutManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/SettingsUI.kt:44:1",
+        "message": "The file SettingsUI.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/MainUI.kt:111:1",
+        "message": "The file MainUI.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/ListItem.kt:37:1",
+        "message": "The file ListItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/About.kt:47:1",
+        "message": "The file About.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/utils/AnkoFragment.kt:17:1",
+        "message": "The file AnkoFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/utils/AnkoProperties.kt:19:1",
+        "message": "The file AnkoProperties.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/utils/InAppBillingHelper.kt:56:1",
+        "message": "The file InAppBillingHelper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/recycler/LoggerAdapter.kt:38:1",
+        "message": "The file LoggerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/recycler/LoggerViewHolder.kt:22:1",
+        "message": "The file LoggerViewHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Item.kt:169:1",
+        "message": "The file Item.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Sensor3D.kt:71:1",
+        "message": "The file Sensor3D.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Sensor1D.kt:35:1",
+        "message": "The file Sensor1D.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/LoggerUI.kt:52:1",
+        "message": "The file LoggerUI.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Sensor.kt:73:1",
+        "message": "The file Sensor.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Logger.kt:51:1",
+        "message": "The file Logger.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/activities/MainActivity.kt:203:1",
+        "message": "The file MainActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/activities/SettingsFragment.kt:59:1",
+        "message": "The file SettingsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/activities/SettingsActivity.kt:19:1",
+        "message": "The file SettingsActivity.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/MainUI.kt:11:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/ListItem.kt:9:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/About.kt:5:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/utils/InAppBillingHelper.kt:4:1",
+        "message": "com.android.billingclient.api.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Sensor3D.kt:9:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Sensor1D.kt:5:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/LoggerUI.kt:8:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/activities/MainActivity.kt:22:1",
+        "message": "org.jetbrains.anko.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/MainUI.kt:59:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/MainUI.kt:61:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/MainUI.kt:63:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/MainUI.kt:70:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/MainUI.kt:74:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/MainUI.kt:74:72",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/MainUI.kt:79:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/MainUI.kt:92:84",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/ListItem.kt:21:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/About.kt:13:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/ui/About.kt:35:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Item.kt:22:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Item.kt:42:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Item.kt:52:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Item.kt:72:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Item.kt:82:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Item.kt:122:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Item.kt:145:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Sensor3D.kt:28:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Sensor3D.kt:58:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/LoggerUI.kt:39:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/LoggerUI.kt:47:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Sensor.kt:57:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Logger.kt:21:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/activities/SettingsFragment.kt:32:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/activities/SettingsFragment.kt:46:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/activities/SettingsFragment.kt:53:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/utils/AnkoFragment.kt:16:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/utils/InAppBillingHelper.kt:10:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Item.kt:17:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/utils/AnkoProperties.kt:3:1",
+        "message": "The import 'android.os.Build' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/utils/AnkoProperties.kt:7:1",
+        "message": "The import 'android.widget.TextView' is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/recycler/LoggerAdapter.kt:34:89",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/calintat-sensors/app/src/main/java/com/calintat/sensors/api/Logger.kt:21:9",
+        "message": "The data class Snapshot contains functions which are not registered conversion functions. The offending method is called printTimeInSeconds"
+      }]
+    }]
+  }]
+}

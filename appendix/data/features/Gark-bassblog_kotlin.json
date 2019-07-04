@@ -1,0 +1,494 @@
+{
+  "complexity_metrics": {
+    "loc": 1860,
+    "sloc": 1401,
+    "lloc": 913,
+    "cloc": 74,
+    "mcc": 326,
+    "n_smell": 118,
+    "comment_ratio": 5,
+    "mcc_per_thlines": 357
+  },
+  "metrics": {
+    "number_of_string": 59,
+    "number_of_string_template": 1,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 10,
+    "number_of_inferred_var": 115,
+    "number_of_objects_declarations": 7,
+    "number_of_companion_objects": 7,
+    "number_of_singletons": 0,
+    "number_of_declaration": 160,
+    "number_of_var_declaration": 160,
+    "number_of_func_call": 496,
+    "number_of_arguments": 431,
+    "number_of_parameters": 192,
+    "number_of_qualified_expressions": 667,
+    "number_of_inheritances": 23,
+    "number_of_unsafe_calls": 18,
+    "number_of_safe_calls": 77,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 10,
+    "number_of_functions_with_default_value": 3,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 9,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 5,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 35,
+    "number_of_possible_smart_casts": 1,
+    "number_of_data_class": 0,
+    "number_of_properties": 160,
+    "number_of_functions": 201,
+    "number_of_interfaces": 4,
+    "number_of_classes": 30,
+    "number_of_packages": 11,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 25
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/PagerActivity.kt:18:1",
+        "message": "Class 'PagerActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:21:1",
+        "message": "Class 'MusicPlayerActivity' with '19' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/search/SearchFragment.kt:20:1",
+        "message": "Class 'SearchFragment' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/BaseFragment.kt:13:1",
+        "message": "Class 'BaseFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/BaseMixAdapter.kt:17:1",
+        "message": "Class 'BaseMixAdapter' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:25:1",
+        "message": "Class 'PlaybackService' with '26' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/IPlayback.kt:5:1",
+        "message": "Interface 'IPlayback' with '11' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/Player.kt:17:1",
+        "message": "Class 'Player' with '26' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/BassBlogApi.kt:16:14",
+        "message": "The function posts has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/BassBlogApi.kt:40:15",
+        "message": "The function search has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "ComplexInterface",
+      "description": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/IPlayback.kt:5:1",
+        "message": "The interface IPlayback is too complex. Consider splitting it up."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/Mix.kt:59:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/GcmUpdateService.kt:39:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/Mix.kt:19:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:27:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:28:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:29:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:30:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:33:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/Player.kt:26:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/Player.kt:32:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/NetworkService.kt:48:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/PagerActivity.kt:104:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:109:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:114:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:184:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/BinderActivity.kt:36:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/search/SearchFragment.kt:98:63",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/BinderFragment.kt:35:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/favourite/FavouriteFragment.kt:12:66",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/allmixes/AllMixFragment.kt:20:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/allmixes/AllMixFragment.kt:31:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:87:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:89:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:95:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:97:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:99:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:101:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:201:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:205:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/BinderActivity.kt:34:29",
+        "message": "service cannot be safely cast to PlaybackService.LocalBinder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/search/SearchFragment.kt:28:37",
+        "message": "it.tag cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/BinderFragment.kt:33:29",
+        "message": "service cannot be safely cast to PlaybackService.LocalBinder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/BaseMixAdapter.kt:80:34",
+        "message": "itemView.findViewById(R.id.post_title) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/BaseMixAdapter.kt:81:34",
+        "message": "itemView.findViewById(R.id.post_label) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/BaseMixAdapter.kt:82:31",
+        "message": "itemView.findViewById(R.id.header_date) cannot be safely cast to TextView?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/BaseMixAdapter.kt:83:34",
+        "message": "itemView.findViewById(R.id.mix_image) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/BaseMixAdapter.kt:84:40",
+        "message": "itemView.findViewById(R.id.now_playing) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/allmixes/AllMixFragment.kt:41:33",
+        "message": "recyclerView?.layoutManager cannot be safely cast to LinearLayoutManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:83:26",
+        "message": "wifi cannot be safely cast to WifiManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:176:27",
+        "message": "mContentViewBig cannot be safely cast to RemoteViews."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:185:27",
+        "message": "mContentViewSmall cannot be safely cast to RemoteViews."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:216:35",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/playlist/TrackListActivity.kt:63:1",
+        "message": "The file TrackListActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:201:1",
+        "message": "The file MusicPlayerActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/search/SearchAdapter.kt:17:1",
+        "message": "The file SearchAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/NetworkService.kt:60:1",
+        "message": "The file NetworkService.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/IPlayback.kt:22:1",
+        "message": "The file IPlayback.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/PlayList.kt:67:1",
+        "message": "The file PlayList.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/playlist/TrackListActivity.kt:15:9",
+        "message": "CONTENT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/BassBlogApi.kt:32:9",
+        "message": "ITEMS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/NetworkService.kt:34:9",
+        "message": "DEFAULT_TIME can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/NetworkService.kt:36:9",
+        "message": "START_TIME can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/NetworkService.kt:37:9",
+        "message": "END_TIME can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/NetworkService.kt:38:9",
+        "message": "COUNT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/NetworkService.kt:39:9",
+        "message": "RECEIVER can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/NetworkService.kt:41:9",
+        "message": "LOADING can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/NetworkService.kt:42:9",
+        "message": "IDLE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/NetworkService.kt:48:9",
+        "message": "DEFAULT_COUNT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/PlayList.kt:12:9",
+        "message": "ALL_MIX can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/PlayList.kt:13:9",
+        "message": "FAVOURITE_MIX can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/PlayList.kt:14:9",
+        "message": "SEARCH can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/Player.kt:21:9",
+        "message": "PLAYING can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/Player.kt:22:9",
+        "message": "NOT_PLAYING can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/Player.kt:23:9",
+        "message": "LOADING can be a `const val`."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/PagerActivity.kt:90:5",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/PagerActivity.kt:87:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:125:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:173:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:174:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:175:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:175:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:176:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:176:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:176:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/presenter/Presenter.kt:40:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/presenter/Presenter.kt:46:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/GcmUpdateService.kt:18:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/GcmUpdateService.kt:32:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/Player.kt:123:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/Player.kt:144:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/PagerActivity.kt:76:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/search/SearchFragment.kt:45:41",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/BaseFragment.kt:17:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/BaseMixAdapter.kt:122:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/allmixes/AllMixFragment.kt:30:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/Mix.kt:32:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/Mix.kt:50:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/Player.kt:50:71",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:58:5",
+        "message": "Function onOptionsItemSelected has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:1:33",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/MusicPlayerActivity.kt:18:59",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MusicPlayerActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/search/SearchFragment.kt:17:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SearchFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/presenter/Presenter.kt:1:40",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/BassBlogApplication.kt:6:54",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of BassBlogApplication."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/PlayList.kt:1:37",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }]
+    }, {
+      "name": "FunctionOnlyReturningConstant",
+      "description": "A function that only returns a constant is misleading. Consider declaring a constant instead",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/search/SearchFragment.kt:45:5",
+        "message": "handleSearch is returning a constant. Prefer declaring a constant instead."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/favourite/FavouriteAdapter.kt:20:156",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/BaseMixAdapter.kt:17:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/BaseMixAdapter.kt:60:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/ui/mixes/BaseMixAdapter.kt:62:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/NetworkHelper.kt:30:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/BassBlogApi.kt:28:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/BassBlogApi.kt:36:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/network/NetworkService.kt:51:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/PlayList.kt:27:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/player/Player.kt:51:176",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Gark-bassblog_kotlin/app/src/main/java/pixel/kotlin/bassblog/service/PlaybackService.kt:15:1",
+        "message": "The import 'android.support.v4.content.ContextCompat' is unused."
+      }]
+    }]
+  }]
+}

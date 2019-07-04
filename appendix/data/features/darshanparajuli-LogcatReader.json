@@ -1,0 +1,1517 @@
+{
+  "complexity_metrics": {
+    "loc": 5960,
+    "sloc": 4971,
+    "lloc": 3466,
+    "cloc": 34,
+    "mcc": 969,
+    "n_smell": 437,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 279
+  },
+  "metrics": {
+    "number_of_string": 201,
+    "number_of_string_template": 30,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 39,
+    "number_of_inferred_var": 526,
+    "number_of_objects_declarations": 54,
+    "number_of_companion_objects": 24,
+    "number_of_singletons": 17,
+    "number_of_declaration": 638,
+    "number_of_var_declaration": 640,
+    "number_of_func_call": 1939,
+    "number_of_arguments": 1625,
+    "number_of_parameters": 539,
+    "number_of_qualified_expressions": 2813,
+    "number_of_inheritances": 47,
+    "number_of_unsafe_calls": 114,
+    "number_of_safe_calls": 88,
+    "number_of_destructuring_declarations": 2,
+    "number_of_when_expressions": 31,
+    "number_of_functions_with_default_value": 12,
+    "number_of_function_call_with_named_value": 9,
+    "number_of_named_argument": 17,
+    "number_of_argument_with_default_value": 17,
+    "number_of_overloaded_op": 9,
+    "number_of_extension_function": 18,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 16,
+    "number_of_lambdas": 161,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 7,
+    "number_of_properties": 636,
+    "number_of_functions": 410,
+    "number_of_interfaces": 5,
+    "number_of_classes": 76,
+    "number_of_packages": 19,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 49
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logger/src/main/java/com/dp/logger/Logger.kt:47:20",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:23:37",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logger/src/main/java/com/dp/logger/Logger.kt:6:1",
+        "message": "Object 'Logger' with '15' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:28:1",
+        "message": "Class 'SavedLogsViewerFragment' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:26:1",
+        "message": "Class 'FiltersFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:32:1",
+        "message": "Class 'SettingsFragment' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/MyRecyclerViewAdapter.kt:18:1",
+        "message": "Class 'MyRecyclerViewAdapter' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:50:1",
+        "message": "Class 'LogcatLiveFragment' with '29' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:50:1",
+        "message": "Class 'SavedLogsFragment' with '20' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:1:1",
+        "message": "File 'MyExtensions.kt' with '20' functions detected. Defined threshold inside files is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/MainActivity.kt:17:1",
+        "message": "Class 'MainActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:24:1",
+        "message": "Class 'LogcatService' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:21:1",
+        "message": "Class 'Logcat' with '29' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/collections/src/main/java/com/logcat/collections/FixedCircularArray.kt:3:1",
+        "message": "Class 'FixedCircularArray' with '18' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:81:9",
+        "message": "The function onScrollStateChanged appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:57:5",
+        "message": "The function startObservingFilters appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/dialogs/FilterDialogFragment.kt:32:5",
+        "message": "The function onCreateDialog appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:82:5",
+        "message": "The function setupLogcatCategory appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveViewModel.kt:49:5",
+        "message": "The function saveAsync appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:111:9",
+        "message": "The function onScrollStateChanged appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:402:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:69:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:284:5",
+        "message": "The function runLogcat appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/CommandUtils.kt:9:5",
+        "message": "The function runCmd appears to be too complex."
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/dialogs/FilterDialogFragment.kt:32:5",
+        "message": "The function onCreateDialog is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Log.kt:63:5",
+        "message": "The function createNewLog is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:32:1",
+        "message": "Class SettingsFragment is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:50:1",
+        "message": "Class LogcatLiveFragment is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:50:1",
+        "message": "Class SavedLogsFragment is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:21:1",
+        "message": "Class Logcat is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:163:29",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:168:29",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:154:45",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:201:36",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:206:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:425:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/dialogs/FolderChooserDialogFragment.kt:85:5",
+        "message": "Function onClick is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:139:5",
+        "message": "Function onClick is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:448:9",
+        "message": "Function getLogCountFromHeader is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:510:9",
+        "message": "Function getDefaultBuffers is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:566:9",
+        "message": "Function getAvailableBuffers is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyInitBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:86:10",
+        "message": "This empty block of code can be removed."
+      }]
+    }, {
+      "name": "EmptyCatchBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:90:32",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:234:30",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:241:30",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:130:43",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:324:43",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:328:43",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:332:43",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/CommandUtils.kt:27:40",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/CommandUtils.kt:38:40",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/CommandUtils.kt:46:47",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/CommandUtils.kt:51:47",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerViewModel.kt:46:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:318:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:302:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:90:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/ShareUtils.kt:29:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/RootUtils.kt:19:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/LogcatStreamReader.kt:28:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:359:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:408:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:432:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:442:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:464:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/CommandUtils.kt:27:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/CommandUtils.kt:38:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/CommandUtils.kt:55:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:433:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:443:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:465:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:479:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:494:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:304:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:231:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:248:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:521:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsViewModel.kt:108:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/BaseService.kt:16:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:49:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:32:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:30:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:57:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:720:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:721:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/shared/dialogs/CopyToClipboardDialogFragment.kt:20:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:491:13",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:492:13",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/db/MyDB.kt:78:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:210:46",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:256:45",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsViewModel.kt:114:37",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:292:44",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:292:44",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:514:32",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:570:32",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/CommandUtils.kt:11:44",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:45:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:46:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:47:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:48:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:50:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:51:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:52:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:42:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/dialogs/FilterDialogFragment.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/dialogs/FolderChooserDialogFragment.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/dialogs/FolderChooserDialogFragment.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/dialogs/FolderChooserDialogFragment.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:68:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:69:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:70:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:71:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:72:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:73:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:74:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:75:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:674:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:57:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:58:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:59:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:60:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:61:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:62:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/base/BaseFragment.kt:9:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/BaseActivityWithToolbar.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/SavedLogsActivity.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/LogcatStreamReader.kt:8:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:162:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:165:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:50:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:58:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:131:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:146:62",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:148:51",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:169:48",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:207:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/dialogs/FilterDialogFragment.kt:102:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/dialogs/FilterDialogFragment.kt:118:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:54:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:69:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:75:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:76:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:88:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:98:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:105:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:113:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:147:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:156:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:167:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:174:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:184:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:226:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:233:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:236:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:250:47",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:286:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:330:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/dialogs/FolderChooserDialogFragment.kt:42:53",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/dialogs/FolderChooserDialogFragment.kt:57:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/dialogs/FolderChooserDialogFragment.kt:62:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/dialogs/FolderChooserDialogFragment.kt:111:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/dialogs/FolderChooserDialogFragment.kt:148:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/dialogs/FolderChooserDialogFragment.kt:149:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/MyRecyclerViewAdapter.kt:95:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveViewModel.kt:96:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:195:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:195:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:198:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:199:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:201:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:216:78",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:216:93",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:293:47",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:380:64",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:384:64",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:390:67",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:394:67",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:432:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:453:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:458:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:512:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:518:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:535:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:551:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:557:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:559:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:577:47",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:737:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:750:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:750:87",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/dialogs/InstructionToGrantPermissionDialogFragment.kt:18:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/dialogs/InstructionToGrantPermissionDialogFragment.kt:23:53",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/dialogs/InstructionToGrantPermissionDialogFragment.kt:25:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/shared/dialogs/CopyToClipboardDialogFragment.kt:37:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/shared/dialogs/CopyToClipboardDialogFragment.kt:44:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/shared/dialogs/CopyToClipboardDialogFragment.kt:44:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/shared/dialogs/CopyToClipboardDialogFragment.kt:45:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/shared/dialogs/CopyToClipboardDialogFragment.kt:55:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:74:53",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:217:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:239:67",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:249:68",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:271:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:277:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:284:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:309:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:314:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:315:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:317:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:327:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:361:68",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:507:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:510:46",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:516:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:516:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:521:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:533:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsViewModel.kt:146:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:73:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:205:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/Utils.kt:23:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/ServiceBinder.kt:18:54",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/ServiceBinder.kt:25:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/db/MyDB.kt:74:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/SavedLogsViewerActivity.kt:28:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/SavedLogsViewerActivity.kt:31:60",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:152:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:158:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:172:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:185:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:187:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:189:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Log.kt:38:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Log.kt:39:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Log.kt:40:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Log.kt:41:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Log.kt:42:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Log.kt:43:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Log.kt:44:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:397:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:441:46",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:238:26",
+        "message": "searchItem.actionView cannot be safely cast to SearchView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:318:10",
+        "message": "activity cannot be safely cast to BaseActivityWithToolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:332:14",
+        "message": "activity cannot be safely cast to BaseActivityWithToolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:334:14",
+        "message": "activity cannot be safely cast to BaseActivityWithToolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:228:30",
+        "message": "it.parent cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/dialogs/FilterDialogFragment.kt:112:26",
+        "message": "targetFragment cannot be safely cast to FiltersFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/dialogs/FilterDialogFragment.kt:132:22",
+        "message": "targetFragment cannot be safely cast to FiltersFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:51:25",
+        "message": "findPreference(PreferenceKeys.Appearance.KEY_THEME) cannot be safely cast to ListPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:68:60",
+        "message": "newValue cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:84:27",
+        "message": "findPreference(PreferenceKeys.Logcat.KEY_BUFFERS) cannot be safely cast to MultiSelectListPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:133:34",
+        "message": "preference cannot be safely cast to MultiSelectListPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:134:38",
+        "message": "newValue cannot be safely cast to Set<String>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:161:43",
+        "message": "newValue cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:334:30",
+        "message": "targetFragment cannot be safely cast to SettingsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:336:30",
+        "message": "targetFragment cannot be safely cast to SettingsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/dialogs/FolderChooserDialogFragment.kt:77:22",
+        "message": "targetFragment cannot be safely cast to SettingsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:301:26",
+        "message": "searchItem.actionView cannot be safely cast to SearchView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:543:30",
+        "message": "activity cannot be safely cast to AppCompatActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:550:26",
+        "message": "service cannot be safely cast to LogcatService.LocalBinder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:566:21",
+        "message": "activity cannot be safely cast to AppCompatActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:629:14",
+        "message": "activity cannot be safely cast to BaseActivityWithToolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:631:14",
+        "message": "activity cannot be safely cast to BaseActivityWithToolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/dialogs/InstructionToGrantPermissionDialogFragment.kt:25:30",
+        "message": "activity!!.getSystemService(Context.CLIPBOARD_SERVICE) cannot be safely cast to ClipboardManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/shared/dialogs/CopyToClipboardDialogFragment.kt:45:18",
+        "message": "activity!!.getSystemService(Context.CLIPBOARD_SERVICE) cannot be safely cast to ClipboardManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:85:26",
+        "message": "activity cannot be safely cast to BaseActivityWithToolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:95:26",
+        "message": "activity cannot be safely cast to BaseActivityWithToolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:100:26",
+        "message": "activity cannot be safely cast to SavedLogsActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:102:26",
+        "message": "activity cannot be safely cast to SavedLogsActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:109:22",
+        "message": "activity cannot be safely cast to BaseActivityWithToolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:144:26",
+        "message": "activity cannot be safely cast to SavedLogsActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:147:30",
+        "message": "activity cannot be safely cast to SavedLogsActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:166:10",
+        "message": "activity cannot be safely cast to SavedLogsActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:167:10",
+        "message": "activity cannot be safely cast to SavedLogsActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:175:22",
+        "message": "activity cannot be safely cast to SavedLogsActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:183:29",
+        "message": "activity cannot be safely cast to SavedLogsActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:265:22",
+        "message": "activity cannot be safely cast to SavedLogsActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:372:10",
+        "message": "activity cannot be safely cast to SavedLogsActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:519:34",
+        "message": "targetFragment cannot be safely cast to SavedLogsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:533:27",
+        "message": "activity!!.getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:104:32",
+        "message": "baseContext.getSystemService(name) cannot be safely cast to WindowManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/BaseActivityWithToolbar.kt:47:39",
+        "message": "toolbar.parent cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/BaseActivityWithToolbar.kt:50:33",
+        "message": "view.parent cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/MainActivity.kt:67:18",
+        "message": "fragment cannot be safely cast to LogcatLiveFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/views/IndeterminateProgressSnackBar.kt:24:30",
+        "message": "snackBar.view cannot be safely cast to Snackbar.SnackbarLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:68:18",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:123:18",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:133:18",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/collections/src/main/java/com/logcat/collections/FixedCircularArray.kt:62:22",
+        "message": "array[(head + index) % capacity] cannot be safely cast to E."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/collections/src/main/java/com/logcat/collections/FixedCircularArray.kt:95:16",
+        "message": "array[(head + index) % capacity] cannot be safely cast to E."
+      }]
+    }, {
+      "name": "IteratorNotThrowingNoSuchElementException",
+      "description": "The next() method of an Iterator implementation should throw a NoSuchElementException when there are no more elements to return",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/LogcatStreamReader.kt:5:1",
+        "message": "This implementation of Iterator does not correctly implement the next() method as it doesn't throw a NoSuchElementException when no elements remain in the Iterator."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/collections/src/main/java/com/logcat/collections/FixedCircularArray.kt:148:5",
+        "message": "This implementation of Iterator does not correctly implement the next() method as it doesn't throw a NoSuchElementException when no elements remain in the Iterator."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logger/src/main/java/com/dp/logger/Logger.kt:80:1",
+        "message": "The file Logger.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/MyRecyclerViewAdapter.kt:94:1",
+        "message": "The file MyRecyclerViewAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:360:1",
+        "message": "The file SavedLogsViewerFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FilterType.kt:9:1",
+        "message": "The file FilterType.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:281:1",
+        "message": "The file FiltersFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/dialogs/FilterDialogFragment.kt:147:1",
+        "message": "The file FilterDialogFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/dialogs/FolderChooserDialogFragment.kt:185:1",
+        "message": "The file FolderChooserDialogFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/MyRecyclerViewAdapter.kt:118:1",
+        "message": "The file MyRecyclerViewAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/shared/dialogs/CopyToClipboardDialogFragment.kt:57:1",
+        "message": "The file CopyToClipboardDialogFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:541:1",
+        "message": "The file SavedLogsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/base/BaseDialogFragment.kt:54:1",
+        "message": "The file BaseDialogFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:245:13",
+        "message": "The file MyExtensions.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/LifeCycleScope.kt:21:1",
+        "message": "The file LifeCycleScope.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/ShareUtils.kt:34:1",
+        "message": "The file ShareUtils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/Utils.kt:25:1",
+        "message": "The file Utils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/ServiceBinder.kt:34:1",
+        "message": "The file ServiceBinder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/PreferenceKeys.kt:61:1",
+        "message": "The file PreferenceKeys.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/db/MyDB.kt:92:1",
+        "message": "The file MyDB.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/LogcatApp.kt:12:1",
+        "message": "The file LogcatApp.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/BaseActivityWithToolbar.kt:90:1",
+        "message": "The file BaseActivityWithToolbar.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/SavedLogsActivity.kt:115:1",
+        "message": "The file SavedLogsActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/FiltersActivity.kt:38:1",
+        "message": "The file FiltersActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/SavedLogsViewerActivity.kt:47:1",
+        "message": "The file SavedLogsViewerActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/SettingsActivity.kt:29:1",
+        "message": "The file SettingsActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/SplashActivity.kt:17:1",
+        "message": "The file SplashActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/views/IndeterminateProgressSnackBar.kt:36:1",
+        "message": "The file IndeterminateProgressSnackBar.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/views/CustomTextView.kt:34:1",
+        "message": "The file CustomTextView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/BaseService.kt:26:1",
+        "message": "The file BaseService.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:203:1",
+        "message": "The file LogcatService.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Filter.kt:6:1",
+        "message": "The file Filter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Log.kt:108:1",
+        "message": "The file Log.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/LogcatStreamReader.kt:46:1",
+        "message": "The file LogcatStreamReader.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/LogsReceivedListener.kt:9:1",
+        "message": "The file LogsReceivedListener.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/CommandUtils.kt:62:1",
+        "message": "The file CommandUtils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/collections/src/test/java/com/logcat/collections/FixedCircularArrayTest.kt:144:1",
+        "message": "The file FixedCircularArrayTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/collections/src/main/java/com/logcat/collections/FixedCircularArray.kt:155:1",
+        "message": "The file FixedCircularArray.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "NestedClassesVisibility",
+      "description": "Nested types are often used for implementing private functionality and therefore this should not be public.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/MyRecyclerViewAdapter.kt:85:5",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of MyRecyclerViewAdapter makes it visible externally."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:257:5",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of MyRecyclerViewAdapter makes it visible externally."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/MyRecyclerViewAdapter.kt:109:5",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of MyRecyclerViewAdapter makes it visible externally."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:5:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:5:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:11:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:37:1",
+        "message": "com.dp.logcatapp.util.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:40:1",
+        "message": "com.dp.logcatapp.util.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:48:1",
+        "message": "java.io.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:15:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/db/MyDB.kt:4:1",
+        "message": "androidx.room.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/LogcatStreamReader.kt:3:1",
+        "message": "java.io.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:15:1",
+        "message": "java.io.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:297:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:209:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:404:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:693:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:696:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:699:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:702:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:705:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:708:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:324:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:140:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:151:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogsviewer/SavedLogsViewerFragment.kt:257:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:166:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:191:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:218:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:248:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:260:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/SettingsFragment.kt:279:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveViewModel.kt:61:84",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveViewModel.kt:69:90",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveViewModel.kt:106:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:170:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:181:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:319:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:208:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:238:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:293:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsViewModel.kt:73:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:85:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:149:86",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:149:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/Utils.kt:11:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/Utils.kt:12:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/BaseActivityWithToolbar.kt:37:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/BaseActivityWithToolbar.kt:46:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/BaseActivityWithToolbar.kt:48:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/BaseActivityWithToolbar.kt:62:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/MainActivity.kt:34:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/SavedLogsActivity.kt:63:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/SavedLogsActivity.kt:64:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/SavedLogsActivity.kt:83:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/activities/SavedLogsActivity.kt:84:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:42:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:114:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:121:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:131:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/services/LogcatService.kt:143:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:24:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:129:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:321:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/CommandUtils.kt:45:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/CommandUtils.kt:50:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:265:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:269:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:273:65",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/filters/FiltersFragment.kt:277:68",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:444:69",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:448:48",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:452:48",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:456:72",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/settings/dialogs/FolderChooserDialogFragment.kt:27:20",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of FolderChooserDialogFragment."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:402:5",
+        "message": "Function onOptionsItemSelected has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/logcatlive/LogcatLiveFragment.kt:687:9",
+        "message": "Function apply has 7 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:172:5",
+        "message": "Function onLongClick has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/LogcatStreamReader.kt:10:5",
+        "message": "Function hasNext has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:534:9",
+        "message": "Function parseBufferNames has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/collections/src/main/java/com/logcat/collections/FixedCircularArray.kt:47:5",
+        "message": "Function remove has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/collections/src/main/java/com/logcat/collections/FixedCircularArray.kt:78:5",
+        "message": "Function indexOf has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:282:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsFragment.kt:325:17",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/collections/src/main/java/com/logcat/collections/FixedCircularArray.kt:69:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/savedlogs/SavedLogsViewModel.kt:20:1",
+        "message": "The import 'kotlinx.coroutines.Dispatchers.Main' is unused."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/fragments/base/BaseDialogFragment.kt:42:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/util/MyExtensions.kt:155:13",
+        "message": "Parentheses in (theme == PreferenceKeys.Appearance.Theme.AUTO && isDarkThemeTime()) are unnecessary and can be replaced with: theme == PreferenceKeys.Appearance.Theme.AUTO && isDarkThemeTime()"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:546:41",
+        "message": "Parentheses in (startIndex < periodIndex && nextIndex < periodIndex) are unnecessary and can be replaced with: startIndex < periodIndex && nextIndex < periodIndex"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/collections/src/main/java/com/logcat/collections/FixedCircularArray.kt:23:33",
+        "message": "Parentheses in (capacity - head) are unnecessary and can be replaced with: capacity - head"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/collections/src/main/java/com/logcat/collections/FixedCircularArray.kt:63:31",
+        "message": "Parentheses in (size - 1) are unnecessary and can be replaced with: size - 1"
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/db/MyDB.kt:10:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/db/MyDB.kt:80:176",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/db/MyDB.kt:81:183",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/db/MyDB.kt:82:171",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/db/MyDB.kt:83:200",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/app/src/main/java/com/dp/logcatapp/db/MyDB.kt:88:172",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "LoopWithTooManyJumpStatements",
+      "description": "The loop contains more than one break or continue statement. The code should be refactored to increase readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:365:9",
+        "message": "The loop contains more than one break or continue statement. The code should be refactored to increase readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:546:13",
+        "message": "The loop contains more than one break or continue statement. The code should be refactored to increase readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:574:13",
+        "message": "The loop contains more than one break or continue statement. The code should be refactored to increase readability."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:69:9",
+        "message": "Private function onActivityInForeground is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/darshanparajuli-LogcatReader/logcat/src/main/java/com/dp/logcat/Logcat.kt:84:9",
+        "message": "Private function onActivityInBackground is unused."
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,98 @@
+{
+  "complexity_metrics": {
+    "loc": 61,
+    "sloc": 45,
+    "lloc": 27,
+    "cloc": 1,
+    "mcc": 4,
+    "n_smell": 9,
+    "comment_ratio": 2,
+    "mcc_per_thlines": 148
+  },
+  "metrics": {
+    "number_of_string": 0,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 1,
+    "number_of_objects_declarations": 1,
+    "number_of_companion_objects": 1,
+    "number_of_singletons": 0,
+    "number_of_declaration": 9,
+    "number_of_var_declaration": 9,
+    "number_of_func_call": 17,
+    "number_of_arguments": 11,
+    "number_of_parameters": 3,
+    "number_of_qualified_expressions": 25,
+    "number_of_inheritances": 1,
+    "number_of_unsafe_calls": 1,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 2,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 9,
+    "number_of_functions": 3,
+    "number_of_interfaces": 1,
+    "number_of_classes": 1,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 1
+  },
+  "findings": [{
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wseemann-RoMote/app/src/main/kotlin/wseemann/media/remote/fragment/SearchDialog.kt:31:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wseemann-RoMote/app/src/main/kotlin/wseemann/media/remote/fragment/SearchDialog.kt:19:24",
+        "message": "activity cannot be safely cast to SearchDialogListener."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "VarCouldBeVal",
+      "description": "Var declaration could be val.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wseemann-RoMote/app/src/main/kotlin/wseemann/media/remote/fragment/SearchDialog.kt:33:9",
+        "message": "Variable 'view' could be val."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wseemann-RoMote/app/src/main/kotlin/wseemann/media/remote/fragment/SearchDialog.kt:34:9",
+        "message": "Variable 'searchEditText' could be val."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wseemann-RoMote/app/src/main/kotlin/wseemann/media/remote/fragment/SearchDialog.kt:35:9",
+        "message": "Variable 'cancelButton' could be val."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wseemann-RoMote/app/src/main/kotlin/wseemann/media/remote/fragment/SearchDialog.kt:36:9",
+        "message": "Variable 'searchButton' could be val."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wseemann-RoMote/app/src/main/kotlin/wseemann/media/remote/fragment/SearchDialog.kt:43:13",
+        "message": "Variable 'searchText' could be val."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wseemann-RoMote/app/src/main/kotlin/wseemann/media/remote/fragment/SearchDialog.kt:44:13",
+        "message": "Variable 'searchListener' could be val."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/wseemann-RoMote/app/src/main/kotlin/wseemann/media/remote/fragment/SearchDialog.kt:53:9",
+        "message": "Variable 'builder' could be val."
+      }]
+    }]
+  }]
+}

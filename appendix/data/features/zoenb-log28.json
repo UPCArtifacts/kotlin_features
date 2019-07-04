@@ -1,0 +1,589 @@
+{
+  "complexity_metrics": {
+    "loc": 2107,
+    "sloc": 1564,
+    "lloc": 1031,
+    "cloc": 226,
+    "mcc": 278,
+    "n_smell": 148,
+    "comment_ratio": 14,
+    "mcc_per_thlines": 269
+  },
+  "metrics": {
+    "number_of_string": 113,
+    "number_of_string_template": 18,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 3,
+    "number_of_inferred_var": 167,
+    "number_of_objects_declarations": 15,
+    "number_of_companion_objects": 9,
+    "number_of_singletons": 0,
+    "number_of_declaration": 175,
+    "number_of_var_declaration": 175,
+    "number_of_func_call": 790,
+    "number_of_arguments": 658,
+    "number_of_parameters": 249,
+    "number_of_qualified_expressions": 1076,
+    "number_of_inheritances": 26,
+    "number_of_unsafe_calls": 17,
+    "number_of_safe_calls": 44,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 7,
+    "number_of_functions_with_default_value": 4,
+    "number_of_function_call_with_named_value": 2,
+    "number_of_named_argument": 2,
+    "number_of_argument_with_default_value": 10,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 14,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 3,
+    "number_of_lambdas": 71,
+    "number_of_possible_smart_casts": 1,
+    "number_of_data_class": 1,
+    "number_of_properties": 175,
+    "number_of_functions": 140,
+    "number_of_interfaces": 0,
+    "number_of_classes": 29,
+    "number_of_packages": 3,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 23
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/Queries.kt:28:78",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/MainActivity.kt:24:54",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/MainActivity.kt:44:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/MainActivity.kt:16:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:39:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:40:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:42:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/TabPagerAdapter.kt:16:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "TopLevelPropertyNaming",
+      "description": "Top level property names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:32:1",
+        "message": "Private top level property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/Queries.kt:28:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:120:47",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:241:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:242:49",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:229:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:231:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:233:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:96:48",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:98:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:101:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:113:61",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:202:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:203:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:204:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:205:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:249:77",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:252:76",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/intro/LastPeriodFragment.kt:73:18",
+        "message": "this.activity cannot be safely cast to AppIntroActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/intro/LastPeriodFragment.kt:74:38",
+        "message": "firstDay.clone() cannot be safely cast to Calendar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:102:14",
+        "message": "this.activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:105:25",
+        "message": "currentDay.clone() cannot be safely cast to Calendar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:143:29",
+        "message": "date.clone() cannot be safely cast to Calendar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:116:21",
+        "message": "this.activity cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:190:19",
+        "message": "this.getSystemService(Context.ALARM_SERVICE) cannot be safely cast to AlarmManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:120:29",
+        "message": "cycleStart.clone() cannot be safely cast to Calendar."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:50:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/ExpandableHeaderItem.kt:16:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/TabPagerAdapter.kt:17:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/Queries.kt:17:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/MainActivity.kt:16:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/intro/CycleIntroFragment.kt:55:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/intro/CycleIntroFragment.kt:72:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:187:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:188:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:197:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:221:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:231:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:114:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:144:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:78:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:108:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:187:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:191:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:204:90",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:205:84",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:67:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:67:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:92:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:114:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/TabPagerAdapter.kt:16:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/TabPagerAdapter.kt:33:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleHistory.kt:68:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/Queries.kt:32:14",
+        "message": "Private property i is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:114:14",
+        "message": "Private property i is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:122:18",
+        "message": "Private property j is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/Queries.kt:64:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/Queries.kt:68:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/Queries.kt:72:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/Queries.kt:76:48",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/intro/LastPeriodFragment.kt:29:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/intro/CycleIntroFragment.kt:36:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:41:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:248:73",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/OverviewItem.kt:13:35",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/OptionItem.kt:22:35",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/ChildItem.kt:22:35",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/ExpandableHeaderItem.kt:12:35",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/OptionHeader.kt:14:35",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:29:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/TabPagerAdapter.kt:20:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleHistory.kt:61:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleHistory.kt:166:33",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/MainActivity.kt:74:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/intro/AppIntroActivity.kt:42:1",
+        "message": "The file AppIntroActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/intro/LastPeriodFragment.kt:87:1",
+        "message": "The file LastPeriodFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:251:1",
+        "message": "The file CycleOverview.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:252:1",
+        "message": "The file DayView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:261:1",
+        "message": "The file SettingsView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/OverviewItem.kt:16:1",
+        "message": "The file OverviewItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/OptionItem.kt:25:1",
+        "message": "The file OptionItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/ChildItem.kt:25:1",
+        "message": "The file ChildItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/HistoryItem.kt:14:1",
+        "message": "The file HistoryItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/NotesItem.kt:34:1",
+        "message": "The file NotesItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/ExpandableHeaderItem.kt:45:1",
+        "message": "The file ExpandableHeaderItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/OptionHeader.kt:17:1",
+        "message": "The file OptionHeader.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/TabPagerAdapter.kt:57:1",
+        "message": "The file TabPagerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleHistory.kt:174:1",
+        "message": "The file CycleHistory.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/intro/CycleIntroFragment.kt:54:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/intro/CycleIntroFragment.kt:71:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:129:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:149:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:238:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:179:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/TabPagerAdapter.kt:13:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleHistory.kt:172:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/intro/CycleIntroFragment.kt:1:24",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/intro/CycleIntroFragment.kt:15:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of CycleIntroFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:1:18",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:24:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of CycleOverview."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:1:18",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:27:33",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of the class or object."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/ChildItem.kt:7:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ChildItem."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/NotesItem.kt:10:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of NotesItem."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/groupie/OptionHeader.kt:6:68",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of OptionHeader."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleHistory.kt:1:18",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleHistory.kt:20:30",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of CycleHistory."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:212:5",
+        "message": "Function measureWidth has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:64:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:107:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:112:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:119:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:216:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:218:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:218:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:228:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleOverview.kt:228:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:87:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:228:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:230:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:230:14",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:84:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:93:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:117:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleHistory.kt:42:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleHistory.kt:42:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleHistory.kt:47:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleHistory.kt:47:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CycleHistory.kt:89:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/DayView.kt:17:1",
+        "message": "com.xwray.groupie.kotlinandroidextensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/Log28.kt:6:1",
+        "message": "org.acra.annotation.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/SettingsView.kt:32:1",
+        "message": "SELECT_RESTORE_FILE_TAG can be a `const val`."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/OptionsActivity.kt:6:1",
+        "message": "The import 'android.support.v7.widget.RecyclerView' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:9:1",
+        "message": "The import 'devs.mulham.horizontalcalendar.utils.Utils' is unused."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:67:17",
+        "message": "Parentheses in (year.toLong() * 10000) are unnecessary and can be replaced with: year.toLong() * 10000"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:67:43",
+        "message": "Parentheses in (month.toLong() * 100) are unnecessary and can be replaced with: month.toLong() * 100"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:65:38",
+        "message": "Parentheses around the lambda ({\n            year, month, day ->\n            if ((year.toLong() * 10000) + (month.toLong() * 100) + day.toLong() in periodDates) {\n                CalendarDay.SELECTED\n            } else if (year == today.get(Calendar.YEAR) &&\n                    month == today.get(Calendar.MONTH) && day == today.get(Calendar.DAY_OF_MONTH)) {\n                CalendarDay.TODAY\n            } else CalendarDay.DEFAULT\n        }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/zoenb-log28/app/src/main/java/com/log28/CalendarView.kt:76:46",
+        "message": "Parentheses around the lambda ({\n            year, month, day ->  val cal = Calendar.getInstance()\n            cal.set(Calendar.YEAR, year)\n            cal.set(Calendar.MONTH, month)\n            cal.set(Calendar.DAY_OF_MONTH, day)\n            // only allow you to go to the day view for dates not in the future\n            Log.d(TAG, \"day clicked ${cal.formatDate()}\")\n            //TODO redo this tangled mess with some RX code calendar tap -> event -> dayview updates\n            if (cal.before(Calendar.getInstance()) || cal.isToday())\n                (this.activity as? MainActivity)?.navToDayView(cal)\n        }) are unnecessary and can be removed."
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,201 @@
+{
+  "complexity_metrics": {
+    "loc": 391,
+    "sloc": 284,
+    "lloc": 166,
+    "cloc": 21,
+    "mcc": 41,
+    "n_smell": 28,
+    "comment_ratio": 7,
+    "mcc_per_thlines": 246
+  },
+  "metrics": {
+    "number_of_string": 22,
+    "number_of_string_template": 1,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 1,
+    "number_of_inferred_var": 12,
+    "number_of_objects_declarations": 0,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 20,
+    "number_of_var_declaration": 20,
+    "number_of_func_call": 110,
+    "number_of_arguments": 84,
+    "number_of_parameters": 34,
+    "number_of_qualified_expressions": 134,
+    "number_of_inheritances": 2,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 1,
+    "number_of_properties_delegation": 1,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 9,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 20,
+    "number_of_functions": 37,
+    "number_of_interfaces": 3,
+    "number_of_classes": 8,
+    "number_of_packages": 8,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 11
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:26:1",
+        "message": "Class 'MainActivity' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:47:44",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:91:30",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/domain/entity/SearchUrl.kt:14:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/domain/entity/SearchUrl.kt:15:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/domain/entity/SearchUrl.kt:16:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/App.kt:15:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainPresenter.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/extensions/ViewExtensions.kt:8:30",
+        "message": "context.getSystemService(Activity.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:67:25",
+        "message": "getSystemService(Context.CLIPBOARD_SERVICE) cannot be safely cast to ClipboardManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:86:10",
+        "message": "application cannot be safely cast to App."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/dagger/module/MainModule.kt:14:1",
+        "message": "The file MainModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/utils/TextProvider.kt:10:1",
+        "message": "The file TextProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/extensions/ViewExtensions.kt:10:1",
+        "message": "The file ViewExtensions.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:117:1",
+        "message": "The file MainActivity.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/domain/entity/ShortenerBody.kt:6:1",
+        "message": "The class ShortenerBody defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/domain/entity/SearchUrl.kt:30:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:29:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:107:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:112:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:23:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MainActivity."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:89:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:89:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainActivity.kt:81:20",
+        "message": "Function parameter v is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainPresenter.kt:36:48",
+        "message": "Function parameter url is unused."
+      }]
+    }, {
+      "name": "VarCouldBeVal",
+      "description": "Var declaration could be val.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainPresenter.kt:45:9",
+        "message": "Variable 'urlShortener' could be val."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/WilderPereira-lmgtfyGen/app/src/main/java/com/wilderpereira/lmgtfygen/presentation/MainPresenter.kt:47:9",
+        "message": "Variable 'shortenResponse' could be val."
+      }]
+    }]
+  }]
+}

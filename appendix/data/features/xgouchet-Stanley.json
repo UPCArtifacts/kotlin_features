@@ -1,0 +1,992 @@
+{
+  "complexity_metrics": {
+    "loc": 3756,
+    "sloc": 2821,
+    "lloc": 1742,
+    "cloc": 166,
+    "mcc": 511,
+    "n_smell": 266,
+    "comment_ratio": 5,
+    "mcc_per_thlines": 293
+  },
+  "metrics": {
+    "number_of_string": 185,
+    "number_of_string_template": 55,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 268,
+    "number_of_objects_declarations": 30,
+    "number_of_companion_objects": 12,
+    "number_of_singletons": 17,
+    "number_of_declaration": 367,
+    "number_of_var_declaration": 367,
+    "number_of_func_call": 901,
+    "number_of_arguments": 1015,
+    "number_of_parameters": 411,
+    "number_of_qualified_expressions": 1185,
+    "number_of_inheritances": 57,
+    "number_of_unsafe_calls": 3,
+    "number_of_safe_calls": 90,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 13,
+    "number_of_functions_with_default_value": 7,
+    "number_of_function_call_with_named_value": 3,
+    "number_of_named_argument": 9,
+    "number_of_argument_with_default_value": 13,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 5,
+    "number_of_properties_delegation": 13,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 86,
+    "number_of_possible_smart_casts": 22,
+    "number_of_data_class": 7,
+    "number_of_properties": 367,
+    "number_of_functions": 260,
+    "number_of_interfaces": 7,
+    "number_of_classes": 70,
+    "number_of_packages": 17,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 65
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/BaseActivity.kt:11:1",
+        "message": "Class 'BaseActivity' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsFragment.kt:25:1",
+        "message": "Class 'ApkDetailsFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:28:1",
+        "message": "Class 'DetailsSource' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/X509CertificateUtils.kt:5:1",
+        "message": "The function humanReadableName appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:39:5",
+        "message": "The function extractMainInfo appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:266:5",
+        "message": "The function extractHumanName appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListFragment.kt:59:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/ManifestUtils.kt:29:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/ManifestUtils.kt:39:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListPresenter.kt:44:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListPresenter.kt:53:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListPresenter.kt:76:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/BaseDetailsPresenter.kt:46:37",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/BaseDetailsPresenter.kt:48:37",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/BaseDetailsPresenter.kt:42:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/BaseDetailsPresenter.kt:83:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListPresenter.kt:50:29",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListPresenter.kt:52:29",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListPresenter.kt:48:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListPresenter.kt:63:29",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListPresenter.kt:65:29",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListPresenter.kt:61:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListPresenter.kt:75:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:28:1",
+        "message": "Class DetailsSource is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:209:5",
+        "message": "Function extractFeatures is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyClassBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/list/ListDisplayer.kt:6:1",
+        "message": "The class or object  ListDisplayer is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/list/ListActivity.kt:5:1",
+        "message": "The class or object  ListActivity is empty."
+      }]
+    }, {
+      "name": "EmptyDefaultConstructor",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/CertificateNavigator.kt:9:27",
+        "message": "An empty default constructor can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/CopyApkSource.kt:23:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/CopyApkSource.kt:24:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/adapter/BaseDiffUtilCallback.kt:33:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsFragment.kt:112:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsFragment.kt:124:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/AppDetailsDiffUtilCallback.kt:13:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppDiffUtilCallback.kt:9:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "MemberNameEqualsClassName",
+      "description": "A member should not given the same name as its parent class or object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SharedPreferenceDelegates.kt:17:5",
+        "message": "A member is named after the class object. This might result in confusion. Please rename the member."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SharedPreferenceDelegates.kt:19:5",
+        "message": "A member is named after the class object. This might result in confusion. Please rename the member."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SharedPreferenceDelegates.kt:21:5",
+        "message": "A member is named after the class object. This might result in confusion. Please rename the member."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SharedPreferenceDelegates.kt:23:5",
+        "message": "A member is named after the class object. This might result in confusion. Please rename the member."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:35:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "MatchingDeclarationName",
+      "description": "If a source file contains only a single non-private top-level class or object, the file name should reflect the case-sensitive name plus the .kt extension.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListAdapter.kt:1:1",
+        "message": "The file name 'AppListAdapter.kt' does not match the name of the single top-level declaration 'AppAdapter'."
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppViewModel.kt:71:49",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/BaseActivity.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/BaseActivity.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/BaseActivity.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/list/BaseListFragment.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/launcher/LauncherDialog.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/launcher/LauncherDialog.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/launcher/LauncherDialog.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/list/BaseListFragment.kt:68:10",
+        "message": "fab cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsPresenter.kt:64:74",
+        "message": "displayer cannot be safely cast to ApkDetailsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsFragment.kt:77:10",
+        "message": "activity cannot be safely cast to AppCompatActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/BaseDetailsPresenter.kt:106:29",
+        "message": "context.getSystemService(Context.CLIPBOARD_SERVICE) cannot be safely cast to ClipboardManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewHolder.kt:33:24",
+        "message": "item cannot be safely cast to AppInfoHeader."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewHolder.kt:50:24",
+        "message": "item cannot be safely cast to AppInfoSimple."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewHolder.kt:67:24",
+        "message": "item cannot be safely cast to AppInfoWithIcon."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewHolder.kt:84:24",
+        "message": "item cannot be safely cast to AppInfoWithSubtitle."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewHolder.kt:101:24",
+        "message": "item cannot be safely cast to AppInfoWithSubtitleAndIcon."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewHolder.kt:122:24",
+        "message": "item cannot be safely cast to AppInfoWithSubtitleAndAction."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/easteregg/EasterEggReceiver.kt:41:23",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListFragment.kt:36:30",
+        "message": "it.actionView cannot be safely cast to SearchView."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/list/BaseListPresenter.kt:34:55",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/launcher/LauncherDialog.kt:38:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListActivity.kt:41:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/release/java/com/facebook/stetho/Stetho.kt:5:1",
+        "message": "The file Stetho.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/PresenterCache.kt:48:1",
+        "message": "The file PresenterCache.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/BaseActivity.kt:142:1",
+        "message": "The file BaseActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/BasePresenter.kt:27:1",
+        "message": "The file BasePresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/list/BaseListFragment.kt:96:1",
+        "message": "The file BaseListFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/list/ListPresenter.kt:13:1",
+        "message": "The file ListPresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/list/ListDisplayer.kt:11:1",
+        "message": "The file ListDisplayer.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/list/ListActivity.kt:10:1",
+        "message": "The file ListActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/Presenter.kt:13:1",
+        "message": "The file Presenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/adapter/BaseLayoutAdapter.kt:20:1",
+        "message": "The file BaseLayoutAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/adapter/BaseDiffUtilCallback.kt:37:1",
+        "message": "The file BaseDiffUtilCallback.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/adapter/BaseBindingAdapter.kt:19:1",
+        "message": "The file BaseBindingAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/launcher/LauncherDialog.kt:59:1",
+        "message": "The file LauncherDialog.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/launcher/ResolveInfoAdapter.kt:32:1",
+        "message": "The file ResolveInfoAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/launcher/ResolveInfoViewHolder.kt:43:1",
+        "message": "The file ResolveInfoViewHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SharedPreferenceDelegates.kt:120:1",
+        "message": "The file SharedPreferenceDelegates.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/X509CertificateUtils.kt:38:1",
+        "message": "The file X509CertificateUtils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/ManifestUtils.kt:97:1",
+        "message": "The file ManifestUtils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/UriExtension.kt:43:1",
+        "message": "The file UriExtension.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SilverWare.kt:42:1",
+        "message": "The file SilverWare.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListFragment.kt:52:1",
+        "message": "The file CertificateAppListFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListActivity.kt:57:1",
+        "message": "The file CertificateAppListActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/CopyApkSource.kt:40:1",
+        "message": "The file CopyApkSource.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsSource.kt:58:1",
+        "message": "The file ApkDetailsSource.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/app/AppDetailsSource.kt:61:1",
+        "message": "The file AppDetailsSource.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewHolder.kt:126:1",
+        "message": "The file AppInfoViewHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:90:1",
+        "message": "The file AppInfoViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppDetailsAdapter.kt:86:1",
+        "message": "The file AppDetailsAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:324:1",
+        "message": "The file DetailsSource.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/AppDetailsDiffUtilCallback.kt:20:1",
+        "message": "The file AppDetailsDiffUtilCallback.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/about/AboutActivity.kt:51:1",
+        "message": "The file AboutActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/StanleyApplication.kt:22:1",
+        "message": "The file StanleyApplication.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/easteregg/EasterEggReceiver.kt:44:1",
+        "message": "The file EasterEggReceiver.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/sort/AppPackageNameComparator.kt:14:1",
+        "message": "The file AppPackageNameComparator.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/sort/AppTitleComparator.kt:14:1",
+        "message": "The file AppTitleComparator.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/sort/AppInstallTimeComparator.kt:24:1",
+        "message": "The file AppInstallTimeComparator.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/sort/AppSort.kt:13:1",
+        "message": "The file AppSort.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/sort/AppUpdateTimeComparator.kt:23:1",
+        "message": "The file AppUpdateTimeComparator.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppDiffUtilCallback.kt:17:1",
+        "message": "The file AppDiffUtilCallback.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListActivity.kt:64:1",
+        "message": "The file AppListActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListSource.kt:30:1",
+        "message": "The file AppListSource.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppViewHolder.kt:23:1",
+        "message": "The file AppViewHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListFragment.kt:107:1",
+        "message": "The file AppListFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/buildSrc/src/main/kotlin/fr/xgouchet/gradle/AndroidBuild.kt:10:1",
+        "message": "The file AndroidBuild.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/release/java/com/facebook/stetho/Stetho.kt:4:32",
+        "message": "Function parameter arg is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListPresenter.kt:32:5",
+        "message": "Private property systemAppVisible is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsFragment.kt:124:49",
+        "message": "Function parameter permissions is unused."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/Displayer.kt:3:1",
+        "message": "The import 'android.app.Activity' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/PackageUtils.kt:5:1",
+        "message": "The import 'android.content.pm.PackageInfo' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/PackageUtils.kt:9:1",
+        "message": "The import 'java.io.File' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/PackageUtils.kt:10:1",
+        "message": "The import 'java.io.IOException' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/PackageUtils.kt:11:1",
+        "message": "The import 'java.util.zip.ZipException' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/PackageUtils.kt:12:1",
+        "message": "The import 'javax.xml.parsers.ParserConfigurationException' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/PackageUtils.kt:13:1",
+        "message": "The import 'javax.xml.transform.TransformerException' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListFragment.kt:3:1",
+        "message": "The import 'android.content.Intent' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListFragment.kt:5:1",
+        "message": "The import 'android.support.v7.widget.SearchView' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListFragment.kt:9:1",
+        "message": "The import 'com.google.android.gms.oss.licenses.OssLicensesMenuActivity' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListFragment.kt:11:1",
+        "message": "The import 'fr.xgouchet.packageexplorer.about.AboutActivity' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListActivity.kt:6:1",
+        "message": "The import 'fr.xgouchet.packageexplorer.R' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/sort/AppInstallTimeComparator.kt:4:1",
+        "message": "The import 'timber.log.Timber' is unused."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/list/ListPresenter.kt:3:52",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ListPresenter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/mvp/list/ListDisplayer.kt:3:52",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ListDisplayer."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/adapter/BaseAdapter.kt:5:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of BaseAdapter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/launcher/LauncherDialog.kt:13:41",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of LauncherDialog."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/launcher/ResolveInfoViewHolder.kt:13:41",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ResolveInfoViewHolder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListFragment.kt:17:64",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of CertificateAppListFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsPresenter.kt:22:43",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ApkDetailsPresenter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsSource.kt:1:48",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsSource.kt:9:42",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ApkDetailsSource."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsActivity.kt:9:55",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ApkDetailsActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/app/AppDetailsSource.kt:1:48",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/app/AppDetailsSource.kt:9:42",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AppDetailsSource."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/app/AppDetailsFragment.kt:21:20",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AppDetailsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/app/AppDetailsActivity.kt:12:55",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AppDetailsActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/app/AppDetailsPresenter.kt:19:43",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AppDetailsPresenter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/about/AboutActivity.kt:9:38",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AboutActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/easteregg/EasterEggReceiver.kt:9:37",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of EasterEggReceiver."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListAdapter.kt:10:41",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AppAdapter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppViewModel.kt:17:43",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AppViewModel."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListFragment.kt:17:64",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AppListFragment."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/adapter/BaseAdapter.kt:22:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/adapter/BaseAdapter.kt:26:35",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/adapter/BaseDiffUtilCallback.kt:11:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/adapter/BaseDiffUtilCallback.kt:15:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/launcher/ResolveInfoAdapter.kt:21:50",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/launcher/ResolveInfoAdapter.kt:25:96",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/launcher/ResolveInfoAdapter.kt:29:114",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SharedPreferenceDelegates.kt:40:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SharedPreferenceDelegates.kt:57:75",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SharedPreferenceDelegates.kt:66:78",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SharedPreferenceDelegates.kt:79:74",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SharedPreferenceDelegates.kt:92:77",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/UriExtension.kt:9:27",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/UriExtension.kt:14:30",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SilverWare.kt:39:68",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListActivity.kt:40:70",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListActivity.kt:44:68",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListActivity.kt:48:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsActivity.kt:20:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsActivity.kt:29:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsActivity.kt:33:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/app/AppDetailsActivity.kt:53:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppDetailsAdapter.kt:31:124",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/AppDetailsDiffUtilCallback.kt:13:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/AppDetailsDiffUtilCallback.kt:17:104",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListAdapter.kt:19:119",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListAdapter.kt:23:110",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListAdapter.kt:27:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppDiffUtilCallback.kt:9:107",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppDiffUtilCallback.kt:13:96",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListActivity.kt:18:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListActivity.kt:22:59",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListActivity.kt:26:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListActivity.kt:30:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppViewHolder.kt:20:45",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/ui/adapter/BaseViewHolder.kt:7:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SharedPreferenceDelegates.kt:17:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SharedPreferenceDelegates.kt:21:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SharedPreferenceDelegates.kt:23:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListPresenter.kt:43:25",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsPresenter.kt:64:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsFragment.kt:36:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/app/AppDetailsFragment.kt:30:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/BaseDetailsPresenter.kt:46:165",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppDetailsAdapter.kt:31:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:45:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:53:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:56:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:59:151",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:62:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:71:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:74:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:88:153",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:111:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:127:151",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:142:151",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:157:178",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:179:162",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:214:157",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:247:152",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:256:168",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:258:140",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/easteregg/EasterEggReceiver.kt:20:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/easteregg/EasterEggReceiver.kt:24:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListPresenter.kt:52:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/ManifestUtils.kt:26:35",
+        "message": "Parentheses around the lambda ({\n        val name = exportedManifestName(info.packageName)\n        val apk = getPackageApk(info)\n        return@fromCallable exportManifestFromApkFile(name, apk, context)\n    }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/ManifestUtils.kt:36:35",
+        "message": "Parentheses around the lambda ({\n        val name = \"${apk.nameWithoutExtension}_AndroidManifest.xml\"\n\n        return@fromCallable exportManifestFromApkFile(name, apk, context)\n    }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/BaseDetailsPresenter.kt:43:39",
+        "message": "Parentheses in (it is AppInfoHeader) are unnecessary and can be replaced with: it is AppInfoHeader"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/BaseDetailsPresenter.kt:43:64",
+        "message": "Parentheses in (it.mask and filter) are unnecessary and can be replaced with: it.mask and filter"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/BaseDetailsPresenter.kt:46:75",
+        "message": "Parentheses in (it.mask and filter) are unnecessary and can be replaced with: it.mask and filter"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:52:21",
+        "message": "Parentheses in (applicationInfo.flags and ApplicationInfo.FLAG_SYSTEM) are unnecessary and can be replaced with: applicationInfo.flags and ApplicationInfo.FLAG_SYSTEM"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:55:21",
+        "message": "Parentheses in (applicationInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE) are unnecessary and can be replaced with: applicationInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:58:21",
+        "message": "Parentheses in (applicationInfo.flags and ApplicationInfo.FLAG_EXTERNAL_STORAGE) are unnecessary and can be replaced with: applicationInfo.flags and ApplicationInfo.FLAG_EXTERNAL_STORAGE"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:61:21",
+        "message": "Parentheses in (applicationInfo.flags and ApplicationInfo.FLAG_LARGE_HEAP) are unnecessary and can be replaced with: applicationInfo.flags and ApplicationInfo.FLAG_LARGE_HEAP"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListPresenter.kt:65:43",
+        "message": "Parentheses in (it.flags and ApplicationInfo.FLAG_SYSTEM) are unnecessary and can be replaced with: it.flags and ApplicationInfo.FLAG_SYSTEM"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppViewModel.kt:33:23",
+        "message": "Parentheses in (flags and ApplicationInfo.FLAG_SYSTEM != 0) are unnecessary and can be replaced with: flags and ApplicationInfo.FLAG_SYSTEM != 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppViewModel.kt:34:24",
+        "message": "Parentheses in (flags and ApplicationInfo.FLAG_DEBUGGABLE != 0) are unnecessary and can be replaced with: flags and ApplicationInfo.FLAG_DEBUGGABLE != 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppViewModel.kt:35:23",
+        "message": "Parentheses in (flags and ApplicationInfo.FLAG_LARGE_HEAP != 0) are unnecessary and can be replaced with: flags and ApplicationInfo.FLAG_LARGE_HEAP != 0"
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/UriExtension.kt:18:1",
+        "message": "Function getFileName has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/core/utils/SilverWare.kt:23:5",
+        "message": "Function getValue has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/app/AppDetailsFragment.kt:56:5",
+        "message": "Function onOptionsItemSelected has 6 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppDetailsAdapter.kt:35:5",
+        "message": "Function onCreateViewHolder has 6 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppDetailsAdapter.kt:73:5",
+        "message": "Function getItemViewType has 6 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:300:5",
+        "message": "Function simplifyName has 4 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListPresenter.kt:25:9",
+        "message": "KEY_SORT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/certificate/CertificateAppListPresenter.kt:26:9",
+        "message": "KEY_SYSTEM_APPS_VISIBLE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/app/AppDetailsActivity.kt:23:9",
+        "message": "EXTRA_PACKAGE_NAME can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:11:5",
+        "message": "INFO_TYPE_GLOBAL can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:12:5",
+        "message": "INFO_TYPE_FEATURES_REQUIRED can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:13:5",
+        "message": "INFO_TYPE_CUSTOM_PERMISSIONS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:14:5",
+        "message": "INFO_TYPE_PERMISSIONS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:15:5",
+        "message": "INFO_TYPE_ACTIVITIES can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:16:5",
+        "message": "INFO_TYPE_SERVICES can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:17:5",
+        "message": "INFO_TYPE_PROVIDERS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:18:5",
+        "message": "INFO_TYPE_RECEIVERS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:19:5",
+        "message": "INFO_TYPE_SIGNATURE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:21:5",
+        "message": "INFO_TYPE_METADATA can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppDetailsAdapter.kt:23:9",
+        "message": "TYPE_HEADER can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppDetailsAdapter.kt:24:9",
+        "message": "TYPE_SIMPLE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppDetailsAdapter.kt:25:9",
+        "message": "TYPE_ICON can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppDetailsAdapter.kt:26:9",
+        "message": "TYPE_SUBTITLE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppDetailsAdapter.kt:27:9",
+        "message": "TYPE_SUBTITLE_ICON can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppDetailsAdapter.kt:28:9",
+        "message": "TYPE_SUBTITLE_ACTION can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListPresenter.kt:24:9",
+        "message": "KEY_SORT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListPresenter.kt:25:9",
+        "message": "KEY_SYSTEM_APPS_VISIBLE can be a `const val`."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsPresenter.kt:43:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsPresenter.kt:62:21",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/apk/ApkDetailsPresenter.kt:63:25",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:13:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:14:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:15:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:16:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:17:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:18:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:19:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/adapter/AppInfoViewModel.kt:21:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:218:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:219:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:316:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/details/DetailsSource.kt:316:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListFragment.kt:74:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "TrailingWhitespace",
+      "description": "Checks which lines end with a whitespace.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/xgouchet-Stanley/app/src/main/java/fr/xgouchet/packageexplorer/applist/AppListNavigator.kt:24:5",
+        "message": "Line 24 ends with a whitespace."
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,128 @@
+{
+  "complexity_metrics": {
+    "loc": 597,
+    "sloc": 373,
+    "lloc": 238,
+    "cloc": 110,
+    "mcc": 50,
+    "n_smell": 14,
+    "comment_ratio": 29,
+    "mcc_per_thlines": 210
+  },
+  "metrics": {
+    "number_of_string": 15,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 22,
+    "number_of_objects_declarations": 5,
+    "number_of_companion_objects": 5,
+    "number_of_singletons": 0,
+    "number_of_declaration": 44,
+    "number_of_var_declaration": 44,
+    "number_of_func_call": 120,
+    "number_of_arguments": 109,
+    "number_of_parameters": 27,
+    "number_of_qualified_expressions": 149,
+    "number_of_inheritances": 5,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 3,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 1,
+    "number_of_named_argument": 6,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 2,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 16,
+    "number_of_possible_smart_casts": 1,
+    "number_of_data_class": 0,
+    "number_of_properties": 44,
+    "number_of_functions": 27,
+    "number_of_interfaces": 2,
+    "number_of_classes": 9,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 11
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/HomePreferencesViewImpl.kt:20:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/HomePreferencesViewImpl.kt:22:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/HomeButton.kt:34:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/HomeButton.kt:35:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/HomeViewImpl.kt:18:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/MainActivity.kt:29:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/HomePreferencesFragment.kt:29:3",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/NotificationHandler.kt:37:5",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/HomeViewImpl.kt:54:1",
+        "message": "The file HomeViewImpl.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/HomePreferencesViewImpl.kt:27:1",
+        "message": "The file HomePreferencesViewImpl.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/HomePreferencesView.kt:9:1",
+        "message": "The file HomePreferencesView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/HomeView.kt:8:1",
+        "message": "The file HomeView.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/HomeViewImpl.kt:44:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pyamsoft-home-button/homebutton/src/main/java/com/pyamsoft/homebutton/HomeViewImpl.kt:36:29",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }]
+  }]
+}

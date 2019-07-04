@@ -1,0 +1,1763 @@
+{
+  "complexity_metrics": {
+    "loc": 6744,
+    "sloc": 5402,
+    "lloc": 3895,
+    "cloc": 470,
+    "mcc": 1136,
+    "n_smell": 511,
+    "comment_ratio": 8,
+    "mcc_per_thlines": 291
+  },
+  "metrics": {
+    "number_of_string": 226,
+    "number_of_string_template": 31,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 2,
+    "number_of_inferred_var": 484,
+    "number_of_objects_declarations": 45,
+    "number_of_companion_objects": 18,
+    "number_of_singletons": 14,
+    "number_of_declaration": 690,
+    "number_of_var_declaration": 690,
+    "number_of_func_call": 1927,
+    "number_of_arguments": 2133,
+    "number_of_parameters": 552,
+    "number_of_qualified_expressions": 3099,
+    "number_of_inheritances": 53,
+    "number_of_unsafe_calls": 97,
+    "number_of_safe_calls": 68,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 25,
+    "number_of_functions_with_default_value": 4,
+    "number_of_function_call_with_named_value": 5,
+    "number_of_named_argument": 5,
+    "number_of_argument_with_default_value": 7,
+    "number_of_overloaded_op": 1,
+    "number_of_extension_function": 2,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 21,
+    "number_of_lambdas": 145,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 690,
+    "number_of_functions": 313,
+    "number_of_interfaces": 7,
+    "number_of_classes": 68,
+    "number_of_packages": 9,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 46
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/test/java/com/pixplicity/cryptogram/PuzzleTest.kt:91:5",
+        "message": "The function noBadCharacters appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/test/java/com/pixplicity/cryptogram/PuzzleTest.kt:153:5",
+        "message": "The function noEmptyOrDuplicateCryptograms appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:46:5",
+        "message": "The function onViewCreated appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:170:5",
+        "message": "The function showPurchases appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:70:5",
+        "message": "The function update appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:55:9",
+        "message": "The function onPostExecute appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:263:9",
+        "message": "The function calculate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:176:5",
+        "message": "The function readStream appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/VideoUtils.kt:25:5",
+        "message": "The function setup appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Word.kt:36:5",
+        "message": "The function getForSpace appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Word.kt:62:5",
+        "message": "The function fillForSpace appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:132:5",
+        "message": "The function getCharMapping appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/adapters/PuzzleAdapter.kt:31:5",
+        "message": "The function onCreateViewHolder appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:43:5",
+        "message": "The function setContentView appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:71:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:256:5",
+        "message": "The function loadGame appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:538:5",
+        "message": "The function showPuzzleState appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:614:5",
+        "message": "The function onPuzzleCompleted appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:692:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/HintView.kt:76:5",
+        "message": "The function onMeasure appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:299:5",
+        "message": "The function selectNextCharacter appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:461:5",
+        "message": "The function onMeasure appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:525:5",
+        "message": "The function drawOrMeasure appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:601:5",
+        "message": "The function drawWord appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:670:5",
+        "message": "The function onTouchEvent appears to be too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/test/java/com/pixplicity/cryptogram/PuzzleTest.kt:91:5",
+        "message": "Function noBadCharacters is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/test/java/com/pixplicity/cryptogram/PuzzleTest.kt:153:5",
+        "message": "Function noEmptyOrDuplicateCryptograms is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/UpdateManager.kt:12:5",
+        "message": "Function init is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:314:5",
+        "message": "Function setProgressFromJson is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Word.kt:62:5",
+        "message": "Function fillForSpace is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:132:5",
+        "message": "Function getCharMapping is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:181:5",
+        "message": "Function getCharacterList is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:214:5",
+        "message": "Function getUserCharsMapping is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:323:5",
+        "message": "Function checkCompleted is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:692:5",
+        "message": "Function onOptionsItemSelected is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/HintView.kt:130:5",
+        "message": "Function drawChars is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:242:5",
+        "message": "Function showSoftInput is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:299:5",
+        "message": "Function selectNextCharacter is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:357:5",
+        "message": "Function onKeyPress is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:413:5",
+        "message": "Function setUserChar is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:525:5",
+        "message": "Function drawOrMeasure is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:601:5",
+        "message": "Function drawWord is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/SimpleInputConnection.kt:63:9",
+        "message": "Function getIme is nested too deeply."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:76:29",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/LeaderboardProvider.kt:17:30",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/BillingUtils.kt:34:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/BillingUtils.kt:52:29",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/SavegameManager.kt:51:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/SavegameManager.kt:86:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:93:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:99:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:116:85",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:174:33",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:175:51",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:176:45",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:181:43",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:272:60",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:318:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:433:40",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:453:40",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:803:58",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:19:1",
+        "message": "Class 'SettingsFragment' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:23:1",
+        "message": "Class 'PuzzleProvider' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:16:1",
+        "message": "Class 'PuzzleProgress' with '27' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:12:1",
+        "message": "Class 'Puzzle' with '22' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:26:1",
+        "message": "Class 'BaseActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:57:1",
+        "message": "Class 'CryptogramActivity' with '31' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:37:1",
+        "message": "Class 'CryptogramView' with '30' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:23:1",
+        "message": "Class PuzzleProvider is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:16:1",
+        "message": "Class PuzzleProgress is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:57:1",
+        "message": "Class CryptogramActivity is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:37:1",
+        "message": "Class CryptogramView is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:580:31",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:601:25",
+        "message": "The function drawWord has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:124:5",
+        "message": "The function init is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardButton.kt:122:5",
+        "message": "The function onLayout is too long. The maximum length is 20."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyWhenBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:213:9",
+        "message": "This when block is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/NotificationPublisher.kt:30:13",
+        "message": "This when block is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/NotificationPublisher.kt:49:13",
+        "message": "This when block is empty."
+      }]
+    }, {
+      "name": "EmptyCatchBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/UpdateManager.kt:31:59",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/LeaderboardProvider.kt:27:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/StyleUtils.kt:17:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:240:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:183:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:184:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:185:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:165:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:168:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/UpdateManager.kt:44:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/NotificationPublisher.kt:26:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:42:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:43:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:343:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/StringUtils.kt:7:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Word.kt:9:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:1030:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:1031:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:1032:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:1034:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:176:28",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:194:41",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/test/java/com/pixplicity/cryptogram/PuzzleTest.kt:96:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/test/java/com/pixplicity/cryptogram/PuzzleTest.kt:161:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/test/java/com/pixplicity/cryptogram/PuzzleTest.kt:172:63",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/test/java/com/pixplicity/cryptogram/PuzzleTest.kt:204:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:57:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:32:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:52:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:59:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:61:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:126:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:148:48",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:213:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:36:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:47:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:74:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:94:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:96:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:101:77",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:111:70",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/HowToPlayFragment.kt:34:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/LeaderboardProvider.kt:26:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:76:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:78:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:81:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:96:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:97:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:119:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:135:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:149:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:204:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:214:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:223:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:253:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:263:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:357:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:93:61",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:99:51",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:104:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:114:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:114:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:115:49",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:142:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:148:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:151:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:155:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:172:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:178:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:197:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:199:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:200:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:206:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:223:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:228:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:307:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:341:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:346:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:353:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:356:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:361:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:373:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:374:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:467:48",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:514:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgressState.kt:20:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:54:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:63:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:66:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:69:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:79:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:216:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:286:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:286:111",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/adapters/PuzzleAdapter.kt:63:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/adapters/PuzzleAdapter.kt:66:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/adapters/PuzzleAdapter.kt:68:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/adapters/PuzzleAdapter.kt:69:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/adapters/PuzzleAdapter.kt:71:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/adapters/PuzzleAdapter.kt:72:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:104:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:128:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:141:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:155:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:162:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:168:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:105:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:213:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:214:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:217:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:258:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:344:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:541:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:772:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:795:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:799:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramLayout.kt:35:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardButton.kt:164:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardImageButton.kt:37:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/CryptogramApp.kt:32:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/CryptogramApp.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/BillingUtils.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:61:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:63:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:65:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/HintView.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:55:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:56:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:57:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:58:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:59:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:60:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:61:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:68:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:71:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:183:31",
+        "message": "layoutInflater.inflate(R.layout.item_donation, null) cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:56:40",
+        "message": "activity cannot be safely cast to BaseActivity?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/NotificationPublisher.kt:37:39",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/NotificationPublisher.kt:55:39",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:314:40",
+        "message": "calendar.clone() cannot be safely cast to Calendar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:793:46",
+        "message": "dialogInterface cannot be safely cast to MaterialDialog."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:857:34",
+        "message": "LayoutInflater.from(this).inflate(R.layout.dialog_statistics, null) cannot be safely cast to TableLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:894:18",
+        "message": "view.findViewById<View>(R.id.tv_label) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:895:18",
+        "message": "view.findViewById<View>(R.id.tv_value) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:900:22",
+        "message": "it.findViewById<View>(R.id.tv_label) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:901:22",
+        "message": "it.findViewById<View>(R.id.tv_value) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:906:22",
+        "message": "it.findViewById<View>(R.id.tv_label) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:907:22",
+        "message": "it.findViewById<View>(R.id.tv_value) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:912:22",
+        "message": "it.findViewById<View>(R.id.tv_label) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:913:22",
+        "message": "it.findViewById<View>(R.id.tv_value) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:918:22",
+        "message": "it.findViewById<View>(R.id.tv_label) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:919:22",
+        "message": "it.findViewById<View>(R.id.tv_value) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:924:22",
+        "message": "it.findViewById<View>(R.id.tv_label) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:925:22",
+        "message": "it.findViewById<View>(R.id.tv_value) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:210:29",
+        "message": "animation.animatedValue cannot be safely cast to Float."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:248:50",
+        "message": "context.getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:280:34",
+        "message": "context.getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardButton.kt:129:28",
+        "message": "parent cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/SimpleInputConnection.kt:64:23",
+        "message": "context.getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }]
+    }, {
+      "name": "UnconditionalJumpStatementInLoop",
+      "description": "An unconditional jump statement in a loop is useless. The loop itself is only executed once.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:314:17",
+        "message": "This loop contains an unconditional jump expression which essentially renders it useless as it will exit the loop during the first iteration."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/test/java/com/pixplicity/cryptogram/stringsimilarity/Levenshtein.kt:12:5",
+        "message": "Function distance has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:93:5",
+        "message": "Function onOptionsItemSelected has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PrefsUtils.kt:130:5",
+        "message": "Function getHighlightKey has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/StringUtils.kt:13:5",
+        "message": "Function ellipsize has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:142:5",
+        "message": "Function getTitle has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:166:5",
+        "message": "Function onOptionsItemSelected has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:350:5",
+        "message": "Function showOnboarding has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:692:5",
+        "message": "Function onOptionsItemSelected has 14 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:284:5",
+        "message": "Function onKeyUp has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:670:5",
+        "message": "Function onTouchEvent has 4 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/test/java/com/pixplicity/cryptogram/stringsimilarity/Levenshtein.kt:94:1",
+        "message": "The file Levenshtein.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/test/java/com/pixplicity/cryptogram/stringsimilarity/StringDistance.kt:36:1",
+        "message": "The file StringDistance.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/test/java/com/pixplicity/cryptogram/stringsimilarity/MetricStringDistance.kt:40:1",
+        "message": "The file MetricStringDistance.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UntilInsteadOfRangeTo",
+      "description": "'..' call can be replaced with 'until'",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/test/java/com/pixplicity/cryptogram/PuzzleTest.kt:44:22",
+        "message": "'..' call can be replaced with 'until'"
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:3:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:16:1",
+        "message": "com.android.billingclient.api.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:20:1",
+        "message": "com.pixplicity.cryptogram.utils.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:5:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:9:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/BillingUtils.kt:7:1",
+        "message": "com.android.billingclient.api.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:17:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:47:1",
+        "message": "com.pixplicity.cryptogram.utils.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:7:1",
+        "message": "android.graphics.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardButton.kt:4:1",
+        "message": "android.graphics.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:179:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:193:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:72:108",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:84:113",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:89:116",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:96:116",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:101:116",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:106:115",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:118:121",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:123:119",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:48:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:190:154",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:192:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:197:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:218:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/BillingUtils.kt:117:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/SavegameManager.kt:129:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:131:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:286:151",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/adapters/PuzzleAdapter.kt:15:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:310:137",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:423:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:424:146",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:433:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:443:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:453:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:463:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:854:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:895:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:901:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:907:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:913:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:919:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:925:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:248:25",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:555:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:616:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:617:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:624:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:639:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:733:144",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:734:138",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:736:144",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardButton.kt:105:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardImageButton.kt:16:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:119:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:250:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:4:1",
+        "message": "The import 'android.content.Context.CLIPBOARD_SERVICE' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:5:1",
+        "message": "The import 'android.net.Uri' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:8:1",
+        "message": "The import 'android.support.v7.app.AlertDialog' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:15:1",
+        "message": "The import 'android.widget.Toast' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:17:1",
+        "message": "The import 'com.crashlytics.android.Crashlytics' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:18:1",
+        "message": "The import 'com.pixplicity.cryptogram.BuildConfig' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/LeaderboardProvider.kt:6:1",
+        "message": "The import 'com.google.android.gms.games.Games' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/BillingUtils.kt:5:1",
+        "message": "The import 'android.util.Log' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardButton.kt:9:1",
+        "message": "The import 'android.util.Log' is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/DonateFragment.kt:40:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:27:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:31:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/HowToPlayFragment.kt:17:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/KeyboardUtils.kt:52:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/KeyboardUtils.kt:61:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/KeyboardUtils.kt:65:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/KeyboardUtils.kt:70:45",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/HtmlCompat.kt:19:69",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/EventProvider.kt:21:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/EventProvider.kt:25:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:227:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/StringUtils.kt:9:45",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:245:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:250:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:319:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:360:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:455:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:166:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:180:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:184:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:285:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:291:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/adapters/PuzzleAdapter.kt:75:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/HowToPlayActivity.kt:15:46",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:140:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:299:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/AboutActivity.kt:15:46",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/SettingsActivity.kt:15:46",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/DonateActivity.kt:15:46",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:405:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:409:41",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:708:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardButton.kt:118:61",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/SimpleInputConnection.kt:13:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/SimpleInputConnection.kt:42:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/SettingsFragment.kt:16:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SettingsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:16:55",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AboutFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/HowToPlayFragment.kt:11:61",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of HowToPlayFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/CryptogramApp.kt:10:36",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of CryptogramApp."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/HintView.kt:16:35",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of HintView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramLayout.kt:7:35",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of CryptogramLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardImageButton.kt:13:35",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of KeyboardImageButton."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:22:9",
+        "message": "FEEDBACK_EMAIL can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/NotificationPublisher.kt:26:9",
+        "message": "NOTIFICATION_ID can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:42:5",
+        "message": "KEY_STARTED_IN_AIRPLANE_MODE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:43:5",
+        "message": "KEY_UNLOCKED_FLIGHT_MODE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:343:9",
+        "message": "ASSET_FILENAME can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/StringUtils.kt:7:5",
+        "message": "NON_THIN can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Word.kt:9:9",
+        "message": "SOFT_HYPHEN can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:1030:9",
+        "message": "RC_UNUSED can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:1031:9",
+        "message": "RC_PLAY_GAMES can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:1032:9",
+        "message": "RC_SAVED_GAMES can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:1034:9",
+        "message": "ONBOARDING_PAGES can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:1036:9",
+        "message": "EXTRA_LAUNCH_SETTINGS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/SimpleInputConnection.kt:51:9",
+        "message": "DISABLE_PERSONALIZED_LEARNING can be a `const val`."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:69:26",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/fragments/AboutFragment.kt:69:26",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/ShareUtils.kt:34:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PrefsUtils.kt:55:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:37:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:580:27",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:580:27",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:829:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:829:29",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/UpdateManager.kt:21:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/UpdateManager.kt:26:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PrefsUtils.kt:37:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/ThemeUtils.kt:12:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/ThemeUtils.kt:13:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/ThemeUtils.kt:14:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/ThemeUtils.kt:26:78",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/StyleUtils.kt:21:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:72:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:78:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:84:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:90:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:96:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:102:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:108:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:114:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:132:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:150:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:150:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:150:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:150:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:156:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:156:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:156:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:156:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:162:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:162:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:162:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:162:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:174:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:180:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:297:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:297:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:119:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:180:105",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:197:116",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:218:114",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/BillingUtils.kt:67:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/BillingUtils.kt:68:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/BillingUtils.kt:83:78",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/VideoUtils.kt:18:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/VideoUtils.kt:18:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/VideoUtils.kt:19:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/VideoUtils.kt:19:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/SavegameManager.kt:20:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/SavegameManager.kt:20:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/StringUtils.kt:44:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/StringUtils.kt:48:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/StringUtils.kt:49:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/StringUtils.kt:49:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/StringUtils.kt:50:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:328:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:464:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:467:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:468:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/Puzzle.kt:286:141",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/BaseActivity.kt:71:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:95:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:131:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:140:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:169:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:309:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:340:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:461:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:568:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:590:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:880:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:884:101",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/HintView.kt:99:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/HintView.kt:100:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/HintView.kt:141:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/HintView.kt:156:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/HintView.kt:158:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:176:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:184:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:185:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:197:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:206:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:208:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:485:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:528:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:528:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:529:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:530:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:534:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:585:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:623:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:732:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:732:84",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardButton.kt:37:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardButton.kt:58:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardButton.kt:58:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardButton.kt:58:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardButton.kt:180:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardImageButton.kt:19:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardImageButton.kt:62:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PrefsUtils.kt:30:5",
+        "message": "Private property KEY_DONATION_FEEDBACK is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:165:13",
+        "message": "Private property is is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:168:13",
+        "message": "Private property is is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:176:28",
+        "message": "Function parameter is is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/BillingUtils.kt:19:5",
+        "message": "Private property TAG is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/BillingUtils.kt:30:43",
+        "message": "Function parameter function is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/models/PuzzleProgress.kt:75:5",
+        "message": "Private property mHadHints is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/HintView.kt:43:40",
+        "message": "Function parameter attrs is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/HintView.kt:43:62",
+        "message": "Function parameter defStyleAttr is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/HintView.kt:130:44",
+        "message": "Function parameter width is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramLayout.kt:26:22",
+        "message": "Function parameter context is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/KeyboardButton.kt:23:9",
+        "message": "Private property TAG is unused."
+      }]
+    }, {
+      "name": "ForbiddenVoid",
+      "description": "`Unit` should be used instead of `Void`.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/LeaderboardProvider.kt:15:28",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/LeaderboardProvider.kt:15:35",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/LeaderboardProvider.kt:16:55",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:48:151",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:48:158",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:48:165",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:50:51",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:50:59",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:55:43",
+        "message": "'Void' should be replaced with 'Unit'."
+      }]
+    }, {
+      "name": "LoopWithTooManyJumpStatements",
+      "description": "The loop contains more than one break or continue statement. The code should be refactored to increase readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/AchievementProvider.kt:271:13",
+        "message": "The loop contains more than one break or continue statement. The code should be refactored to increase readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/PuzzleProvider.kt:111:13",
+        "message": "The loop contains more than one break or continue statement. The code should be refactored to increase readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:314:17",
+        "message": "The loop contains more than one break or continue statement. The code should be refactored to increase readability."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/utils/VideoUtils.kt:21:5",
+        "message": "The class Video defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:158:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:633:25",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/views/CryptogramView.kt:684:17",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "ProtectedMemberInFinalClass",
+      "description": "Member with protected visibility in final class is private. Consider using private or internal as modifier.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/activities/CryptogramActivity.kt:579:5",
+        "message": "Member with protected visibility in final class is private. Consider using private or internal as modifier."
+      }]
+    }, {
+      "name": "UnnecessaryAbstractClass",
+      "description": "An abstract class is unnecessary and can be refactored. An abstract class should have both abstract and concrete properties or functions. An abstract class without a concrete member can be refactored to an interface. An abstract class without an abstract member can be refactored to a concrete class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/pflammertsma-cryptogram/app/src/main/java/com/pixplicity/cryptogram/events/PuzzleEvent.kt:5:1",
+        "message": "An abstract class without an abstract member can be refactored to a concrete class."
+      }]
+    }]
+  }]
+}

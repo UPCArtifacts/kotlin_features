@@ -1,0 +1,909 @@
+{
+  "complexity_metrics": {
+    "loc": 2441,
+    "sloc": 1468,
+    "lloc": 1065,
+    "cloc": 448,
+    "mcc": 384,
+    "n_smell": 254,
+    "comment_ratio": 30,
+    "mcc_per_thlines": 360
+  },
+  "metrics": {
+    "number_of_string": 145,
+    "number_of_string_template": 16,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 191,
+    "number_of_objects_declarations": 12,
+    "number_of_companion_objects": 2,
+    "number_of_singletons": 6,
+    "number_of_declaration": 209,
+    "number_of_var_declaration": 209,
+    "number_of_func_call": 571,
+    "number_of_arguments": 645,
+    "number_of_parameters": 152,
+    "number_of_qualified_expressions": 980,
+    "number_of_inheritances": 6,
+    "number_of_unsafe_calls": 22,
+    "number_of_safe_calls": 2,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 16,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 12,
+    "number_of_lambdas": 30,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 209,
+    "number_of_functions": 91,
+    "number_of_interfaces": 0,
+    "number_of_classes": 11,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 16
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:123:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:86:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:96:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:110:34",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:135:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:23:1",
+        "message": "Class PreviewActivity is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:176:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:344:5",
+        "message": "The function showCpuUsages appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:84:5",
+        "message": "The function getIconIdForCpuUsageDual appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:145:5",
+        "message": "The function getIconIdForCpuFreq appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:23:1",
+        "message": "Class 'PreviewActivity' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:18:1",
+        "message": "Class 'UsageUpdateService' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:5:1",
+        "message": "Object 'MyLog' with '17' functions detected. Defined threshold inside objects is set to '11'"
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:82:74",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:60:70",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:38:27",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:41:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:98:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:149:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:129:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/AboutActivity.kt:170:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:24:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:54:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:84:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:34:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:169:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/AboutActivity.kt:35:17",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMinLength",
+      "description": "Function names should not be shorter than the minimum defined in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:9:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:15:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:21:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:42:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:52:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:63:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:70:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:83:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:90:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:96:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:102:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:109:5",
+        "message": "Function names should be at least 3 characters long."
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/AboutActivity.kt:32:41",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:45:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:64:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:71:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:106:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:113:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:114:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:129:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:136:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:137:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:74:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:185:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:198:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:243:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:269:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:289:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:296:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:428:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:443:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:130:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:162:60",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:178:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:194:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:310:25",
+        "message": "findViewById<View>(R.id.freqText1) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:339:25",
+        "message": "findViewById<View>(R.id.freqImage) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:383:29",
+        "message": "coreView.findViewById<View>(R.id.coreImage) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:390:28",
+        "message": "coreView.findViewById<View>(R.id.coreText) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:343:18",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:374:18",
+        "message": "this.getSystemService(Context.ALARM_SERVICE) cannot be safely cast to AlarmManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:395:18",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:418:18",
+        "message": "getSystemService(Context.ALARM_SERVICE) cannot be safely cast to AlarmManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/AboutActivity.kt:58:28",
+        "message": "findViewById<View>(R.id.license_info) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/AboutActivity.kt:71:28",
+        "message": "findViewById<View>(R.id.app_version) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/AboutActivity.kt:98:29",
+        "message": "findViewById<View>(R.id.icon) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/AboutActivity.kt:146:24",
+        "message": "findViewById<View>(R.id.license_info) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:40:18",
+        "message": "service.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:102:27",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:113:18",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:178:18",
+        "message": "mServiceRef.get()!!.getSystemService(Context.KEYGUARD_SERVICE) cannot be safely cast to KeyguardManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:84:5",
+        "message": "Function distributeNotificationData_2Icons has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:108:5",
+        "message": "Function takeCpuUsageSnapshot has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyUtil.kt:7:5",
+        "message": "Function calcCpuUsages has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:34:5",
+        "message": "Function getIconIdForCpuUsageSingleColor has 7 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:50:5",
+        "message": "Function getIconIdForCpuUsageSingleMono has 7 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:84:5",
+        "message": "Function getIconIdForCpuUsageDual has 37 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:145:5",
+        "message": "Function getIconIdForCpuFreq has 52 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:283:5",
+        "message": "Function isUpdated has 5 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:24:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:54:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:139:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:359:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:228:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/AboutActivity.kt:112:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:27:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:53:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:64:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:70:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:84:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:123:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:187:43",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:26:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:44:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:45:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:48:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:63:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:70:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:75:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:86:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:98:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:103:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:105:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:106:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:109:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:110:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:111:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:114:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:114:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:126:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:128:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:129:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:132:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:133:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:137:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:137:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:92:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:136:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:139:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:141:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:142:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:143:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyUtil.kt:42:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyUtil.kt:42:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyUtil.kt:100:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyUtil.kt:100:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyUtil.kt:101:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyUtil.kt:105:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyUtil.kt:105:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyUtil.kt:106:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyUtil.kt:106:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyUtil.kt:106:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyUtil.kt:131:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:122:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:140:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:320:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:331:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:362:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:405:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:415:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/PreviewActivity.kt:423:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:27:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:43:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:44:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:45:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:59:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:60:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:61:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:75:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:76:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:77:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:78:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:78:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:79:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:79:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:80:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:86:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:92:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:93:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:94:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:101:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:102:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:103:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:110:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:111:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:112:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:115:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:119:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:120:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:121:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:124:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:128:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:129:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:130:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:133:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:137:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:138:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:139:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:156:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:156:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:164:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:165:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:166:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:167:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:168:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:169:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:170:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:171:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:172:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:173:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:174:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:175:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:176:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:177:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:178:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:179:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:180:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:181:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:182:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:183:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:184:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:185:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:186:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:187:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:188:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:189:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:190:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:191:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:192:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:193:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:194:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:195:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:196:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:197:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:198:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:199:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:200:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:201:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:202:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:203:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:204:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:205:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:206:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:207:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:208:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:209:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:210:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/ResourceUtil.kt:211:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:133:93",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:133:98",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:36:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:36:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:36:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:143:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/NotificationPresenter.kt:145:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/BootReceiver.kt:27:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyConfig.kt:9:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyConfig.kt:30:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuNotificationDataDistributor.kt:80:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:53:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:62:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/CpuInfoCollector.kt:71:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/AllCoreFrequencyInfo.kt:3:1",
+        "message": "The class AllCoreFrequencyInfo defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/UsageUpdateService.kt:15:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of UsageUpdateService."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/AboutActivity.kt:35:17",
+        "message": "Private property in is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:121:39",
+        "message": "Function parameter error is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/takke-cpustats/app/src/main/java/jp/takke/cpustats/MyLog.kt:121:51",
+        "message": "Function parameter msg is unused."
+      }]
+    }]
+  }]
+}

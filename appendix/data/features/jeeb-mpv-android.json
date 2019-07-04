@@ -1,0 +1,577 @@
+{
+  "complexity_metrics": {
+    "loc": 1365,
+    "sloc": 1014,
+    "lloc": 784,
+    "cloc": 122,
+    "mcc": 249,
+    "n_smell": 131,
+    "comment_ratio": 12,
+    "mcc_per_thlines": 317
+  },
+  "metrics": {
+    "number_of_string": 244,
+    "number_of_string_template": 36,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 11,
+    "number_of_inferred_var": 111,
+    "number_of_objects_declarations": 8,
+    "number_of_companion_objects": 4,
+    "number_of_singletons": 0,
+    "number_of_declaration": 137,
+    "number_of_var_declaration": 140,
+    "number_of_func_call": 424,
+    "number_of_arguments": 465,
+    "number_of_parameters": 126,
+    "number_of_qualified_expressions": 581,
+    "number_of_inheritances": 7,
+    "number_of_unsafe_calls": 13,
+    "number_of_safe_calls": 7,
+    "number_of_destructuring_declarations": 3,
+    "number_of_when_expressions": 10,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 1,
+    "number_of_named_argument": 2,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 2,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 2,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 27,
+    "number_of_possible_smart_casts": 2,
+    "number_of_data_class": 4,
+    "number_of_properties": 134,
+    "number_of_functions": 104,
+    "number_of_interfaces": 2,
+    "number_of_classes": 26,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 6
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:82:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:30:5",
+        "message": "The function initOptions is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:34:1",
+        "message": "Class MPVActivity is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:292:5",
+        "message": "The function onKeyDown appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:56:5",
+        "message": "The function processMovement appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:30:5",
+        "message": "The function initOptions appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:379:13",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:161:26",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:159:26",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:275:47",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:34:1",
+        "message": "Class 'MPVActivity' with '49' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:17:1",
+        "message": "Class 'MPVView' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:343:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:80:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:37:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:40:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:42:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:44:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:48:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:611:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:613:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ConstructorParameterNaming",
+      "description": "Constructor parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:375:26",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:375:45",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:35:29",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:35:58",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MainActivity.kt:85:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MainActivity.kt:88:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:403:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:461:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:509:82",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:581:80",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:181:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:183:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:185:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:187:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:193:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:198:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:278:62",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MainActivity.kt:27:20",
+        "message": "supportFragmentManager.findFragmentById(R.id.file_picker_fragment) cannot be safely cast to MPVFilePickerFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MainActivity.kt:32:10",
+        "message": "fragment cannot be safely cast to MPVFilePickerFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:131:24",
+        "message": "getSystemService(Context.AUDIO_SERVICE) cannot be safely cast to AudioManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:45:22",
+        "message": "context.getSystemService(Context.WINDOW_SERVICE) cannot be safely cast to WindowManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:57:18",
+        "message": "context.getSystemService(Context.AUDIO_SERVICE) cannot be safely cast to AudioManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:288:48",
+        "message": "filePath cannot be safely cast to String."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:42:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "OptionalUnit",
+      "description": "Return type of 'Unit' is unnecessary and can be safely removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MainActivity.kt:53:76",
+        "message": "The function onClick defines a return type of Unit. This is unnecessary and can safely be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MainActivity.kt:58:76",
+        "message": "The function onClick defines a return type of Unit. This is unnecessary and can safely be removed."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MainActivity.kt:6:1",
+        "message": "The import 'android.net.Uri' is unused."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MainActivity.kt:93:9",
+        "message": "Private property TAG is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:428:23",
+        "message": "Function parameter view is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:503:33",
+        "message": "Function parameter property is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:503:51",
+        "message": "Function parameter value is unused."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MainActivity.kt:93:9",
+        "message": "TAG can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:610:9",
+        "message": "TAG can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:611:9",
+        "message": "CONTROLS_DISPLAY_TIMEOUT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:613:9",
+        "message": "BUTTON_SEEK_RANGE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:302:9",
+        "message": "TAG can be a `const val`."
+      }]
+    }, {
+      "name": "VarCouldBeVal",
+      "description": "Var declaration could be val.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MainActivity.kt:45:13",
+        "message": "Variable 'builder' could be val."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MainActivity.kt:48:13",
+        "message": "Variable 'input' could be val."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:21:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:11:1",
+        "message": "`is`.xyz.mpv.MPVLib.mpvFormat.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:251:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/SettingsActivity.kt:23:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/SettingsActivity.kt:24:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/SettingsActivity.kt:179:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:175:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:193:40",
+        "message": "Parentheses in (0xFF00FF00) are unnecessary and can be replaced with: 0xFF00FF00"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:363:51",
+        "message": "Parentheses around the lambda ({ it.compareTo(suburi) == 0 }) are unnecessary and can be removed."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:193:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:370:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:434:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:435:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:435:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:436:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:553:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:555:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:592:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:603:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:623:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:38:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:41:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:43:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:46:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:50:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:59:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:108:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:108:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:108:88",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:126:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:126:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:126:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:46:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:192:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:280:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:282:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:285:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:287:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:333:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:351:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:355:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:437:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:444:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:451:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:546:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVActivity.kt:579:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:59:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:74:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:74:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:80:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:108:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:38:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:38:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:87:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:103:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:108:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:263:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:263:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/SettingsActivity.kt:158:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/SettingsActivity.kt:158:25",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:97:5",
+        "message": "Function onTouchEvent has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/TouchGestures.kt:116:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "TrailingWhitespace",
+      "description": "Checks which lines end with a whitespace.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:137:5",
+        "message": "Line 137 ends with a whitespace."
+      }]
+    }, {
+      "name": "NestedClassesVisibility",
+      "description": "Nested types are often used for implementing private functionality and therefore this should not be public.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:173:5",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of MPVView makes it visible externally."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/MPVView.kt:256:5",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of MPVView makes it visible externally."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/SettingsActivity.kt:1:21",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/SettingsActivity.kt:44:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/jeeb-mpv-android/app/src/main/java/is/xyz/mpv/SettingsActivity.kt:178:63",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }]
+  }]
+}

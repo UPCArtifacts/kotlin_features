@@ -1,0 +1,283 @@
+{
+  "complexity_metrics": {
+    "loc": 455,
+    "sloc": 353,
+    "lloc": 212,
+    "cloc": 1,
+    "mcc": 53,
+    "n_smell": 62,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 250
+  },
+  "metrics": {
+    "number_of_string": 23,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 4,
+    "number_of_inferred_var": 28,
+    "number_of_objects_declarations": 4,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 3,
+    "number_of_declaration": 33,
+    "number_of_var_declaration": 33,
+    "number_of_func_call": 151,
+    "number_of_arguments": 167,
+    "number_of_parameters": 27,
+    "number_of_qualified_expressions": 240,
+    "number_of_inheritances": 6,
+    "number_of_unsafe_calls": 1,
+    "number_of_safe_calls": 1,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 3,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 10,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 1,
+    "number_of_properties": 33,
+    "number_of_functions": 25,
+    "number_of_interfaces": 0,
+    "number_of_classes": 8,
+    "number_of_packages": 4,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 11
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:44:9",
+        "message": "The function run appears to be too complex."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:41:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:91:28",
+        "message": "getDrawable(if (pause_state) R.drawable.vectalign_animated_vector_drawable_end_to_start else R.drawable.vectalign_animated_vector_drawable_start_to_end) cannot be safely cast to AnimatedVectorDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:121:84",
+        "message": "teaImage cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaViewHolder.kt:50:32",
+        "message": "itemView.context cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaViewHolder.kt:68:84",
+        "message": "itemView.teaImage cannot be safely cast to View."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/Timer.kt:19:58",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/androidTest/kotlin/org/ligi/materialtimer/TheMainActivity.kt:10:44",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of TheMainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:27:56",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MainActivity."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:72:138",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:79:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:91:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:121:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/receiver/TimerReceiver.kt:49:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/model/TeaInfo.kt:5:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaViewHolder.kt:68:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:57:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:58:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:71:91",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:76:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:86:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:89:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:110:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:115:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/MainActivity.kt:119:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:9:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:9:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:9:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:9:72",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:10:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:10:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:10:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:10:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:11:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:11:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:11:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:11:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:12:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:12:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:12:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:13:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:13:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:13:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaProvider.kt:13:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/receiver/TimerReceiver.kt:45:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/receiver/TimerReceiver.kt:45:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/receiver/TimerReceiver.kt:45:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaViewHolder.kt:20:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaViewHolder.kt:21:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaViewHolder.kt:37:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaViewHolder.kt:53:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaViewHolder.kt:61:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaViewHolder.kt:66:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/Timer.kt:26:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaListActivity.kt:25:11",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/receiver/TimerReceiver.kt:54:1",
+        "message": "The file TimerReceiver.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/receiver/CancelNotificationReceiver.kt:16:1",
+        "message": "The file CancelNotificationReceiver.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/model/TeaInfo.kt:5:137",
+        "message": "The file TeaInfo.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/model/State.kt:8:1",
+        "message": "The file State.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaViewHolder.kt:71:1",
+        "message": "The file TeaViewHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/TeaAdapter.kt:18:1",
+        "message": "The file TeaAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/ligi-MaterialTeaTimer/android/src/main/java/org/ligi/materialteatimer/Timer.kt:32:1",
+        "message": "The file Timer.kt is not ending with a new line."
+      }]
+    }]
+  }]
+}

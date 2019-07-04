@@ -1,0 +1,242 @@
+{
+  "complexity_metrics": {
+    "loc": 1129,
+    "sloc": 761,
+    "lloc": 507,
+    "cloc": 214,
+    "mcc": 130,
+    "n_smell": 39,
+    "comment_ratio": 28,
+    "mcc_per_thlines": 256
+  },
+  "metrics": {
+    "number_of_string": 51,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 54,
+    "number_of_objects_declarations": 15,
+    "number_of_companion_objects": 6,
+    "number_of_singletons": 3,
+    "number_of_declaration": 83,
+    "number_of_var_declaration": 83,
+    "number_of_func_call": 291,
+    "number_of_arguments": 359,
+    "number_of_parameters": 86,
+    "number_of_qualified_expressions": 480,
+    "number_of_inheritances": 15,
+    "number_of_unsafe_calls": 9,
+    "number_of_safe_calls": 22,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 10,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 1,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 6,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 83,
+    "number_of_functions": 68,
+    "number_of_interfaces": 0,
+    "number_of_classes": 20,
+    "number_of_packages": 5,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 12
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:57:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:57:5",
+        "message": "The function onCreate appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:44:1",
+        "message": "Class 'MainActivity' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/HelpActivity.kt:39:5",
+        "message": "Function onCreate is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/adapter/RecyclerViewDisabler.kt:28:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/customtabs/CustomTabs.kt:58:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/wear/src/main/java/saschpe/poker/activity/MainActivity.kt:144:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/util/BitmapHelper.kt:32:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/util/BitmapHelper.kt:36:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:77:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:96:72",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:118:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:122:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:124:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:129:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/wear/src/main/java/saschpe/poker/activity/MainActivity.kt:56:51",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:51:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:172:25",
+        "message": "getSystemService(Context.SENSOR_SERVICE) cannot be safely cast to SensorManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/adapter/CardArrayAdapter.kt:68:38",
+        "message": "holder cannot be safely cast to HelpCardViewHolder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/adapter/CardArrayAdapter.kt:81:47",
+        "message": "holder cannot be safely cast to SmallCardViewHolder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/adapter/CardArrayAdapter.kt:88:45",
+        "message": "holder cannot be safely cast to BigCardViewHolder."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/common/src/main/java/saschpe/poker/util/PlanningPoker.kt:29:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/common/src/main/java/saschpe/poker/util/PlanningPoker.kt:30:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/common/src/main/java/saschpe/poker/util/PlanningPoker.kt:43:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/common/src/main/java/saschpe/poker/util/PlanningPoker.kt:45:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:62:84",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:95:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/wear/src/main/java/saschpe/poker/activity/MainActivity.kt:49:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/MainActivity.kt:77:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/HelpActivity.kt:104:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/HelpActivity.kt:121:323",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/adapter/CardArrayAdapter.kt:60:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/wear/src/main/java/saschpe/poker/activity/MainActivity.kt:45:138",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/wear/src/main/java/saschpe/poker/activity/MainActivity.kt:56:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/wear/src/main/java/saschpe/poker/adapter/WearCardArrayAdapter.kt:32:37",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/HelpActivity.kt:43:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/HelpActivity.kt:80:5",
+        "message": "Function onOptionsItemSelected has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/mobile/src/main/java/saschpe/poker/activity/HelpActivity.kt:87:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/saschpe-PlanningPoker/wear/src/main/java/saschpe/poker/activity/InfoActivity.kt:37:1",
+        "message": "The file InfoActivity.kt is not ending with a new line."
+      }]
+    }]
+  }]
+}

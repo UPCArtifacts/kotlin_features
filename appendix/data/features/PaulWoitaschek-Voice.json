@@ -1,0 +1,1922 @@
+{
+  "complexity_metrics": {
+    "loc": 16453,
+    "sloc": 13294,
+    "lloc": 8988,
+    "cloc": 707,
+    "mcc": 1865,
+    "n_smell": 569,
+    "comment_ratio": 5,
+    "mcc_per_thlines": 207
+  },
+  "metrics": {
+    "number_of_string": 941,
+    "number_of_string_template": 153,
+    "number_of_inline_func": 23,
+    "number_of_inferred_fun": 107,
+    "number_of_inferred_var": 1398,
+    "number_of_objects_declarations": 98,
+    "number_of_companion_objects": 29,
+    "number_of_singletons": 38,
+    "number_of_declaration": 1588,
+    "number_of_var_declaration": 1588,
+    "number_of_func_call": 4606,
+    "number_of_arguments": 4304,
+    "number_of_parameters": 1458,
+    "number_of_qualified_expressions": 5667,
+    "number_of_inheritances": 116,
+    "number_of_unsafe_calls": 88,
+    "number_of_safe_calls": 115,
+    "number_of_destructuring_declarations": 1,
+    "number_of_when_expressions": 33,
+    "number_of_functions_with_default_value": 33,
+    "number_of_function_call_with_named_value": 194,
+    "number_of_named_argument": 441,
+    "number_of_argument_with_default_value": 83,
+    "number_of_overloaded_op": 9,
+    "number_of_extension_function": 95,
+    "number_of_properties_delegation": 21,
+    "number_of_super_delegation": 2,
+    "number_of_ranges": 15,
+    "number_of_lambdas": 622,
+    "number_of_possible_smart_casts": 14,
+    "number_of_data_class": 23,
+    "number_of_properties": 1598,
+    "number_of_functions": 966,
+    "number_of_interfaces": 25,
+    "number_of_classes": 256,
+    "number_of_packages": 42,
+    "number_of_kts_files": 8,
+    "number_of_kt_files": 232
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/build.gradle.kts:39:12",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration31to32.kt:34:22",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/test/java/de/ph1b/audiobook/BookFactory.kt:12:13",
+        "message": "The function create has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/test/java/de/ph1b/audiobook/ChapterFactory.kt:11:13",
+        "message": "The function create has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/test/java/de/ph1b/audiobook/data/BookFactory.kt:7:13",
+        "message": "The function create has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/test/java/de/ph1b/audiobook/data/ChapterFactory.kt:10:13",
+        "message": "The function create has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/DataBaseExtensions.kt:53:25",
+        "message": "The function query has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/DurationAnalyzer.kt:61:11",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayPresenter.kt:103:53",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/widget/WidgetUpdater.kt:57:41",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CropOverlay.kt:86:55",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BaseActivity.kt:24:36",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BaseActivity.kt:28:18",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BaseActivity.kt:32:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/LoadBookCover.kt:49:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/LoadBookCover.kt:60:24",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/BookmarkPresenter.kt:91:43",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/BookmarkController.kt:49:14",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/ShakeDetector.kt:21:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:144:32",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:159:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:341:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:336:15",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/covercolorextractor/src/main/java/de/ph1b/audiobook/covercolorextractor/CoverColorExtractor.kt:25:7",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/comparator/NaturalOrderComparator.kt:14:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/comparator/NaturalOrderComparator.kt:17:7",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/comparator/NaturalOrderComparator.kt:19:7",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/comparator/NaturalOrderComparator.kt:36:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/BookContent.kt:30:47",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/BookRepository.kt:88:12",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/BookRepository.kt:101:31",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/androidExtensions.kt:1:1",
+        "message": "File 'androidExtensions.kt' with '11' functions detected. Defined threshold inside files is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayController.kt:48:1",
+        "message": "Class 'BookPlayController' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CropOverlay.kt:21:1",
+        "message": "Class 'CropOverlay' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserActivity.kt:26:1",
+        "message": "Class 'FolderChooserActivity' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserPresenter.kt:19:1",
+        "message": "Class 'FolderChooserPresenter' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/BookOverviewController.kt:43:1",
+        "message": "Class 'BookOverviewController' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/BookmarkController.kt:35:1",
+        "message": "Class 'BookmarkController' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/noPauseAnimator/NoPauseAnimator.kt:9:1",
+        "message": "Class 'NoPauseAnimator' with '19' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/AndroidModule.kt:23:1",
+        "message": "Class 'AndroidModule' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/AppComponent.kt:34:1",
+        "message": "Interface 'AppComponent' with '22' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/PrefsModule.kt:17:1",
+        "message": "Class 'PrefsModule' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:42:1",
+        "message": "Class 'PlaybackService' with '17' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:36:1",
+        "message": "Class 'MediaPlayer' with '17' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaSessionCallback.kt:15:1",
+        "message": "Class 'MediaSessionCallback' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlayerController.kt:9:1",
+        "message": "Class 'PlayerController' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/BookRepository.kt:21:1",
+        "message": "Class 'BookRepository' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayController.kt:78:3",
+        "message": "The function render is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:87:3",
+        "message": "The function onCreateDialog is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/StorageDirFinder.kt:26:3",
+        "message": "The function storageDirs is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/test/java/de/ph1b/audiobook/data/repo/internals/DataBaseMigratorTest.kt:44:3",
+        "message": "The function migrate43 is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayController.kt:214:3",
+        "message": "The function setupToolbar appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BookAdder.kt:143:3",
+        "message": "The function deleteOldBooks appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BookAdder.kt:211:3",
+        "message": "The function addNewBook appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CropOverlay.kt:113:3",
+        "message": "The function onTouchEvent appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CoverFromInternetController.kt:193:3",
+        "message": "The function setupToolbar appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/StorageDirFinder.kt:26:3",
+        "message": "The function storageDirs appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/StorageDirFinder.kt:109:3",
+        "message": "The function storageDirs2 appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:253:3",
+        "message": "The function onStartCommand appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/comparator/IntelliJStringComparator.kt:15:3",
+        "message": "The function naturalCompare appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/test/java/de/ph1b/audiobook/data/repo/internals/DataBaseMigratorTest.kt:44:3",
+        "message": "The function migrate43 appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration24to25.kt:28:3",
+        "message": "The function migrate appears to be too complex."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BookAdder.kt:47:1",
+        "message": "Class BookAdder is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:36:1",
+        "message": "Class MediaPlayer is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration24to25.kt:20:1",
+        "message": "Class Migration24to25 is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BookAdder.kt:143:3",
+        "message": "Function deleteOldBooks is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BookAdder.kt:286:3",
+        "message": "Function updateBook is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BookAdder.kt:355:3",
+        "message": "Function getChaptersByRootFile is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:310:3",
+        "message": "Function pause is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/comparator/IntelliJStringComparator.kt:15:3",
+        "message": "Function naturalCompare is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration28to29.kt:12:3",
+        "message": "Function migrate is nested too deeply."
+      }]
+    }, {
+      "name": "ComplexInterface",
+      "description": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/AppComponent.kt:34:1",
+        "message": "The interface AppComponent is too complex. Consider splitting it up."
+      }]
+    }, {
+      "name": "MethodOverloading",
+      "description": "Methods which are overloaded often might be harder to maintain. Furthermore, these methods are tightly coupled. Refactor these methods and try to use optional parameters.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/AppComponent.kt:34:1",
+        "message": "This method is overloaded too many times."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/comparator/IntelliJStringComparator.kt:33:11",
+        "message": "This condition is too complex."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/MetaDataAnalyzer.kt:39:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BookAdder.kt:385:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/audio/LoudnessGain.kt:46:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/Permissions.kt:15:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserPresenter.kt:36:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration34to35.kt:10:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration31to32.kt:17:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration31to32.kt:18:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration31to32.kt:19:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration31to32.kt:20:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration31to32.kt:21:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration39to40.kt:13:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration39to40.kt:14:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration36to37.kt:16:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration36to37.kt:17:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration36to37.kt:18:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration36to37.kt:19:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration36to37.kt:20:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration36to37.kt:21:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration36to37.kt:22:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "PackageNaming",
+      "description": "Package names should match the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/recyclerComponent/CompositeListAdapter.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/recyclerComponent/EqualityItemCallback.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/recyclerComponent/CompositeAdapterHelper.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/recyclerComponent/AdapterComponent.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayPresenter.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayController.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayMvp.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SeekDialogController.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayChapter.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookSearch/BookSearch.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookSearch/BookSearchParser.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookSearch/BookSearchHandler.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/externalStorageMissing/NoExternalStorageActivity.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserActivity.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/StorageDirFinder.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/Holder.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserAdapter.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserPresenter.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserView.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/BookOverviewController.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditBookTitleDialogController.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/BookOverviewViewModel.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/BookOverviewClick.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/BookOverviewComponent.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/BookOverviewAdapter.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/LoadBookCover.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/BookOverviewDiff.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/BookOverviewItemDecoration.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/BookComparator.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/header/BookOverviewHeader.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditCoverDialogController.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditBookBottomSheetController.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/BookOverviewState.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderModel.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderOverviewController.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderOverviewHolder.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderOverviewPresenter.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderOverviewAdapter.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderOverviewDiffHelper.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/noPauseAnimator/AnimatorListenerWrapper.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/noPauseAnimator/NoPauseAnimator.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/audioFocus/AudioFocusHandler.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/audioFocus/AudioFocusRequester.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/audioFocus/CompatAudioFocusRequester.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/audioFocus/AudioFocusRequesterApi26.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/audioFocus/AudioFocusRequesterBelow26.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/sparseArray/sparseArrayExtensions.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/sparseArray/EmptySparseArray.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/SupportDialogController.kt:40:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/SupportDialogController.kt:41:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/PlaybackModule.kt:19:3",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/PlaybackModule.kt:24:3",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/PrefsModule.kt:37:3",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/PrefsModule.kt:45:3",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/PrefsModule.kt:61:3",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/PrefsModule.kt:85:3",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/PrefsModule.kt:93:3",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/PrefsModule.kt:116:3",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/SleepTimer.kt:81:3",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "TopLevelPropertyNaming",
+      "description": "Top level property names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/SleepTimer.kt:26:1",
+        "message": "Private top level property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMinLength",
+      "description": "Function names should not be shorter than the minimum defined in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/Optional.kt:19:5",
+        "message": "Function names should be at least 3 characters long."
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/ThemePickerDialogController.kt:29:13",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/AnimationHelper.kt:11:31",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/DataSourceConverter.kt:45:31",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/PersistenceModule.kt:58:21",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/build.gradle.kts:107:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/test/java/de/ph1b/audiobook/MemoryPref.kt:12:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/test/java/de/ph1b/audiobook/MemoryPref.kt:14:68",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/androidExtensions.kt:23:56",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/androidExtensions.kt:34:11",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/androidExtensions.kt:35:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/PermissionHelper.kt:29:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/UUID.kt:11:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/DialogController.kt:33:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/DialogController.kt:49:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/DialogController.kt:56:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/DialogController.kt:62:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/DialogController.kt:69:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/DialogController.kt:70:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/mvp/MvpController.kt:24:14",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/mvp/PresenterDelegate.kt:15:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/mvp/PresenterDelegate.kt:19:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/mvp/PresenterDelegate.kt:23:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/mvp/PresenterDelegate.kt:27:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/mvp/PresenterDelegate.kt:31:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/mvp/Presenter.kt:15:14",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:35:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:38:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:84:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayController.kt:305:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:64:62",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:91:7",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:121:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:161:7",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SeekDialogController.kt:29:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SeekDialogController.kt:37:11",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SeekDialogController.kt:41:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/SettingsController.kt:79:14",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/SettingsController.kt:91:14",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/PlaybackSpeedDialogController.kt:44:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/PlaybackSpeedDialogController.kt:61:14",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/PlaybackSpeedDialogController.kt:68:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/ThemePickerDialogController.kt:26:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/ThemePickerDialogController.kt:28:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/ThemePickerDialogController.kt:33:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/SupportDialogController.kt:24:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/SupportDialogController.kt:40:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/SupportDialogController.kt:42:7",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/AutoRewindDialogController.kt:29:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/AutoRewindDialogController.kt:36:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/AutoRewindDialogController.kt:44:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BookAdder.kt:65:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BookAdder.kt:235:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CropOverlay.kt:159:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CoverFromInternetController.kt:50:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserPresenter.kt:54:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserPresenter.kt:82:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserPresenter.kt:93:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserPresenter.kt:189:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/audio/LoudnessDialog.kt:40:7",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/audio/LoudnessDialog.kt:45:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/audio/LoudnessDialog.kt:59:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/audio/LoudnessGain.kt:45:7",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditBookTitleDialogController.kt:41:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditBookTitleDialogController.kt:48:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditCoverDialogController.kt:51:7",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditCoverDialogController.kt:61:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditCoverDialogController.kt:79:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditBookBottomSheetController.kt:43:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditBookBottomSheetController.kt:53:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditBookBottomSheetController.kt:88:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditBookBottomSheetController.kt:89:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/BookmarkController.kt:59:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/dialogs/DeleteBookmarkDialog.kt:18:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/dialogs/DeleteBookmarkDialog.kt:19:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/dialogs/EditBookmarkDialog.kt:22:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/dialogs/EditBookmarkDialog.kt:29:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/dialogs/EditBookmarkDialog.kt:39:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/dialogs/AddBookmarkDialog.kt:21:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/dialogs/AddBookmarkDialog.kt:24:14",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/dialogs/AddBookmarkDialog.kt:31:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderOverviewController.kt:34:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/VerticalDividerItemDecoration.kt:24:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/ResourceHelper.kt:25:10",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/SleepTimer.kt:42:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/audioFocus/AudioFocusRequesterApi26.kt:15:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/audioFocus/AudioFocusRequesterApi26.kt:20:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:58:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:62:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlayStateManager.kt:39:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/AndroidAutoConnectedReceiver.kt:19:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/AndroidAutoConnectedReceiver.kt:21:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/comparator/NaturalOrderComparator.kt:53:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/Converters.kt:39:12",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/build.gradle.kts:47:46",
+        "message": "props[\"STORE_FILE\"] cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/build.gradle.kts:48:23",
+        "message": "props[\"STORE_PASSWORD\"] cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/build.gradle.kts:49:18",
+        "message": "props[\"KEY_ALIAS\"] cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/build.gradle.kts:50:21",
+        "message": "props[\"KEY_PASSWORD\"] cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/build.gradle.kts:106:7",
+        "message": "this cannot be safely cast to BaseVariantOutputImpl."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/test/java/de/ph1b/audiobook/features/bookPlaying/BookPlayPresenterTest.kt:168:16",
+        "message": "invocation.args[0] cannot be safely cast to UUID."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/test/java/de/ph1b/audiobook/features/bookPlaying/BookPlayPresenterTest.kt:172:16",
+        "message": "invocation.args[0] cannot be safely cast to UUID."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/MultiLineSpinnerAdapter.kt:32:9",
+        "message": "context.layoutInflater().inflate(R.layout.book_play_spinner, parent, false) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/MultiLineSpinnerAdapter.kt:34:9",
+        "message": "convertView cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:167:26",
+        "message": "layoutContainer.containerView.parent cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/ThemePickerDialogController.kt:33:25",
+        "message": "activity!! cannot be safely cast to AppCompatActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CoverFromInternetController.kt:187:9",
+        "message": "targetController cannot be safely cast to Callback."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BaseController.kt:31:43",
+        "message": "getActivity() cannot be safely cast to AppCompatActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserActivity.kt:82:24",
+        "message": "recycler.itemAnimator cannot be safely cast to DefaultItemAnimator."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserPresenter.kt:182:18",
+        "message": "savedState.getSerializable(SI_CHOSEN_FILE) cannot be safely cast to File?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/BookOverviewController.kt:97:16",
+        "message": "recyclerView.itemAnimator cannot be safely cast to SimpleItemAnimator."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditCoverDialogController.kt:95:30",
+        "message": "targetController cannot be safely cast to Callback."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditBookBottomSheetController.kt:57:21",
+        "message": "activity cannot be safely cast to RouterProvider."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditBookBottomSheetController.kt:70:21",
+        "message": "activity cannot be safely cast to RouterProvider."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditBookBottomSheetController.kt:85:28",
+        "message": "targetController cannot be safely cast to Callback."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/BookmarkController.kt:111:24",
+        "message": "recycler.itemAnimator cannot be safely cast to DefaultItemAnimator."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/BookmarkController.kt:124:30",
+        "message": "viewHolder cannot be safely cast to BookMarkHolder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/dialogs/DeleteBookmarkDialog.kt:25:24",
+        "message": "targetController cannot be safely cast to Callback."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/dialogs/EditBookmarkDialog.kt:33:24",
+        "message": "targetController cannot be safely cast to EditBookmarkDialog.Callback."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/dialogs/EditBookmarkDialog.kt:42:24",
+        "message": "targetController cannot be safely cast to EditBookmarkDialog.Callback."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/dialogs/AddBookmarkDialog.kt:26:24",
+        "message": "targetController cannot be safely cast to AddBookmarkDialog.Callback."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/dialogs/AddBookmarkDialog.kt:35:24",
+        "message": "targetController cannot be safely cast to AddBookmarkDialog.Callback."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/PlayPauseDrawableSetter.kt:11:5",
+        "message": "fab.context.drawable(R.drawable.avd_play_to_pause) cannot be safely cast to AnimatedVectorDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/PlayPauseDrawableSetter.kt:13:5",
+        "message": "fab.context.drawable(R.drawable.avd_pause_to_play) cannot be safely cast to AnimatedVectorDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/AnimationHelper.kt:13:25",
+        "message": "it.animatedValue cannot be safely cast to Float."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CircularRevealBookPlayTransition.kt:22:18",
+        "message": "transitionValues.view.parent cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CircularRevealBookPlayTransition.kt:46:23",
+        "message": "endValues.values?.getOrElse(FINAL_RADIUS) {\n      parentWidth\n    } cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/AndroidModule.kt:35:5",
+        "message": "context.getSystemService(Context.AUDIO_SERVICE) cannot be safely cast to AudioManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/AndroidModule.kt:40:5",
+        "message": "context.getSystemService(Context.ACTIVITY_SERVICE) cannot be safely cast to ActivityManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/AndroidModule.kt:45:5",
+        "message": "context.getSystemService(Context.TELEPHONY_SERVICE) cannot be safely cast to TelephonyManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/AndroidModule.kt:50:5",
+        "message": "context.getSystemService(Context.CONNECTIVITY_SERVICE) cannot be safely cast to ConnectivityManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/AndroidModule.kt:54:5",
+        "message": "context.getSystemService(Context.WINDOW_SERVICE) cannot be safely cast to WindowManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/AndroidModule.kt:59:5",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/AndroidModule.kt:64:5",
+        "message": "context.getSystemService(Context.SENSOR_SERVICE) cannot be safely cast to SensorManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/AndroidModule.kt:69:5",
+        "message": "context.getSystemService(Context.POWER_SERVICE) cannot be safely cast to PowerManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/GetIfPresent.kt:7:13",
+        "message": "it cannot be safely cast to Optional.Present."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/build.gradle.kts:134:7",
+        "message": "subprojects.single { it.name == \"app\" }.tasks\n        .single { it.name == \"lintProprietaryDebug\" } cannot be safely cast to LintBaseTask."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration24to25.kt:129:27",
+        "message": "bookmarksJ.get(i) cannot be safely cast to JSONObject."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration41to42.kt:16:20",
+        "message": "null cannot be safely cast to String?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration38to39.kt:16:20",
+        "message": "null cannot be safely cast to String?."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayPresenter.kt:21:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayPresenter.kt:23:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayPresenter.kt:25:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayPresenter.kt:27:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayPresenter.kt:29:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:24:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:26:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:28:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayController.kt:58:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:48:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:50:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:52:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:54:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:56:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:58:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:60:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SeekDialogController.kt:21:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/SettingsController.kt:24:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/SettingsController.kt:26:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/SettingsController.kt:28:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/SettingsController.kt:30:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/SettingsController.kt:32:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/PlaybackSpeedDialogController.kt:31:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/PlaybackSpeedDialogController.kt:33:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/PlaybackSpeedDialogController.kt:35:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/ThemePickerDialogController.kt:18:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/AutoRewindDialogController.kt:21:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/MainActivity.kt:36:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/MainActivity.kt:37:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/MainActivity.kt:38:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/MainActivity.kt:40:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/MainActivity.kt:42:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/MainActivity.kt:44:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/MainActivity.kt:46:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/MainActivity.kt:48:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/MainActivity.kt:50:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/MainActivity.kt:53:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/widget/BaseWidgetProvider.kt:13:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CoverFromInternetController.kt:42:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CoverFromInternetController.kt:44:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserActivity.kt:48:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserActivity.kt:49:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserActivity.kt:50:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserActivity.kt:51:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserPresenter.kt:28:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserPresenter.kt:30:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserPresenter.kt:32:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/audio/LoudnessDialog.kt:28:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/audio/LoudnessDialog.kt:30:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/BookOverviewController.kt:56:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/BookOverviewController.kt:59:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditBookTitleDialogController.kt:32:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/LoadBookCover.kt:24:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditCoverDialogController.kt:39:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditCoverDialogController.kt:41:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/EditBookBottomSheetController.kt:35:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderOverviewController.kt:91:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderOverviewController.kt:93:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderOverviewPresenter.kt:21:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderOverviewPresenter.kt:23:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/App.kt:28:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/App.kt:30:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/App.kt:32:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/App.kt:34:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/App.kt:84:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:50:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:52:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:54:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:56:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:58:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:60:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:62:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:64:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:66:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:68:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:70:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:72:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:74:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:76:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/di/DataInjector.kt:5:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/Converters.kt:15:3",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/opensource/java/de/ph1b/audiobook/features/crashlytics/CrashlyticsProxy.kt:16:12",
+        "message": "Function parameter app is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/Permissions.kt:43:5",
+        "message": "Function parameter grantResults is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserAdapter.kt:16:3",
+        "message": "Private property c is unused."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/DurationAnalyzer.kt:70:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/FormatTime.kt:34:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/FormatTime.kt:36:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/Permissions.kt:15:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/ElevateToolbarOnScroll.kt:10:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/viewExtensions.kt:67:78",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:54:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:59:86",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:65:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:65:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:67:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:75:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:79:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:90:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:90:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/JumpToPositionDialogController.kt:90:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:74:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:75:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:101:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:102:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:103:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:104:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:105:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:106:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:107:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:111:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/dialogs/PlaybackSpeedDialogController.kt:64:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/DoubleSettingView.kt:25:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BookAdder.kt:150:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/widget/WidgetUpdater.kt:188:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/widget/WidgetUpdater.kt:219:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/widget/WidgetUpdater.kt:219:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/widget/WidgetUpdater.kt:219:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/widget/WidgetUpdater.kt:221:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/widget/WidgetUpdater.kt:251:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/widget/WidgetUpdater.kt:251:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/widget/WidgetUpdater.kt:251:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CropOverlay.kt:43:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CropOverlay.kt:83:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CropOverlay.kt:90:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/StorageDirFinder.kt:37:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/StorageDirFinder.kt:139:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/audio/LoudnessDialog.kt:50:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/audio/LoudnessDialog.kt:65:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/audio/Equalizer.kt:45:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/BookOverviewItemDecoration.kt:12:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CoverReplacement.kt:30:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/SquareProgressView.kt:18:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/SquareProgressView.kt:40:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/BookChangeHandler.kt:47:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/BookChangeHandler.kt:51:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/BookChangeHandler.kt:65:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CoverFromDiscCollector.kt:85:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CoverFromDiscCollector.kt:97:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/ImageHelper.kt:54:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/PrefsModule.kt:73:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/PrefsModule.kt:81:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:174:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/SleepTimer.kt:26:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/SleepTimer.kt:89:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:133:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:138:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:264:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:271:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:283:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:324:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/ShakeListener.kt:19:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/ShakeListener.kt:27:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/covercolorextractor/src/main/java/de/ph1b/audiobook/covercolorextractor/CoverColorExtractor.kt:52:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/covercolorextractor/src/main/java/de/ph1b/audiobook/covercolorextractor/CoverColorExtractor.kt:52:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/comparator/NaturalOrderComparator.kt:50:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration24to25.kt:26:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration42to43.kt:7:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration27to28.kt:8:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration37to38.kt:8:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration34to35.kt:8:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration31to32.kt:15:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration35to36.kt:38:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration30to31.kt:12:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration32to34.kt:34:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration32to34.kt:34:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration43to44.kt:20:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration25to26.kt:10:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration28to29.kt:10:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration41to42.kt:7:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration39to40.kt:11:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration29to30.kt:72:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration38to39.kt:7:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration36to37.kt:14:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration26to27.kt:12:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration40to41.kt:8:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration23to24.kt:8:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/DurationAnalyzer.kt:116:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/Permissions.kt:20:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/MetaDataAnalyzer.kt:46:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/MetaDataAnalyzer.kt:66:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/viewExtensions.kt:71:3",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayPresenter.kt:95:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/SleepTimerDialogFragment.kt:83:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/settings/SettingsController.kt:100:7",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserAdapter.kt:31:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/audio/Equalizer.kt:36:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/audio/LoudnessGain.kt:34:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/BookOverviewController.kt:195:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderOverviewAdapter.kt:29:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CoverFromDiscCollector.kt:40:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CoverFromDiscCollector.kt:44:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CircularRevealBookPlayTransition.kt:19:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CircularRevealBookPlayTransition.kt:25:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CircularRevealBookPlayTransition.kt:39:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/exoExtensions.kt:26:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:221:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:252:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:364:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:373:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/Optional.kt:20:7",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/recyclerComponent/CompositeListAdapter.kt:23:100",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/recyclerComponent/CompositeAdapterHelper.kt:39:98",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/androidExtensions.kt:26:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/misc/Observables.kt:14:20",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/BookOverviewComponent.kt:17:74",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookmarks/list/BookmarkDiffUtilCallback.kt:14:85",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/noPauseAnimator/NoPauseAnimator.kt:29:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/noPauseAnimator/NoPauseAnimator.kt:33:52",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/noPauseAnimator/NoPauseAnimator.kt:41:69",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/noPauseAnimator/NoPauseAnimator.kt:45:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/noPauseAnimator/NoPauseAnimator.kt:53:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/noPauseAnimator/NoPauseAnimator.kt:57:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/noPauseAnimator/NoPauseAnimator.kt:61:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/AndroidModule.kt:85:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/injection/PlaybackModule.kt:20:88",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:322:18",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/BookUriConverter.kt:18:28",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/DataSourceConverter.kt:35:55",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/Converters.kt:33:71",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/Converters.kt:38:68",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/PersistenceModule.kt:47:74",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "UnnecessaryAbstractClass",
+      "description": "An abstract class is unnecessary and can be refactored. An abstract class should have both abstract and concrete properties or functions. An abstract class without a concrete member can be refactored to an interface. An abstract class without an abstract member can be refactored to a concrete class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/mvp/Presenter.kt:10:1",
+        "message": "An abstract class without an abstract member can be refactored to a concrete class."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookPlaying/BookPlayChapter.kt:17:3",
+        "message": "The data class BookPlayChapter contains functions which are not registered conversion functions. The offending method is called correctedName"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/CachedImage.kt:12:3",
+        "message": "The data class CachedImage contains functions which are not registered conversion functions. The offending method is called matches"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/Book.kt:26:3",
+        "message": "The data class Book contains functions which are not registered conversion functions. The offending method is called updateMetaData"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/Book.kt:32:3",
+        "message": "The data class Book contains functions which are not registered conversion functions. The offending method is called updateContent"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/Book.kt:36:3",
+        "message": "The data class Book contains functions which are not registered conversion functions. The offending method is called update"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/Book.kt:54:3",
+        "message": "The data class Book contains functions which are not registered conversion functions. The offending method is called coverFile"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/BookContent.kt:12:3",
+        "message": "The data class BookContent contains functions which are not registered conversion functions. The offending method is called updateSettings"
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BookAdder.kt:164:11",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BookAdder.kt:181:11",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:194:5",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/BookAdder.kt:404:3",
+        "message": "Function getBookFromDb has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CoverFromInternetController.kt:263:3",
+        "message": "Function handleBack has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserPresenter.kt:123:3",
+        "message": "Function canAddNewFolder has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CircularRevealBookPlayTransition.kt:32:3",
+        "message": "Function onAppear has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/MediaBrowserHelper.kt:46:3",
+        "message": "Function mediaItems has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/BookUriConverter.kt:35:3",
+        "message": "Function parse has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:278:3",
+        "message": "Function previousByMarks has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/common/src/main/java/de/ph1b/audiobook/common/comparator/IntelliJStringComparator.kt:15:3",
+        "message": "Function naturalCompare has 11 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/Bookmark.kt:29:3",
+        "message": "Function compareTo has 4 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CropOverlay.kt:93:13",
+        "message": "Parentheses in (target - touchOffset) are unnecessary and can be replaced with: target - touchOffset"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/imagepicker/CropOverlay.kt:93:47",
+        "message": "Parentheses in (target + touchOffset) are unnecessary and can be replaced with: target + touchOffset"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/LoadBookCover.kt:56:51",
+        "message": "Parentheses in (MAX_IMAGE_SIZE - 1) are unnecessary and can be replaced with: MAX_IMAGE_SIZE - 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/BookOverviewDiff.kt:10:7",
+        "message": "Parentheses in (oldItem.id == newItem.id &&\n          oldItem.content.position == newItem.content.position &&\n          oldItem.name == newItem.name) are unnecessary and can be replaced with: oldItem.id == newItem.id &&\n          oldItem.content.position == newItem.content.position &&\n          oldItem.name == newItem.name"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/list/BookComparator.kt:17:18",
+        "message": "Parentheses in (byLastPlayed) are unnecessary and can be replaced with: byLastPlayed"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderOverviewController.kt:150:18",
+        "message": "Parentheses in ((buttonRepresentingTheFam.left + buttonRepresentingTheFam.right) / 2) are unnecessary and can be replaced with: (buttonRepresentingTheFam.left + buttonRepresentingTheFam.right) / 2"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderOverview/FolderOverviewController.kt:151:23",
+        "message": "Parentheses in ((buttonRepresentingTheFam.top + buttonRepresentingTheFam.bottom) / 2) are unnecessary and can be replaced with: (buttonRepresentingTheFam.top + buttonRepresentingTheFam.bottom) / 2"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CoverReplacement.kt:33:13",
+        "message": "Parentheses in (height / 2f) are unnecessary and can be replaced with: height / 2f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CoverReplacement.kt:33:29",
+        "message": "Parentheses in ((textPaint.descent() + textPaint.ascent()) / 2f) are unnecessary and can be replaced with: (textPaint.descent() + textPaint.ascent()) / 2f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/CoverFromDiscCollector.kt:97:39",
+        "message": "Parentheses in (mi.availMem / 3L) are unnecessary and can be replaced with: mi.availMem / 3L"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/ImageHelper.kt:101:7",
+        "message": "Parentheses in (height / width) are unnecessary and can be replaced with: height / width"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/ImageHelper.kt:103:7",
+        "message": "Parentheses in (width / height) are unnecessary and can be replaced with: width / height"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/ImageHelper.kt:114:14",
+        "message": "Parentheses in (halfHeight / inSampleSize) are unnecessary and can be replaced with: halfHeight / inSampleSize"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/uitools/ImageHelper.kt:114:57",
+        "message": "Parentheses in (halfWidth / inSampleSize) are unnecessary and can be replaced with: halfWidth / inSampleSize"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/NotificationCreator.kt:127:25",
+        "message": "Parentheses in (book.content.currentChapterIndex + 1) are unnecessary and can be replaced with: book.content.currentChapterIndex + 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/MediaPlayer.kt:271:48",
+        "message": "Parentheses in (seekTimeInSeconds * 1000) are unnecessary and can be replaced with: seekTimeInSeconds * 1000"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/Chapter.kt:19:14",
+        "message": "Parentheses in (Index(value = [\"bookId\"])) are unnecessary and can be replaced with: Index(value = [\"bookId\"])"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration24to25.kt:68:66",
+        "message": "Parentheses in (File(root).name) are unnecessary and can be replaced with: File(root).name"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/migrations/Migration24to25.kt:239:32",
+        "message": "Parentheses in (File(root).name) are unnecessary and can be replaced with: File(root).name"
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookSearch/BookSearchHandler.kt:31:7",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/BookOverviewController.kt:90:9",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/BookOverviewController.kt:131:7",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/bookOverview/BookOverviewController.kt:180:7",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/PlaybackService.kt:282:7",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/utils/exoExtensions.kt:25:11",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/StorageDirFinder.kt:152:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/data/src/main/java/de/ph1b/audiobook/data/repo/internals/SparseArrayAdapter.kt:37:3",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/features/folderChooser/FolderChooserPresenter.kt:194:5",
+        "message": "MARSHMALLOW_SD_FALLBACK can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/events/HeadsetPlugReceiver.kt:16:3",
+        "message": "PLUGGED can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/app/src/main/java/de/ph1b/audiobook/playback/events/HeadsetPlugReceiver.kt:17:3",
+        "message": "UNPLUGGED can be a `const val`."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/buildSrc/src/main/kotlin/deps/Deps.kt:3:34",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of Versions."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/build.gradle.kts:5:1",
+        "message": "The import 'com.android.builder.model.AndroidProject' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/PaulWoitaschek-Voice/build.gradle.kts:6:1",
+        "message": "The import 'com.github.benmanes.gradle.versions.updates.DependencyUpdates' is unused."
+      }]
+    }]
+  }]
+}

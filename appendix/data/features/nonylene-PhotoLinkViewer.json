@@ -1,0 +1,713 @@
+{
+  "complexity_metrics": {
+    "loc": 1522,
+    "sloc": 1202,
+    "lloc": 776,
+    "cloc": 65,
+    "mcc": 210,
+    "n_smell": 173,
+    "comment_ratio": 5,
+    "mcc_per_thlines": 270
+  },
+  "metrics": {
+    "number_of_string": 96,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 93,
+    "number_of_objects_declarations": 10,
+    "number_of_companion_objects": 1,
+    "number_of_singletons": 1,
+    "number_of_declaration": 144,
+    "number_of_var_declaration": 144,
+    "number_of_func_call": 601,
+    "number_of_arguments": 614,
+    "number_of_parameters": 153,
+    "number_of_qualified_expressions": 772,
+    "number_of_inheritances": 18,
+    "number_of_unsafe_calls": 24,
+    "number_of_safe_calls": 14,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 3,
+    "number_of_functions_with_default_value": 4,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 4,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 8,
+    "number_of_properties_delegation": 28,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 2,
+    "number_of_lambdas": 60,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 144,
+    "number_of_functions": 96,
+    "number_of_interfaces": 2,
+    "number_of_classes": 22,
+    "number_of_packages": 4,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 17
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:49:42",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:84:39",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:164:39",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:72:32",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:98:41",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:102:22",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:222:32",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:278:32",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:284:44",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:223:67",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:245:54",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:247:60",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/debug/java/net/nonylene/photolinkviewer/debug/DebugIntentActivity.kt:70:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:100:85",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:205:71",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:109:44",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:155:24",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:113:54",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:73:35",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:37:1",
+        "message": "Class 'TwitterOAuthActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:55:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:55:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:207:9",
+        "message": "The function gotShowStatus appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetView.kt:52:5",
+        "message": "The function setEntry appears to be too complex."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:219:25",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetView.kt:52:5",
+        "message": "Function setEntry is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptySecondaryConstructor",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/HeightScalableScrollView.kt:15:144",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/HeightScalableScrollView.kt:18:113",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/HeightScalableScrollView.kt:21:80",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/HeightScalableScrollView.kt:24:52",
+        "message": "This empty block of code can be removed."
+      }]
+    }, {
+      "name": "EmptyDefaultConstructor",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:18:27",
+        "message": "An empty default constructor can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PLVApplication.kt:42:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:168:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:282:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:287:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:98:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:101:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:136:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }, {
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:139:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:100:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:194:13",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:195:13",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:196:13",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:131:17",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:132:17",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:149:29",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:160:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:90:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:163:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:164:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:167:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetView.kt:50:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/MyCursorAdapter.kt:26:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/MyCursorAdapter.kt:30:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "TopLevelPropertyNaming",
+      "description": "Top level property names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:5:1",
+        "message": "Private top level property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:6:1",
+        "message": "Private top level property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:7:1",
+        "message": "Private top level property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:8:1",
+        "message": "Private top level property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PLVApplication.kt:29:20",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:187:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:50:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:55:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:163:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:194:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:220:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:111:56",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:111:72",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:145:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:145:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:147:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:152:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:220:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:220:61",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:253:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetView.kt:147:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/CheckableLinearLayout.kt:18:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetLoadingView.kt:44:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetLoadingView.kt:45:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetLoadingView.kt:49:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetLoadingView.kt:50:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:49:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:66:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:104:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:38:10",
+        "message": "findViewById(R.id.quality_tab_strip) cannot be safely cast to PagerTabStrip."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:39:10",
+        "message": "findViewById(R.id.quality_pager) cannot be safely cast to ViewPager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:105:22",
+        "message": "view.findViewById(R.id.about_version) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:140:32",
+        "message": "view.findViewById(R.id.accounts_spinner) cannot be safely cast to Spinner."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:150:46",
+        "message": "getDialog().findViewById(R.id.spinner_edit) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:96:26",
+        "message": "listView.getItemAtPosition(position) cannot be safely cast to Cursor."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:115:25",
+        "message": "listView.getItemAtPosition(it) cannot be safely cast to Cursor."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:247:40",
+        "message": "LayoutInflater.from(this@TwitterDisplay).inflate(R.layout.tweets_list_view, mTweetBaseLayout, false) cannot be safely cast to ListView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetView.kt:60:14",
+        "message": "context.getSystemService(Context.CLIPBOARD_SERVICE) cannot be safely cast to ClipboardManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetView.kt:166:24",
+        "message": "LayoutInflater.from(urlLayout.context).inflate(R.layout.twitter_url, urlLayout, false) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetLoadingView.kt:37:23",
+        "message": "findViewById(R.id.loading_imageview) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/FaqActivity.kt:13:23",
+        "message": "findViewById(R.id.web_view) cannot be safely cast to WebView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/MyCursorAdapter.kt:20:30",
+        "message": "context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/MyCursorAdapter.kt:27:28",
+        "message": "view.findViewById(R.id.screen) cannot be safely cast to CheckedTextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/MyCursorAdapter.kt:32:29",
+        "message": "view.findViewById(R.id.icon) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:51:28",
+        "message": "(convertView ?: inflater.inflate(R.layout.loading_layout, parent, false)) cannot be safely cast to UserTweetLoadingView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:56:29",
+        "message": "(convertView ?: inflater.inflate(R.layout.twitter_status_list, parent, false)) cannot be safely cast to UserTweetView."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:199:1",
+        "message": "The file PreferenceActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:313:1",
+        "message": "The file TwitterOAuthActivity.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:22:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:25:1",
+        "message": "net.nonylene.photolinkviewer.tool.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:32:1",
+        "message": "net.nonylene.photolinkviewer.tool.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:36:1",
+        "message": "twitter4j.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:173:29",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:180:66",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:72:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:194:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:222:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:278:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:284:143",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:40:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:110:53",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:117:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:121:137",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:219:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:247:25",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetView.kt:166:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/HeightScalableScrollView.kt:14:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/MyCursorAdapter.kt:17:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:51:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:56:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:169:31",
+        "message": "Parentheses in (MyAsyncTwitter.getAsyncTwitter(activity, resultCode)) are unnecessary and can be replaced with: MyAsyncTwitter.getAsyncTwitter(activity, resultCode)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetView.kt:143:16",
+        "message": "Parentheses in (object : PLVUrlService.PLVUrlListener {\n            var position: Int? = null\n\n            override fun onGetPLVUrlFinished(plvUrls: Array<PLVUrl>) {\n                tileView.setPLVUrls(position!!, plvUrls)\n                tileView.notifyChanged()\n            }\n\n            override fun onGetPLVUrlFailed(text: String) {\n                position?.let {\n                    tileView.removeImageView(it)\n                    tileView.notifyChanged()\n                }\n            }\n\n            override fun onURLAccepted() {\n                position = tileView.addImageView()\n                tileView.notifyChanged()\n            }\n        }) are unnecessary and can be replaced with: object : PLVUrlService.PLVUrlListener {\n            var position: Int? = null\n\n            override fun onGetPLVUrlFinished(plvUrls: Array<PLVUrl>) {\n                tileView.setPLVUrls(position!!, plvUrls)\n                tileView.notifyChanged()\n            }\n\n            override fun onGetPLVUrlFailed(text: String) {\n                position?.let {\n                    tileView.removeImageView(it)\n                    tileView.notifyChanged()\n                }\n            }\n\n            override fun onURLAccepted() {\n                position = tileView.addImageView()\n                tileView.notifyChanged()\n            }\n        }"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/HeightScalableScrollView.kt:29:46",
+        "message": "Parentheses in (it) are unnecessary and can be replaced with: it"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:109:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PLVApplication.kt:39:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PLVApplication.kt:39:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PLVApplication.kt:39:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:90:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:148:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:197:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:197:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:197:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:197:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetView.kt:78:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:98:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:67:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:71:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/CheckableLinearLayout.kt:17:39",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:35:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:39:62",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:44:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:71:50",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:75:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:79:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:83:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:10:82",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:14:94",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:18:80",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:22:92",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:26:90",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:30:100",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:34:86",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:38:99",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:194:13",
+        "message": "ABOUT_FRAGMENT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:195:13",
+        "message": "TWITTER_FRAGMENT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/PreferenceActivity.kt:196:13",
+        "message": "TWEET_CODE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:5:1",
+        "message": "INSTAGRAM_SWITCH_KEY can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:6:1",
+        "message": "TWITTER_OAUTHED_KEY can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:7:1",
+        "message": "TWITTER_DEFAULT_SCREEN_KEY can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/Preferences.kt:8:1",
+        "message": "SHOWN_INITIAL_FAQ_SNACK_BAR can be a `const val`."
+      }]
+    }, {
+      "name": "UntilInsteadOfRangeTo",
+      "description": "'..' call can be replaced with 'until'",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterOAuthActivity.kt:114:14",
+        "message": "'..' call can be replaced with 'until'"
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:55:5",
+        "message": "Function onCreate has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/TwitterDisplay.kt:37:31",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of TwitterDisplay."
+      }]
+    }, {
+      "name": "RedundantVisibilityModifierRule",
+      "description": "Checks for redundant visibility modifiers. Public is the default visibility for classes. The public modifier is redundant.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetLoadingView.kt:60:5",
+        "message": "LoadingViewListener is explicitly marked as public. Public is the default visibility for classes. The public modifier is redundant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetLoadingView.kt:22:5",
+        "message": "loadingViewListener is explicitly marked as public. Properties are public by default so this modifier is redundant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/view/UserTweetLoadingView.kt:41:5",
+        "message": "setIsRequesting is explicitly marked as public. Functions are public by default so this modifier is redundant."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/AccountsList.kt:3:1",
+        "message": "The class AccountsList defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:89:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/nonylene-PhotoLinkViewer/app/src/main/java/net/nonylene/photolinkviewer/tool/TwitterStatusAdapter.kt:98:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }]
+  }]
+}

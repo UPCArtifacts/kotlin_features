@@ -1,0 +1,1846 @@
+{
+  "complexity_metrics": {
+    "loc": 2607,
+    "sloc": 2229,
+    "lloc": 1741,
+    "cloc": 126,
+    "mcc": 491,
+    "n_smell": 553,
+    "comment_ratio": 5,
+    "mcc_per_thlines": 282
+  },
+  "metrics": {
+    "number_of_string": 197,
+    "number_of_string_template": 39,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 1,
+    "number_of_inferred_var": 275,
+    "number_of_objects_declarations": 23,
+    "number_of_companion_objects": 5,
+    "number_of_singletons": 1,
+    "number_of_declaration": 358,
+    "number_of_var_declaration": 364,
+    "number_of_func_call": 887,
+    "number_of_arguments": 1152,
+    "number_of_parameters": 180,
+    "number_of_qualified_expressions": 1433,
+    "number_of_inheritances": 32,
+    "number_of_unsafe_calls": 22,
+    "number_of_safe_calls": 67,
+    "number_of_destructuring_declarations": 6,
+    "number_of_when_expressions": 9,
+    "number_of_functions_with_default_value": 4,
+    "number_of_function_call_with_named_value": 5,
+    "number_of_named_argument": 5,
+    "number_of_argument_with_default_value": 9,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 11,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 29,
+    "number_of_lambdas": 41,
+    "number_of_possible_smart_casts": 10,
+    "number_of_data_class": 0,
+    "number_of_properties": 352,
+    "number_of_functions": 111,
+    "number_of_interfaces": 0,
+    "number_of_classes": 68,
+    "number_of_packages": 2,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 16
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:184:5",
+        "message": "The function tryBeat is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:269:5",
+        "message": "The function render is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/OpenFoolGame.kt:37:5",
+        "message": "The function create is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:46:5",
+        "message": "The function runGame is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:11:1",
+        "message": "Class Player is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:39:1",
+        "message": "Class GameScreen is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:11:1",
+        "message": "Class PlayerTesting is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:50:5",
+        "message": "The function handValue appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:135:5",
+        "message": "The function throwOrDone appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:184:5",
+        "message": "The function tryBeat appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:346:5",
+        "message": "The function sortCards appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:269:5",
+        "message": "The function render appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:421:5",
+        "message": "The function endTurn appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:498:5",
+        "message": "The function tintCards appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:549:5",
+        "message": "The function handle appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:695:5",
+        "message": "The function drawCardsToPlayer appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:76:5",
+        "message": "The function render appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:32:5",
+        "message": "The function render appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/OpenFoolGame.kt:37:5",
+        "message": "The function create appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:169:5",
+        "message": "The function step appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:272:5",
+        "message": "The function endTurn appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:11:1",
+        "message": "Class 'Player' with '19' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:39:1",
+        "message": "Class 'GameScreen' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:252:13",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:233:21",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:278:13",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:393:17",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Holiday.kt:17:9",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:67:21",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:353:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:361:38",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:362:38",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:363:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:366:38",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:367:38",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:368:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:371:38",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:372:38",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:373:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:376:38",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:377:38",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:378:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:269:5",
+        "message": "Function render is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:169:5",
+        "message": "Function step is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/desktop/src/ru/hyst329/openfool/desktop/DesktopLauncher.kt:13:5",
+        "message": "Function main is nested too deeply."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:277:34",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/OpenFoolGame.kt:58:27",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Deck.kt:39:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:171:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:172:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:189:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:232:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:233:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:234:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:235:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:37:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:38:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:69:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:23:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:796:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:797:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:798:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:799:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:800:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:802:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:803:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:804:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:805:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:806:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:808:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:809:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:810:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:811:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:812:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:813:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:814:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:815:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:290:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:216:40",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:295:53",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:152:31",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:171:35",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:190:34",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:221:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:173:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:198:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:221:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:697:14",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:706:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/CardActor.kt:50:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:198:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:209:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:209:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:209:71",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:209:92",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:249:70",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:252:51",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Deck.kt:23:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Deck.kt:28:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Deck.kt:33:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Deck.kt:38:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Deck.kt:38:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:46:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:48:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:93:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:85:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:174:37",
+        "message": "event.target cannot be safely cast to CardActor."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:427:32",
+        "message": "attackCards[i] cannot be safely cast to Card."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:431:32",
+        "message": "defenseCards[i] cannot be safely cast to Card."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:570:27",
+        "message": "event.getTarget() cannot be safely cast to Player."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:608:26",
+        "message": "event.getTarget() cannot be safely cast to Player."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:647:27",
+        "message": "event.getTarget() cannot be safely cast to Player."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:675:26",
+        "message": "event.getTarget() cannot be safely cast to Player."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:686:26",
+        "message": "event.getTarget() cannot be safely cast to Player."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:708:24",
+        "message": "deck.draw() cannot be safely cast to Card."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:118:32",
+        "message": "playerCountSpinner.model cannot be safely cast to IntSpinnerModel."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:95:24",
+        "message": "deck.draw() cannot be safely cast to Card."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:122:27",
+        "message": "event.getTarget() cannot be safely cast to Player."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:135:26",
+        "message": "event.getTarget() cannot be safely cast to Player."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:145:26",
+        "message": "event.getTarget() cannot be safely cast to Player."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:155:26",
+        "message": "event.getTarget() cannot be safely cast to Player."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:278:32",
+        "message": "attackCards[i] cannot be safely cast to Card."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:282:32",
+        "message": "defenseCards[i] cannot be safely cast to Card."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Card.kt:12:55",
+        "message": "Parentheses in (deuceBeatsAce && thisRankValue == 0 && otherRankValue == 12) are unnecessary and can be replaced with: deuceBeatsAce && thisRankValue == 0 && otherRankValue == 12"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:62:21",
+        "message": "Parentheses in (relativeCardValue(r.value)) are unnecessary and can be replaced with: relativeCardValue(r.value)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:397:50",
+        "message": "Parentheses in (rankValue + maxValue - 14) are unnecessary and can be replaced with: rankValue + maxValue - 14"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:275:21",
+        "message": "Parentheses in (outOfPlay.map { if (it) 0 else 1 }.fold(initial = 0) { total, current -> total + current }) are unnecessary and can be replaced with: outOfPlay.map { if (it) 0 else 1 }.fold(initial = 0) { total, current -> total + current }"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:290:39",
+        "message": "Parentheses in (if (ruleSet.loweredFirstDiscardLimit\n                        && discardPile.isEmpty())\n                    DEAL_LIMIT else DEAL_LIMIT - 1) are unnecessary and can be replaced with: if (ruleSet.loweredFirstDiscardLimit\n                        && discardPile.isEmpty())\n                    DEAL_LIMIT else DEAL_LIMIT - 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:339:33",
+        "message": "Parentheses in (playerTook && currentAttackerIndex == currentDefenderIndex) are unnecessary and can be replaced with: playerTook && currentAttackerIndex == currentDefenderIndex"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:367:28",
+        "message": "Parentheses in (Gdx.graphics.width / 800f) are unnecessary and can be replaced with: Gdx.graphics.width / 800f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:368:28",
+        "message": "Parentheses in (Gdx.graphics.height / 480f) are unnecessary and can be replaced with: Gdx.graphics.height / 480f"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:455:39",
+        "message": "Parentheses in (playerIndex == 0) are unnecessary and can be replaced with: playerIndex == 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:535:24",
+        "message": "Parentheses in (outOfPlay.map { if (it) 0 else 1 }.fold(initial = 0) { total, current -> total + current }) are unnecessary and can be replaced with: outOfPlay.map { if (it) 0 else 1 }.fold(initial = 0) { total, current -> total + current }"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:541:47",
+        "message": "Parentheses in (attackCards[it] != null) are unnecessary and can be replaced with: attackCards[it] != null"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:711:35",
+        "message": "Parentheses in (playerIndex == 0) are unnecessary and can be replaced with: playerIndex == 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:272:30",
+        "message": "Parentheses in (360f + 90f * index) are unnecessary and can be replaced with: 360f + 90f * index"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:20:32",
+        "message": "Parentheses in (playerCount > 2 && playerCount % 2 == 0) are unnecessary and can be replaced with: playerCount > 2 && playerCount % 2 == 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:30:32",
+        "message": "Parentheses in (playerCount > 2 && playerCount % 2 == 0) are unnecessary and can be replaced with: playerCount > 2 && playerCount % 2 == 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:46:36",
+        "message": "Parentheses in (cardCount / 4) are unnecessary and can be replaced with: cardCount / 4"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:166:20",
+        "message": "Parentheses in (outOfPlay.map { if (it) 0 else 1 }.fold(initial = 0) { total, current -> total + current }) are unnecessary and can be replaced with: outOfPlay.map { if (it) 0 else 1 }.fold(initial = 0) { total, current -> total + current }"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:173:21",
+        "message": "Parentheses in (outOfPlay.map { if (it) 0 else 1 }.fold(initial = 0) { total, current -> total + current }) are unnecessary and can be replaced with: outOfPlay.map { if (it) 0 else 1 }.fold(initial = 0) { total, current -> total + current }"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:186:39",
+        "message": "Parentheses in (if (ruleSet.loweredFirstDiscardLimit\n                        && discardPile.isEmpty())\n                    DEAL_LIMIT else DEAL_LIMIT - 1) are unnecessary and can be replaced with: if (ruleSet.loweredFirstDiscardLimit\n                        && discardPile.isEmpty())\n                    DEAL_LIMIT else DEAL_LIMIT - 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:226:29",
+        "message": "Parentheses in (playerTook && currentAttackerIndex == currentDefenderIndex) are unnecessary and can be replaced with: playerTook && currentAttackerIndex == currentDefenderIndex"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Card.kt:8:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Card.kt:8:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Card.kt:9:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Card.kt:9:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Card.kt:12:113",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:33:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:34:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:55:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:55:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:55:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:57:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:58:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:64:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:68:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:76:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:87:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:88:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:112:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:112:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:113:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:124:156",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:124:173",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:141:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:151:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:151:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:152:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:165:156",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:165:173",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:171:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:172:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:189:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:190:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:232:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:233:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:234:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:235:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:269:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:278:117",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:355:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:355:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:356:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:356:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:357:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:357:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:358:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:358:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:395:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:395:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:397:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:81:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:81:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:113:94",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:119:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:119:78",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:120:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:218:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:220:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:247:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:250:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:365:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:366:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:367:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:368:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:378:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:378:107",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:385:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:385:96",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:393:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:444:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:444:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:445:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:445:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:446:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:446:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:448:102",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:458:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:463:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:470:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:532:82",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:564:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:567:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:568:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:577:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:602:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:605:94",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:606:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:615:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:641:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:644:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:645:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:654:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:700:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:714:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:719:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:784:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Rank.kt:11:11",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Rank.kt:12:10",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Rank.kt:13:10",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Rank.kt:14:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Rank.kt:15:11",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Rank.kt:16:11",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Rank.kt:17:10",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Rank.kt:18:9",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Rank.kt:19:10",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Rank.kt:20:11",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Rank.kt:21:10",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Holiday.kt:14:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Holiday.kt:14:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Holiday.kt:17:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Holiday.kt:17:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Holiday.kt:17:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:20:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:20:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:35:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:35:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:35:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:35:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:44:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:44:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:44:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:44:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:47:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:47:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:47:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:47:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:51:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:51:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:51:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:51:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:55:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:55:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:55:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:55:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:58:71",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:60:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:60:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:60:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:60:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:68:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:68:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:68:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:68:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:72:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:72:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:72:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:72:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:75:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:75:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:75:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:75:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:79:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:79:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:79:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:79:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:91:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:91:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:91:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:76:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:76:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:79:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:92:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:92:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:92:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:92:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:102:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:102:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:102:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:102:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:112:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:112:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:112:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:112:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:127:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:127:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:127:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:127:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:130:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:130:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:130:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:130:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:133:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:133:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:133:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:133:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:136:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:136:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:136:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:136:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:140:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:140:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:140:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:140:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:151:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:151:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:151:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:151:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:170:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:170:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:170:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:170:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:189:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:189:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:189:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:189:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:272:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:272:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:272:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:23:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:23:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:39:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:39:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:39:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:39:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:49:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:49:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:49:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:49:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:58:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:58:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:58:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:58:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:66:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:67:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:67:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:67:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:67:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:68:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:78:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:79:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:79:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:80:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:80:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:80:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:89:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:89:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:89:84",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:89:91",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:93:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:93:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:93:103",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:93:110",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:94:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:98:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:98:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:98:96",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:98:103",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:99:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:110:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:110:71",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:110:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:38:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:38:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:38:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:43:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:43:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:43:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:48:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:48:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:48:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:53:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:53:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:53:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:58:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:58:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:58:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:63:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:63:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:63:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:68:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:68:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:68:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:84:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:85:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:87:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:88:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:90:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/ResultScreen.kt:91:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:26:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:27:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:32:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:32:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:32:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:32:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:46:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:46:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:46:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/OpenFoolGame.kt:43:19",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/OpenFoolGame.kt:43:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/OpenFoolGame.kt:47:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/OpenFoolGame.kt:49:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/OpenFoolGame.kt:74:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:23:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Suit.kt:12:12",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/desktop/src/ru/hyst329/openfool/desktop/DesktopLauncher.kt:19:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/desktop/src/ru/hyst329/openfool/desktop/DesktopLauncher.kt:19:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/desktop/src/ru/hyst329/openfool/desktop/DesktopLauncher.kt:19:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/desktop/src/ru/hyst329/openfool/desktop/DesktopLauncher.kt:19:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/desktop/src/ru/hyst329/openfool/desktop/DesktopLauncher.kt:36:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/desktop/src/ru/hyst329/openfool/desktop/DesktopLauncher.kt:37:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Card.kt:3:1",
+        "message": "The import 'java.util.Locale' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Deck.kt:5:1",
+        "message": "The import 'java.util.Collections' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/OpenFoolGame.kt:14:1",
+        "message": "The import 'com.badlogic.gdx.scenes.scene2d.ui.Skin' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/OpenFoolGame.kt:18:1",
+        "message": "The import 'com.kotcrab.vis.usl.USL' is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Card.kt:17:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:92:94",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:97:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:545:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:268:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Card.kt:10:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:63:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:73:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:143:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:147:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:161:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:271:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:275:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:75:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:188:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:290:40",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:308:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:321:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:321:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:336:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:341:29",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:364:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:371:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:380:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:382:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:390:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:393:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:457:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:480:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:508:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:516:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:519:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:531:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:576:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:614:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:653:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:706:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:713:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:738:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:741:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:753:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:756:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:783:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Deck.kt:27:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:43:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:93:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:186:40",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:198:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:208:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:208:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:223:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:228:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:248:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:251:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:294:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:346:5",
+        "message": "Function sortCards has 14 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:141:13",
+        "message": "Function touchDown has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:170:13",
+        "message": "Function touchDown has 6 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:549:5",
+        "message": "Function handle has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Holiday.kt:11:1",
+        "message": "Function getCurrentHoliday has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:112:5",
+        "message": "Function handle has 5 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:124:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:165:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:225:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:253:199",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:319:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:143:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:233:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:274:164",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:275:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:303:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:322:152",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:395:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:67:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:172:164",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:173:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:194:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:209:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:232:142",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:150:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:160:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:528:13",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:775:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:116:17",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:113:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "UntilInsteadOfRangeTo",
+      "description": "'..' call can be replaced with 'until'",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Player.kt:211:19",
+        "message": "'..' call can be replaced with 'until'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:52:19",
+        "message": "'..' call can be replaced with 'until'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:102:19",
+        "message": "'..' call can be replaced with 'until'"
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:796:9",
+        "message": "DEAL_LIMIT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:797:9",
+        "message": "CARD_SCALE_TABLE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:798:9",
+        "message": "CARD_SCALE_AI can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/GameScreen.kt:799:9",
+        "message": "CARD_SCALE_PLAYER can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:285:9",
+        "message": "BACKGROUND_COLOR can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:286:9",
+        "message": "DECK can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:287:9",
+        "message": "LANGUAGE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:288:9",
+        "message": "SORTING_MODE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:289:9",
+        "message": "BACKGROUND can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/SettingsScreen.kt:290:9",
+        "message": "CARD_SCALE can be a `const val`."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/Holiday.kt:21:1",
+        "message": "The file Holiday.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/NewGameScreen.kt:124:1",
+        "message": "The file NewGameScreen.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/RuleSet.kt:47:1",
+        "message": "The file RuleSet.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:312:1",
+        "message": "The file PlayerTesting.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/MainMenuScreen.kt:14:47",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MainMenuScreen."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:272:25",
+        "message": "Function parameter playerIndex is unused."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/hyst329-OpenFool/core/src/ru/hyst329/openfool/PlayerTesting.kt:87:16",
+        "message": "Pair is created by using the pair constructor. This can replaced by `initialHands.toIntArray() to places`"
+      }]
+    }]
+  }]
+}

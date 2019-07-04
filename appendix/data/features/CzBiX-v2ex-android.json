@@ -1,0 +1,1294 @@
+{
+  "complexity_metrics": {
+    "loc": 5061,
+    "sloc": 4046,
+    "lloc": 2774,
+    "cloc": 97,
+    "mcc": 742,
+    "n_smell": 369,
+    "comment_ratio": 2,
+    "mcc_per_thlines": 267
+  },
+  "metrics": {
+    "number_of_string": 409,
+    "number_of_string_template": 5,
+    "number_of_inline_func": 10,
+    "number_of_inferred_fun": 2,
+    "number_of_inferred_var": 408,
+    "number_of_objects_declarations": 51,
+    "number_of_companion_objects": 18,
+    "number_of_singletons": 14,
+    "number_of_declaration": 533,
+    "number_of_var_declaration": 535,
+    "number_of_func_call": 1925,
+    "number_of_arguments": 1786,
+    "number_of_parameters": 470,
+    "number_of_qualified_expressions": 2147,
+    "number_of_inheritances": 25,
+    "number_of_unsafe_calls": 33,
+    "number_of_safe_calls": 11,
+    "number_of_destructuring_declarations": 2,
+    "number_of_when_expressions": 21,
+    "number_of_functions_with_default_value": 15,
+    "number_of_function_call_with_named_value": 8,
+    "number_of_named_argument": 8,
+    "number_of_argument_with_default_value": 16,
+    "number_of_overloaded_op": 1,
+    "number_of_extension_function": 10,
+    "number_of_properties_delegation": 1,
+    "number_of_super_delegation": 1,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 125,
+    "number_of_possible_smart_casts": 35,
+    "number_of_data_class": 4,
+    "number_of_properties": 531,
+    "number_of_functions": 327,
+    "number_of_interfaces": 2,
+    "number_of_classes": 49,
+    "number_of_packages": 18,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 45
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:61:1",
+        "message": "Class MainActivity is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:32:1",
+        "message": "Class RequestHelper is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:311:5",
+        "message": "The function onNavigationItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:93:5",
+        "message": "The function onActivityCreated appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:226:5",
+        "message": "The function showProgress appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/ExceptionUtils.kt:25:5",
+        "message": "The function handleException appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:550:5",
+        "message": "The function checkResponse appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:99:5",
+        "message": "The function sendRegistrationToServer appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:61:1",
+        "message": "Class 'MainActivity' with '28' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:45:1",
+        "message": "Class 'TopicListFragment' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:38:1",
+        "message": "Class 'LoginActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:32:1",
+        "message": "Object 'RequestHelper' with '29' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicParser.kt:11:1",
+        "message": "Object 'TopicParser' with '16' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicListParser.kt:14:1",
+        "message": "Object 'TopicListParser' with '11' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:10:1",
+        "message": "Class 'JsoupObjects' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:254:35",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:256:38",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:436:34",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TwoFactorAuthDialog.kt:24:55",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:99:32",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:140:36",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:181:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:358:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/CzRequestHelper.kt:58:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/CzRequestHelper.kt:57:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:195:58",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicParser.kt:70:69",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/MyselfParser.kt:20:67",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/MyselfParser.kt:20:49",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptySecondaryConstructor",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/common/exception/ConnectionException.kt:6:19",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/common/exception/ConnectionException.kt:9:63",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/common/exception/ConnectionException.kt:12:96",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/common/exception/ConnectionException.kt:15:58",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:271:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/ExceptionUtils.kt:19:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/RxUtils.kt:27:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:531:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:56:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:91:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:104:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:107:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:115:30",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:121:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:302:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:326:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/GsonUtils.kt:33:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/GsonUtils.kt:35:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/MiscUtils.kt:20:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/MiscUtils.kt:21:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/MiscUtils.kt:22:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/MiscUtils.kt:23:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/presenter/TopicSearchPresenter.kt:102:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/CzRequestHelper.kt:18:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/CzRequestHelper.kt:21:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/CzRequestHelper.kt:22:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/CzRequestHelper.kt:23:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/CzRequestHelper.kt:24:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:34:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:35:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:37:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:40:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:41:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:42:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:43:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:44:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:45:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:46:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:47:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:48:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:49:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicParser.kt:12:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicParser.kt:13:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicParser.kt:14:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/MyselfParser.kt:16:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicListParser.kt:15:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/NotificationParser.kt:11:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/NotificationParser.kt:12:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:156:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:157:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:158:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:159:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:97:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:98:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:134:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:140:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/GlideConfig.kt:18:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/fcm/MessagingService.kt:13:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ConstructorParameterNaming",
+      "description": "Constructor parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:166:25",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Member.kt:41:25",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:67:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:68:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:69:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:70:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:71:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:72:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:73:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:74:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:75:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:76:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:77:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:78:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:79:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/SearchBoxLayout.kt:22:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/SearchBoxLayout.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/SearchBoxLayout.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/SearchBoxLayout.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/SearchBoxLayout.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/SettingsActivity.kt:52:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TwoFactorAuthDialog.kt:14:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:46:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:48:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:50:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:51:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:45:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:47:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:48:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:50:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:51:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:52:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:55:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/AppCtx.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/AppCtx.kt:132:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:218:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:254:78",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:56:61",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:60:55",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:94:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:112:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:112:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/SettingsActivity.kt:33:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/SettingsActivity.kt:80:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:270:53",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:113:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:217:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:294:86",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/CzRequestHelper.kt:105:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:112:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:145:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:185:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:201:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:220:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:239:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:257:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:363:68",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:380:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:450:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:466:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:481:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:496:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:577:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/NotificationParser.kt:96:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Member.kt:97:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:68:49",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:121:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:140:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:86:19",
+        "message": "findViewById(R.id.appbar) cannot be safely cast to AppBarLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:87:25",
+        "message": "findViewById(R.id.drawer_layout) cannot be safely cast to DrawerLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:89:16",
+        "message": "findViewById(R.id.nav) cannot be safely cast to NavigationView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:93:19",
+        "message": "headerView.findViewById(R.id.avatar_img) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:94:21",
+        "message": "headerView.findViewById(R.id.username_tv) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:96:25",
+        "message": "findViewById(R.id.search_box) cannot be safely cast to SearchBoxLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/SearchBoxLayout.kt:46:16",
+        "message": "findViewById(R.id.box) cannot be safely cast to RelativeLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/SearchBoxLayout.kt:52:20",
+        "message": "findViewById(R.id.action_back) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/SearchBoxLayout.kt:53:21",
+        "message": "findViewById(R.id.action_clear) cannot be safely cast to ImageButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/SearchBoxLayout.kt:54:18",
+        "message": "findViewById(R.id.query) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:32:19",
+        "message": "findViewById(R.id.avatar_img) cannot be safely cast to AvatarView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:33:18",
+        "message": "findViewById(R.id.title_tv) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:34:21",
+        "message": "findViewById(R.id.username_tv) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:35:17",
+        "message": "findViewById(R.id.node_tv) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:36:17",
+        "message": "findViewById(R.id.time_tv) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:37:23",
+        "message": "findViewById(R.id.reply_count_tv) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:38:20",
+        "message": "findViewById(R.id.content) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/SettingsActivity.kt:67:24",
+        "message": "findPreference(PREF_KEY_CATEGORY_USER) cannot be safely cast to PreferenceCategory."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/SettingsActivity.kt:74:34",
+        "message": "findPreference(PREF_KEY_RECEIVE_NOTIFICATIONS) cannot be safely cast to SwitchPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/SettingsActivity.kt:85:68",
+        "message": "newValue cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/SettingsActivity.kt:121:27",
+        "message": "findPreference(PREF_KEY_CATEGORY_GENERAL) cannot be safely cast to PreferenceCategory."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TwoFactorAuthDialog.kt:19:20",
+        "message": "layout.findViewById(R.id.edit_text) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TwoFactorAuthDialog.kt:33:10",
+        "message": "dialog cannot be safely cast to AlertDialog."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:76:19",
+        "message": "inflater.inflate(R.layout.fragment_topic_list,\n                container, false) cannot be safely cast to SwipeRefreshLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:78:25",
+        "message": "mLayout.findViewById(R.id.recycle_view) cannot be safely cast to RecyclerView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:96:24",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:99:24",
+        "message": "mPage cannot be safely cast to Node."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:269:28",
+        "message": "mPage cannot be safely cast to Node."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:61:24",
+        "message": "findViewById(R.id.account) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:62:20",
+        "message": "findViewById(R.id.password) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:74:28",
+        "message": "findViewById(R.id.load_captcha) cannot be safely cast to Button."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:75:29",
+        "message": "findViewById(R.id.image_captcha) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:76:24",
+        "message": "findViewById(R.id.captcha) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:93:14",
+        "message": "it cannot be safely cast to TwoFactorAuthDialog."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/MiscUtils.kt:54:23",
+        "message": "context.getSystemService(Context.CLIPBOARD_SERVICE) cannot be safely cast to ClipboardManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/AppCtx.kt:60:21",
+        "message": "e.event cannot be safely cast to BaseEvent."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:114:32",
+        "message": "PARSE_METHOD.invoke(null, key) cannot be safely cast to Evaluator."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:119:5",
+        "message": "Function getFragmentToShow has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/SettingsActivity.kt:179:9",
+        "message": "Function onPreferenceClick has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:231:5",
+        "message": "Function onOptionsItemSelected has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/res/GoogleImg.kt:105:5",
+        "message": "Function getCurrentTimeIndex has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:504:5",
+        "message": "Function sendRequest has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/MyselfParser.kt:29:5",
+        "message": "Function parseDoc has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:67:5",
+        "message": "Function filter has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/fcm/message/NotificationFcmMessage.kt:56:9",
+        "message": "Function checkNotification has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:50:5",
+        "message": "Function register has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:80:5",
+        "message": "Function unregister has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:55:1",
+        "message": "com.czbix.v2ex.ui.fragment.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:57:1",
+        "message": "com.czbix.v2ex.util.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/SearchBoxLayout.kt:16:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:12:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:13:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:21:1",
+        "message": "com.czbix.v2ex.common.exception.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/ExceptionUtils.kt:7:1",
+        "message": "com.czbix.v2ex.common.exception.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:10:1",
+        "message": "com.czbix.v2ex.common.exception.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:11:1",
+        "message": "com.czbix.v2ex.model.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:12:1",
+        "message": "com.czbix.v2ex.parser.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:15:1",
+        "message": "com.czbix.v2ex.util.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:26:1",
+        "message": "okhttp3.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicParser.kt:6:1",
+        "message": "com.czbix.v2ex.model.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicListParser.kt:6:1",
+        "message": "com.czbix.v2ex.model.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/AppCtx.kt:23:1",
+        "message": "com.czbix.v2ex.util.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:193:108",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:373:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:475:179",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:45:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:80:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:148:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:97:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:104:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/CzRequestHelper.kt:39:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicParser.kt:36:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicParser.kt:125:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/MyselfParser.kt:54:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/MyselfParser.kt:81:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicListParser.kt:19:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicListParser.kt:41:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/NotificationParser.kt:94:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:89:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:196:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:196:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:196:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/widget/TopicView.kt:95:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TwoFactorAuthDialog.kt:43:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/loader/TopicLoader.kt:34:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/res/GoogleImg.kt:13:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/res/GoogleImg.kt:109:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/res/GoogleImg.kt:110:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/res/GoogleImg.kt:111:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/res/GoogleImg.kt:112:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/ExceptionUtils.kt:45:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/ExceptionUtils.kt:45:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/GlideConfig.kt:18:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/GlideConfig.kt:18:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/GlideConfig.kt:18:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/CzRequestHelper.kt:43:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:37:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:61:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:62:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:63:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:71:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:71:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:71:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:512:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:585:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicListParser.kt:71:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicListParser.kt:86:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:149:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:150:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Member.kt:109:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Member.kt:110:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/AppCtx.kt:67:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/fcm/message/NotificationFcmMessage.kt:38:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/fcm/message/NotificationFcmMessage.kt:40:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/fcm/message/NotificationFcmMessage.kt:40:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:111:72",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:42:1",
+        "message": "The import 'com.czbix.v2ex.common.exception.ConnectionException' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:43:1",
+        "message": "The import 'com.czbix.v2ex.common.exception.RemoteException' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/RxUtils.kt:6:1",
+        "message": "The import 'io.reactivex.internal.observers.ConsumerSingleObserver' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/common/NotificationStatus.kt:15:1",
+        "message": "The import 'com.google.common.eventbus.Subscribe' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/common/UserState.kt:19:1",
+        "message": "The import 'com.google.common.eventbus.EventBus' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/common/UserState.kt:20:1",
+        "message": "The import 'com.google.common.eventbus.Subscribe' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/fcm/message/FcmMessage.kt:6:1",
+        "message": "The import 'com.google.common.base.Preconditions' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/fcm/message/FcmMessage.kt:7:1",
+        "message": "The import 'com.google.common.base.Strings' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:18:1",
+        "message": "The import 'com.czbix.v2ex.util.CrashlyticsUtils' is unused."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:442:22",
+        "message": "Function parameter e is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/GsonUtils.kt:67:39",
+        "message": "Function parameter isGenericType is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:166:25",
+        "message": "Private property in is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Member.kt:41:25",
+        "message": "Private property in is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/MainActivity.kt:492:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/GsonUtils.kt:44:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/GsonUtils.kt:49:73",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/GsonUtils.kt:53:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/GsonUtils.kt:58:73",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/GsonUtils.kt:62:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/GsonUtils.kt:67:71",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/MiscUtils.kt:65:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/MiscUtils.kt:117:50",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/RxUtils.kt:8:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/RxUtils.kt:12:91",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/presenter/TopicSearchPresenter.kt:97:30",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/NotificationParser.kt:87:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/common/UserState.kt:85:31",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/common/UserState.kt:89:30",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/common/UserState.kt:98:29",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:41:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:45:28",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:59:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:63:35",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:80:46",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:84:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:88:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:180:50",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:192:65",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:196:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Member.kt:26:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Member.kt:59:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Member.kt:65:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Member.kt:69:62",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/TaskService.kt:20:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/RxBus.kt:24:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/RxBus.kt:28:70",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:123:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:128:59",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:135:69",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:141:69",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/event/BaseEvent.kt:5:31",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:302:9",
+        "message": "ARG_PAGE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/LoginActivity.kt:326:9",
+        "message": "TAG_AUTH_CODE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/res/GoogleImg.kt:10:5",
+        "message": "INDEX_DAWN can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/res/GoogleImg.kt:11:5",
+        "message": "INDEX_DAY can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/res/GoogleImg.kt:12:5",
+        "message": "INDEX_DUSK can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/res/GoogleImg.kt:13:5",
+        "message": "INDEX_NIGHT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/GsonUtils.kt:33:9",
+        "message": "JSON_WORD_DELIMITER can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/presenter/TopicSearchPresenter.kt:102:9",
+        "message": "DELAY_BEFORE_PREFETCH can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/CzRequestHelper.kt:18:5",
+        "message": "BASE_URL can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:37:5",
+        "message": "DEBUG_NETWORK_FAIL_PROBABILITY can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:40:5",
+        "message": "API_GET_ALL_NODES can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:41:5",
+        "message": "URL_SIGN_IN can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:42:5",
+        "message": "URL_MISSION_DAILY can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:44:5",
+        "message": "URL_NOTIFICATIONS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:45:5",
+        "message": "URL_FAVORITE_NODES can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:46:5",
+        "message": "URL_UNREAD_NOTIFICATIONS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:47:5",
+        "message": "URL_TWO_FACTOR_AUTH can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:48:5",
+        "message": "URL_NEW_TOPIC can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:49:5",
+        "message": "URL_CAPTCHA can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/TaskService.kt:37:9",
+        "message": "TASK_NOTIFICATION_CHECK can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/fcm/message/NotificationFcmMessage.kt:27:9",
+        "message": "MSG_TYPE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:156:9",
+        "message": "PREF_NAME can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:157:9",
+        "message": "PREF_IS_USER_REGISTERED can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:158:9",
+        "message": "PREF_LAST_FCM_TOKEN can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:159:9",
+        "message": "PREF_LAST_NTF_TOKEN can be a `const val`."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/ui/fragment/TopicListFragment.kt:225:20",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/MiscUtils.kt:119:1",
+        "message": "The file MiscUtils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/helper/JsoupObjects.kt:146:1",
+        "message": "The file JsoupObjects.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/event/AppUpdateEvent.kt:3:34",
+        "message": "The file AppUpdateEvent.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/MiscUtils.kt:1:28",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/presenter/TopicSearchPresenter.kt:12:37",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of TopicSearchPresenter."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/ExceptionUtils.kt:41:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/ExceptionUtils.kt:77:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/AppCtx.kt:107:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:106:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:109:17",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "ThrowsCount",
+      "description": "Restrict the number of throw statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/util/RxUtils.kt:21:1",
+        "message": "Too many throw statements in the function result. The maximum number of allowed throw statements is 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/network/RequestHelper.kt:550:5",
+        "message": "Too many throw statements in the function checkResponse. The maximum number of allowed throw statements is 2."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/TopicParser.kt:72:13",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/RegistrationIntentService.kt:70:17",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "UnnecessaryAbstractClass",
+      "description": "An abstract class is unnecessary and can be refactored. An abstract class should have both abstract and concrete properties or functions. An abstract class without a concrete member can be refactored to an interface. An abstract class without an abstract member can be refactored to a concrete class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/parser/Parser.kt:12:1",
+        "message": "An abstract class without an abstract member can be refactored to a concrete class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/service/fcm/message/FcmMessage.kt:9:1",
+        "message": "An abstract class without a concrete member can be refactored to an interface."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/event/BaseEvent.kt:3:1",
+        "message": "An abstract class without an abstract member can be refactored to a concrete class."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/CzBiX-v2ex-android/app/src/main/kotlin/com/czbix/v2ex/model/Node.kt:71:37",
+        "message": "Parentheses in (mTitle != null && mTitle.contains(query)) are unnecessary and can be replaced with: mTitle != null && mTitle.contains(query)"
+      }]
+    }]
+  }]
+}

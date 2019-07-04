@@ -1,0 +1,341 @@
+{
+  "complexity_metrics": {
+    "loc": 904,
+    "sloc": 726,
+    "lloc": 534,
+    "cloc": 7,
+    "mcc": 86,
+    "n_smell": 71,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 161
+  },
+  "metrics": {
+    "number_of_string": 145,
+    "number_of_string_template": 8,
+    "number_of_inline_func": 3,
+    "number_of_inferred_fun": 10,
+    "number_of_inferred_var": 32,
+    "number_of_objects_declarations": 1,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 35,
+    "number_of_var_declaration": 35,
+    "number_of_func_call": 203,
+    "number_of_arguments": 193,
+    "number_of_parameters": 170,
+    "number_of_qualified_expressions": 157,
+    "number_of_inheritances": 13,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 10,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 8,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 12,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 2,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 38,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 35,
+    "number_of_functions": 39,
+    "number_of_interfaces": 1,
+    "number_of_classes": 39,
+    "number_of_packages": 6,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 24
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "MethodOverloading",
+      "description": "Methods which are overloaded often might be harder to maintain. Furthermore, these methods are tightly coupled. Refactor these methods and try to use optional parameters.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/Parameter.kt:8:1",
+        "message": "This method is overloaded too many times."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/endpoints/Apps.kt:38:53",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/MisskeyClient.kt:78:23",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/endpoints/notes.kt:17:19",
+        "message": "The function createNote has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/MisskeyRequest.kt:27:5",
+        "message": "Function execute is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyClassBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Twitter.kt:5:1",
+        "message": "The class or object  Twitter is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/auth/AccessToken.kt:6:1",
+        "message": "The class or object  AccessToken is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/auth/AppRegistration.kt:5:1",
+        "message": "The class or object  AppRegistration is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/auth/Token.kt:5:1",
+        "message": "The class or object  Token is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Poll.kt:5:1",
+        "message": "The class or object  Poll is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/createdNote.kt:9:1",
+        "message": "The class or object  createdNote is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Geo.kt:5:1",
+        "message": "The class or object  Geo is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/DriveFile.kt:5:1",
+        "message": "The class or object  DriveFile is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/User.kt:5:1",
+        "message": "The class or object  User is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Choice.kt:5:1",
+        "message": "The class or object  Choice is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/DriveFolder.kt:5:1",
+        "message": "The class or object  DriveFolder is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Profile.kt:5:1",
+        "message": "The class or object  Profile is empty."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/MisskeyRequest.kt:47:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "ClassNaming",
+      "description": "A classes name should fit the naming pattern defined in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/endpoints/drive.kt:8:1",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/endpoints/i.kt:11:1",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/endpoints/notes.kt:15:1",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/createdNote.kt:9:1",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }]
+    }, {
+      "name": "ConstructorParameterNaming",
+      "description": "Constructor parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/auth/AppRegistration.kt:6:9",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/auth/Token.kt:6:9",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/auth/Token.kt:9:9",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/extension/GlobalFunctions.kt:11:64",
+        "message": "The file GlobalFunctions.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/endpoints/drive.kt:25:1",
+        "message": "The file drive.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/endpoints/i.kt:33:1",
+        "message": "The file i.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/endpoints/notes.kt:53:1",
+        "message": "The file notes.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Twitter.kt:11:1",
+        "message": "The file Twitter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/auth/AppRegistration.kt:8:1",
+        "message": "The file AppRegistration.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Note.kt:68:1",
+        "message": "The file Note.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Poll.kt:8:1",
+        "message": "The file Poll.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/createdNote.kt:12:1",
+        "message": "The file createdNote.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Geo.kt:23:1",
+        "message": "The file Geo.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/DriveFile.kt:41:1",
+        "message": "The file DriveFile.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/User.kt:81:1",
+        "message": "The file User.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Choice.kt:18:1",
+        "message": "The file Choice.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/DriveFolder.kt:26:1",
+        "message": "The file DriveFolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Profile.kt:11:1",
+        "message": "The file Profile.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/MisskeyRequest.kt:54:1",
+        "message": "The file MisskeyRequest.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/extension/GlobalFunctions.kt:4:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of the class or object."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/auth/AccessToken.kt:3:50",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AccessToken."
+      }]
+    }, {
+      "name": "ModifierOrder",
+      "description": "Modifier order should be: private vararg",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/Permission.kt:6:13",
+        "message": "Modifier order should be: private vararg"
+      }]
+    }, {
+      "name": "VarCouldBeVal",
+      "description": "Var declaration could be val.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/Permission.kt:22:9",
+        "message": "Variable 'j' could be val."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/endpoints/Apps.kt:25:9",
+        "message": "Variable 'parameters' could be val."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/endpoints/Apps.kt:9:1",
+        "message": "The import 'me.siketyan.silicagel.misskeyapi.Permission' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Note.kt:4:1",
+        "message": "The import 'me.siketyan.silicagel.misskeyapi.api.entities.DriveFile' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Note.kt:5:1",
+        "message": "The import 'me.siketyan.silicagel.misskeyapi.api.entities.Geo' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Note.kt:6:1",
+        "message": "The import 'me.siketyan.silicagel.misskeyapi.api.entities.Poll' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Note.kt:7:1",
+        "message": "The import 'me.siketyan.silicagel.misskeyapi.api.entities.User' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/createdNote.kt:4:1",
+        "message": "The import 'me.siketyan.silicagel.misskeyapi.api.entities.DriveFile' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/createdNote.kt:5:1",
+        "message": "The import 'me.siketyan.silicagel.misskeyapi.api.entities.Geo' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/createdNote.kt:6:1",
+        "message": "The import 'me.siketyan.silicagel.misskeyapi.api.entities.Poll' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/createdNote.kt:7:1",
+        "message": "The import 'me.siketyan.silicagel.misskeyapi.api.entities.User' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/MisskeyClient.kt:6:1",
+        "message": "The import 'me.siketyan.silicagel.misskeyapi.Parameter' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/MisskeyClient.kt:9:1",
+        "message": "The import 'java.util.concurrent.TimeUnit' is unused."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Twitter.kt:5:1",
+        "message": "The class Twitter defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/auth/AccessToken.kt:6:1",
+        "message": "The class AccessToken defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/auth/AppRegistration.kt:5:1",
+        "message": "The class AppRegistration defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/auth/Token.kt:5:1",
+        "message": "The class Token defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Note.kt:9:1",
+        "message": "The class Note defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Poll.kt:5:1",
+        "message": "The class Poll defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/createdNote.kt:9:1",
+        "message": "The class createdNote defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Geo.kt:5:1",
+        "message": "The class Geo defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/DriveFile.kt:5:1",
+        "message": "The class DriveFile defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/User.kt:5:1",
+        "message": "The class User defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Choice.kt:5:1",
+        "message": "The class Choice defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/DriveFolder.kt:5:1",
+        "message": "The class DriveFolder defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/api/entities/Profile.kt:5:1",
+        "message": "The class Profile defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/Siketyan-SilicaGel-for-CloudPlayer/app/src/main/java/me/siketyan/silicagel/misskeyapi/MisskeyClient.kt:5:1",
+        "message": "okhttp3.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }]
+  }]
+}

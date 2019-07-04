@@ -1,0 +1,474 @@
+{
+  "complexity_metrics": {
+    "loc": 2575,
+    "sloc": 1088,
+    "lloc": 668,
+    "cloc": 596,
+    "mcc": 213,
+    "n_smell": 105,
+    "comment_ratio": 54,
+    "mcc_per_thlines": 318
+  },
+  "metrics": {
+    "number_of_string": 44,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 82,
+    "number_of_objects_declarations": 13,
+    "number_of_companion_objects": 6,
+    "number_of_singletons": 5,
+    "number_of_declaration": 114,
+    "number_of_var_declaration": 114,
+    "number_of_func_call": 291,
+    "number_of_arguments": 345,
+    "number_of_parameters": 149,
+    "number_of_qualified_expressions": 477,
+    "number_of_inheritances": 22,
+    "number_of_unsafe_calls": 3,
+    "number_of_safe_calls": 86,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 6,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 2,
+    "number_of_named_argument": 2,
+    "number_of_argument_with_default_value": 3,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 3,
+    "number_of_lambdas": 15,
+    "number_of_possible_smart_casts": 5,
+    "number_of_data_class": 0,
+    "number_of_properties": 114,
+    "number_of_functions": 106,
+    "number_of_interfaces": 4,
+    "number_of_classes": 27,
+    "number_of_packages": 12,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 31
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/AbstractFragment.kt:37:1",
+        "message": "Class 'AbstractFragment' with '15' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractDrawerActivity.kt:149:51",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:84:5",
+        "message": "The function showFragment appears to be too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:201:5",
+        "message": "Function clearBackStack is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptySecondaryConstructor",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/views/SlidingLinearLayout.kt:49:52",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/views/SlidingLinearLayout.kt:51:80",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/views/SlidingLinearLayout.kt:53:105",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/SettingsFragment.kt:113:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:69:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:221:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/receivers/AutoUpdateReceiver.kt:63:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractDrawerActivity.kt:70:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractDrawerActivity.kt:140:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/AbstractFragment.kt:116:25",
+        "message": "activity cannot be safely cast to AbstractDrawerActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/AbstractFragment.kt:122:14",
+        "message": "activity cannot be safely cast to AbstractDrawerActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/AbstractFragment.kt:134:14",
+        "message": "activity cannot be safely cast to AbstractDrawerActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/AbstractFragment.kt:264:27",
+        "message": "activity.getSystemService(\n                        Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/AbstractFragment.kt:271:40",
+        "message": "activity.getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/SettingsFragment.kt:51:10",
+        "message": "actionBarView.findViewById(R.id.fragment_toolbar_title) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/HomeFragment.kt:62:10",
+        "message": "actionBarView.findViewById(R.id.fragment_toolbar_title) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/NetworkManager.kt:106:20",
+        "message": "mRetrofit cannot be safely cast to Retrofit."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/receivers/AutoUpdateReceiver.kt:104:25",
+        "message": "context.getSystemService(Context.ALARM_SERVICE) cannot be safely cast to AlarmManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/receivers/AutoUpdateReceiver.kt:139:25",
+        "message": "context.getSystemService(Context.ALARM_SERVICE) cannot be safely cast to AlarmManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/utilities/NotificationUtilities.kt:61:35",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/utilities/NotificationUtilities.kt:69:35",
+        "message": "context.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/MainActivity.kt:92:16",
+        "message": "frag cannot be safely cast to AbstractFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractDrawerActivity.kt:78:30",
+        "message": "getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractDrawerActivity.kt:81:28",
+        "message": "view.findViewById(R.id.action_bar_custom_layout) cannot be safely cast to LinearLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractDrawerActivity.kt:130:34",
+        "message": "getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractDrawerActivity.kt:179:36",
+        "message": "mBinding?.contentToolbar?.navigationIcon cannot be safely cast to MaterialMenuDrawable?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:101:69",
+        "message": "visibleFragment cannot be safely cast to Any."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:101:107",
+        "message": "frag cannot be safely cast to Any."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:161:24",
+        "message": "mCurrentFragment cannot be safely cast to Fragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:164:20",
+        "message": "visibleFrag cannot be safely cast to Fragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:196:38",
+        "message": "getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/views/NavigationDrawerView.kt:46:24",
+        "message": "getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/views/NavigationDrawerView.kt:47:20",
+        "message": "DataBindingUtil.inflate<ViewDataBinding>(inflater, R.layout.view_navigation_drawer, this, true) cannot be safely cast to ViewNavigationDrawerBinding."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/utilities/PriceFormatUtilities.kt:61:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/MainActivity.kt:56:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:197:56",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/AbstractFragment.kt:134:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/SettingsFragment.kt:88:172",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/SettingsFragment.kt:90:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/SettingsFragment.kt:112:199",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/SettingsFragment.kt:127:186",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/SettingsFragment.kt:128:170",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/SettingsFragment.kt:129:174",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/NetworkManager.kt:88:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/enums/Endpoint.kt:29:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/enums/Endpoint.kt:50:140",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/enums/Endpoint.kt:54:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/receivers/BootCompletedReceiver.kt:32:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/receivers/AutoUpdateReceiver.kt:84:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/receivers/AutoUpdateReceiver.kt:89:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/receivers/AutoUpdateReceiver.kt:109:144",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/receivers/AutoUpdateReceiver.kt:127:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/receivers/AutoUpdateReceiver.kt:158:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/utilities/PriceFormatUtilities.kt:59:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractDrawerActivity.kt:58:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractDrawerActivity.kt:83:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:94:203",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:84:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:101:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:114:156",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:117:156",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/views/NavigationDrawerView.kt:33:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/views/NavigationDrawerView.kt:47:146",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/animations/FragmentAnimation.kt:5:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/animations/FragmentAnimation.kt:26:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/AbstractFragment.kt:246:9",
+        "message": "Private property TAG is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/HomeFragment.kt:102:27",
+        "message": "Function parameter view is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:211:22",
+        "message": "Private property i is unused."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/fragments/AbstractFragment.kt:246:9",
+        "message": "TAG can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/receivers/AutoUpdateReceiver.kt:55:9",
+        "message": "AUTO_UPDATE_SERVICE_ID can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/receivers/AutoUpdateReceiver.kt:60:9",
+        "message": "START_UPDATE_SERVICE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/receivers/AutoUpdateReceiver.kt:61:9",
+        "message": "STOP_UPDATE_SERVICE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/utilities/SharedPreferencesUtilities.kt:29:5",
+        "message": "SHARED_PREFERENCES can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/utilities/SharedPreferencesUtilities.kt:34:5",
+        "message": "SHARED_BUYING_VALUE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/utilities/SharedPreferencesUtilities.kt:39:5",
+        "message": "SHARED_ENDPOINT_ID can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/utilities/SharedPreferencesUtilities.kt:45:5",
+        "message": "SHARED_SERVICE_ACTIVE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/MainActivity.kt:33:9",
+        "message": "FRAGMENT_HOME can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/MainActivity.kt:34:9",
+        "message": "FRAGMENT_SETTINGS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractDrawerActivity.kt:197:9",
+        "message": "NAVIGATION_ICON_CONTENT_DESCRIPTION can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:41:9",
+        "message": "FRAGMENT_KEY can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:42:9",
+        "message": "FRAGMENT_NAVIGATION_KEY can be a `const val`."
+      }]
+    }, {
+      "name": "SerialVersionUIDInSerializableClass",
+      "description": "A class which implements the Serializable interface does not define a correct serialVersionUID field. The serialVersionUID field should be a constant long value inside a companion object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/apis/Api.kt:23:1",
+        "message": "The class Api implements the Serializable interface and should thus define a serialVersionUID."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/apis/PolionexEtherApi.kt:37:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/apis/KrakenEtherApi.kt:51:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/enums/Endpoint.kt:36:12",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/receivers/AutoUpdateReceiver.kt:91:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/utilities/PriceFormatUtilities.kt:61:82",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/apis/PolionexEtherApi.kt:32:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/apis/PolionexEtherApi.kt:36:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/apis/CoinMarketEtherApi.kt:61:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/apis/CoinMarketEtherApi.kt:65:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/enums/Endpoint.kt:53:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/services/AutoUpdateService.kt:37:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/apis/KrakenEtherApi.kt:46:5",
+        "message": "Function getPriceChange has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/network/apis/KrakenEtherApi.kt:51:24",
+        "message": "Parentheses in (now?.div(today)?.minus(1)) are unnecessary and can be replaced with: now?.div(today)?.minus(1)"
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:213:21",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "UntilInsteadOfRangeTo",
+      "description": "'..' call can be replaced with 'until'",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:170:21",
+        "message": "'..' call can be replaced with 'until'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:185:17",
+        "message": "'..' call can be replaced with 'until'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/activities/AbstractFragmentActivity.kt:211:27",
+        "message": "'..' call can be replaced with 'until'"
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/views/SlidingLinearLayout.kt:56:1",
+        "message": "The file SlidingLinearLayout.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/olivierg13-EtherTracker/app/src/main/java/com/og/finance/ether/animations/FragmentAnimation.kt:5:1",
+        "message": "The class FragmentAnimation defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }]
+  }]
+}

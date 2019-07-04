@@ -1,0 +1,2156 @@
+{
+  "complexity_metrics": {
+    "loc": 31014,
+    "sloc": 24171,
+    "lloc": 15135,
+    "cloc": 1141,
+    "mcc": 4096,
+    "n_smell": 671,
+    "comment_ratio": 4,
+    "mcc_per_thlines": 270
+  },
+  "metrics": {
+    "number_of_string": 894,
+    "number_of_string_template": 105,
+    "number_of_inline_func": 74,
+    "number_of_inferred_fun": 449,
+    "number_of_inferred_var": 1294,
+    "number_of_objects_declarations": 218,
+    "number_of_companion_objects": 134,
+    "number_of_singletons": 57,
+    "number_of_declaration": 2392,
+    "number_of_var_declaration": 2480,
+    "number_of_func_call": 10869,
+    "number_of_arguments": 9243,
+    "number_of_parameters": 2794,
+    "number_of_qualified_expressions": 15128,
+    "number_of_inheritances": 313,
+    "number_of_unsafe_calls": 1,
+    "number_of_safe_calls": 605,
+    "number_of_destructuring_declarations": 94,
+    "number_of_when_expressions": 352,
+    "number_of_functions_with_default_value": 72,
+    "number_of_function_call_with_named_value": 95,
+    "number_of_named_argument": 112,
+    "number_of_argument_with_default_value": 120,
+    "number_of_overloaded_op": 2,
+    "number_of_extension_function": 124,
+    "number_of_properties_delegation": 645,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 25,
+    "number_of_lambdas": 1671,
+    "number_of_possible_smart_casts": 105,
+    "number_of_data_class": 32,
+    "number_of_properties": 2298,
+    "number_of_functions": 1622,
+    "number_of_interfaces": 9,
+    "number_of_classes": 417,
+    "number_of_packages": 64,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 353
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/ExpandableSelectionView.kt:144:5",
+        "message": "The function handleExtension appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/BBParser.kt:67:5",
+        "message": "The function parse appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/ImagePrototype.kt:53:5",
+        "message": "The function makeViews appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/BBPrototype.kt:35:5",
+        "message": "The function makeViews appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/SizePrototype.kt:26:5",
+        "message": "The function construct appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/BBArgs.kt:63:5",
+        "message": "The function equals appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainActivity.kt:148:5",
+        "message": "The function setFragment appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainActivity.kt:190:5",
+        "message": "The function getItemToLoad appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/ConferenceAdapter.kt:116:9",
+        "message": "The function bindPreviewText appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:98:5",
+        "message": "The function getItemViewType appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerFragment.kt:191:5",
+        "message": "The function onViewCreated appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerWorker.kt:137:5",
+        "message": "The function doWork appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:223:5",
+        "message": "The function onViewCreated appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:98:5",
+        "message": "The function getItemViewType appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerLibExtensions.kt:66:5",
+        "message": "The function fskConstraintFromAppString appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerLibExtensions.kt:187:1",
+        "message": "The function toEpisodeAppString appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerLibExtensions.kt:261:1",
+        "message": "The function toAppString appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerLibExtensions.kt:275:1",
+        "message": "The function toAppStringDescription appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerLibExtensions.kt:289:1",
+        "message": "The function toAppDrawable appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerLibExtensions.kt:303:1",
+        "message": "The function toAppString appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerRxExtensions.kt:81:1",
+        "message": "The function toBodySingle appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/DateExtensions.kt:13:1",
+        "message": "The function convertToRelativeReadableTime appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/ErrorUtils.kt:155:5",
+        "message": "The function getMessage appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/ErrorUtils.kt:185:5",
+        "message": "The function handle appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/ErrorUtils.kt:227:5",
+        "message": "The function getMessageForProxerException appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaFragment.kt:141:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:127:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/about/ProfileAboutFragment.kt:145:5",
+        "message": "The function addTableRows appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:104:5",
+        "message": "The function rankToString appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/widget/NewsWidgetUpdateWorker.kt:74:5",
+        "message": "The function doWork appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/NewsAdapter.kt:136:9",
+        "message": "The function handleExpansion appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/widget/ScheduleWidgetUpdateWorker.kt:87:5",
+        "message": "The function doWork appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/widget/ScheduleWidgetUpdateWorker.kt:130:5",
+        "message": "The function bindListLayout appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeFragment.kt:174:5",
+        "message": "The function onViewCreated appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/info/MediaInfoFragment.kt:326:5",
+        "message": "The function bindTags appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListFragment.kt:241:5",
+        "message": "The function onCreateOptionsMenu appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListFragment.kt:309:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListFragment.kt:360:5",
+        "message": "The function setInitialType appears to be too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/ExpandableSelectionView.kt:144:5",
+        "message": "Function handleExtension is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/BBParser.kt:67:5",
+        "message": "Function parse is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/BBPrototype.kt:35:5",
+        "message": "Function makeViews is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/BBArgs.kt:63:5",
+        "message": "Function equals is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainActivity.kt:112:5",
+        "message": "Function onActivityResult is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:98:5",
+        "message": "Function getItemViewType is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:191:5",
+        "message": "Function swapDataAndNotifyWithDiffing is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:180:5",
+        "message": "Function swapDataAndNotifyWithDiffing is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/UtilExtensions.kt:110:1",
+        "message": "Function openHttpPage is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/DateExtensions.kt:13:1",
+        "message": "Function convertToRelativeReadableTime is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaActivity.kt:166:5",
+        "message": "Function onOptionsItemSelected is nested too deeply."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/ExpandableSelectionView.kt:32:1",
+        "message": "Class 'ExpandableSelectionView' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainActivity.kt:30:1",
+        "message": "Class 'MainActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:42:1",
+        "message": "Class 'MessengerAdapter' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerFragment.kt:55:1",
+        "message": "Class 'MessengerFragment' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerDao.kt:19:1",
+        "message": "Class 'MessengerDao' with '26' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerWorker.kt:41:1",
+        "message": "Class 'MessengerWorker' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatFragment.kt:60:1",
+        "message": "Class 'ChatFragment' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatViewModel.kt:25:1",
+        "message": "Class 'ChatViewModel' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerLibExtensions.kt:1:1",
+        "message": "File 'ProxerLibExtensions.kt' with '36' functions detected. Defined threshold inside files is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/AndroidExtensions.kt:1:1",
+        "message": "File 'AndroidExtensions.kt' with '14' functions detected. Defined threshold inside files is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/UtilExtensions.kt:1:1",
+        "message": "File 'UtilExtensions.kt' with '14' functions detected. Defined threshold inside files is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/RxExtionsions.kt:1:1",
+        "message": "File 'RxExtionsions.kt' with '20' functions detected. Defined threshold inside files is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/converter/RoomConverters.kt:18:1",
+        "message": "Class 'RoomConverters' with '24' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:31:1",
+        "message": "Class 'MaterialDrawerWrapper' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/data/UniqueQueue.kt:5:1",
+        "message": "Class 'UniqueQueue' with '15' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaFragment.kt:61:1",
+        "message": "Class 'MangaFragment' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/BaseDialog.kt:21:1",
+        "message": "Class 'BaseDialog' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/info/MediaInfoFragment.kt:53:1",
+        "message": "Class 'MediaInfoFragment' with '20' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListFragment.kt:54:1",
+        "message": "Class 'MediaListFragment' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/TextPrototype.kt:96:80",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/StreamActivity.kt:105:32",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/StreamActivity.kt:168:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainApplication.kt:95:47",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerWorker.kt:41:1",
+        "message": "Class MessengerWorker is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:52:1",
+        "message": "Class CreateConferenceFragment is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaFragment.kt:61:1",
+        "message": "Class MangaFragment is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/info/MediaInfoFragment.kt:53:1",
+        "message": "Class MediaInfoFragment is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListFragment.kt:54:1",
+        "message": "Class MediaListFragment is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerLibExtensions.kt:354:100",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerLibExtensions.kt:354:86",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/NullabilityExtensions.kt:25:33",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/data/StorageHelper.kt:127:63",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/SnackbarExtensions.kt:45:38",
+        "message": "The function multilineSnackbar has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/SnackbarExtensions.kt:58:38",
+        "message": "The function multilineSnackbar has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/SnackbarExtensions.kt:83:38",
+        "message": "The function multilineSnackbar has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/SnackbarExtensions.kt:92:38",
+        "message": "The function multilineSnackbar has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/NotificationUtils.kt:44:30",
+        "message": "The function showErrorNotification has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaActivity.kt:51:23",
+        "message": "The function navigateTo has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeActivity.kt:36:23",
+        "message": "The function navigateTo has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListViewModel.kt:83:17",
+        "message": "This condition is too complex."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerWorker.kt:143:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerWorker.kt:148:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerWorker.kt:252:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerRxExtensions.kt:24:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerRxExtensions.kt:38:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerRxExtensions.kt:52:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerRxExtensions.kt:74:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerRxExtensions.kt:102:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/Utils.kt:59:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/rx/ViewTouchMonitorObservable.kt:45:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/rx/SubsamplingScaleImageViewEventObservable.kt:43:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/rx/SubsamplingScaleImageViewEventObservable.kt:54:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/rx/SubsamplingScaleImageViewEventObservable.kt:65:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/rx/SubsamplingScaleImageViewEventObservable.kt:92:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/rx/PreferenceChangeObservable.kt:49:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/rx/PreferenceClickObservable.kt:46:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/rx/TextViewLinkClickObservable.kt:53:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/rx/TextViewLinkLongClickObservable.kt:53:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/notification/NotificationWorker.kt:100:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/widget/NewsWidgetUpdateWorker.kt:95:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/widget/ScheduleWidgetUpdateWorker.kt:111:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainApplication.kt:150:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/settings/SettingsFragment.kt:167:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerDao.kt:96:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerDao.kt:103:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerDao.kt:106:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerDao.kt:109:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerNotifications.kt:155:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerWorker.kt:64:9",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/Utils.kt:44:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/ImagePrototype.kt:50:50",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/QuotePrototype.kt:33:50",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/UrlPrototype.kt:37:50",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/PdfPrototype.kt:61:50",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/SpoilerPrototype.kt:28:50",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/VideoPrototype.kt:30:50",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/ColorPrototype.kt:32:50",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/MapPrototype.kt:33:50",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/SizePrototype.kt:33:30",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/SizePrototype.kt:54:30",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/settings/AboutFragment.kt:131:35",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/settings/AboutFragment.kt:132:43",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/AndroidExtensions.kt:23:31",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/auth/LoginDialog.kt:91:21",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/widget/NewsWidgetUpdateWorker.kt:129:72",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/widget/NewsWidgetUpdateWorker.kt:130:69",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/widget/ScheduleWidgetUpdateWorker.kt:150:76",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/widget/ScheduleWidgetUpdateWorker.kt:151:73",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/ExpandableSelectionView.kt:126:9",
+        "message": "state cannot be safely cast to SavedState."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/BBTree.kt:83:9",
+        "message": "other cannot be safely cast to BBTree."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/ImagePrototype.kt:69:53",
+        "message": "args[WIDTH_ARGUMENT] cannot be safely cast to Int?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/QuotePrototype.kt:38:21",
+        "message": "args[QUOTE_ARGUMENT] cannot be safely cast to String?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/UrlPrototype.kt:42:19",
+        "message": "args[URL_ARGUMENT] cannot be safely cast to HttpUrl."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/UrlPrototype.kt:55:19",
+        "message": "args[URL_ARGUMENT] cannot be safely cast to HttpUrl."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/PdfPrototype.kt:76:62",
+        "message": "args[WIDTH_ARGUMENT] cannot be safely cast to Int?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/SpoilerPrototype.kt:33:21",
+        "message": "args[TITLE_ARGUMENT] cannot be safely cast to String?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/VideoPrototype.kt:34:20",
+        "message": "args[TYPE_ARGUMENT] cannot be safely cast to String?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/ColorPrototype.kt:36:21",
+        "message": "args[COLOR_ARGUMENT] cannot be safely cast to Int?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/MapPrototype.kt:37:20",
+        "message": "args[ZOOM_ARGUMENT] cannot be safely cast to Int?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/SizePrototype.kt:65:24",
+        "message": "args[SIZE_TYPE_ARGUMENT] cannot be safely cast to SizeType."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/SizePrototype.kt:66:20",
+        "message": "args[SIZE_ARGUMENT] cannot be safely cast to Float."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/BBArgs.kt:67:9",
+        "message": "other cannot be safely cast to BBArgs."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/settings/SettingsFragment.kt:97:48",
+        "message": "activity cannot be safely cast to AppCompatActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/settings/status/ServerStatusViewModel.kt:44:39",
+        "message": "first cannot be safely cast to TextNode."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/settings/status/ServerStatusViewModel.kt:44:60",
+        "message": "second cannot be safely cast to Element."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/ChatContainerFragment.kt:37:17",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/info/ConferenceInfoFragment.kt:39:17",
+        "message": "activity cannot be safely cast to ConferenceInfoActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/ConferenceFragment.kt:158:30",
+        "message": "searchItem.actionView cannot be safely cast to SearchView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerFragment.kt:72:17",
+        "message": "activity cannot be safely cast to MessengerActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:64:17",
+        "message": "activity cannot be safely cast to CreateConferenceActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:152:32",
+        "message": "inflater.inflate(\n            R.layout.item_create_conference_add_participant,\n            container, false\n        ) cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:157:37",
+        "message": "inflater.inflate(\n            R.layout.item_create_conference_add_participant_input,\n            container, false\n        ) cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/room/info/ChatRoomInfoFragment.kt:36:17",
+        "message": "activity cannot be safely cast to ChatRoomInfoActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatFragment.kt:77:17",
+        "message": "activity cannot be safely cast to ChatActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/share/ShareReceiverFragment.kt:55:17",
+        "message": "activity cannot be safely cast to ShareReceiverActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/share/ShareReceiverFragment.kt:122:30",
+        "message": "searchItem.actionView cannot be safely cast to SearchView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerLibExtensions.kt:179:38",
+        "message": "CommunityMaterial.Icon2.cmd_radio_tower cannot be safely cast to IIcon."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/SnackbarExtensions.kt:53:6",
+        "message": "this.view cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/media/UcpMediaListFragment.kt:60:17",
+        "message": "requireArguments().getSerializable(CATEGORY_ARGUMENT) cannot be safely cast to Category."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/info/industry/IndustryProjectFragment.kt:39:17",
+        "message": "activity cannot be safely cast to IndustryActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/info/industry/IndustryInfoFragment.kt:48:17",
+        "message": "activity cannot be safely cast to IndustryActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/info/translatorgroup/TranslatorGroupProjectFragment.kt:39:17",
+        "message": "activity cannot be safely cast to TranslatorGroupActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/info/translatorgroup/TranslatorGroupInfoFragment.kt:47:17",
+        "message": "activity cannot be safely cast to TranslatorGroupActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/forum/TopicFragment.kt:41:17",
+        "message": "activity cannot be safely cast to TopicActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaFragment.kt:78:17",
+        "message": "activity cannot be safely cast to MangaActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaFragment.kt:209:19",
+        "message": "inflater.inflate(R.layout.layout_media_control, container, false) cannot be safely cast to MediaControlView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaFragment.kt:220:19",
+        "message": "inflater.inflate(R.layout.layout_media_control, container, false) cannot be safely cast to MediaControlView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaAdapter.kt:213:32",
+        "message": "it cannot be safely cast to SubsamplingScaleImageViewEventObservable.Event.Error."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaAdapter.kt:251:39",
+        "message": "image cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaActivity.kt:93:21",
+        "message": "intent.getSerializableExtra(LANGUAGE_EXTRA) cannot be safely cast to Language."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/comment/ProfileCommentFragment.kt:45:17",
+        "message": "activity cannot be safely cast to ProfileActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/about/ProfileAboutFragment.kt:60:17",
+        "message": "activity cannot be safely cast to ProfileActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/topten/TopTenFragment.kt:44:17",
+        "message": "activity cannot be safely cast to ProfileActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/topten/TopTenFragment.kt:47:17",
+        "message": "activity cannot be safely cast to ProfileActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:38:17",
+        "message": "activity cannot be safely cast to ProfileActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/history/HistoryFragment.kt:50:17",
+        "message": "activity cannot be safely cast to ProfileActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/media/ProfileMediaListFragment.kt:58:17",
+        "message": "activity cannot be safely cast to ProfileActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/media/ProfileMediaListFragment.kt:67:17",
+        "message": "requireArguments().getSerializable(CATEGORY_ARGUMENT) cannot be safely cast to Category."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/widget/NewsWidgetDarkService.kt:20:76",
+        "message": "it cannot be safely cast to SimpleNews."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/widget/NewsWidgetService.kt:20:76",
+        "message": "it cannot be safely cast to SimpleNews."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:95:18",
+        "message": "null cannot be safely cast to KeyStore?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:98:9",
+        "message": "trustManagerFactory.trustManagers\n            .find { trustManager -> trustManager is X509TrustManager } cannot be safely cast to X509TrustManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/widget/ScheduleWidgetDarkService.kt:21:20",
+        "message": "it cannot be safely cast to SimpleCalendarEntry."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/widget/ScheduleWidgetService.kt:21:20",
+        "message": "it cannot be safely cast to SimpleCalendarEntry."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeFragment.kt:67:17",
+        "message": "activity cannot be safely cast to AnimeActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeFragment.kt:144:18",
+        "message": "inflater.inflate(R.layout.layout_media_control, container, false) cannot be safely cast to MediaControlView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeFragment.kt:199:30",
+        "message": "this.view cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeActivity.kt:76:21",
+        "message": "intent.getSerializableExtra(LANGUAGE_EXTRA) cannot be safely cast to AnimeLanguage."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/BaseAdapter.kt:20:18",
+        "message": "data[position] cannot be safely cast to ProxerIdItem."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/BaseFragment.kt:28:17",
+        "message": "requireActivity() cannot be safely cast to BaseActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/PagedContentFragment.kt:49:17",
+        "message": "adapter.footer cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/recommendation/RecommendationFragment.kt:39:17",
+        "message": "activity cannot be safely cast to MediaActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/MediaActivity.kt:91:17",
+        "message": "intent.getSerializableExtra(CATEGORY_EXTRA) cannot be safely cast to Category?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/relation/RelationFragment.kt:39:17",
+        "message": "activity cannot be safely cast to MediaActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentFragment.kt:45:17",
+        "message": "activity cannot be safely cast to MediaActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/episode/EpisodeAdapter.kt:170:40",
+        "message": "imageView cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/episode/EpisodeFragment.kt:51:17",
+        "message": "activity cannot be safely cast to MediaActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/info/MediaInfoFragment.kt:68:17",
+        "message": "activity cannot be safely cast to MediaActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/info/MediaInfoFragment.kt:386:29",
+        "message": "LayoutInflater.from(context)\n                    .inflate(R.layout.layout_image, fskConstraints, false) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/info/MediaInfoFragment.kt:446:28",
+        "message": "LayoutInflater.from(layout.context).inflate(R.layout.item_chip, layout, false) cannot be safely cast to Chip."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListFragment.kt:95:17",
+        "message": "requireArguments().getSerializable(CATEGORY_ARGUMENT) cannot be safely cast to Category."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListFragment.kt:274:26",
+        "message": "searchItem.actionView cannot be safely cast to SearchView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/discussion/DiscussionFragment.kt:38:17",
+        "message": "activity cannot be safely cast to MediaActivity."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/release/kotlin/me/proxer/app/FlavorInitializer.kt:11:20",
+        "message": "Function parameter application is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/debug/kotlin/me/proxer/app/FlavorInitializer.kt:9:20",
+        "message": "Function parameter application is unused."
+      }]
+    }, {
+      "name": "OptionalUnit",
+      "description": "Return type of 'Unit' is unnecessary and can be safely removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/androidx/recyclerview/widget/BindAwareViewHolder.kt:30:35",
+        "message": "The function onBind defines a return type of Unit. This is unnecessary and can safely be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/androidx/recyclerview/widget/BindAwareViewHolder.kt:33:37",
+        "message": "The function onUnbind defines a return type of Unit. This is unnecessary and can safely be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/BaseDialog.kt:103:61",
+        "message": "The function onDialogCreated defines a return type of Unit. This is unnecessary and can safely be removed."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/ExpandableSelectionView.kt:95:71",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/ExpandableSelectionView.kt:96:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/ExpandableSelectionView.kt:145:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/BBCodeEmoticons.kt:110:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/BBCodeEmoticons.kt:110:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/BBSpoilerView.kt:104:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/BBSpoilerView.kt:105:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/BBSpoilerView.kt:120:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/ImagePrototype.kt:107:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/UnorderedListPrototype.kt:28:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/TablePrototype.kt:32:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/TableRowPrototype.kt:32:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/HidePrototype.kt:50:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/QuotePrototype.kt:48:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/OrderedListPrototype.kt:28:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/PdfPrototype.kt:80:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/PdfPrototype.kt:132:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/PdfPrototype.kt:145:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/PdfPrototype.kt:149:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/PdfPrototype.kt:163:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/PdfPrototype.kt:164:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/CodePrototype.kt:38:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/CodePrototype.kt:48:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/SizePrototype.kt:42:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/SizePrototype.kt:43:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/SizePrototype.kt:44:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/SizePrototype.kt:46:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/settings/status/ServerStatusFragment.kt:70:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/settings/status/ServerStatusFragment.kt:71:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/settings/status/ServerStatusAdapter.kt:48:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/settings/status/ServerStatusAdapter.kt:54:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainActivity.kt:65:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainActivity.kt:73:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainActivity.kt:73:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/bookmark/BookmarkAdapter.kt:73:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/bookmark/BookmarkViewModel.kt:24:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/ConferenceAdapter.kt:105:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/ConferenceAdapter.kt:153:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/ConferenceAdapter.kt:154:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/ConferenceAdapter.kt:184:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/ConferenceAdapter.kt:185:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/ConferenceAdapter.kt:207:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/info/ConferenceParticipantAdapter.kt:95:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/info/ConferenceParticipantAdapter.kt:96:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/info/ConferenceParticipantAdapter.kt:112:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/info/ConferenceParticipantAdapter.kt:112:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/ConferenceFragment.kt:172:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:150:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:242:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:243:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:246:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:251:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:254:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:255:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:273:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:419:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:420:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:420:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:420:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:420:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:421:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerFragment.kt:216:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerFragment.kt:228:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerFragment.kt:229:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerFragment.kt:330:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerFragment.kt:331:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerNotifications.kt:232:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerWorker.kt:85:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/sync/MessengerWorker.kt:89:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceParticipantAdapter.kt:78:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceParticipantAdapter.kt:78:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceParticipantAdapter.kt:96:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceParticipantAdapter.kt:96:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:166:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:166:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:169:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:169:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:170:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:170:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:240:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:241:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:402:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceFragment.kt:403:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/room/info/ChatRoomInfoViewModel.kt:48:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/room/info/ChatRoomInfoViewModel.kt:49:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/room/info/ChatRoomInfoViewModel.kt:50:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/room/info/ChatRoomUserAdapter.kt:92:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/room/info/ChatRoomUserAdapter.kt:93:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/room/info/ChatRoomUserAdapter.kt:108:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/room/info/ChatRoomUserAdapter.kt:108:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatFragment.kt:216:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatFragment.kt:219:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatFragment.kt:241:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatFragment.kt:242:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatFragment.kt:370:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatFragment.kt:371:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:147:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:237:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:238:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:241:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:246:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:264:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:378:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:378:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:390:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:391:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:391:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:391:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:391:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatViewModel.kt:30:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatViewModel.kt:193:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatViewModel.kt:194:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatViewModel.kt:196:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatViewModel.kt:216:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/share/ShareReceiverFragment.kt:82:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/share/ShareReceiverFragment.kt:136:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/share/ConferenceChooserTargetService.kt:40:15",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/share/ConferenceChooserTargetService.kt:69:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/share/ConferenceChooserTargetService.kt:70:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ViewExtensions.kt:31:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/IntroductionWrapper.kt:28:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/IntroductionWrapper.kt:36:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:49:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:103:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:176:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:177:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:187:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:224:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:326:15",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:327:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:328:15",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:329:14",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:330:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:339:15",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:340:15",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:341:14",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:342:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:343:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:344:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/MaterialDrawerWrapper.kt:345:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/GlideDrawerImageLoader.kt:30:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/ErrorUtils.kt:161:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/ErrorUtils.kt:162:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/ErrorUtils.kt:162:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/data/StorageHelper.kt:115:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/auth/LoginDialog.kt:89:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/auth/LoginDialog.kt:180:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/notification/NotificationViewModel.kt:23:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/notification/NotificationWorker.kt:57:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/notification/NotificationWorker.kt:57:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/notification/NotificationWorker.kt:118:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/notification/NotificationAdapter.kt:48:71",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/notification/NotificationAdapter.kt:48:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/settings/LocalUcpSettings.kt:36:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/topten/UcpTopTenAdapter.kt:61:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/history/UcpHistoryViewModel.kt:13:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/UcpActivity.kt:69:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/UcpActivity.kt:70:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/UcpActivity.kt:80:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/UcpActivity.kt:81:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/overview/UcpOverviewFragment.kt:86:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/overview/UcpOverviewFragment.kt:87:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/overview/UcpOverviewFragment.kt:88:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/media/UcpMediaListViewModel.kt:28:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/media/UcpMediaAdapter.kt:73:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/media/UcpMediaAdapter.kt:84:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/info/industry/IndustryProjectViewModel.kt:12:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/info/translatorgroup/TranslatorGroupProjectViewModel.kt:14:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/forum/PostAdapter.kt:85:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/forum/PostAdapter.kt:129:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/forum/PostAdapter.kt:129:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/forum/TopicViewModel.kt:18:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaFragment.kt:160:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaFragment.kt:164:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaFragment.kt:170:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaFragment.kt:178:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaFragment.kt:290:102",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaFragment.kt:446:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaAdapter.kt:156:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaAdapter.kt:162:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaAdapter.kt:226:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaActivity.kt:92:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaActivity.kt:147:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:109:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:110:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:111:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:169:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:170:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:183:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:184:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:185:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:186:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:196:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:197:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:198:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/ProfileActivity.kt:199:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/comment/ProfileCommentFragment.kt:38:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/comment/ProfileCommentViewModel.kt:21:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/comment/ProfileCommentAdapter.kt:110:103",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/comment/ProfileCommentAdapter.kt:117:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/comment/ProfileCommentAdapter.kt:118:78",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/comment/ProfileCommentAdapter.kt:177:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/comment/ProfileCommentAdapter.kt:178:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/about/ProfileAboutFragment.kt:91:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/about/ProfileAboutFragment.kt:160:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/about/ProfileAboutFragment.kt:241:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/about/ProfileAboutFragment.kt:241:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/about/ProfileAboutFragment.kt:242:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/about/ProfileAboutFragment.kt:242:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/about/ProfileAboutFragment.kt:243:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/about/ProfileAboutFragment.kt:244:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/about/ProfileAboutFragment.kt:244:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:106:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:107:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:108:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:109:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:110:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:111:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:112:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:113:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:114:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:115:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:116:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:117:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:118:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:119:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:120:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:121:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:122:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:123:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:124:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:125:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/history/HistoryViewModel.kt:16:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/media/ProfileMediaAdapter.kt:78:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/media/ProfileMediaListViewModel.kt:21:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/widget/NewsWidgetUpdateWorker.kt:199:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/widget/NewsWidgetUpdateWorker.kt:200:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/NewsAdapter.kt:97:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/NewsAdapter.kt:143:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/NewsAdapter.kt:144:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/NewsAdapter.kt:147:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/NewsAdapter.kt:156:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/NewsViewModel.kt:14:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:115:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:116:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:117:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:170:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:170:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:170:117",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:171:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:171:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:171:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:171:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:171:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/MainModules.kt:190:103",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/widget/ScheduleWidgetUpdateWorker.kt:176:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/widget/ScheduleWidgetUpdateWorker.kt:239:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/widget/ScheduleWidgetUpdateWorker.kt:240:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/ScheduleEntryAdapter.kt:139:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/ScheduleEntryAdapter.kt:140:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/ScheduleEntryAdapter.kt:143:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/ScheduleEntryAdapter.kt:144:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/ScheduleEntryAdapter.kt:147:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/ScheduleEntryAdapter.kt:148:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/ScheduleAdapter.kt:88:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/ScheduleAdapter.kt:89:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/StreamActivity.kt:230:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeAdapter.kt:215:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeAdapter.kt:216:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeAdapter.kt:223:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeActivity.kt:75:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/resolver/Mp4UploadStreamResolver.kt:56:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/ImageTabsActivity.kt:67:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/PagedContentFragment.kt:37:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/PagedContentFragment.kt:86:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/recommendation/RecommendationAdapter.kt:134:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/recommendation/RecommendationAdapter.kt:135:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/recommendation/RecommendationAdapter.kt:145:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/recommendation/RecommendationAdapter.kt:146:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/MediaActivity.kt:106:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/MediaActivity.kt:107:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/MediaActivity.kt:108:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/MediaActivity.kt:161:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/MediaActivity.kt:162:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/MediaActivity.kt:163:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/MediaActivity.kt:168:93",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/MediaActivity.kt:177:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/MediaActivity.kt:178:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/MediaActivity.kt:179:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentAdapter.kt:117:103",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentAdapter.kt:122:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentAdapter.kt:123:78",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentAdapter.kt:190:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentAdapter.kt:191:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentAdapter.kt:224:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentAdapter.kt:224:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentFragment.kt:40:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentViewModel.kt:19:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/episode/EpisodeAdapter.kt:89:71",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/episode/EpisodeAdapter.kt:161:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/episode/EpisodeAdapter.kt:162:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/episode/EpisodeFragment.kt:105:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/episode/EpisodeFragment.kt:108:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/info/MediaInfoFragment.kt:477:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/info/MediaInfoFragment.kt:478:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/info/MediaInfoFragment.kt:479:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListSearchBottomSheet.kt:84:105",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListViewModel.kt:52:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListViewModel.kt:153:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/BBParser.kt:63:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/TextPrototype.kt:49:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/TextPrototype.kt:53:98",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/TextPrototype.kt:57:62",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/PdfPrototype.kt:117:72",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/BreakPrototype.kt:16:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/BBUtils.kt:23:70",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/settings/status/ServerStatusFragment.kt:45:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/settings/status/ServerStatusAdapter.kt:22:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/bookmark/BookmarkAdapter.kt:46:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/ChatContainerFragment.kt:53:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/ConferenceAdapter.kt:54:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/ConferenceAdapter.kt:68:99",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/info/ConferenceInfoFragment.kt:68:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/ConferenceFragment.kt:120:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:331:73",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerFragment.kt:187:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceParticipantAdapter.kt:47:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/room/ChatRoomFragment.kt:54:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/room/info/ChatRoomInfoFragment.kt:64:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/room/ChatRoomAdapter.kt:36:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatFragment.kt:199:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:318:73",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatViewModel.kt:236:75",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/share/ShareReceiverFragment.kt:94:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ProxerLibExtensions.kt:361:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/RxBindingExtensions.kt:19:113",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/RxBindingExtensions.kt:24:101",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/RxBindingExtensions.kt:29:105",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/RxBindingExtensions.kt:34:94",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/RxBindingExtensions.kt:39:95",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/RxBindingExtensions.kt:44:107",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ViewExtensions.kt:42:81",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/extension/ViewExtensions.kt:46:73",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/wrapper/OriginalSizeGlideTarget.kt:29:41",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/http/ModernTlsSocketFactory.kt:34:58",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/http/ModernTlsSocketFactory.kt:38:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/http/ModernTlsSocketFactory.kt:42:96",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/http/ModernTlsSocketFactory.kt:46:65",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/http/ModernTlsSocketFactory.kt:50:105",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/http/ModernTlsSocketFactory.kt:54:70",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/http/ModernTlsSocketFactory.kt:58:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/data/HawkMoshiParser.kt:11:71",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/data/HawkMoshiParser.kt:15:45",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/util/data/HawkInitializer.kt:86:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/notification/NotificationAdapter.kt:35:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/topten/UcpTopTenFragment.kt:68:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/topten/UcpTopTenAdapter.kt:40:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/history/UcpHistoryAdapter.kt:40:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/overview/UcpOverviewFragment.kt:52:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/media/UcpMediaAdapter.kt:47:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/info/industry/IndustryInfoFragment.kt:67:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/info/industry/IndustryProjectAdapter.kt:40:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/info/translatorgroup/TranslatorGroupProjectAdapter.kt:40:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/info/translatorgroup/TranslatorGroupInfoFragment.kt:65:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/forum/PostAdapter.kt:42:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaAdapter.kt:89:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/comment/ProfileCommentAdapter.kt:59:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/about/ProfileAboutFragment.kt:77:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/topten/TopTenFragment.kt:76:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/topten/TopTenAdapter.kt:36:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/info/ProfileInfoFragment.kt:62:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/history/HistoryAdapter.kt:40:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/media/ProfileMediaAdapter.kt:43:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/ScheduleEntryAdapter.kt:76:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/ScheduleFragment.kt:54:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/ScheduleAdapter.kt:43:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/CastOptionsProvider.kt:35:90",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeAdapter.kt:63:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/AutoDisposeViewHolder.kt:53:52",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/BaseDialog.kt:105:45",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/BaseActivity.kt:83:45",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/ImageTabsActivity.kt:165:76",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/BaseFragment.kt:44:45",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/base/PagedContentFragment.kt:70:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/recommendation/RecommendationFragment.kt:65:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/recommendation/RecommendationAdapter.kt:50:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/relation/RelationFragment.kt:63:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/relation/RelationAdapter.kt:49:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentAdapter.kt:64:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/episode/EpisodeAdapter.kt:61:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/episode/EpisodeFragment.kt:92:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/info/MediaInfoFragment.kt:123:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/LocalTag.kt:51:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListViewModel.kt:105:118",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListFragment.kt:229:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaListFragment.kt:332:43",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/discussion/DiscussionAdapter.kt:35:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/discussion/DiscussionFragment.kt:62:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ui/view/bbcode/prototype/OrderedListPrototype.kt:33:52",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaViewModel.kt:90:17",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeViewModel.kt:86:17",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/MediaInfoViewModel.kt:62:17",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/bookmark/BookmarkAdapter.kt:101:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/bookmark/BookmarkAdapter.kt:106:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/bookmark/BookmarkAdapter.kt:111:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/ConferenceAdapter.kt:83:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/conference/info/ConferenceParticipantAdapter.kt:75:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:280:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:285:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/message/MessengerAdapter.kt:386:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/prv/create/CreateConferenceParticipantAdapter.kt:83:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/room/info/ChatRoomUserAdapter.kt:74:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/room/ChatRoomAdapter.kt:51:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:271:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:276:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/chat/pub/message/ChatAdapter.kt:368:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/notification/NotificationAdapter.kt:53:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/notification/NotificationAdapter.kt:58:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/topten/UcpTopTenAdapter.kt:66:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/topten/UcpTopTenAdapter.kt:71:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/history/UcpHistoryAdapter.kt:63:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/history/UcpHistoryAdapter.kt:68:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/media/UcpMediaAdapter.kt:98:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/ucp/media/UcpMediaAdapter.kt:103:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/info/industry/IndustryProjectAdapter.kt:65:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/info/translatorgroup/TranslatorGroupProjectAdapter.kt:65:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/forum/PostAdapter.kt:90:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaAdapter.kt:205:36",
+        "message": "Parentheses around the lambda ({ positionResolver.resolve(adapterPosition) }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaAdapter.kt:216:52",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/manga/MangaAdapter.kt:247:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/comment/ProfileCommentAdapter.kt:147:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/comment/ProfileCommentAdapter.kt:153:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/comment/ProfileCommentAdapter.kt:158:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/topten/TopTenAdapter.kt:57:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/history/HistoryAdapter.kt:63:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/history/HistoryAdapter.kt:68:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/profile/media/ProfileMediaAdapter.kt:69:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/NewsAdapter.kt:117:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/NewsAdapter.kt:122:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/news/NewsAdapter.kt:127:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/schedule/ScheduleEntryAdapter.kt:160:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeAdapter.kt:130:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeAdapter.kt:151:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeAdapter.kt:156:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/anime/AnimeAdapter.kt:161:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/recommendation/RecommendationAdapter.kt:87:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/relation/RelationAdapter.kt:77:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentAdapter.kt:157:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentAdapter.kt:166:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/comment/CommentAdapter.kt:171:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/episode/EpisodeAdapter.kt:94:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/episode/EpisodeAdapter.kt:139:40",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/list/MediaAdapter.kt:78:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/proxer-ProxerAndroid/src/main/kotlin/me/proxer/app/media/discussion/DiscussionAdapter.kt:48:36",
+        "message": "Parentheses around the lambda ({ adapterPosition }) are unnecessary and can be removed."
+      }]
+    }]
+  }]
+}

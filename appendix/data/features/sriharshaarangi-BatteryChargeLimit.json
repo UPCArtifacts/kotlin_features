@@ -1,0 +1,606 @@
+{
+  "complexity_metrics": {
+    "loc": 1725,
+    "sloc": 1338,
+    "lloc": 901,
+    "cloc": 153,
+    "mcc": 230,
+    "n_smell": 150,
+    "comment_ratio": 11,
+    "mcc_per_thlines": 255
+  },
+  "metrics": {
+    "number_of_string": 104,
+    "number_of_string_template": 8,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 153,
+    "number_of_objects_declarations": 16,
+    "number_of_companion_objects": 7,
+    "number_of_singletons": 3,
+    "number_of_declaration": 201,
+    "number_of_var_declaration": 201,
+    "number_of_func_call": 621,
+    "number_of_arguments": 716,
+    "number_of_parameters": 165,
+    "number_of_qualified_expressions": 918,
+    "number_of_inheritances": 16,
+    "number_of_unsafe_calls": 23,
+    "number_of_safe_calls": 1,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 6,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 3,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 1,
+    "number_of_properties_delegation": 10,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 45,
+    "number_of_possible_smart_casts": 1,
+    "number_of_data_class": 0,
+    "number_of_properties": 201,
+    "number_of_functions": 90,
+    "number_of_interfaces": 0,
+    "number_of_classes": 18,
+    "number_of_packages": 5,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 19
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:210:5",
+        "message": "The function handleLimitChange appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/receivers/BatteryReceiver.kt:102:5",
+        "message": "The function onReceive appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:44:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/CustomCtrlFileData.kt:20:5",
+        "message": "The function onCreate appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:270:43",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/receivers/BatteryReceiver.kt:118:23",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/receivers/PowerConnectionReceiver.kt:32:27",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:113:43",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:32:1",
+        "message": "Object 'SharedMethods' with '18' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/ForegroundService.kt:20:1",
+        "message": "Class 'ForegroundService' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:44:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/CustomCtrlFileData.kt:20:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:32:1",
+        "message": "Class MainActivity is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:57:33",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:75:55",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:77:51",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:83:41",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:158:87",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:174:41",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:197:72",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:201:72",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:205:72",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:209:72",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:213:72",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/ForegroundService.kt:60:43",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/fragments/AboutFragment.kt:52:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:123:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/fragments/AboutFragment.kt:53:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }, {
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/ControlFile.kt:28:17",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/SettingsFragment.kt:76:25",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:129:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:135:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/EnableWidget.kt:19:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/SettingsFragment.kt:27:42",
+        "message": "findPreference(\"dark_theme\") cannot be safely cast to SwitchPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/SettingsFragment.kt:28:57",
+        "message": "findPreference(\"custom_ctrl_file_data\") cannot be safely cast to SwitchPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/SettingsFragment.kt:29:56",
+        "message": "findPreference(\"control_file\") cannot be safely cast to ControlFilePreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/SettingsFragment.kt:30:50",
+        "message": "findPreference(\"custom_ctrl_file_setup\") cannot be safely cast to Preference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/SettingsFragment.kt:33:17",
+        "message": "newValue cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/SettingsFragment.kt:58:17",
+        "message": "newValue cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/SettingsFragment.kt:118:30",
+        "message": "activity.findViewById(R.id.status_ctrl_data) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:44:27",
+        "message": "convertView.findViewById(R.id.cf_label) cannot be safely cast to RadioButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:47:60",
+        "message": "v.tag cannot be safely cast to ControlFile."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:51:29",
+        "message": "convertView.findViewById(R.id.cf_details) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:52:34",
+        "message": "convertView.findViewById(R.id.cf_experimental) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:53:28",
+        "message": "convertView.findViewById(R.id.cf_issues) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:56:21",
+        "message": "convertView.tag cannot be safely cast to ViewHolder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/fragments/AboutFragment.kt:46:25",
+        "message": "view.findViewById(R.id.app_version) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/fragments/AboutFragment.kt:58:28",
+        "message": "view.findViewById(R.id.developers) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/fragments/AboutFragment.kt:67:29",
+        "message": "view.findViewById(R.id.translators) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/fragments/AboutFragment.kt:76:24",
+        "message": "view.findViewById(R.id.source_code) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/fragments/AboutFragment.kt:82:21",
+        "message": "view.findViewById(R.id.xda_thread) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:33:63",
+        "message": "findViewById(R.id.min_picker) cannot be safely cast to NumberPicker."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:34:61",
+        "message": "findViewById(R.id.min_text) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:35:63",
+        "message": "findViewById(R.id.max_picker) cannot be safely cast to NumberPicker."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:36:61",
+        "message": "findViewById(R.id.max_text) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:38:64",
+        "message": "findViewById(R.id.status) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:39:65",
+        "message": "findViewById(R.id.battery_info) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:40:66",
+        "message": "findViewById(R.id.enable_switch) cannot be safely cast to Switch."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:51:23",
+        "message": "findViewById(R.id.toolbar) cannot be safely cast to Toolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:135:40",
+        "message": "findViewById(R.id.reset_battery_stats) cannot be safely cast to Button."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:136:31",
+        "message": "findViewById(R.id.auto_stats_reset) cannot be safely cast to Switch."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:137:33",
+        "message": "findViewById(R.id.notification_sound) cannot be safely cast to Switch."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:164:30",
+        "message": "findViewById(R.id.status_ctrl_data) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/CustomCtrlFileData.kt:32:28",
+        "message": "findViewById(R.id.edit_path_file) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/CustomCtrlFileData.kt:33:31",
+        "message": "findViewById(R.id.edit_path_enabled) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/CustomCtrlFileData.kt:34:32",
+        "message": "findViewById(R.id.edit_path_disabled) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/CustomCtrlFileData.kt:35:29",
+        "message": "findViewById(R.id.btn_update_custom) cannot be safely cast to Button."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/CustomCtrlFileData.kt:40:31",
+        "message": "findViewById(R.id.custom_data_updated) cannot be safely cast to TextView."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:43:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:43:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:45:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:59:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:60:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:61:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:62:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:63:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:64:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:64:47",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:65:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:65:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/fragments/AboutFragment.kt:16:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:121:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:128:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:272:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:275:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/ControlFile.kt:36:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:236:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:243:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:257:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/CustomCtrlFileData.kt:27:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/ForegroundService.kt:118:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/SettingsFragment.kt:135:1",
+        "message": "The file SettingsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:76:1",
+        "message": "The file ControlFilePreference.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/fragments/AboutFragment.kt:86:1",
+        "message": "The file AboutFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/SplashActivity.kt:16:1",
+        "message": "The file SplashActivity.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/SettingsFragment.kt:119:175",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:246:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:261:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/receivers/BatteryReceiver.kt:114:216",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/CustomCtrlFileData.kt:42:144",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/CustomCtrlFileData.kt:92:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/ForegroundService.kt:73:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/SettingsFragment.kt:131:40",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/fragments/AboutFragment.kt:40:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:57:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/ForegroundService.kt:125:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/settings/ControlFilePreference.kt:10:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/receivers/BatteryReceiver.kt:3:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/receivers/PowerConnectionReceiver.kt:3:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:3:1",
+        "message": "android.content.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:16:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:17:1",
+        "message": "com.slash.batterychargelimit.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:69:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:163:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:165:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:173:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:174:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:174:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:174:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:174:100",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:204:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:217:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:221:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/SharedMethods.kt:221:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/receivers/BatteryReceiver.kt:69:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:109:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:109:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:114:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:119:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:119:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:119:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:119:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:119:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:119:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:119:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:119:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:119:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:119:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:119:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:120:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:141:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:142:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:294:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/receivers/BatteryReceiver.kt:20:62",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of BatteryReceiver."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/receivers/BatteryReceiver.kt:50:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/receivers/BatteryReceiver.kt:53:17",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:5:1",
+        "message": "The import 'android.graphics.Color' is unused."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/MainActivity.kt:46:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/CustomCtrlFileData.kt:22:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/sriharshaarangi-BatteryChargeLimit/app/src/main/java/com/slash/batterychargelimit/activities/CustomCtrlFileData.kt:87:41",
+        "message": "Parentheses around the lambda ({\n            SharedMethods.stopService(this)\n            settings.edit().putString(Constants.SAVED_PATH_DATA, customPathData).apply()\n            settings.edit().putString(Constants.SAVED_ENABLED_DATA, customEnabledData).apply()\n            settings.edit().putString(Constants.SAVED_DISABLED_DATA, customDisabledData).apply()\n            updatedDataText.hint = \"Path Data: $customPathData\\nEnable Value: $customEnabledData\\nDisabled Value: $customDisabledData\"\n            SharedMethods.startService(this)\n        }) are unnecessary and can be removed."
+      }]
+    }]
+  }]
+}

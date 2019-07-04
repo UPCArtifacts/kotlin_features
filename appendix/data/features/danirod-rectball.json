@@ -1,0 +1,373 @@
+{
+  "complexity_metrics": {
+    "loc": 1440,
+    "sloc": 808,
+    "lloc": 582,
+    "cloc": 390,
+    "mcc": 164,
+    "n_smell": 87,
+    "comment_ratio": 48,
+    "mcc_per_thlines": 281
+  },
+  "metrics": {
+    "number_of_string": 131,
+    "number_of_string_template": 24,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 4,
+    "number_of_inferred_var": 95,
+    "number_of_objects_declarations": 6,
+    "number_of_companion_objects": 2,
+    "number_of_singletons": 2,
+    "number_of_declaration": 112,
+    "number_of_var_declaration": 120,
+    "number_of_func_call": 540,
+    "number_of_arguments": 649,
+    "number_of_parameters": 143,
+    "number_of_qualified_expressions": 794,
+    "number_of_inheritances": 5,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 8,
+    "number_of_when_expressions": 1,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 5,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 2,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 14,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 104,
+    "number_of_functions": 102,
+    "number_of_interfaces": 2,
+    "number_of_classes": 12,
+    "number_of_packages": 4,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 16
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/osp/java/es/danirod/rectball/android/NullGameServices.kt:26:21",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/osp/java/es/danirod/rectball/android/NullAnalytics.kt:25:21",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/gpe/java/es/danirod/rectball/android/GooglePlayGamesRuntime.kt:52:27",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/settings/MigrationV1.kt:40:29",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/settings/MigrationV1.kt:59:43",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/settings/MigrationV1.kt:54:29",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:67:32",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/settings/SettingsManager.kt:29:1",
+        "message": "Class 'SettingsManager' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:37:1",
+        "message": "Class 'AndroidLauncher' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/gpe/java/es/danirod/rectball/android/GooglePlayGamesRuntime.kt:51:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/gpe/java/es/danirod/rectball/android/GooglePlayGamesRuntime.kt:64:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/osp/java/es/danirod/rectball/android/NullAnalytics.kt:44:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/gpe/java/es/danirod/rectball/android/GoogleAnalyticsRuntime.kt:84:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/Analytics.kt:41:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/osp/java/es/danirod/rectball/android/NullGameServices.kt:20:28",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of NullGameServices."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/osp/java/es/danirod/rectball/android/NullAnalytics.kt:29:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/osp/java/es/danirod/rectball/android/NullAnalytics.kt:37:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/osp/java/es/danirod/rectball/android/NullAnalytics.kt:41:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/osp/java/es/danirod/rectball/android/NullAnalytics.kt:44:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/osp/java/es/danirod/rectball/android/NullAnalytics.kt:45:154",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/gpe/java/es/danirod/rectball/android/GoogleAnalyticsRuntime.kt:84:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/gpe/java/es/danirod/rectball/android/GooglePlayGamesRuntime.kt:39:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/Pixmapper.kt:33:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/AssetManagerBuilder.kt:85:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/AssetManagerBuilder.kt:98:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:32:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:139:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:140:164",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:141:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:142:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:143:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:144:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:145:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/settings/MigrationV1.kt:93:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/Analytics.kt:41:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:137:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:141:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/gpe/java/es/danirod/rectball/android/GooglePlayGamesRuntime.kt:85:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/gpe/java/es/danirod/rectball/android/GooglePlayGamesRuntime.kt:89:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/gpe/java/es/danirod/rectball/android/GooglePlayGamesRuntime.kt:93:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/gpe/java/es/danirod/rectball/android/GooglePlayGamesRuntime.kt:98:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/gpe/java/es/danirod/rectball/android/GooglePlayGamesRuntime.kt:103:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/Pixmapper.kt:59:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/Pixmapper.kt:60:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/AssetManagerBuilder.kt:71:88",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/AssetManagerBuilder.kt:73:88",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:37:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:37:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:53:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:53:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:73:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:73:82",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:89:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:89:71",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:92:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:92:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:111:92",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:117:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:117:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:117:82",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:129:82",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:130:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:130:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:130:101",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:163:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:164:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:164:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:165:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/scene2d/ui/StatsTable.kt:165:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:95:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:148:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:164:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:166:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:178:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/Pixmapper.kt:72:1",
+        "message": "The file Pixmapper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/AssetManagerBuilder.kt:113:1",
+        "message": "The file AssetManagerBuilder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/settings/MigrationV1.kt:99:1",
+        "message": "The file MigrationV1.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/settings/SettingsManager.kt:169:1",
+        "message": "The file SettingsManager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/StateBasedGame.kt:72:1",
+        "message": "The file StateBasedGame.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/Pixmapper.kt:51:16",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/Pixmapper.kt:51:16",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:132:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/AndroidLauncher.kt:132:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/danirod-rectball/app/src/main/java/es/danirod/rectball/android/settings/MigrationV1.kt:78:40",
+        "message": "Pair is created by using the pair constructor. This can replaced by `it.name to it.asLong()`"
+      }]
+    }]
+  }]
+}

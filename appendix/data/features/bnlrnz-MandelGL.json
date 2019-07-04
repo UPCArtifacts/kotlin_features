@@ -1,0 +1,376 @@
+{
+  "complexity_metrics": {
+    "loc": 902,
+    "sloc": 584,
+    "lloc": 453,
+    "cloc": 113,
+    "mcc": 71,
+    "n_smell": 76,
+    "comment_ratio": 19,
+    "mcc_per_thlines": 156
+  },
+  "metrics": {
+    "number_of_string": 86,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 56,
+    "number_of_objects_declarations": 3,
+    "number_of_companion_objects": 1,
+    "number_of_singletons": 0,
+    "number_of_declaration": 88,
+    "number_of_var_declaration": 88,
+    "number_of_func_call": 314,
+    "number_of_arguments": 418,
+    "number_of_parameters": 66,
+    "number_of_qualified_expressions": 593,
+    "number_of_inheritances": 2,
+    "number_of_unsafe_calls": 3,
+    "number_of_safe_calls": 93,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 1,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 15,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_properties": 88,
+    "number_of_functions": 38,
+    "number_of_interfaces": 0,
+    "number_of_classes": 8,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 4
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:45:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:214:5",
+        "message": "The function initializeShaders is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:352:5",
+        "message": "The function createHueTexture is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:45:5",
+        "message": "The function onCreate appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:21:1",
+        "message": "Class 'MandelGLSurfaceView' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:16:1",
+        "message": "Class MandelGLRenderer is too large. Consider splitting it into smaller pieces."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:107:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "PackageNaming",
+      "description": "Package names should match the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/HueTexture.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }]
+    }, {
+      "name": "EnumNaming",
+      "description": "Enum names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/HueTexture.kt:7:5",
+        "message": "Enum entry names should match the pattern: ^[A-Z][_a-zA-Z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/HueTexture.kt:8:5",
+        "message": "Enum entry names should match the pattern: ^[A-Z][_a-zA-Z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/HueTexture.kt:9:5",
+        "message": "Enum entry names should match the pattern: ^[A-Z][_a-zA-Z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/HueTexture.kt:10:5",
+        "message": "Enum entry names should match the pattern: ^[A-Z][_a-zA-Z0-9]*"
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:26:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:202:17",
+        "message": "this.infoDialog?.isShowing cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:234:17",
+        "message": "this.aboutDialog?.isShowing cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:119:18",
+        "message": "gestureDetector?.onTouchEvent(event) cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:119:69",
+        "message": "retVal cannot be safely cast to Boolean."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:25:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:78:60",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:145:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/HueTexture.kt:11:1",
+        "message": "The file HueTexture.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:399:1",
+        "message": "The file MandelGLRenderer.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:201:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:233:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:16:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:5:1",
+        "message": "android.opengl.GLES20.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:108:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:171:139",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:225:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:270:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:299:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:21:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:63:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:113:177",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:385:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:19:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:13:48",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MandelGLRenderer."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:55:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:74:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:75:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:76:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:79:78",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:282:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:298:93",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:30:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:30:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:44:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:84:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:104:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:149:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:150:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:156:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:157:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:55:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:56:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:58:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:59:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:66:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:113:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:113:119",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:125:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:191:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:198:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:198:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:208:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:360:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MainActivity.kt:10:1",
+        "message": "The import 'android.text.Layout' is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:133:73",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:168:58",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:172:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLSurfaceView.kt:176:107",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:362:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "OptionalUnit",
+      "description": "Return type of 'Unit' is unnecessary and can be safely removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/Experimento2/repos_MSR/bnlrnz-MandelGL/app/src/main/java/de/tubaf/mandelGL/MandelGLRenderer.kt:85:61",
+        "message": "The function checkError defines a return type of Unit. This is unnecessary and can safely be removed."
+      }]
+    }]
+  }]
+}

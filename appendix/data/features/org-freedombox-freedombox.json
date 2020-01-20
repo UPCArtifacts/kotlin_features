@@ -1,0 +1,662 @@
+{
+  "complexity_metrics": {
+    "loc": 2512,
+    "sloc": 1457,
+    "lloc": 913,
+    "cloc": 631,
+    "mcc": 230,
+    "n_smell": 91,
+    "comment_ratio": 43,
+    "mcc_per_thlines": 251
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 90,
+    "number_of_string_template": 10,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 28,
+    "number_of_inferred_var": 153,
+    "number_of_objects_declarations": 13,
+    "number_of_companion_objects": 6,
+    "number_of_singletons": 0,
+    "number_of_declaration": 184,
+    "number_of_var_declaration": 184,
+    "number_of_func_call": 640,
+    "number_of_arguments": 608,
+    "number_of_parameters": 171,
+    "number_of_qualified_expressions": 820,
+    "number_of_inheritances": 18,
+    "number_of_unsafe_calls": 19,
+    "number_of_safe_calls": 22,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 5,
+    "number_of_function_call_with_named_value": 5,
+    "number_of_named_argument": 6,
+    "number_of_argument_with_default_value": 5,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 1,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 51,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 5,
+    "number_of_constructors": 12,
+    "number_of_properties": 184,
+    "number_of_functions": 150,
+    "number_of_interfaces": 3,
+    "number_of_classes": 38,
+    "number_of_packages": 17,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 38
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/androidTest/java/org/freedombox/freedombox/ApplicationTest.kt": {
+      "sloc": 4,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "org.freedombox.freedombox.ApplicationTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/utils/network/AppLoaderTest.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "org.freedombox.freedombox.utils.network.AppLoaderTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/utils/network/ConnectivityMonitorTest.kt": {
+      "sloc": 22,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "org.freedombox.freedombox.utils.network.ConnectivityMonitorTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/utils/storage/SharedPreferenceTest.kt": {
+      "sloc": 46,
+      "number_of_properties": 4,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "org.freedombox.freedombox.utils.storage.SharedPreferenceTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/utils/view/ViewStatusTest.kt": {
+      "sloc": 37,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "org.freedombox.freedombox.utils.view.ViewStatusTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SplashFragmentTest.kt": {
+      "sloc": 51,
+      "number_of_properties": 3,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "org.freedombox.freedombox.view.fragments.SplashFragmentTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt": {
+      "sloc": 109,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 8,
+      "class": "org.freedombox.freedombox.view.fragments.SetupFragmentTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/adapter/GridAdapterTest.kt": {
+      "sloc": 69,
+      "number_of_properties": 5,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "org.freedombox.freedombox.view.adapter.GridAdapterTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/adapter/DiscoveryListAdapterTest.kt": {
+      "sloc": 39,
+      "number_of_properties": 5,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "org.freedombox.freedombox.view.adapter.DiscoveryListAdapterTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/svg/SvgDecoder.kt": {
+      "sloc": 14,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 4,
+      "class": "org.freedombox.freedombox.svg.SvgDecoder"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/svg/SvgDrawableTranscoder.kt": {
+      "sloc": 15,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "org.freedombox.freedombox.svg.SvgDrawableTranscoder"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/utils/ImageRenderer.kt": {
+      "sloc": 41,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "org.freedombox.freedombox.utils.ImageRenderer"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/utils/network/ConnectivityMonitor.kt": {
+      "sloc": 36,
+      "number_of_properties": 3,
+      "number_of_functions": 5,
+      "complexity": 7,
+      "class": "org.freedombox.freedombox.utils.network.ConnectivityMonitor"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/components/AppComponent.kt": {
+      "sloc": 20,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 6,
+      "class": "org.freedombox.freedombox.components.AppComponent"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/applications/FreedomBoxApp.kt": {
+      "sloc": 21,
+      "number_of_properties": 3,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "org.freedombox.freedombox.applications.FreedomBoxApp"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/modules/AppModule.kt": {
+      "sloc": 28,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "org.freedombox.freedombox.modules.AppModule"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/IBaseView.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "org.freedombox.freedombox.views.IBaseView"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/SplashFragment.kt": {
+      "sloc": 41,
+      "number_of_properties": 1,
+      "number_of_functions": 5,
+      "complexity": 11,
+      "class": "org.freedombox.freedombox.views.fragments.SplashFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/SettingsFragment.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 4,
+      "class": "org.freedombox.freedombox.views.fragments.SettingsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/BaseFragment.kt": {
+      "sloc": 29,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "org.freedombox.freedombox.views.fragments.BaseFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/SetupFragment.kt": {
+      "sloc": 82,
+      "number_of_properties": 1,
+      "number_of_functions": 6,
+      "complexity": 13,
+      "class": "org.freedombox.freedombox.views.fragments.SetupFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt": {
+      "sloc": 158,
+      "number_of_properties": 10,
+      "number_of_functions": 18,
+      "complexity": 26,
+      "class": "org.freedombox.freedombox.views.fragments.DiscoveryFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt": {
+      "sloc": 79,
+      "number_of_properties": 4,
+      "number_of_functions": 7,
+      "complexity": 11,
+      "class": "org.freedombox.freedombox.views.fragments.LauncherFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/adapter/GridAdapter.kt": {
+      "sloc": 39,
+      "number_of_properties": 1,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "org.freedombox.freedombox.views.adapter.GridAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt": {
+      "sloc": 58,
+      "number_of_properties": 0,
+      "number_of_functions": 7,
+      "complexity": 11,
+      "class": "org.freedombox.freedombox.views.adapter.DiscoveryListAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/model/ConfigModel.kt": {
+      "sloc": 22,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 7,
+      "class": "org.freedombox.freedombox.views.model.ConfigModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/activities/LauncherActivity.kt": {
+      "sloc": 30,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 4,
+      "class": "org.freedombox.freedombox.views.activities.LauncherActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/activities/DiscoveryActivity.kt": {
+      "sloc": 12,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "org.freedombox.freedombox.views.activities.DiscoveryActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/activities/MainActivity.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "org.freedombox.freedombox.views.activities.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/activities/SetupActivity.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "org.freedombox.freedombox.views.activities.SetupActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/activities/BaseActivity.kt": {
+      "sloc": 67,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 15,
+      "class": "org.freedombox.freedombox.views.activities.BaseActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/activities/AboutActivity.kt": {
+      "sloc": 23,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "org.freedombox.freedombox.views.activities.AboutActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/activities/SettingsActivity.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "org.freedombox.freedombox.views.activities.SettingsActivity"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:144:1",
+        "message": "The function getLaunchString appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:169:92",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:1:1",
+        "message": "File 'AppLoader.kt' with '15' functions detected. Defined threshold inside files is set to '11'"
+      }]
+    }, {
+      "name": "MethodOverloading",
+      "description": "Methods which are overloaded often might be harder to maintain. Furthermore, these methods are tightly coupled. Refactor these methods and try to use optional parameters.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/components/AppComponent.kt:30:1",
+        "message": "This method is overloaded too many times."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:70:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:151:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:71:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:47:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:55:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:152:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/SplashFragment.kt:57:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/BaseFragment.kt:33:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/BaseFragment.kt:48:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/SetupFragment.kt:44:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/SetupFragment.kt:54:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:77:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:90:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:100:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:104:65",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:124:57",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:56:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:57:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:67:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:85:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:88:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:95:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:97:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:99:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:86:10",
+        "message": "activity.findViewById(R.id.boxName) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:87:10",
+        "message": "activity.findViewById(R.id.discoveredUrl) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:88:10",
+        "message": "activity.findViewById(R.id.defaultStatus) cannot be safely cast to Switch."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:118:10",
+        "message": "activity.findViewById(R.id.boxName) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:119:10",
+        "message": "activity.findViewById(R.id.discoveredUrl) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:120:10",
+        "message": "activity.findViewById(R.id.defaultStatus) cannot be safely cast to Switch."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:144:10",
+        "message": "activity.findViewById(R.id.boxName) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:145:10",
+        "message": "activity.findViewById(R.id.discoveredUrl) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:146:10",
+        "message": "activity.findViewById(R.id.defaultStatus) cannot be safely cast to Switch."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/utils/network/ConnectivityMonitor.kt:27:60",
+        "message": "applicationContext\n        .getSystemService(Context.CONNECTIVITY_SERVICE) cannot be safely cast to ConnectivityManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/BaseFragment.kt:33:29",
+        "message": "activity!!.application cannot be safely cast to FreedomBoxApp."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:90:22",
+        "message": "activity!!.getSystemService(NSD_SERVICE) cannot be safely cast to NsdManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/adapter/GridAdapter.kt:38:24",
+        "message": "context\n                .getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:45:24",
+        "message": "context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) cannot be safely cast to LayoutInflater."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:61:41",
+        "message": "view.findViewById<TextView>(R.id.boxName) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:62:44",
+        "message": "view.findViewById<TextView>(R.id.port) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:63:34",
+        "message": "view.findViewById<ImageView>(R.id.box_icon) cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:64:34",
+        "message": "view.findViewById<View>(R.id.bottom_border) cannot be safely cast to View."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/applications/FreedomBoxApp.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/applications/FreedomBoxApp.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/applications/FreedomBoxApp.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/SplashFragment.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/SetupFragment.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:57:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:60:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:62:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:64:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:66:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:45:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:47:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/activities/BaseActivity.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/activities/BaseActivity.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/utils/network/AppLoaderTest.kt:13:1",
+        "message": "The file AppLoaderTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/models/Launcher.kt:37:36",
+        "message": "The file Launcher.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/SettingsFragment.kt:33:1",
+        "message": "The file SettingsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/activities/SettingsActivity.kt:31:1",
+        "message": "The file SettingsActivity.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SplashFragmentTest.kt:34:44",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SplashFragmentTest."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/fragments/SetupFragmentTest.kt:38:44",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SetupFragmentTest."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/adapter/GridAdapterTest.kt:33:41",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of GridAdapterTest."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:42:38",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of the class or object."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/activities/BaseActivity.kt:31:35",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of BaseActivity."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/adapter/GridAdapterTest.kt:23:1",
+        "message": "The import 'org.freedombox.freedombox.BuildConfig' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/adapter/GridAdapterTest.kt:32:1",
+        "message": "The import 'org.robolectric.RuntimeEnvironment.application' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/test/java/org/freedombox/freedombox/view/adapter/GridAdapterTest.kt:33:1",
+        "message": "The import 'org.robolectric.annotation.Config' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/activities/DiscoveryActivity.kt:21:1",
+        "message": "The import 'com.google.android.material.floatingactionbutton.FloatingActionButton' is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:111:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/DiscoveryFragment.kt:217:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:114:72",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:52:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/adapter/DiscoveryListAdapter.kt:56:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/utils/network/AppLoader.kt:93:5",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/utils/network/ConnectivityMonitor.kt:44:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:87:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:87:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/SplashFragment.kt:46:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/SetupFragment.kt:63:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/SetupFragment.kt:95:33",
+        "message": "Pair is created by using the pair constructor. This can replaced by `previousDefault.key to previousDefault.value.copy(default = false)`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/SetupFragment.kt:105:50",
+        "message": "Pair is created by using the pair constructor. This can replaced by `configModel.boxName to configModel`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/fragments/LauncherFragment.kt:64:27",
+        "message": "Pair is created by using the pair constructor. This can replaced by `currentBox.boxName to shortcutsFromResponse`"
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/model/ConfigModel.kt:45:5",
+        "message": "The data class ConfigModel contains functions which are not registered conversion functions. The offending method is called isDefault"
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-freedombox-freedombox/app/src/main/java/org/freedombox/freedombox/views/activities/BaseActivity.kt:70:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }]
+  }]
+}

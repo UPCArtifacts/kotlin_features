@@ -1,0 +1,865 @@
+{
+  "complexity_metrics": {
+    "loc": 3142,
+    "sloc": 2719,
+    "lloc": 1891,
+    "cloc": 5,
+    "mcc": 666,
+    "n_smell": 190,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 352
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 109,
+    "number_of_string_template": 23,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 32,
+    "number_of_inferred_var": 287,
+    "number_of_objects_declarations": 18,
+    "number_of_companion_objects": 1,
+    "number_of_singletons": 0,
+    "number_of_declaration": 305,
+    "number_of_var_declaration": 305,
+    "number_of_func_call": 1336,
+    "number_of_arguments": 1183,
+    "number_of_parameters": 319,
+    "number_of_qualified_expressions": 1637,
+    "number_of_inheritances": 12,
+    "number_of_unsafe_calls": 30,
+    "number_of_safe_calls": 53,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 14,
+    "number_of_functions_with_default_value": 10,
+    "number_of_function_call_with_named_value": 1,
+    "number_of_named_argument": 3,
+    "number_of_argument_with_default_value": 14,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 7,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 205,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 1,
+    "number_of_constructors": 12,
+    "number_of_properties": 305,
+    "number_of_functions": 222,
+    "number_of_interfaces": 1,
+    "number_of_classes": 18,
+    "number_of_packages": 10,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 23
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/App.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.simplemobiletools.filemanager.pro.App"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt": {
+      "sloc": 366,
+      "number_of_properties": 13,
+      "number_of_functions": 26,
+      "complexity": 89,
+      "class": "com.simplemobiletools.filemanager.pro.fragments.ItemsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/models/ListItem.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.simplemobiletools.filemanager.pro.models.ListItem"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ManageFavoritesAdapter.kt": {
+      "sloc": 71,
+      "number_of_properties": 1,
+      "number_of_functions": 13,
+      "complexity": 20,
+      "class": "com.simplemobiletools.filemanager.pro.adapters.ManageFavoritesAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt": {
+      "sloc": 646,
+      "number_of_properties": 8,
+      "number_of_functions": 47,
+      "complexity": 175,
+      "class": "com.simplemobiletools.filemanager.pro.adapters.ItemsAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/SaveAsDialog.kt": {
+      "sloc": 69,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 9,
+      "class": "com.simplemobiletools.filemanager.pro.dialogs.SaveAsDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CreateNewItemDialog.kt": {
+      "sloc": 115,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 27,
+      "class": "com.simplemobiletools.filemanager.pro.dialogs.CreateNewItemDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CompressAsDialog.kt": {
+      "sloc": 52,
+      "number_of_properties": 1,
+      "number_of_functions": 0,
+      "complexity": 8,
+      "class": "com.simplemobiletools.filemanager.pro.dialogs.CompressAsDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/ChangeSortingDialog.kt": {
+      "sloc": 62,
+      "number_of_properties": 3,
+      "number_of_functions": 3,
+      "complexity": 16,
+      "class": "com.simplemobiletools.filemanager.pro.dialogs.ChangeSortingDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/FavoritesActivity.kt": {
+      "sloc": 58,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 10,
+      "class": "com.simplemobiletools.filemanager.pro.activities.FavoritesActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt": {
+      "sloc": 363,
+      "number_of_properties": 8,
+      "number_of_functions": 35,
+      "complexity": 90,
+      "class": "com.simplemobiletools.filemanager.pro.activities.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/SimpleActivity.kt": {
+      "sloc": 27,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.simplemobiletools.filemanager.pro.activities.SimpleActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/SettingsActivity.kt": {
+      "sloc": 182,
+      "number_of_properties": 0,
+      "number_of_functions": 17,
+      "complexity": 46,
+      "class": "com.simplemobiletools.filemanager.pro.activities.SettingsActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/ReadTextActivity.kt": {
+      "sloc": 172,
+      "number_of_properties": 4,
+      "number_of_functions": 15,
+      "complexity": 47,
+      "class": "com.simplemobiletools.filemanager.pro.activities.ReadTextActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/SplashActivity.kt": {
+      "sloc": 17,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 4,
+      "class": "com.simplemobiletools.filemanager.pro.activities.SplashActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/views/GestureEditText.kt": {
+      "sloc": 72,
+      "number_of_properties": 3,
+      "number_of_functions": 8,
+      "complexity": 10,
+      "class": "com.simplemobiletools.filemanager.pro.views.GestureEditText"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt": {
+      "sloc": 255,
+      "number_of_properties": 0,
+      "number_of_functions": 26,
+      "complexity": 71,
+      "class": "com.simplemobiletools.filemanager.pro.helpers.RootHelpers"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/Config.kt": {
+      "sloc": 73,
+      "number_of_properties": 8,
+      "number_of_functions": 8,
+      "complexity": 13,
+      "class": "com.simplemobiletools.filemanager.pro.helpers.Config"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/interfaces/ItemOperationsListener.kt": {
+      "sloc": 8,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.simplemobiletools.filemanager.pro.interfaces.ItemOperationsListener"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:33:1",
+        "message": "Class ItemsFragment is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:52:1",
+        "message": "Class ItemsAdapter is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:34:1",
+        "message": "Class MainActivity is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:245:5",
+        "message": "The function itemClicked appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:268:5",
+        "message": "The function searchQueryChanged appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:86:5",
+        "message": "The function actionItemPressed appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:299:5",
+        "message": "The function addFileUris appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:461:5",
+        "message": "The function decompressPaths appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:533:5",
+        "message": "The function compressPaths appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CreateNewItemDialog.kt:81:5",
+        "message": "The function createFile appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:109:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/ReadTextActivity.kt:153:5",
+        "message": "The function checkIntent appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt:196:5",
+        "message": "The function tryMountAsRW appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt:271:5",
+        "message": "The function copyMoveFiles appears to be too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:323:5",
+        "message": "Function searchFiles is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:436:5",
+        "message": "Function tryDecompressingPaths is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:461:5",
+        "message": "Function decompressPaths is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:533:5",
+        "message": "Function compressPaths is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:656:5",
+        "message": "Function setupView is nested too deeply."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:33:1",
+        "message": "Class 'ItemsFragment' with '26' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ManageFavoritesAdapter.kt:15:1",
+        "message": "Class 'ManageFavoritesAdapter' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:52:1",
+        "message": "Class 'ItemsAdapter' with '47' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:34:1",
+        "message": "Class 'MainActivity' with '31' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/SettingsActivity.kt:21:1",
+        "message": "Class 'SettingsActivity' with '17' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt:16:1",
+        "message": "Class 'RootHelpers' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:62:36",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:129:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:147:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:151:71",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:273:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:295:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/SaveAsDialog.kt:53:33",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/SaveAsDialog.kt:64:33",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CreateNewItemDialog.kt:31:37",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CreateNewItemDialog.kt:59:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CreateNewItemDialog.kt:91:29",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CompressAsDialog.kt:47:41",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/ReadTextActivity.kt:182:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt:259:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/extensions/Activity.kt:63:9",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:716:13",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:222:17",
+        "message": "This condition is too complex."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:287:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:455:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:499:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:575:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/ReadTextActivity.kt:139:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/ReadTextActivity.kt:179:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt:28:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt:160:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:56:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:57:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:600:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:35:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:36:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/SettingsActivity.kt:104:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/SettingsActivity.kt:148:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:58:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:59:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:52:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:81:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:83:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:95:55",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:99:54",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:109:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:124:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:126:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:132:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:178:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:179:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:180:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:181:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:184:57",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:187:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:201:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:263:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:304:56",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:329:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:330:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:397:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:398:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:402:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:403:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:303:104",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:525:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:527:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:97:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:155:10",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/ReadTextActivity.kt:75:10",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:81:36",
+        "message": "mView cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:151:30",
+        "message": "activity cannot be safely cast to SimpleActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:152:33",
+        "message": "it cannot be safely cast to FileDirItem."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:172:47",
+        "message": "mView.items_list.layoutManager cannot be safely cast to MyLinearLayoutManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:255:18",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:258:22",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:363:29",
+        "message": "activity cannot be safely cast to SimpleActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:376:33",
+        "message": "activity cannot be safely cast to SimpleActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:381:24",
+        "message": "mView.breadcrumbs.getChildAt(id).tag cannot be safely cast to FileDirItem."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:400:14",
+        "message": "activity cannot be safely cast to SimpleActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:411:10",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:171:25",
+        "message": "getSelectedFileDirItems().asSequence().filter { !it.isDirectory }.map { it.path }.toMutableList() cannot be safely cast to ArrayList<String>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:182:21",
+        "message": "fileDirItems.asSequence().map { it.path }.toMutableList() cannot be safely cast to ArrayList<String>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:264:10",
+        "message": "drawable cannot be safely cast to LayerDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:318:10",
+        "message": "activity.getSystemService(Context.CLIPBOARD_SERVICE) cannot be safely cast to ClipboardManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:341:75",
+        "message": "it cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:630:45",
+        "message": "listItems.filter { selectedKeys.contains(it.path.hashCode()) } cannot be safely cast to ArrayList<FileDirItem>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:636:25",
+        "message": "newItems.clone() cannot be safely cast to ArrayList<ListItem>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:51:21",
+        "message": "fragment_holder cannot be safely cast to ItemsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:128:42",
+        "message": "fragment_holder cannot be safely cast to ItemsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:153:29",
+        "message": "getSystemService(Context.SEARCH_SERVICE) cannot be safely cast to SearchManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:155:10",
+        "message": "searchMenuItem!!.actionView cannot be safely cast to SearchView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:246:10",
+        "message": "fragment_holder cannot be safely cast to ItemsFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:380:24",
+        "message": "paths.map { getFilePublicUri(File(it), BuildConfig.APPLICATION_ID) } cannot be safely cast to ArrayList."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/ReadTextActivity.kt:73:29",
+        "message": "getSystemService(Context.SEARCH_SERVICE) cannot be safely cast to SearchManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/ReadTextActivity.kt:75:10",
+        "message": "searchMenuItem!!.actionView cannot be safely cast to SearchView."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:11:1",
+        "message": "com.simplemobiletools.commons.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/extensions/Activity.kt:9:1",
+        "message": "com.simplemobiletools.commons.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/extensions/Activity.kt:12:1",
+        "message": "com.simplemobiletools.filemanager.pro.helpers.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:24:1",
+        "message": "com.simplemobiletools.commons.dialogs.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:25:1",
+        "message": "com.simplemobiletools.commons.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:37:1",
+        "message": "com.simplemobiletools.filemanager.pro.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:38:1",
+        "message": "com.simplemobiletools.filemanager.pro.helpers.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/SaveAsDialog.kt:7:1",
+        "message": "com.simplemobiletools.commons.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CreateNewItemDialog.kt:5:1",
+        "message": "com.simplemobiletools.commons.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CompressAsDialog.kt:7:1",
+        "message": "com.simplemobiletools.commons.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/ChangeSortingDialog.kt:6:1",
+        "message": "com.simplemobiletools.commons.helpers.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:16:1",
+        "message": "com.simplemobiletools.commons.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:17:1",
+        "message": "com.simplemobiletools.commons.helpers.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/ReadTextActivity.kt:16:1",
+        "message": "com.simplemobiletools.commons.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:151:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/models/ListItem.kt:5:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/extensions/Context.kt:10:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/extensions/Activity.kt:60:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ManageFavoritesAdapter.kt:15:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ManageFavoritesAdapter.kt:16:30",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ManageFavoritesAdapter.kt:42:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:52:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:135:96",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:171:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:248:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:264:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:303:141",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:461:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:630:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:665:144",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:687:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:699:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:716:169",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/SaveAsDialog.kt:68:33",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CompressAsDialog.kt:12:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CompressAsDialog.kt:17:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:222:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:223:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/views/GestureEditText.kt:15:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt:87:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt:122:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt:271:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/fragments/ItemsFragment.kt:172:46",
+        "message": "Parentheses in (mView.items_list.layoutManager as MyLinearLayoutManager) are unnecessary and can be replaced with: mView.items_list.layoutManager as MyLinearLayoutManager"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/extensions/Context.kt:10:112",
+        "message": "Parentheses in (isPathOnSD(path)) are unnecessary and can be replaced with: isPathOnSD(path)"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/extensions/Activity.kt:63:9",
+        "message": "Parentheses in (hide && filename.startsWith('.')) are unnecessary and can be replaced with: hide && filename.startsWith('.')"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/extensions/Activity.kt:63:47",
+        "message": "Parentheses in (!hide && !filename.startsWith('.')) are unnecessary and can be replaced with: !hide && !filename.startsWith('.')"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt:287:48",
+        "message": "Parentheses in (if (exitcode == 0) 1 else 0) are unnecessary and can be replaced with: if (exitcode == 0) 1 else 0"
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:533:5",
+        "message": "Function compressPaths has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:148:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:149:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/adapters/ItemsAdapter.kt:467:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:35:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:403:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:404:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:405:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:406:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:407:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:408:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:409:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/MainActivity.kt:410:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt:215:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/SaveAsDialog.kt:11:1",
+        "message": "The class SaveAsDialog defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CompressAsDialog.kt:12:1",
+        "message": "The class CompressAsDialog defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CreateNewItemDialog.kt:64:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CreateNewItemDialog.kt:69:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CreateNewItemDialog.kt:84:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CreateNewItemDialog.kt:97:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/dialogs/CreateNewItemDialog.kt:102:17",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/SettingsActivity.kt:117:50",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/SettingsActivity.kt:139:50",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/activities/SettingsActivity.kt:161:50",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt:138:21",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-simplemobiletools-filemanager-pro/app/src/main/kotlin/com/simplemobiletools/filemanager/pro/helpers/RootHelpers.kt:212:21",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }]
+  }]
+}

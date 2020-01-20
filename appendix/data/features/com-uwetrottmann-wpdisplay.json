@@ -1,0 +1,672 @@
+{
+  "complexity_metrics": {
+    "loc": 2070,
+    "sloc": 1319,
+    "lloc": 903,
+    "cloc": 448,
+    "mcc": 217,
+    "n_smell": 126,
+    "comment_ratio": 33,
+    "mcc_per_thlines": 240
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 56,
+    "number_of_string_template": 8,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 1,
+    "number_of_inferred_var": 115,
+    "number_of_objects_declarations": 12,
+    "number_of_companion_objects": 5,
+    "number_of_singletons": 4,
+    "number_of_declaration": 146,
+    "number_of_var_declaration": 146,
+    "number_of_func_call": 481,
+    "number_of_arguments": 590,
+    "number_of_parameters": 152,
+    "number_of_qualified_expressions": 703,
+    "number_of_inheritances": 45,
+    "number_of_unsafe_calls": 16,
+    "number_of_safe_calls": 10,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 11,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 1,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 5,
+    "number_of_lambdas": 38,
+    "number_of_possible_smart_casts": 7,
+    "number_of_data_class": 1,
+    "number_of_constructors": 23,
+    "number_of_properties": 146,
+    "number_of_functions": 86,
+    "number_of_interfaces": 1,
+    "number_of_classes": 57,
+    "number_of_packages": 6,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 22
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/ui/MainActivity.kt": {
+      "sloc": 46,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 9,
+      "class": "com.uwetrottmann.wpdisplay.ui.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsListAdapter.kt": {
+      "sloc": 36,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "com.uwetrottmann.wpdisplay.settings.SettingsListAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ThemeSettings.kt": {
+      "sloc": 104,
+      "number_of_properties": 12,
+      "number_of_functions": 13,
+      "complexity": 27,
+      "class": "com.uwetrottmann.wpdisplay.settings.ThemeSettings"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ConnectionSettings.kt": {
+      "sloc": 29,
+      "number_of_properties": 2,
+      "number_of_functions": 3,
+      "complexity": 5,
+      "class": "com.uwetrottmann.wpdisplay.settings.ConnectionSettings"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsFragment.kt": {
+      "sloc": 146,
+      "number_of_properties": 1,
+      "number_of_functions": 9,
+      "complexity": 24,
+      "class": "com.uwetrottmann.wpdisplay.settings.SettingsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsViewModel.kt": {
+      "sloc": 23,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.uwetrottmann.wpdisplay.settings.SettingsViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/NightTimePickerFragment.kt": {
+      "sloc": 62,
+      "number_of_properties": 4,
+      "number_of_functions": 3,
+      "complexity": 12,
+      "class": "com.uwetrottmann.wpdisplay.settings.NightTimePickerFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/ConnectionListener.kt": {
+      "sloc": 13,
+      "number_of_properties": 4,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.uwetrottmann.wpdisplay.util.ConnectionListener"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/DataRequestRunnable.kt": {
+      "sloc": 63,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 10,
+      "class": "com.uwetrottmann.wpdisplay.util.DataRequestRunnable"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/ConnectionTools.kt": {
+      "sloc": 86,
+      "number_of_properties": 9,
+      "number_of_functions": 8,
+      "complexity": 12,
+      "class": "com.uwetrottmann.wpdisplay.util.ConnectionTools"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/DisconnectRunnable.kt": {
+      "sloc": 17,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "com.uwetrottmann.wpdisplay.util.DisconnectRunnable"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/EventLiveData.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.uwetrottmann.wpdisplay.util.EventLiveData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/ConnectRunnable.kt": {
+      "sloc": 45,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 7,
+      "class": "com.uwetrottmann.wpdisplay.util.ConnectRunnable"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/Event.kt": {
+      "sloc": 12,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "com.uwetrottmann.wpdisplay.util.Event"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt": {
+      "sloc": 54,
+      "number_of_properties": 3,
+      "number_of_functions": 2,
+      "complexity": 5,
+      "class": "com.uwetrottmann.wpdisplay.model.DisplayItems"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/ConnectionStatus.kt": {
+      "sloc": 2,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.uwetrottmann.wpdisplay.model.ConnectionStatus"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt": {
+      "sloc": 102,
+      "number_of_properties": 3,
+      "number_of_functions": 4,
+      "complexity": 9,
+      "class": "com.uwetrottmann.wpdisplay.model.StatusData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItem.kt": {
+      "sloc": 104,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 7,
+      "class": "com.uwetrottmann.wpdisplay.model.DisplayItem"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayAdapter.kt": {
+      "sloc": 121,
+      "number_of_properties": 2,
+      "number_of_functions": 6,
+      "complexity": 23,
+      "class": "com.uwetrottmann.wpdisplay.display.DisplayAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayFragment.kt": {
+      "sloc": 202,
+      "number_of_properties": 4,
+      "number_of_functions": 15,
+      "complexity": 44,
+      "class": "com.uwetrottmann.wpdisplay.display.DisplayFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/ApplicationImpl.kt": {
+      "sloc": 19,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 4,
+      "class": "com.uwetrottmann.wpdisplay.ApplicationImpl"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ThemeSettings.kt:24:1",
+        "message": "Object 'ThemeSettings' with '13' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayFragment.kt:47:1",
+        "message": "Class 'DisplayFragment' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/DataRequestRunnable.kt:38:13",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayFragment.kt:226:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ConnectionSettings.kt:27:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ConnectionSettings.kt:28:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/ConnectionListener.kt:37:36",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/ConnectionTools.kt:137:45",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:56:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsFragment.kt:52:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayFragment.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayFragment.kt:50:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsFragment.kt:70:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsFragment.kt:77:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsFragment.kt:138:51",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsFragment.kt:143:10",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsFragment.kt:150:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsFragment.kt:165:72",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsFragment.kt:166:71",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsFragment.kt:181:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/NightTimePickerFragment.kt:41:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/NightTimePickerFragment.kt:59:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/NightTimePickerFragment.kt:61:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/NightTimePickerFragment.kt:65:14",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayAdapter.kt:118:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayAdapter.kt:119:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayFragment.kt:184:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayFragment.kt:221:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsFragment.kt:111:26",
+        "message": "activity cannot be safely cast to AppCompatActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsFragment.kt:143:10",
+        "message": "activity!! cannot be safely cast to AppCompatActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/ClipboardTools.kt:31:21",
+        "message": "context.getSystemService(Context.CLIPBOARD_SERVICE) cannot be safely cast to ClipboardManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayAdapter.kt:76:46",
+        "message": "view cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayAdapter.kt:81:43",
+        "message": "view cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayAdapter.kt:86:39",
+        "message": "view cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayFragment.kt:87:14",
+        "message": "itemAnimator cannot be safely cast to DefaultItemAnimator."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayFragment.kt:94:26",
+        "message": "activity cannot be safely cast to AppCompatActivity."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsListAdapter.kt:58:1",
+        "message": "The file SettingsListAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ThemeSettings.kt:143:1",
+        "message": "The file ThemeSettings.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsViewModel.kt:46:1",
+        "message": "The file SettingsViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/NightTimePickerFragment.kt:95:1",
+        "message": "The file NightTimePickerFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/ClipboardTools.kt:48:1",
+        "message": "The file ClipboardTools.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/EventLiveData.kt:27:1",
+        "message": "The file EventLiveData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/Event.kt:38:1",
+        "message": "The file Event.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:79:1",
+        "message": "The file DisplayItems.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/ConnectionStatus.kt:19:72",
+        "message": "The file ConnectionStatus.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayAdapter.kt:154:1",
+        "message": "The file DisplayAdapter.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ThemeSettings.kt:134:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ThemeSettings.kt:135:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ConnectionSettings.kt:44:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ConnectionSettings.kt:61:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/ConnectRunnable.kt:53:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/ConnectRunnable.kt:53:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/ConnectRunnable.kt:54:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/ConnectRunnable.kt:54:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:32:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:33:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:34:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:35:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:36:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:37:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:38:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:39:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:40:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:41:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:42:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:43:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:44:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:45:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:46:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:47:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:48:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:49:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/DisplayItems.kt:50:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:65:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:76:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:77:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:78:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:80:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:81:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:82:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:118:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:119:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:120:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:121:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:122:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:123:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:124:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:125:15",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:126:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:127:19",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:128:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:129:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:130:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:131:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:139:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:140:19",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:141:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:142:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:143:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:152:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:153:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:154:15",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:155:19",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:156:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayFragment.kt:122:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ThemeSettings.kt:90:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ThemeSettings.kt:94:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ConnectionSettings.kt:33:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsFragment.kt:47:14",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/model/StatusData.kt:161:55",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayFragment.kt:57:14",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ConnectionSettings.kt:27:5",
+        "message": "KEY_HOST can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/ConnectionSettings.kt:28:5",
+        "message": "KEY_PORT can be a `const val`."
+      }]
+    }, {
+      "name": "ForbiddenVoid",
+      "description": "`Unit` should be used instead of `Void`.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsViewModel.kt:33:28",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsViewModel.kt:33:35",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/settings/SettingsViewModel.kt:34:56",
+        "message": "'Void' should be replaced with 'Unit'."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/DataRequestRunnable.kt:30:5",
+        "message": "Function run has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayAdapter.kt:66:5",
+        "message": "Function onCreateViewHolder has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayFragment.kt:149:5",
+        "message": "Function onOptionsItemSelected has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/DataRequestRunnable.kt:107:5",
+        "message": "The class DataEvent defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/util/ConnectionTools.kt:50:5",
+        "message": "The class ConnectionEvent defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayAdapter.kt:105:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayAdapter.kt:108:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayAdapter.kt:111:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayAdapter.kt:98:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-uwetrottmann-wpdisplay/app/src/main/java/com/uwetrottmann/wpdisplay/display/DisplayAdapter.kt:98:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }]
+  }]
+}

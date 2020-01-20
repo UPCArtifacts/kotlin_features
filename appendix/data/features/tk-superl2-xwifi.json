@@ -1,0 +1,613 @@
+{
+  "complexity_metrics": {
+    "loc": 1101,
+    "sloc": 879,
+    "lloc": 636,
+    "cloc": 125,
+    "mcc": 250,
+    "n_smell": 140,
+    "comment_ratio": 14,
+    "mcc_per_thlines": 393
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 2,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 225,
+    "number_of_string_template": 25,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 10,
+    "number_of_inferred_var": 67,
+    "number_of_objects_declarations": 7,
+    "number_of_companion_objects": 1,
+    "number_of_singletons": 0,
+    "number_of_declaration": 80,
+    "number_of_var_declaration": 80,
+    "number_of_func_call": 500,
+    "number_of_arguments": 506,
+    "number_of_parameters": 86,
+    "number_of_qualified_expressions": 647,
+    "number_of_inheritances": 11,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 10,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 10,
+    "number_of_functions_with_default_value": 4,
+    "number_of_function_call_with_named_value": 8,
+    "number_of_named_argument": 8,
+    "number_of_argument_with_default_value": 6,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 1,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 46,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 1,
+    "number_of_constructors": 4,
+    "number_of_properties": 80,
+    "number_of_functions": 56,
+    "number_of_interfaces": 0,
+    "number_of_classes": 18,
+    "number_of_packages": 2,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 7
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt": {
+      "sloc": 298,
+      "number_of_properties": 9,
+      "number_of_functions": 29,
+      "complexity": 80,
+      "class": "tk.superl2.xwifi.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/PreferenceProvider.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 5,
+      "class": "tk.superl2.xwifi.PreferenceProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt": {
+      "sloc": 170,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 56,
+      "class": "tk.superl2.xwifi.xposed.XposedModule"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/AboutActivity.kt": {
+      "sloc": 28,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "tk.superl2.xwifi.AboutActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/SettingsActivity.kt": {
+      "sloc": 53,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 12,
+      "class": "tk.superl2.xwifi.SettingsActivity"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:79:17",
+        "message": "The function createAndShowInfoDialog appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:40:5",
+        "message": "The function handleLoadPackage appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:114:1",
+        "message": "The function readWiFiConfig appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:202:1",
+        "message": "The function readOreoFile appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:250:1",
+        "message": "The function readNonOreoFile appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:66:31",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:48:144",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:48:219",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:47:57",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:63:51",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:222:49",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:40:5",
+        "message": "Function handleLoadPackage is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:60:1",
+        "message": "Function readNetworkList is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:250:1",
+        "message": "Function readNonOreoFile is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:85:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:148:30",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:162:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:214:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:230:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:232:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:268:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:335:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }, {
+      "name": "ThrowingExceptionsWithoutMessageOrCause",
+      "description": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:191:15",
+        "message": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions."
+      }]
+    }, {
+      "name": "ReturnFromFinally",
+      "description": "Do not return within a finally statement. This can discard exceptions.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:234:9",
+        "message": "Do not return within a finally statement. This can discard exceptions."
+      }]
+    }, {
+      "name": "ThrowingExceptionFromFinally",
+      "description": "Do not throw an exception within a finally statement. This can discard exceptions and is confusing.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:237:13",
+        "message": "Do not throw an exception within a finally statement. This can discard exceptions and is confusing."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "TopLevelPropertyNaming",
+      "description": "Top level property names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:59:1",
+        "message": "Top level constant names should match the pattern: [A-Z][_A-Z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:46:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:48:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:76:13",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:266:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:268:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:270:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:132:28",
+        "message": "LayoutInflater.from(parent.context).inflate(R.layout.wifi_list_item, parent, false) cannot be safely cast to LinearLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:163:67",
+        "message": "results.values cannot be safely cast to ArrayList<WifiEntry>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:229:22",
+        "message": "adapter cannot be safely cast to WifiListAdapter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:340:10",
+        "message": "menu.findItem(R.id.app_bar_search).actionView cannot be safely cast to SearchView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:342:32",
+        "message": "getSystemService(Context.SEARCH_SERVICE) cannot be safely cast to SearchManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:350:22",
+        "message": "wifi_RecyclerView.adapter cannot be safely cast to Filterable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:47:17",
+        "message": "getObjectField(getObjectField(fragment, \"mSelectedAccessPoint\"), \"networkId\") cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:80:62",
+        "message": "getObjectField(getObjectField(fragment, \"mSelectedAccessPoint\"), \"ssid\") cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:88:116",
+        "message": "callMethod(getObjectField(fragment, \"mSelectedAccessPoint\"), \"isMetered\") cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:90:66",
+        "message": "callMethod(getObjectField(fragment, \"mSelectedAccessPoint\"), \"isActive\") cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:98:116",
+        "message": "callMethod(getObjectField(fragment, \"mSelectedAccessPoint\"), \"isMetered\") cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:100:66",
+        "message": "callMethod(getObjectField(fragment, \"mSelectedAccessPoint\"), \"isActive\") cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:130:66",
+        "message": "getObjectField(getObjectField(fragment, \"mSelectedAccessPoint\"), \"ssid\") cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:175:22",
+        "message": "param.args[1] cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:175:61",
+        "message": "param.args[1] cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:177:26",
+        "message": "param.args[0] cannot be safely cast to ContextMenu."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:180:26",
+        "message": "param.args[0] cannot be safely cast to ContextMenu."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:189:24",
+        "message": "param.args[0] cannot be safely cast to MenuItem."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:191:40",
+        "message": "param.thisObject cannot be safely cast to Fragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:195:38",
+        "message": "param.thisObject cannot be safely cast to Fragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/SettingsActivity.kt:51:84",
+        "message": "newValue cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/SettingsActivity.kt:57:14",
+        "message": "findPreference(\"display\") cannot be safely cast to PreferenceCategory."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:386:1",
+        "message": "The file MainActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/Utils.kt:28:9",
+        "message": "The file Utils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/PreferenceProvider.kt:13:1",
+        "message": "The file PreferenceProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:232:1",
+        "message": "The file XposedModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/SettingsActivity.kt:68:1",
+        "message": "The file SettingsActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:343:103",
+        "message": "The file WifiDataUtils.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:21:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:24:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:22:1",
+        "message": "de.robv.android.xposed.XposedHelpers.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:27:1",
+        "message": "tk.superl2.xwifi.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:72:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:84:238",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:91:238",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:114:279",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:115:196",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:130:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:173:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:183:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:213:258",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:214:176",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:297:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:302:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:342:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:374:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/PreferenceProvider.kt:3:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:44:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:48:231",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:51:121",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:57:173",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:58:238",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:65:227",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:80:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:86:273",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:88:237",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:89:170",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:90:169",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:96:273",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:98:237",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:99:170",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:100:168",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:127:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:130:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:143:196",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:146:231",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:160:330",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:171:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:172:197",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:175:196",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:176:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:179:337",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:187:137",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:202:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:203:229",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:206:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:209:339",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:216:169",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/AboutActivity.kt:20:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/AboutActivity.kt:20:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/AboutActivity.kt:23:105",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/SettingsActivity.kt:31:140",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/SettingsActivity.kt:32:172",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/SettingsActivity.kt:52:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:242:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:295:158",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:299:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:304:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:312:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:342:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:114:130",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/MainActivity.kt:114:146",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/SettingsActivity.kt:49:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/Utils.kt:4:1",
+        "message": "The import 'android.graphics.Color' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/Utils.kt:5:1",
+        "message": "The import 'android.os.Build' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/Utils.kt:6:1",
+        "message": "The import 'android.support.v7.app.AppCompatActivity' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/Utils.kt:9:1",
+        "message": "The import 'android.view.WindowManager' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:15:1",
+        "message": "The import 'android.widget.AdapterView' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/AboutActivity.kt:7:1",
+        "message": "The import 'android.preference.PreferenceManager' is unused."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:44:9",
+        "message": "Function searchForWifiEntry has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:31:1",
+        "message": "Private property MENU_ID_WPS_PBC is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:32:1",
+        "message": "Private property MENU_ID_WPS_PIN is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:33:1",
+        "message": "Private property MENU_ID_CONNECT is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:34:1",
+        "message": "Private property MENU_ID_FORGET is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/xposed/XposedModule.kt:35:1",
+        "message": "Private property MENU_ID_MODIFY is unused."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tk-superl2-xwifi/app/src/main/java/tk/superl2/xwifi/WifiDataUtils.kt:44:17",
+        "message": "Optional braces in when expression"
+      }]
+    }]
+  }]
+}

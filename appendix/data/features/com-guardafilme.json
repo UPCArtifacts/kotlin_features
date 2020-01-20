@@ -1,0 +1,912 @@
+{
+  "complexity_metrics": {
+    "loc": 1929,
+    "sloc": 1424,
+    "lloc": 890,
+    "cloc": 166,
+    "mcc": 213,
+    "n_smell": 146,
+    "comment_ratio": 11,
+    "mcc_per_thlines": 239
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 71,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 2,
+    "number_of_inferred_fun": 3,
+    "number_of_inferred_var": 51,
+    "number_of_objects_declarations": 13,
+    "number_of_companion_objects": 8,
+    "number_of_singletons": 0,
+    "number_of_declaration": 90,
+    "number_of_var_declaration": 90,
+    "number_of_func_call": 431,
+    "number_of_arguments": 414,
+    "number_of_parameters": 215,
+    "number_of_qualified_expressions": 504,
+    "number_of_inheritances": 10,
+    "number_of_unsafe_calls": 1,
+    "number_of_safe_calls": 29,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 6,
+    "number_of_function_call_with_named_value": 1,
+    "number_of_named_argument": 2,
+    "number_of_argument_with_default_value": 13,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 36,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 3,
+    "number_of_constructors": 16,
+    "number_of_properties": 90,
+    "number_of_functions": 175,
+    "number_of_interfaces": 18,
+    "number_of_classes": 37,
+    "number_of_packages": 10,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 43
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/androidTest/java/com/guardafilme/ExampleInstrumentedTest.kt": {
+      "sloc": 14,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.guardafilme.ExampleInstrumentedTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/ui/welcome/WelcomePresenterTest.kt": {
+      "sloc": 64,
+      "number_of_properties": 5,
+      "number_of_functions": 6,
+      "complexity": 6,
+      "class": "com.guardafilme.ui.welcome.WelcomePresenterTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/ui/searchmovie/SearchMoviePresenterTest.kt": {
+      "sloc": 67,
+      "number_of_properties": 6,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "com.guardafilme.ui.searchmovie.SearchMoviePresenterTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/ui/main/MainPresenterTest.kt": {
+      "sloc": 54,
+      "number_of_properties": 3,
+      "number_of_functions": 7,
+      "complexity": 7,
+      "class": "com.guardafilme.ui.main.MainPresenterTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/ExampleUnitTest.kt": {
+      "sloc": 9,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.guardafilme.ExampleUnitTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/UtilsTest.kt": {
+      "sloc": 17,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.guardafilme.UtilsTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/BaseActivity.kt": {
+      "sloc": 6,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.guardafilme.ui.BaseActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/UiUtils.kt": {
+      "sloc": 52,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.guardafilme.ui.UiUtils"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeActivity.kt": {
+      "sloc": 129,
+      "number_of_properties": 3,
+      "number_of_functions": 18,
+      "complexity": 23,
+      "class": "com.guardafilme.ui.welcome.WelcomeActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WatchedMoviesAdapter.kt": {
+      "sloc": 120,
+      "number_of_properties": 4,
+      "number_of_functions": 10,
+      "complexity": 20,
+      "class": "com.guardafilme.ui.welcome.WatchedMoviesAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomePresenter.kt": {
+      "sloc": 45,
+      "number_of_properties": 1,
+      "number_of_functions": 7,
+      "complexity": 11,
+      "class": "com.guardafilme.ui.welcome.WelcomePresenter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeContract.kt": {
+      "sloc": 22,
+      "number_of_properties": 0,
+      "number_of_functions": 12,
+      "complexity": 12,
+      "class": "com.guardafilme.ui.welcome.WelcomeContract"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeActivityModule.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.guardafilme.ui.welcome.WelcomeActivityModule"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieContract.kt": {
+      "sloc": 16,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 6,
+      "class": "com.guardafilme.ui.searchmovie.SearchMovieContract"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivityModule.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.guardafilme.ui.searchmovie.SearchMovieActivityModule"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieAdapter.kt": {
+      "sloc": 51,
+      "number_of_properties": 1,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "com.guardafilme.ui.searchmovie.SearchMovieAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivity.kt": {
+      "sloc": 103,
+      "number_of_properties": 5,
+      "number_of_functions": 14,
+      "complexity": 15,
+      "class": "com.guardafilme.ui.searchmovie.SearchMovieActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMoviePresenter.kt": {
+      "sloc": 31,
+      "number_of_properties": 1,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "com.guardafilme.ui.searchmovie.SearchMoviePresenter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/moviedetail/MovieDetailContract.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.guardafilme.ui.moviedetail.MovieDetailContract"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/main/MainActivity.kt": {
+      "sloc": 74,
+      "number_of_properties": 3,
+      "number_of_functions": 10,
+      "complexity": 13,
+      "class": "com.guardafilme.ui.main.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/main/MainContract.kt": {
+      "sloc": 18,
+      "number_of_properties": 0,
+      "number_of_functions": 9,
+      "complexity": 9,
+      "class": "com.guardafilme.ui.main.MainContract"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/main/MainPresenter.kt": {
+      "sloc": 32,
+      "number_of_properties": 1,
+      "number_of_functions": 5,
+      "complexity": 11,
+      "class": "com.guardafilme.ui.main.MainPresenter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/main/MainActivityModule.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.guardafilme.ui.main.MainActivityModule"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ApplicationComponent.kt": {
+      "sloc": 26,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.guardafilme.di.ApplicationComponent"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ActivityScoped.kt": {
+      "sloc": 6,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.guardafilme.di.ActivityScoped"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ApplicationModule.kt": {
+      "sloc": 29,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.guardafilme.di.ApplicationModule"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ActivityBindingModule.kt": {
+      "sloc": 21,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.guardafilme.di.ActivityBindingModule"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Utils.kt": {
+      "sloc": 25,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 4,
+      "class": "com.guardafilme.Utils"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/GuardaFilmeApplication.kt": {
+      "sloc": 22,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.guardafilme.GuardaFilmeApplication"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/model/Movie.kt": {
+      "sloc": 40,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "com.guardafilme.model.Movie"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/model/MoviesList.kt": {
+      "sloc": 2,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.guardafilme.model.MoviesList"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/model/WatchedMovie.kt": {
+      "sloc": 20,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.guardafilme.model.WatchedMovie"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/model/User.kt": {
+      "sloc": 2,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.guardafilme.model.User"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/UserRepository.kt": {
+      "sloc": 31,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 6,
+      "class": "com.guardafilme.data.UserRepository"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/TempDataStore.kt": {
+      "sloc": 13,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.guardafilme.data.TempDataStore"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/AuthProvider.kt": {
+      "sloc": 25,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.guardafilme.data.AuthProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/GFUserRepository.kt": {
+      "sloc": 111,
+      "number_of_properties": 1,
+      "number_of_functions": 8,
+      "complexity": 14,
+      "class": "com.guardafilme.data.GFUserRepository"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/MoviesProvider.kt": {
+      "sloc": 37,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 4,
+      "class": "com.guardafilme.data.MoviesProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/GFMoviesRepository.kt": {
+      "sloc": 31,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.guardafilme.data.GFMoviesRepository"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/MoviesRepository.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.guardafilme.data.MoviesRepository"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/base/BaseView.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.guardafilme.base.BaseView"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/base/BasePresenter.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.guardafilme.base.BasePresenter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Constants.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.guardafilme.Constants"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeActivity.kt:25:1",
+        "message": "Class 'WelcomeActivity' with '14' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivity.kt:22:1",
+        "message": "Class 'SearchMovieActivity' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/GFUserRepository.kt:17:38",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyClassBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/moviedetail/MovieDetailContract.kt:5:5",
+        "message": "The class or object  View is empty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/moviedetail/MovieDetailContract.kt:5:5",
+        "message": "The class or object  View is empty."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "NotImplementedDeclaration",
+      "description": "The NotImplementedDeclaration should only be used when a method stub is necessary. This defers the development of the functionality of this function. Hence, the NotImplementedDeclaration should only serve as a temporary declaration. Before releasing, this type of declaration should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomePresenter.kt:56:9",
+        "message": "The NotImplementedDeclaration should only be used when a method stub is necessary. This defers the development of the functionality of this function. Hence, the NotImplementedDeclaration should only serve as a temporary declaration. Before releasing, this type of declaration should be removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WatchedMoviesAdapter.kt:31:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WatchedMoviesAdapter.kt:32:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WatchedMoviesAdapter.kt:34:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivity.kt:36:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/main/MainActivity.kt:21:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/GFUserRepository.kt:17:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/TempDataStore.kt:14:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/ui/welcome/WelcomePresenterTest.kt:49:58",
+        "message": "invocation.arguments[0] cannot be safely cast to (List<WatchedMovie>) -> Unit."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/ui/searchmovie/SearchMoviePresenterTest.kt:58:51",
+        "message": "invocation.arguments[2] cannot be safely cast to (List<Movie>) -> Unit."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/ui/searchmovie/SearchMoviePresenterTest.kt:64:57",
+        "message": "invocation.arguments[3] cannot be safely cast to (Boolean) -> Unit."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WatchedMoviesAdapter.kt:107:18",
+        "message": "holder cannot be safely cast to WatchedMovieViewHolder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WatchedMoviesAdapter.kt:109:18",
+        "message": "holder cannot be safely cast to WatchedMovieViewHolder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WatchedMoviesAdapter.kt:113:14",
+        "message": "holder cannot be safely cast to AdViewHolder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivity.kt:65:23",
+        "message": "searchItem.actionView cannot be safely cast to SearchView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivity.kt:111:27",
+        "message": "movies cannot be safely cast to List<Movie>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Utils.kt:33:33",
+        "message": "context.getSystemService(WINDOW_SERVICE) cannot be safely cast to WindowManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/MoviesProvider.kt:22:27",
+        "message": "context cannot be safely cast to Activity."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeActivity.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeActivity.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeActivity.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivity.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivity.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivity.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/main/MainActivity.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/main/MainActivity.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/GuardaFilmeApplication.kt:16:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/GFUserRepository.kt:115:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/ui/welcome/WelcomePresenterTest.kt:99:1",
+        "message": "The file WelcomePresenterTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/ui/searchmovie/SearchMoviePresenterTest.kt:92:1",
+        "message": "The file SearchMoviePresenterTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/ui/main/MainPresenterTest.kt:78:1",
+        "message": "The file MainPresenterTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/UtilsTest.kt:23:1",
+        "message": "The file UtilsTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/BaseActivity.kt:11:1",
+        "message": "The file BaseActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/UiUtils.kt:59:1",
+        "message": "The file UiUtils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeActivity.kt:162:1",
+        "message": "The file WelcomeActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WatchedMoviesAdapter.kt:149:1",
+        "message": "The file WatchedMoviesAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomePresenter.kt:58:1",
+        "message": "The file WelcomePresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeContract.kt:29:1",
+        "message": "The file WelcomeContract.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeActivityModule.kt:16:1",
+        "message": "The file WelcomeActivityModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieContract.kt:24:1",
+        "message": "The file SearchMovieContract.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivityModule.kt:16:1",
+        "message": "The file SearchMovieActivityModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieAdapter.kt:67:1",
+        "message": "The file SearchMovieAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivity.kt:134:1",
+        "message": "The file SearchMovieActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMoviePresenter.kt:42:1",
+        "message": "The file SearchMoviePresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/moviedetail/MovieDetailContract.kt:9:1",
+        "message": "The file MovieDetailContract.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/main/MainContract.kt:26:1",
+        "message": "The file MainContract.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/main/MainPresenter.kt:43:1",
+        "message": "The file MainPresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/main/MainActivityModule.kt:15:1",
+        "message": "The file MainActivityModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ApplicationComponent.kt:39:1",
+        "message": "The file ApplicationComponent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ActivityScoped.kt:11:31",
+        "message": "The file ActivityScoped.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ApplicationModule.kt:37:1",
+        "message": "The file ApplicationModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ActivityBindingModule.kt:28:1",
+        "message": "The file ActivityBindingModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Utils.kt:38:1",
+        "message": "The file Utils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/GuardaFilmeApplication.kt:30:1",
+        "message": "The file GuardaFilmeApplication.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/model/Movie.kt:49:1",
+        "message": "The file Movie.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/model/MoviesList.kt:6:38",
+        "message": "The file MoviesList.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/model/WatchedMovie.kt:26:1",
+        "message": "The file WatchedMovie.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/model/User.kt:6:55",
+        "message": "The file User.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/UserRepository.kt:41:1",
+        "message": "The file UserRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/TempDataStore.kt:41:1",
+        "message": "The file TempDataStore.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/AuthProvider.kt:31:1",
+        "message": "The file AuthProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/GFUserRepository.kt:129:1",
+        "message": "The file GFUserRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/MoviesProvider.kt:45:1",
+        "message": "The file MoviesProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/GFMoviesRepository.kt:39:1",
+        "message": "The file GFMoviesRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/MoviesRepository.kt:12:1",
+        "message": "The file MoviesRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/base/BaseView.kt:8:1",
+        "message": "The file BaseView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/base/BasePresenter.kt:9:1",
+        "message": "The file BasePresenter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Constants.kt:11:1",
+        "message": "The file Constants.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/ui/welcome/WelcomePresenterTest.kt:5:1",
+        "message": "The import 'org.junit.Assert' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/UiUtils.kt:3:1",
+        "message": "The import 'android.app.Activity' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/UiUtils.kt:9:1",
+        "message": "The import 'com.guardafilme.data.TempDataStore' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeActivity.kt:10:1",
+        "message": "The import 'android.support.v7.widget.LinearLayoutManager' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivity.kt:17:1",
+        "message": "The import 'org.jetbrains.anko.sdk25.coroutines.onQueryTextListener' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/main/MainContract.kt:4:1",
+        "message": "The import 'com.guardafilme.model.User' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ApplicationComponent.kt:7:1",
+        "message": "The import 'dagger.android.AndroidInjector' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ApplicationComponent.kt:8:1",
+        "message": "The import 'dagger.android.DaggerApplication' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ApplicationComponent.kt:9:1",
+        "message": "The import 'dagger.android.support.AndroidSupportInjectionModule' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ApplicationComponent.kt:11:1",
+        "message": "The import 'com.guardafilme.data.UserRepository' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ApplicationComponent.kt:12:1",
+        "message": "The import 'com.guardafilme.ui.welcome.WelcomeActivityModule' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ApplicationModule.kt:9:1",
+        "message": "The import 'dagger.Binds' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/UserRepository.kt:3:1",
+        "message": "The import 'android.arch.lifecycle.LiveData' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/UserRepository.kt:4:1",
+        "message": "The import 'android.arch.lifecycle.MutableLiveData' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/UserRepository.kt:5:1",
+        "message": "The import 'com.google.firebase.auth.FirebaseAuth' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/UserRepository.kt:6:1",
+        "message": "The import 'com.google.firebase.database.DataSnapshot' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/UserRepository.kt:7:1",
+        "message": "The import 'com.google.firebase.database.DatabaseError' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/UserRepository.kt:8:1",
+        "message": "The import 'com.google.firebase.database.FirebaseDatabase' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/UserRepository.kt:9:1",
+        "message": "The import 'com.google.firebase.database.ValueEventListener' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/UserRepository.kt:13:1",
+        "message": "The import 'javax.inject.Inject' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/TempDataStore.kt:3:1",
+        "message": "The import 'android.content.Context' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/TempDataStore.kt:4:1",
+        "message": "The import 'com.google.firebase.auth.FirebaseAuth' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/TempDataStore.kt:5:1",
+        "message": "The import 'com.google.firebase.database.FirebaseDatabase' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/TempDataStore.kt:7:1",
+        "message": "The import 'com.guardafilme.model.WatchedMovie' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/MoviesRepository.kt:3:1",
+        "message": "The import 'android.arch.lifecycle.LiveData' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/MoviesRepository.kt:5:1",
+        "message": "The import 'com.guardafilme.model.MoviesList' is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/ui/welcome/WelcomePresenterTest.kt:28:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/test/java/com/guardafilme/ui/searchmovie/SearchMoviePresenterTest.kt:36:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WatchedMoviesAdapter.kt:117:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieAdapter.kt:33:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivity.kt:28:52",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ApplicationModule.kt:22:59",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ApplicationModule.kt:28:81",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ApplicationModule.kt:34:89",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/GuardaFilmeApplication.kt:27:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/model/Movie.kt:20:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/model/Movie.kt:24:61",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/MoviesProvider.kt:41:93",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/GFMoviesRepository.kt:36:89",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/UiUtils.kt:32:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/MoviesProvider.kt:20:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UtilityClassWithPublicConstructor",
+      "description": "The class declaration is unnecessary because it only contains utility functions. An object declaration should be used instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/UiUtils.kt:14:1",
+        "message": "The class UiUtils only contains utility functions. Consider defining it as an object."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Utils.kt:10:1",
+        "message": "The class Utils only contains utility functions. Consider defining it as an object."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/TempDataStore.kt:9:1",
+        "message": "The class TempDataStore only contains utility functions. Consider defining it as an object."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/MoviesProvider.kt:13:1",
+        "message": "The class MoviesProvider only contains utility functions. Consider defining it as an object."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Constants.kt:3:1",
+        "message": "The class Constants only contains utility functions. Consider defining it as an object."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeActivity.kt:62:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WatchedMoviesAdapter.kt:34:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivity.kt:36:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/main/MainActivity.kt:21:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Utils.kt:20:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Utils.kt:20:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Utils.kt:24:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeActivity.kt:30:9",
+        "message": "ADD_MOVIE_REQUEST can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/TempDataStore.kt:14:9",
+        "message": "WATCHED_MOVIES_REF can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Constants.kt:8:9",
+        "message": "IMAGES_URL can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Constants.kt:9:9",
+        "message": "POSTER_RATIO can be a `const val`."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WatchedMoviesAdapter.kt:76:25",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WatchedMoviesAdapter.kt:134:38",
+        "message": "Function parameter parent is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/TempDataStore.kt:14:9",
+        "message": "Private property WATCHED_MOVIES_REF is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/TempDataStore.kt:16:28",
+        "message": "Function parameter movie is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/TempDataStore.kt:16:42",
+        "message": "Function parameter watchedDate is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/data/TempDataStore.kt:16:61",
+        "message": "Function parameter rate is unused."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomePresenter.kt:24:40",
+        "message": "Parentheses around the lambda ({ watchedMovies ->\n            view?.hideLoading()\n            if (watchedMovies.isNotEmpty()) {\n                view?.hideTooltip()\n                view?.addWatchedMovies(watchedMovies.reversed())\n                view?.showMoviesList()\n                view?.scrollToTop()\n            } else {\n                view?.hideMoviesList()\n                view?.showTooltip()\n            }\n        }) are unnecessary and can be removed."
+      }]
+    }, {
+      "name": "UnnecessaryAbstractClass",
+      "description": "An abstract class is unnecessary and can be refactored. An abstract class should have both abstract and concrete properties or functions. An abstract class without a concrete member can be refactored to an interface. An abstract class without an abstract member can be refactored to a concrete class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/welcome/WelcomeActivityModule.kt:7:1",
+        "message": "An abstract class without a concrete member can be refactored to an interface."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivityModule.kt:7:1",
+        "message": "An abstract class without a concrete member can be refactored to an interface."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/main/MainActivityModule.kt:7:1",
+        "message": "An abstract class without a concrete member can be refactored to an interface."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/di/ActivityBindingModule.kt:12:1",
+        "message": "An abstract class without a concrete member can be refactored to an interface."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/ui/searchmovie/SearchMovieActivity.kt:19:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SearchMovieActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Utils.kt:6:35",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of Utils."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/GuardaFilmeApplication.kt:9:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of GuardaFilmeApplication."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/Utils.kt:15:9",
+        "message": "Function getYearFromMovieReleaseDate has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-guardafilme/app/src/main/java/com/guardafilme/model/WatchedMovie.kt:20:5",
+        "message": "The data class WatchedMovie contains functions which are not registered conversion functions. The offending method is called getWatchedDateAsCalendar"
+      }]
+    }]
+  }]
+}

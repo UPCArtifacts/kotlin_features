@@ -1,0 +1,111 @@
+{
+  "complexity_metrics": {
+    "loc": 62,
+    "sloc": 42,
+    "lloc": 30,
+    "cloc": 0,
+    "mcc": 4,
+    "n_smell": 5,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 133
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 17,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 0,
+    "number_of_objects_declarations": 0,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 2,
+    "number_of_var_declaration": 2,
+    "number_of_func_call": 1,
+    "number_of_arguments": 2,
+    "number_of_parameters": 17,
+    "number_of_qualified_expressions": -1,
+    "number_of_inheritances": 1,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 13,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 0,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 1,
+    "number_of_constructors": 2,
+    "number_of_properties": 2,
+    "number_of_functions": 4,
+    "number_of_interfaces": 1,
+    "number_of_classes": 2,
+    "number_of_packages": 2,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 2
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-nbehary-retribution/app/src/main/java/com/nbehary/retribution/LauncherViewModel.kt": {
+      "sloc": 10,
+      "number_of_properties": 1,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.nbehary.retribution.LauncherViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-nbehary-retribution/app/src/main/java/com/nbehary/retribution/data/ColorTheme.kt": {
+      "sloc": 32,
+      "number_of_properties": 1,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "com.nbehary.retribution.data.ColorTheme"
+    }
+  },
+  "findings": [{
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-nbehary-retribution/app/src/main/java/com/nbehary/retribution/LauncherViewModel.kt:15:1",
+        "message": "The file LauncherViewModel.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-nbehary-retribution/app/src/main/java/com/nbehary/retribution/LauncherViewModel.kt:5:35",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of LauncherViewModel."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-nbehary-retribution/app/src/main/java/com/nbehary/retribution/data/ColorTheme.kt:5:48",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of ColorTheme."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-nbehary-retribution/app/src/main/java/com/nbehary/retribution/LauncherViewModel.kt:5:1",
+        "message": "The import 'androidx.lifecycle.LiveData' is unused."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-nbehary-retribution/app/src/main/java/com/nbehary/retribution/data/ColorTheme.kt:4:1",
+        "message": "androidx.room.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }]
+  }]
+}

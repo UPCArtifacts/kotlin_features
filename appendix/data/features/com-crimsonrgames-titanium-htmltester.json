@@ -1,0 +1,380 @@
+{
+  "complexity_metrics": {
+    "loc": 600,
+    "sloc": 374,
+    "lloc": 258,
+    "cloc": 90,
+    "mcc": 73,
+    "n_smell": 70,
+    "comment_ratio": 24,
+    "mcc_per_thlines": 282
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 20,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 38,
+    "number_of_objects_declarations": 5,
+    "number_of_companion_objects": 4,
+    "number_of_singletons": 0,
+    "number_of_declaration": 50,
+    "number_of_var_declaration": 50,
+    "number_of_func_call": 125,
+    "number_of_arguments": 122,
+    "number_of_parameters": 47,
+    "number_of_qualified_expressions": 168,
+    "number_of_inheritances": 6,
+    "number_of_unsafe_calls": 27,
+    "number_of_safe_calls": 4,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 7,
+    "number_of_possible_smart_casts": 1,
+    "number_of_data_class": 0,
+    "number_of_constructors": 1,
+    "number_of_properties": 50,
+    "number_of_functions": 35,
+    "number_of_interfaces": 1,
+    "number_of_classes": 7,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 4
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/androidTest/java/com/crimsonrgames/titanium/htmltester/ApplicationTest.kt": {
+      "sloc": 4,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.crimsonrgames.titanium.htmltester.ApplicationTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/test/java/com/crimsonrgames/titanium/htmltester/ExampleUnitTest.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.crimsonrgames.titanium.htmltester.ExampleUnitTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt": {
+      "sloc": 304,
+      "number_of_properties": 5,
+      "number_of_functions": 29,
+      "complexity": 64,
+      "class": "com.crimsonrgames.titanium.htmltester.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/AddTagDialogFragment.kt": {
+      "sloc": 56,
+      "number_of_properties": 2,
+      "number_of_functions": 5,
+      "complexity": 8,
+      "class": "com.crimsonrgames.titanium.htmltester.AddTagDialogFragment"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:215:28",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/AddTagDialogFragment.kt:82:13",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:207:40",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:442:71",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:473:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:475:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:235:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:100:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:101:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:107:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:109:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:110:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:112:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:126:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:129:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:149:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:150:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:155:49",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:171:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:172:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:262:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:263:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:298:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:298:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:306:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:314:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:381:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:383:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/AddTagDialogFragment.kt:59:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/AddTagDialogFragment.kt:60:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/AddTagDialogFragment.kt:62:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/AddTagDialogFragment.kt:70:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/AddTagDialogFragment.kt:70:46",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/AddTagDialogFragment.kt:82:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:92:23",
+        "message": "findViewById<View>(R.id.toolbar) cannot be safely cast to Toolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:99:22",
+        "message": "findViewById<View>(R.id.container) cannot be safely cast to ViewPager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:107:35",
+        "message": "mSectionsPagerAdapter!!.getRegisteredFragment(0) cannot be safely cast to EditorFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:110:36",
+        "message": "mSectionsPagerAdapter!!.getRegisteredFragment(1) cannot be safely cast to PreviewFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:121:25",
+        "message": "findViewById<View>(R.id.tabs) cannot be safely cast to TabLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:124:19",
+        "message": "findViewById<View>(R.id.fab) cannot be safely cast to FloatingActionButton."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:126:31",
+        "message": "mSectionsPagerAdapter!!.getRegisteredFragment(0) cannot be safely cast to EditorFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:149:27",
+        "message": "mSectionsPagerAdapter!!.getRegisteredFragment(0) cannot be safely cast to EditorFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:150:28",
+        "message": "mSectionsPagerAdapter!!.getRegisteredFragment(1) cannot be safely cast to PreviewFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:262:27",
+        "message": "mSectionsPagerAdapter!!.getRegisteredFragment(0) cannot be safely cast to EditorFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:285:23",
+        "message": "rootView.findViewById<View>(R.id.editText) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:359:24",
+        "message": "rootView.findViewById<View>(R.id.webView) cannot be safely cast to WebView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:437:28",
+        "message": "super.instantiateItem(container, position) cannot be safely cast to Fragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/AddTagDialogFragment.kt:57:21",
+        "message": "view.findViewById<View>(R.id.editTagName) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/AddTagDialogFragment.kt:69:28",
+        "message": "activity cannot be safely cast to OnAddTagDialogFragmentInteractionListener?."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/androidTest/java/com/crimsonrgames/titanium/htmltester/ApplicationTest.kt:9:81",
+        "message": "The file ApplicationTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/test/java/com/crimsonrgames/titanium/htmltester/ExampleUnitTest.kt:16:1",
+        "message": "The file ExampleUnitTest.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:456:9",
+        "message": "Function getPageTitle has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:152:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:202:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:202:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:43:1",
+        "message": "The import 'android.webkit.WebSettings' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/AddTagDialogFragment.kt:24:1",
+        "message": "The import 'android.net.Uri' is unused."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:235:13",
+        "message": "Private property in is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:389:39",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:447:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:451:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:468:9",
+        "message": "TAG can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:469:9",
+        "message": "SAVED can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:470:9",
+        "message": "RESTORED_TO_DEFAULT_TEXT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:471:9",
+        "message": "RESTORED_TO_LAST_SAVED_FILE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:472:9",
+        "message": "TAG_PATTERN can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:473:9",
+        "message": "DEFAULT_HTML_STRING can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/MainActivity.kt:475:9",
+        "message": "DEFAULT_FILE_NAME can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/AddTagDialogFragment.kt:93:9",
+        "message": "TITLE can be a `const val`."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-crimsonrgames-titanium-htmltester/app/src/main/java/com/crimsonrgames/titanium/htmltester/AddTagDialogFragment.kt:34:31",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AddTagDialogFragment."
+      }]
+    }]
+  }]
+}

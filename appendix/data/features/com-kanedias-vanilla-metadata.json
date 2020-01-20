@@ -1,0 +1,229 @@
+{
+  "complexity_metrics": {
+    "loc": 774,
+    "sloc": 433,
+    "lloc": 332,
+    "cloc": 247,
+    "mcc": 59,
+    "n_smell": 32,
+    "comment_ratio": 57,
+    "mcc_per_thlines": 177
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 1,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 44,
+    "number_of_string_template": 6,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 39,
+    "number_of_objects_declarations": 3,
+    "number_of_companion_objects": 3,
+    "number_of_singletons": 0,
+    "number_of_declaration": 52,
+    "number_of_var_declaration": 52,
+    "number_of_func_call": 245,
+    "number_of_arguments": 169,
+    "number_of_parameters": 64,
+    "number_of_qualified_expressions": 339,
+    "number_of_inheritances": 2,
+    "number_of_unsafe_calls": 3,
+    "number_of_safe_calls": 72,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 49,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 11,
+    "number_of_constructors": 12,
+    "number_of_properties": 52,
+    "number_of_functions": 19,
+    "number_of_interfaces": 0,
+    "number_of_classes": 14,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 4
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginQueryBroadcastReceiver.kt": {
+      "sloc": 31,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 5,
+      "class": "com.kanedias.vanilla.metadata.PluginQueryBroadcastReceiver"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginMetadataWrapper.kt": {
+      "sloc": 167,
+      "number_of_properties": 3,
+      "number_of_functions": 6,
+      "complexity": 26,
+      "class": "com.kanedias.vanilla.metadata.PluginMetadataWrapper"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt": {
+      "sloc": 166,
+      "number_of_properties": 10,
+      "number_of_functions": 11,
+      "complexity": 28,
+      "class": "com.kanedias.vanilla.metadata.MetadataFetchActivity"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:38:1",
+        "message": "Class 'MetadataFetchActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginQueryBroadcastReceiver.kt:54:100",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginMetadataWrapper.kt:185:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:246:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginMetadataWrapper.kt:52:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:82:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:83:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:84:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:85:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:86:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:87:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:89:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:91:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:92:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:94:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginMetadataWrapper.kt:193:47",
+        "message": "ctx.intent.getParcelableExtra(EXTRA_PARAM_URI) cannot be safely cast to Uri."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginMetadataWrapper.kt:225:43",
+        "message": "ctx.intent.getParcelableExtra(EXTRA_PARAM_URI) cannot be safely cast to Uri."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataDto.kt:135:1",
+        "message": "The file MetadataDto.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginQueryBroadcastReceiver.kt:26:1",
+        "message": "com.kanedias.vanilla.plugins.PluginConstants.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginMetadataWrapper.kt:28:1",
+        "message": "com.kanedias.vanilla.plugins.PluginConstants.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginMetadataWrapper.kt:29:1",
+        "message": "java.io.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:29:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:31:1",
+        "message": "com.kanedias.vanilla.plugins.PluginConstants.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:35:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginQueryBroadcastReceiver.kt:46:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginMetadataWrapper.kt:165:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:277:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginMetadataWrapper.kt:57:5",
+        "message": "Function loadFile has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginMetadataWrapper.kt:101:5",
+        "message": "Function loadCover has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:166:5",
+        "message": "Function onResume has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/PluginMetadataWrapper.kt:27:1",
+        "message": "The import 'com.kanedias.vanilla.plugins.PluginConstants' is unused."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-kanedias-vanilla-metadata/app/src/main/java/com/kanedias/vanilla/metadata/MetadataFetchActivity.kt:35:28",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MetadataFetchActivity."
+      }]
+    }]
+  }]
+}

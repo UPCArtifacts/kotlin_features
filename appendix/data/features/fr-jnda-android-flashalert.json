@@ -1,0 +1,921 @@
+{
+  "complexity_metrics": {
+    "loc": 1718,
+    "sloc": 1362,
+    "lloc": 902,
+    "cloc": 69,
+    "mcc": 286,
+    "n_smell": 200,
+    "comment_ratio": 5,
+    "mcc_per_thlines": 317
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 9,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 99,
+    "number_of_string_template": 3,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 3,
+    "number_of_inferred_var": 115,
+    "number_of_objects_declarations": 8,
+    "number_of_companion_objects": 3,
+    "number_of_singletons": 1,
+    "number_of_declaration": 142,
+    "number_of_var_declaration": 142,
+    "number_of_func_call": 515,
+    "number_of_arguments": 482,
+    "number_of_parameters": 102,
+    "number_of_qualified_expressions": 664,
+    "number_of_inheritances": 10,
+    "number_of_unsafe_calls": 22,
+    "number_of_safe_calls": 50,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 6,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 1,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 1,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 48,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 1,
+    "number_of_constructors": 6,
+    "number_of_properties": 142,
+    "number_of_functions": 98,
+    "number_of_interfaces": 3,
+    "number_of_classes": 17,
+    "number_of_packages": 6,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 22
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/androidTest/java/fr/jnda/android/flashalert/MainActivityTest2.kt": {
+      "sloc": 133,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "fr.jnda.android.flashalert.MainActivityTest2"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/IPermissionCallBack.kt": {
+      "sloc": 4,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "fr.jnda.android.flashalert.impl.IPermissionCallBack"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/MarshmallowCamera.kt": {
+      "sloc": 27,
+      "number_of_properties": 2,
+      "number_of_functions": 1,
+      "complexity": 5,
+      "class": "fr.jnda.android.flashalert.impl.MarshmallowCamera"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt": {
+      "sloc": 195,
+      "number_of_properties": 2,
+      "number_of_functions": 12,
+      "complexity": 51,
+      "class": "fr.jnda.android.flashalert.impl.CameraImpl"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/WaitDialogFragment.kt": {
+      "sloc": 22,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 2,
+      "class": "fr.jnda.android.flashalert.ui.WaitDialogFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/Informations.kt": {
+      "sloc": 56,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 13,
+      "class": "fr.jnda.android.flashalert.ui.Informations"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/FlashTile.kt": {
+      "sloc": 44,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 7,
+      "class": "fr.jnda.android.flashalert.ui.FlashTile"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt": {
+      "sloc": 113,
+      "number_of_properties": 5,
+      "number_of_functions": 5,
+      "complexity": 19,
+      "class": "fr.jnda.android.flashalert.ui.AppListPreferenceFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt": {
+      "sloc": 144,
+      "number_of_properties": 4,
+      "number_of_functions": 7,
+      "complexity": 37,
+      "class": "fr.jnda.android.flashalert.ui.SettingsPreferenceFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/poko/AppItem.kt": {
+      "sloc": 10,
+      "number_of_properties": 1,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "fr.jnda.android.flashalert.poko.AppItem"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/NotificationService.kt": {
+      "sloc": 49,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 9,
+      "class": "fr.jnda.android.flashalert.tools.NotificationService"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt": {
+      "sloc": 57,
+      "number_of_properties": 4,
+      "number_of_functions": 9,
+      "complexity": 17,
+      "class": "fr.jnda.android.flashalert.tools.CompassInfo"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt": {
+      "sloc": 64,
+      "number_of_properties": 1,
+      "number_of_functions": 8,
+      "complexity": 15,
+      "class": "fr.jnda.android.flashalert.tools.PermissionHelper"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/DeviceController.kt": {
+      "sloc": 67,
+      "number_of_properties": 3,
+      "number_of_functions": 6,
+      "complexity": 13,
+      "class": "fr.jnda.android.flashalert.tools.DeviceController"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/MainActivity.kt": {
+      "sloc": 125,
+      "number_of_properties": 0,
+      "number_of_functions": 9,
+      "complexity": 31,
+      "class": "fr.jnda.android.flashalert.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/FlashAlert.kt": {
+      "sloc": 20,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "fr.jnda.android.flashalert.FlashAlert"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/db/AppEntryRepository.kt": {
+      "sloc": 36,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 6,
+      "class": "fr.jnda.android.flashalert.db.AppEntryRepository"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/db/AppDatabase.kt": {
+      "sloc": 21,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 3,
+      "class": "fr.jnda.android.flashalert.db.AppDatabase"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/db/AppSelectorDao.kt": {
+      "sloc": 16,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "fr.jnda.android.flashalert.db.AppSelectorDao"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt": {
+      "sloc": 149,
+      "number_of_properties": 5,
+      "number_of_functions": 7,
+      "complexity": 42,
+      "class": "fr.jnda.android.flashalert.EventReceiver"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:19:1",
+        "message": "Class 'CameraImpl' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:176:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:115:57",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/MainActivity.kt:65:41",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/MainActivity.kt:66:95",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:65:5",
+        "message": "The function reloadAppList appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:42:5",
+        "message": "The function onPermissionEvent appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:81:5",
+        "message": "The function onSharedPreferenceChanged appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:31:57",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:57:71",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:50:71",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:39:60",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:50:5",
+        "message": "Function canReadNotifications is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:59:5",
+        "message": "Function getMMSPhoneNumber is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:109:5",
+        "message": "Function doStuffCall is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyCatchBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:206:38",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:217:40",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:229:43",
+        "message": "This empty block of code can be removed."
+      }]
+    }, {
+      "name": "EmptyIfBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/MainActivity.kt:71:85",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/MarshmallowCamera.kt:26:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:74:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:189:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:217:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:229:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:150:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/Informations.kt:28:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "MemberNameEqualsClassName",
+      "description": "A member should not given the same name as its parent class or object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/androidTest/java/fr/jnda/android/flashalert/MainActivityTest2.kt:42:5",
+        "message": "A member is named after the class. This might result in confusion. Either rename the member or change it to a constructor."
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:11:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:75:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/androidTest/java/fr/jnda/android/flashalert/MainActivityTest2.kt:34:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/MarshmallowCamera.kt:25:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:71:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:72:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:73:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:96:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:97:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:98:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:117:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:118:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:125:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:185:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:187:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:198:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:199:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:205:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:209:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:213:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:215:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:223:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:225:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:130:45",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/MarshmallowCamera.kt:12:27",
+        "message": "context.getSystemService(Context.CAMERA_SERVICE) cannot be safely cast to CameraManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:36:56",
+        "message": "activity cannot be safely cast to AppCompatActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:89:42",
+        "message": "context?.getSystemService(TELECOM_SERVICE) cannot be safely cast to TelecomManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:117:21",
+        "message": "context cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/DeviceController.kt:56:18",
+        "message": "context.getSystemService(Context.POWER_SERVICE) cannot be safely cast to PowerManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/DeviceController.kt:70:30",
+        "message": "mContext.getSystemService(AppCompatActivity.SENSOR_SERVICE) cannot be safely cast to SensorManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/MainActivity.kt:104:14",
+        "message": "it cannot be safely cast to SettingsPreferenceFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/MainActivity.kt:135:18",
+        "message": "it cannot be safely cast to SettingsPreferenceFragment."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:28:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:83:25",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/NotificationService.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/NotificationService.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/DeviceController.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/androidTest/java/fr/jnda/android/flashalert/MainActivityTest2.kt:1:35",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/androidTest/java/fr/jnda/android/flashalert/MainActivityTest2.kt:20:32",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MainActivityTest2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:16:27",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of CameraImpl."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/Informations.kt:13:62",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of Informations."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/FlashTile.kt:10:36",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of FlashTile."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:22:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AppListPreferenceFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:16:57",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SettingsPreferenceFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/NotificationService.kt:13:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of NotificationService."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:7:21",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of CompassInfo."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:15:36",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of PermissionHelper."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/MainActivity.kt:16:64",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/FlashAlert.kt:6:49",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of FlashAlert."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:19:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of EventReceiver."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/androidTest/java/fr/jnda/android/flashalert/MainActivityTest2.kt:52:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/androidTest/java/fr/jnda/android/flashalert/MainActivityTest2.kt:62:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/androidTest/java/fr/jnda/android/flashalert/MainActivityTest2.kt:72:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/androidTest/java/fr/jnda/android/flashalert/MainActivityTest2.kt:83:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/androidTest/java/fr/jnda/android/flashalert/MainActivityTest2.kt:93:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/androidTest/java/fr/jnda/android/flashalert/MainActivityTest2.kt:103:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/androidTest/java/fr/jnda/android/flashalert/MainActivityTest2.kt:114:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:20:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/NotificationService.kt:51:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:14:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:25:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:25:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:29:15",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:35:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:40:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:45:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:47:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:65:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:67:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:47:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:80:98",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/DeviceController.kt:79:15",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/MainActivity.kt:130:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:71:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:72:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:105:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/IPermissionCallBack.kt:13:1",
+        "message": "The file IPermissionCallBack.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/WaitDialogFragment.kt:25:1",
+        "message": "The file WaitDialogFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/FlashTile.kt:54:1",
+        "message": "The file FlashTile.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:132:1",
+        "message": "The file AppListPreferenceFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:176:1",
+        "message": "The file SettingsPreferenceFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/poko/AppItem.kt:12:1",
+        "message": "The file AppItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:77:1",
+        "message": "The file CompassInfo.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:85:1",
+        "message": "The file PermissionHelper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/DeviceController.kt:89:1",
+        "message": "The file DeviceController.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/FlashAlert.kt:34:1",
+        "message": "The file FlashAlert.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/db/AppDatabase.kt:26:1",
+        "message": "The file AppDatabase.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/db/AppSelectorDao.kt:30:1",
+        "message": "The file AppSelectorDao.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/impl/CameraImpl.kt:59:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/Informations.kt:58:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/Informations.kt:58:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/FlashTile.kt:35:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:117:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:91:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:95:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:99:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:99:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:148:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:148:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/NotificationService.kt:41:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:44:20",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:44:20",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:51:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:64:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:36:16",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/DeviceController.kt:24:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/DeviceController.kt:30:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/DeviceController.kt:35:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/DeviceController.kt:49:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/MainActivity.kt:122:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/MainActivity.kt:122:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:95:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:117:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:134:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:170:20",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/Informations.kt:45:166",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/AppListPreferenceFragment.kt:84:146",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:92:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:106:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:141:159",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:142:162",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:143:176",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:155:181",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:60:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:30:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:32:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:33:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:37:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:38:140",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:41:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:44:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:71:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/MainActivity.kt:40:150",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/MainActivity.kt:66:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/MainActivity.kt:134:20",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/db/AppDatabase.kt:18:49",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:141:32",
+        "message": "Parentheses in (PreferenceManager.getDefaultSharedPreferences(activity).getBoolean(\"event_sms\", false) && permissionHelper.smsHasPermission()) are unnecessary and can be replaced with: PreferenceManager.getDefaultSharedPreferences(activity).getBoolean(\"event_sms\", false) && permissionHelper.smsHasPermission()"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:142:33",
+        "message": "Parentheses in (PreferenceManager.getDefaultSharedPreferences(activity).getBoolean(\"event_call\", false) && permissionHelper.callHasPermission()) are unnecessary and can be replaced with: PreferenceManager.getDefaultSharedPreferences(activity).getBoolean(\"event_call\", false) && permissionHelper.callHasPermission()"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:143:36",
+        "message": "Parentheses in (PreferenceManager.getDefaultSharedPreferences(activity).getBoolean(\"settings_contacts\", false) && permissionHelper.contactsHasPermission()) are unnecessary and can be replaced with: PreferenceManager.getDefaultSharedPreferences(activity).getBoolean(\"settings_contacts\", false) && permissionHelper.contactsHasPermission()"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:56:47",
+        "message": "Parentheses in (isPitch()) are unnecessary and can be replaced with: isPitch()"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:56:62",
+        "message": "Parentheses in (isReversePitch()) are unnecessary and can be replaced with: isReversePitch()"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:32:40",
+        "message": "Parentheses in (ContextCompat.checkSelfPermission(context,Manifest.permission.RECEIVE_SMS) == PackageManager.PERMISSION_GRANTED &&\n            ContextCompat.checkSelfPermission(context,Manifest.permission.RECEIVE_MMS) == PackageManager.PERMISSION_GRANTED) are unnecessary and can be replaced with: ContextCompat.checkSelfPermission(context,Manifest.permission.RECEIVE_SMS) == PackageManager.PERMISSION_GRANTED &&\n            ContextCompat.checkSelfPermission(context,Manifest.permission.RECEIVE_MMS) == PackageManager.PERMISSION_GRANTED"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:37:13",
+        "message": "Parentheses in (ContextCompat.checkSelfPermission(context, Manifest.permission.READ_CALL_LOG) == PackageManager.PERMISSION_GRANTED &&\n                    ContextCompat.checkSelfPermission(context, Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED ) are unnecessary and can be replaced with: ContextCompat.checkSelfPermission(context, Manifest.permission.READ_CALL_LOG) == PackageManager.PERMISSION_GRANTED &&\n                    ContextCompat.checkSelfPermission(context, Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:71:37",
+        "message": "Parentheses in (indx - 15) are unnecessary and can be replaced with: indx - 15"
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:47:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:54:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:61:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:87:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:90:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:94:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/ui/SettingsPreferenceFragment.kt:98:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:41:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:47:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:115:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:121:17",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/CompassInfo.kt:7:1",
+        "message": "kotlin.math.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/db/AppEntryRepository.kt:4:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/db/AppSelectorDao.kt:3:1",
+        "message": "androidx.room.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/PermissionHelper.kt:57:17",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:116:21",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/tools/DeviceController.kt:20:5",
+        "message": "Function continueEvent has 6 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:133:5",
+        "message": "Function contactAllowed has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/fr-jnda-android-flashalert/FlashAlerte/src/main/java/fr/jnda/android/flashalert/EventReceiver.kt:157:5",
+        "message": "Function getMessage has 3 return statements which exceeds the limit of 2."
+      }]
+    }]
+  }]
+}

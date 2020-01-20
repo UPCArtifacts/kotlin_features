@@ -1,0 +1,607 @@
+{
+  "complexity_metrics": {
+    "loc": 1009,
+    "sloc": 833,
+    "lloc": 623,
+    "cloc": 12,
+    "mcc": 144,
+    "n_smell": 145,
+    "comment_ratio": 1,
+    "mcc_per_thlines": 231
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 69,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 52,
+    "number_of_objects_declarations": 4,
+    "number_of_companion_objects": 1,
+    "number_of_singletons": 0,
+    "number_of_declaration": 68,
+    "number_of_var_declaration": 68,
+    "number_of_func_call": 520,
+    "number_of_arguments": 442,
+    "number_of_parameters": 109,
+    "number_of_qualified_expressions": 778,
+    "number_of_inheritances": 10,
+    "number_of_unsafe_calls": 7,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 3,
+    "number_of_lambdas": 42,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_constructors": 5,
+    "number_of_properties": 68,
+    "number_of_functions": 50,
+    "number_of_interfaces": 0,
+    "number_of_classes": 11,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 4
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt": {
+      "sloc": 150,
+      "number_of_properties": 3,
+      "number_of_functions": 7,
+      "complexity": 19,
+      "class": "com.benny.pxerstudio.activity.ProjectManagerActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt": {
+      "sloc": 73,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "com.benny.pxerstudio.activity.AboutActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt": {
+      "sloc": 563,
+      "number_of_properties": 8,
+      "number_of_functions": 40,
+      "complexity": 115,
+      "class": "com.benny.pxerstudio.activity.DrawingActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt": {
+      "sloc": 47,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 7,
+      "class": "com.benny.pxerstudio.activity.SplashActivity"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:35:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:355:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:115:54",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:113:65",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:132:56",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:145:48",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:147:48",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:76:46",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:299:43",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:302:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:381:39",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:418:52",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:441:52",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:454:48",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:456:39",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:468:76",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:548:61",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:33:38",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:50:38",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:19:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:51:1",
+        "message": "Class DrawingActivity is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:51:1",
+        "message": "Class 'DrawingActivity' with '22' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:67:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:68:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:70:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:71:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:73:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:82:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:87:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:102:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:347:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:398:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:32:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:45:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:49:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:38:23",
+        "message": "findViewById(R.id.toolbar) cannot be safely cast to Toolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:41:18",
+        "message": "findViewById(R.id.rv) cannot be safely cast to RecyclerView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:68:14",
+        "message": "findViewById(R.id.content_project_manager) cannot be safely cast to RelativeLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:71:14",
+        "message": "rv.layoutParams cannot be safely cast to RelativeLayout.LayoutParams."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:187:51",
+        "message": "view.findViewById(R.id.title) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:188:50",
+        "message": "view.findViewById(R.id.path) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:23:18",
+        "message": "findViewById(R.id.tv) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:27:19",
+        "message": "findViewById(R.id.tv1) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:31:19",
+        "message": "findViewById(R.id.tv3) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:35:19",
+        "message": "findViewById(R.id.libinfo) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:509:17",
+        "message": "layoutInflater.inflate(R.layout.dialog_activity_drawing_newproject, null) cannot be safely cast to ConstraintLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:510:24",
+        "message": "l.findViewById(R.id.et1) cannot be safely cast to EditText."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:511:23",
+        "message": "l.findViewById(R.id.sb) cannot be safely cast to SeekBar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:512:24",
+        "message": "l.findViewById(R.id.tv2) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:513:24",
+        "message": "l.findViewById(R.id.sb2) cannot be safely cast to SeekBar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:514:25",
+        "message": "l.findViewById(R.id.tv3) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:631:38",
+        "message": "view cannot be safely cast to FastBitmapView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:665:33",
+        "message": "view cannot be safely cast to ImageView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:25:10",
+        "message": "findViewById(R.id.iv) cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:26:10",
+        "message": "findViewById(R.id.tv) cannot be safely cast to View."
+      }]
+    }, {
+      "name": "ExplicitGarbageCollectionCall",
+      "description": "Don't try to be smarter than the JVM. Your code should work independently if the garbage collector is disabled or not. If you face memory issues, try tuning the JVM options instead of relying on code itself.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:113:16",
+        "message": "An explicit call to the Garbage Collector as in System should not be made."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:59:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:113:166",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:132:195",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:165:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:71:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:72:169",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:73:168",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:74:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:86:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:51:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:64:152",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:78:181",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:137:161",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:401:163",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:406:142",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:419:141",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:442:146",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:25:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:26:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:31:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:37:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:160:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:167:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:171:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:175:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:599:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:603:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:616:46",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:626:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:637:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:641:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:656:46",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:660:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:115:33",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:133:33",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/ProjectManagerActivity.kt:137:37",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:85:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:230:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:312:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:346:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:391:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:391:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:420:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:443:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:577:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:577:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:621:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:648:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:648:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:31:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:31:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:86:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:86:49",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/AboutActivity.kt:86:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:91:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:135:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:137:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:401:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:401:128",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:401:142",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:406:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:486:82",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:490:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:515:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:516:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:517:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:527:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:528:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:529:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:651:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:25:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:25:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:25:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:26:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:26:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:26:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:35:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:37:149",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:41:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:45:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/SplashActivity.kt:52:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:355:5",
+        "message": "Function onOptionsItemSelected has 6 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:13:1",
+        "message": "android.support.v7.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:137:160",
+        "message": "Parentheses around the lambda ({\n                tools_view.visibility = View.INVISIBLE\n            }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:145:39",
+        "message": "Parentheses in (tools_view.width) are unnecessary and can be replaced with: tools_view.width"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:144:24",
+        "message": "Parentheses around the lambda ({\n            tools_view.translationX = (tools_view.width).toFloat()\n        }) are unnecessary and can be removed."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-benny-pxerstudio/app/src/main/java/com/benny/pxerstudio/activity/DrawingActivity.kt:54:9",
+        "message": "UNTITLED can be a `const val`."
+      }]
+    }]
+  }]
+}

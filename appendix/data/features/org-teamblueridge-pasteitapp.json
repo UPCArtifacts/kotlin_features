@@ -1,0 +1,396 @@
+{
+  "complexity_metrics": {
+    "loc": 602,
+    "sloc": 462,
+    "lloc": 324,
+    "cloc": 82,
+    "mcc": 87,
+    "n_smell": 63,
+    "comment_ratio": 17,
+    "mcc_per_thlines": 268
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 82,
+    "number_of_string_template": 4,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 1,
+    "number_of_inferred_var": 53,
+    "number_of_objects_declarations": 2,
+    "number_of_companion_objects": 2,
+    "number_of_singletons": 0,
+    "number_of_declaration": 60,
+    "number_of_var_declaration": 61,
+    "number_of_func_call": 243,
+    "number_of_arguments": 209,
+    "number_of_parameters": 27,
+    "number_of_qualified_expressions": 310,
+    "number_of_inheritances": 4,
+    "number_of_unsafe_calls": 9,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 1,
+    "number_of_when_expressions": 3,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 4,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 1,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 14,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_constructors": 1,
+    "number_of_properties": 59,
+    "number_of_functions": 20,
+    "number_of_interfaces": 0,
+    "number_of_classes": 7,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 7
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/java/org/teamblueridge/pasteitapp/PasteItem.kt": {
+      "sloc": 4,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "org.teamblueridge.pasteitapp.PasteItem"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt": {
+      "sloc": 259,
+      "number_of_properties": 3,
+      "number_of_functions": 9,
+      "complexity": 52,
+      "class": "org.teamblueridge.pasteitapp.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsFragment.kt": {
+      "sloc": 57,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 12,
+      "class": "org.teamblueridge.pasteitapp.SettingsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt": {
+      "sloc": 48,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 11,
+      "class": "org.teamblueridge.pasteitapp.UploadDownloadUrlPrep"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsActivity.kt": {
+      "sloc": 28,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "org.teamblueridge.pasteitapp.SettingsActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/CreatePasteFragment.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "org.teamblueridge.pasteitapp.CreatePasteFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/ApiHandler.kt": {
+      "sloc": 55,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 8,
+      "class": "org.teamblueridge.pasteitapp.ApiHandler"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:40:1",
+        "message": "Class MainActivity is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:142:5",
+        "message": "The function prepForPaste appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:171:5",
+        "message": "The function doPaste appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:21:5",
+        "message": "The function prepUrl appears to be too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:142:5",
+        "message": "Function prepForPaste is nested too deeply."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:108:71",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:180:67",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:181:44",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:207:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:276:46",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:300:67",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsFragment.kt:18:36",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsFragment.kt:19:45",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyClassBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/java/org/teamblueridge/pasteitapp/PasteItem.kt:3:1",
+        "message": "The class or object  PasteItem is empty."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:44:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:33:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:34:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:35:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:36:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:64:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:65:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:67:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:68:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:83:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:101:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:283:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsActivity.kt:19:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsActivity.kt:20:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:109:39",
+        "message": "this cannot be safely cast to Activity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:124:27",
+        "message": "getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:185:25",
+        "message": "getSystemService(Context.CLIPBOARD_SERVICE) cannot be safely cast to ClipboardManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:210:33",
+        "message": "url.openConnection() cannot be safely cast to HttpsURLConnection."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsFragment.kt:19:30",
+        "message": "findPreference(\"pref_default_language\") cannot be safely cast to ListPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsFragment.kt:48:48",
+        "message": "findPreference(key) cannot be safely cast to ListPreference."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/java/org/teamblueridge/pasteitapp/PasteItem.kt:3:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/java/org/teamblueridge/pasteitapp/PasteItem.kt:3:1",
+        "message": "The class PasteItem defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:308:1",
+        "message": "The file MainActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsFragment.kt:80:1",
+        "message": "The file SettingsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:73:1",
+        "message": "The file UploadDownloadUrlPrep.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsActivity.kt:38:1",
+        "message": "The file SettingsActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/CreatePasteFragment.kt:16:1",
+        "message": "The file CreatePasteFragment.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:35:1",
+        "message": "java.io.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:178:29",
+        "message": "Parentheses in (\"Paste It v${getString(R.string.version_name)}\" +\n            \", an Android app for pasting to Stikked (https://goo.gl/LmVtEC)\") are unnecessary and can be replaced with: \"Paste It v${getString(R.string.version_name)}\" +\n            \", an Android app for pasting to Stikked (https://goo.gl/LmVtEC)\""
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:27:1",
+        "message": "The import 'android.widget.ProgressBar' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:36:1",
+        "message": "The import 'java.net.ConnectException' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsFragment.kt:3:1",
+        "message": "The import 'android.app.Activity' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/ApiHandler.kt:13:1",
+        "message": "The import 'kotlin.collections.HashMap' is unused."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:189:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/MainActivity.kt:236:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsFragment.kt:74:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsFragment.kt:74:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:43:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:43:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsFragment.kt:47:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "ProtectedMemberInFinalClass",
+      "description": "Member with protected visibility in final class is private. Consider using private or internal as modifier.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/SettingsFragment.kt:54:5",
+        "message": "Member with protected visibility in final class is private. Consider using private or internal as modifier."
+      }]
+    }, {
+      "name": "RedundantVisibilityModifierRule",
+      "description": "Checks for redundant visibility modifiers. Public is the default visibility for classes. The public modifier is redundant.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:16:9",
+        "message": "UPLOAD_PASTE is explicitly marked as public. Properties are public by default so this modifier is redundant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:17:9",
+        "message": "DOWNLOAD_LANGS is explicitly marked as public. Properties are public by default so this modifier is redundant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:18:9",
+        "message": "DOWNLOAD_RECENT is explicitly marked as public. Properties are public by default so this modifier is redundant."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:16:9",
+        "message": "UPLOAD_PASTE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:17:9",
+        "message": "DOWNLOAD_LANGS can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:18:9",
+        "message": "DOWNLOAD_RECENT can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/UploadDownloadUrlPrep.kt:19:9",
+        "message": "TAG can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-teamblueridge-pasteitapp/app/src/main/kotlin/org/teamblueridge/pasteitapp/ApiHandler.kt:23:9",
+        "message": "TAG can be a `const val`."
+      }]
+    }]
+  }]
+}

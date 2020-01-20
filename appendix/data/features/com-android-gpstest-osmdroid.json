@@ -1,0 +1,239 @@
+{
+  "complexity_metrics": {
+    "loc": 485,
+    "sloc": 279,
+    "lloc": 228,
+    "cloc": 142,
+    "mcc": 32,
+    "n_smell": 31,
+    "comment_ratio": 50,
+    "mcc_per_thlines": 140
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 54,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 48,
+    "number_of_objects_declarations": 3,
+    "number_of_companion_objects": 3,
+    "number_of_singletons": 0,
+    "number_of_declaration": 54,
+    "number_of_var_declaration": 54,
+    "number_of_func_call": 173,
+    "number_of_arguments": 242,
+    "number_of_parameters": 28,
+    "number_of_qualified_expressions": 164,
+    "number_of_inheritances": 0,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 5,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 0,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 3,
+    "number_of_constructors": 3,
+    "number_of_properties": 54,
+    "number_of_functions": 20,
+    "number_of_interfaces": 0,
+    "number_of_classes": 6,
+    "number_of_packages": 3,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 6
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/androidTest/java/com/android/gpstest/IOUtilsTest.kt": {
+      "sloc": 156,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 6,
+      "class": "com.android.gpstest.IOUtilsTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt": {
+      "sloc": 60,
+      "number_of_properties": 0,
+      "number_of_functions": 11,
+      "complexity": 21,
+      "class": "com.android.gpstest.util.SortUtil"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/BenchmarkUtils.kt": {
+      "sloc": 15,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "com.android.gpstest.util.BenchmarkUtils"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/model/SatelliteStatus.kt": {
+      "sloc": 17,
+      "number_of_properties": 3,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.android.gpstest.model.SatelliteStatus"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/model/AvgError.kt": {
+      "sloc": 28,
+      "number_of_properties": 3,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.android.gpstest.model.AvgError"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/model/MeasuredError.kt": {
+      "sloc": 3,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.android.gpstest.model.MeasuredError"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/androidTest/java/com/android/gpstest/IOUtilsTest.kt:47:5",
+        "message": "The function testGetLocationFromIntent is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/androidTest/java/com/android/gpstest/IOUtilsTest.kt:121:5",
+        "message": "The function testCreateShowRadarIntent is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/androidTest/java/com/android/gpstest/IOUtilsTest.kt:157:5",
+        "message": "The function testGetLocationFromGeoUri is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:26:5",
+        "message": "Object 'Companion' with '11' functions detected. Defined threshold inside objects is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:115:9",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:122:9",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/androidTest/java/com/android/gpstest/IOUtilsTest.kt:241:1",
+        "message": "The file IOUtilsTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/model/AvgError.kt:42:1",
+        "message": "The file AvgError.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/model/MeasuredError.kt:7:60",
+        "message": "The file MeasuredError.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:46:141",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:64:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:68:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:72:175",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:75:144",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:80:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:84:175",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:87:144",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:96:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:108:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:119:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:126:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UtilityClassWithPublicConstructor",
+      "description": "The class declaration is unnecessary because it only contains utility functions. An object declaration should be used instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:21:1",
+        "message": "The class SortUtil only contains utility functions. Consider defining it as an object."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/BenchmarkUtils.kt:7:1",
+        "message": "The class BenchmarkUtils only contains utility functions. Consider defining it as an object."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:30:82",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:37:82",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:56:75",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:63:94",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:118:102",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/util/SortUtil.kt:125:102",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/model/AvgError.kt:17:5",
+        "message": "The data class AvgError contains functions which are not registered conversion functions. The offending method is called addMeasurement"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-android-gpstest-osmdroid/GPSTest/src/main/java/com/android/gpstest/model/AvgError.kt:30:5",
+        "message": "The data class AvgError contains functions which are not registered conversion functions. The offending method is called reset"
+      }]
+    }]
+  }]
+}

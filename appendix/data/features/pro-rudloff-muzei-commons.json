@@ -1,0 +1,140 @@
+{
+  "complexity_metrics": {
+    "loc": 265,
+    "sloc": 149,
+    "lloc": 97,
+    "cloc": 79,
+    "mcc": 14,
+    "n_smell": 8,
+    "comment_ratio": 53,
+    "mcc_per_thlines": 144
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 28,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 1,
+    "number_of_inferred_var": 8,
+    "number_of_objects_declarations": 2,
+    "number_of_companion_objects": 2,
+    "number_of_singletons": 0,
+    "number_of_declaration": 8,
+    "number_of_var_declaration": 8,
+    "number_of_func_call": 50,
+    "number_of_arguments": 39,
+    "number_of_parameters": 25,
+    "number_of_qualified_expressions": 59,
+    "number_of_inheritances": 3,
+    "number_of_unsafe_calls": 1,
+    "number_of_safe_calls": 7,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 2,
+    "number_of_named_argument": 7,
+    "number_of_argument_with_default_value": 5,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 1,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 5,
+    "number_of_constructors": 6,
+    "number_of_properties": 8,
+    "number_of_functions": 8,
+    "number_of_interfaces": 1,
+    "number_of_classes": 8,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 5
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pro-rudloff-muzei-commons/src/main/java/pro/rudloff/muzei/commons/CommonsArtProvider.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "pro.rudloff.muzei.commons.CommonsArtProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pro-rudloff-muzei-commons/src/main/java/pro/rudloff/muzei/commons/CommonsArtSource.kt": {
+      "sloc": 6,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "pro.rudloff.muzei.commons.CommonsArtSource"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pro-rudloff-muzei-commons/src/main/java/pro/rudloff/muzei/commons/CommonsWorker.kt": {
+      "sloc": 61,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 8,
+      "class": "pro.rudloff.muzei.commons.CommonsWorker"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pro-rudloff-muzei-commons/src/main/java/pro/rudloff/muzei/commons/CommonsService.kt": {
+      "sloc": 74,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "pro.rudloff.muzei.commons.CommonsService"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pro-rudloff-muzei-commons/src/main/java/pro/rudloff/muzei/commons/CommonsService.kt:69:12",
+        "message": "The function api has too many parameters. The current threshold is set to 6."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pro-rudloff-muzei-commons/src/main/java/pro/rudloff/muzei/commons/CommonsWorker.kt:58:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pro-rudloff-muzei-commons/src/main/java/pro/rudloff/muzei/commons/CommonsWorker.kt:50:5",
+        "message": "Function doWork has 4 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "NestedClassesVisibility",
+      "description": "Nested types are often used for implementing private functionality and therefore this should not be public.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pro-rudloff-muzei-commons/src/main/java/pro/rudloff/muzei/commons/CommonsService.kt:80:5",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of CommonsService makes it visible externally."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pro-rudloff-muzei-commons/src/main/java/pro/rudloff/muzei/commons/CommonsService.kt:84:5",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of CommonsService makes it visible externally."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pro-rudloff-muzei-commons/src/main/java/pro/rudloff/muzei/commons/CommonsService.kt:88:5",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of CommonsService makes it visible externally."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pro-rudloff-muzei-commons/src/main/java/pro/rudloff/muzei/commons/CommonsService.kt:93:5",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of CommonsService makes it visible externally."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pro-rudloff-muzei-commons/src/main/java/pro/rudloff/muzei/commons/CommonsService.kt:97:5",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of CommonsService makes it visible externally."
+      }]
+    }]
+  }]
+}

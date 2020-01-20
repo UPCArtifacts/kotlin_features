@@ -1,0 +1,2516 @@
+{
+  "complexity_metrics": {
+    "loc": 8300,
+    "sloc": 6896,
+    "lloc": 4538,
+    "cloc": 296,
+    "mcc": 1105,
+    "n_smell": 504,
+    "comment_ratio": 4,
+    "mcc_per_thlines": 243
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 2,
+    "number_of_coroutines": 25,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 368,
+    "number_of_string_template": 25,
+    "number_of_inline_func": 2,
+    "number_of_inferred_fun": 11,
+    "number_of_inferred_var": 618,
+    "number_of_objects_declarations": 52,
+    "number_of_companion_objects": 35,
+    "number_of_singletons": 8,
+    "number_of_declaration": 888,
+    "number_of_var_declaration": 888,
+    "number_of_func_call": 2722,
+    "number_of_arguments": 2308,
+    "number_of_parameters": 742,
+    "number_of_qualified_expressions": 3469,
+    "number_of_inheritances": 52,
+    "number_of_unsafe_calls": 37,
+    "number_of_safe_calls": 51,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 16,
+    "number_of_functions_with_default_value": 25,
+    "number_of_function_call_with_named_value": 25,
+    "number_of_named_argument": 27,
+    "number_of_argument_with_default_value": 34,
+    "number_of_overloaded_op": 1,
+    "number_of_extension_function": 16,
+    "number_of_properties_delegation": 6,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 3,
+    "number_of_lambdas": 203,
+    "number_of_possible_smart_casts": 7,
+    "number_of_data_class": 13,
+    "number_of_constructors": 63,
+    "number_of_properties": 888,
+    "number_of_functions": 604,
+    "number_of_interfaces": 23,
+    "number_of_classes": 117,
+    "number_of_packages": 19,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 113
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/prod/kotlin/com/github/premnirmal/ticker/components/LoggingTree.kt": {
+      "sloc": 37,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 4,
+      "class": "com.github.premnirmal.ticker.components.LoggingTree"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/prod/kotlin/com/github/premnirmal/ticker/analytics/AnalyticsImpl.kt": {
+      "sloc": 42,
+      "number_of_properties": 2,
+      "number_of_functions": 5,
+      "complexity": 9,
+      "class": "com.github.premnirmal.ticker.analytics.AnalyticsImpl"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/tools/Parser.kt": {
+      "sloc": 42,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 7,
+      "class": "com.github.premnirmal.ticker.tools.Parser"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/BaseActivityUnitTest.kt": {
+      "sloc": 51,
+      "number_of_properties": 2,
+      "number_of_functions": 8,
+      "complexity": 9,
+      "class": "com.github.premnirmal.ticker.BaseActivityUnitTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/BaseUnitTest.kt": {
+      "sloc": 50,
+      "number_of_properties": 1,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "com.github.premnirmal.ticker.BaseUnitTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockAppModule.kt": {
+      "sloc": 34,
+      "number_of_properties": 0,
+      "number_of_functions": 9,
+      "complexity": 9,
+      "class": "com.github.premnirmal.ticker.mock.MockAppModule"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockNetworkModule.kt": {
+      "sloc": 51,
+      "number_of_properties": 0,
+      "number_of_functions": 14,
+      "complexity": 14,
+      "class": "com.github.premnirmal.ticker.mock.MockNetworkModule"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/TestApplication.kt": {
+      "sloc": 15,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.github.premnirmal.ticker.mock.TestApplication"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockTestRunner.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.mock.MockTestRunner"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/Mocker.kt": {
+      "sloc": 26,
+      "number_of_properties": 1,
+      "number_of_functions": 4,
+      "complexity": 5,
+      "class": "com.github.premnirmal.ticker.mock.Mocker"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockAppComponent.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.mock.MockAppComponent"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/network/StocksApiTest.kt": {
+      "sloc": 85,
+      "number_of_properties": 4,
+      "number_of_functions": 5,
+      "complexity": 7,
+      "class": "com.github.premnirmal.ticker.network.StocksApiTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/model/ExponentialBackoffTest.kt": {
+      "sloc": 15,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 2,
+      "class": "com.github.premnirmal.ticker.model.ExponentialBackoffTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/model/AlarmSchedulerTest.kt": {
+      "sloc": 187,
+      "number_of_properties": 0,
+      "number_of_functions": 18,
+      "complexity": 18,
+      "class": "com.github.premnirmal.ticker.model.AlarmSchedulerTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/TestActivity.kt": {
+      "sloc": 14,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.TestActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/purefoss/kotlin/com/github/premnirmal/ticker/components/LoggingTree.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.components.LoggingTree"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/purefoss/kotlin/com/github/premnirmal/ticker/analytics/AnalyticsImpl.kt": {
+      "sloc": 2,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.analytics.AnalyticsImpl"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/dev/kotlin/com/github/premnirmal/ticker/components/LoggingTree.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.components.LoggingTree"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/dev/kotlin/com/github/premnirmal/ticker/analytics/AnalyticsImpl.kt": {
+      "sloc": 2,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.analytics.AnalyticsImpl"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/MaxHeightLinearLayout.kt": {
+      "sloc": 38,
+      "number_of_properties": 2,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "com.github.premnirmal.ticker.ui.MaxHeightLinearLayout"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/TextMarkerView.kt": {
+      "sloc": 32,
+      "number_of_properties": 2,
+      "number_of_functions": 2,
+      "complexity": 4,
+      "class": "com.github.premnirmal.ticker.ui.TextMarkerView"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/SettingsTextView.kt": {
+      "sloc": 90,
+      "number_of_properties": 1,
+      "number_of_functions": 4,
+      "complexity": 10,
+      "class": "com.github.premnirmal.ticker.ui.SettingsTextView"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/SpacingDecoration.kt": {
+      "sloc": 19,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.ui.SpacingDecoration"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/FabBehavior.kt": {
+      "sloc": 38,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 4,
+      "class": "com.github.premnirmal.ticker.ui.FabBehavior"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/StockFieldView.kt": {
+      "sloc": 126,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 16,
+      "class": "com.github.premnirmal.ticker.ui.StockFieldView"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/DefaultPreferenceChangeListener.kt": {
+      "sloc": 13,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.github.premnirmal.ticker.settings.DefaultPreferenceChangeListener"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/TimePreference.kt": {
+      "sloc": 47,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 8,
+      "class": "com.github.premnirmal.ticker.settings.TimePreference"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt": {
+      "sloc": 186,
+      "number_of_properties": 4,
+      "number_of_functions": 15,
+      "complexity": 25,
+      "class": "com.github.premnirmal.ticker.settings.WidgetSettingsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt": {
+      "sloc": 535,
+      "number_of_properties": 5,
+      "number_of_functions": 27,
+      "complexity": 90,
+      "class": "com.github.premnirmal.ticker.settings.SettingsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsActivity.kt": {
+      "sloc": 38,
+      "number_of_properties": 2,
+      "number_of_functions": 2,
+      "complexity": 5,
+      "class": "com.github.premnirmal.ticker.settings.WidgetSettingsActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/FooterPreference.kt": {
+      "sloc": 43,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.settings.FooterPreference"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomePagerAdapter.kt": {
+      "sloc": 37,
+      "number_of_properties": 1,
+      "number_of_functions": 5,
+      "complexity": 13,
+      "class": "com.github.premnirmal.ticker.home.HomePagerAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ParanormalActivity.kt": {
+      "sloc": 160,
+      "number_of_properties": 5,
+      "number_of_functions": 10,
+      "complexity": 28,
+      "class": "com.github.premnirmal.ticker.home.ParanormalActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomeFragment.kt": {
+      "sloc": 135,
+      "number_of_properties": 9,
+      "number_of_functions": 14,
+      "complexity": 25,
+      "class": "com.github.premnirmal.ticker.home.HomeFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ChildFragment.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.home.ChildFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/SplashActivity.kt": {
+      "sloc": 34,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 4,
+      "class": "com.github.premnirmal.ticker.home.SplashActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetClickReceiver.kt": {
+      "sloc": 37,
+      "number_of_properties": 2,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "com.github.premnirmal.ticker.widget.WidgetClickReceiver"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/StockWidget.kt": {
+      "sloc": 166,
+      "number_of_properties": 4,
+      "number_of_functions": 8,
+      "complexity": 29,
+      "class": "com.github.premnirmal.ticker.widget.StockWidget"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/RemoteStockProviderService.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.widget.RemoteStockProviderService"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetsFragment.kt": {
+      "sloc": 116,
+      "number_of_properties": 4,
+      "number_of_functions": 13,
+      "complexity": 18,
+      "class": "com.github.premnirmal.ticker.widget.WidgetsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetDataProvider.kt": {
+      "sloc": 91,
+      "number_of_properties": 3,
+      "number_of_functions": 9,
+      "complexity": 17,
+      "class": "com.github.premnirmal.ticker.widget.WidgetDataProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/RemoteStockViewAdapter.kt": {
+      "sloc": 146,
+      "number_of_properties": 4,
+      "number_of_functions": 10,
+      "complexity": 29,
+      "class": "com.github.premnirmal.ticker.widget.RemoteStockViewAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/RefreshReceiver.kt": {
+      "sloc": 21,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.widget.RefreshReceiver"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetData.kt": {
+      "sloc": 245,
+      "number_of_properties": 9,
+      "number_of_functions": 29,
+      "complexity": 59,
+      "class": "com.github.premnirmal.ticker.widget.WidgetData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/AppPreferences.kt": {
+      "sloc": 175,
+      "number_of_properties": 4,
+      "number_of_functions": 21,
+      "complexity": 26,
+      "class": "com.github.premnirmal.ticker.AppPreferences"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/BrowserFallback.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.BrowserFallback"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/StocksApp.kt": {
+      "sloc": 89,
+      "number_of_properties": 1,
+      "number_of_functions": 8,
+      "complexity": 12,
+      "class": "com.github.premnirmal.ticker.StocksApp"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/HistoricalDataApi.kt": {
+      "sloc": 27,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.github.premnirmal.ticker.network.HistoricalDataApi"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/SuggestionApi.kt": {
+      "sloc": 8,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.network.SuggestionApi"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NetworkModule.kt": {
+      "sloc": 179,
+      "number_of_properties": 0,
+      "number_of_functions": 18,
+      "complexity": 22,
+      "class": "com.github.premnirmal.ticker.network.NetworkModule"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StocksApi.kt": {
+      "sloc": 71,
+      "number_of_properties": 6,
+      "number_of_functions": 5,
+      "complexity": 12,
+      "class": "com.github.premnirmal.ticker.network.StocksApi"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/UserAgentInterceptor.kt": {
+      "sloc": 33,
+      "number_of_properties": 2,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.network.UserAgentInterceptor"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/RequestInterceptor.kt": {
+      "sloc": 30,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.network.RequestInterceptor"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NewsApi.kt": {
+      "sloc": 12,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.network.NewsApi"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/Robindahood.kt": {
+      "sloc": 12,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.network.Robindahood"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/YahooFinance.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.network.YahooFinance"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StupidYahooWrapConverter.kt": {
+      "sloc": 24,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 5,
+      "class": "com.github.premnirmal.ticker.network.StupidYahooWrapConverter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NewsProvider.kt": {
+      "sloc": 24,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "com.github.premnirmal.ticker.network.NewsProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/BaseConverter.kt": {
+      "sloc": 17,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 2,
+      "class": "com.github.premnirmal.ticker.network.BaseConverter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Position.kt": {
+      "sloc": 28,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 6,
+      "class": "com.github.premnirmal.ticker.network.data.Position"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/ErrorBody.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.network.data.ErrorBody"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/QueryCreator.kt": {
+      "sloc": 23,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.network.data.QueryCreator"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/NewsArticle.kt": {
+      "sloc": 21,
+      "number_of_properties": 3,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.github.premnirmal.ticker.network.data.NewsArticle"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Suggestions.kt": {
+      "sloc": 17,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.network.data.Suggestions"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/IQuoteNet.kt": {
+      "sloc": 11,
+      "number_of_properties": 8,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.network.data.IQuoteNet"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/NewsFeed.kt": {
+      "sloc": 7,
+      "number_of_properties": 3,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.network.data.NewsFeed"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/DataPoint.kt": {
+      "sloc": 34,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "com.github.premnirmal.ticker.network.data.DataPoint"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt": {
+      "sloc": 99,
+      "number_of_properties": 12,
+      "number_of_functions": 23,
+      "complexity": 33,
+      "class": "com.github.premnirmal.ticker.network.data.Quote"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/QuoteNet.kt": {
+      "sloc": 13,
+      "number_of_properties": 7,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.network.data.QuoteNet"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/HistoricalData.kt": {
+      "sloc": 15,
+      "number_of_properties": 1,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.network.data.HistoricalData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/concurrency/ApplicationScope.kt": {
+      "sloc": 9,
+      "number_of_properties": 1,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.concurrency.ApplicationScope"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AppModule.kt": {
+      "sloc": 34,
+      "number_of_properties": 0,
+      "number_of_functions": 9,
+      "complexity": 9,
+      "class": "com.github.premnirmal.ticker.components.AppModule"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/InAppMessage.kt": {
+      "sloc": 41,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 8,
+      "class": "com.github.premnirmal.ticker.components.InAppMessage"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AppClock.kt": {
+      "sloc": 16,
+      "number_of_properties": 0,
+      "number_of_functions": 8,
+      "complexity": 8,
+      "class": "com.github.premnirmal.ticker.components.AppClock"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/Injector.kt": {
+      "sloc": 7,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.components.Injector"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AppComponent.kt": {
+      "sloc": 82,
+      "number_of_properties": 0,
+      "number_of_functions": 38,
+      "complexity": 38,
+      "class": "com.github.premnirmal.ticker.components.AppComponent"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AsyncBus.kt": {
+      "sloc": 36,
+      "number_of_properties": 3,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.github.premnirmal.ticker.components.AsyncBus"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/GraphActivity.kt": {
+      "sloc": 128,
+      "number_of_properties": 5,
+      "number_of_functions": 7,
+      "complexity": 27,
+      "class": "com.github.premnirmal.ticker.news.GraphActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt": {
+      "sloc": 261,
+      "number_of_properties": 5,
+      "number_of_functions": 11,
+      "complexity": 40,
+      "class": "com.github.premnirmal.ticker.news.NewsFeedActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmSchedulerLollipop.kt": {
+      "sloc": 37,
+      "number_of_properties": 2,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "com.github.premnirmal.ticker.model.AlarmSchedulerLollipop"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/RefreshService.kt": {
+      "sloc": 37,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 5,
+      "class": "com.github.premnirmal.ticker.model.RefreshService"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/FetchException.kt": {
+      "sloc": 3,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.model.FetchException"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/IStocksProvider.kt": {
+      "sloc": 32,
+      "number_of_properties": 0,
+      "number_of_functions": 19,
+      "complexity": 19,
+      "class": "com.github.premnirmal.ticker.model.IStocksProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksStorage.kt": {
+      "sloc": 43,
+      "number_of_properties": 1,
+      "number_of_functions": 6,
+      "complexity": 6,
+      "class": "com.github.premnirmal.ticker.model.StocksStorage"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/HistoryProvider.kt": {
+      "sloc": 77,
+      "number_of_properties": 3,
+      "number_of_functions": 2,
+      "complexity": 10,
+      "class": "com.github.premnirmal.ticker.model.HistoryProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/ExponentialBackoff.kt": {
+      "sloc": 28,
+      "number_of_properties": 5,
+      "number_of_functions": 3,
+      "complexity": 4,
+      "class": "com.github.premnirmal.ticker.model.ExponentialBackoff"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt": {
+      "sloc": 123,
+      "number_of_properties": 2,
+      "number_of_functions": 2,
+      "complexity": 22,
+      "class": "com.github.premnirmal.ticker.model.AlarmScheduler"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/FetchResult.kt": {
+      "sloc": 12,
+      "number_of_properties": 4,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.model.FetchResult"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt": {
+      "sloc": 320,
+      "number_of_properties": 16,
+      "number_of_functions": 25,
+      "complexity": 55,
+      "class": "com.github.premnirmal.ticker.model.StocksProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/IHistoryProvider.kt": {
+      "sloc": 20,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.github.premnirmal.ticker.model.IHistoryProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioVH.kt": {
+      "sloc": 85,
+      "number_of_properties": 2,
+      "number_of_functions": 6,
+      "complexity": 13,
+      "class": "com.github.premnirmal.ticker.portfolio.PortfolioVH"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/StocksAdapter.kt": {
+      "sloc": 103,
+      "number_of_properties": 1,
+      "number_of_functions": 11,
+      "complexity": 16,
+      "class": "com.github.premnirmal.ticker.portfolio.StocksAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/AddPositionActivity.kt": {
+      "sloc": 132,
+      "number_of_properties": 3,
+      "number_of_functions": 5,
+      "complexity": 17,
+      "class": "com.github.premnirmal.ticker.portfolio.AddPositionActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SearchActivity.kt": {
+      "sloc": 37,
+      "number_of_properties": 2,
+      "number_of_functions": 2,
+      "complexity": 3,
+      "class": "com.github.premnirmal.ticker.portfolio.search.SearchActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SearchFragment.kt": {
+      "sloc": 161,
+      "number_of_properties": 6,
+      "number_of_functions": 11,
+      "complexity": 25,
+      "class": "com.github.premnirmal.ticker.portfolio.search.SearchFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SuggestionsAdapter.kt": {
+      "sloc": 75,
+      "number_of_properties": 1,
+      "number_of_functions": 8,
+      "complexity": 11,
+      "class": "com.github.premnirmal.ticker.portfolio.search.SuggestionsAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/ItemTouchHelperAdapter.kt": {
+      "sloc": 8,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.github.premnirmal.ticker.portfolio.drag_drop.ItemTouchHelperAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/ItemTouchHelperViewHolder.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.github.premnirmal.ticker.portfolio.drag_drop.ItemTouchHelperViewHolder"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/OnStartDragListener.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.github.premnirmal.ticker.portfolio.drag_drop.OnStartDragListener"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/SimpleItemTouchHelperCallback.kt": {
+      "sloc": 80,
+      "number_of_properties": 0,
+      "number_of_functions": 8,
+      "complexity": 15,
+      "class": "com.github.premnirmal.ticker.portfolio.drag_drop.SimpleItemTouchHelperCallback"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt": {
+      "sloc": 218,
+      "number_of_properties": 6,
+      "number_of_functions": 15,
+      "complexity": 26,
+      "class": "com.github.premnirmal.ticker.portfolio.PortfolioFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/events/RefreshEvent.kt": {
+      "sloc": 2,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.events.RefreshEvent"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/events/ErrorEvent.kt": {
+      "sloc": 2,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.events.ErrorEvent"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseActivity.kt": {
+      "sloc": 63,
+      "number_of_properties": 3,
+      "number_of_functions": 6,
+      "complexity": 8,
+      "class": "com.github.premnirmal.ticker.base.BaseActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseFragment.kt": {
+      "sloc": 17,
+      "number_of_properties": 3,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.github.premnirmal.ticker.base.BaseFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseGraphActivity.kt": {
+      "sloc": 88,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 5,
+      "class": "com.github.premnirmal.ticker.base.BaseGraphActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/UpdateReceiver.kt": {
+      "sloc": 21,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.github.premnirmal.ticker.UpdateReceiver"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/analytics/Analytics.kt": {
+      "sloc": 42,
+      "number_of_properties": 0,
+      "number_of_functions": 7,
+      "complexity": 10,
+      "class": "com.github.premnirmal.ticker.analytics.Analytics"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:93:3",
+        "message": "The function onClick appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:147:3",
+        "message": "The function setupSimplePreferencesScreen appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:501:3",
+        "message": "The function onRequestPermissionsResult appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/ImportTasks.kt:23:3",
+        "message": "The function import appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/RemoteStockViewAdapter.kt:59:3",
+        "message": "The function getViewAt appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt:34:3",
+        "message": "The function msToNextAlarm appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:33:1",
+        "message": "Class 'WidgetSettingsFragment' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:54:1",
+        "message": "Class 'SettingsFragment' with '19' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomeFragment.kt:31:1",
+        "message": "Class 'HomeFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetData.kt:18:1",
+        "message": "Class 'WidgetData' with '29' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/AppPreferences.kt:18:1",
+        "message": "Class 'AppPreferences' with '20' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NetworkModule.kt:29:1",
+        "message": "Class 'NetworkModule' with '15' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:6:1",
+        "message": "Class 'Quote' with '22' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AppComponent.kt:43:1",
+        "message": "Interface 'AppComponent' with '38' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt:50:1",
+        "message": "Class 'NewsFeedActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/IStocksProvider.kt:7:1",
+        "message": "Interface 'IStocksProvider' with '19' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:34:1",
+        "message": "Class 'StocksProvider' with '25' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt:35:1",
+        "message": "Class 'PortfolioFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:89:29",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/ExportTasks.kt:29:7",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/ExportTasks.kt:32:5",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/ExportTasks.kt:53:7",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/ExportTasks.kt:56:5",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StocksApi.kt:39:7",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StocksApi.kt:45:5",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NewsProvider.kt:24:7",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NewsProvider.kt:26:7",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt:127:36",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt:248:36",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/HistoryProvider.kt:41:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/HistoryProvider.kt:43:7",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/HistoryProvider.kt:79:7",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/HistoryProvider.kt:82:5",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:176:7",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:210:7",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:54:1",
+        "message": "Class SettingsFragment is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:34:1",
+        "message": "Class StocksProvider is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/StockWidget.kt:134:3",
+        "message": "The function updateWidget is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt:63:3",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioVH.kt:23:3",
+        "message": "The function update is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseGraphActivity.kt:46:3",
+        "message": "The function loadGraph is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "ComplexInterface",
+      "description": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AppComponent.kt:43:1",
+        "message": "The interface AppComponent is too complex. Consider splitting it up."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/IStocksProvider.kt:7:1",
+        "message": "The interface IStocksProvider is too complex. Consider splitting it up."
+      }]
+    }, {
+      "name": "MethodOverloading",
+      "description": "Methods which are overloaded often might be harder to maintain. Furthermore, these methods are tightly coupled. Refactor these methods and try to use optional parameters.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AppComponent.kt:43:1",
+        "message": "This method is overloaded too many times."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt:107:24",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt:60:9",
+        "message": "This condition is too complex."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyDefaultConstructor",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/AddPositionActivity.kt:38:43",
+        "message": "An empty default constructor can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/tools/Parser.kt:29:7",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }, {
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/network/StocksApiTest.kt:89:16",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/Extensions.kt:105:12",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/RemoteStockViewAdapter.kt:146:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/StocksApp.kt:43:16",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StocksApi.kt:38:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NewsProvider.kt:25:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/HistoryProvider.kt:39:16",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/HistoryProvider.kt:77:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:102:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:198:16",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/Extensions.kt:106:5",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "MemberNameEqualsClassName",
+      "description": "A member should not given the same name as its parent class or object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/tools/Parser.kt:13:3",
+        "message": "A member is named after the class. This might result in confusion. Either rename the member or change it to a constructor."
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:425:3",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NetworkModule.kt:54:3",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AppModule.kt:35:3",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ParanormalActivity.kt:37:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StupidYahooWrapConverter.kt:29:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/NewsArticle.kt:12:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmSchedulerLollipop.kt:15:3",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmSchedulerLollipop.kt:16:3",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:44:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/StockWidget.kt:109:5",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/BaseConverter.kt:14:55",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ConstructorParameterNaming",
+      "description": "Constructor parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/FetchResult.kt:3:27",
+        "message": "Constructor private parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/FetchResult.kt:4:27",
+        "message": "Constructor private parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "PackageNaming",
+      "description": "Package names should match the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/ItemTouchHelperAdapter.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/ItemTouchHelperViewHolder.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/OnStartDragListener.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/SimpleItemTouchHelperCallback.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/ImportTasks.kt:57:43",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/ImportTasks.kt:61:37",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetData.kt:65:24",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/prod/kotlin/com/github/premnirmal/ticker/analytics/AnalyticsImpl.kt:14:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/prod/kotlin/com/github/premnirmal/ticker/analytics/AnalyticsImpl.kt:15:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:51:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:73:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:74:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:75:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:76:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomePagerAdapter.kt:12:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ParanormalActivity.kt:44:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ParanormalActivity.kt:45:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomeFragment.kt:43:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomeFragment.kt:44:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomeFragment.kt:45:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomeFragment.kt:52:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetClickReceiver.kt:18:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetClickReceiver.kt:19:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/StockWidget.kt:32:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/StockWidget.kt:33:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/StockWidget.kt:34:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetsFragment.kt:29:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetsFragment.kt:30:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetDataProvider.kt:19:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetDataProvider.kt:20:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/RemoteStockViewAdapter.kt:30:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/RemoteStockViewAdapter.kt:31:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/RemoteStockViewAdapter.kt:32:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/RefreshReceiver.kt:17:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetData.kt:42:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetData.kt:43:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetData.kt:44:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/AppPreferences.kt:24:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/AppPreferences.kt:25:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/AppPreferences.kt:137:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/StocksApp.kt:60:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StocksApi.kt:23:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StocksApi.kt:24:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StocksApi.kt:25:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StocksApi.kt:26:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StocksApi.kt:27:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/UserAgentInterceptor.kt:20:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/RequestInterceptor.kt:24:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NewsProvider.kt:15:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/Injector.kt:8:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/GraphActivity.kt:40:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/GraphActivity.kt:41:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/GraphActivity.kt:42:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt:57:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt:58:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt:59:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt:60:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/RefreshService.kt:17:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksStorage.kt:22:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/HistoryProvider.kt:18:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/ExponentialBackoff.kt:12:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt:27:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt:28:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:47:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:48:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:49:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:50:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:51:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:52:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:53:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:54:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:55:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/AddPositionActivity.kt:54:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/AddPositionActivity.kt:55:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SearchFragment.kt:48:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SearchFragment.kt:49:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SearchFragment.kt:50:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SearchFragment.kt:51:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt:72:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt:74:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt:82:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseActivity.kt:30:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseActivity.kt:31:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseFragment.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseGraphActivity.kt:20:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/UpdateReceiver.kt:17:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/analytics/Analytics.kt:42:3",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/analytics/Analytics.kt:43:3",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/BaseActivityUnitTest.kt:55:12",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/Mocker.kt:25:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:60:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:106:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:119:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:129:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:138:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:170:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:104:62",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:178:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:180:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:210:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:415:12",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:485:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomeFragment.kt:69:62",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetsFragment.kt:52:62",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetDataProvider.kt:36:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetDataProvider.kt:91:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetDataProvider.kt:92:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetData.kt:98:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/AppPreferences.kt:58:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/AppPreferences.kt:63:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/AppPreferences.kt:69:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StocksApi.kt:66:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StocksApi.kt:83:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/QueryCreator.kt:11:19",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/HistoryProvider.kt:53:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/HistoryProvider.kt:53:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/FetchResult.kt:13:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/FetchResult.kt:16:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:328:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/AddPositionActivity.kt:143:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SearchFragment.kt:77:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SearchFragment.kt:160:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt:154:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt:182:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseGraphActivity.kt:48:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/Mocker.kt:13:22",
+        "message": "mock cannot be safely cast to Any."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/Mocker.kt:19:12",
+        "message": "mocks[clazz] cannot be safely cast to T."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/Mocker.kt:27:12",
+        "message": "mocks[clazz] cannot be safely cast to T."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/TestActivity.kt:14:6",
+        "message": "Injector.appComponent cannot be safely cast to MockAppComponent."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/SettingsTextView.kt:70:15",
+        "message": "context.getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:53:13",
+        "message": "activity cannot be safely cast to Parent."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:101:10",
+        "message": "v cannot be safely cast to SettingsTextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:86:14",
+        "message": "context cannot be safely cast to Parent."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:104:6",
+        "message": "toolbar.layoutParams cannot be safely cast to MarginLayoutParams."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:125:20",
+        "message": "preference cannot be safely cast to TimePreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:135:20",
+        "message": "preference cannot be safely cast to TimePreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:196:34",
+        "message": "newValue cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:267:32",
+        "message": "findPreference(AppPreferences.FONT_SIZE) cannot be safely cast to ListPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:277:32",
+        "message": "preference cannot be safely cast to ListPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:292:31",
+        "message": "findPreference(AppPreferences.UPDATE_INTERVAL) cannot be safely cast to ListPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:302:32",
+        "message": "preference cannot be safely cast to ListPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:316:27",
+        "message": "findPreference(AppPreferences.START_TIME) cannot be safely cast to TimePreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:342:25",
+        "message": "findPreference(AppPreferences.END_TIME) cannot be safely cast to TimePreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:386:32",
+        "message": "newValue cannot be safely cast to Set<String>."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:408:53",
+        "message": "newValue cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ParanormalActivity.kt:70:7",
+        "message": "supportFragmentManager.findFragmentById(R.id.fragment_container) cannot be safely cast to ChildFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ParanormalActivity.kt:145:17",
+        "message": "currentChild cannot be safely cast to Fragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ParanormalActivity.kt:150:17",
+        "message": "currentChild cannot be safely cast to Fragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ParanormalActivity.kt:153:22",
+        "message": "fragment cannot be safely cast to ChildFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomeFragment.kt:49:13",
+        "message": "activity cannot be safely cast to Parent."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomeFragment.kt:69:6",
+        "message": "toolbar.layoutParams cannot be safely cast to MarginLayoutParams."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/Extensions.kt:98:7",
+        "message": "this.getSystemService(\n          Context.CONNECTIVITY_SERVICE\n      ) cannot be safely cast to ConnectivityManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/StockWidget.kt:127:9",
+        "message": "options.get(AppWidgetManager.OPTION_APPWIDGET_MIN_WIDTH) cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetsFragment.kt:52:6",
+        "message": "toolbar.layoutParams cannot be safely cast to MarginLayoutParams."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/InAppMessage.kt:17:6",
+        "message": "this.findViewById<View>(android.R.id.content) cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/InAppMessage.kt:44:18",
+        "message": "snackBarView.layoutParams cannot be safely cast to ViewGroup.MarginLayoutParams."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AsyncBus.kt:46:16",
+        "message": "it cannot be safely cast to T."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/GraphActivity.kt:140:18",
+        "message": "v.parent cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt:167:25",
+        "message": "it.tag cannot be safely cast to NewsArticle."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmSchedulerLollipop.kt:22:24",
+        "message": "context.getSystemService(Context.JOB_SCHEDULER_SERVICE) cannot be safely cast to JobScheduler."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt:120:26",
+        "message": "context.getSystemService(Context.ALARM_SERVICE) cannot be safely cast to AlarmManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SuggestionsAdapter.kt:67:38",
+        "message": "itemView cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/SimpleItemTouchHelperCallback.kt:76:30",
+        "message": "viewHolder cannot be safely cast to ItemTouchHelperViewHolder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/SimpleItemTouchHelperCallback.kt:90:28",
+        "message": "viewHolder cannot be safely cast to ItemTouchHelperViewHolder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt:84:13",
+        "message": "parentFragment cannot be safely cast to Parent."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt:88:31",
+        "message": "this cannot be safely cast to QuoteClickListener."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt:88:59",
+        "message": "this cannot be safely cast to OnStartDragListener."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseActivity.kt:71:17",
+        "message": "getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/prod/kotlin/com/github/premnirmal/ticker/components/LoggingTree.kt:44:1",
+        "message": "The file LoggingTree.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/tools/Parser.kt:50:1",
+        "message": "The file Parser.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/BaseActivityUnitTest.kt:65:1",
+        "message": "The file BaseActivityUnitTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/BaseUnitTest.kt:66:1",
+        "message": "The file BaseUnitTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockAppModule.kt:48:1",
+        "message": "The file MockAppModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockNetworkModule.kt:70:1",
+        "message": "The file MockNetworkModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockTestRunner.kt:17:1",
+        "message": "The file MockTestRunner.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/Mocker.kt:33:1",
+        "message": "The file Mocker.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockAppComponent.kt:16:1",
+        "message": "The file MockAppComponent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/network/StocksApiTest.kt:96:1",
+        "message": "The file StocksApiTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/model/ExponentialBackoffTest.kt:22:1",
+        "message": "The file ExponentialBackoffTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/model/AlarmSchedulerTest.kt:244:1",
+        "message": "The file AlarmSchedulerTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/TestActivity.kt:17:1",
+        "message": "The file TestActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/purefoss/kotlin/com/github/premnirmal/ticker/components/LoggingTree.kt:14:1",
+        "message": "The file LoggingTree.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/purefoss/kotlin/com/github/premnirmal/ticker/analytics/AnalyticsImpl.kt:6:31",
+        "message": "The file AnalyticsImpl.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/dev/kotlin/com/github/premnirmal/ticker/components/LoggingTree.kt:14:1",
+        "message": "The file LoggingTree.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/dev/kotlin/com/github/premnirmal/ticker/analytics/AnalyticsImpl.kt:6:31",
+        "message": "The file AnalyticsImpl.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/MaxHeightLinearLayout.kt:46:1",
+        "message": "The file MaxHeightLinearLayout.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/TextMarkerView.kt:37:1",
+        "message": "The file TextMarkerView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/AxisFormatters.kt:55:1",
+        "message": "The file AxisFormatters.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/SettingsTextView.kt:101:1",
+        "message": "The file SettingsTextView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/SpacingDecoration.kt:25:1",
+        "message": "The file SpacingDecoration.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/FabBehavior.kt:45:1",
+        "message": "The file FabBehavior.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/StockFieldView.kt:141:1",
+        "message": "The file StockFieldView.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/DefaultPreferenceChangeListener.kt:19:1",
+        "message": "The file DefaultPreferenceChangeListener.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/TimePreference.kt:59:1",
+        "message": "The file TimePreference.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:206:1",
+        "message": "The file WidgetSettingsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:586:1",
+        "message": "The file SettingsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/ExportTasks.kt:58:1",
+        "message": "The file ExportTasks.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsActivity.kt:44:1",
+        "message": "The file WidgetSettingsActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/ImportTasks.kt:112:78",
+        "message": "The file ImportTasks.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/FooterPreference.kt:46:1",
+        "message": "The file FooterPreference.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomePagerAdapter.kt:46:1",
+        "message": "The file HomePagerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ParanormalActivity.kt:190:1",
+        "message": "The file ParanormalActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomeFragment.kt:159:1",
+        "message": "The file HomeFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ChildFragment.kt:7:1",
+        "message": "The file ChildFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/SplashActivity.kt:39:1",
+        "message": "The file SplashActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/Extensions.kt:113:1",
+        "message": "The file Extensions.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetClickReceiver.kt:46:1",
+        "message": "The file WidgetClickReceiver.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/StockWidget.kt:185:1",
+        "message": "The file StockWidget.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/RemoteStockProviderService.kt:17:1",
+        "message": "The file RemoteStockProviderService.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetsFragment.kt:141:1",
+        "message": "The file WidgetsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetDataProvider.kt:107:1",
+        "message": "The file WidgetDataProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/RefreshReceiver.kt:28:1",
+        "message": "The file RefreshReceiver.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetData.kt:285:1",
+        "message": "The file WidgetData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/AppPreferences.kt:213:1",
+        "message": "The file AppPreferences.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/BrowserFallback.kt:14:1",
+        "message": "The file BrowserFallback.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/StocksApp.kt:107:1",
+        "message": "The file StocksApp.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/HistoricalDataApi.kt:32:1",
+        "message": "The file HistoricalDataApi.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StocksApi.kt:86:1",
+        "message": "The file StocksApi.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/UserAgentInterceptor.kt:41:1",
+        "message": "The file UserAgentInterceptor.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/RequestInterceptor.kt:40:1",
+        "message": "The file RequestInterceptor.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NewsApi.kt:21:1",
+        "message": "The file NewsApi.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/Robindahood.kt:22:1",
+        "message": "The file Robindahood.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/YahooFinance.kt:20:1",
+        "message": "The file YahooFinance.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/StupidYahooWrapConverter.kt:32:1",
+        "message": "The file StupidYahooWrapConverter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NewsProvider.kt:29:1",
+        "message": "The file NewsProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/BaseConverter.kt:23:1",
+        "message": "The file BaseConverter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Position.kt:36:1",
+        "message": "The file Position.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/ErrorBody.kt:7:1",
+        "message": "The file ErrorBody.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/NewsArticle.kt:28:1",
+        "message": "The file NewsArticle.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/YahooQuoteResponse.kt:23:1",
+        "message": "The file YahooQuoteResponse.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/IQuoteNet.kt:12:1",
+        "message": "The file IQuoteNet.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/NewsFeed.kt:9:1",
+        "message": "The file NewsFeed.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/DataPoint.kt:45:1",
+        "message": "The file DataPoint.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:132:1",
+        "message": "The file Quote.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/QuoteNet.kt:15:1",
+        "message": "The file QuoteNet.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/HistoricalData.kt:18:1",
+        "message": "The file HistoricalData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/concurrency/ApplicationScope.kt:12:1",
+        "message": "The file ApplicationScope.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AppModule.kt:48:1",
+        "message": "The file AppModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/InAppMessage.kt:52:1",
+        "message": "The file InAppMessage.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AppClock.kt:23:1",
+        "message": "The file AppClock.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/Injector.kt:13:1",
+        "message": "The file Injector.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AppComponent.kt:136:1",
+        "message": "The file AppComponent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/GraphActivity.kt:145:1",
+        "message": "The file GraphActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt:279:1",
+        "message": "The file NewsFeedActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmSchedulerLollipop.kt:42:1",
+        "message": "The file AlarmSchedulerLollipop.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/RefreshService.kt:45:1",
+        "message": "The file RefreshService.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/FetchException.kt:5:86",
+        "message": "The file FetchException.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/IStocksProvider.kt:56:1",
+        "message": "The file IStocksProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/HistoryProvider.kt:84:1",
+        "message": "The file HistoryProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/ExponentialBackoff.kt:35:1",
+        "message": "The file ExponentialBackoff.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/FetchResult.kt:17:1",
+        "message": "The file FetchResult.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/IHistoryProvider.kt:25:1",
+        "message": "The file IHistoryProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/AddPositionActivity.kt:148:1",
+        "message": "The file AddPositionActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SearchActivity.kt:43:1",
+        "message": "The file SearchActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SearchFragment.kt:182:1",
+        "message": "The file SearchFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/ItemTouchHelperAdapter.kt:14:1",
+        "message": "The file ItemTouchHelperAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/ItemTouchHelperViewHolder.kt:11:1",
+        "message": "The file ItemTouchHelperViewHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/OnStartDragListener.kt:10:1",
+        "message": "The file OnStartDragListener.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/SimpleItemTouchHelperCallback.kt:95:1",
+        "message": "The file SimpleItemTouchHelperCallback.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt:248:1",
+        "message": "The file PortfolioFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/events/RefreshEvent.kt:6:18",
+        "message": "The file RefreshEvent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/events/ErrorEvent.kt:3:42",
+        "message": "The file ErrorEvent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseGraphActivity.kt:96:1",
+        "message": "The file BaseGraphActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/UpdateReceiver.kt:28:1",
+        "message": "The file UpdateReceiver.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/analytics/Analytics.kt:54:1",
+        "message": "The file Analytics.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/tools/Parser.kt:24:7",
+        "message": "Private property in is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/tools/Parser.kt:35:53",
+        "message": "Function parameter in is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockNetworkModule.kt:62:62",
+        "message": "Function parameter context is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockNetworkModule.kt:30:73",
+        "message": "Function parameter bus is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockNetworkModule.kt:63:5",
+        "message": "Function parameter okHttpClient is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockNetworkModule.kt:63:33",
+        "message": "Function parameter gson is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockNetworkModule.kt:63:45",
+        "message": "Function parameter converterFactory is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/purefoss/kotlin/com/github/premnirmal/ticker/components/LoggingTree.kt:11:15",
+        "message": "Private property context is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/dev/kotlin/com/github/premnirmal/ticker/components/LoggingTree.kt:11:15",
+        "message": "Private property context is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/MaxHeightLinearLayout.kt:31:5",
+        "message": "Private property defStyleAttr is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/SettingsTextView.kt:53:5",
+        "message": "Private property defStyleRes is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/StockFieldView.kt:100:5",
+        "message": "Private property defStyleAttr is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/StockFieldView.kt:106:5",
+        "message": "Private property defStyleAttr is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/StockFieldView.kt:107:5",
+        "message": "Private property defStyleRes is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NetworkModule.kt:56:5",
+        "message": "Function parameter bus is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NetworkModule.kt:179:5",
+        "message": "Function parameter gson is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/BaseConverter.kt:14:55",
+        "message": "Function parameter is is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/DataPoint.kt:31:5",
+        "message": "Private property FORMATTER is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt:272:17",
+        "message": "Function parameter v is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/tools/Parser.kt:47:96",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/BaseActivityUnitTest.kt:54:75",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/BaseUnitTest.kt:59:52",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/BaseUnitTest.kt:63:58",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockNetworkModule.kt:37:90",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/mock/MockTestRunner.kt:14:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:67:12",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:414:63",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomeFragment.kt:63:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/Extensions.kt:111:30",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetsFragment.kt:43:12",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/AppPreferences.kt:96:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NetworkModule.kt:71:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NetworkModule.kt:75:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/NetworkModule.kt:79:90",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/DataPoint.kt:36:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/DataPoint.kt:40:59",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:119:27",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:359:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SearchFragment.kt:68:12",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SuggestionsAdapter.kt:25:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SuggestionsAdapter.kt:29:50",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SuggestionsAdapter.kt:39:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt:172:12",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "ModifierOrder",
+      "description": "Modifier order should be: protected lateinit",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/BaseActivityUnitTest.kt:18:3",
+        "message": "Modifier order should be: protected lateinit"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/test/kotlin/com/github/premnirmal/ticker/BaseActivityUnitTest.kt:19:3",
+        "message": "Modifier order should be: protected lateinit"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/StockFieldView.kt:42:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/StockFieldView.kt:44:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/StockFieldView.kt:61:83",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/ui/StockFieldView.kt:64:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:419:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:569:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:570:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/HomePagerAdapter.kt:45:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/SplashActivity.kt:28:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/Extensions.kt:112:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/Extensions.kt:112:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/StockWidget.kt:111:19",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/StockWidget.kt:112:19",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/StockWidget.kt:113:19",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/AppPreferences.kt:115:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:97:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AsyncBus.kt:35:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/news/NewsFeedActivity.kt:71:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmSchedulerLollipop.kt:15:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmSchedulerLollipop.kt:16:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmSchedulerLollipop.kt:16:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmSchedulerLollipop.kt:16:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/ExponentialBackoff.kt:9:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/ExponentialBackoff.kt:9:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/ExponentialBackoff.kt:11:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/ExponentialBackoff.kt:11:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/ExponentialBackoff.kt:11:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt:69:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt:87:84",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt:95:86",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt:98:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt:112:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt:112:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/StocksProvider.kt:219:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioVH.kt:68:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseGraphActivity.kt:63:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseGraphActivity.kt:66:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseGraphActivity.kt:77:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseGraphActivity.kt:78:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseGraphActivity.kt:81:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseGraphActivity.kt:82:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:96:7",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:109:7",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:122:7",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/WidgetSettingsFragment.kt:132:7",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:507:7",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:514:7",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/SettingsFragment.kt:521:7",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ParanormalActivity.kt:138:9",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt:118:9",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/ExportTasks.kt:25:41",
+        "message": "Parentheses in (\"$ticker, \") are unnecessary and can be replaced with: \"$ticker, \""
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/AppPreferences.kt:115:31",
+        "message": "Parentheses in (random.nextInt() % 10 == 0) are unnecessary and can be replaced with: random.nextInt() % 10 == 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:97:42",
+        "message": "Parentheses in (gainLoss() / totalPositionPrice()) are unnecessary and can be replaced with: gainLoss() / totalPositionPrice()"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt:44:38",
+        "message": "Parentheses in (startTimez[0] == endTimez[0] && startTimez[1] > endTimez[1]) are unnecessary and can be replaced with: startTimez[0] == endTimez[0] && startTimez[1] > endTimez[1]"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/AddPositionActivity.kt:36:36",
+        "message": "Parentheses in (5) are unnecessary and can be replaced with: 5"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/AddPositionActivity.kt:36:62",
+        "message": "Parentheses in (5) are unnecessary and can be replaced with: 5"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/SimpleItemTouchHelperCallback.kt:26:31",
+        "message": "Parentheses in (ItemTouchHelper.DOWN) are unnecessary and can be replaced with: ItemTouchHelper.DOWN"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/SimpleItemTouchHelperCallback.kt:26:57",
+        "message": "Parentheses in (ItemTouchHelper.LEFT) are unnecessary and can be replaced with: ItemTouchHelper.LEFT"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/SimpleItemTouchHelperCallback.kt:26:83",
+        "message": "Parentheses in (ItemTouchHelper.RIGHT) are unnecessary and can be replaced with: ItemTouchHelper.RIGHT"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/SimpleItemTouchHelperCallback.kt:30:50",
+        "message": "Parentheses in (ItemTouchHelper.DOWN) are unnecessary and can be replaced with: ItemTouchHelper.DOWN"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/SimpleItemTouchHelperCallback.kt:31:54",
+        "message": "Parentheses in (ItemTouchHelper.END) are unnecessary and can be replaced with: ItemTouchHelper.END"
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/ImportTasks.kt:23:3",
+        "message": "Function import has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/ImportTasks.kt:78:3",
+        "message": "Function import has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/Extensions.kt:95:1",
+        "message": "Function isNetworkOnline has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/HistoryProvider.kt:28:3",
+        "message": "Function getHistoricalDataShort has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/FooterPreference.kt:4:1",
+        "message": "The import 'android.content.Intent' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/settings/FooterPreference.kt:5:1",
+        "message": "The import 'android.content.pm.ResolveInfo' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ParanormalActivity.kt:3:1",
+        "message": "The import 'android.app.Activity' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ParanormalActivity.kt:5:1",
+        "message": "The import 'android.appwidget.AppWidgetManager' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/home/ParanormalActivity.kt:12:1",
+        "message": "The import 'androidx.fragment.app.FragmentManager' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/StockWidget.kt:9:1",
+        "message": "The import 'android.os.Build' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/NewsArticle.kt:6:1",
+        "message": "The import 'android.net.Proxy.getHost' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/concurrency/ApplicationScope.kt:6:1",
+        "message": "The import 'kotlin.coroutines.EmptyCoroutineContext' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/components/AppComponent.kt:23:1",
+        "message": "The import 'com.github.premnirmal.ticker.network.data.Quote' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/StocksAdapter.kt:14:1",
+        "message": "The import 'timber.log.Timber' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/PortfolioFragment.kt:32:1",
+        "message": "The import 'timber.log.Timber' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseActivity.kt:4:1",
+        "message": "The import 'android.os.Build' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseActivity.kt:10:1",
+        "message": "The import 'androidx.appcompat.widget.Toolbar' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/base/BaseActivity.kt:16:1",
+        "message": "The import 'com.github.premnirmal.ticker.getStatusBarHeight' is unused."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/widget/WidgetData.kt:134:12",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/YahooFinance.kt:17:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmScheduler.kt:99:143",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Position.kt:8:3",
+        "message": "The data class Position contains functions which are not registered conversion functions. The offending method is called add"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Position.kt:12:3",
+        "message": "The data class Position contains functions which are not registered conversion functions. The offending method is called remove"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Position.kt:16:3",
+        "message": "The data class Position contains functions which are not registered conversion functions. The offending method is called averagePrice"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/NewsArticle.kt:19:3",
+        "message": "The data class NewsArticle contains functions which are not registered conversion functions. The offending method is called date"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/NewsArticle.kt:21:3",
+        "message": "The data class NewsArticle contains functions which are not registered conversion functions. The offending method is called dateString"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/NewsArticle.kt:23:3",
+        "message": "The data class NewsArticle contains functions which are not registered conversion functions. The offending method is called sourceName"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:40:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called hasPositions"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:42:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called changeString"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:44:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called changeStringWithSign"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:52:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called changePercentString"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:54:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called changePercentStringWithSign"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:62:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called positionPrice"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:74:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called priceString"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:76:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called averagePositionPrice"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:78:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called numSharesString"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:82:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called holdings"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:84:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called holdingsString"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:86:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called gainLoss"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:88:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called gainLossString"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:97:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called gainLossPercent"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:99:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called gainLossPercentString"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:108:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called dayChange"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:110:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called dayChangeString"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/Quote.kt:119:3",
+        "message": "The data class Quote contains functions which are not registered conversion functions. The offending method is called newsQuery"
+      }]
+    }, {
+      "name": "OptionalAbstractKeyword",
+      "description": "Unnecessary abstract modifier in interface",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/IQuoteNet.kt:4:3",
+        "message": "The abstract keyword on this declaration is unnecessary."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/IQuoteNet.kt:5:3",
+        "message": "The abstract keyword on this declaration is unnecessary."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/IQuoteNet.kt:6:3",
+        "message": "The abstract keyword on this declaration is unnecessary."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/IQuoteNet.kt:7:3",
+        "message": "The abstract keyword on this declaration is unnecessary."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/IQuoteNet.kt:8:3",
+        "message": "The abstract keyword on this declaration is unnecessary."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/IQuoteNet.kt:9:3",
+        "message": "The abstract keyword on this declaration is unnecessary."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/IQuoteNet.kt:10:3",
+        "message": "The abstract keyword on this declaration is unnecessary."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/network/data/IQuoteNet.kt:11:3",
+        "message": "The abstract keyword on this declaration is unnecessary."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmSchedulerLollipop.kt:15:3",
+        "message": "JOB_ID_SCHEDULE can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/AlarmSchedulerLollipop.kt:16:3",
+        "message": "FIVE_MINUTES_MS can be a `const val`."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/HistoryProvider.kt:69:36",
+        "message": "Pair is created by using the pair constructor. This can replaced by `symbol to points`"
+      }]
+    }, {
+      "name": "SerialVersionUIDInSerializableClass",
+      "description": "A class which implements the Serializable interface does not define a correct serialVersionUID field. The serialVersionUID field should be a constant long value inside a companion object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/model/IHistoryProvider.kt:16:3",
+        "message": "The class Range implements the Serializable interface and should thus define a serialVersionUID."
+      }]
+    }, {
+      "name": "NestedClassesVisibility",
+      "description": "Nested types are often used for implementing private functionality and therefore this should not be public.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SuggestionsAdapter.kt:21:3",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of SuggestionsAdapter makes it visible externally."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/search/SuggestionsAdapter.kt:61:3",
+        "message": "Nested types are often used for implementing private functionality. However the visibility of SuggestionsAdapter makes it visible externally."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-github-premnirmal-tickerwidget/app/src/main/kotlin/com/github/premnirmal/ticker/portfolio/drag_drop/SimpleItemTouchHelperCallback.kt:74:5",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }]
+  }]
+}

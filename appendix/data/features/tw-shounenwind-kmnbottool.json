@@ -1,0 +1,956 @@
+{
+  "complexity_metrics": {
+    "loc": 2434,
+    "sloc": 2114,
+    "lloc": 1481,
+    "cloc": 13,
+    "mcc": 263,
+    "n_smell": 195,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 177
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 17,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 252,
+    "number_of_string_template": 13,
+    "number_of_inline_func": 11,
+    "number_of_inferred_fun": 9,
+    "number_of_inferred_var": 134,
+    "number_of_objects_declarations": 21,
+    "number_of_companion_objects": 10,
+    "number_of_singletons": 3,
+    "number_of_declaration": 206,
+    "number_of_var_declaration": 206,
+    "number_of_func_call": 876,
+    "number_of_arguments": 755,
+    "number_of_parameters": 186,
+    "number_of_qualified_expressions": 1213,
+    "number_of_inheritances": 14,
+    "number_of_unsafe_calls": 30,
+    "number_of_safe_calls": 23,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 11,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 1,
+    "number_of_named_argument": 1,
+    "number_of_argument_with_default_value": 2,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 11,
+    "number_of_properties_delegation": 4,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 113,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_constructors": 21,
+    "number_of_properties": 206,
+    "number_of_functions": 132,
+    "number_of_interfaces": 1,
+    "number_of_classes": 29,
+    "number_of_packages": 7,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 27
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/androidTest/java/tw/shounenwind/kmnbottool/ExampleInstrumentedTest.kt": {
+      "sloc": 15,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "tw.shounenwind.kmnbottool.ExampleInstrumentedTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/gson/PlayerTest.kt": {
+      "sloc": 26,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "tw.shounenwind.kmnbottool.gson.PlayerTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/gson/PetTest.kt": {
+      "sloc": 39,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "tw.shounenwind.kmnbottool.gson.PetTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/ExampleUnitTest.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "tw.shounenwind.kmnbottool.ExampleUnitTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Player.kt": {
+      "sloc": 53,
+      "number_of_properties": 5,
+      "number_of_functions": 4,
+      "complexity": 5,
+      "class": "tw.shounenwind.kmnbottool.gson.Player"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/BoxData.kt": {
+      "sloc": 36,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "tw.shounenwind.kmnbottool.gson.BoxData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Pet.kt": {
+      "sloc": 92,
+      "number_of_properties": 11,
+      "number_of_functions": 7,
+      "complexity": 8,
+      "class": "tw.shounenwind.kmnbottool.gson.Pet"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Chip.kt": {
+      "sloc": 48,
+      "number_of_properties": 4,
+      "number_of_functions": 4,
+      "complexity": 5,
+      "class": "tw.shounenwind.kmnbottool.gson.Chip"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/ChipData.kt": {
+      "sloc": 36,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "tw.shounenwind.kmnbottool.gson.ChipData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/widget/SimpleDialog.kt": {
+      "sloc": 69,
+      "number_of_properties": 4,
+      "number_of_functions": 12,
+      "complexity": 12,
+      "class": "tw.shounenwind.kmnbottool.widget.SimpleDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/widget/SingleFieldDialog.kt": {
+      "sloc": 78,
+      "number_of_properties": 6,
+      "number_of_functions": 7,
+      "complexity": 10,
+      "class": "tw.shounenwind.kmnbottool.widget.SingleFieldDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/widget/ProgressDialog.kt": {
+      "sloc": 20,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "tw.shounenwind.kmnbottool.widget.ProgressDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/glide/CircularViewTarget.kt": {
+      "sloc": 15,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "tw.shounenwind.kmnbottool.util.glide.CircularViewTarget"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/glide/MyAppGlideModule.kt": {
+      "sloc": 22,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "tw.shounenwind.kmnbottool.util.glide.MyAppGlideModule"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/CommandExecutor.kt": {
+      "sloc": 95,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 18,
+      "class": "tw.shounenwind.kmnbottool.util.CommandExecutor"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotData.kt": {
+      "sloc": 8,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "tw.shounenwind.kmnbottool.util.KmnBotData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/LinkUtil.kt": {
+      "sloc": 16,
+      "number_of_properties": 1,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "tw.shounenwind.kmnbottool.util.LinkUtil"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/LogUtil.kt": {
+      "sloc": 34,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 12,
+      "class": "tw.shounenwind.kmnbottool.util.LogUtil"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt": {
+      "sloc": 135,
+      "number_of_properties": 5,
+      "number_of_functions": 11,
+      "complexity": 22,
+      "class": "tw.shounenwind.kmnbottool.util.KmnBotDataLoader"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/skeleton/BaseActivity.kt": {
+      "sloc": 119,
+      "number_of_properties": 2,
+      "number_of_functions": 12,
+      "complexity": 23,
+      "class": "tw.shounenwind.kmnbottool.skeleton.BaseActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/DetailActivity.kt": {
+      "sloc": 44,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 2,
+      "class": "tw.shounenwind.kmnbottool.activities.DetailActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt": {
+      "sloc": 299,
+      "number_of_properties": 4,
+      "number_of_functions": 8,
+      "complexity": 33,
+      "class": "tw.shounenwind.kmnbottool.activities.TeamActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt": {
+      "sloc": 265,
+      "number_of_properties": 3,
+      "number_of_functions": 11,
+      "complexity": 28,
+      "class": "tw.shounenwind.kmnbottool.activities.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt": {
+      "sloc": 350,
+      "number_of_properties": 3,
+      "number_of_functions": 15,
+      "complexity": 51,
+      "class": "tw.shounenwind.kmnbottool.activities.BoxActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt": {
+      "sloc": 105,
+      "number_of_properties": 1,
+      "number_of_functions": 6,
+      "complexity": 7,
+      "class": "tw.shounenwind.kmnbottool.activities.LicenseActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/PetsLinkActivity.kt": {
+      "sloc": 61,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 6,
+      "class": "tw.shounenwind.kmnbottool.activities.PetsLinkActivity"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/widget/SimpleDialog.kt:12:1",
+        "message": "Class 'SimpleDialog' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/skeleton/BaseActivity.kt:19:1",
+        "message": "Class 'BaseActivity' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:34:1",
+        "message": "Class 'MainActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/widget/SingleFieldDialog.kt:38:17",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/skeleton/BaseActivity.kt:67:13",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/skeleton/BaseActivity.kt:84:13",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/skeleton/BaseActivity.kt:101:13",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt:125:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt:136:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/skeleton/BaseActivity.kt:117:41",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:134:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:146:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:158:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:222:67",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:248:35",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:257:35",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:264:54",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:274:35",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:282:35",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:289:54",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:231:37",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/PetsLinkActivity.kt:41:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/PetsLinkActivity.kt:55:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:50:5",
+        "message": "The function prepareScreen appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:63:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:270:9",
+        "message": "The function onBindViewHolder appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:84:44",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:106:44",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:44:45",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:154:53",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:75:21",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:46:21",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:44:21",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:52:21",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:49:21",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:43:21",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:51:21",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:42:21",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:50:21",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:48:21",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/CommandExecutor.kt:97:17",
+        "message": "Exception is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt:36:17",
+        "message": "Exception is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }, {
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/LogUtil.kt:30:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/LogUtil.kt:38:17",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt:42:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt:65:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt:120:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt:131:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:213:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/PetsLinkActivity.kt:28:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "ConstructorParameterNaming",
+      "description": "Constructor parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Player.kt:27:27",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/BoxData.kt:17:27",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Pet.kt:44:27",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Chip.kt:24:27",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/ChipData.kt:17:27",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMinLength",
+      "description": "Function names should not be shorter than the minimum defined in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/LogUtil.kt:15:5",
+        "message": "Function names should be at least 3 characters long."
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/skeleton/BaseActivity.kt:99:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:372:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:374:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:376:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:378:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:380:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/skeleton/BaseActivity.kt:88:71",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/gson/PlayerTest.kt:21:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/gson/PlayerTest.kt:26:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/gson/PetTest.kt:23:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/widget/SingleFieldDialog.kt:44:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt:31:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt:39:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt:57:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt:61:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/skeleton/BaseActivity.kt:126:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:36:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:93:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:96:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:116:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:119:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:177:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:183:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:226:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:243:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:269:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:302:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:116:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:116:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:196:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:136:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:141:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:362:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:363:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:364:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:365:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:366:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/gson/PlayerTest.kt:24:22",
+        "message": "player.rainbowGear cannot be safely cast to Long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/gson/PetTest.kt:25:23",
+        "message": "pet.maxClass cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/gson/PetTest.kt:34:23",
+        "message": "pet.maxLevel cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/gson/PetTest.kt:36:23",
+        "message": "pet.rare cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/gson/PetTest.kt:39:23",
+        "message": "pet.level cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/gson/PetTest.kt:40:23",
+        "message": "pet.petClass cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/GsonHelper.kt:30:12",
+        "message": "readValue(T::class.java.classLoader) cannot be safely cast to T."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/widget/SingleFieldDialog.kt:44:29",
+        "message": "activity.getSystemService(Context.INPUT_METHOD_SERVICE)!! cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:75:35",
+        "message": "boxData cannot be safely cast to Parcelable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:80:35",
+        "message": "boxData cannot be safely cast to Parcelable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:196:25",
+        "message": "getSystemService(Context.INPUT_METHOD_SERVICE)!! cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/PetsLinkActivity.kt:47:51",
+        "message": "boxData cannot be safely cast to Parcelable."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/BoxData.kt:10:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/ChipData.kt:10:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/gson/PlayerTest.kt:31:1",
+        "message": "The file PlayerTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/gson/PetTest.kt:43:1",
+        "message": "The file PetTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/test/java/tw/shounenwind/kmnbottool/ExampleUnitTest.kt:17:1",
+        "message": "The file ExampleUnitTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/BoxData.kt:49:1",
+        "message": "The file BoxData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/GsonHelper.kt:31:1",
+        "message": "The file GsonHelper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/ChipData.kt:49:1",
+        "message": "The file ChipData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/glide/CircularViewTarget.kt:17:1",
+        "message": "The file CircularViewTarget.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/glide/MyAppGlideModule.kt:27:1",
+        "message": "The file MyAppGlideModule.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/CommandExecutor.kt:111:1",
+        "message": "The file CommandExecutor.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotData.kt:11:1",
+        "message": "The file KmnBotData.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/LinkUtil.kt:18:1",
+        "message": "The file LinkUtil.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/LogUtil.kt:43:1",
+        "message": "The file LogUtil.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/skeleton/BaseActivity.kt:135:1",
+        "message": "The file BaseActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/DetailActivity.kt:48:1",
+        "message": "The file DetailActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:320:1",
+        "message": "The file TeamActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:383:1",
+        "message": "The file BoxActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:120:1",
+        "message": "The file LicenseActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/PetsLinkActivity.kt:66:1",
+        "message": "The file PetsLinkActivity.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Player.kt:27:27",
+        "message": "Private property in is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/BoxData.kt:17:27",
+        "message": "Private property in is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Pet.kt:44:27",
+        "message": "Private property in is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Chip.kt:24:27",
+        "message": "Private property in is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/ChipData.kt:17:27",
+        "message": "Private property in is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Player.kt:47:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Player.kt:56:65",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Player.kt:60:62",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/BoxData.kt:29:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/BoxData.kt:38:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/BoxData.kt:42:63",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Pet.kt:76:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Pet.kt:80:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Pet.kt:84:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Pet.kt:88:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Pet.kt:97:62",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Pet.kt:101:59",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/GsonHelper.kt:13:55",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/GsonHelper.kt:17:55",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/GsonHelper.kt:21:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/GsonHelper.kt:25:61",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/GsonHelper.kt:29:46",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Chip.kt:42:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Chip.kt:51:63",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/Chip.kt:55:60",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/ChipData.kt:29:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/ChipData.kt:38:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/gson/ChipData.kt:42:64",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:234:65",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:238:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:242:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:246:68",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:266:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:110:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/CommandExecutor.kt:70:13",
+        "message": "Parentheses in (infoList.size > 0) are unnecessary and can be replaced with: infoList.size > 0"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt:43:18",
+        "message": "Parentheses in (e) are unnecessary and can be replaced with: e"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotDataLoader.kt:66:18",
+        "message": "Parentheses in (e) are unnecessary and can be replaced with: e"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:75:34",
+        "message": "Parentheses in (boxData as Parcelable) are unnecessary and can be replaced with: boxData as Parcelable"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:80:34",
+        "message": "Parentheses in (boxData as Parcelable) are unnecessary and can be replaced with: boxData as Parcelable"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/PetsLinkActivity.kt:47:50",
+        "message": "Parentheses in (boxData as Parcelable) are unnecessary and can be replaced with: boxData as Parcelable"
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/KmnBotData.kt:6:1",
+        "message": "The class KmnBotData defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:93:5",
+        "message": "The class License defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/LinkUtil.kt:13:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/LinkUtil.kt:14:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/LinkUtil.kt:15:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/LogUtil.kt:11:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/util/LogUtil.kt:16:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:173:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:213:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:89:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:112:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:273:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/PetsLinkActivity.kt:40:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/PetsLinkActivity.kt:54:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/skeleton/BaseActivity.kt:14:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:7:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:10:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/skeleton/BaseActivity.kt:59:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:115:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:50:5",
+        "message": "Function prepareScreen has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/MainActivity.kt:126:5",
+        "message": "Function onOptionsItemSelected has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:63:5",
+        "message": "Function onOptionsItemSelected has 8 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/TeamActivity.kt:27:55",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of TeamActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:34:36",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of BoxActivity."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/BoxActivity.kt:233:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:38:426",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/tw-shounenwind-kmnbottool/app/src/main/java/tw/shounenwind/kmnbottool/activities/LicenseActivity.kt:100:132",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }]
+  }]
+}

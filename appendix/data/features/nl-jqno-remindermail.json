@@ -1,0 +1,234 @@
+{
+  "complexity_metrics": {
+    "loc": 341,
+    "sloc": 269,
+    "lloc": 181,
+    "cloc": 11,
+    "mcc": 56,
+    "n_smell": 27,
+    "comment_ratio": 4,
+    "mcc_per_thlines": 309
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 22,
+    "number_of_string_template": 2,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 2,
+    "number_of_inferred_var": 32,
+    "number_of_objects_declarations": 1,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 35,
+    "number_of_var_declaration": 35,
+    "number_of_func_call": 117,
+    "number_of_arguments": 121,
+    "number_of_parameters": 32,
+    "number_of_qualified_expressions": 144,
+    "number_of_inheritances": 3,
+    "number_of_unsafe_calls": 5,
+    "number_of_safe_calls": 8,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 1,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 2,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 13,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_constructors": 1,
+    "number_of_properties": 35,
+    "number_of_functions": 28,
+    "number_of_interfaces": 0,
+    "number_of_classes": 6,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 6
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/androidTest/java/nl/jqno/remindermail/ExampleInstrumentedTest.kt": {
+      "sloc": 14,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "nl.jqno.remindermail.ExampleInstrumentedTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/test/java/nl/jqno/remindermail/ExampleUnitTest.kt": {
+      "sloc": 9,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "nl.jqno.remindermail.ExampleUnitTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/ConfigActivity.kt": {
+      "sloc": 131,
+      "number_of_properties": 3,
+      "number_of_functions": 14,
+      "complexity": 28,
+      "class": "nl.jqno.remindermail.ConfigActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/State.kt": {
+      "sloc": 33,
+      "number_of_properties": 4,
+      "number_of_functions": 2,
+      "complexity": 6,
+      "class": "nl.jqno.remindermail.State"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/MailActivity.kt": {
+      "sloc": 60,
+      "number_of_properties": 1,
+      "number_of_functions": 8,
+      "complexity": 18,
+      "class": "nl.jqno.remindermail.MailActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/AboutActivity.kt": {
+      "sloc": 22,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "nl.jqno.remindermail.AboutActivity"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/ConfigActivity.kt:86:5",
+        "message": "Function updateSettings is nested too deeply."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/ConfigActivity.kt:25:1",
+        "message": "Class 'ConfigActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "TopLevelPropertyNaming",
+      "description": "Top level property names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/ConfigActivity.kt:23:1",
+        "message": "Top level constant names should match the pattern: [A-Z][_A-Z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/State.kt:5:1",
+        "message": "Top level constant names should match the pattern: [A-Z][_A-Z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/State.kt:6:1",
+        "message": "Top level constant names should match the pattern: [A-Z][_A-Z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/State.kt:7:1",
+        "message": "Top level constant names should match the pattern: [A-Z][_A-Z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/State.kt:8:1",
+        "message": "Top level constant names should match the pattern: [A-Z][_A-Z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/ConfigActivity.kt:131:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/ConfigActivity.kt:132:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/ConfigActivity.kt:147:61",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/MailActivity.kt:43:59",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/MailActivity.kt:43:73",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/ConfigActivity.kt:57:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/ConfigActivity.kt:105:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/ConfigActivity.kt:112:21",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/ConfigActivity.kt:82:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/State.kt:24:20",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/State.kt:26:18",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/State.kt:26:18",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/MailActivity.kt:18:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/MailActivity.kt:18:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/MailActivity.kt:62:16",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/MailActivity.kt:62:16",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/MailActivity.kt:71:16",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/MailActivity.kt:71:16",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/MailActivity.kt:76:1",
+        "message": "The file MailActivity.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/nl-jqno-remindermail/app/src/main/java/nl/jqno/remindermail/MailActivity.kt:61:24",
+        "message": "Parentheses in (type != null) are unnecessary and can be replaced with: type != null"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,611 @@
+{
+  "complexity_metrics": {
+    "loc": 983,
+    "sloc": 617,
+    "lloc": 440,
+    "cloc": 240,
+    "mcc": 135,
+    "n_smell": 131,
+    "comment_ratio": 38,
+    "mcc_per_thlines": 306
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 29,
+    "number_of_string_template": 1,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 2,
+    "number_of_inferred_var": 76,
+    "number_of_objects_declarations": 3,
+    "number_of_companion_objects": 3,
+    "number_of_singletons": 0,
+    "number_of_declaration": 108,
+    "number_of_var_declaration": 108,
+    "number_of_func_call": 216,
+    "number_of_arguments": 299,
+    "number_of_parameters": 60,
+    "number_of_qualified_expressions": 391,
+    "number_of_inheritances": 6,
+    "number_of_unsafe_calls": 17,
+    "number_of_safe_calls": 2,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 5,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 2,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 6,
+    "number_of_lambdas": 9,
+    "number_of_possible_smart_casts": 3,
+    "number_of_data_class": 2,
+    "number_of_constructors": 11,
+    "number_of_properties": 108,
+    "number_of_functions": 41,
+    "number_of_interfaces": 1,
+    "number_of_classes": 15,
+    "number_of_packages": 4,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 13
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/androidTest/java/de/micmun/android/deufeitage/ExampleInstrumentedTest.kt": {
+      "sloc": 14,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "de.micmun.android.deufeitage.ExampleInstrumentedTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/test/java/de/micmun/android/deufeitage/ExampleUnitTest.kt": {
+      "sloc": 9,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "de.micmun.android.deufeitage.ExampleUnitTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt": {
+      "sloc": 130,
+      "number_of_properties": 6,
+      "number_of_functions": 10,
+      "complexity": 23,
+      "class": "de.micmun.android.deufeitage.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/PreferenceManager.kt": {
+      "sloc": 45,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 6,
+      "class": "de.micmun.android.deufeitage.utils.PreferenceManager"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayConfigReader.kt": {
+      "sloc": 41,
+      "number_of_properties": 9,
+      "number_of_functions": 0,
+      "complexity": 4,
+      "class": "de.micmun.android.deufeitage.utils.HolidayConfigReader"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt": {
+      "sloc": 133,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 38,
+      "class": "de.micmun.android.deufeitage.utils.HolidayCalculator"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/DateUtility.kt": {
+      "sloc": 19,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 3,
+      "class": "de.micmun.android.deufeitage.utils.DateUtility"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/HolidayAdapter.kt": {
+      "sloc": 107,
+      "number_of_properties": 0,
+      "number_of_functions": 7,
+      "complexity": 24,
+      "class": "de.micmun.android.deufeitage.adapter.HolidayAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/YearRecyclerAdapter.kt": {
+      "sloc": 38,
+      "number_of_properties": 1,
+      "number_of_functions": 4,
+      "complexity": 9,
+      "class": "de.micmun.android.deufeitage.adapter.YearRecyclerAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/YearViewHolder.kt": {
+      "sloc": 24,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 5,
+      "class": "de.micmun.android.deufeitage.adapter.YearViewHolder"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/YearItem.kt": {
+      "sloc": 23,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 8,
+      "class": "de.micmun.android.deufeitage.model.YearItem"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/Holiday.kt": {
+      "sloc": 30,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 12,
+      "class": "de.micmun.android.deufeitage.model.Holiday"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/StateItem.kt": {
+      "sloc": 4,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "de.micmun.android.deufeitage.model.StateItem"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:21:5",
+        "message": "The function getHolidays appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:68:5",
+        "message": "The function calculate appears to be too complex."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/HolidayAdapter.kt:44:9",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:50:51",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:83:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:84:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:85:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:93:73",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:99:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:99:60",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:109:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:109:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:125:44",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:125:90",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:128:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:128:98",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:175:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/PreferenceManager.kt:27:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/YearViewHolder.kt:24:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/YearViewHolder.kt:34:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:97:29",
+        "message": "stateSpinner.selectedItem cannot be safely cast to StateItem?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:108:25",
+        "message": "parent.getItemAtPosition(pos) cannot be safely cast to StateItem."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:128:14",
+        "message": "adapter cannot be safely cast to HolidayAdapter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayConfigReader.kt:37:27",
+        "message": "jsonObject[keyStates] cannot be safely cast to JSONArray."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayConfigReader.kt:40:28",
+        "message": "statesArray[i] cannot be safely cast to JSONObject."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayConfigReader.kt:45:39",
+        "message": "jsonObject[keyHolidays] cannot be safely cast to JSONArray."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayConfigReader.kt:48:30",
+        "message": "holidayArray[i] cannot be safely cast to JSONObject."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayConfigReader.kt:49:35",
+        "message": "holidayObj[keyStates] cannot be safely cast to JSONArray."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayConfigReader.kt:56:35",
+        "message": "holidayObj[keyId] cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayConfigReader.kt:56:61",
+        "message": "holidayObj[keyName] cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayConfigReader.kt:57:36",
+        "message": "holidayObj[keyDesc] cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/HolidayAdapter.kt:35:26",
+        "message": "LayoutInflater.from(parent.context)\n                    .inflate(R.layout.header_row, parent, false) cannot be safely cast to ConstraintLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/HolidayAdapter.kt:39:26",
+        "message": "LayoutInflater.from(parent.context)\n                    .inflate(R.layout.holiday_row, parent, false) cannot be safely cast to ConstraintLayout."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/YearRecyclerAdapter.kt:29:24",
+        "message": "LayoutInflater.from(parent.context).inflate(R.layout.year_text_view, parent,\n                false) cannot be safely cast to CheckedTextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/YearViewHolder.kt:28:41",
+        "message": "mItem cannot be safely cast to YearItem."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:24:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/YearRecyclerAdapter.kt:13:51",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of YearRecyclerAdapter."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:154:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:154:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:170:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:79:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:83:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:86:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:87:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:93:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:94:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:97:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:100:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:103:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:106:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:109:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:112:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:115:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:118:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:118:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:119:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:119:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:120:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:120:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:121:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:122:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:123:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:123:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:124:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:124:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:125:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:125:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:146:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:147:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:148:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:149:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:150:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:151:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:151:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:152:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:153:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:153:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:153:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:154:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:155:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:156:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:156:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:157:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:157:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:157:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:158:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:158:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:159:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:160:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:174:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:174:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:175:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:178:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/MainActivity.kt:155:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/HolidayAdapter.kt:77:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/HolidayAdapter.kt:77:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/HolidayAdapter.kt:114:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/HolidayAdapter.kt:118:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/HolidayAdapter.kt:118:17",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/YearRecyclerAdapter.kt:45:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/YearViewHolder.kt:24:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/YearViewHolder.kt:26:18",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/YearItem.kt:24:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/YearItem.kt:26:14",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/YearItem.kt:30:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/PreferenceManager.kt:88:1",
+        "message": "The file PreferenceManager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayConfigReader.kt:61:1",
+        "message": "The file HolidayConfigReader.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:183:1",
+        "message": "The file HolidayCalculator.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/HolidayAdapter.kt:159:1",
+        "message": "The file HolidayAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/YearRecyclerAdapter.kt:59:1",
+        "message": "The file YearRecyclerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/YearViewHolder.kt:51:1",
+        "message": "The file YearViewHolder.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/YearItem.kt:40:1",
+        "message": "The file YearItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/Holiday.kt:54:1",
+        "message": "The file Holiday.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/StateItem.kt:16:1",
+        "message": "The file StateItem.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/PreferenceManager.kt:65:24",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/PreferenceManager.kt:85:29",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/DateUtility.kt:44:63",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/HolidayAdapter.kt:93:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/adapter/HolidayAdapter.kt:100:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/YearItem.kt:17:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/YearItem.kt:37:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayConfigReader.kt:15:1",
+        "message": "The class HolidayConfigReader defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/YearItem.kt:8:1",
+        "message": "The class YearItem defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:160:19",
+        "message": "Parentheses in (n % 31) are unnecessary and can be replaced with: n % 31"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/HolidayCalculator.kt:175:26",
+        "message": "Parentheses in (-1) are unnecessary and can be replaced with: -1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/Holiday.kt:32:19",
+        "message": "Parentheses in (TimeUnit.DAYS.convert(heute.time.time - datum.time.time,\n                    TimeUnit.MILLISECONDS).toInt()) are unnecessary and can be replaced with: TimeUnit.DAYS.convert(heute.time.time - datum.time.time,\n                    TimeUnit.MILLISECONDS).toInt()"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/Holiday.kt:33:55",
+        "message": "Parentheses in (-1) are unnecessary and can be replaced with: -1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/Holiday.kt:34:18",
+        "message": "Parentheses in (TimeUnit.DAYS.convert(datum.time.time - heute.time.time,\n                    TimeUnit.MILLISECONDS).toInt() + 1) are unnecessary and can be replaced with: TimeUnit.DAYS.convert(datum.time.time - heute.time.time,\n                    TimeUnit.MILLISECONDS).toInt() + 1"
+      }]
+    }, {
+      "name": "UtilityClassWithPublicConstructor",
+      "description": "The class declaration is unnecessary because it only contains utility functions. An object declaration should be used instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/utils/DateUtility.kt:12:1",
+        "message": "The class DateUtility only contains utility functions. Consider defining it as an object."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/Holiday.kt:20:5",
+        "message": "The data class Holiday contains functions which are not registered conversion functions. The offending method is called getDiffToNow"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-micmun-android-deufeitage/app/src/main/java/de/micmun/android/deufeitage/model/Holiday.kt:40:5",
+        "message": "The data class Holiday contains functions which are not registered conversion functions. The offending method is called compareDate"
+      }]
+    }]
+  }]
+}

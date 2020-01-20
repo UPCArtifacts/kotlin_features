@@ -1,0 +1,592 @@
+{
+  "complexity_metrics": {
+    "loc": 870,
+    "sloc": 718,
+    "lloc": 443,
+    "cloc": 1,
+    "mcc": 135,
+    "n_smell": 94,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 304
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 27,
+    "number_of_string_template": 2,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 3,
+    "number_of_inferred_var": 32,
+    "number_of_objects_declarations": 7,
+    "number_of_companion_objects": 4,
+    "number_of_singletons": 0,
+    "number_of_declaration": 48,
+    "number_of_var_declaration": 48,
+    "number_of_func_call": 231,
+    "number_of_arguments": 206,
+    "number_of_parameters": 109,
+    "number_of_qualified_expressions": 302,
+    "number_of_inheritances": 13,
+    "number_of_unsafe_calls": 8,
+    "number_of_safe_calls": 2,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 4,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 1,
+    "number_of_named_argument": 3,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 6,
+    "number_of_extension_function": 3,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 5,
+    "number_of_lambdas": 18,
+    "number_of_possible_smart_casts": 4,
+    "number_of_data_class": 4,
+    "number_of_constructors": 11,
+    "number_of_properties": 48,
+    "number_of_functions": 82,
+    "number_of_interfaces": 3,
+    "number_of_classes": 22,
+    "number_of_packages": 7,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 23
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/HomeFragment.kt": {
+      "sloc": 55,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 8,
+      "class": "com.ninjahoahong.unstoppable.home.HomeFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/HomeKey.kt": {
+      "sloc": 8,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.ninjahoahong.unstoppable.home.HomeKey"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/onboarding/OnBoardingPages.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.ninjahoahong.unstoppable.home.onboarding.OnBoardingPages"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/onboarding/OnBoardingPagerAdapter.kt": {
+      "sloc": 20,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.ninjahoahong.unstoppable.home.onboarding.OnBoardingPagerAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/MainActivity.kt": {
+      "sloc": 61,
+      "number_of_properties": 2,
+      "number_of_functions": 8,
+      "complexity": 12,
+      "class": "com.ninjahoahong.unstoppable.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AppModule.kt": {
+      "sloc": 50,
+      "number_of_properties": 0,
+      "number_of_functions": 7,
+      "complexity": 9,
+      "class": "com.ninjahoahong.unstoppable.AppModule"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/SchedulerProvider.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.ninjahoahong.unstoppable.utils.SchedulerProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Settings.kt": {
+      "sloc": 98,
+      "number_of_properties": 0,
+      "number_of_functions": 18,
+      "complexity": 30,
+      "class": "com.ninjahoahong.unstoppable.utils.Settings"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/SchedulerProviderImpl.kt": {
+      "sloc": 9,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.ninjahoahong.unstoppable.utils.SchedulerProviderImpl"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/BaseKey.kt": {
+      "sloc": 14,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 3,
+      "class": "com.ninjahoahong.unstoppable.utils.BaseKey"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/CustomPagerAdapter.kt": {
+      "sloc": 17,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 5,
+      "class": "com.ninjahoahong.unstoppable.utils.CustomPagerAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/FragmentStateChanger.kt": {
+      "sloc": 52,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 16,
+      "class": "com.ninjahoahong.unstoppable.utils.FragmentStateChanger"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Setting.kt": {
+      "sloc": 27,
+      "number_of_properties": 3,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "com.ninjahoahong.unstoppable.utils.Setting"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewKey.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.ninjahoahong.unstoppable.question.QuestionViewKey"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt": {
+      "sloc": 183,
+      "number_of_properties": 8,
+      "number_of_functions": 13,
+      "complexity": 26,
+      "class": "com.ninjahoahong.unstoppable.question.QuestionViewFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AndroidApp.kt": {
+      "sloc": 24,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.ninjahoahong.unstoppable.AndroidApp"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/BaseFragment.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.ninjahoahong.unstoppable.BaseFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/data/responses/ResultsItem.kt": {
+      "sloc": 13,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.ninjahoahong.unstoppable.data.responses.ResultsItem"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/data/responses/Question.kt": {
+      "sloc": 8,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.ninjahoahong.unstoppable.data.responses.Question"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AppComponent.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.ninjahoahong.unstoppable.AppComponent"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/SplashActivity.kt": {
+      "sloc": 12,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.ninjahoahong.unstoppable.SplashActivity"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Settings.kt:9:5",
+        "message": "Object 'Companion' with '16' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:37:1",
+        "message": "Class 'QuestionViewFragment' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/BaseKey.kt:13:41",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/FragmentStateChanger.kt:12:5",
+        "message": "The function handleStateChange appears to be too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/FragmentStateChanger.kt:12:5",
+        "message": "Function handleStateChange is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/MainActivity.kt:35:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "FunctionMinLength",
+      "description": "Function names should not be shorter than the minimum defined in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/SchedulerProvider.kt:9:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/SchedulerProvider.kt:11:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/SchedulerProviderImpl.kt:11:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/SchedulerProviderImpl.kt:13:5",
+        "message": "Function names should be at least 3 characters long."
+      }]
+    }, {
+      "name": "MatchingDeclarationName",
+      "description": "If a source file contains only a single non-private top-level class or object, the file name should reflect the case-sensitive name plus the .kt extension.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/api/ApiService.kt:1:1",
+        "message": "The file name 'ApiService.kt' does not match the name of the single top-level declaration 'AppService'."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/HomeFragment.kt:50:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/HomeFragment.kt:58:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:78:55",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:106:59",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:134:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:134:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:135:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:152:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/HomeFragment.kt:45:57",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/HomeFragment.kt:50:14",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/HomeFragment.kt:58:10",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/HomeFragment.kt:60:18",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/onboarding/OnBoardingPagerAdapter.kt:14:16",
+        "message": "inflater.inflate(modelObject.layoutResId, container, false) cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/MainActivity.kt:72:20",
+        "message": "context.getSystemService(TAG) cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Settings.kt:105:64",
+        "message": "value cannot be safely cast to String?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Settings.kt:106:65",
+        "message": "value cannot be safely cast to Boolean."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Settings.kt:107:68",
+        "message": "value cannot be safely cast to Long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/CustomPagerAdapter.kt:21:30",
+        "message": "view cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Setting.kt:23:24",
+        "message": "other cannot be safely cast to Setting."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AndroidApp.kt:25:20",
+        "message": "context.applicationContext cannot be safely cast to AndroidApp."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/MainActivity.kt:17:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/MainActivity.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:47:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AndroidApp.kt:19:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AndroidApp.kt:22:9",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/HomeFragment.kt:62:1",
+        "message": "The file HomeFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/HomeKey.kt:11:1",
+        "message": "The file HomeKey.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/onboarding/OnBoardingPages.kt:10:1",
+        "message": "The file OnBoardingPages.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/MainActivity.kt:76:1",
+        "message": "The file MainActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/SchedulerProvider.kt:12:1",
+        "message": "The file SchedulerProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Settings.kt:119:1",
+        "message": "The file Settings.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/SchedulerProviderImpl.kt:14:1",
+        "message": "The file SchedulerProviderImpl.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/BaseKey.kt:18:1",
+        "message": "The file BaseKey.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Utils.kt:22:1",
+        "message": "The file Utils.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/CustomPagerAdapter.kt:23:1",
+        "message": "The file CustomPagerAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/FragmentStateChanger.kt:54:1",
+        "message": "The file FragmentStateChanger.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Setting.kt:35:1",
+        "message": "The file Setting.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewKey.kt:14:1",
+        "message": "The file QuestionViewKey.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AndroidApp.kt:32:1",
+        "message": "The file AndroidApp.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/BaseFragment.kt:9:1",
+        "message": "The file BaseFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/api/ApiService.kt:10:1",
+        "message": "The file ApiService.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/data/responses/ResultsItem.kt:15:14",
+        "message": "The file ResultsItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/data/responses/Question.kt:10:14",
+        "message": "The file Question.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AppComponent.kt:13:1",
+        "message": "The file AppComponent.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/SplashActivity.kt:16:1",
+        "message": "The file SplashActivity.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/HomeFragment.kt:26:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/onboarding/OnBoardingPagerAdapter.kt:17:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/MainActivity.kt:71:58",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Settings.kt:16:75",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Settings.kt:21:75",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Settings.kt:27:59",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Settings.kt:31:68",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Settings.kt:45:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Settings.kt:49:89",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Setting.kt:22:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Setting.kt:28:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:56:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AndroidApp.kt:24:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AndroidApp.kt:28:31",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/home/onboarding/OnBoardingPages.kt:3:38",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of OnBoardingPages."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AppModule.kt:19:30",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AppModule."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/MainActivity.kt:44:5",
+        "message": "Private function replaceHistory is unused."
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/MainActivity.kt:68:9",
+        "message": "TAG can be a `const val`."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AppModule.kt:50:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AppModule.kt:56:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AppModule.kt:57:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:52:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:52:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:81:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:115:59",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:156:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:200:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UtilityClassWithPublicConstructor",
+      "description": "The class declaration is unnecessary because it only contains utility functions. An object declaration should be used instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Settings.kt:7:1",
+        "message": "The class Settings only contains utility functions. Consider defining it as an object."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/FragmentStateChanger.kt:16:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/FragmentStateChanger.kt:19:148",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/FragmentStateChanger.kt:15:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/FragmentStateChanger.kt:18:17",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "SerialVersionUIDInSerializableClass",
+      "description": "A class which implements the Serializable interface does not define a correct serialVersionUID field. The serialVersionUID field should be a constant long value inside a companion object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/utils/Setting.kt:7:1",
+        "message": "The class Setting implements the Serializable interface and should thus define a serialVersionUID."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/question/QuestionViewFragment.kt:176:13",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ninjahoahong-unstoppable/app/src/main/java/com/ninjahoahong/unstoppable/AppComponent.kt:9:5",
+        "message": "Parentheses in (AppModule::class) are unnecessary and can be replaced with: AppModule::class"
+      }]
+    }]
+  }]
+}

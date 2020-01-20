@@ -1,0 +1,168 @@
+{
+  "complexity_metrics": {
+    "loc": 323,
+    "sloc": 204,
+    "lloc": 119,
+    "cloc": 60,
+    "mcc": 41,
+    "n_smell": 17,
+    "comment_ratio": 29,
+    "mcc_per_thlines": 344
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 4,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 11,
+    "number_of_objects_declarations": 1,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 23,
+    "number_of_var_declaration": 23,
+    "number_of_func_call": 93,
+    "number_of_arguments": 92,
+    "number_of_parameters": 34,
+    "number_of_qualified_expressions": 143,
+    "number_of_inheritances": 7,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 5,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 2,
+    "number_of_named_argument": 2,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 13,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_constructors": 6,
+    "number_of_properties": 23,
+    "number_of_functions": 16,
+    "number_of_interfaces": 0,
+    "number_of_classes": 7,
+    "number_of_packages": 3,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 4
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/adapters/AppAdapter.kt": {
+      "sloc": 102,
+      "number_of_properties": 1,
+      "number_of_functions": 8,
+      "complexity": 23,
+      "class": "com.james.status.adapters.AppAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/activities/AttribouterActivity.kt": {
+      "sloc": 51,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 14,
+      "class": "com.james.status.activities.AttribouterActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/wedges/IconSourceWedge.kt": {
+      "sloc": 27,
+      "number_of_properties": 3,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.james.status.wedges.IconSourceWedge"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/wedges/IconSourcesWedge.kt": {
+      "sloc": 24,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.james.status.wedges.IconSourcesWedge"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/adapters/AppAdapter.kt:42:39",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/adapters/AppAdapter.kt:43:39",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/adapters/AppAdapter.kt:107:43",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/adapters/AppAdapter.kt:108:43",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/adapters/AppAdapter.kt:118:43",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/adapters/AppAdapter.kt:119:43",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/activities/AttribouterActivity.kt:36:5",
+        "message": "The function onCreate appears to be too complex."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/adapters/AppAdapter.kt:36:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/adapters/AppAdapter.kt:51:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/adapters/AppAdapter.kt:100:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/wedges/IconSourcesWedge.kt:34:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/adapters/AppAdapter.kt:45:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/adapters/AppAdapter.kt:94:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/adapters/AppAdapter.kt:110:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/activities/AttribouterActivity.kt:60:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/activities/AttribouterActivity.kt:60:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-james-status/app/src/main/java/com/james/status/activities/AttribouterActivity.kt:67:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }]
+  }]
+}

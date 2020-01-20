@@ -1,0 +1,250 @@
+{
+  "complexity_metrics": {
+    "loc": 587,
+    "sloc": 418,
+    "lloc": 272,
+    "cloc": 19,
+    "mcc": 59,
+    "n_smell": 25,
+    "comment_ratio": 4,
+    "mcc_per_thlines": 216
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 34,
+    "number_of_string_template": 14,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 1,
+    "number_of_inferred_var": 25,
+    "number_of_objects_declarations": 6,
+    "number_of_companion_objects": 2,
+    "number_of_singletons": 0,
+    "number_of_declaration": 33,
+    "number_of_var_declaration": 33,
+    "number_of_func_call": 169,
+    "number_of_arguments": 154,
+    "number_of_parameters": 43,
+    "number_of_qualified_expressions": 194,
+    "number_of_inheritances": 9,
+    "number_of_unsafe_calls": 4,
+    "number_of_safe_calls": 2,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 6,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 32,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_constructors": 3,
+    "number_of_properties": 33,
+    "number_of_functions": 35,
+    "number_of_interfaces": 0,
+    "number_of_classes": 10,
+    "number_of_packages": 2,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 8
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/BaseActivity.kt": {
+      "sloc": 122,
+      "number_of_properties": 5,
+      "number_of_functions": 10,
+      "complexity": 21,
+      "class": "danbroid.searchview.BaseActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/CheeseSuggestionsProvider.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "danbroid.searchview.CheeseSuggestionsProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/SearchDialogActivity.kt": {
+      "sloc": 23,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 5,
+      "class": "danbroid.searchview.activities.SearchDialogActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/MainActivity.kt": {
+      "sloc": 28,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "danbroid.searchview.activities.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/CustomSuggestionLayoutActivity.kt": {
+      "sloc": 111,
+      "number_of_properties": 0,
+      "number_of_functions": 10,
+      "complexity": 16,
+      "class": "danbroid.searchview.activities.CustomSuggestionLayoutActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/DarkDropDownActivity.kt": {
+      "sloc": 47,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 5,
+      "class": "danbroid.searchview.activities.DarkDropDownActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/LightDropDownActivity.kt": {
+      "sloc": 44,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 5,
+      "class": "danbroid.searchview.activities.LightDropDownActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/CheeseData.kt": {
+      "sloc": 32,
+      "number_of_properties": 2,
+      "number_of_functions": 2,
+      "complexity": 5,
+      "class": "danbroid.searchview.CheeseData"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/CustomSuggestionLayoutActivity.kt:57:24",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/CheeseData.kt:26:3",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/BaseActivity.kt:30:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/BaseActivity.kt:51:5",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/BaseActivity.kt:100:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/BaseActivity.kt:102:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/BaseActivity.kt:42:5",
+        "message": "getSystemService(Context.SEARCH_SERVICE) cannot be safely cast to SearchManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/BaseActivity.kt:18:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of BaseActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/SearchDialogActivity.kt:6:29",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SearchDialogActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/MainActivity.kt:6:40",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/CustomSuggestionLayoutActivity.kt:18:29",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of CustomSuggestionLayoutActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/DarkDropDownActivity.kt:7:40",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of DarkDropDownActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/LightDropDownActivity.kt:7:40",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of the class or object."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/CheeseSuggestionsProvider.kt:15:1",
+        "message": "The file CheeseSuggestionsProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/SearchDialogActivity.kt:31:71",
+        "message": "The file SearchDialogActivity.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/CheeseSuggestionsProvider.kt:9:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/SearchDialogActivity.kt:23:3",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/SearchDialogActivity.kt:24:156",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/CustomSuggestionLayoutActivity.kt:11:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/CustomSuggestionLayoutActivity.kt:79:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/CustomSuggestionLayoutActivity.kt:105:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/CustomSuggestionLayoutActivity.kt:111:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ForbiddenVoid",
+      "description": "`Unit` should be used instead of `Void`.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/CustomSuggestionLayoutActivity.kt:97:71",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/activities/CustomSuggestionLayoutActivity.kt:103:46",
+        "message": "'Void' should be replaced with 'Unit'."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/danbroid-searchview/app/src/main/java/danbroid/searchview/CheeseData.kt:16:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }]
+  }]
+}

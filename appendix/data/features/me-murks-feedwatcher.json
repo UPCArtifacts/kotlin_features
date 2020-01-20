@@ -1,0 +1,1450 @@
+{
+  "complexity_metrics": {
+    "loc": 4116,
+    "sloc": 3108,
+    "lloc": 2337,
+    "cloc": 921,
+    "mcc": 484,
+    "n_smell": 277,
+    "comment_ratio": 29,
+    "mcc_per_thlines": 207
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 1,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 182,
+    "number_of_string_template": 70,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 7,
+    "number_of_inferred_var": 224,
+    "number_of_objects_declarations": 24,
+    "number_of_companion_objects": 9,
+    "number_of_singletons": 5,
+    "number_of_declaration": 302,
+    "number_of_var_declaration": 302,
+    "number_of_func_call": 1151,
+    "number_of_arguments": 1170,
+    "number_of_parameters": 388,
+    "number_of_qualified_expressions": 1568,
+    "number_of_inheritances": 33,
+    "number_of_unsafe_calls": 59,
+    "number_of_safe_calls": 18,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 12,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 3,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 6,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 68,
+    "number_of_possible_smart_casts": 9,
+    "number_of_data_class": 5,
+    "number_of_constructors": 43,
+    "number_of_properties": 302,
+    "number_of_functions": 253,
+    "number_of_interfaces": 12,
+    "number_of_classes": 58,
+    "number_of_packages": 6,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 59
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/test/java/me/murks/feedwatcher/io/FeedIOTests.kt": {
+      "sloc": 186,
+      "number_of_properties": 4,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "me.murks.feedwatcher.io.FeedIOTests"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/test/java/me/murks/feedwatcher/TextsTests.kt": {
+      "sloc": 37,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "me.murks.feedwatcher.TextsTests"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Texts.kt": {
+      "sloc": 39,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 8,
+      "class": "me.murks.feedwatcher.Texts"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Notifications.kt": {
+      "sloc": 59,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 3,
+      "class": "me.murks.feedwatcher.Notifications"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/HtmlTags.kt": {
+      "sloc": 21,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "me.murks.feedwatcher.HtmlTags"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Settings.kt": {
+      "sloc": 6,
+      "number_of_properties": 3,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "me.murks.feedwatcher.Settings"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Environment.kt": {
+      "sloc": 21,
+      "number_of_properties": 4,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "me.murks.feedwatcher.Environment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/TaskListener.kt": {
+      "sloc": 26,
+      "number_of_properties": 0,
+      "number_of_functions": 7,
+      "complexity": 9,
+      "class": "me.murks.feedwatcher.tasks.TaskListener"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/ActionTask.kt": {
+      "sloc": 28,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 6,
+      "class": "me.murks.feedwatcher.tasks.ActionTask"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsJob.kt": {
+      "sloc": 58,
+      "number_of_properties": 4,
+      "number_of_functions": 6,
+      "complexity": 7,
+      "class": "me.murks.feedwatcher.tasks.FilterFeedsJob"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsTask.kt": {
+      "sloc": 68,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 9,
+      "class": "me.murks.feedwatcher.tasks.FilterFeedsTask"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/LoadImageTask.kt": {
+      "sloc": 47,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 9,
+      "class": "me.murks.feedwatcher.tasks.LoadImageTask"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FeedDetailsTask.kt": {
+      "sloc": 51,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 7,
+      "class": "me.murks.feedwatcher.tasks.FeedDetailsTask"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FeedUrlTask.kt": {
+      "sloc": 65,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 14,
+      "class": "me.murks.feedwatcher.tasks.FeedUrlTask"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Jobs.kt": {
+      "sloc": 25,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 4,
+      "class": "me.murks.feedwatcher.Jobs"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/AndroidApplication.kt": {
+      "sloc": 13,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "me.murks.feedwatcher.AndroidApplication"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt": {
+      "sloc": 157,
+      "number_of_properties": 7,
+      "number_of_functions": 9,
+      "complexity": 46,
+      "class": "me.murks.feedwatcher.io.FeedIO"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/AndroidEnvironment.kt": {
+      "sloc": 24,
+      "number_of_properties": 4,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "me.murks.feedwatcher.AndroidEnvironment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/Filter.kt": {
+      "sloc": 32,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 9,
+      "class": "me.murks.feedwatcher.model.Filter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/Result.kt": {
+      "sloc": 4,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "me.murks.feedwatcher.model.Result"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterParameter.kt": {
+      "sloc": 15,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "me.murks.feedwatcher.model.FilterParameter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterType.kt": {
+      "sloc": 6,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "me.murks.feedwatcher.model.FilterType"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterTypeCallback.kt": {
+      "sloc": 18,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "me.murks.feedwatcher.model.FilterTypeCallback"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/ContainsFilter.kt": {
+      "sloc": 40,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 8,
+      "class": "me.murks.feedwatcher.model.ContainsFilter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FeedFilter.kt": {
+      "sloc": 45,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 11,
+      "class": "me.murks.feedwatcher.model.FeedFilter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FeedItem.kt": {
+      "sloc": 16,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "me.murks.feedwatcher.model.FeedItem"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/Query.kt": {
+      "sloc": 2,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "me.murks.feedwatcher.model.Query"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/Feed.kt": {
+      "sloc": 4,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "me.murks.feedwatcher.model.Feed"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterFactory.kt": {
+      "sloc": 30,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 8,
+      "class": "me.murks.feedwatcher.model.FilterFactory"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/NewEntryFilter.kt": {
+      "sloc": 28,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "me.murks.feedwatcher.model.NewEntryFilter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Either.kt": {
+      "sloc": 13,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 6,
+      "class": "me.murks.feedwatcher.Either"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedUiContainer.kt": {
+      "sloc": 23,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "me.murks.feedwatcher.activities.FeedUiContainer"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueriesFragment.kt": {
+      "sloc": 68,
+      "number_of_properties": 2,
+      "number_of_functions": 7,
+      "complexity": 8,
+      "class": "me.murks.feedwatcher.activities.QueriesFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultActivity.kt": {
+      "sloc": 42,
+      "number_of_properties": 5,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "me.murks.feedwatcher.activities.ResultActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt": {
+      "sloc": 171,
+      "number_of_properties": 12,
+      "number_of_functions": 16,
+      "complexity": 31,
+      "class": "me.murks.feedwatcher.activities.FeedActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt": {
+      "sloc": 125,
+      "number_of_properties": 4,
+      "number_of_functions": 12,
+      "complexity": 19,
+      "class": "me.murks.feedwatcher.activities.QueryActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedWatcherBaseFragment.kt": {
+      "sloc": 28,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "me.murks.feedwatcher.activities.FeedWatcherBaseFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FilterUiModel.kt": {
+      "sloc": 47,
+      "number_of_properties": 5,
+      "number_of_functions": 4,
+      "complexity": 11,
+      "class": "me.murks.feedwatcher.activities.FilterUiModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedWatcherBaseActivity.kt": {
+      "sloc": 28,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "me.murks.feedwatcher.activities.FeedWatcherBaseActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FilterRecyclerViewAdapter.kt": {
+      "sloc": 104,
+      "number_of_properties": 2,
+      "number_of_functions": 11,
+      "complexity": 17,
+      "class": "me.murks.feedwatcher.activities.FilterRecyclerViewAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedsRecyclerViewAdapter.kt": {
+      "sloc": 71,
+      "number_of_properties": 2,
+      "number_of_functions": 6,
+      "complexity": 10,
+      "class": "me.murks.feedwatcher.activities.FeedsRecyclerViewAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/OverviewActivity.kt": {
+      "sloc": 132,
+      "number_of_properties": 3,
+      "number_of_functions": 8,
+      "complexity": 24,
+      "class": "me.murks.feedwatcher.activities.OverviewActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultsRecyclerViewAdapter.kt": {
+      "sloc": 58,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 3,
+      "class": "me.murks.feedwatcher.activities.ResultsRecyclerViewAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/PreferencesFragment.kt": {
+      "sloc": 61,
+      "number_of_properties": 1,
+      "number_of_functions": 6,
+      "complexity": 9,
+      "class": "me.murks.feedwatcher.activities.PreferencesFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultsFragment.kt": {
+      "sloc": 84,
+      "number_of_properties": 2,
+      "number_of_functions": 11,
+      "complexity": 13,
+      "class": "me.murks.feedwatcher.activities.ResultsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/Formatter.kt": {
+      "sloc": 23,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "me.murks.feedwatcher.activities.Formatter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedsFragment.kt": {
+      "sloc": 67,
+      "number_of_properties": 3,
+      "number_of_functions": 6,
+      "complexity": 6,
+      "class": "me.murks.feedwatcher.activities.FeedsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/DateTimePickerDialogFragment.kt": {
+      "sloc": 53,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "me.murks.feedwatcher.activities.DateTimePickerDialogFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryRecyclerViewAdapter.kt": {
+      "sloc": 39,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 4,
+      "class": "me.murks.feedwatcher.activities.QueryRecyclerViewAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ListRecyclerViewAdapter.kt": {
+      "sloc": 30,
+      "number_of_properties": 2,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "me.murks.feedwatcher.activities.ListRecyclerViewAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/FeedWatcherApp.kt": {
+      "sloc": 67,
+      "number_of_properties": 0,
+      "number_of_functions": 13,
+      "complexity": 14,
+      "class": "me.murks.feedwatcher.FeedWatcherApp"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/ResourceTracker.kt": {
+      "sloc": 40,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 8,
+      "class": "me.murks.feedwatcher.ResourceTracker"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/UnitOfWork.kt": {
+      "sloc": 16,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "me.murks.feedwatcher.data.UnitOfWork"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt": {
+      "sloc": 466,
+      "number_of_properties": 3,
+      "number_of_functions": 41,
+      "complexity": 100,
+      "class": "me.murks.feedwatcher.data.DataStore"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/AddResultsAndMarkFeeds.kt": {
+      "sloc": 29,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "me.murks.feedwatcher.data.AddResultsAndMarkFeeds"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Constants.kt": {
+      "sloc": 6,
+      "number_of_properties": 3,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "me.murks.feedwatcher.Constants"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/AndroidSettings.kt": {
+      "sloc": 12,
+      "number_of_properties": 4,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "me.murks.feedwatcher.AndroidSettings"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Lookup.kt": {
+      "sloc": 20,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 6,
+      "class": "me.murks.feedwatcher.Lookup"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:80:5",
+        "message": "The function readChannel appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:61:5",
+        "message": "The function onCreate appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:88:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:87:17",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:105:25",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:132:22",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:39:1",
+        "message": "Class 'FeedActivity' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/FeedWatcherApp.kt:30:1",
+        "message": "Class 'FeedWatcherApp' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:37:1",
+        "message": "Class 'DataStore' with '41' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:37:1",
+        "message": "Class DataStore is too large. Consider splitting it into smaller pieces."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyDefaultConstructor",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsJob.kt:31:21",
+        "message": "An empty default constructor can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/AndroidApplication.kt:12:25",
+        "message": "An empty default constructor can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Either.kt:7:28",
+        "message": "An empty default constructor can be removed."
+      }]
+    }, {
+      "name": "EmptyCatchBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:95:56",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:140:41",
+        "message": "This empty block of code can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:156:58",
+        "message": "This empty block of code can be removed."
+      }]
+    }, {
+      "name": "EmptyClassBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterParameter.kt:22:1",
+        "message": "The class or object  FilterParameter is empty."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/ActionTask.kt:21:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsTask.kt:68:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FeedUrlTask.kt:55:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsTask.kt:66:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }, {
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Jobs.kt:31:21",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultsFragment.kt:81:13",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }, {
+      "name": "ThrowingExceptionsWithoutMessageOrCause",
+      "description": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:185:19",
+        "message": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FilterUiModel.kt:48:15",
+        "message": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions."
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/ActionTask.kt:30:31",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsJob.kt:43:21",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsTask.kt:82:31",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FeedDetailsTask.kt:60:31",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FeedUrlTask.kt:66:31",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedsFragment.kt:67:38",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Notifications.kt:53:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsTask.kt:49:49",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FeedDetailsTask.kt:47:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FeedUrlTask.kt:48:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FeedUrlTask.kt:51:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:44:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:50:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:124:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:124:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:124:65",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterFactory.kt:30:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterFactory.kt:33:27",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterFactory.kt:36:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterFactory.kt:36:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:88:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:94:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:96:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt:90:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt:91:55",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt:118:64",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt:128:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedWatcherBaseFragment.kt:33:49",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FilterUiModel.kt:44:70",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FilterRecyclerViewAdapter.kt:75:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedsRecyclerViewAdapter.kt:78:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedsRecyclerViewAdapter.kt:79:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/OverviewActivity.kt:82:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultsRecyclerViewAdapter.kt:72:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultsRecyclerViewAdapter.kt:73:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultsRecyclerViewAdapter.kt:74:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultsRecyclerViewAdapter.kt:75:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/PreferencesFragment.kt:39:49",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/PreferencesFragment.kt:41:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/DateTimePickerDialogFragment.kt:51:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:118:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:120:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:174:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:181:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:182:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:183:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:184:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:190:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:191:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:192:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:199:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:207:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:315:52",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:349:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:358:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:359:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:363:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:373:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:399:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:400:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:401:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:404:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:405:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:407:22",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Lookup.kt:14:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/TaskListener.kt:30:37",
+        "message": "result cannot be safely cast to Left."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/TaskListener.kt:32:39",
+        "message": "result cannot be safely cast to Right."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FeedUrlTask.kt:69:38",
+        "message": "value cannot be safely cast to Left."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FeedUrlTask.kt:71:38",
+        "message": "value cannot be safely cast to Right."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/Filter.kt:41:9",
+        "message": "other cannot be safely cast to Filter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/ContainsFilter.kt:43:9",
+        "message": "other cannot be safely cast to ContainsFilter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FeedFilter.kt:52:9",
+        "message": "other cannot be safely cast to FeedFilter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueriesFragment.kt:43:20",
+        "message": "inflater.inflate(R.layout.fragment_queries_list, container, false) cannot be safely cast to RecyclerView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedsRecyclerViewAdapter.kt:49:24",
+        "message": "v.tag cannot be safely cast to FeedUiContainer."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultsRecyclerViewAdapter.kt:46:24",
+        "message": "v.tag cannot be safely cast to Result."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/PreferencesFragment.kt:54:32",
+        "message": "newValue cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultsFragment.kt:48:20",
+        "message": "inflater.inflate(R.layout.fragment_results_list, container, false) cannot be safely cast to RecyclerView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryRecyclerViewAdapter.kt:24:24",
+        "message": "v.tag cannot be safely cast to Query."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsJob.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsJob.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsJob.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsJob.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueriesFragment.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultActivity.kt:15:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultActivity.kt:16:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultActivity.kt:17:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultActivity.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultActivity.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:47:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:48:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:49:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:50:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:51:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:52:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:53:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:54:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:55:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:59:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt:42:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt:43:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedWatcherBaseFragment.kt:29:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedWatcherBaseActivity.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FilterRecyclerViewAdapter.kt:77:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/OverviewActivity.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/OverviewActivity.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/PreferencesFragment.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultsFragment.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedsFragment.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedsFragment.kt:40:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedsFragment.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/test/java/me/murks/feedwatcher/io/FeedIOTests.kt:207:1",
+        "message": "The file FeedIOTests.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/test/java/me/murks/feedwatcher/TextsTests.kt:51:1",
+        "message": "The file TextsTests.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Texts.kt:63:1",
+        "message": "The file Texts.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Notifications.kt:82:1",
+        "message": "The file Notifications.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/HtmlTags.kt:28:1",
+        "message": "The file HtmlTags.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Settings.kt:10:1",
+        "message": "The file Settings.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Environment.kt:31:1",
+        "message": "The file Environment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/TaskListener.kt:35:1",
+        "message": "The file TaskListener.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/ActionTask.kt:37:1",
+        "message": "The file ActionTask.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsJob.kt:76:1",
+        "message": "The file FilterFeedsJob.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsTask.kt:84:1",
+        "message": "The file FilterFeedsTask.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/LoadImageTask.kt:59:1",
+        "message": "The file LoadImageTask.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FeedDetailsTask.kt:68:1",
+        "message": "The file FeedDetailsTask.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FeedUrlTask.kt:80:1",
+        "message": "The file FeedUrlTask.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Jobs.kt:37:1",
+        "message": "The file Jobs.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/AndroidApplication.kt:23:1",
+        "message": "The file AndroidApplication.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:195:1",
+        "message": "The file FeedIO.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/AndroidEnvironment.kt:34:1",
+        "message": "The file AndroidEnvironment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/Filter.kt:54:1",
+        "message": "The file Filter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/Result.kt:9:34",
+        "message": "The file Result.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterParameter.kt:26:95",
+        "message": "The file FilterParameter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterType.kt:11:1",
+        "message": "The file FilterType.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterTypeCallback.kt:29:1",
+        "message": "The file FilterTypeCallback.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/ContainsFilter.kt:55:1",
+        "message": "The file ContainsFilter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FeedFilter.kt:65:1",
+        "message": "The file FeedFilter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FeedItem.kt:27:95",
+        "message": "The file FeedItem.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/Query.kt:7:74",
+        "message": "The file Query.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/Feed.kt:10:66",
+        "message": "The file Feed.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterFactory.kt:41:1",
+        "message": "The file FilterFactory.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/NewEntryFilter.kt:43:1",
+        "message": "The file NewEntryFilter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Either.kt:19:1",
+        "message": "The file Either.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedUiContainer.kt:36:1",
+        "message": "The file FeedUiContainer.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedWatcherBaseFragment.kt:40:1",
+        "message": "The file FeedWatcherBaseFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FilterUiModel.kt:64:1",
+        "message": "The file FilterUiModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedWatcherBaseActivity.kt:42:1",
+        "message": "The file FeedWatcherBaseActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/Formatter.kt:35:1",
+        "message": "The file Formatter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/DateTimePickerDialogFragment.kt:68:1",
+        "message": "The file DateTimePickerDialogFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ListRecyclerViewAdapter.kt:45:1",
+        "message": "The file ListRecyclerViewAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/FeedWatcherApp.kt:97:1",
+        "message": "The file FeedWatcherApp.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/UnitOfWork.kt:26:1",
+        "message": "The file UnitOfWork.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:564:1",
+        "message": "The file DataStore.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/AddResultsAndMarkFeeds.kt:41:1",
+        "message": "The file AddResultsAndMarkFeeds.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/Cursors.kt:27:1",
+        "message": "The file Cursors.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Constants.kt:11:1",
+        "message": "The file Constants.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/AndroidSettings.kt:15:1",
+        "message": "The file AndroidSettings.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Lookup.kt:29:1",
+        "message": "The file Lookup.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "TrailingWhitespace",
+      "description": "Checks which lines end with a whitespace.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/test/java/me/murks/feedwatcher/io/FeedIOTests.kt:51:15",
+        "message": "Line 51 ends with a whitespace."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/test/java/me/murks/feedwatcher/io/FeedIOTests.kt:94:64",
+        "message": "Line 94 ends with a whitespace."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/test/java/me/murks/feedwatcher/io/FeedIOTests.kt:97:15",
+        "message": "Line 97 ends with a whitespace."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/test/java/me/murks/feedwatcher/io/FeedIOTests.kt:9:1",
+        "message": "The import 'java.nio.charset.Charset' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Environment.kt:21:1",
+        "message": "The import 'java.io.Closeable' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/AndroidApplication.kt:4:1",
+        "message": "The import 'android.app.NotificationManager' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/AndroidApplication.kt:5:1",
+        "message": "The import 'android.app.NotificationChannel' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/AndroidApplication.kt:6:1",
+        "message": "The import 'android.os.Build' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/Filter.kt:20:1",
+        "message": "The import 'java.net.URL' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultActivity.kt:3:1",
+        "message": "The import 'android.graphics.Color' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultActivity.kt:5:1",
+        "message": "The import 'android.text.Html' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultActivity.kt:11:1",
+        "message": "The import 'me.murks.feedwatcher.model.Result' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt:29:1",
+        "message": "The import 'android.widget.Button' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt:31:1",
+        "message": "The import 'androidx.annotation.NonNull' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/FeedWatcherApp.kt:26:1",
+        "message": "The import 'java.io.Closeable' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/ResourceTracker.kt:21:1",
+        "message": "The import 'java.net.URLConnection' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:31:1",
+        "message": "The import 'java.io.Closeable' is unused."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Texts.kt:44:5",
+        "message": "Function findUrl has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsTask.kt:38:5",
+        "message": "Function doInBackground has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FilterFactory.kt:28:5",
+        "message": "Function new has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FilterUiModel.kt:40:5",
+        "message": "Function filter has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Texts.kt:55:24",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:102:24",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:102:24",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Notifications.kt:57:43",
+        "message": "Function parameter settings is unused."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/HtmlTags.kt:22:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/HtmlTags.kt:22:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/HtmlTags.kt:23:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/HtmlTags.kt:23:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/HtmlTags.kt:24:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/HtmlTags.kt:24:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/HtmlTags.kt:25:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Jobs.kt:26:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Jobs.kt:26:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Jobs.kt:26:84",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/ResultsRecyclerViewAdapter.kt:61:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/AndroidSettings.kt:14:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/HtmlTags.kt:9:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:61:44",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/ContainsFilter.kt:31:73",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/ContainsFilter.kt:35:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FeedFilter.kt:39:73",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FeedFilter.kt:43:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/NewEntryFilter.kt:32:73",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/NewEntryFilter.kt:36:81",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/NewEntryFilter.kt:40:53",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FilterRecyclerViewAdapter.kt:58:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FilterRecyclerViewAdapter.kt:85:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryRecyclerViewAdapter.kt:48:41",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/FeedWatcherApp.kt:65:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/FeedWatcherApp.kt:69:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Lookup.kt:23:58",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Lookup.kt:27:83",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "ForbiddenVoid",
+      "description": "`Unit` should be used instead of `Void`.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/ActionTask.kt:13:15",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/ActionTask.kt:18:46",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/LoadImageTask.kt:34:88",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/LoadImageTask.kt:34:165",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/LoadImageTask.kt:36:52",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:45:54",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:199:42",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedsRecyclerViewAdapter.kt:41:52",
+        "message": "'Void' should be replaced with 'Unit'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedsRecyclerViewAdapter.kt:86:42",
+        "message": "'Void' should be replaced with 'Unit'."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsTask.kt:22:1",
+        "message": "me.murks.feedwatcher.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FeedActivity.kt:28:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt:35:1",
+        "message": "me.murks.feedwatcher.model.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FilterUiModel.kt:20:1",
+        "message": "me.murks.feedwatcher.model.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FilterRecyclerViewAdapter.kt:27:1",
+        "message": "android.widget.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/DataStore.kt:28:1",
+        "message": "me.murks.feedwatcher.model.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/data/AddResultsAndMarkFeeds.kt:20:1",
+        "message": "me.murks.feedwatcher.model.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FilterFeedsTask.kt:56:33",
+        "message": "Parentheses around the lambda ({ it.value }) are unnecessary and can be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/FilterRecyclerViewAdapter.kt:115:43",
+        "message": "Parentheses in (object: AdapterView.OnItemSelectedListener {\n                override fun onNothingSelected(p0: AdapterView<*>?) {\n                }\n\n                override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {\n                    val newType = FilterType.values()[p2]\n                    uiModel.type = newType\n                    showFilterPanel(newType)\n                }\n            }) are unnecessary and can be replaced with: object: AdapterView.OnItemSelectedListener {\n                override fun onNothingSelected(p0: AdapterView<*>?) {\n                }\n\n                override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {\n                    val newType = FilterType.values()[p2]\n                    uiModel.type = newType\n                    showFilterPanel(newType)\n                }\n            }"
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/LoadImageTask.kt:31:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/FeedUrlTask.kt:34:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt:77:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt:96:51",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/tasks/LoadImageTask.kt:42:43",
+        "message": "Pair is created by using the pair constructor. This can replaced by `url to BitmapFactory.decodeStream(it)`"
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Jobs.kt:21:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/AndroidApplication.kt:6:24",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AndroidApplication."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:29:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of FeedIO."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/PreferencesFragment.kt:18:40",
+        "message": "There should be exactly one empty line in between the package declaration and the list of imports."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:92:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/io/FeedIO.kt:153:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/QueryActivity.kt:135:9",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/OverviewActivity.kt:125:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/OverviewActivity.kt:136:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/OverviewActivity.kt:139:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/OverviewActivity.kt:142:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/activities/OverviewActivity.kt:145:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/ContainsFilter.kt:23:9",
+        "message": "textParameterName can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/FeedFilter.kt:28:9",
+        "message": "feedUrlParameterName can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/NewEntryFilter.kt:29:9",
+        "message": "startDateParameterName can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Constants.kt:8:5",
+        "message": "scanIntervalPreferencesKey can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Constants.kt:9:5",
+        "message": "backgroundScanningPreferencesKey can be a `const val`."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/Constants.kt:10:5",
+        "message": "notificationsPreferencesKey can be a `const val`."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-murks-feedwatcher/app/src/main/java/me/murks/feedwatcher/model/Feed.kt:6:1",
+        "message": "The class Feed defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }]
+  }]
+}

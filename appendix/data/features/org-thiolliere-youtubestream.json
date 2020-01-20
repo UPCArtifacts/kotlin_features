@@ -1,0 +1,185 @@
+{
+  "complexity_metrics": {
+    "loc": 177,
+    "sloc": 132,
+    "lloc": 79,
+    "cloc": 12,
+    "mcc": 20,
+    "n_smell": 15,
+    "comment_ratio": 9,
+    "mcc_per_thlines": 253
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 17,
+    "number_of_string_template": 2,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 18,
+    "number_of_objects_declarations": 0,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 18,
+    "number_of_var_declaration": 19,
+    "number_of_func_call": 78,
+    "number_of_arguments": 74,
+    "number_of_parameters": 4,
+    "number_of_qualified_expressions": 89,
+    "number_of_inheritances": 2,
+    "number_of_unsafe_calls": 4,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 1,
+    "number_of_when_expressions": 1,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 3,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_constructors": 0,
+    "number_of_properties": 17,
+    "number_of_functions": 5,
+    "number_of_interfaces": 0,
+    "number_of_classes": 4,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 4
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/androidTest/java/org/thiolliere/youtubestream/ExampleInstrumentedTest.kt": {
+      "sloc": 14,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "org.thiolliere.youtubestream.ExampleInstrumentedTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/test/java/org/thiolliere/youtubestream/ExampleUnitTest.kt": {
+      "sloc": 9,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "org.thiolliere.youtubestream.ExampleUnitTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/MainActivity.kt": {
+      "sloc": 27,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 4,
+      "class": "org.thiolliere.youtubestream.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/StreamActivity.kt": {
+      "sloc": 82,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 14,
+      "class": "org.thiolliere.youtubestream.StreamActivity"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/StreamActivity.kt:18:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/StreamActivity.kt:18:5",
+        "message": "The function onCreate appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/StreamActivity.kt:80:58",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/MainActivity.kt:25:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/StreamActivity.kt:81:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/StreamActivity.kt:83:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/StreamActivity.kt:92:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/MainActivity.kt:20:29",
+        "message": "getSystemService(Context.CLIPBOARD_SERVICE) cannot be safely cast to ClipboardManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/StreamActivity.kt:32:23",
+        "message": "link cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/StreamActivity.kt:52:14",
+        "message": "url.openConnection() cannot be safely cast to HttpsURLConnection."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/MainActivity.kt:18:26",
+        "message": "Function parameter view is unused."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/StreamActivity.kt:18:5",
+        "message": "Function onCreate has 4 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/StreamActivity.kt:37:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/StreamActivity.kt:53:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-thiolliere-youtubestream/app/src/main/java/org/thiolliere/youtubestream/StreamActivity.kt:86:27",
+        "message": "Pair is created by using the pair constructor. This can replaced by `URLDecoder.decode(streamURL, \"UTF-8\") to URLDecoder.decode(streamFormat, \"UTF-8\")`"
+      }]
+    }]
+  }]
+}

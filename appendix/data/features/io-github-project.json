@@ -1,0 +1,190 @@
+{
+  "complexity_metrics": {
+    "loc": 132,
+    "sloc": 108,
+    "lloc": 69,
+    "cloc": 0,
+    "mcc": 14,
+    "n_smell": 19,
+    "comment_ratio": 0,
+    "mcc_per_thlines": 202
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 20,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 3,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 8,
+    "number_of_objects_declarations": 3,
+    "number_of_companion_objects": 3,
+    "number_of_singletons": 0,
+    "number_of_declaration": 8,
+    "number_of_var_declaration": 8,
+    "number_of_func_call": 35,
+    "number_of_arguments": 39,
+    "number_of_parameters": 22,
+    "number_of_qualified_expressions": 72,
+    "number_of_inheritances": 1,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 0,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 0,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 3,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 0,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 1,
+    "number_of_constructors": 1,
+    "number_of_properties": 8,
+    "number_of_functions": 8,
+    "number_of_interfaces": 0,
+    "number_of_classes": 4,
+    "number_of_packages": 4,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 5
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/destinations/description/RestaurantDetailsActivity.kt": {
+      "sloc": 60,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 9,
+      "class": "io.github.project_travel_mate.destinations.description.RestaurantDetailsActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/helper/KeyboardHelper.kt": {
+      "sloc": 13,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "io.github.project_travel_mate.utilities.helper.KeyboardHelper"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/helper/FlagHelper.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "io.github.project_travel_mate.utilities.helper.FlagHelper"
+    }
+  },
+  "findings": [{
+    "group": "naming",
+    "smells": [{
+      "name": "PackageNaming",
+      "description": "Package names should match the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/destinations/description/RestaurantDetailsActivity.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/ViewUtil.kt:3:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/helper/KeyboardHelper.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/helper/FlagHelper.kt:1:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }]
+    }, {
+      "name": "MatchingDeclarationName",
+      "description": "If a source file contains only a single non-private top-level class or object, the file name should reflect the case-sensitive name plus the .kt extension.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/objects/ApiResources.kt:1:1",
+        "message": "The file name 'ApiResources.kt' does not match the name of the single top-level declaration 'RestaurantDetails'."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/destinations/description/RestaurantDetailsActivity.kt:40:23",
+        "message": "intent.getSerializableExtra(EXTRA_DETAILS) cannot be safely cast to RestaurantDetails."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/destinations/description/RestaurantDetailsActivity.kt:66:23",
+        "message": "restaurant.phoneNumbers cannot be safely cast to String?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/helper/KeyboardHelper.kt:11:23",
+        "message": "activity.getSystemService(Activity.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MayBeConst",
+      "description": "Reports vals that can be const val instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/destinations/description/RestaurantDetailsActivity.kt:19:9",
+        "message": "TAG can be a `const val`."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/ViewUtil.kt:9:64",
+        "message": "The file ViewUtil.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/helper/KeyboardHelper.kt:16:1",
+        "message": "The file KeyboardHelper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/helper/FlagHelper.kt:12:1",
+        "message": "The file FlagHelper.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/objects/ApiResources.kt:21:98",
+        "message": "The file ApiResources.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/helper/KeyboardHelper.kt:5:51",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of KeyboardHelper."
+      }]
+    }, {
+      "name": "UtilityClassWithPublicConstructor",
+      "description": "The class declaration is unnecessary because it only contains utility functions. An object declaration should be used instead.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/helper/KeyboardHelper.kt:8:1",
+        "message": "The class KeyboardHelper only contains utility functions. Consider defining it as an object."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/helper/FlagHelper.kt:6:1",
+        "message": "The class FlagHelper only contains utility functions. Consider defining it as an object."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/helper/FlagHelper.kt:3:1",
+        "message": "The import 'com.blongho.country_data.Country' is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/io/github/project_travel_mate/utilities/helper/FlagHelper.kt:8:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "SerialVersionUIDInSerializableClass",
+      "description": "A class which implements the Serializable interface does not define a correct serialVersionUID field. The serialVersionUID field should be a constant long value inside a companion object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-github-project/Android/app/src/main/java/objects/ApiResources.kt:6:1",
+        "message": "The class RestaurantDetails implements the Serializable interface and should thus define a serialVersionUID."
+      }]
+    }]
+  }]
+}

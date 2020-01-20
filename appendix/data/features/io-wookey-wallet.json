@@ -1,0 +1,2278 @@
+{
+  "complexity_metrics": {
+    "loc": 8229,
+    "sloc": 6678,
+    "lloc": 4555,
+    "cloc": 341,
+    "mcc": 1173,
+    "n_smell": 493,
+    "comment_ratio": 5,
+    "mcc_per_thlines": 257
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 38,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 408,
+    "number_of_string_template": 35,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 29,
+    "number_of_inferred_var": 586,
+    "number_of_objects_declarations": 23,
+    "number_of_companion_objects": 8,
+    "number_of_singletons": 2,
+    "number_of_declaration": 652,
+    "number_of_var_declaration": 652,
+    "number_of_func_call": 3241,
+    "number_of_arguments": 2418,
+    "number_of_parameters": 728,
+    "number_of_qualified_expressions": 3887,
+    "number_of_inheritances": 83,
+    "number_of_unsafe_calls": 30,
+    "number_of_safe_calls": 195,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 14,
+    "number_of_functions_with_default_value": 21,
+    "number_of_function_call_with_named_value": 10,
+    "number_of_named_argument": 17,
+    "number_of_argument_with_default_value": 63,
+    "number_of_overloaded_op": 2,
+    "number_of_extension_function": 38,
+    "number_of_properties_delegation": 2,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 6,
+    "number_of_lambdas": 575,
+    "number_of_possible_smart_casts": 1,
+    "number_of_data_class": 8,
+    "number_of_constructors": 32,
+    "number_of_properties": 652,
+    "number_of_functions": 499,
+    "number_of_interfaces": 6,
+    "number_of_classes": 96,
+    "number_of_packages": 17,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 87
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/App.kt": {
+      "sloc": 52,
+      "number_of_properties": 0,
+      "number_of_functions": 10,
+      "complexity": 11,
+      "class": "io.wookey.wallet.App"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/MainActivity.kt": {
+      "sloc": 91,
+      "number_of_properties": 4,
+      "number_of_functions": 5,
+      "complexity": 17,
+      "class": "io.wookey.wallet.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt": {
+      "sloc": 353,
+      "number_of_properties": 2,
+      "number_of_functions": 54,
+      "complexity": 85,
+      "class": "io.wookey.wallet.core.XMRWalletController"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRRepository.kt": {
+      "sloc": 104,
+      "number_of_properties": 0,
+      "number_of_functions": 9,
+      "complexity": 21,
+      "class": "io.wookey.wallet.core.XMRRepository"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/ActivityStackManager.kt": {
+      "sloc": 92,
+      "number_of_properties": 1,
+      "number_of_functions": 8,
+      "complexity": 22,
+      "class": "io.wookey.wallet.ActivityStackManager"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/NodeEditDialog.kt": {
+      "sloc": 94,
+      "number_of_properties": 3,
+      "number_of_functions": 6,
+      "complexity": 11,
+      "class": "io.wookey.wallet.dialog.NodeEditDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordPromptDialog.kt": {
+      "sloc": 57,
+      "number_of_properties": 2,
+      "number_of_functions": 5,
+      "complexity": 9,
+      "class": "io.wookey.wallet.dialog.PasswordPromptDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/NodeEditViewModel.kt": {
+      "sloc": 31,
+      "number_of_properties": 4,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "io.wookey.wallet.dialog.NodeEditViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/BakMnemonicDialog.kt": {
+      "sloc": 56,
+      "number_of_properties": 2,
+      "number_of_functions": 5,
+      "complexity": 7,
+      "class": "io.wookey.wallet.dialog.BakMnemonicDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/SubAddressEditViewModel.kt": {
+      "sloc": 30,
+      "number_of_properties": 4,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "io.wookey.wallet.dialog.SubAddressEditViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/LoadingDialog.kt": {
+      "sloc": 31,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "io.wookey.wallet.dialog.LoadingDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordViewModel.kt": {
+      "sloc": 35,
+      "number_of_properties": 3,
+      "number_of_functions": 1,
+      "complexity": 5,
+      "class": "io.wookey.wallet.dialog.PasswordViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/SubAddressEditDialog.kt": {
+      "sloc": 90,
+      "number_of_properties": 2,
+      "number_of_functions": 6,
+      "complexity": 11,
+      "class": "io.wookey.wallet.dialog.SubAddressEditDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordDialog.kt": {
+      "sloc": 94,
+      "number_of_properties": 4,
+      "number_of_functions": 6,
+      "complexity": 13,
+      "class": "io.wookey.wallet.dialog.PasswordDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/LengthFilter.kt": {
+      "sloc": 36,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 14,
+      "class": "io.wookey.wallet.support.LengthFilter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/DelegatesExt.kt": {
+      "sloc": 14,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 5,
+      "class": "io.wookey.wallet.support.extensions.DelegatesExt"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/VersionManager.kt": {
+      "sloc": 63,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 10,
+      "class": "io.wookey.wallet.support.VersionManager"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveActivity.kt": {
+      "sloc": 126,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 14,
+      "class": "io.wookey.wallet.feature.asset.ReceiveActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveViewModel.kt": {
+      "sloc": 156,
+      "number_of_properties": 14,
+      "number_of_functions": 8,
+      "complexity": 33,
+      "class": "io.wookey.wallet.feature.asset.ReceiveViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt": {
+      "sloc": 232,
+      "number_of_properties": 22,
+      "number_of_functions": 17,
+      "complexity": 37,
+      "class": "io.wookey.wallet.feature.asset.AssetDetailViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ConfirmTransferActivity.kt": {
+      "sloc": 54,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 5,
+      "class": "io.wookey.wallet.feature.asset.ConfirmTransferActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransferFragment.kt": {
+      "sloc": 108,
+      "number_of_properties": 4,
+      "number_of_functions": 11,
+      "complexity": 19,
+      "class": "io.wookey.wallet.feature.asset.TransferFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransactionDetailViewModel.kt": {
+      "sloc": 21,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 2,
+      "class": "io.wookey.wallet.feature.asset.TransactionDetailViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetViewModel.kt": {
+      "sloc": 38,
+      "number_of_properties": 6,
+      "number_of_functions": 3,
+      "complexity": 7,
+      "class": "io.wookey.wallet.feature.asset.AssetViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailActivity.kt": {
+      "sloc": 185,
+      "number_of_properties": 1,
+      "number_of_functions": 5,
+      "complexity": 24,
+      "class": "io.wookey.wallet.feature.asset.AssetDetailActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransactionDetailActivity.kt": {
+      "sloc": 68,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 10,
+      "class": "io.wookey.wallet.feature.asset.TransactionDetailActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ConfirmTransferViewModel.kt": {
+      "sloc": 54,
+      "number_of_properties": 6,
+      "number_of_functions": 1,
+      "complexity": 7,
+      "class": "io.wookey.wallet.feature.asset.ConfirmTransferViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt": {
+      "sloc": 130,
+      "number_of_properties": 0,
+      "number_of_functions": 7,
+      "complexity": 17,
+      "class": "io.wookey.wallet.feature.asset.AssetFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendViewModel.kt": {
+      "sloc": 139,
+      "number_of_properties": 18,
+      "number_of_functions": 9,
+      "complexity": 29,
+      "class": "io.wookey.wallet.feature.asset.SendViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendActivity.kt": {
+      "sloc": 134,
+      "number_of_properties": 1,
+      "number_of_functions": 5,
+      "complexity": 21,
+      "class": "io.wookey.wallet.feature.asset.SendActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddAddressActivity.kt": {
+      "sloc": 68,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 8,
+      "class": "io.wookey.wallet.feature.address.AddAddressActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddressBookActivity.kt": {
+      "sloc": 98,
+      "number_of_properties": 0,
+      "number_of_functions": 8,
+      "complexity": 16,
+      "class": "io.wookey.wallet.feature.address.AddressBookActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddAddressViewModel.kt": {
+      "sloc": 98,
+      "number_of_properties": 7,
+      "number_of_functions": 4,
+      "complexity": 17,
+      "class": "io.wookey.wallet.feature.address.AddAddressViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/ScanActivity.kt": {
+      "sloc": 98,
+      "number_of_properties": 0,
+      "number_of_functions": 11,
+      "complexity": 20,
+      "class": "io.wookey.wallet.feature.address.ScanActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt": {
+      "sloc": 243,
+      "number_of_properties": 22,
+      "number_of_functions": 12,
+      "complexity": 63,
+      "class": "io.wookey.wallet.feature.generate.GenerateWalletViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryWalletActivity.kt": {
+      "sloc": 43,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 6,
+      "class": "io.wookey.wallet.feature.generate.recovery.RecoveryWalletActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicViewModel.kt": {
+      "sloc": 107,
+      "number_of_properties": 14,
+      "number_of_functions": 6,
+      "complexity": 21,
+      "class": "io.wookey.wallet.feature.generate.recovery.RecoveryMnemonicViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt": {
+      "sloc": 117,
+      "number_of_properties": 16,
+      "number_of_functions": 6,
+      "complexity": 22,
+      "class": "io.wookey.wallet.feature.generate.recovery.RecoveryPrivateKeyViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyFragment.kt": {
+      "sloc": 104,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 11,
+      "class": "io.wookey.wallet.feature.generate.recovery.RecoveryPrivateKeyFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicFragment.kt": {
+      "sloc": 95,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 11,
+      "class": "io.wookey.wallet.feature.generate.recovery.RecoveryMnemonicFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletActivity.kt": {
+      "sloc": 123,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 16,
+      "class": "io.wookey.wallet.feature.generate.GenerateWalletActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/WalletActivity.kt": {
+      "sloc": 35,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "io.wookey.wallet.feature.generate.WalletActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt": {
+      "sloc": 159,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 22,
+      "class": "io.wookey.wallet.feature.generate.create.VerifyMnemonicActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/BackupMnemonicViewModel.kt": {
+      "sloc": 63,
+      "number_of_properties": 10,
+      "number_of_functions": 2,
+      "complexity": 11,
+      "class": "io.wookey.wallet.feature.generate.create.BackupMnemonicViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/BackupMnemonicActivity.kt": {
+      "sloc": 108,
+      "number_of_properties": 3,
+      "number_of_functions": 6,
+      "complexity": 16,
+      "class": "io.wookey.wallet.feature.generate.create.BackupMnemonicActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletManagerViewModel.kt": {
+      "sloc": 35,
+      "number_of_properties": 2,
+      "number_of_functions": 2,
+      "complexity": 8,
+      "class": "io.wookey.wallet.feature.wallet.WalletManagerViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/AddressSettingViewModel.kt": {
+      "sloc": 121,
+      "number_of_properties": 12,
+      "number_of_functions": 7,
+      "complexity": 25,
+      "class": "io.wookey.wallet.feature.wallet.AddressSettingViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailViewModel.kt": {
+      "sloc": 114,
+      "number_of_properties": 17,
+      "number_of_functions": 10,
+      "complexity": 22,
+      "class": "io.wookey.wallet.feature.wallet.WalletDetailViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletManagerActivity.kt": {
+      "sloc": 94,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 12,
+      "class": "io.wookey.wallet.feature.wallet.WalletManagerActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/BackupKeyActivity.kt": {
+      "sloc": 38,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 7,
+      "class": "io.wookey.wallet.feature.wallet.BackupKeyActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/AddressSettingActivity.kt": {
+      "sloc": 108,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 13,
+      "class": "io.wookey.wallet.feature.wallet.AddressSettingActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailActivity.kt": {
+      "sloc": 111,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 12,
+      "class": "io.wookey.wallet.feature.wallet.WalletDetailActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/BackupKeyViewModel.kt": {
+      "sloc": 48,
+      "number_of_properties": 10,
+      "number_of_functions": 1,
+      "complexity": 6,
+      "class": "io.wookey.wallet.feature.wallet.BackupKeyViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt": {
+      "sloc": 115,
+      "number_of_properties": 2,
+      "number_of_functions": 8,
+      "complexity": 20,
+      "class": "io.wookey.wallet.feature.setting.WebViewActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/ContactUsViewModel.kt": {
+      "sloc": 13,
+      "number_of_properties": 2,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "io.wookey.wallet.feature.setting.ContactUsViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/AboutActivity.kt": {
+      "sloc": 38,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 4,
+      "class": "io.wookey.wallet.feature.setting.AboutActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/LanguageActivity.kt": {
+      "sloc": 58,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 8,
+      "class": "io.wookey.wallet.feature.setting.LanguageActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListActivity.kt": {
+      "sloc": 124,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 16,
+      "class": "io.wookey.wallet.feature.setting.NodeListActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/SettingFragment.kt": {
+      "sloc": 69,
+      "number_of_properties": 0,
+      "number_of_functions": 9,
+      "complexity": 12,
+      "class": "io.wookey.wallet.feature.setting.SettingFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/ContactUsActivity.kt": {
+      "sloc": 69,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 10,
+      "class": "io.wookey.wallet.feature.setting.ContactUsActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListViewModel.kt": {
+      "sloc": 118,
+      "number_of_properties": 10,
+      "number_of_functions": 8,
+      "complexity": 26,
+      "class": "io.wookey.wallet.feature.setting.NodeListViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/ContactUs.kt": {
+      "sloc": 4,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "io.wookey.wallet.data.entity.ContactUs"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/Coin.kt": {
+      "sloc": 8,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "io.wookey.wallet.data.entity.Coin"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/SubAddress.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "io.wookey.wallet.data.entity.SubAddress"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/Wallet.kt": {
+      "sloc": 26,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "io.wookey.wallet.data.entity.Wallet"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/Node.kt": {
+      "sloc": 19,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "io.wookey.wallet.data.entity.Node"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/TransactionInfo.kt": {
+      "sloc": 41,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "io.wookey.wallet.data.entity.TransactionInfo"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/Asset.kt": {
+      "sloc": 18,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "io.wookey.wallet.data.entity.Asset"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/AddressBook.kt": {
+      "sloc": 19,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "io.wookey.wallet.data.entity.AddressBook"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/AddressBookDao.kt": {
+      "sloc": 16,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "io.wookey.wallet.data.dao.AddressBookDao"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/TransactionInfoDao.kt": {
+      "sloc": 14,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "io.wookey.wallet.data.dao.TransactionInfoDao"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/AssetDao.kt": {
+      "sloc": 23,
+      "number_of_properties": 0,
+      "number_of_functions": 8,
+      "complexity": 8,
+      "class": "io.wookey.wallet.data.dao.AssetDao"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/WalletDao.kt": {
+      "sloc": 35,
+      "number_of_properties": 0,
+      "number_of_functions": 14,
+      "complexity": 14,
+      "class": "io.wookey.wallet.data.dao.WalletDao"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/NodeDao.kt": {
+      "sloc": 25,
+      "number_of_properties": 0,
+      "number_of_functions": 9,
+      "complexity": 9,
+      "class": "io.wookey.wallet.data.dao.NodeDao"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/AppDatabase.kt": {
+      "sloc": 52,
+      "number_of_properties": 0,
+      "number_of_functions": 8,
+      "complexity": 8,
+      "class": "io.wookey.wallet.data.AppDatabase"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/SplashActivity.kt": {
+      "sloc": 58,
+      "number_of_properties": 2,
+      "number_of_functions": 3,
+      "complexity": 15,
+      "class": "io.wookey.wallet.SplashActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseViewModel.kt": {
+      "sloc": 13,
+      "number_of_properties": 2,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "io.wookey.wallet.base.BaseViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleActivity.kt": {
+      "sloc": 58,
+      "number_of_properties": 1,
+      "number_of_functions": 8,
+      "complexity": 10,
+      "class": "io.wookey.wallet.base.BaseTitleActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseActivity.kt": {
+      "sloc": 27,
+      "number_of_properties": 1,
+      "number_of_functions": 4,
+      "complexity": 6,
+      "class": "io.wookey.wallet.base.BaseActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSearchActivity.kt": {
+      "sloc": 66,
+      "number_of_properties": 4,
+      "number_of_functions": 8,
+      "complexity": 9,
+      "class": "io.wookey.wallet.base.BaseTitleSearchActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSecondActivity.kt": {
+      "sloc": 91,
+      "number_of_properties": 5,
+      "number_of_functions": 17,
+      "complexity": 17,
+      "class": "io.wookey.wallet.base.BaseTitleSecondActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseFragment.kt": {
+      "sloc": 17,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 4,
+      "class": "io.wookey.wallet.base.BaseFragment"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:53:29",
+        "message": "The function createWalletWithKeys has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:295:26",
+        "message": "The function createTransaction has too many parameters. The current threshold is set to 6."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRRepository.kt:50:29",
+        "message": "The function createWalletWithKeys has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:385:5",
+        "message": "The function testRpcService is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveActivity.kt:23:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailActivity.kt:28:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransactionDetailActivity.kt:18:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt:32:5",
+        "message": "The function onActivityCreated is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendActivity.kt:26:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyFragment.kt:25:5",
+        "message": "The function onActivityCreated is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicFragment.kt:27:5",
+        "message": "The function onActivityCreated is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletActivity.kt:29:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:28:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/BackupMnemonicActivity.kt:32:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/BackupKeyActivity.kt:13:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/AddressSettingActivity.kt:28:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailActivity.kt:24:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt:26:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListActivity.kt:30:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:16:1",
+        "message": "Class XMRWalletController is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:21:1",
+        "message": "Class AssetDetailViewModel is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:20:1",
+        "message": "Class GenerateWalletViewModel is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:164:5",
+        "message": "The function startRefresh appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:176:1",
+        "message": "The function formatterAmount appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:207:1",
+        "message": "The function formatterAmountStrip appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveActivity.kt:23:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailActivity.kt:28:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransactionDetailActivity.kt:18:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendActivity.kt:26:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddressBookActivity.kt:26:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:112:5",
+        "message": "The function calculatePasswordStrength appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletActivity.kt:29:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:28:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailViewModel.kt:90:5",
+        "message": "The function deleteWallet appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailActivity.kt:24:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt:26:5",
+        "message": "The function onCreate appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:104:41",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:294:9",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailActivity.kt:35:42",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryWalletActivity.kt:19:46",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryWalletActivity.kt:20:52",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryWalletActivity.kt:18:48",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailViewModel.kt:67:22",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailViewModel.kt:68:22",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:16:1",
+        "message": "Object 'XMRWalletController' with '43' functions detected. Defined threshold inside objects is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:1:1",
+        "message": "File 'Extensions.kt' with '35' functions detected. Defined threshold inside files is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:21:1",
+        "message": "Class 'AssetDetailViewModel' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/ScanActivity.kt:22:1",
+        "message": "Class 'ScanActivity' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:20:1",
+        "message": "Class 'GenerateWalletViewModel' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/WalletDao.kt:7:1",
+        "message": "Interface 'WalletDao' with '14' functions detected. Defined threshold inside interfaces is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSecondActivity.kt:15:1",
+        "message": "Class 'BaseTitleSecondActivity' with '17' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRRepository.kt:102:13",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:148:17",
+        "message": "This condition is too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:151:17",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRRepository.kt:96:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ConfirmTransferActivity.kt:40:52",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailActivity.kt:51:66",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailActivity.kt:61:58",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt:76:46",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendActivity.kt:157:22",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletActivity.kt:139:47",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletActivity.kt:143:47",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:116:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:124:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:132:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailViewModel.kt:98:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletManagerActivity.kt:53:30",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailActivity.kt:88:30",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailActivity.kt:96:30",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailActivity.kt:104:30",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListViewModel.kt:59:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListViewModel.kt:62:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListViewModel.kt:81:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:176:1",
+        "message": "Function formatterAmount is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:207:1",
+        "message": "Function formatterAmountStrip is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/VersionManager.kt:32:5",
+        "message": "Function getLatestReleases is nested too deeply."
+      }]
+    }, {
+      "name": "ComplexInterface",
+      "description": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/WalletDao.kt:7:1",
+        "message": "The interface WalletDao is too complex. Consider splitting it up."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:70:17",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRRepository.kt:34:13",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }, {
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/NodeEditViewModel.kt:29:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/SubAddressEditViewModel.kt:27:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/LoadingDialog.kt:30:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordViewModel.kt:33:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:170:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:201:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:232:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/VersionManager.kt:26:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/VersionManager.kt:66:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveViewModel.kt:59:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:87:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:130:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:244:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ConfirmTransferViewModel.kt:53:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendViewModel.kt:149:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddAddressViewModel.kt:85:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:239:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicViewModel.kt:72:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicViewModel.kt:86:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicViewModel.kt:112:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:82:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:96:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:122:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/BackupMnemonicViewModel.kt:65:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/AddressSettingViewModel.kt:50:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/AddressSettingViewModel.kt:92:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/AddressSettingViewModel.kt:130:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailViewModel.kt:128:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/BackupKeyViewModel.kt:46:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt:91:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt:136:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListViewModel.kt:67:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListViewModel.kt:126:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/LoadingDialog.kt:31:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:171:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:202:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:233:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/FileExtensions.kt:111:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/VersionManager.kt:67:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicViewModel.kt:73:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicViewModel.kt:87:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:83:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:97:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt:92:21",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt:137:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }, {
+      "name": "ThrowingExceptionsWithoutMessageOrCause",
+      "description": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordViewModel.kt:24:38",
+        "message": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveViewModel.kt:47:34",
+        "message": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveViewModel.kt:50:34",
+        "message": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:117:38",
+        "message": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:122:38",
+        "message": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/MainActivity.kt:17:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/MainActivity.kt:18:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveViewModel.kt:29:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransactionDetailViewModel.kt:13:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:259:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/ScanActivity.kt:69:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/AppDatabase.kt:27:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "performance",
+    "smells": [{
+      "name": "SpreadOperator",
+      "description": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRRepository.kt:68:47",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRRepository.kt:99:56",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:210:38",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:211:38",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailViewModel.kt:105:93",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailViewModel.kt:108:74",
+        "message": "Using a spread operator causes a full copy of the array to be created before calling a method has a very high performance penalty."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/MainActivity.kt:71:61",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/MainActivity.kt:73:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/MainActivity.kt:81:61",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/MainActivity.kt:83:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/LoadingDialog.kt:26:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/LoadingDialog.kt:29:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:74:15",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:225:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetViewModel.kt:32:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailActivity.kt:68:34",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendViewModel.kt:142:66",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendViewModel.kt:142:107",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddAddressViewModel.kt:79:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddAddressViewModel.kt:80:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddAddressViewModel.kt:81:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:206:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:226:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:230:64",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:231:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:233:60",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicViewModel.kt:107:82",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicViewModel.kt:108:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:117:88",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:117:105",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:117:122",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:118:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/AddressSettingViewModel.kt:80:46",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/AddressSettingViewModel.kt:104:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListViewModel.kt:101:64",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListViewModel.kt:102:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:123:15",
+        "message": "context.getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt:37:33",
+        "message": "activity cannot be safely cast to AppCompatActivity?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/SettingFragment.kt:29:33",
+        "message": "activity cannot be safely cast to AppCompatActivity?."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSearchActivity.kt:67:18",
+        "message": "search.layoutParams cannot be safely cast to Toolbar.LayoutParams."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveActivity.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransferFragment.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailActivity.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendActivity.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddAddressActivity.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicViewModel.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicViewModel.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:34:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletActivity.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt:23:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleActivity.kt:13:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSearchActivity.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSearchActivity.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSearchActivity.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSearchActivity.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSecondActivity.kt:17:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSecondActivity.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSecondActivity.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSecondActivity.kt:20:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSecondActivity.kt:21:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/App.kt:67:1",
+        "message": "The file App.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/MainActivity.kt:107:1",
+        "message": "The file MainActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:436:1",
+        "message": "The file XMRWalletController.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRRepository.kt:119:1",
+        "message": "The file XMRRepository.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/ActivityStackManager.kt:107:1",
+        "message": "The file ActivityStackManager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/NodeEditDialog.kt:113:1",
+        "message": "The file NodeEditDialog.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordPromptDialog.kt:70:1",
+        "message": "The file PasswordPromptDialog.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/NodeEditViewModel.kt:36:1",
+        "message": "The file NodeEditViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/BakMnemonicDialog.kt:68:1",
+        "message": "The file BakMnemonicDialog.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/SubAddressEditViewModel.kt:34:1",
+        "message": "The file SubAddressEditViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/LoadingDialog.kt:35:1",
+        "message": "The file LoadingDialog.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordViewModel.kt:40:1",
+        "message": "The file PasswordViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/SubAddressEditDialog.kt:110:1",
+        "message": "The file SubAddressEditDialog.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordDialog.kt:111:1",
+        "message": "The file PasswordDialog.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/LengthFilter.kt:65:1",
+        "message": "The file LengthFilter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:350:1",
+        "message": "The file Extensions.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/SharedPreferencesExt.kt:46:1",
+        "message": "The file SharedPreferencesExt.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/DelegatesExt.kt:22:1",
+        "message": "The file DelegatesExt.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/VersionManager.kt:70:1",
+        "message": "The file VersionManager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveActivity.kt:152:1",
+        "message": "The file ReceiveActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveViewModel.kt:172:1",
+        "message": "The file ReceiveViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:272:1",
+        "message": "The file AssetDetailViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ConfirmTransferActivity.kt:67:1",
+        "message": "The file ConfirmTransferActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransferFragment.kt:127:1",
+        "message": "The file TransferFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransactionDetailViewModel.kt:23:1",
+        "message": "The file TransactionDetailViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetViewModel.kt:47:1",
+        "message": "The file AssetViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailActivity.kt:221:1",
+        "message": "The file AssetDetailActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransactionDetailActivity.kt:79:1",
+        "message": "The file TransactionDetailActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ConfirmTransferViewModel.kt:61:1",
+        "message": "The file ConfirmTransferViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt:156:1",
+        "message": "The file AssetFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendViewModel.kt:159:1",
+        "message": "The file SendViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendActivity.kt:160:1",
+        "message": "The file SendActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddAddressActivity.kt:83:1",
+        "message": "The file AddAddressActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddAddressViewModel.kt:108:1",
+        "message": "The file AddAddressViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:267:1",
+        "message": "The file GenerateWalletViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicViewModel.kt:123:1",
+        "message": "The file RecoveryMnemonicViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:134:1",
+        "message": "The file RecoveryPrivateKeyViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyFragment.kt:126:1",
+        "message": "The file RecoveryPrivateKeyFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicFragment.kt:116:1",
+        "message": "The file RecoveryMnemonicFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:182:1",
+        "message": "The file VerifyMnemonicActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/BackupMnemonicViewModel.kt:73:1",
+        "message": "The file BackupMnemonicViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/BackupMnemonicActivity.kt:131:1",
+        "message": "The file BackupMnemonicActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletManagerViewModel.kt:40:1",
+        "message": "The file WalletManagerViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/AddressSettingViewModel.kt:136:1",
+        "message": "The file AddressSettingViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletManagerActivity.kt:109:1",
+        "message": "The file WalletManagerActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/BackupKeyActivity.kt:46:1",
+        "message": "The file BackupKeyActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/AddressSettingActivity.kt:126:1",
+        "message": "The file AddressSettingActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailActivity.kt:128:1",
+        "message": "The file WalletDetailActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/BackupKeyViewModel.kt:54:1",
+        "message": "The file BackupKeyViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt:150:1",
+        "message": "The file WebViewActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/ContactUsViewModel.kt:18:1",
+        "message": "The file ContactUsViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/AboutActivity.kt:45:1",
+        "message": "The file AboutActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/LanguageActivity.kt:66:1",
+        "message": "The file LanguageActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListActivity.kt:140:1",
+        "message": "The file NodeListActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/SettingFragment.kt:89:1",
+        "message": "The file SettingFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/ContactUsActivity.kt:82:1",
+        "message": "The file ContactUsActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListViewModel.kt:137:1",
+        "message": "The file NodeListViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/ContactUs.kt:5:42",
+        "message": "The file ContactUs.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/Coin.kt:10:47",
+        "message": "The file Coin.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/SubAddress.kt:7:117",
+        "message": "The file SubAddress.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/Wallet.kt:28:43",
+        "message": "The file Wallet.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/Node.kt:21:53",
+        "message": "The file Node.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/TransactionInfo.kt:43:14",
+        "message": "The file TransactionInfo.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/Asset.kt:20:54",
+        "message": "The file Asset.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/AddressBook.kt:21:44",
+        "message": "The file AddressBook.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/AddressBookDao.kt:36:1",
+        "message": "The file AddressBookDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/TransactionInfoDao.kt:40:1",
+        "message": "The file TransactionInfoDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/AssetDao.kt:73:1",
+        "message": "The file AssetDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/WalletDao.kt:121:1",
+        "message": "The file WalletDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/NodeDao.kt:81:1",
+        "message": "The file NodeDao.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/AppDatabase.kt:62:1",
+        "message": "The file AppDatabase.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseViewModel.kt:16:1",
+        "message": "The file BaseViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleActivity.kt:73:1",
+        "message": "The file BaseTitleActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseActivity.kt:35:1",
+        "message": "The file BaseActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSearchActivity.kt:79:1",
+        "message": "The file BaseTitleSearchActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSecondActivity.kt:111:1",
+        "message": "The file BaseTitleSecondActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseFragment.kt:21:1",
+        "message": "The file BaseFragment.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/App.kt:10:1",
+        "message": "io.wookey.wallet.support.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/App.kt:11:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:8:1",
+        "message": "io.wookey.monero.model.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:12:1",
+        "message": "java.io.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordDialog.kt:8:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:15:1",
+        "message": "android.text.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt:20:1",
+        "message": "io.wookey.wallet.support.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyFragment.kt:16:1",
+        "message": "io.wookey.wallet.support.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicFragment.kt:16:1",
+        "message": "io.wookey.wallet.support.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:10:1",
+        "message": "com.google.android.flexbox.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletManagerActivity.kt:20:1",
+        "message": "io.wookey.wallet.support.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt:13:1",
+        "message": "android.webkit.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/LanguageActivity.kt:13:1",
+        "message": "io.wookey.wallet.support.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/Wallet.kt:3:1",
+        "message": "android.arch.persistence.room.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/Node.kt:3:1",
+        "message": "android.arch.persistence.room.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/TransactionInfo.kt:3:1",
+        "message": "android.arch.persistence.room.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/entity/Asset.kt:3:1",
+        "message": "android.arch.persistence.room.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/TransactionInfoDao.kt:3:1",
+        "message": "android.arch.persistence.room.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/AssetDao.kt:4:1",
+        "message": "android.arch.persistence.room.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/WalletDao.kt:4:1",
+        "message": "android.arch.persistence.room.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/dao/NodeDao.kt:4:1",
+        "message": "android.arch.persistence.room.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/AppDatabase.kt:10:1",
+        "message": "io.wookey.wallet.data.dao.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/AppDatabase.kt:11:1",
+        "message": "io.wookey.wallet.data.entity.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/SplashActivity.kt:10:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/App.kt:8:1",
+        "message": "The import 'android.util.Log' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/App.kt:12:1",
+        "message": "The import 'org.json.JSONObject' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/App.kt:13:1",
+        "message": "The import 'java.io.BufferedReader' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/App.kt:14:1",
+        "message": "The import 'java.io.InputStreamReader' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/App.kt:15:1",
+        "message": "The import 'java.net.HttpURLConnection' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/App.kt:16:1",
+        "message": "The import 'java.net.URL' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddAddressViewModel.kt:12:1",
+        "message": "The import 'io.wookey.wallet.support.REQUEST_SELECT_COIN' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailActivity.kt:15:1",
+        "message": "The import 'io.wookey.wallet.support.BackgroundHelper' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailActivity.kt:16:1",
+        "message": "The import 'io.wookey.wallet.support.extensions.copy' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailActivity.kt:17:1",
+        "message": "The import 'io.wookey.wallet.support.extensions.dp2px' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListActivity.kt:7:1",
+        "message": "The import 'android.net.Uri' is unused."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/MainActivity.kt:32:145",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/MainActivity.kt:33:151",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRRepository.kt:17:142",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRRepository.kt:21:137",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/NodeEditDialog.kt:99:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordDialog.kt:93:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/LengthFilter.kt:8:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt:118:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt:138:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendViewModel.kt:142:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddressBookActivity.kt:89:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddressBookActivity.kt:102:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:117:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/BackupMnemonicActivity.kt:66:33",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletManagerActivity.kt:74:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletManagerActivity.kt:87:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt:145:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListActivity.kt:100:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/ContactUsActivity.kt:59:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/ContactUsActivity.kt:72:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/data/AppDatabase.kt:13:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSearchActivity.kt:33:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:140:5",
+        "message": "Function startWallet has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/LengthFilter.kt:8:5",
+        "message": "Function filter has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:176:1",
+        "message": "Function formatterAmount has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:207:1",
+        "message": "Function formatterAmountStrip has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/FileExtensions.kt:99:1",
+        "message": "Function createOrExistsFile has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:179:5",
+        "message": "Function updateBalance has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailActivity.kt:28:5",
+        "message": "Function onCreate has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendViewModel.kt:57:5",
+        "message": "Function checkValid has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddAddressViewModel.kt:47:5",
+        "message": "Function checkValid has 5 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/ScanActivity.kt:102:5",
+        "message": "Function hasPermissions has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:184:5",
+        "message": "Function checkValid has 8 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicViewModel.kt:41:5",
+        "message": "Function checkValid has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyViewModel.kt:49:5",
+        "message": "Function checkValid has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:28:5",
+        "message": "Function onCreate has 4 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "ThrowsCount",
+      "description": "Restrict the number of throw statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:327:5",
+        "message": "Too many throw statements in the function sendTransaction. The maximum number of allowed throw statements is 2."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:196:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:376:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:385:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRWalletController.kt:385:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/NodeEditDialog.kt:43:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/NodeEditDialog.kt:46:104",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordPromptDialog.kt:35:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordPromptDialog.kt:38:104",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/BakMnemonicDialog.kt:34:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/BakMnemonicDialog.kt:37:100",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/LoadingDialog.kt:21:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/LoadingDialog.kt:23:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/SubAddressEditDialog.kt:42:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/SubAddressEditDialog.kt:45:104",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordDialog.kt:40:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordDialog.kt:43:104",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:257:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:257:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/VersionManager.kt:34:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/VersionManager.kt:34:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/VersionManager.kt:60:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveActivity.kt:43:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveActivity.kt:45:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveActivity.kt:46:100",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveViewModel.kt:54:101",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveViewModel.kt:109:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveViewModel.kt:109:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveViewModel.kt:139:90",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ReceiveViewModel.kt:151:90",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:151:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:166:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:166:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailViewModel.kt:172:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransferFragment.kt:42:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransferFragment.kt:61:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransactionDetailViewModel.kt:18:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailActivity.kt:71:79",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailActivity.kt:187:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetDetailActivity.kt:196:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/ConfirmTransferViewModel.kt:48:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt:59:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt:59:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt:59:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt:60:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt:62:103",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendViewModel.kt:109:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendViewModel.kt:110:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/SendViewModel.kt:112:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddressBookActivity.kt:61:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/ScanActivity.kt:66:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/ScanActivity.kt:84:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:101:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:114:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:117:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:131:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:134:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:137:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:139:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:140:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:143:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:146:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:155:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:155:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:159:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:159:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:160:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:160:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:161:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:162:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyFragment.kt:46:99",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyFragment.kt:102:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyFragment.kt:105:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicFragment.kt:92:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicFragment.kt:95:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletActivity.kt:55:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletActivity.kt:56:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletActivity.kt:58:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:35:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:40:96",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:42:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:43:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:44:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:61:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:149:106",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/BackupMnemonicActivity.kt:55:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/BackupMnemonicActivity.kt:56:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/BackupMnemonicActivity.kt:60:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/BackupMnemonicActivity.kt:114:106",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletManagerViewModel.kt:29:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletManagerActivity.kt:92:118",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/AddressSettingActivity.kt:40:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/AddressSettingActivity.kt:41:97",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/AddressSettingActivity.kt:60:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/wallet/WalletDetailActivity.kt:42:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt:47:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/AboutActivity.kt:38:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/LanguageActivity.kt:36:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListActivity.kt:55:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListActivity.kt:72:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListActivity.kt:123:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/SettingFragment.kt:56:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/ContactUsActivity.kt:41:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListViewModel.kt:128:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/NodeListViewModel.kt:128:41",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/SplashActivity.kt:21:19",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleSearchActivity.kt:33:124",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRRepository.kt:16:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRRepository.kt:20:49",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/core/XMRRepository.kt:39:69",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/ActivityStackManager.kt:40:31",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/NodeEditDialog.kt:33:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordPromptDialog.kt:27:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/BakMnemonicDialog.kt:27:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/SubAddressEditDialog.kt:32:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/dialog/PasswordDialog.kt:30:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:87:45",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:91:36",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:101:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:105:33",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:109:29",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:118:24",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:162:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransferFragment.kt:33:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransferFragment.kt:37:52",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransferFragment.kt:41:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/TransferFragment.kt:46:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/asset/AssetFragment.kt:28:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryPrivateKeyFragment.kt:21:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicFragment.kt:23:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/SettingFragment.kt:22:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleActivity.kt:46:32",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleActivity.kt:50:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleActivity.kt:66:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/base/BaseTitleActivity.kt:70:33",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:152:21",
+        "message": "Parentheses in ((width / rate).toInt()) are unnecessary and can be replaced with: (width / rate).toInt()"
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:188:22",
+        "message": "Private property i is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:195:18",
+        "message": "Private property i is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/Extensions.kt:223:22",
+        "message": "Private property i is unused."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/extensions/DelegatesExt.kt:18:22",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/support/VersionManager.kt:56:17",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/address/AddAddressViewModel.kt:98:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:214:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/GenerateWalletViewModel.kt:217:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/recovery/RecoveryMnemonicFragment.kt:18:67",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of RecoveryMnemonicFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/generate/create/VerifyMnemonicActivity.kt:23:61",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of VerifyMnemonicActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt:18:57",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of WebViewActivity."
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/io-wookey-wallet/app/src/main/java/io/wookey/wallet/feature/setting/WebViewActivity.kt:72:9",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }]
+  }]
+}

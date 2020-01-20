@@ -1,0 +1,559 @@
+{
+  "complexity_metrics": {
+    "loc": 1903,
+    "sloc": 1598,
+    "lloc": 1137,
+    "cloc": 72,
+    "mcc": 398,
+    "n_smell": 120,
+    "comment_ratio": 4,
+    "mcc_per_thlines": 350
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 653,
+    "number_of_string_template": 81,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 1,
+    "number_of_inferred_var": 295,
+    "number_of_objects_declarations": 3,
+    "number_of_companion_objects": 3,
+    "number_of_singletons": 0,
+    "number_of_declaration": 306,
+    "number_of_var_declaration": 313,
+    "number_of_func_call": 1178,
+    "number_of_arguments": 990,
+    "number_of_parameters": 178,
+    "number_of_qualified_expressions": 1372,
+    "number_of_inheritances": 7,
+    "number_of_unsafe_calls": 16,
+    "number_of_safe_calls": 59,
+    "number_of_destructuring_declarations": 7,
+    "number_of_when_expressions": 14,
+    "number_of_functions_with_default_value": 3,
+    "number_of_function_call_with_named_value": 1,
+    "number_of_named_argument": 1,
+    "number_of_argument_with_default_value": 3,
+    "number_of_overloaded_op": 1,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 110,
+    "number_of_possible_smart_casts": 9,
+    "number_of_data_class": 0,
+    "number_of_constructors": 3,
+    "number_of_properties": 299,
+    "number_of_functions": 89,
+    "number_of_interfaces": 0,
+    "number_of_classes": 7,
+    "number_of_packages": 2,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 7
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt": {
+      "sloc": 506,
+      "number_of_properties": 7,
+      "number_of_functions": 25,
+      "complexity": 148,
+      "class": "de.geeksfactory.opacclient.apis.NetBiblio"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt": {
+      "sloc": 351,
+      "number_of_properties": 3,
+      "number_of_functions": 27,
+      "complexity": 75,
+      "class": "de.geeksfactory.opacclient.apis.Arena"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt": {
+      "sloc": 488,
+      "number_of_properties": 7,
+      "number_of_functions": 24,
+      "complexity": 140,
+      "class": "de.geeksfactory.opacclient.apis.Koha"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:24:1",
+        "message": "Class NetBiblio is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:20:1",
+        "message": "Class Arena is too large. Consider splitting it into smaller pieces."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:21:1",
+        "message": "Class Koha is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:55:5",
+        "message": "The function parseSearchFields appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:113:5",
+        "message": "The function search appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:251:5",
+        "message": "The function parseDetail appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:323:5",
+        "message": "The function reservation appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:453:5",
+        "message": "The function parseItems appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:207:5",
+        "message": "The function parseDetail appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:72:5",
+        "message": "The function parseSearch appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:231:5",
+        "message": "The function parseDetail appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:332:5",
+        "message": "The function reservation appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:490:5",
+        "message": "The function parseItems appears to be too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:128:26",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:364:28",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:188:41",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:383:32",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:88:45",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:64:24",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:434:33",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:127:26",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:123:32",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:97:39",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:120:40",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:58:36",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:88:31",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:271:43",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:118:39",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:235:55",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:154:24",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:349:24",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:24:1",
+        "message": "Class 'NetBiblio' with '25' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:20:1",
+        "message": "Class 'Arena' with '27' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:21:1",
+        "message": "Class 'Koha' with '24' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:231:5",
+        "message": "Function parseDetail is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:332:5",
+        "message": "Function reservation is nested too deeply."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:36:13",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }, {
+      "name": "NotImplementedDeclaration",
+      "description": "The NotImplementedDeclaration should only be used when a method stub is necessary. This defers the development of the functionality of this function. Hence, the NotImplementedDeclaration should only serve as a temporary declaration. Before releasing, this type of declaration should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:160:9",
+        "message": "The NotImplementedDeclaration should only be used when a method stub is necessary. This defers the development of the functionality of this function. Hence, the NotImplementedDeclaration should only serve as a temporary declaration. Before releasing, this type of declaration should be removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:587:9",
+        "message": "The NotImplementedDeclaration should only be used when a method stub is necessary. This defers the development of the functionality of this function. Hence, the NotImplementedDeclaration should only serve as a temporary declaration. Before releasing, this type of declaration should be removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "MatchingDeclarationName",
+      "description": "If a source file contains only a single non-private top-level class or object, the file name should reflect the case-sensitive name plus the .kt extension.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/test/java/de/geeksfactory/opacclient/apis/KohaTest.kt:1:1",
+        "message": "The file name 'KohaTest.kt' does not match the name of the single top-level declaration 'KohaAccountTest'."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/test/java/de/geeksfactory/opacclient/apis/NetBiblioTest.kt:1:1",
+        "message": "The file name 'NetBiblioTest.kt' does not match the name of the single top-level declaration 'NetBiblioAccountTest'."
+      }]
+    }, {
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:26:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:27:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:27:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:31:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:32:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:330:5",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:31:41",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:26:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:176:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:330:59",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:358:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:394:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:523:60",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:526:68",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:527:90",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:579:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:579:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:155:18",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:155:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:95:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:123:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:131:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:133:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:218:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:34:28",
+        "message": "library.data[\"baseurl\"] cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:101:37",
+        "message": "field.previousSibling() cannot be safely cast to TextNode."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/test/java/de/geeksfactory/opacclient/apis/KohaTest.kt:5:1",
+        "message": "The import 'org.json.JSONObject' is unused."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:210:5",
+        "message": "Function getDivibibStatus has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:323:5",
+        "message": "Function reservation has 7 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:128:5",
+        "message": "Function getCover has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:163:5",
+        "message": "Function searchGetPage has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:246:5",
+        "message": "Function reservation has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:279:5",
+        "message": "Function prolong has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:307:5",
+        "message": "Function cancel has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:332:5",
+        "message": "Function reservation has 8 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:419:5",
+        "message": "Function prolong has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:540:5",
+        "message": "Function parseDate has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:5:1",
+        "message": "de.geeksfactory.opacclient.objects.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:6:1",
+        "message": "de.geeksfactory.opacclient.objects.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:5:1",
+        "message": "de.geeksfactory.opacclient.objects.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:6:1",
+        "message": "de.geeksfactory.opacclient.searchfields.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:329:153",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:149:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:246:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:282:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:296:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:106:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:273:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:296:41",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:332:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:427:142",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:441:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:464:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:516:154",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:359:60",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:27:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:219:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:330:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:236:93",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:316:58",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:554:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:242:58",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:302:110",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:378:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:407:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:414:41",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:418:63",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:324:58",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:569:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:578:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/NetBiblio.kt:523:36",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:425:1",
+        "message": "The file Arena.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/utils/KotlinUtils.kt:25:23",
+        "message": "The file KotlinUtils.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:331:9",
+        "message": "Private property profileDoc is unused."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Arena.kt:155:13",
+        "message": "Pair is created by using the pair constructor. This can replaced by `match.groups[2]!!.value to match.groups[1]!!.value`"
+      }]
+    }, {
+      "name": "VarCouldBeVal",
+      "description": "Var declaration could be val.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:425:9",
+        "message": "Variable 'borrowernumber' could be val."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/de-geeksfactory-opacclient/opacclient/libopac/src/main/java/de/geeksfactory/opacclient/apis/Koha.kt:439:9",
+        "message": "Variable 'borrowernumber' could be val."
+      }]
+    }]
+  }]
+}

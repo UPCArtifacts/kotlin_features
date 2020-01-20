@@ -1,0 +1,449 @@
+{
+  "complexity_metrics": {
+    "loc": 842,
+    "sloc": 605,
+    "lloc": 477,
+    "cloc": 84,
+    "mcc": 88,
+    "n_smell": 100,
+    "comment_ratio": 13,
+    "mcc_per_thlines": 184
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 49,
+    "number_of_string_template": 16,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 70,
+    "number_of_objects_declarations": 0,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 82,
+    "number_of_var_declaration": 82,
+    "number_of_func_call": 185,
+    "number_of_arguments": 404,
+    "number_of_parameters": 142,
+    "number_of_qualified_expressions": 272,
+    "number_of_inheritances": 15,
+    "number_of_unsafe_calls": 1,
+    "number_of_safe_calls": 13,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 4,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 2,
+    "number_of_lambdas": 7,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_constructors": 15,
+    "number_of_properties": 82,
+    "number_of_functions": 50,
+    "number_of_interfaces": 0,
+    "number_of_classes": 23,
+    "number_of_packages": 2,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 3
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/activity/ConfigureControls.kt": {
+      "sloc": 90,
+      "number_of_properties": 2,
+      "number_of_functions": 11,
+      "complexity": 15,
+      "class": "ui.activity.ConfigureControls"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt": {
+      "sloc": 168,
+      "number_of_properties": 3,
+      "number_of_functions": 14,
+      "complexity": 25,
+      "class": "ui.controls.Osk"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt": {
+      "sloc": 347,
+      "number_of_properties": 5,
+      "number_of_functions": 25,
+      "complexity": 48,
+      "class": "ui.controls.Osc"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:459:25",
+        "message": "The function relayout has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:119:22",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:122:20",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:121:20",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:120:20",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:461:13",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:193:13",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/activity/ConfigureControls.kt:39:28",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/activity/ConfigureControls.kt:43:26",
+        "message": "view.tag cannot be safely cast to OscElement."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/activity/ConfigureControls.kt:79:19",
+        "message": "view.tag cannot be safely cast to OscElement."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/activity/ConfigureControls.kt:86:19",
+        "message": "view.tag cannot be safely cast to OscElement."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:102:32",
+        "message": "v.parent cannot be safely cast to View."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:103:33",
+        "message": "v.parent cannot be safely cast to View."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/activity/ConfigureControls.kt:40:26",
+        "message": "Parentheses in (event.rawX - startX) are unnecessary and can be replaced with: event.rawX - startX"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/activity/ConfigureControls.kt:41:26",
+        "message": "Parentheses in (event.rawY - startY) are unnecessary and can be replaced with: event.rawY - startY"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:191:26",
+        "message": "Parentheses in (line.length - 1) are unnecessary and can be replaced with: line.length - 1"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/activity/ConfigureControls.kt:92:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/activity/ConfigureControls.kt:96:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/activity/ConfigureControls.kt:100:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/activity/ConfigureControls.kt:104:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:65:19",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:170:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:171:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:172:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:174:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:175:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:182:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:184:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:200:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:200:116",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:218:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:223:72",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:223:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:226:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:226:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:227:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:238:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:307:12",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:314:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:319:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:319:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:319:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:321:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:321:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:321:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:323:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:325:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:327:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:330:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:330:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:332:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:332:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:334:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:334:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:336:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:336:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:338:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:338:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:338:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:340:40",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:340:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:342:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:342:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:342:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:344:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:347:29",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:347:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:350:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:350:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:350:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:352:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:352:18",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:352:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:359:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:359:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:359:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:359:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:360:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:362:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:362:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:365:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:369:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:372:20",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/activity/ConfigureControls.kt:111:19",
+        "message": "Function parameter v is unused."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:200:144",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:99:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:68:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:328:9",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "UnnecessaryAbstractClass",
+      "description": "An abstract class is unnecessary and can be refactored. An abstract class should have both abstract and concrete properties or functions. An abstract class without a concrete member can be refactored to an interface. An abstract class without an abstract member can be refactored to a concrete class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:23:1",
+        "message": "An abstract class without an abstract member can be refactored to a concrete class."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:250:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osk.kt:250:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:267:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:403:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:403:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:429:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:447:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:455:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:461:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:6:1",
+        "message": "The import 'android.util.Log' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-libopenmw-openmw/app/src/main/java/ui/controls/Osc.kt:16:1",
+        "message": "The import 'ui.activity.GameActivity' is unused."
+      }]
+    }]
+  }]
+}

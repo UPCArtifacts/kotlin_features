@@ -1,0 +1,322 @@
+{
+  "complexity_metrics": {
+    "loc": 619,
+    "sloc": 522,
+    "lloc": 366,
+    "cloc": 32,
+    "mcc": 81,
+    "n_smell": 45,
+    "comment_ratio": 6,
+    "mcc_per_thlines": 221
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 90,
+    "number_of_string_template": 4,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 3,
+    "number_of_inferred_var": 84,
+    "number_of_objects_declarations": 0,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 101,
+    "number_of_var_declaration": 103,
+    "number_of_func_call": 235,
+    "number_of_arguments": 232,
+    "number_of_parameters": 36,
+    "number_of_qualified_expressions": 360,
+    "number_of_inheritances": 5,
+    "number_of_unsafe_calls": 9,
+    "number_of_safe_calls": 6,
+    "number_of_destructuring_declarations": 2,
+    "number_of_when_expressions": 5,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 3,
+    "number_of_named_argument": 3,
+    "number_of_argument_with_default_value": 6,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 4,
+    "number_of_lambdas": 12,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 1,
+    "number_of_constructors": 1,
+    "number_of_properties": 99,
+    "number_of_functions": 22,
+    "number_of_interfaces": 0,
+    "number_of_classes": 8,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 8
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/androidTest/java/com/ahorcado/ExampleInstrumentedTest.kt": {
+      "sloc": 14,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.ahorcado.ExampleInstrumentedTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/test/java/com/ahorcado/ExampleUnitTest.kt": {
+      "sloc": 9,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.ahorcado.ExampleUnitTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/MainActivity.kt": {
+      "sloc": 72,
+      "number_of_properties": 2,
+      "number_of_functions": 3,
+      "complexity": 8,
+      "class": "com.ahorcado.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/MiJuego.kt": {
+      "sloc": 9,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.ahorcado.MiJuego"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/InfoActivity.kt": {
+      "sloc": 35,
+      "number_of_properties": 2,
+      "number_of_functions": 2,
+      "complexity": 5,
+      "class": "com.ahorcado.InfoActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/MarcadorActivity.kt": {
+      "sloc": 53,
+      "number_of_properties": 2,
+      "number_of_functions": 3,
+      "complexity": 5,
+      "class": "com.ahorcado.MarcadorActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/SettingsActivity.kt": {
+      "sloc": 79,
+      "number_of_properties": 2,
+      "number_of_functions": 3,
+      "complexity": 9,
+      "class": "com.ahorcado.SettingsActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt": {
+      "sloc": 251,
+      "number_of_properties": 4,
+      "number_of_functions": 9,
+      "complexity": 52,
+      "class": "com.ahorcado.JuegoActivity"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/SettingsActivity.kt:21:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:30:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/SettingsActivity.kt:35:53",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/SettingsActivity.kt:35:31",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:23:1",
+        "message": "Class JuegoActivity is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:30:5",
+        "message": "The function onCreate appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:177:5",
+        "message": "The function vocabulario appears to be too complex."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:245:47",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/InfoActivity.kt:31:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:164:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:181:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/MainActivity.kt:14:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/InfoActivity.kt:11:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/MarcadorActivity.kt:13:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/SettingsActivity.kt:18:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:25:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:27:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/MainActivity.kt:26:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/InfoActivity.kt:22:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/MarcadorActivity.kt:24:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/SettingsActivity.kt:29:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/SettingsActivity.kt:83:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:267:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:267:42",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:268:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:269:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/SettingsActivity.kt:55:32",
+        "message": "parent.getItemAtPosition(position) cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/SettingsActivity.kt:70:22",
+        "message": "getSystemService(Context.CONNECTIVITY_SERVICE) cannot be safely cast to ConnectivityManager."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/MainActivity.kt:81:9",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/MarcadorActivity.kt:58:9",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/SettingsActivity.kt:94:9",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/MiJuego.kt:10:1",
+        "message": "The file MiJuego.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/SettingsActivity.kt:84:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/SettingsActivity.kt:67:28",
+        "message": "Parentheses in (binding.textNivel.text) are unnecessary and can be replaced with: binding.textNivel.text"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/SettingsActivity.kt:85:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:95:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:99:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:100:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:101:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:102:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:162:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:162:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:166:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:183:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-ahorcado/app/src/main/java/com/ahorcado/JuegoActivity.kt:231:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }]
+  }]
+}

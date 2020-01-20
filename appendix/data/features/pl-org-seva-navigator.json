@@ -1,0 +1,720 @@
+{
+  "complexity_metrics": {
+    "loc": 4220,
+    "sloc": 2458,
+    "lloc": 1572,
+    "cloc": 1089,
+    "mcc": 392,
+    "n_smell": 82,
+    "comment_ratio": 44,
+    "mcc_per_thlines": 249
+  },
+  "metrics": {
+    "number_of_type_alias": 1,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 23,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 114,
+    "number_of_string_template": 6,
+    "number_of_inline_func": 5,
+    "number_of_inferred_fun": 94,
+    "number_of_inferred_var": 243,
+    "number_of_objects_declarations": 28,
+    "number_of_companion_objects": 26,
+    "number_of_singletons": 0,
+    "number_of_declaration": 295,
+    "number_of_var_declaration": 295,
+    "number_of_func_call": 1061,
+    "number_of_arguments": 743,
+    "number_of_parameters": 251,
+    "number_of_qualified_expressions": 1147,
+    "number_of_inheritances": 26,
+    "number_of_unsafe_calls": 1,
+    "number_of_safe_calls": 19,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 8,
+    "number_of_functions_with_default_value": 7,
+    "number_of_function_call_with_named_value": 8,
+    "number_of_named_argument": 13,
+    "number_of_argument_with_default_value": 12,
+    "number_of_overloaded_op": 3,
+    "number_of_extension_function": 54,
+    "number_of_properties_delegation": 30,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 149,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 2,
+    "number_of_constructors": 18,
+    "number_of_properties": 295,
+    "number_of_functions": 258,
+    "number_of_interfaces": 1,
+    "number_of_classes": 54,
+    "number_of_packages": 14,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 59
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/settings/SettingsFragment.kt": {
+      "sloc": 35,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 6,
+      "class": "pl.org.seva.navigator.settings.SettingsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/settings/SettingsFragmentContainer.kt": {
+      "sloc": 4,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "pl.org.seva.navigator.settings.SettingsFragmentContainer"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/SeekContactFragment.kt": {
+      "sloc": 130,
+      "number_of_properties": 3,
+      "number_of_functions": 10,
+      "complexity": 20,
+      "class": "pl.org.seva.navigator.contact.SeekContactFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/FriendshipListener.kt": {
+      "sloc": 68,
+      "number_of_properties": 1,
+      "number_of_functions": 6,
+      "complexity": 8,
+      "class": "pl.org.seva.navigator.contact.FriendshipListener"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/FriendshipObservable.kt": {
+      "sloc": 20,
+      "number_of_properties": 1,
+      "number_of_functions": 4,
+      "complexity": 5,
+      "class": "pl.org.seva.navigator.contact.FriendshipObservable"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/Contact.kt": {
+      "sloc": 73,
+      "number_of_properties": 1,
+      "number_of_functions": 7,
+      "complexity": 10,
+      "class": "pl.org.seva.navigator.contact.Contact"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/ContactsFragment.kt": {
+      "sloc": 89,
+      "number_of_properties": 2,
+      "number_of_functions": 6,
+      "complexity": 8,
+      "class": "pl.org.seva.navigator.contact.ContactsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/FriendshipAddDialogBuilder.kt": {
+      "sloc": 32,
+      "number_of_properties": 3,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "pl.org.seva.navigator.contact.FriendshipAddDialogBuilder"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/Contacts.kt": {
+      "sloc": 44,
+      "number_of_properties": 3,
+      "number_of_functions": 11,
+      "complexity": 12,
+      "class": "pl.org.seva.navigator.contact.Contacts"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/ContactAdapter.kt": {
+      "sloc": 34,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "pl.org.seva.navigator.contact.ContactAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/ContactSingleAdapter.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "pl.org.seva.navigator.contact.ContactSingleAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/PeerRequestedFriendship.kt": {
+      "sloc": 50,
+      "number_of_properties": 2,
+      "number_of_functions": 3,
+      "complexity": 4,
+      "class": "pl.org.seva.navigator.contact.PeerRequestedFriendship"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/ItemSwipeListener.kt": {
+      "sloc": 12,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "pl.org.seva.navigator.contact.ItemSwipeListener"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt": {
+      "sloc": 238,
+      "number_of_properties": 6,
+      "number_of_functions": 24,
+      "complexity": 48,
+      "class": "pl.org.seva.navigator.navigation.NavigationFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MapHolder.kt": {
+      "sloc": 161,
+      "number_of_properties": 14,
+      "number_of_functions": 15,
+      "complexity": 30,
+      "class": "pl.org.seva.navigator.navigation.MapHolder"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MyLocationObservable.kt": {
+      "sloc": 92,
+      "number_of_properties": 8,
+      "number_of_functions": 8,
+      "complexity": 17,
+      "class": "pl.org.seva.navigator.navigation.MyLocationObservable"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/PeerObservable.kt": {
+      "sloc": 17,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "pl.org.seva.navigator.navigation.PeerObservable"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigatorService.kt": {
+      "sloc": 16,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "pl.org.seva.navigator.navigation.NavigatorService"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/profile/LoggedInUser.kt": {
+      "sloc": 23,
+      "number_of_properties": 4,
+      "number_of_functions": 2,
+      "complexity": 4,
+      "class": "pl.org.seva.navigator.profile.LoggedInUser"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/profile/LoginActivity.kt": {
+      "sloc": 176,
+      "number_of_properties": 6,
+      "number_of_functions": 18,
+      "complexity": 32,
+      "class": "pl.org.seva.navigator.profile.LoginActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/profile/DeleteProfileFragment.kt": {
+      "sloc": 22,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "pl.org.seva.navigator.profile.DeleteProfileFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/init/KodeinModuleBuilder.kt": {
+      "sloc": 59,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "pl.org.seva.navigator.main.init.KodeinModuleBuilder"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/init/Bootstrap.kt": {
+      "sloc": 78,
+      "number_of_properties": 1,
+      "number_of_functions": 6,
+      "complexity": 13,
+      "class": "pl.org.seva.navigator.main.init.Bootstrap"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/ui/NotificationChannels.kt": {
+      "sloc": 44,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 5,
+      "class": "pl.org.seva.navigator.main.ui.NotificationChannels"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/ui/ColorFactory.kt": {
+      "sloc": 22,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 4,
+      "class": "pl.org.seva.navigator.main.ui.ColorFactory"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/ui/OnHudSwipeListener.kt": {
+      "sloc": 47,
+      "number_of_properties": 3,
+      "number_of_functions": 4,
+      "complexity": 12,
+      "class": "pl.org.seva.navigator.main.ui.OnHudSwipeListener"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/ui/Toaster.kt": {
+      "sloc": 13,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "pl.org.seva.navigator.main.ui.Toaster"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/NavigatorApplication.kt": {
+      "sloc": 23,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 6,
+      "class": "pl.org.seva.navigator.main.NavigatorApplication"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/MainActivity.kt": {
+      "sloc": 62,
+      "number_of_properties": 3,
+      "number_of_functions": 4,
+      "complexity": 8,
+      "class": "pl.org.seva.navigator.main.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/NavigatorViewModel.kt": {
+      "sloc": 9,
+      "number_of_properties": 3,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "pl.org.seva.navigator.main.NavigatorViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/ParcelableInt.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "pl.org.seva.navigator.main.data.ParcelableInt"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/Permissions.kt": {
+      "sloc": 60,
+      "number_of_properties": 2,
+      "number_of_functions": 5,
+      "complexity": 11,
+      "class": "pl.org.seva.navigator.main.data.Permissions"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/fb/FbReader.kt": {
+      "sloc": 73,
+      "number_of_properties": 0,
+      "number_of_functions": 13,
+      "complexity": 15,
+      "class": "pl.org.seva.navigator.main.data.fb.FbReader"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/fb/Fb.kt": {
+      "sloc": 32,
+      "number_of_properties": 1,
+      "number_of_functions": 6,
+      "complexity": 6,
+      "class": "pl.org.seva.navigator.main.data.fb.Fb"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/fb/RxValueEventListener.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 3,
+      "class": "pl.org.seva.navigator.main.data.fb.RxValueEventListener"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/fb/FbWriter.kt": {
+      "sloc": 48,
+      "number_of_properties": 1,
+      "number_of_functions": 12,
+      "complexity": 12,
+      "class": "pl.org.seva.navigator.main.data.fb.FbWriter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/fb/RxChildEventListener.kt": {
+      "sloc": 13,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "pl.org.seva.navigator.main.data.fb.RxChildEventListener"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/ActivityRecognitionObservable.kt": {
+      "sloc": 104,
+      "number_of_properties": 8,
+      "number_of_functions": 11,
+      "complexity": 16,
+      "class": "pl.org.seva.navigator.main.data.ActivityRecognitionObservable"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/db/NavigatorDbAbstract.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "pl.org.seva.navigator.main.data.db.NavigatorDbAbstract"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/db/migration/LiteToRoomMigration.kt": {
+      "sloc": 24,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "pl.org.seva.navigator.main.data.db.migration.LiteToRoomMigration"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/db/migration/AddedColorMigration.kt": {
+      "sloc": 38,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "pl.org.seva.navigator.main.data.db.migration.AddedColorMigration"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/db/migration/AddedDebugMigration.kt": {
+      "sloc": 36,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "pl.org.seva.navigator.main.data.db.migration.AddedDebugMigration"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/db/ContactDao.kt": {
+      "sloc": 21,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 6,
+      "class": "pl.org.seva.navigator.main.data.db.ContactDao"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/credits/CreditsFragment.kt": {
+      "sloc": 43,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "pl.org.seva.navigator.credits.CreditsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/debug/Debug.kt": {
+      "sloc": 38,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "pl.org.seva.navigator.debug.Debug"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt:70:5",
+        "message": "The function onActivityCreated appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt:171:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt:52:1",
+        "message": "Class 'NavigationFragment' with '16' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MapHolder.kt:46:1",
+        "message": "Class 'MapHolder' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/profile/LoginActivity.kt:53:1",
+        "message": "Class 'LoginActivity' with '17' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/fb/FbReader.kt:36:1",
+        "message": "Class 'FbReader' with '13' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/fb/FbWriter.kt:33:1",
+        "message": "Class 'FbWriter' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MapHolder.kt:172:9",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MapHolder.kt:178:22",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MapHolder.kt:198:52",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/extension/Fragment.kt:47:44",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/extension/FragmentActivity.kt:30:31",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMinLength",
+      "description": "Function names should not be shorter than the minimum defined in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/PeerRequestedFriendship.kt:42:9",
+        "message": "Function names should be at least 3 characters long."
+      }]
+    }, {
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/PeerRequestedFriendship.kt:33:1",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MyLocationObservable.kt:65:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "MatchingDeclarationName",
+      "description": "If a source file contains only a single non-private top-level class or object, the file name should reflect the case-sensitive name plus the .kt extension.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/db/NavigatorDb.kt:1:1",
+        "message": "The file name 'NavigatorDb.kt' does not match the name of the single top-level declaration 'ContactsDatabase'."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/settings/SettingsFragment.kt:51:32",
+        "message": "preference cannot be safely cast to CheckBoxPreference."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/SeekContactFragment.kt:53:39",
+        "message": "requireContext().getSystemService(Context.SEARCH_SERVICE) cannot be safely cast to SearchManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/SeekContactFragment.kt:96:50",
+        "message": "actionView cannot be safely cast to SearchView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/FriendshipListener.kt:43:30",
+        "message": "appContext.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt:244:14",
+        "message": "requireActivity().application cannot be safely cast to NavigatorApplication."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/profile/LoginActivity.kt:117:10",
+        "message": "application cannot be safely cast to NavigatorApplication."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/profile/LoginActivity.kt:124:10",
+        "message": "application cannot be safely cast to NavigatorApplication."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/ui/NotificationChannels.kt:39:18",
+        "message": "appContext.getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/MainActivity.kt:73:10",
+        "message": "application cannot be safely cast to NavigatorApplication."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/extension/Fragment.kt:52:23",
+        "message": "childFragmentManager.findFragmentById(R.id.map) cannot be safely cast to SupportMapFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/fb/FbReader.kt:42:24",
+        "message": "it cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/fb/FbReader.kt:50:24",
+        "message": "it cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/fb/FbReader.kt:104:53",
+        "message": "child(DISPLAY_NAME).value cannot be safely cast to String."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/credits/CreditsFragment.kt:48:29",
+        "message": "requireActivity().getSystemService(Context.CLIPBOARD_SERVICE) cannot be safely cast to ClipboardManager."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/Contact.kt:86:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/Contact.kt:88:9",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/FriendshipAddDialogBuilder.kt:30:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/FriendshipAddDialogBuilder.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/FriendshipAddDialogBuilder.kt:32:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/PeerRequestedFriendship.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/PeerRequestedFriendship.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt:61:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MapHolder.kt:53:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MapHolder.kt:58:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MapHolder.kt:59:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MapHolder.kt:60:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MapHolder.kt:78:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MapHolder.kt:87:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MyLocationObservable.kt:60:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/profile/LoginActivity.kt:57:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/profile/LoginActivity.kt:58:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/profile/LoginActivity.kt:60:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/ActivityRecognitionObservable.kt:51:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt:178:31",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/SeekContactFragment.kt:31:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/ContactsFragment.kt:41:1",
+        "message": "pl.org.seva.navigator.main.extension.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt:31:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt:42:1",
+        "message": "pl.org.seva.navigator.contact.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt:44:1",
+        "message": "pl.org.seva.navigator.main.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt:46:1",
+        "message": "pl.org.seva.navigator.main.extension.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt:47:1",
+        "message": "pl.org.seva.navigator.main.data.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt:50:1",
+        "message": "pl.org.seva.navigator.profile.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MapHolder.kt:40:1",
+        "message": "pl.org.seva.navigator.contact.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MyLocationObservable.kt:27:1",
+        "message": "com.google.android.gms.location.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/init/Bootstrap.kt:26:1",
+        "message": "pl.org.seva.navigator.contact.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/PeerRequestedFriendship.kt:55:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/contact/PeerRequestedFriendship.kt:60:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/init/KodeinModuleBuilder.kt:77:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/db/migration/AddedColorMigration.kt:55:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/db/migration/AddedDebugMigration.kt:52:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/NavigationFragment.kt:202:33",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MapHolder.kt:159:60",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MyLocationObservable.kt:116:9",
+        "message": "Function isBetterLocation has 4 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/navigation/MyLocationObservable.kt:138:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/ui/OnHudSwipeListener.kt:53:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/profile/LoginActivity.kt:102:13",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/ui/OnHudSwipeListener.kt:64:13",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/extension/Disposable.kt:32:5",
+        "message": "Private function onEvent is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/debug/Debug.kt:60:13",
+        "message": "Function parameter peer is unused."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/extension/Fragment.kt:22:1",
+        "message": "The import 'android.content.Context' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/extension/Fragment.kt:24:1",
+        "message": "The import 'android.view.View' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/extension/Fragment.kt:25:1",
+        "message": "The import 'android.view.ViewGroup' is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/extension/Fragment.kt:27:1",
+        "message": "The import 'androidx.annotation.LayoutRes' is unused."
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/Permissions.kt:87:5",
+        "message": "The class PermissionRequest defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/main/data/db/migration/AddedDebugMigration.kt:60:1",
+        "message": "The file AddedDebugMigration.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "FunctionOnlyReturningConstant",
+      "description": "A function that only returns a constant is misleading. Consider declaring a constant instead",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/pl-org-seva-navigator/navigator/src/main/kotlin/pl/org/seva/navigator/debug/Debug.kt:55:5",
+        "message": "isIgnoredForPeer is returning a constant. Prefer declaring a constant instead."
+      }]
+    }]
+  }]
+}

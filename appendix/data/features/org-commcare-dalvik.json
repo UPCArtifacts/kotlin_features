@@ -1,0 +1,203 @@
+{
+  "complexity_metrics": {
+    "loc": 257,
+    "sloc": 199,
+    "lloc": 140,
+    "cloc": 25,
+    "mcc": 40,
+    "n_smell": 26,
+    "comment_ratio": 12,
+    "mcc_per_thlines": 285
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 1,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 23,
+    "number_of_string_template": 2,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 19,
+    "number_of_objects_declarations": 1,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 1,
+    "number_of_declaration": 22,
+    "number_of_var_declaration": 22,
+    "number_of_func_call": 101,
+    "number_of_arguments": 87,
+    "number_of_parameters": 25,
+    "number_of_qualified_expressions": 100,
+    "number_of_inheritances": 10,
+    "number_of_unsafe_calls": 7,
+    "number_of_safe_calls": 2,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 2,
+    "number_of_possible_smart_casts": 2,
+    "number_of_data_class": 0,
+    "number_of_constructors": 5,
+    "number_of_properties": 22,
+    "number_of_functions": 12,
+    "number_of_interfaces": 0,
+    "number_of_classes": 11,
+    "number_of_packages": 2,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 3
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/tasks/DeleteLogs.kt": {
+      "sloc": 51,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 8,
+      "class": "org.commcare.tasks.DeleteLogs"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLog.kt": {
+      "sloc": 12,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "org.commcare.logging.DataChangeLog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt": {
+      "sloc": 136,
+      "number_of_properties": 6,
+      "number_of_functions": 10,
+      "complexity": 32,
+      "class": "org.commcare.logging.DataChangeLogger"
+    }
+  },
+  "findings": [{
+    "group": "exceptions",
+    "smells": [{
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:57:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:68:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:92:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:170:17",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:48:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:48:39",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:51:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:54:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:55:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:85:36",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:87:53",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/tasks/DeleteLogs.kt:63:1",
+        "message": "The file DeleteLogs.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLog.kt:15:1",
+        "message": "The file DataChangeLog.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:179:1",
+        "message": "The file DataChangeLogger.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/tasks/DeleteLogs.kt:28:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/tasks/DeleteLogs.kt:29:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/tasks/DeleteLogs.kt:30:143",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/tasks/DeleteLogs.kt:31:135",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLog.kt:12:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLog.kt:13:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:113:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/tasks/DeleteLogs.kt:16:24",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of DeleteLogs."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/tasks/DeleteLogs.kt:25:43",
+        "message": "Parentheses in (90L * DateUtils.DAY_IN_MS) are unnecessary and can be replaced with: 90L * DateUtils.DAY_IN_MS"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/tasks/DeleteLogs.kt:25:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:102:27",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-commcare-dalvik/app/src/org/commcare/logging/DataChangeLogger.kt:176:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }]
+  }]
+}

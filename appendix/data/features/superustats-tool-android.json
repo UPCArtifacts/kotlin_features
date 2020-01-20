@@ -1,0 +1,908 @@
+{
+  "complexity_metrics": {
+    "loc": 740,
+    "sloc": 503,
+    "lloc": 356,
+    "cloc": 168,
+    "mcc": 61,
+    "n_smell": 254,
+    "comment_ratio": 33,
+    "mcc_per_thlines": 171
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 11,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 1,
+    "number_of_inferred_var": 48,
+    "number_of_objects_declarations": 3,
+    "number_of_companion_objects": 2,
+    "number_of_singletons": 0,
+    "number_of_declaration": 56,
+    "number_of_var_declaration": 57,
+    "number_of_func_call": 189,
+    "number_of_arguments": 171,
+    "number_of_parameters": 53,
+    "number_of_qualified_expressions": 267,
+    "number_of_inheritances": 5,
+    "number_of_unsafe_calls": 2,
+    "number_of_safe_calls": 14,
+    "number_of_destructuring_declarations": 1,
+    "number_of_when_expressions": 1,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 1,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 20,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_constructors": 3,
+    "number_of_properties": 55,
+    "number_of_functions": 35,
+    "number_of_interfaces": 0,
+    "number_of_classes": 6,
+    "number_of_packages": 2,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 5
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt": {
+      "sloc": 166,
+      "number_of_properties": 3,
+      "number_of_functions": 14,
+      "complexity": 19,
+      "class": "superustats.tool.android.userInterface.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt": {
+      "sloc": 198,
+      "number_of_properties": 9,
+      "number_of_functions": 14,
+      "complexity": 27,
+      "class": "superustats.tool.android.userInterface.AppsListAdapter"
+    }
+  },
+  "findings": [{
+    "group": "naming",
+    "smells": [{
+      "name": "PackageNaming",
+      "description": "Package names should match the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:24:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:21:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:21:1",
+        "message": "Package name should match the pattern: ^[a-z]+(\\.[a-z][a-z0-9]*)*$"
+      }]
+    }, {
+      "name": "ConstructorParameterNaming",
+      "description": "Constructor parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:75:72",
+        "message": "Constructor private parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:45:26",
+        "message": "mainActivity.getSystemService(Context.USAGE_STATS_SERVICE) cannot be safely cast to UsageStatsManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:89:22",
+        "message": "context.getSystemService(Context.APP_OPS_SERVICE) cannot be safely cast to AppOpsManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:165:23",
+        "message": "getSystemService(Context.SEARCH_SERVICE) cannot be safely cast to SearchManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:166:20",
+        "message": "menu.findItem(R.id.action_search).actionView cannot be safely cast to SearchView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:196:19",
+        "message": "listView.layoutManager cannot be safely cast to LinearLayoutManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:203:4",
+        "message": "listView.layoutManager cannot be safely cast to LinearLayoutManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:82:32",
+        "message": "package_info.applicationInfo.loadLabel(packageManager) cannot be safely cast to String."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:55:2",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:57:2",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnconditionalJumpStatementInLoop",
+      "description": "An unconditional jump statement in a loop is useless. The loop itself is only executed once.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:79:13",
+        "message": "This loop contains an unconditional jump expression which essentially renders it useless as it will exit the loop during the first iteration."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:194:101",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:196:97",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/HelperFunctions.kt:54:1",
+        "message": "The file HelperFunctions.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:111:1",
+        "message": "The file GeneralUI.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:241:38",
+        "message": "The file MainActivity.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "NoTabs",
+      "description": "Checks if tabs are used in Kotlin files.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/HelperFunctions.kt:35:44",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/HelperFunctions.kt:36:21",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/HelperFunctions.kt:37:87",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/HelperFunctions.kt:38:57",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/HelperFunctions.kt:39:25",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/HelperFunctions.kt:40:3",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/HelperFunctions.kt:50:50",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/HelperFunctions.kt:51:35",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/HelperFunctions.kt:52:60",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:44:109",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:45:105",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:47:39",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:48:38",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:49:46",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:51:75",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:53:131",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:54:101",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:55:77",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:57:63",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:58:72",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:60:91",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:61:64",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:62:67",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:42:92",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:44:46",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:46:140",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:47:28",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:49:77",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:50:62",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:51:69",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:52:70",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:53:38",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:54:32",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:56:52",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:57:95",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:58:59",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:59:9",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:60:22",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:62:30",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:63:13",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:64:8",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:65:7",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:66:40",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:67:36",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:68:27",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:69:13",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:71:33",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:72:4",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:73:10",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:74:39",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:75:17",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:81:55",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:82:60",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:83:31",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:87:69",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:89:88",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:91:42",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:92:40",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:93:20",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:94:24",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:96:50",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:97:56",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:98:118",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:99:11",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:100:121",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:101:4",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:102:10",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:103:37",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:109:64",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:54:43",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:55:55",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:57:47",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:59:61",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:63:54",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:64:37",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:66:41",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:68:22",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:70:42",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:71:53",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:72:37",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:74:25",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:75:40",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:77:38",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:78:84",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:79:45",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:80:4",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:82:31",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:84:32",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:85:3",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:87:27",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:88:19",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:90:64",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:91:38",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:92:3",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:94:45",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:96:82",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:98:42",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:100:84",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:101:70",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:102:63",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:103:96",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:104:5",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:105:75",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:106:52",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:107:44",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:109:37",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:110:39",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:111:27",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:113:50",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:114:107",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:115:19",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:116:35",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:117:12",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:118:6",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:120:88",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:122:30",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:123:5",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:124:4",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:126:84",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:127:70",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:128:62",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:129:35",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:130:36",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:131:38",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:132:43",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:133:63",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:134:71",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:135:5",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:136:87",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:137:40",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:138:42",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:139:54",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:141:68",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:142:5",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:143:4",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:146:66",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:147:3",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:149:5",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:150:84",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:151:54",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:152:5",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:153:25",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:154:37",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:155:3",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:157:5",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:158:93",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:159:60",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:160:5",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:161:32",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:162:57",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:163:42",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:165:80",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:166:78",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:167:79",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:168:72",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:169:58",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:170:44",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:171:63",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:172:5",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:173:4",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:174:78",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:175:53",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:177:56",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:178:40",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:179:16",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:180:5",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:181:5",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:183:63",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:184:33",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:185:37",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:186:4",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:188:41",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:189:3",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:191:66",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:192:42",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:194:91",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:195:22",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:196:96",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:197:26",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:198:32",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:199:36",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:200:37",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:201:53",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:202:41",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:203:77",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:204:3",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:206:41",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:207:71",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:209:17",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:210:46",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:212:59",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:214:48",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:215:53",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:217:47",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:218:45",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:219:49",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:220:33",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:221:5",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:223:14",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:224:4",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:225:3",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:227:20",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:228:77",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:229:6",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:230:34",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:231:90",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:232:6",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:233:47",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:234:30",
+        "message": "Tab character is in use."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:235:4",
+        "message": "Tab character is in use."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:41:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/backend/AppInformationGetter.kt:53:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/GeneralUI.kt:46:140",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:46:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:75:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:155:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:186:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:194:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:195:48",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:227:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/MainActivity.kt:214:4",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:43:37",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of AppsListAdapter."
+      }]
+    }, {
+      "name": "LoopWithTooManyJumpStatements",
+      "description": "The loop contains more than one break or continue statement. The code should be refactored to increase readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:79:13",
+        "message": "The loop contains more than one break or continue statement. The code should be refactored to increase readability."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:66:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:70:90",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:70:94",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:71:92",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:71:96",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:138:26",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:138:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:186:121",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:186:125",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:247:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:173:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/superustats-tool-android/src/superustats/tool/android/userInterface/AppsListAdapter.kt:256:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }]
+  }]
+}

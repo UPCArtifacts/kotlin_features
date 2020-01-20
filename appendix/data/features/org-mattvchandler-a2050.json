@@ -1,0 +1,523 @@
+{
+  "complexity_metrics": {
+    "loc": 679,
+    "sloc": 487,
+    "lloc": 367,
+    "cloc": 74,
+    "mcc": 100,
+    "n_smell": 112,
+    "comment_ratio": 15,
+    "mcc_per_thlines": 272
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 32,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 3,
+    "number_of_inferred_var": 35,
+    "number_of_objects_declarations": 3,
+    "number_of_companion_objects": 2,
+    "number_of_singletons": 0,
+    "number_of_declaration": 39,
+    "number_of_var_declaration": 39,
+    "number_of_func_call": 223,
+    "number_of_arguments": 226,
+    "number_of_parameters": 64,
+    "number_of_qualified_expressions": 365,
+    "number_of_inheritances": 11,
+    "number_of_unsafe_calls": 11,
+    "number_of_safe_calls": 9,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 5,
+    "number_of_functions_with_default_value": 0,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 0,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 10,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_constructors": 0,
+    "number_of_properties": 39,
+    "number_of_functions": 48,
+    "number_of_interfaces": 0,
+    "number_of_classes": 12,
+    "number_of_packages": 1,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 4
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt": {
+      "sloc": 116,
+      "number_of_properties": 0,
+      "number_of_functions": 8,
+      "complexity": 19,
+      "class": "org.mattvchandler.a2050.Settings"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt": {
+      "sloc": 326,
+      "number_of_properties": 7,
+      "number_of_functions": 38,
+      "complexity": 74,
+      "class": "org.mattvchandler.a2050.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/About_dialog.kt": {
+      "sloc": 22,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "org.mattvchandler.a2050.About_dialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Themed_activity.kt": {
+      "sloc": 23,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 6,
+      "class": "org.mattvchandler.a2050.Themed_activity"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:61:44",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:260:102",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:260:140",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:78:9",
+        "message": "Function onSharedPreferenceChanged is nested too deeply."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:51:1",
+        "message": "Class MainActivity is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:232:5",
+        "message": "The function onKeyDown appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:361:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:51:1",
+        "message": "Class 'MainActivity' with '30' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "VariableNaming",
+      "description": "Variable names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:56:17",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:53:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:57:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:60:5",
+        "message": "Private variable names should match the pattern: (_)?[a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:308:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:312:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:313:13",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:389:17",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:419:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:420:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Themed_activity.kt:32:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Themed_activity.kt:34:9",
+        "message": "Variable names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:153:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ClassNaming",
+      "description": "A classes name should fit the naming pattern defined in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:47:5",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:89:29",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:255:13",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:281:13",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:327:9",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:340:9",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/About_dialog.kt:32:1",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Themed_activity.kt:28:1",
+        "message": "Class and Object names should match the pattern: [A-Z$][a-zA-Z0-9$]*"
+      }]
+    }, {
+      "name": "FunctionParameterNaming",
+      "description": "Function parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:72:67",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:75:97",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:80:32",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:252:30",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:278:31",
+        "message": "Function parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "FunctionNaming",
+      "description": "Function names should follow the naming convention set in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:252:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:278:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:325:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:338:5",
+        "message": "Function names should match the pattern: ^([a-z$][a-zA-Z$0-9]*)|(`.*`)$"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:87:80",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:92:61",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:95:129",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:99:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:103:63",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:260:83",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:260:117",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:285:83",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:285:117",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/About_dialog.kt:36:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/About_dialog.kt:40:32",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:85:59",
+        "message": "activity cannot be safely cast to Context."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:118:29",
+        "message": "binding.toolbar cannot be safely cast to Toolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:124:29",
+        "message": "getSystemService(Context.SENSOR_SERVICE) cannot be safely cast to SensorManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:105:29",
+        "message": "binding.toolbar cannot be safely cast to Toolbar."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:129:25",
+        "message": "getSystemService(Context.WINDOW_SERVICE) cannot be safely cast to WindowManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:162:29",
+        "message": "ArgbEvaluator().evaluate(stop_percent, color_stops[start_color_i], color_stops[start_color_i + 1]) cannot be safely cast to Int."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:164:18",
+        "message": "binding.pressure.progressDrawable cannot be safely cast to LayerDrawable."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:258:41",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:261:78",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:284:41",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:286:78",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:306:14",
+        "message": "layout.findViewById<View>(R.id.ball_num) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:309:14",
+        "message": "layout.findViewById<View>(R.id.achieve_text) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:316:14",
+        "message": "layout.findViewById<View>(R.id.ball_num) cannot be safely cast to TextView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:330:41",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:343:37",
+        "message": "activity cannot be safely cast to MainActivity."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:345:65",
+        "message": "activity cannot be safely cast to MainActivity."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:55:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:62:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "CollapsibleIfStatements",
+      "description": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:83:17",
+        "message": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:61:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:85:159",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:87:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:95:222",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:103:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Settings.kt:146:141",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:75:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:103:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:162:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:164:169",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:260:221",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:285:219",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:391:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/About_dialog.kt:37:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Themed_activity.kt:32:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/Themed_activity.kt:42:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:36:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "ForbiddenComment",
+      "description": "Flags a forbidden comment. Defaults values are TODO:, FIXME: or STOPSHIP:",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:391:17",
+        "message": "This comment contains text that has been defined as forbidden in detekt."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:370:55",
+        "message": "Parentheses in (\n                       View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or\n                       View.SYSTEM_UI_FLAG_FULLSCREEN      or\n                       View.SYSTEM_UI_FLAG_IMMERSIVE) are unnecessary and can be replaced with: View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or\n                       View.SYSTEM_UI_FLAG_FULLSCREEN      or\n                       View.SYSTEM_UI_FLAG_IMMERSIVE"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:143:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:154:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:389:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:71:55",
+        "message": "Function parameter color is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:72:67",
+        "message": "Function parameter num_colors is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:75:33",
+        "message": "Function parameter assetManager is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:75:61",
+        "message": "Function parameter path is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:75:97",
+        "message": "Function parameter gravity_mode is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:75:120",
+        "message": "Function parameter rotation is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:80:32",
+        "message": "Function parameter has_focus is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:81:41",
+        "message": "Function parameter surface is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:82:32",
+        "message": "Function parameter x is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:82:42",
+        "message": "Function parameter y is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:85:36",
+        "message": "Function parameter data is unused."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:123:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:123:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:138:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:151:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:157:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:227:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:234:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:394:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:394:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/org-mattvchandler-a2050/app/src/main/java/MainActivity.kt:410:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }]
+  }]
+}

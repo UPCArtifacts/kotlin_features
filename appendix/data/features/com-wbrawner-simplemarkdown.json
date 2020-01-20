@@ -1,0 +1,695 @@
+{
+  "complexity_metrics": {
+    "loc": 1621,
+    "sloc": 1420,
+    "lloc": 926,
+    "cloc": 19,
+    "mcc": 241,
+    "n_smell": 132,
+    "comment_ratio": 1,
+    "mcc_per_thlines": 260
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 15,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 96,
+    "number_of_string_template": 6,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 2,
+    "number_of_inferred_var": 109,
+    "number_of_objects_declarations": 6,
+    "number_of_companion_objects": 5,
+    "number_of_singletons": 0,
+    "number_of_declaration": 128,
+    "number_of_var_declaration": 130,
+    "number_of_func_call": 701,
+    "number_of_arguments": 614,
+    "number_of_parameters": 117,
+    "number_of_qualified_expressions": 792,
+    "number_of_inheritances": 12,
+    "number_of_unsafe_calls": 10,
+    "number_of_safe_calls": 46,
+    "number_of_destructuring_declarations": 1,
+    "number_of_when_expressions": 10,
+    "number_of_functions_with_default_value": 3,
+    "number_of_function_call_with_named_value": 5,
+    "number_of_named_argument": 5,
+    "number_of_argument_with_default_value": 4,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 5,
+    "number_of_properties_delegation": 1,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 73,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_constructors": 5,
+    "number_of_properties": 127,
+    "number_of_functions": 90,
+    "number_of_interfaces": 2,
+    "number_of_classes": 19,
+    "number_of_packages": 8,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 20
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/androidTest/java/com/wbrawner/simplemarkdown/MarkdownTests.kt": {
+      "sloc": 163,
+      "number_of_properties": 2,
+      "number_of_functions": 9,
+      "complexity": 17,
+      "class": "com.wbrawner.simplemarkdown.MarkdownTests"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/test/java/com/wbrawner/simplemarkdown/ReadabilityTest.kt": {
+      "sloc": 37,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.wbrawner.simplemarkdown.ReadabilityTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/viewmodel/MarkdownViewModel.kt": {
+      "sloc": 65,
+      "number_of_properties": 5,
+      "number_of_functions": 4,
+      "complexity": 12,
+      "class": "com.wbrawner.simplemarkdown.viewmodel.MarkdownViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/MarkdownApplication.kt": {
+      "sloc": 24,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 2,
+      "class": "com.wbrawner.simplemarkdown.MarkdownApplication"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/model/Sentence.kt": {
+      "sloc": 27,
+      "number_of_properties": 2,
+      "number_of_functions": 5,
+      "complexity": 6,
+      "class": "com.wbrawner.simplemarkdown.model.Sentence"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/model/Readability.kt": {
+      "sloc": 25,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 5,
+      "class": "com.wbrawner.simplemarkdown.model.Readability"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MarkdownInfoActivity.kt": {
+      "sloc": 74,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 10,
+      "class": "com.wbrawner.simplemarkdown.view.activity.MarkdownInfoActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt": {
+      "sloc": 257,
+      "number_of_properties": 3,
+      "number_of_functions": 12,
+      "complexity": 50,
+      "class": "com.wbrawner.simplemarkdown.view.activity.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SettingsActivity.kt": {
+      "sloc": 20,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 3,
+      "class": "com.wbrawner.simplemarkdown.view.activity.SettingsActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SupportActivity.kt": {
+      "sloc": 106,
+      "number_of_properties": 1,
+      "number_of_functions": 5,
+      "complexity": 14,
+      "class": "com.wbrawner.simplemarkdown.view.activity.SupportActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SplashActivity.kt": {
+      "sloc": 60,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 10,
+      "class": "com.wbrawner.simplemarkdown.view.activity.SplashActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/adapter/EditPagerAdapter.kt": {
+      "sloc": 59,
+      "number_of_properties": 2,
+      "number_of_functions": 7,
+      "complexity": 16,
+      "class": "com.wbrawner.simplemarkdown.view.adapter.EditPagerAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/DisableableViewPager.kt": {
+      "sloc": 21,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.wbrawner.simplemarkdown.view.DisableableViewPager"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt": {
+      "sloc": 156,
+      "number_of_properties": 5,
+      "number_of_functions": 11,
+      "complexity": 30,
+      "class": "com.wbrawner.simplemarkdown.view.fragment.EditFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/MainMenuFragment.kt": {
+      "sloc": 77,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 14,
+      "class": "com.wbrawner.simplemarkdown.view.fragment.MainMenuFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/SettingsFragment.kt": {
+      "sloc": 69,
+      "number_of_properties": 1,
+      "number_of_functions": 4,
+      "complexity": 15,
+      "class": "com.wbrawner.simplemarkdown.view.fragment.SettingsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/PreviewFragment.kt": {
+      "sloc": 92,
+      "number_of_properties": 4,
+      "number_of_functions": 4,
+      "complexity": 11,
+      "class": "com.wbrawner.simplemarkdown.view.fragment.PreviewFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/ViewPagerPage.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "com.wbrawner.simplemarkdown.view.ViewPagerPage"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/utility/ErrorHandler.kt": {
+      "sloc": 28,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 7,
+      "class": "com.wbrawner.simplemarkdown.utility.ErrorHandler"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/androidTest/java/com/wbrawner/simplemarkdown/MarkdownTests.kt:89:35",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/androidTest/java/com/wbrawner/simplemarkdown/MarkdownTests.kt:48:86",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/viewmodel/MarkdownViewModel.kt:37:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/viewmodel/MarkdownViewModel.kt:38:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/viewmodel/MarkdownViewModel.kt:53:28",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/viewmodel/MarkdownViewModel.kt:57:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/viewmodel/MarkdownViewModel.kt:58:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MarkdownInfoActivity.kt:53:32",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:53:64",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:68:32",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:77:81",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:80:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:83:46",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:90:40",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:95:22",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:124:41",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:128:33",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:170:36",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:192:53",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:194:40",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:205:36",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SupportActivity.kt:42:32",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SupportActivity.kt:81:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SupportActivity.kt:85:52",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SupportActivity.kt:110:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SplashActivity.kt:22:83",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SplashActivity.kt:28:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SplashActivity.kt:45:74",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SplashActivity.kt:54:38",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:65:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:154:21",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:156:42",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:157:49",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/SettingsFragment.kt:31:72",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/PreviewFragment.kt:50:42",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/PreviewFragment.kt:64:47",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/utility/Extensions.kt:34:34",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/utility/Extensions.kt:44:25",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:116:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:44:5",
+        "message": "The function onViewCreated appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/MainMenuFragment.kt:25:5",
+        "message": "The function onViewCreated appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:33:1",
+        "message": "Class 'MainActivity' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MarkdownInfoActivity.kt:51:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MarkdownInfoActivity.kt:45:28",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/utility/Extensions.kt:59:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "MemberNameEqualsClassName",
+      "description": "A member should not given the same name as its parent class or object.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/model/Sentence.kt:7:5",
+        "message": "A member is named after the class. This might result in confusion. Either rename the member or change it to a constructor."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/androidTest/java/com/wbrawner/simplemarkdown/MarkdownTests.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:37:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SupportActivity.kt:19:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/PreviewFragment.kt:24:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MarkdownInfoActivity.kt:52:18",
+        "message": "application cannot be safely cast to MarkdownApplication."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/PreviewFragment.kt:87:14",
+        "message": "it.parent cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/utility/Extensions.kt:15:10",
+        "message": "context.getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/utility/Extensions.kt:19:10",
+        "message": "context.getSystemService(Context.INPUT_METHOD_SERVICE) cannot be safely cast to InputMethodManager."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:60:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:89:63",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:106:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:108:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:151:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:178:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:181:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SettingsActivity.kt:16:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:81:9",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/PreviewFragment.kt:43:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/androidTest/java/com/wbrawner/simplemarkdown/MarkdownTests.kt:16:1",
+        "message": "androidx.test.espresso.action.ViewActions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/androidTest/java/com/wbrawner/simplemarkdown/MarkdownTests.kt:21:1",
+        "message": "androidx.test.espresso.matcher.ViewMatchers.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MarkdownInfoActivity.kt:14:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:29:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SupportActivity.kt:12:1",
+        "message": "com.android.billingclient.api.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SplashActivity.kt:11:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:28:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/PreviewFragment.kt:19:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/androidTest/java/com/wbrawner/simplemarkdown/MarkdownTests.kt:106:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/androidTest/java/com/wbrawner/simplemarkdown/MarkdownTests.kt:121:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/androidTest/java/com/wbrawner/simplemarkdown/MarkdownTests.kt:136:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/androidTest/java/com/wbrawner/simplemarkdown/MarkdownTests.kt:151:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/androidTest/java/com/wbrawner/simplemarkdown/MarkdownTests.kt:167:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/androidTest/java/com/wbrawner/simplemarkdown/MarkdownTests.kt:177:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:232:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/adapter/EditPagerAdapter.kt:42:13",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:63:27",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:92:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:93:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:94:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:152:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:162:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:162:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:162:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:162:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:162:90",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:163:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:163:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:163:80",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:163:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:163:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/androidTest/java/com/wbrawner/simplemarkdown/MarkdownTests.kt:9:1",
+        "message": "The import 'android.view.KeyEvent' is unused."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/viewmodel/MarkdownViewModel.kt:47:5",
+        "message": "Function save has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:144:9",
+        "message": "Function afterTextChanged has 4 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/SettingsFragment.kt:42:5",
+        "message": "Function onSharedPreferenceChanged has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/viewmodel/MarkdownViewModel.kt:15:5",
+        "message": "Private property coroutineContext is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/model/Sentence.kt:21:37",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/model/Sentence.kt:25:22",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/model/Sentence.kt:29:20",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/model/Sentence.kt:33:30",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/adapter/EditPagerAdapter.kt:27:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/DisableableViewPager.kt:16:66",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/DisableableViewPager.kt:21:57",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MarkdownInfoActivity.kt:34:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SplashActivity.kt:29:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SplashActivity.kt:30:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:122:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:135:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:242:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SplashActivity.kt:31:21",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/adapter/EditPagerAdapter.kt:56:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/adapter/EditPagerAdapter.kt:59:13",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:91:17",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:105:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:105:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:178:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/MainActivity.kt:178:9",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:57:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:64:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:92:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:146:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/EditFragment.kt:153:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SupportActivity.kt:117:1",
+        "message": "The file SupportActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/fragment/MainMenuFragment.kt:81:1",
+        "message": "The file MainMenuFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/ViewPagerPage.kt:6:1",
+        "message": "The file ViewPagerPage.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/utility/ErrorHandler.kt:33:1",
+        "message": "The file ErrorHandler.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-wbrawner-simplemarkdown/app/src/main/java/com/wbrawner/simplemarkdown/view/activity/SupportActivity.kt:15:57",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of SupportActivity."
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,1350 @@
+{
+  "complexity_metrics": {
+    "loc": 2976,
+    "sloc": 2374,
+    "lloc": 1591,
+    "cloc": 244,
+    "mcc": 593,
+    "n_smell": 293,
+    "comment_ratio": 10,
+    "mcc_per_thlines": 372
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 18,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 509,
+    "number_of_string_template": 22,
+    "number_of_inline_func": 2,
+    "number_of_inferred_fun": 24,
+    "number_of_inferred_var": 186,
+    "number_of_objects_declarations": 30,
+    "number_of_companion_objects": 16,
+    "number_of_singletons": 3,
+    "number_of_declaration": 233,
+    "number_of_var_declaration": 237,
+    "number_of_func_call": 1223,
+    "number_of_arguments": 1591,
+    "number_of_parameters": 327,
+    "number_of_qualified_expressions": 1585,
+    "number_of_inheritances": 21,
+    "number_of_unsafe_calls": 42,
+    "number_of_safe_calls": 62,
+    "number_of_destructuring_declarations": 4,
+    "number_of_when_expressions": 25,
+    "number_of_functions_with_default_value": 6,
+    "number_of_function_call_with_named_value": 6,
+    "number_of_named_argument": 6,
+    "number_of_argument_with_default_value": 10,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 9,
+    "number_of_properties_delegation": 8,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 10,
+    "number_of_lambdas": 210,
+    "number_of_possible_smart_casts": 1,
+    "number_of_data_class": 5,
+    "number_of_constructors": 22,
+    "number_of_properties": 229,
+    "number_of_functions": 196,
+    "number_of_interfaces": 3,
+    "number_of_classes": 40,
+    "number_of_packages": 12,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 40
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/test/kotlin/com/yubico/yubioath/protocol/CredentialDataTest.kt": {
+      "sloc": 47,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 9,
+      "class": "com.yubico.yubioath.protocol.CredentialDataTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/test/kotlin/com/yubico/yubioath/model/YubiKeyOathTest.kt": {
+      "sloc": 65,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "com.yubico.yubioath.model.YubiKeyOathTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt": {
+      "sloc": 85,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 12,
+      "class": "com.yubico.yubioath.ui.settings.SettingsFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsActivity.kt": {
+      "sloc": 19,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 2,
+      "class": "com.yubico.yubioath.ui.settings.SettingsActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsViewModel.kt": {
+      "sloc": 11,
+      "number_of_properties": 2,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.yubico.yubioath.ui.settings.SettingsViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordFragment.kt": {
+      "sloc": 47,
+      "number_of_properties": 1,
+      "number_of_functions": 4,
+      "complexity": 12,
+      "class": "com.yubico.yubioath.ui.password.PasswordFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordActivity.kt": {
+      "sloc": 73,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 17,
+      "class": "com.yubico.yubioath.ui.password.PasswordActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordViewModel.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.yubico.yubioath.ui.password.PasswordViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/RequirePasswordDialog.kt": {
+      "sloc": 48,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 12,
+      "class": "com.yubico.yubioath.ui.RequirePasswordDialog"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseViewModel.kt": {
+      "sloc": 61,
+      "number_of_properties": 7,
+      "number_of_functions": 5,
+      "complexity": 11,
+      "class": "com.yubico.yubioath.ui.BaseViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt": {
+      "sloc": 187,
+      "number_of_properties": 9,
+      "number_of_functions": 9,
+      "complexity": 43,
+      "class": "com.yubico.yubioath.ui.BaseActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialFragment.kt": {
+      "sloc": 125,
+      "number_of_properties": 2,
+      "number_of_functions": 7,
+      "complexity": 38,
+      "class": "com.yubico.yubioath.ui.add.AddCredentialFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialViewModel.kt": {
+      "sloc": 23,
+      "number_of_properties": 2,
+      "number_of_functions": 2,
+      "complexity": 6,
+      "class": "com.yubico.yubioath.ui.add.AddCredentialViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt": {
+      "sloc": 94,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 23,
+      "class": "com.yubico.yubioath.ui.add.AddCredentialActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/MainActivity.kt": {
+      "sloc": 111,
+      "number_of_properties": 0,
+      "number_of_functions": 12,
+      "complexity": 28,
+      "class": "com.yubico.yubioath.ui.main.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt": {
+      "sloc": 200,
+      "number_of_properties": 5,
+      "number_of_functions": 25,
+      "complexity": 66,
+      "class": "com.yubico.yubioath.ui.main.CredentialAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/IconManager.kt": {
+      "sloc": 69,
+      "number_of_properties": 4,
+      "number_of_functions": 8,
+      "complexity": 18,
+      "class": "com.yubico.yubioath.ui.main.IconManager"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/OathViewModel.kt": {
+      "sloc": 113,
+      "number_of_properties": 10,
+      "number_of_functions": 9,
+      "complexity": 24,
+      "class": "com.yubico.yubioath.ui.main.OathViewModel"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt": {
+      "sloc": 400,
+      "number_of_properties": 6,
+      "number_of_functions": 30,
+      "complexity": 105,
+      "class": "com.yubico.yubioath.ui.main.CredentialFragment"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/KeyProvider.kt": {
+      "sloc": 8,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "com.yubico.yubioath.keystore.KeyProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/StoredSigner.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "com.yubico.yubioath.keystore.StoredSigner"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/SharedPrefProvider.kt": {
+      "sloc": 35,
+      "number_of_properties": 0,
+      "number_of_functions": 9,
+      "complexity": 10,
+      "class": "com.yubico.yubioath.keystore.SharedPrefProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/ClearingMemProvider.kt": {
+      "sloc": 32,
+      "number_of_properties": 2,
+      "number_of_functions": 7,
+      "complexity": 8,
+      "class": "com.yubico.yubioath.keystore.ClearingMemProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/KeyStoreProvider.kt": {
+      "sloc": 55,
+      "number_of_properties": 2,
+      "number_of_functions": 7,
+      "complexity": 12,
+      "class": "com.yubico.yubioath.keystore.KeyStoreProvider"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/exc/DuplicateKeyException.kt": {
+      "sloc": 3,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.yubico.yubioath.exc.DuplicateKeyException"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/exc/AppletSelectException.kt": {
+      "sloc": 2,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.yubico.yubioath.exc.AppletSelectException"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/exc/KeyTooLongException.kt": {
+      "sloc": 3,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.yubico.yubioath.exc.KeyTooLongException"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/exc/PasswordRequiredException.kt": {
+      "sloc": 2,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.yubico.yubioath.exc.PasswordRequiredException"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/USKeyboardLayout.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.yubico.yubioath.scancode.USKeyboardLayout"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/DEKeyboardLayout.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.yubico.yubioath.scancode.DEKeyboardLayout"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/KeyboardLayout.kt": {
+      "sloc": 36,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 8,
+      "class": "com.yubico.yubioath.scancode.KeyboardLayout"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/DECHKeyboardLayout.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.yubico.yubioath.scancode.DECHKeyboardLayout"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Credential.kt": {
+      "sloc": 53,
+      "number_of_properties": 3,
+      "number_of_functions": 7,
+      "complexity": 16,
+      "class": "com.yubico.yubioath.client.Credential"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/KeyManager.kt": {
+      "sloc": 55,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 19,
+      "class": "com.yubico.yubioath.client.KeyManager"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/DeviceInfo.kt": {
+      "sloc": 6,
+      "number_of_properties": 1,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "com.yubico.yubioath.client.DeviceInfo"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Code.kt": {
+      "sloc": 23,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "com.yubico.yubioath.client.Code"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt": {
+      "sloc": 148,
+      "number_of_properties": 2,
+      "number_of_functions": 9,
+      "complexity": 44,
+      "class": "com.yubico.yubioath.client.OathClient"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/CredentialData.kt": {
+      "sloc": 69,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 31,
+      "class": "com.yubico.yubioath.client.CredentialData"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:36:5",
+        "message": "The function onCreatePreferences appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordActivity.kt:31:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:131:5",
+        "message": "The function useTransport appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialFragment.kt:58:5",
+        "message": "The function onActivityCreated appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialFragment.kt:114:5",
+        "message": "The function validateData appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt:48:5",
+        "message": "The function onOptionsItemSelected appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:104:5",
+        "message": "The function getView appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:91:5",
+        "message": "The function onActivityCreated appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:213:5",
+        "message": "The function onActivityResult appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:377:5",
+        "message": "The function selectItem appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/CredentialData.kt:11:9",
+        "message": "The function fromUri appears to be too complex."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordActivity.kt:31:5",
+        "message": "Function onOptionsItemSelected is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseViewModel.kt:57:5",
+        "message": "Function onClient is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:104:5",
+        "message": "Function getView is nested too deeply."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:213:5",
+        "message": "Function onActivityResult is nested too deeply."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:23:1",
+        "message": "Class 'CredentialAdapter' with '17' functions detected. Defined threshold inside classes is set to '11'"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:47:1",
+        "message": "Class 'CredentialFragment' with '12' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }, {
+      "name": "ComplexCondition",
+      "description": "Complex conditions should be simplified and extracted into well-named methods if necessary.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:137:45",
+        "message": "This condition is too complex."
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/OathViewModel.kt:46:15",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:47:1",
+        "message": "Class CredentialFragment is too large. Consider splitting it into smaller pieces."
+      }]
+    }]
+  }, {
+    "group": "empty-blocks",
+    "smells": [{
+      "name": "EmptyCatchBlock",
+      "description": "Empty block of code detected. As they serve no purpose they should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt:84:60",
+        "message": "This empty block of code can be removed."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "RethrowCaughtException",
+      "description": "Do not rethrow a caught exception of the same type.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/test/kotlin/com/yubico/yubioath/protocol/CredentialDataTest.kt:68:17",
+        "message": "Do not rethrow a caught exception of the same type."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseViewModel.kt:72:13",
+        "message": "Do not rethrow a caught exception of the same type."
+      }]
+    }, {
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordActivity.kt:48:46",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseViewModel.kt:70:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:161:18",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt:87:34",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:111:22",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:249:34",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "InstanceOfCheckForException",
+      "description": "Instead of checking for a general exception type and checking for a specific exception type use multiple catch blocks.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:163:31",
+        "message": "Instead of checking for a general exception type and checking for a specific exception type use multiple catch blocks."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt:89:33",
+        "message": "Instead of checking for a general exception type and checking for a specific exception type use multiple catch blocks."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt:90:33",
+        "message": "Instead of checking for a general exception type and checking for a specific exception type use multiple catch blocks."
+      }]
+    }, {
+      "name": "TooGenericExceptionThrown",
+      "description": "Thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/KeyStoreProvider.kt:35:84",
+        "message": "RuntimeException is a too generic Exception. Prefer throwing specific exceptions that indicate a specific error case."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "ConstructorParameterNaming",
+      "description": "Constructor parameter names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordFragment.kt:13:29",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordFragment.kt:13:59",
+        "message": "Constructor parameter names should match the pattern: [a-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseViewModel.kt:16:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:38:9",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:20:78",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:53:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:71:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordFragment.kt:15:78",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordFragment.kt:24:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordFragment.kt:31:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordActivity.kt:56:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordActivity.kt:60:43",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordViewModel.kt:6:98",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/RequirePasswordDialog.kt:62:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:112:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:198:37",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialFragment.kt:52:83",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt:55:38",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt:59:54",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/MainActivity.kt:37:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/MainActivity.kt:78:60",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:205:20",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:206:23",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:207:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:208:25",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:209:24",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:210:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:211:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:212:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:213:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/OathViewModel.kt:61:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/OathViewModel.kt:69:26",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/OathViewModel.kt:90:98",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:59:74",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:100:29",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:118:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:120:41",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:122:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:192:21",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:246:97",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:332:102",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:344:30",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:369:14",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Credential.kt:13:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Credential.kt:14:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Code.kt:8:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordActivity.kt:34:41",
+        "message": "supportFragmentManager.findFragmentById(R.id.fragment) cannot be safely cast to PasswordFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt:51:47",
+        "message": "supportFragmentManager.findFragmentById(R.id.fragment) cannot be safely cast to AddCredentialFragment."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/MainActivity.kt:53:14",
+        "message": "intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES)[0] cannot be safely cast to NdefMessage."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/MainActivity.kt:64:26",
+        "message": "menu.findItem(R.id.menu_main_search).actionView cannot be safely cast to SearchView."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:106:14",
+        "message": "this cannot be safely cast to ViewGroup."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:114:18",
+        "message": "tag cannot be safely cast to CodeAdapterViewHolder."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:75:54",
+        "message": "listAdapter cannot be safely cast to CredentialAdapter."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:282:14",
+        "message": "get(swipe_clear_layout) cannot be safely cast to ImageView."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/RequirePasswordDialog.kt:55:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:47:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:50:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:54:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:55:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:56:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:55:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/test/kotlin/com/yubico/yubioath/model/YubiKeyOathTest.kt:74:1",
+        "message": "The file YubiKeyOathTest.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/strict/java/com/yubico/yubioath/FlavorExtension.kt:10:63",
+        "message": "The file FlavorExtension.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/relaxed/java/com/yubico/yubioath/FlavorExtension.kt:17:1",
+        "message": "The file FlavorExtension.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:98:1",
+        "message": "The file SettingsFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsActivity.kt:22:1",
+        "message": "The file SettingsActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsViewModel.kt:13:1",
+        "message": "The file SettingsViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordFragment.kt:60:1",
+        "message": "The file PasswordFragment.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordActivity.kt:78:1",
+        "message": "The file PasswordActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordViewModel.kt:9:1",
+        "message": "The file PasswordViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseViewModel.kt:75:1",
+        "message": "The file BaseViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:214:1",
+        "message": "The file BaseActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialViewModel.kt:27:1",
+        "message": "The file AddCredentialViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt:103:1",
+        "message": "The file AddCredentialActivity.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:231:1",
+        "message": "The file CredentialAdapter.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/IconManager.kt:84:1",
+        "message": "The file IconManager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/OathViewModel.kt:133:1",
+        "message": "The file OathViewModel.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/KeyProvider.kt:9:1",
+        "message": "The file KeyProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/StoredSigner.kt:7:1",
+        "message": "The file StoredSigner.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/SharedPrefProvider.kt:45:1",
+        "message": "The file SharedPrefProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/ClearingMemProvider.kt:42:1",
+        "message": "The file ClearingMemProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/KeyStoreProvider.kt:67:1",
+        "message": "The file KeyStoreProvider.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/exc/DuplicateKeyException.kt:5:91",
+        "message": "The file DuplicateKeyException.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/exc/KeyTooLongException.kt:5:68",
+        "message": "The file KeyTooLongException.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/USKeyboardLayout.kt:12:1",
+        "message": "The file USKeyboardLayout.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/DEKeyboardLayout.kt:12:1",
+        "message": "The file DEKeyboardLayout.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/KeyboardLayout.kt:45:1",
+        "message": "The file KeyboardLayout.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/DECHKeyboardLayout.kt:12:1",
+        "message": "The file DECHKeyboardLayout.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Credential.kt:67:1",
+        "message": "The file Credential.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/KeyManager.kt:98:1",
+        "message": "The file KeyManager.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/DeviceInfo.kt:8:1",
+        "message": "The file DeviceInfo.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Code.kt:29:1",
+        "message": "The file Code.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:172:1",
+        "message": "The file OathClient.kt is not ending with a new line."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/CredentialData.kt:83:1",
+        "message": "The file CredentialData.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "FunctionOnlyReturningConstant",
+      "description": "A function that only returns a constant is misleading. Consider declaring a constant instead",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/strict/java/com/yubico/yubioath/FlavorExtension.kt:6:1",
+        "message": "isGooglePlayAvailable is returning a constant. Prefer declaring a constant instead."
+      }]
+    }, {
+      "name": "UnusedPrivateMember",
+      "description": "Private member is unused.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/strict/java/com/yubico/yubioath/FlavorExtension.kt:10:44",
+        "message": "Function parameter requestCode is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:116:5",
+        "message": "Private function updateTheme is unused."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:165:22",
+        "message": "Private property i is unused."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/strict/java/com/yubico/yubioath/FlavorExtension.kt:6:46",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordFragment.kt:17:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialFragment.kt:54:116",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:87:115",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/SharedPrefProvider.kt:11:68",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Credential.kt:41:47",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Credential.kt:45:34",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Credential.kt:59:67",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Credential.kt:63:62",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Code.kt:21:61",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Code.kt:25:56",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/relaxed/java/com/yubico/yubioath/FlavorExtension.kt:12:12",
+        "message": "Parentheses in (code == ConnectionResult.SUCCESS) are unnecessary and can be replaced with: code == ConnectionResult.SUCCESS"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:91:13",
+        "message": "Parentheses in (preferenceManager.findPreference<ListPreference>(\"keyboardLayout\")) are unnecessary and can be replaced with: preferenceManager.findPreference<ListPreference>(\"keyboardLayout\")"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:89:24",
+        "message": "Parentheses in (timestamp / 1000 / credential.period) are unnecessary and can be replaced with: timestamp / 1000 / credential.period"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:107:24",
+        "message": "Parentheses in (timestamp / 1000 / 30) are unnecessary and can be replaced with: timestamp / 1000 / 30"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:123:13",
+        "message": "Parentheses in (credential to code) are unnecessary and can be replaced with: credential to code"
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:20:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:23:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:30:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:40:49",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:71:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:75:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:78:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/settings/SettingsFragment.kt:81:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordFragment.kt:15:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordActivity.kt:34:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordViewModel.kt:6:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/RequirePasswordDialog.kt:68:156",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseViewModel.kt:41:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:34:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:87:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:153:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:154:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialFragment.kt:52:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialFragment.kt:95:138",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialViewModel.kt:22:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialViewModel.kt:23:50",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt:51:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt:59:25",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt:89:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/MainActivity.kt:53:115",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/MainActivity.kt:85:124",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:23:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:54:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:56:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:87:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:137:164",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/OathViewModel.kt:33:126",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/OathViewModel.kt:34:133",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/OathViewModel.kt:62:154",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/OathViewModel.kt:90:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/OathViewModel.kt:101:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:123:125",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:132:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:221:144",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:236:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:332:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:345:153",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:443:143",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/KeyStoreProvider.kt:35:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/KeyStoreProvider.kt:37:179",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/exc/PasswordRequiredException.kt:33:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/USKeyboardLayout.kt:11:191",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/DEKeyboardLayout.kt:11:191",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/KeyboardLayout.kt:20:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/KeyboardLayout.kt:30:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/DECHKeyboardLayout.kt:11:191",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/KeyManager.kt:84:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:25:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:36:22",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:64:59",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:111:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:117:136",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/CredentialData.kt:9:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordFragment.kt:28:5",
+        "message": "Function validateData has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/KeyboardLayout.kt:31:5",
+        "message": "Function fromScanCode has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:56:5",
+        "message": "Function setPassword has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/password/PasswordActivity.kt:57:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:89:32",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:90:33",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialFragment.kt:86:53",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialFragment.kt:152:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialFragment.kt:163:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialFragment.kt:166:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialFragment.kt:166:77",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialActivity.kt:64:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:51:75",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:53:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:74:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:74:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:74:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:74:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:75:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:75:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:75:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:75:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:76:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:76:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:76:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:87:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:146:81",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:220:67",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/IconManager.kt:35:95",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/OathViewModel.kt:77:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/OathViewModel.kt:90:136",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:64:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:69:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:101:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:132:101",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:134:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:197:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:300:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:321:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/ClearingMemProvider.kt:16:19",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/ClearingMemProvider.kt:16:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/scancode/KeyboardLayout.kt:26:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/Credential.kt:28:16",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/KeyManager.kt:90:52",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/KeyManager.kt:90:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:47:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:89:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:90:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:98:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:98:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:107:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:107:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:108:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:115:42",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:119:58",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:119:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:119:86",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:119:91",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:137:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:140:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:163:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:163:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:165:30",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/CredentialData.kt:28:31",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/CredentialData.kt:28:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/CredentialData.kt:52:28",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/CredentialData.kt:53:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/CredentialData.kt:54:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/CredentialData.kt:60:21",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseViewModel.kt:10:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseActivity.kt:29:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:18:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/IconManager.kt:4:1",
+        "message": "android.graphics.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:14:1",
+        "message": "android.view.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:15:1",
+        "message": "android.view.animation.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:38:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/keystore/ClearingMemProvider.kt:3:1",
+        "message": "kotlinx.coroutines.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "OptionalUnit",
+      "description": "Return type of 'Unit' is unnecessary and can be safely removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/BaseViewModel.kt:56:64",
+        "message": "The function useClient defines a return type of Unit. This is unnecessary and can safely be removed."
+      }]
+    }, {
+      "name": "PreferToOverPairSyntax",
+      "description": "Pair was created using the Pair constructor, using the to syntax is preferred.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/add/AddCredentialViewModel.kt:24:13",
+        "message": "Pair is created by using the pair constructor. This can replaced by `it to if (!(it.touch || it.type == OathType.HOTP)) client.calculate(it, System.currentTimeMillis()) else null`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:98:30",
+        "message": "Pair is created by using the pair constructor. This can replaced by `timeStep * 1000 * credential.period to (timeStep + 1) * 1000 * credential.period`"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/OathClient.kt:99:36",
+        "message": "Pair is created by using the pair constructor. This can replaced by `System.currentTimeMillis() to Long.MAX_VALUE`"
+      }]
+    }, {
+      "name": "UseDataClass",
+      "description": "Classes that do nothing but hold data should be replaced with a data class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialAdapter.kt:204:5",
+        "message": "The class CodeAdapterViewHolder defines nofunctionality and only holds data. Consider converting it to a data class."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/DeviceInfo.kt:5:1",
+        "message": "The class DeviceInfo defines nofunctionality and only holds data. Consider converting it to a data class."
+      }]
+    }, {
+      "name": "OptionalWhenBraces",
+      "description": "Optional braces in when expression",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:255:17",
+        "message": "Optional braces in when expression"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/ui/main/CredentialFragment.kt:258:17",
+        "message": "Optional braces in when expression"
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/KeyManager.kt:37:36",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of KeyManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/CredentialData.kt:6:46",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of CredentialData."
+      }]
+    }, {
+      "name": "ThrowsCount",
+      "description": "Restrict the number of throw statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-yubico-yubioath/app/src/main/kotlin/com/yubico/yubioath/client/CredentialData.kt:11:9",
+        "message": "Too many throw statements in the function fromUri. The maximum number of allowed throw statements is 2."
+      }]
+    }]
+  }]
+}

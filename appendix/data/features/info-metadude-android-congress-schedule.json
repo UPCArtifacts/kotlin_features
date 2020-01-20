@@ -1,0 +1,829 @@
+{
+  "complexity_metrics": {
+    "loc": 4059,
+    "sloc": 3190,
+    "lloc": 2348,
+    "cloc": 178,
+    "mcc": 459,
+    "n_smell": 89,
+    "comment_ratio": 5,
+    "mcc_per_thlines": 195
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 1,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 452,
+    "number_of_string_template": 35,
+    "number_of_inline_func": 4,
+    "number_of_inferred_fun": 84,
+    "number_of_inferred_var": 269,
+    "number_of_objects_declarations": 27,
+    "number_of_companion_objects": 12,
+    "number_of_singletons": 12,
+    "number_of_declaration": 302,
+    "number_of_var_declaration": 302,
+    "number_of_func_call": 1280,
+    "number_of_arguments": 1560,
+    "number_of_parameters": 377,
+    "number_of_qualified_expressions": 1237,
+    "number_of_inheritances": 6,
+    "number_of_unsafe_calls": 5,
+    "number_of_safe_calls": 3,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 5,
+    "number_of_functions_with_default_value": 20,
+    "number_of_function_call_with_named_value": 80,
+    "number_of_named_argument": 360,
+    "number_of_argument_with_default_value": 128,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 57,
+    "number_of_properties_delegation": 2,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 1,
+    "number_of_lambdas": 109,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 14,
+    "number_of_constructors": 33,
+    "number_of_properties": 302,
+    "number_of_functions": 236,
+    "number_of_interfaces": 1,
+    "number_of_classes": 51,
+    "number_of_packages": 29,
+    "number_of_kts_files": 1,
+    "number_of_kt_files": 83
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/androidTest/java/info/metadude/android/eventfahrplan/database/extensions/MetaExtensionsTest.kt": {
+      "sloc": 30,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "info.metadude.android.eventfahrplan.database.extensions.MetaExtensionsTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/androidTest/java/info/metadude/android/eventfahrplan/database/extensions/AlarmExtensionsTest.kt": {
+      "sloc": 30,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "info.metadude.android.eventfahrplan.database.extensions.AlarmExtensionsTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/androidTest/java/info/metadude/android/eventfahrplan/database/extensions/HighlightExtensionsTest.kt": {
+      "sloc": 21,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "info.metadude.android.eventfahrplan.database.extensions.HighlightExtensionsTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/androidTest/java/info/metadude/android/eventfahrplan/database/extensions/LectureExtensionsTest.kt": {
+      "sloc": 86,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "info.metadude.android.eventfahrplan.database.extensions.LectureExtensionsTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/AlarmsDatabaseRepository.kt": {
+      "sloc": 78,
+      "number_of_properties": 0,
+      "number_of_functions": 7,
+      "complexity": 14,
+      "class": "info.metadude.android.eventfahrplan.database.repositories.AlarmsDatabaseRepository"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/HighlightsDatabaseRepository.kt": {
+      "sloc": 50,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 6,
+      "class": "info.metadude.android.eventfahrplan.database.repositories.HighlightsDatabaseRepository"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt": {
+      "sloc": 108,
+      "number_of_properties": 1,
+      "number_of_functions": 5,
+      "complexity": 15,
+      "class": "info.metadude.android.eventfahrplan.database.repositories.LecturesDatabaseRepository"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/MetaDatabaseRepository.kt": {
+      "sloc": 74,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 13,
+      "class": "info.metadude.android.eventfahrplan.database.repositories.MetaDatabaseRepository"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/models/Meta.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "info.metadude.android.eventfahrplan.database.models.Meta"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/models/Highlight.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "info.metadude.android.eventfahrplan.database.models.Highlight"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/models/Alarm.kt": {
+      "sloc": 13,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "info.metadude.android.eventfahrplan.database.models.Alarm"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/models/Lecture.kt": {
+      "sloc": 44,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "info.metadude.android.eventfahrplan.database.models.Lecture"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/schedule/ConferenceTest.kt": {
+      "sloc": 46,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 9,
+      "class": "nerd.tuxmobil.fahrplan.congress.schedule.ConferenceTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/schedule/NavigationMenuEntriesGeneratorTest.kt": {
+      "sloc": 71,
+      "number_of_properties": 0,
+      "number_of_functions": 7,
+      "complexity": 15,
+      "class": "nerd.tuxmobil.fahrplan.congress.schedule.NavigationMenuEntriesGeneratorTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/serialization/ScheduleChangesTest.kt": {
+      "sloc": 79,
+      "number_of_properties": 2,
+      "number_of_functions": 13,
+      "complexity": 13,
+      "class": "nerd.tuxmobil.fahrplan.congress.serialization.ScheduleChangesTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/dataconverters/MetaExtensionsTest.kt": {
+      "sloc": 34,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "nerd.tuxmobil.fahrplan.congress.dataconverters.MetaExtensionsTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/dataconverters/AlarmExtensionsTest.kt": {
+      "sloc": 40,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "nerd.tuxmobil.fahrplan.congress.dataconverters.AlarmExtensionsTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/dataconverters/FetchScheduleResultExtensionsTest.kt": {
+      "sloc": 18,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "nerd.tuxmobil.fahrplan.congress.dataconverters.FetchScheduleResultExtensionsTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/dataconverters/HighlightExtensionsTest.kt": {
+      "sloc": 19,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "nerd.tuxmobil.fahrplan.congress.dataconverters.HighlightExtensionsTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/dataconverters/LectureExtensionsTest.kt": {
+      "sloc": 111,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "nerd.tuxmobil.fahrplan.congress.dataconverters.LectureExtensionsTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/wiki/WikiEventUtilsTest.kt": {
+      "sloc": 29,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "nerd.tuxmobil.fahrplan.congress.wiki.WikiEventUtilsTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/utils/EventUrlComposerTest.kt": {
+      "sloc": 52,
+      "number_of_properties": 0,
+      "number_of_functions": 5,
+      "complexity": 10,
+      "class": "nerd.tuxmobil.fahrplan.congress.utils.EventUrlComposerTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/utils/DateHelperTest.kt": {
+      "sloc": 14,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "nerd.tuxmobil.fahrplan.congress.utils.DateHelperTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/utils/FeedbackUrlComposerTest.kt": {
+      "sloc": 32,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 5,
+      "class": "nerd.tuxmobil.fahrplan.congress.utils.FeedbackUrlComposerTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/utils/FahrplanMiscTest.kt": {
+      "sloc": 217,
+      "number_of_properties": 0,
+      "number_of_functions": 18,
+      "complexity": 41,
+      "class": "nerd.tuxmobil.fahrplan.congress.utils.FahrplanMiscTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/models/DateInfoTest.kt": {
+      "sloc": 23,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 3,
+      "class": "nerd.tuxmobil.fahrplan.congress.models.DateInfoTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/preferences/SharedPreferencesRepository.kt": {
+      "sloc": 25,
+      "number_of_properties": 1,
+      "number_of_functions": 5,
+      "complexity": 7,
+      "class": "nerd.tuxmobil.fahrplan.congress.preferences.SharedPreferencesRepository"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/Conference.kt": {
+      "sloc": 55,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 16,
+      "class": "nerd.tuxmobil.fahrplan.congress.schedule.Conference"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/net/ParseScheduleResult.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "nerd.tuxmobil.fahrplan.congress.net.ParseScheduleResult"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/net/FetchScheduleResult.kt": {
+      "sloc": 16,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "nerd.tuxmobil.fahrplan.congress.net.FetchScheduleResult"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/net/ConnectivityObserver.kt": {
+      "sloc": 73,
+      "number_of_properties": 4,
+      "number_of_functions": 5,
+      "complexity": 16,
+      "class": "nerd.tuxmobil.fahrplan.congress.net.ConnectivityObserver"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/engagements/RateSnack.kt": {
+      "sloc": 20,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "nerd.tuxmobil.fahrplan.congress.engagements.RateSnack"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/engagements/GooglePlayBetaTestingSnack.kt": {
+      "sloc": 20,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "nerd.tuxmobil.fahrplan.congress.engagements.GooglePlayBetaTestingSnack"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/commons/CheckableLayout.kt": {
+      "sloc": 20,
+      "number_of_properties": 1,
+      "number_of_functions": 3,
+      "complexity": 5,
+      "class": "nerd.tuxmobil.fahrplan.congress.commons.CheckableLayout"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/changes/LectureChangesArrayAdapter.kt": {
+      "sloc": 126,
+      "number_of_properties": 3,
+      "number_of_functions": 6,
+      "complexity": 26,
+      "class": "nerd.tuxmobil.fahrplan.congress.changes.LectureChangesArrayAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/favorites/LectureArrayAdapter.kt": {
+      "sloc": 62,
+      "number_of_properties": 3,
+      "number_of_functions": 3,
+      "complexity": 7,
+      "class": "nerd.tuxmobil.fahrplan.congress.favorites.LectureArrayAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/navigation/C3navSnack.kt": {
+      "sloc": 32,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "nerd.tuxmobil.fahrplan.congress.navigation.C3navSnack"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/navigation/RoomForC3NavConverter.kt": {
+      "sloc": 58,
+      "number_of_properties": 2,
+      "number_of_functions": 1,
+      "complexity": 3,
+      "class": "nerd.tuxmobil.fahrplan.congress.navigation.RoomForC3NavConverter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/utils/FeedbackUrlComposer.kt": {
+      "sloc": 24,
+      "number_of_properties": 2,
+      "number_of_functions": 1,
+      "complexity": 5,
+      "class": "nerd.tuxmobil.fahrplan.congress.utils.FeedbackUrlComposer"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/utils/EventUrlComposer.kt": {
+      "sloc": 18,
+      "number_of_properties": 1,
+      "number_of_functions": 2,
+      "complexity": 6,
+      "class": "nerd.tuxmobil.fahrplan.congress.utils.EventUrlComposer"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/utils/ServerBackendType.kt": {
+      "sloc": 6,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "nerd.tuxmobil.fahrplan.congress.utils.ServerBackendType"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt": {
+      "sloc": 183,
+      "number_of_properties": 13,
+      "number_of_functions": 26,
+      "complexity": 38,
+      "class": "nerd.tuxmobil.fahrplan.congress.repositories.AppRepository"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/models/Meta.kt": {
+      "sloc": 11,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "nerd.tuxmobil.fahrplan.congress.models.Meta"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/models/Highlight.kt": {
+      "sloc": 5,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "nerd.tuxmobil.fahrplan.congress.models.Highlight"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/models/SchedulableAlarm.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "nerd.tuxmobil.fahrplan.congress.models.SchedulableAlarm"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/models/Alarm.kt": {
+      "sloc": 34,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "nerd.tuxmobil.fahrplan.congress.models.Alarm"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/logging/ConsoleLogger.kt": {
+      "sloc": 7,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "nerd.tuxmobil.fahrplan.congress.logging.ConsoleLogger"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/logging/Logging.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 4,
+      "class": "nerd.tuxmobil.fahrplan.congress.logging.Logging"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/logging/NoLogging.kt": {
+      "sloc": 4,
+      "number_of_properties": 0,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "nerd.tuxmobil.fahrplan.congress.logging.NoLogging"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/notifications/NotificationHelper.kt": {
+      "sloc": 99,
+      "number_of_properties": 9,
+      "number_of_functions": 6,
+      "complexity": 9,
+      "class": "nerd.tuxmobil.fahrplan.congress.notifications.NotificationHelper"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/test/java/info/metadude/android/eventfahrplan/network/utils/DateHelperTest.kt": {
+      "sloc": 15,
+      "number_of_properties": 1,
+      "number_of_functions": 1,
+      "complexity": 1,
+      "class": "info.metadude.android.eventfahrplan.network.utils.DateHelperTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/test/java/info/metadude/android/eventfahrplan/network/models/LectureTest.kt": {
+      "sloc": 35,
+      "number_of_properties": 0,
+      "number_of_functions": 7,
+      "complexity": 7,
+      "class": "info.metadude.android.eventfahrplan.network.models.LectureTest"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/main/java/info/metadude/android/eventfahrplan/network/repositories/ScheduleNetworkRepository.kt": {
+      "sloc": 30,
+      "number_of_properties": 2,
+      "number_of_functions": 5,
+      "complexity": 5,
+      "class": "info.metadude.android.eventfahrplan.network.repositories.ScheduleNetworkRepository"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/main/java/info/metadude/android/eventfahrplan/network/models/Meta.kt": {
+      "sloc": 10,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "info.metadude.android.eventfahrplan.network.models.Meta"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/main/java/info/metadude/android/eventfahrplan/network/models/Lecture.kt": {
+      "sloc": 51,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "info.metadude.android.eventfahrplan.network.models.Lecture"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/main/java/info/metadude/android/eventfahrplan/network/fetching/FetchScheduleResult.kt": {
+      "sloc": 8,
+      "number_of_properties": 0,
+      "number_of_functions": 0,
+      "complexity": 0,
+      "class": "info.metadude.android.eventfahrplan.network.fetching.FetchScheduleResult"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/androidTest/java/info/metadude/android/eventfahrplan/database/extensions/LectureExtensionsTest.kt:13:5",
+        "message": "The function toContentValues is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/dataconverters/LectureExtensions.kt:96:1",
+        "message": "The function toLectureAppModel is too long. The maximum length is 20."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/dataconverters/LectureExtensions.kt:139:1",
+        "message": "The function toLectureAppModel is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/MetaDatabaseRepository.kt:31:5",
+        "message": "The function query appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/Conference.kt:14:5",
+        "message": "The function calculateTimeFrame appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/changes/LectureChangesArrayAdapter.kt:49:5",
+        "message": "The function setItemContent appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/dataconverters/HttpStatusExtensions.kt:6:1",
+        "message": "The function toAppHttpStatus appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/dataconverters/HttpStatusExtensions.kt:20:1",
+        "message": "The function toNetworkHttpStatus appears to be too complex."
+      }]
+    }, {
+      "name": "LongParameterList",
+      "description": "The more parameters a method has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer methods with short parameter lists.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/extensions/SQLiteDatabaseExtensions.kt:10:24",
+        "message": "The function read has too many parameters. The current threshold is set to 6."
+      }]
+    }, {
+      "name": "NestedBlockDepth",
+      "description": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/NavigationMenuEntriesGenerator.kt:7:1",
+        "message": "Function getDayMenuEntries is nested too deeply."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/calendar/CalendarSharing.kt:47:12",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/calendar/CalendarSharing.kt:49:17",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/calendar/CalendarSharing.kt:58:41",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:27:1",
+        "message": "Object 'AppRepository' with '26' functions detected. Defined threshold inside objects is set to '11'"
+      }]
+    }, {
+      "name": "StringLiteralDuplication",
+      "description": "Multiple occurrences of the same string literal within a single file detected.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:22:35",
+        "message": "Multiple occurrences of the same string literal within a single file detected."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/AlarmsDatabaseRepository.kt:45:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/HighlightsDatabaseRepository.kt:36:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/MetaDatabaseRepository.kt:39:13",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:55:9",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "naming",
+    "smells": [{
+      "name": "FunctionMaxLength",
+      "description": "Function names should not be longer than the maximum set in the project configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:38:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:181:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/notifications/NotificationHelper.kt:27:5",
+        "message": "Function names should be at most 30 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/notifications/NotificationHelper.kt:39:5",
+        "message": "Function names should be at most 30 characters long."
+      }]
+    }, {
+      "name": "ObjectPropertyNaming",
+      "description": "Property names inside objects should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/navigation/RoomForC3NavConverter.kt:7:5",
+        "message": "Private object property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }]
+    }, {
+      "name": "TopLevelPropertyNaming",
+      "description": "Top level property names should follow the naming convention set in the projects configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/wiki/WikiEventUtils.kt:5:1",
+        "message": "Private top level property names should match the pattern: (_)?[A-Za-z][A-Za-z0-9]*"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:12:1",
+        "message": "Top level constant names should match the pattern: [A-Z][_A-Z0-9]*"
+      }]
+    }, {
+      "name": "FunctionMinLength",
+      "description": "Function names should not be shorter than the minimum defined in the configuration.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/logging/ConsoleLogger.kt:7:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/logging/Logging.kt:7:5",
+        "message": "Function names should be at least 3 characters long."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/logging/NoLogging.kt:5:5",
+        "message": "Function names should be at least 3 characters long."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/preferences/SharedPreferencesRepository.kt:31:16",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/net/ConnectivityObserver.kt:28:17",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/extensions/Contexts.kt:12:33",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/extensions/Contexts.kt:14:35",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/extensions/Contexts.kt:16:40",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }, {
+      "name": "LateinitUsage",
+      "description": "Usage of lateinit detected. Using lateinit for property initialization is error prone, try using constructor injection or delegation.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/net/ConnectivityObserver.kt:53:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:31:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:33:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:35:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:36:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:38:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:39:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:41:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:42:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:44:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:45:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:47:5",
+        "message": "Usages of latinit should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:48:5",
+        "message": "Usages of latinit should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "ReturnCount",
+      "description": "Restrict the number of return statements in methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/AlarmsDatabaseRepository.kt:37:5",
+        "message": "Function query has 3 return statements which exceeds the limit of 2."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:49:5",
+        "message": "Function query has 3 return statements which exceeds the limit of 2."
+      }]
+    }, {
+      "name": "WildcardImport",
+      "description": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/AlarmsDatabaseRepository.kt:9:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.AlarmsTable.Columns.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/AlarmsDatabaseRepository.kt:10:1",
+        "message": "info.metadude.android.eventfahrplan.database.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/HighlightsDatabaseRepository.kt:10:1",
+        "message": "info.metadude.android.eventfahrplan.database.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:8:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.LecturesTable.Columns.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:10:1",
+        "message": "info.metadude.android.eventfahrplan.database.extensions.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/MetaDatabaseRepository.kt:8:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.MetasTable.Columns.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/models/Meta.kt:3:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.MetasTable.Defaults.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/extensions/MetaExtensions.kt:4:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.MetasTable.Columns.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/extensions/AlarmExtensions.kt:4:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.AlarmsTable.Columns.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/extensions/LectureExtensions.kt:4:1",
+        "message": "info.metadude.android.eventfahrplan.database.contract.FahrplanContract.LecturesTable.Columns.* is a wildcard import. Replace it with fully qualified imports."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/repositories/AppRepository.kt:16:1",
+        "message": "nerd.tuxmobil.fahrplan.congress.dataconverters.* is a wildcard import. Replace it with fully qualified imports."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:123:1",
+        "message": "The file LecturesDatabaseRepository.kt is not ending with a new line."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:93:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/repositories/LecturesDatabaseRepository.kt:93:21",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/utils/FeedbackUrlComposer.kt:32:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/extensions/SQLiteDatabaseExtensions.kt:63:158",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/database/src/main/java/info/metadude/android/eventfahrplan/database/extensions/CursorExtensions.kt:1:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/preferences/SharedPreferencesRepository.kt:11:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/NavigationMenuEntriesGenerator.kt:7:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/changes/LectureChangesArrayAdapter.kt:111:131",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/notifications/NotificationHelper.kt:24:123",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/buildSrc/src/main/kotlin/nerd/tuxmobil/fahrplan/congress/Dependencies.kt:58:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnusedImports",
+      "description": "Unused Imports are dead code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/test/java/nerd/tuxmobil/fahrplan/congress/dataconverters/MetaExtensionsTest.kt:7:1",
+        "message": "The import 'nerd.tuxmobil.fahrplan.congress.models.Meta' is unused."
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/Conference.kt:41:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/calendar/CalendarSharing.kt:32:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/engagements/RateSnack.kt:18:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/engagements/GooglePlayBetaTestingSnack.kt:18:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/favorites/LectureArrayAdapter.kt:74:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/navigation/C3navSnack.kt:25:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:34:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:40:47",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:42:23",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:46:24",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/main/java/info/metadude/android/eventfahrplan/network/models/Lecture.kt:49:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/main/java/info/metadude/android/eventfahrplan/network/models/Lecture.kt:54:48",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "DataClassContainsFunctions",
+      "description": "Data classes should mainly be used to store data and should not have any extra functions. (Compiler will automatically generate equals, toString and hashCode functions)",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/Conference.kt:14:5",
+        "message": "The data class Conference contains functions which are not registered conversion functions. The offending method is called calculateTimeFrame"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/Conference.kt:65:5",
+        "message": "The data class Conference contains functions which are not registered conversion functions. The offending method is called isDaySwitch"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/schedule/Conference.kt:71:5",
+        "message": "The data class Conference contains functions which are not registered conversion functions. The offending method is called forwardLastEventEndsAtByOneDay"
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/app/src/main/java/nerd/tuxmobil/fahrplan/congress/logging/Logging.kt:11:28",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/info-metadude-android-congress-schedule/network/src/main/java/info/metadude/android/eventfahrplan/network/utils/DateHelper.kt:21:42",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,723 @@
+{
+  "complexity_metrics": {
+    "loc": 1860,
+    "sloc": 1363,
+    "lloc": 903,
+    "cloc": 176,
+    "mcc": 282,
+    "n_smell": 152,
+    "comment_ratio": 12,
+    "mcc_per_thlines": 312
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 0,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 9,
+    "number_of_string_template": 0,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 0,
+    "number_of_inferred_var": 44,
+    "number_of_objects_declarations": 11,
+    "number_of_companion_objects": 0,
+    "number_of_singletons": 0,
+    "number_of_declaration": 132,
+    "number_of_var_declaration": 132,
+    "number_of_func_call": 698,
+    "number_of_arguments": 602,
+    "number_of_parameters": 265,
+    "number_of_qualified_expressions": 1145,
+    "number_of_inheritances": 20,
+    "number_of_unsafe_calls": 0,
+    "number_of_safe_calls": 50,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 1,
+    "number_of_functions_with_default_value": 2,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 2,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 5,
+    "number_of_lambdas": 106,
+    "number_of_possible_smart_casts": 1,
+    "number_of_data_class": 0,
+    "number_of_constructors": 38,
+    "number_of_properties": 132,
+    "number_of_functions": 107,
+    "number_of_interfaces": 1,
+    "number_of_classes": 28,
+    "number_of_packages": 3,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 20
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt": {
+      "sloc": 358,
+      "number_of_properties": 7,
+      "number_of_functions": 22,
+      "complexity": 117,
+      "class": "me.jfenn.alarmio.adapters.AlarmsAdapter"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/ListPreferenceData.kt": {
+      "sloc": 59,
+      "number_of_properties": 0,
+      "number_of_functions": 7,
+      "complexity": 10,
+      "class": "me.jfenn.alarmio.data.preference.ListPreferenceData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/TimePreferenceData.kt": {
+      "sloc": 31,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 7,
+      "class": "me.jfenn.alarmio.data.preference.TimePreferenceData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/BasePreferenceData.kt": {
+      "sloc": 17,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "me.jfenn.alarmio.data.preference.BasePreferenceData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/AboutPreferenceData.kt": {
+      "sloc": 12,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "me.jfenn.alarmio.data.preference.AboutPreferenceData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/TimeZonesPreferenceData.kt": {
+      "sloc": 21,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 5,
+      "class": "me.jfenn.alarmio.data.preference.TimeZonesPreferenceData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/BooleanPreferenceData.kt": {
+      "sloc": 47,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 2,
+      "class": "me.jfenn.alarmio.data.preference.BooleanPreferenceData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/BatteryOptimizationPreferenceData.kt": {
+      "sloc": 34,
+      "number_of_properties": 0,
+      "number_of_functions": 3,
+      "complexity": 7,
+      "class": "me.jfenn.alarmio.data.preference.BatteryOptimizationPreferenceData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/SpinnerPreferenceData.kt": {
+      "sloc": 49,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 5,
+      "class": "me.jfenn.alarmio.data.preference.SpinnerPreferenceData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/ImageFilePreferenceData.kt": {
+      "sloc": 13,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 3,
+      "class": "me.jfenn.alarmio.data.preference.ImageFilePreferenceData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/RingtonePreferenceData.kt": {
+      "sloc": 24,
+      "number_of_properties": 0,
+      "number_of_functions": 2,
+      "complexity": 6,
+      "class": "me.jfenn.alarmio.data.preference.RingtonePreferenceData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/CustomPreferenceData.kt": {
+      "sloc": 22,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 5,
+      "class": "me.jfenn.alarmio.data.preference.CustomPreferenceData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/ThemePreferenceData.kt": {
+      "sloc": 157,
+      "number_of_properties": 0,
+      "number_of_functions": 13,
+      "complexity": 33,
+      "class": "me.jfenn.alarmio.data.preference.ThemePreferenceData"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticCheckBoxView.kt": {
+      "sloc": 41,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "me.jfenn.alarmio.views.AestheticCheckBoxView"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt": {
+      "sloc": 150,
+      "number_of_properties": 13,
+      "number_of_functions": 10,
+      "complexity": 28,
+      "class": "me.jfenn.alarmio.views.ProgressTextView"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSlideActionView.kt": {
+      "sloc": 39,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "me.jfenn.alarmio.views.AestheticSlideActionView"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressLineView.kt": {
+      "sloc": 67,
+      "number_of_properties": 6,
+      "number_of_functions": 6,
+      "complexity": 10,
+      "class": "me.jfenn.alarmio.views.ProgressLineView"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSunriseView.kt": {
+      "sloc": 42,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 4,
+      "class": "me.jfenn.alarmio.views.AestheticSunriseView"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/DaySwitch.kt": {
+      "sloc": 126,
+      "number_of_properties": 12,
+      "number_of_functions": 8,
+      "complexity": 22,
+      "class": "me.jfenn.alarmio.views.DaySwitch"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt": {
+      "sloc": 54,
+      "number_of_properties": 2,
+      "number_of_functions": 4,
+      "complexity": 6,
+      "class": "me.jfenn.alarmio.views.AestheticSwitchView"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:256:5",
+        "message": "The function onBindAlarmViewHolder is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "LargeClass",
+      "description": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:46:1",
+        "message": "Class AlarmsAdapter is too large. Consider splitting it into smaller pieces."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:109:5",
+        "message": "The function onBindAlarmViewHolderRepeat appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:161:5",
+        "message": "The function onBindAlarmViewHolderToggles appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:193:5",
+        "message": "The function onBindAlarmViewHolderExpansion appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:256:5",
+        "message": "The function onBindAlarmViewHolder appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/ThemePreferenceData.kt:40:5",
+        "message": "The function bindViewHolder appears to be too complex."
+      }]
+    }, {
+      "name": "TooManyFunctions",
+      "description": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage to many things at once. Extract functionality which clearly belongs together.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:46:1",
+        "message": "Class 'AlarmsAdapter' with '11' functions detected. Defined threshold inside classes is set to '11'"
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:95:26",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }, {
+      "name": "PrintStackTrace",
+      "description": "Do not print an stack trace. These debug statements should be replaced with a logger or removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:96:21",
+        "message": "Do not print an stack trace. These debug statements should be replaced with a logger or removed."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:145:29",
+        "message": "holder.days.getChildAt(i) cannot be safely cast to DaySwitch."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:46:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:162:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:164:130",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:174:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:180:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:185:129",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:218:127",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:272:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:288:128",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:312:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:314:137",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/ListPreferenceData.kt:18:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/TimePreferenceData.kt:31:17",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/BooleanPreferenceData.kt:17:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/BooleanPreferenceData.kt:45:134",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/BooleanPreferenceData.kt:46:171",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/BatteryOptimizationPreferenceData.kt:27:153",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/SpinnerPreferenceData.kt:17:1",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/SpinnerPreferenceData.kt:30:146",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/CustomPreferenceData.kt:27:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/ThemePreferenceData.kt:42:164",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/ThemePreferenceData.kt:104:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticCheckBoxView.kt:30:122",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:178:176",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:185:159",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:188:244",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:190:275",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:193:19",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/DaySwitch.kt:133:19",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/DaySwitch.kt:138:143",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/DaySwitch.kt:144:142",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/DaySwitch.kt:146:149",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:30:21",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:47:155",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "UnnecessaryParentheses",
+      "description": "Unnecessary parentheses don't add any value to the code and should be removed.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:374:32",
+        "message": "Parentheses in (0 until timers.size) are unnecessary and can be replaced with: 0 until timers.size"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:387:37",
+        "message": "Parentheses in (0 until alarms.size) are unnecessary and can be replaced with: 0 until alarms.size"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:178:129",
+        "message": "Parentheses in (progress - 1) are unnecessary and can be replaced with: progress - 1"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSlideActionView.kt:35:60",
+        "message": "Parentheses in (100 shl 24) are unnecessary and can be replaced with: 100 shl 24"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSunriseView.kt:33:35",
+        "message": "Parentheses in (200 shl 24) are unnecessary and can be replaced with: 200 shl 24"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSunriseView.kt:34:35",
+        "message": "Parentheses in (20 shl 24) are unnecessary and can be replaced with: 20 shl 24"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSunriseView.kt:40:56",
+        "message": "Parentheses in (200 shl 24) are unnecessary and can be replaced with: 200 shl 24"
+      }]
+    }, {
+      "name": "MagicNumber",
+      "description": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:90:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:94:54",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:120:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:144:22",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:153:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:154:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:155:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:156:17",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:163:68",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:176:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:187:78",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:187:98",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:249:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:280:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:322:72",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:323:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:324:74",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:327:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/TimePreferenceData.kt:15:35",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/BooleanPreferenceData.kt:46:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/BatteryOptimizationPreferenceData.kt:19:12",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/ThemePreferenceData.kt:149:84",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticCheckBoxView.kt:31:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticCheckBoxView.kt:31:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticCheckBoxView.kt:31:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticCheckBoxView.kt:31:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:28:50",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:53:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:86:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:177:37",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:181:25",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:182:34",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:185:142",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:188:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:188:76",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:188:148",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:188:164",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:190:73",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:190:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:190:170",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:190:186",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSlideActionView.kt:35:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSlideActionView.kt:35:69",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSlideActionView.kt:35:89",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressLineView.kt:45:39",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressLineView.kt:53:45",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressLineView.kt:80:46",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressLineView.kt:80:62",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSunriseView.kt:33:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSunriseView.kt:33:44",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSunriseView.kt:33:64",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSunriseView.kt:34:36",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSunriseView.kt:34:43",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSunriseView.kt:34:63",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSunriseView.kt:40:57",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSunriseView.kt:40:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSunriseView.kt:40:85",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/DaySwitch.kt:29:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/DaySwitch.kt:35:38",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/DaySwitch.kt:138:119",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:34:51",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:34:56",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:34:61",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:34:66",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:40:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:40:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:40:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:40:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:47:55",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:47:60",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:47:65",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:47:70",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/AestheticSwitchView.kt:47:87",
+        "message": "This expression contains a magic number. Consider defining it to a well named constant."
+      }]
+    }, {
+      "name": "ExpressionBodySyntax",
+      "description": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:360:54",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:364:38",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/ListPreferenceData.kt:24:89",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/ListPreferenceData.kt:50:51",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/BooleanPreferenceData.kt:23:108",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/SpinnerPreferenceData.kt:23:108",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/ThemePreferenceData.kt:36:108",
+        "message": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:67:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:78:16",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:78:16",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:181:13",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:188:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:268:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:333:25",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:374:16",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:387:16",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/adapters/AlarmsAdapter.kt:400:17",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/TimeZonesPreferenceData.kt:18:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/BatteryOptimizationPreferenceData.kt:33:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/RingtonePreferenceData.kt:18:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/ThemePreferenceData.kt:138:33",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/ThemePreferenceData.kt:154:33",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressTextView.kt:189:13",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressLineView.kt:79:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/ProgressLineView.kt:85:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/views/DaySwitch.kt:52:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "UnnecessaryAbstractClass",
+      "description": "An abstract class is unnecessary and can be refactored. An abstract class should have both abstract and concrete properties or functions. An abstract class without a concrete member can be refactored to an interface. An abstract class without an abstract member can be refactored to a concrete class.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/me-jfenn-alarmio/app/src/main/java/me/jfenn/alarmio/data/preference/BasePreferenceData.kt:11:1",
+        "message": "An abstract class without a concrete member can be refactored to an interface."
+      }]
+    }]
+  }]
+}

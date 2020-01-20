@@ -1,0 +1,247 @@
+{
+  "complexity_metrics": {
+    "loc": 558,
+    "sloc": 433,
+    "lloc": 317,
+    "cloc": 11,
+    "mcc": 84,
+    "n_smell": 37,
+    "comment_ratio": 2,
+    "mcc_per_thlines": 264
+  },
+  "metrics": {
+    "number_of_type_alias": 0,
+    "number_of_tailrec_func": 0,
+    "number_of_infix_func": 0,
+    "number_of_sealed_class": 0,
+    "number_of_coroutines": 3,
+    "number_of_contract": 0,
+    "number_of_inline_klass": 0,
+    "number_of_string": 59,
+    "number_of_string_template": 10,
+    "number_of_inline_func": 0,
+    "number_of_inferred_fun": 2,
+    "number_of_inferred_var": 59,
+    "number_of_objects_declarations": 4,
+    "number_of_companion_objects": 3,
+    "number_of_singletons": 0,
+    "number_of_declaration": 61,
+    "number_of_var_declaration": 61,
+    "number_of_func_call": 188,
+    "number_of_arguments": 203,
+    "number_of_parameters": 35,
+    "number_of_qualified_expressions": 341,
+    "number_of_inheritances": 2,
+    "number_of_unsafe_calls": 8,
+    "number_of_safe_calls": 2,
+    "number_of_destructuring_declarations": 0,
+    "number_of_when_expressions": 2,
+    "number_of_functions_with_default_value": 1,
+    "number_of_function_call_with_named_value": 0,
+    "number_of_named_argument": 0,
+    "number_of_argument_with_default_value": 1,
+    "number_of_overloaded_op": 0,
+    "number_of_extension_function": 0,
+    "number_of_properties_delegation": 0,
+    "number_of_super_delegation": 0,
+    "number_of_ranges": 0,
+    "number_of_lambdas": 9,
+    "number_of_possible_smart_casts": 0,
+    "number_of_data_class": 0,
+    "number_of_constructors": 1,
+    "number_of_properties": 61,
+    "number_of_functions": 18,
+    "number_of_interfaces": 0,
+    "number_of_classes": 3,
+    "number_of_packages": 4,
+    "number_of_kts_files": 0,
+    "number_of_kt_files": 4
+  },
+  "file_metrics": {
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/manager/TextNotificationManager.kt": {
+      "sloc": 67,
+      "number_of_properties": 0,
+      "number_of_functions": 4,
+      "complexity": 20,
+      "class": "com.firstrowria.pushnotificationtester.manager.TextNotificationManager"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt": {
+      "sloc": 235,
+      "number_of_properties": 4,
+      "number_of_functions": 6,
+      "complexity": 49,
+      "class": "com.firstrowria.pushnotificationtester.activities.MainActivity"
+    },
+    "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/services/FCMMessagingService.kt": {
+      "sloc": 71,
+      "number_of_properties": 0,
+      "number_of_functions": 6,
+      "complexity": 9,
+      "class": "com.firstrowria.pushnotificationtester.services.FCMMessagingService"
+    }
+  },
+  "findings": [{
+    "group": "complexity",
+    "smells": [{
+      "name": "LongMethod",
+      "description": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:123:5",
+        "message": "The function onCreate is too long. The maximum length is 20."
+      }]
+    }, {
+      "name": "ComplexMethod",
+      "description": "Prefer splitting up complex methods into smaller, easier to understand methods.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:40:9",
+        "message": "The function onReceive appears to be too complex."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:123:5",
+        "message": "The function onCreate appears to be too complex."
+      }]
+    }, {
+      "name": "LabeledExpression",
+      "description": "Expression with labels increase complexity and affect maintainability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:162:76",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:246:47",
+        "message": "Expression with labels increase complexity and affect maintainability."
+      }]
+    }]
+  }, {
+    "group": "exceptions",
+    "smells": [{
+      "name": "TooGenericExceptionCaught",
+      "description": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/network/PushNotificationTesterApi.kt:35:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/network/PushNotificationTesterApi.kt:73:14",
+        "message": "Caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+      }]
+    }]
+  }, {
+    "group": "potential-bugs",
+    "smells": [{
+      "name": "UnsafeCast",
+      "description": "Cast operator throws an exception if the cast is not possible.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/network/PushNotificationTesterApi.kt:21:26",
+        "message": "URL(\"https://pushnotificationtester-fcm.appspot.com/connect\").openConnection() cannot be safely cast to HttpsURLConnection."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/network/PushNotificationTesterApi.kt:55:26",
+        "message": "URL(\"https://pushnotificationtester-fcm.appspot.com/notification?delay=$delay\" +\n                                     \"&deliveryPrio=$deliveryPrio\" +\n                                     \"&notificationPrio=$notificationPrio\" +\n                                     \"&pushId=${URLEncoder.encode(pushId, \"UTF-8\")}\")\n                .openConnection() cannot be safely cast to HttpsURLConnection."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:127:39",
+        "message": "findViewById<View>(R.id.deliveryPrioritySpinner) cannot be safely cast to Spinner."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:131:43",
+        "message": "findViewById<View>(R.id.notificationPrioritySpinner) cannot be safely cast to Spinner."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:146:33",
+        "message": "findViewById<View>(R.id.delayNumberPicker) cannot be safely cast to NumberPicker."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:169:43",
+        "message": "getSystemService(Context.CONNECTIVITY_SERVICE) cannot be safely cast to ConnectivityManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/services/FCMMessagingService.kt:26:65",
+        "message": "getSystemService(Context.NOTIFICATION_SERVICE) cannot be safely cast to NotificationManager."
+      }]
+    }, {
+      "name": "UnsafeCallOnNullableType",
+      "description": "It will throw a NullPointerException at runtime if your nullable value is null.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:228:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:247:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:248:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:249:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:250:13",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/services/FCMMessagingService.kt:27:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/services/FCMMessagingService.kt:28:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/services/FCMMessagingService.kt:30:50",
+        "message": "Calling !! on a nullable type will throw a NullPointerException at runtime in case the value is null. It should be avoided."
+      }]
+    }]
+  }, {
+    "group": "style",
+    "smells": [{
+      "name": "MaxLineLength",
+      "description": "Line detected that is longer than the defined maximum line length in the code style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/network/PushNotificationTesterApi.kt:21:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/network/PushNotificationTesterApi.kt:23:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/network/PushNotificationTesterApi.kt:61:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/manager/TextNotificationManager.kt:17:5",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/manager/TextNotificationManager.kt:50:13",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:133:156",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:162:147",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/services/FCMMessagingService.kt:26:9",
+        "message": "Line detected that is longer than the defined maximum line length in the code style."
+      }]
+    }, {
+      "name": "SpacingBetweenPackageAndImports",
+      "description": "Violation of the package declaration style.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/manager/TextNotificationManager.kt:12:19",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of TextNotificationManager."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/services/FCMMessagingService.kt:15:33",
+        "message": "There should be exactly one empty line in between the list of imports and the declaration of FCMMessagingService."
+      }]
+    }, {
+      "name": "MandatoryBracesIfStatements",
+      "description": "Multi-line if statement was found that does not have braces. These should be added to improve readability.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/manager/TextNotificationManager.kt:76:20",
+        "message": "Multi-line else statement was found that does not have braces.These should be added to improve readability"
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:161:21",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:227:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }, {
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/activities/MainActivity.kt:230:9",
+        "message": "Multi-line if statement was found that does not have braces. These should be added to improve readability."
+      }]
+    }, {
+      "name": "NewLineAtEndOfFile",
+      "description": "Checks whether files end with a line separator.",
+      "instances": [{
+        "location": "/Users/brunomateus/Doutorado/FAMAZOA_v3/com-firstrowria-pushnotificationtester/app/src/main/java/com/firstrowria/pushnotificationtester/services/FCMMessagingService.kt:94:1",
+        "message": "The file FCMMessagingService.kt is not ending with a new line."
+      }]
+    }]
+  }]
+}

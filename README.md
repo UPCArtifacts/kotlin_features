@@ -1,13 +1,20 @@
 ## On the adoption, usage and evolution of Kotlin Features on Android development
 
 
-Here you can find more information about our study reliazed in our paper **On the adoption, usage and evolution of Kotlin Features on Android development** published on **TODO**.
+Here you can find more information about our study reliazed in our paper **On the adoption, usage and evolution of Kotlin Features on Android development**
 
 If you want use this information, please cite this paper:
 
-'''
+```
+@misc{1907.09003,
+Author = {Bruno Góis Mateus and Matias Martinez},
+Title = {On the adoption, usage and evolution of Kotlin Features on Android development},
+Year = {2019},
+Eprint = {arXiv:1907.09003},
+}
 
-'''
+```
+
 
 ## Table of contents
 

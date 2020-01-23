@@ -1,4 +1,9 @@
 ### Description
+
+We decided to run the tools over the last version of each application from ourdataset (387 applications). As it was not feasible to manually verify each featureinstance, we analyzed a sample of them. To achieve a confidence level of 95% anda confidence interval of 10% we manually checked 96 instances for each feature,which were randomly selected.
+
+To get the minimum number of instances to analyze (96), we compute the confidentiallevel by considering as sample size the number of instances of the most frequent feature, whichwastype inferencewith 165,667 instances
+
 ---
 ### Result - 282 files analyzed
 ---

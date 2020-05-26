@@ -3,8 +3,7 @@
 
 Here you can find more information about our study reliazed in our paper **On the adoption, usage and evolution of Kotlin Features on Android development**
 
-If you want use this information, please cite this paper:
-
+<!--If you want use this information, please cite this paper:
 ```
 @misc{1907.09003,
 Author = {Bruno Góis Mateus and Matias Martinez},
@@ -14,6 +13,8 @@ Eprint = {arXiv:1907.09003},
 }
 
 ```
+-->
+
 
 
 ## Table of contents
@@ -27,34 +28,27 @@ Eprint = {arXiv:1907.09003},
 
 ### <a name="abstract">Abstract</a>
 
-Currently, more than 2 million applications are published on Google Play, the official store of Android applications, which makes the Android platform the largest mobile platform. Although the majority of Android applications have been written in Java, since 2017, when Google announced Kotlin as an official programming language of the Android platform, developers have an option of writing applications using Kotlin, that combines object-oriented and functional features.
+**Background:** Google announced Kotlin as an Android official programming language in 2017, giving developers an option of writing applications using a language that combines object-oriented and functional features.
 
-**Objective:** The goal of this paper is to understand the usage of Kotlin features. Particularly, we interested in four aspects of features usage:
-i) **which** features are adopted,
-ii) **what** is the degree of adoption,
-iii) **when** these features are added into the Android applications for the first time
-iv) **which** are the features first introduced,
-and 
-v) **how** they evolve along with applications' evolution.
+**Aims:** The goal of this work is to understand the usage of Kotlin features considering four aspects:
+i) which features are adopted, ii) what is the degree of adoption, iii) when are these features added into Android applications for the first time, and iv) how the usage of features evolves along with applications' evolution.
 
 
-**Method:** We first defined a method to identify from the abstract syntax tree the usage of features.
-Then, we built a tool that analyses Kotlin code statically.
-Finally, we conducted an empirical study over, 
-the largest dataset of Android open-source applications written in Kotlin, to identify different evolution trends of Kotlin features usage.
+**Method:** Exploring the source code of 387 Android applications, we identify the usage of Kotlin features on each version application's version and compute the moment that each feature is used for the first time.  
+Finally, we identify the evolution trend that better describes the usage of these features.
 
-**Results:** Our experiment showed that 15 out of 26 features are used on at least 50% of Android applications written in Kotlin. Moreover,  we found that *type inference*, *lambda* and *safe call* , and are the most used features, being found on 98%, 95% and 89% of applications, respectively. Also, we observed that
-the most used Kotlin features are those first used on Android
-applications. Finally, we report that the majority of applications tend
-to increase the number of instances of 24 out of 26 studied features
-along with the evolution of Android applications.
+**Results:** 5 out of 26 features are used on at least 50% of applications.
+Moreover, we found that *type inference*, *lambda* and *safe call* are the most used features.
+Also, we observed that the most used Kotlin features are those first included on Android applications.
+Finally, we report that the majority of applications tend to add more instances of 24 out of 26 features along with their evolution.
 
-**Conclusions:** Our study investigates Kotlin features usage and evolution and generates 8 main findings. We present the implications of our findings, which are addressed to developers, researchers, tool builders, and language designers in order to foster the use of Kotlin features in the context of Android development.
+**Conclusions:** Our study 
+ generates 7 main findings. We present their implications, which are addressed to developers, researchers and tool builders in order to foster the use of Kotlin features to develop Android applications.
 
 
 ### <a name="rqs">Research Questions</a>
 
-#### RQ1: What features of Kotlin are adopted by Android developers?
+#### RQ1: Which Kotlin features are adopted by Android developers?
 
 > Response to RQ 1: 
 > We studied 26 Kotlin features in our experiment, and as a result, we found that all features are used. Furthermore, we identified three groups of features:
@@ -85,7 +79,7 @@ Kotlin features normalized. The first box (right) shows the distribution of the 
 
 ![image](appendix/rq2/rq2_boxplot.png)
 
-
+<!--
 #### RQ3: What is the order of addition of Kotlin features and to what proportion these features are added together?
 
 > Response to RQ 3: 
@@ -106,12 +100,12 @@ Percentage of times that a feature *f1* (row) and a feature *f2* (column) are in
 ![image](appendix/rq3/heatmap.png)
 
 Percentage of times that a feature *f1*  is introduced before a feature *f2* (column). For instance, *type inference* is added before *inline functions* in 80% of applications that have both features.
+-->
+
+#### RQ3: How the adoption of Kotlin features evolves along the evolution of Android applications?  
 
 
-#### RQ4: How the adoption of Kotlin features evolves along the evolution of Android applications?  
-
-
-> Response to RQ 4: 
+> Response to RQ 3: 
 Developers tend to more instances along the evolution of Android applications of 18 out of 19 (94%) features studied. 
 The only exception is the feature *Unsafe call* that was better described by the instability trend.
 Moreover, we found that 9 out of 19 features are better described by the trend *Constant rise*.

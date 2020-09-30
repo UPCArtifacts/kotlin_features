@@ -149,7 +149,7 @@ Moreover, we found that 9 out of 19 features are better described by the trend *
 Distribution of the coefficient of determination, R-square, considering the best function fitted for each feature. The median value is 0.88 (R-square equal to 1 means a perfect fitting).
 
 
-Analyze data result grouped by:
+Analyzed data result grouped by:
 
 * [Application](appendix/apps_summary.md)
 * [Feature](appendix/features_summary.md)
